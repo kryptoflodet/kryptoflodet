@@ -1,13 +1,11 @@
 # Kryptoflödet
 
 Svenska kryptonyheter och marknadsdata på https://kryptoflodet.github.io/.
-React/Vite med `base: '/'`. GitHub Pages använder GitHub Actions.
 
 ## Nyhetsflöde
 
-`.github/workflows/news-pages.yml` hämtar och publicerar nyheter vid push, manuell
-körning och enligt femminutersschema. GitHub kan fördröja körningar och inaktivera
-scheman efter lång inaktivitet i publika repositoryn.
+Hämtar och publicerar nyheter vid push, manuell körning och enligt femminutersschema. 
+GitHub kan fördröja körningar och inaktivera scheman efter lång inaktivitet i publika repositoryn.
 
 `scripts/sources.json` innehåller källorna. `scripts/crypto_scope.py` släpper bara
 igenom rubriker med ett direkt kryptoämne. Bred ekonomi, energi och indirekt
