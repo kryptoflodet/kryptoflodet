@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+const app=readFileSync('src/App.tsx','utf8');
+assert.ok(!app.includes("fetch('/api/"),'Pages must not call nonexistent server routes');
+assert.ok(!app.includes('href="/"'),'Home links must respect repository base');
+assert.ok(!app.includes("/images/"),'Images must respect repository base');
+assert.match(readFileSync('vite.config.ts','utf8'),/base:\s*'\/kryptoflodet\/'/);
+assert.ok(existsSync('package-lock.json'),'npm ci needs the lockfile');
+const html=readFileSync('dist/index.html','utf8');
+assert.match(html,/src="\/kryptoflodet\/assets\//);
+assert.match(html,/href="\/kryptoflodet\/favicon.svg"/);
+for(const name of ['bitcoin','ethereum','network','institutions'])for(const width of [640,1280])assert.ok(existsSync(`dist/images/${name}-${width}.webp`));
+console.log('Pages checks passed: base path, no server fetches, assets and lockfile.');
