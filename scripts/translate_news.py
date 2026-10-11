@@ -1,15 +1,23 @@
 """Local English→Swedish translation. No paid API, credentials or source-text uploads."""
-import hashlib,json,pathlib,re,urllib.request,zipfile
+import hashlib,json,pathlib,re,urllib.request,zipfile,shutil
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 CACHE=ROOT/'.cache/translation'
-MODEL_URL='https://argos-net.com/v1/translate-en_sv-1_5.argosmodel'
+MODEL_URLS=['https://data.argosopentech.com/argospm/v1/translate-en_sv-1_5.argosmodel','https://argos-net.com/v1/translate-en_sv-1_5.argosmodel']
+MODEL_SHA256='d697224b443d212a04d24eb2ea0b615cb663eb24d4d21b70979673507b4d1e49'
 GLOSSARY={'quantum attacks':'kvantattacker','quantum attack':'kvantattack','stablecoins':'stabila kryptovalutor','stablecoin':'stabil kryptovaluta','bullish':'positiv marknadssyn','bearish':'negativ marknadssyn','breaking':'senaste nytt','treasury':'kryptoreserv','spot etf':'spot-ETF','tokenized':'tokeniserad','tokenization':'tokenisering','price prediction':'prisprognos','all-time high':'rekordnivå','all time high':'rekordnivå','on-chain':'på blockkedjan','whales':'storägare','whale':'storägare','airdrop':'tokenutdelning','staking':'låsning av kryptovaluta','rally':'kursuppgång','sell-off':'utförsäljning','selloff':'utförsäljning'}
 GLOSSARY.update({'pris förutsägelse':'prisprognos','pris prediction':'prisprognos','cpi drop':'KPI-besked','phishing':'nätfiske','mint':'skapa','tokens':'kryptoenheter','etfs':'ETF:er','inflow streak':'följd av nettoinflöden','inflows':'inflöden','outflows':'utflöden','cash':'kontanter','holding':'innehav','trading':'handel','bull run':'uppgångsfas','whale alert':'storägarbevakning'})
 def prepare_model():
  if (CACHE/'en_sv/model/model.bin').exists():return
  CACHE.mkdir(parents=True,exist_ok=True)
  archive=CACHE/'en-sv.zip'
- urllib.request.urlretrieve(MODEL_URL,archive)
+ for url in MODEL_URLS:
+  try:
+   req=urllib.request.Request(url,headers={'User-Agent':'Kryptoflodet/1.0 (+https://kryptoflodet.github.io/)'})
+   with urllib.request.urlopen(req,timeout=90) as response, archive.open('wb') as target:shutil.copyfileobj(response,target)
+   if hashlib.sha256(archive.read_bytes()).hexdigest()!=MODEL_SHA256:raise ValueError('Modellens kontrollsumma stämmer inte')
+   break
+  except Exception:
+   if url==MODEL_URLS[-1]:raise
  with zipfile.ZipFile(archive) as z:
   for member in z.namelist():
    if not (member.startswith('en_sv/model/') or member=='en_sv/sentencepiece.model'):continue
