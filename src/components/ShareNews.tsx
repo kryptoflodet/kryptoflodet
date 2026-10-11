@@ -1,7 +1,7 @@
 import {useEffect,useRef,useState} from 'react';
 import {Check,Copy,Share2} from 'lucide-react';
 import type {NewsItem} from '../lib/types';
-export function newsShareUrl(item:Pick<NewsItem,'id'|'originalUrl'>){const url=new URL(import.meta.env.BASE_URL,location.origin);url.searchParams.set('article',item.id);url.searchParams.set('source',item.originalUrl);return url.href;}
+export function newsShareUrl(item:Pick<NewsItem,'id'|'originalUrl'>){const url=new URL(import.meta.env.BASE_URL,location.href);url.searchParams.set('article',item.id);url.searchParams.set('source',item.originalUrl);return url.href;}
 export default function ShareNews({item}:{item:NewsItem}){
  const [open,setOpen]=useState(false);const [copied,setCopied]=useState(false);const [manual,setManual]=useState(false);const root=useRef<HTMLDivElement>(null);const input=useRef<HTMLInputElement>(null);const url=newsShareUrl(item);
  useEffect(()=>{if(!open)return;const outside=(e:PointerEvent)=>{if(!root.current?.contains(e.target as Node))setOpen(false);};const escape=(e:KeyboardEvent)=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();setOpen(false);root.current?.querySelector('button')?.focus();}};document.addEventListener('pointerdown',outside);root.current?.addEventListener('keydown',escape);const el=root.current;return()=>{document.removeEventListener('pointerdown',outside);el?.removeEventListener('keydown',escape);};},[open]);
