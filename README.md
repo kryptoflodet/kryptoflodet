@@ -1,4 +1,4 @@
-# Kryptoflödet
+# Kryptokollen
 
 Svenska kryptonyheter och marknadsdata på https://kryptoflodet.github.io/.
 

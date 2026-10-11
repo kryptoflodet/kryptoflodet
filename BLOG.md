@@ -1,4 +1,4 @@
-# Kryptoflödet Blog
+# Kryptokollen Blog
 
 Blog lives at `/?category=Blog`, beside Reglering. Posts are rendered directly on the site and archived in `public/data/blog.json`. Deep link: `/?category=Blog&post=YYYY-MM-DD`.
 
