@@ -62,10 +62,33 @@ för de öppna RSS-källorna. Källornas status visas i appen. X, Instagram, Str
 och BlackRock är inte anslutna utan separat godkänd dataåtkomst. Ondo och Chainlink
 visas som hämtningsfel om deras provade feed inte svarar med giltig RSS.
 
-Rubriker visas på originalspråket. Svensk automatisk översättning är inte ansluten.
+Utländska rubriker översätts lokalt med Argos en–sv, CTranslate2 och SentencePiece. Lingua granskar målspråket. Rubriker som inte klarar språk- eller sifferkontroll publiceras inte; ingen engelsk reservtext visas. Maskinöversättning kan fortfarande innehålla fel.
 RSS-publicering räknas inte som oberoende bekräftelse, och automatiska poster har
 varken sentimentanalys eller påhittad konfidens. Bilderna är AI-illustrationer.
 Öppna webbläsare hämtar ny publicerad JSON varje minut utan att tappa filter.
 
 Kontroll: `npm ci`, `npm run build`, `npm test`,
 `python -m unittest discover -s tests -p '*_test.py'`.
+
+
+## Svenskt flöde och utökade källor
+
+Källor konfigureras i `scripts/sources.json`. Tillagda källor inkluderar
+Cryptonews, Dagens industri, Avanzabloggen, Realtid, Dagens PS, SVT Ekonomi,
+Riksbanken, WSJ, The Block och CryptoSlate. Svenska breda ekonomiflöden samlas under kategorin Ekonomi. Detta är inte fullständiga
+artikelarkiv och kringgår inte betalväggar.
+
+CryptoRover och The Moon Show följs även via deras verifierade YouTube-kanalers
+Atom-flöden. Google Nyheter ger separat mediebevakning av Michael Saylor,
+CryptoRover, The Moon Show, Watcher.Guru och länkar till @bitcoin. Det är artiklar
+OM dessa profiler, inte ett komplett flöde av deras X-inlägg. Nitter svarade 410
+eller 502 vid test; RSSHub gav timeout. Ingen X API-nyckel används. Direktflöden
+från X är fortfarande inte anslutna.
+
+Installera översättningsberoenden med
+`pip install -r scripts/translation-requirements.txt` före nyhetsinhämtning.
+Språkmodellen hämtas från Argos officiella modellserver. Modell och översättningar
+cachas i GitHub Actions; ingen betald AI-tjänst används. Vid modellfel stoppas
+publiceringen och den senaste webbversionen ligger kvar. Femminutersschemat är
+oförändrat. Illustrationernas överlagrade etikett har tagits bort; metodsidan
+beskriver fortfarande hur bilderna har skapats.

@@ -28,11 +28,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/translation-requirements.txt
       - uses: actions/cache@v4
         with:
           path: public/data/news.json
           key: news-${{ github.run_id }}
           restore-keys: news-
+      - uses: actions/cache@v4
+        with:
+          path: .cache/translation
+          key: translation-v3-${{ github.run_id }}
+          restore-keys: translation-v3-
+      - run: pip install -r scripts/translation-requirements.txt
       - run: python scripts/fetch-news.py
       - run: npm ci
       - run: npm run build

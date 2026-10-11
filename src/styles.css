@@ -23,3 +23,17 @@ body{background:radial-gradient(ellipse at 12% 0%,#1b2b2344,transparent 40%),#10
 .rolling-viewport::-webkit-scrollbar{display:none}.ticker-track{display:flex;width:max-content;height:100%;align-items:center}.ticker-group{display:flex;flex:none;align-items:center}.ticker-shell .ticker-group .ticker-quote{width:245px;min-width:245px;flex:none;padding:0 16px;border-left:1px solid var(--line);font-variant-numeric:tabular-nums}.ticker-group .ticker-quote>span:last-child{margin-left:auto}.ticker-play{color:var(--accent)}
 @media(max-width:760px){.ticker-shell .ticker-group .ticker-quote{width:226px;min-width:226px;padding:0 12px}.ticker-shell{gap:4px}.ticker-shell .ticker-arrow{width:24px}}
 @media(prefers-reduced-motion:reduce){.ticker-shell .rolling-viewport{scrollbar-width:thin}}
+
+/* Larger news typography at every viewport size. */
+.news-card h2,.news-card.breaking-card h2{font-size:clamp(25px,2.15vw,32px);line-height:1.38;font-weight:750;letter-spacing:-.55px}
+.news-card .summary{font-size:18px;line-height:1.75;color:#cbd2ce;margin-top:13px}
+.news-card .why p,.news-card .expanded p{font-size:17px;line-height:1.75}
+.news-card .article-copy{min-width:0;padding-bottom:5px}
+.news-card .article-top{margin-bottom:16px}
+.news-card .source-button,.news-card .time{font-size:13px}
+.news-card .category,.news-card .demo-mini{font-size:11px}
+.news-card .verification,.news-card .coin-tag{font-size:12px}
+.cards{gap:26px}.news-card{padding-top:26px}
+.source-list-row small{max-width:400px;white-space:normal;line-height:1.55}
+@media(max-width:1120px) and (min-width:761px){.news-card{grid-template-columns:minmax(0,1fr) 140px}.news-card h2{font-size:25px}.news-card .summary{font-size:17px}}
+@media(max-width:760px){.news-card{padding-top:0}.news-card h2,.news-card.breaking-card h2{font-size:26px;line-height:1.4}.news-card .summary{font-size:18px;line-height:1.7}.news-card .article-footer{gap:8px;flex-wrap:wrap}.modal-body p{font-size:17px;line-height:1.75}}

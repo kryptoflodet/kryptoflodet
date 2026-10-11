@@ -1,0 +1,241 @@
+[
+  {
+    "id": "coindesk",
+    "name": "CoinDesk",
+    "type": "MEDIA",
+    "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "cointelegraph",
+    "name": "Cointelegraph",
+    "type": "MEDIA",
+    "url": "https://cointelegraph.com/rss",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "decrypt",
+    "name": "Decrypt",
+    "type": "MEDIA",
+    "url": "https://decrypt.co/feed",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "bitcoinmag",
+    "name": "Bitcoin Magazine",
+    "type": "MEDIA",
+    "url": "https://bitcoinmagazine.com/feed",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "watcher",
+    "name": "Watcher.Guru",
+    "type": "MEDIA",
+    "url": "https://watcher.guru/news/feed",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "ethereum",
+    "name": "Ethereum Foundation",
+    "type": "OFFICIELL",
+    "url": "https://blog.ethereum.org/en/feed.xml",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "sui",
+    "name": "Sui",
+    "type": "OFFICIELL",
+    "url": "https://blog.sui.io/rss/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "fed",
+    "name": "Federal Reserve",
+    "type": "MYNDIGHET",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "sec",
+    "name": "SEC",
+    "type": "MYNDIGHET",
+    "url": "https://www.sec.gov/news/pressreleases.rss",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "solana",
+    "name": "Solana",
+    "type": "OFFICIELL",
+    "url": "https://solana.com/news/rss.xml",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "ondo",
+    "name": "Ondo Finance",
+    "type": "OFFICIELL",
+    "url": "https://blog.ondo.finance/rss/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "chainlink",
+    "name": "Chainlink",
+    "type": "OFFICIELL",
+    "url": "https://blog.chain.link/rss/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "cryptonews",
+    "name": "Cryptonews",
+    "type": "MEDIA",
+    "url": "https://cryptonews.com/news/feed/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "di",
+    "name": "Dagens industri",
+    "type": "MEDIA",
+    "url": "https://www.di.se/rss",
+    "language": "sv",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "avanza",
+    "name": "Avanzabloggen",
+    "type": "OFFICIELL",
+    "url": "https://blogg.avanza.se/feed/",
+    "language": "sv",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "realtid",
+    "name": "Realtid",
+    "type": "MEDIA",
+    "url": "https://www.realtid.se/feed/",
+    "language": "sv",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "dagensps",
+    "name": "Dagens PS",
+    "type": "MEDIA",
+    "url": "https://www.dagensps.se/feed/",
+    "language": "sv",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "riksbank",
+    "name": "Sveriges Riksbank",
+    "type": "MYNDIGHET",
+    "url": "https://www.riksbank.se/sv/rss/pressmeddelanden/",
+    "language": "sv",
+    "category": "Makro"
+  },
+  {
+    "id": "svt",
+    "name": "SVT Ekonomi",
+    "type": "MEDIA",
+    "url": "https://www.svt.se/nyheter/ekonomi/rss.xml",
+    "language": "sv",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "wsj",
+    "name": "Wall Street Journal – marknader",
+    "type": "MEDIA",
+    "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+    "language": "en",
+    "category": "Ekonomi"
+  },
+  {
+    "id": "theblock",
+    "name": "The Block",
+    "type": "MEDIA",
+    "url": "https://www.theblock.co/rss.xml",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "cryptoslate",
+    "name": "CryptoSlate",
+    "type": "MEDIA",
+    "url": "https://cryptoslate.com/feed/",
+    "language": "en",
+    "category": null
+  },
+  {
+    "id": "saylor-watch",
+    "name": "Michael Saylor – mediebevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=%22Michael+Saylor%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde."
+  },
+  {
+    "id": "rover-watch",
+    "name": "CryptoRover – mediebevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=%22Crypto+Rover%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde."
+  },
+  {
+    "id": "moon-watch",
+    "name": "The Moon Show – mediebevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=%22The+Moon+Show%22+crypto+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde."
+  },
+  {
+    "id": "watcher-watch",
+    "name": "Watcher.Guru – mediebevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=%22Watcher.Guru%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde."
+  },
+  {
+    "id": "bitcoin-watch",
+    "name": "@bitcoin – mediebevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=%22x.com%2Fbitcoin%2Fstatus%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde."
+  },
+  {
+    "id": "moon-video",
+    "name": "The Moon Show – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCc4Rz_T9Sb1w5rqqo9pL1Og",
+    "language": "en",
+    "category": null,
+    "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg."
+  },
+  {
+    "id": "rover-video",
+    "name": "CryptoRover – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCoUcIy0SWXXIhzWgJNdMoFQ",
+    "language": "en",
+    "category": null,
+    "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg."
+  }
+]
