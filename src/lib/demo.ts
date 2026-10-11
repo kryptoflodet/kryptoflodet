@@ -48,4 +48,4 @@ export const market: MarketQuote[] = [
  {symbol:'SUI',name:'Sui',price:3.84,change24h:5.67,marketCap:'13 miljarder',series:[12,15,13,23,20,24,29,27,35,39,36,48]},
  {symbol:'XRP',name:'XRP',price:2.41,change24h:0.92,marketCap:'140 miljarder',series:[20,23,21,27,23,30,32,29,34,37,35,40]},
 ];
-export const categories=['Senaste','Ekonomi','Bitcoin','Ethereum','Altcoins','ETF','Institutioner','Reglering','Makro','Börser','DeFi','Stablecoins','Säkerhet / Hacks','On-chain','Mining'];
+export const categories=['Senaste','Bitcoin','Ethereum','Altcoins','ETF','Institutioner','Reglering','Makro','Börser','DeFi','Stablecoins','Säkerhet / Hacks','On-chain','Mining'];

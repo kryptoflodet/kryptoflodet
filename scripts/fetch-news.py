@@ -1,5 +1,6 @@
 """Fetch public RSS/Atom metadata. Never treat a publisher's claim as verified fact."""
 import concurrent.futures, datetime as dt, email.utils, hashlib, html, json, pathlib, re, urllib.request, xml.etree.ElementTree as ET
+from crypto_scope import crypto_only
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 TARGET = ROOT / 'public/data/news.json'
 FEEDS = json.loads((ROOT/'scripts/sources.json').read_text())
@@ -30,6 +31,7 @@ def parse_feed(payload, source, now):
   coins=[symbol for symbol,words in COINS.items() if any(re.search(r'\b'+re.escape(word)+r'\b',title,re.I) for word in words)]
   category='Makro' if source['id']=='fed' else 'Reglering' if source['id']=='sec' else 'ETF' if re.search(r'\bETF',title,re.I) else 'Säkerhet / Hacks' if re.search(r'\b(hack|exploit|breach)',title,re.I) else 'Bitcoin' if coins==['BTC'] else 'Ethereum' if coins==['ETH'] else 'Altcoins' if coins else 'Institutioner'
   if source.get('category') and not coins: category=source['category']
+  if not crypto_only(title):continue
   uid=hashlib.sha256(link.encode()).hexdigest()[:20]
   result.append(dict(id=uid,eventKey=link,originalTitle=title,originalText=title,originalLanguage=source.get('language','en'),title=title,translation='',summary=f"{source['name']} publicerar en nyhet inom {category.lower()}. Läs originalartikeln för fullständiga uppgifter. Rubriken visas på originalspråket.",why='Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.',author=source['name'],publishedAt=published,importedAt=now,category=category,coins=coins,topics=coins or [category],sourceId=source['id'],originalUrl=link,sourceType=source['type'],evidence=[dict(sourceId=source['id'],url=link,originId=link,direct=True,verified=False)],status='unconfirmed',confidence=0,sentiment='Neutral',importance=3,breaking=False,demo=False,analysisMethod='automated'))
  # A valid feed may contain no articles matching the editorial scope.
@@ -41,6 +43,8 @@ def main():
  def fetch(spec):
   sid,name,kind,url=(spec[k] for k in ['id','name','type','url'])
   s=dict(id=sid,name=name,type=kind,channel='RSS',url=url,trust=0,enabled=True,connection='planned',independenceGroup=sid,checkedAt=now,language=spec.get('language','en'),category=spec.get('category'),coverage=spec.get('coverage','Direkt RSS från utgivaren'))
+  if spec.get('disabledReason'):
+   s.update(enabled=False,error=spec['disabledReason']);return s,[]
   try:
    req=urllib.request.Request(url,headers={'User-Agent':'Kryptoflodet/1.0 (+https://kryptoflodet.github.io/)','Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml'})
    with urllib.request.urlopen(req,timeout=12) as response: payload=response.read(3_000_000)
@@ -52,10 +56,16 @@ def main():
    return s,[i for i in old['items'] if i['sourceId']==sid]
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(fetch,FEEDS))
  sources=[s for s,_ in results]; unique={n['originalUrl']:n for _,items in results for n in items}
- items=sorted(unique.values(),key=lambda n:n['publishedAt'],reverse=True)[:500]
+ items=sorted([n for n in unique.values() if crypto_only(n['originalTitle'])],key=lambda n:n['publishedAt'],reverse=True)[:500]
  if not items: raise RuntimeError('Alla källor misslyckades; befintlig fil lämnas orörd')
  for sid,name,url,channel in [('saylor','Michael Saylor','https://x.com/saylor','X'),('rover','CryptoRover','https://x.com/rovercrc','X'),('moon','The Moon Show','https://x.com/TheMoonShow','X'),('bitcoin','Bitcoin','https://x.com/bitcoin','X'),('instagram','Instagram – officiella konton','https://www.instagram.com','Instagram'),('strategy','Strategy','https://www.strategy.com','API'),('blackrock','BlackRock','https://www.blackrock.com','API')]:
   sources.append(dict(id=sid,name=name,type='INFLUENCER' if sid in ['rover','moon'] else 'OFFICIELL',channel=channel,url=url,trust=0,enabled=False,connection='planned',independenceGroup=sid,error='Direktflöde saknas. Öppen mediebevakning finns separat; den täcker inte alla X-inlägg.'))
+ reviews=json.loads((ROOT/'scripts/reviewed.json').read_text())
+ for item in items:
+  review=reviews.get(item['originalUrl'])
+  if review:
+   item.update(title=review['title'],summary=review['summary'],why=review['why'],coins=review['coins'],status='confirmed',analysisMethod='editorial',verificationNote=review['note'],reviewedAt='2026-10-11T15:15:00Z')
+   item['evidence'][0]['verified']=True
  from translate_news import translate_items
  raw_count=len(items)
  items=translate_items(items)

@@ -8,6 +8,8 @@ export async function fetchNews():Promise<NewsFeed>{
  if(!response.ok)throw new Error('Nyhetsflödet kunde inte hämtas');
  const data=await response.json() as NewsFeed;
  if(!Array.isArray(data.items)||!Array.isArray(data.sources)||!Number.isFinite(Date.parse(data.generatedAt)))throw new Error('Ogiltigt nyhetsflöde');
- if(!data.items.every(n=>n.demo===false&&['machine-sv','original-sv'].includes(n.translationStatus||'')&&typeof n.title==='string'&&Array.isArray(n.coins)&&Array.isArray(n.topics)&&Array.isArray(n.evidence)&&Number.isFinite(Date.parse(n.publishedAt))&&/^https?:\/\//.test(n.originalUrl)))throw new Error('Ogiltiga nyhetsposter');
+ if(!data.items.every(n=>n.demo===false&&['machine-sv','original-sv','reviewed-sv'].includes(n.translationStatus||'')&&typeof n.title==='string'&&Array.isArray(n.coins)&&Array.isArray(n.topics)&&Array.isArray(n.evidence)&&Number.isFinite(Date.parse(n.publishedAt))&&/^https?:\/\//.test(n.originalUrl)))throw new Error('Ogiltiga nyhetsposter');
+ const removed=new Set(['di','avanza','realtid','dagensps','svt','riksbank','wsj','fed']);
+ data.items=data.items.filter(n=>!removed.has(n.sourceId));
  return data;
 }

@@ -1,0 +1,29 @@
+{
+  "https://solana.com/news/solana-microscope": {
+    "title": "Solana presenterar Microscope för övervakning av blockkedjeprogram",
+    "summary": "Solana har presenterat ett verktyg med öppen källkod som hjälper utvecklare att följa programhändelser och få varningar.",
+    "why": "Verktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
+    "coins": [
+      "SOL"
+    ],
+    "note": "Kontrollerat mot Solanas originalartikel den 11 oktober 2026. Bekräftelsen gäller presentationen av verktyget, inte oberoende test av dess funktion."
+  },
+  "https://blog.ethereum.org/en/2026/09/17/glamsterdam-testnet-announcement": {
+    "title": "Ethereum publicerar besked om Glamsterdam på testnätet Sepolia",
+    "summary": "Ethereum Foundation har publicerat en plan för Glamsterdam på Sepolia. Artikeln anger ingen beslutad tidpunkt för huvudnätet.",
+    "why": "Testnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
+    "coins": [
+      "ETH"
+    ],
+    "note": "Kontrollerat mot Ethereum Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller det publicerade testnätsbeskedet."
+  },
+  "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices": {
+    "title": "Sui meddelar integration av USDC i Samsung Wallet",
+    "summary": "Sui Foundation har meddelat att Samsung Wallet ska stödja USDC på Sui, med inledande utrullning i USA. Beskedet gäller USDC, inte stöd för SUI-tokenen i plånboken.",
+    "why": "Integrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
+    "coins": [
+      "SUI"
+    ],
+    "note": "Kontrollerat mot Sui Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller att projektet publicerat beskedet; utrullningen har inte testats oberoende."
+  }
+}

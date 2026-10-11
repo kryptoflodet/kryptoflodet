@@ -1,4 +1,5 @@
-import importlib.util, unittest
+import importlib.util, unittest,sys
+sys.path.insert(0,'scripts')
 spec=importlib.util.spec_from_file_location('news','scripts/fetch-news.py'); news=importlib.util.module_from_spec(spec);spec.loader.exec_module(news)
 class FeedTests(unittest.TestCase):
  def test_feed_rejects_invalid_links_dates_and_future(self):
@@ -19,7 +20,7 @@ class PublicationTests(unittest.TestCase):
   data=json.loads(pathlib.Path('public/data/news.json').read_text())
   self.assertGreater(len(data['items']),0)
   for item in data['items']:
-   self.assertIn(item.get('translationStatus'),['machine-sv','original-sv'])
+   self.assertIn(item.get('translationStatus'),['machine-sv','original-sv','reviewed-sv'])
    self.assertFalse(item['demo'])
   app=pathlib.Path('src/App.tsx').read_text()
   self.assertNotIn('>AI-ILLUSTRATION<',app)
@@ -28,3 +29,26 @@ class PublicationTests(unittest.TestCase):
  def test_schedule_kept(self):
   import pathlib
   self.assertIn("3-58/5 * * * *",pathlib.Path('.github/workflows/news-pages.yml').read_text())
+
+class CryptoScopeTests(unittest.TestCase):
+ def test_scope(self):
+  from crypto_scope import crypto_only
+  for title in ['Oil prices rise as Bitcoin miners watch','Fed cuts rates as Bitcoin investors wait','Bitcoin depends on cheap energy','Apple launches a new iPhone','Jobs report improves - CryptoSlate','CryptoRover unveils a new Ferrari']:
+   self.assertFalse(crypto_only(title),title)
+  for title in ['Bitcoin rises 5%','Ethereum publishes testnet update','Sui integrates USDC','Bitcoin mining difficulty reaches record','SEC approves spot Bitcoin ETF']:
+   self.assertTrue(crypto_only(title),title)
+
+class StrictPublicationTests(unittest.TestCase):
+ def test_published_scope_and_review(self):
+  import json,pathlib
+  from crypto_scope import crypto_only
+  data=json.loads(pathlib.Path('public/data/news.json').read_text())
+  removed={'di','avanza','realtid','dagensps','svt','riksbank','wsj','fed'}
+  reviews=json.loads(pathlib.Path('scripts/reviewed.json').read_text())
+  for item in data['items']:
+   self.assertNotIn(item['sourceId'],removed)
+   self.assertTrue(crypto_only(item['originalTitle']),item['title'])
+   if item['status']=='confirmed':
+    self.assertIn(item['originalUrl'],reviews)
+    self.assertTrue(item['evidence'][0]['verified'])
+    self.assertTrue(item.get('verificationNote'))

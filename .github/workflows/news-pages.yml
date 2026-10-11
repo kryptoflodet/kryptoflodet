@@ -33,8 +33,8 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: public/data/news.json
-          key: news-sv-${{ github.run_id }}
-          restore-keys: news-sv-
+          key: news-crypto-v2-${{ github.run_id }}
+          restore-keys: news-crypto-v2-
       - uses: actions/cache@v4
         with:
           path: .cache/translation
@@ -42,6 +42,7 @@ jobs:
           restore-keys: translation-v3-
       - run: pip install -r scripts/translation-requirements.txt
       - run: python scripts/fetch-news.py
+      - run: python scripts/fetch-market.py
       - run: npm ci
       - run: npm run build
       - run: npm test

@@ -56,14 +56,6 @@
     "category": null
   },
   {
-    "id": "fed",
-    "name": "Federal Reserve",
-    "type": "MYNDIGHET",
-    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
-    "language": "en",
-    "category": null
-  },
-  {
     "id": "sec",
     "name": "SEC",
     "type": "MYNDIGHET",
@@ -102,62 +94,6 @@
     "url": "https://cryptonews.com/news/feed/",
     "language": "en",
     "category": null
-  },
-  {
-    "id": "di",
-    "name": "Dagens industri",
-    "type": "MEDIA",
-    "url": "https://www.di.se/rss",
-    "language": "sv",
-    "category": "Ekonomi"
-  },
-  {
-    "id": "avanza",
-    "name": "Avanzabloggen",
-    "type": "OFFICIELL",
-    "url": "https://blogg.avanza.se/feed/",
-    "language": "sv",
-    "category": "Ekonomi"
-  },
-  {
-    "id": "realtid",
-    "name": "Realtid",
-    "type": "MEDIA",
-    "url": "https://www.realtid.se/feed/",
-    "language": "sv",
-    "category": "Ekonomi"
-  },
-  {
-    "id": "dagensps",
-    "name": "Dagens PS",
-    "type": "MEDIA",
-    "url": "https://www.dagensps.se/feed/",
-    "language": "sv",
-    "category": "Ekonomi"
-  },
-  {
-    "id": "riksbank",
-    "name": "Sveriges Riksbank",
-    "type": "MYNDIGHET",
-    "url": "https://www.riksbank.se/sv/rss/pressmeddelanden/",
-    "language": "sv",
-    "category": "Makro"
-  },
-  {
-    "id": "svt",
-    "name": "SVT Ekonomi",
-    "type": "MEDIA",
-    "url": "https://www.svt.se/nyheter/ekonomi/rss.xml",
-    "language": "sv",
-    "category": "Ekonomi"
-  },
-  {
-    "id": "wsj",
-    "name": "Wall Street Journal – marknader",
-    "type": "MEDIA",
-    "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
-    "language": "en",
-    "category": "Ekonomi"
   },
   {
     "id": "theblock",
@@ -237,5 +173,24 @@
     "language": "en",
     "category": null,
     "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg."
+  },
+  {
+    "id": "coinmarketcap",
+    "name": "CoinMarketCap – offentlig nyhetsbevakning",
+    "type": "MEDIA",
+    "url": "https://news.google.com/rss/search?q=site%3Acoinmarketcap.com%2Fcommunity%2Farticles+%28bitcoin+OR+crypto+OR+ethereum%29+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+    "language": "en",
+    "category": null,
+    "coverage": "Offentligt indexerade Community-artiklar via Google Nyheter. Inläggen är inte automatiskt verifierade av CoinMarketCap."
+  },
+  {
+    "id": "coinglass",
+    "name": "CoinGlass",
+    "type": "MEDIA",
+    "url": "https://www.coinglass.com/news",
+    "language": "en",
+    "category": null,
+    "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",
+    "disabledReason": "Direkt nyhetsflöde kräver CoinGlass API-åtkomst. Datadiagram räknas inte som nyhetsartiklar."
   }
 ]

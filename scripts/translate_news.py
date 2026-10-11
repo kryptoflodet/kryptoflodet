@@ -39,6 +39,7 @@ def translate_items(items):
  memo=json.loads(cachefile.read_text()) if cachefile.exists() else {}
  accepted=[];pending=[];texts=[]
  for item in items:
+  if item.get('analysisMethod')=='editorial':item.update(translationStatus='reviewed-sv');accepted.append(item);continue
   if item['originalLanguage']=='sv':
    lang=detector.detect_language_of(item['originalTitle'])
    if lang==Language.SWEDISH:item.update(title=item['originalTitle'],translationStatus='original-sv');accepted.append(item);continue

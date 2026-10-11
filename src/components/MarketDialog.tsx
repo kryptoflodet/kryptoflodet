@@ -1,0 +1,37 @@
+import {useEffect,useId,useRef,useState} from 'react';
+import {X,Activity,ArrowUpRight,ArrowDownRight,RefreshCw,ExternalLink} from 'lucide-react';
+import {chartRanges,fetchChart,type ChartData,type RangeKey} from '../lib/chart';
+import {trackedCoins,type LiveQuote} from '../lib/market';
+const fmt=(v:number,unit:string)=>new Intl.NumberFormat('sv-SE',{maximumFractionDigits:v<1?5:2,minimumFractionDigits:v>=1?2:0}).format(v)+' '+unit;
+const date=(t:number)=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(t);
+export default function MarketDialog({quote,currency,onClose,onNews}:{quote:LiveQuote;currency:string;onClose:()=>void;onNews:()=>void}){
+ const dialog=useRef<HTMLDialogElement>(null);const gradient=useId().replaceAll(':','');const [range,setRange]=useState<RangeKey>('24h');const [data,setData]=useState<ChartData|null>(null);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [hover,setHover]=useState<number|null>(null);const [retry,setRetry]=useState(0);
+ useEffect(()=>{const previous=document.activeElement as HTMLElement;dialog.current?.showModal();const overflow=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=overflow;previous?.focus();};},[]);
+ useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError(e instanceof Error?e.message:'Kunde inte hämta diagrammet');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.symbol,range,currency,retry]);
+ useEffect(()=>{const timer=setInterval(()=>{if(!document.hidden)setRetry(v=>v+1);},60000);return()=>clearInterval(timer);},[]);
+ const current=currency==='SEK'?quote.priceSek:quote.price;const movement=currency==='SEK'?quote.changeSek24h:quote.change24h;
+ const points=data?.points||[];const low=points.length?Math.min(...points.map(p=>p[1])):0;const high=points.length?Math.max(...points.map(p=>p[1])):0;const pad=(high-low)*.12||high*.01||1;const floor=low-pad,ceiling=high+pad;
+ const first=points[0],last=points.at(-1);const pct=first&&last?(last[1]/first[1]-1)*100:0;const positive=pct>=0;
+ const x=(t:number)=>64+(t-(first?.[0]||0))/Math.max(1,(last?.[0]||1)-(first?.[0]||0))*792;
+ const y=(v:number)=>24+(ceiling-v)/(ceiling-floor)*270;
+ const line=points.map((p,i)=>`${i?'L':'M'}${x(p[0]).toFixed(2)},${y(p[1]).toFixed(2)}`).join(' ');const active=hover===null?last:points[hover];
+ const live=quote.updatedAt&&Date.now()-Date.parse(quote.updatedAt)<300000;
+ return <dialog className="market-dialog" ref={dialog} aria-labelledby="market-dialog-title" onCancel={onClose} onClick={e=>{if(e.target===dialog.current)onClose();}}><div className="market-dialog-body"><button className="market-close icon-button" aria-label="Stäng kursdiagram" onClick={onClose}><X size={25}/></button>
+ <div className="chart-eyebrow"><Activity size={17}/>MARKNADSDATA<span className={live?'up':''}>{live?'AKTUELL KURS':'FÖRDRÖJD KURS'}</span></div><h2 id="market-dialog-title">{quote.name}<span>{quote.symbol}</span></h2>
+ <div className="chart-price-row"><strong>{current===null?'Pris saknas':fmt(current,currency)}</strong><span className={(movement??0)>=0?'up':'down'}>{(movement??0)>=0?<ArrowUpRight size={22}/>:<ArrowDownRight size={22}/>} {movement===null?'—':`${movement>=0?'+':''}${movement.toFixed(2)} %`}<small>senaste 24 timmarna</small></span></div>
+ <p className="chart-current-source">Aktuellt pris: CoinGecko · {quote.updatedAt?date(Date.parse(quote.updatedAt)):'Tidsstämpel saknas'}</p>
+ <div className="chart-range-tabs" role="group" aria-label="Diagramperiod">{chartRanges.map(r=><button key={r.key} aria-pressed={range===r.key} className={range===r.key?'active':''} onClick={()=>setRange(r.key)}>{r.label}</button>)}</div>
+ <div className="chart-canvas" aria-busy={loading}>{loading?<div className="chart-placeholder"><RefreshCw className="chart-loading" size={28}/><p>Hämtar kurshistorik…</p></div>:error?<div className="chart-placeholder" role="alert"><p>{error}</p><button className="text-button" onClick={()=>setRetry(v=>v+1)}>Försök igen <RefreshCw size={16}/></button></div>:data&&first&&last?<>
+ <div className="chart-inspection" aria-live="polite"><b>{active?fmt(active[1],data.unit):''}</b><span>{active?date(active[0]):''}</span><em className={positive?'up':'down'}>{pct>=0?'+':''}{pct.toFixed(2)} % under visad period</em></div>
+ <svg viewBox="0 0 920 330" role="img" aria-label={`${quote.name}, ${chartRanges.find(r=>r.key===range)?.label}. Från ${fmt(first[1],data.unit)} till ${fmt(last[1],data.unit)}.`} onPointerMove={e=>{const rect=e.currentTarget.getBoundingClientRect();const ratio=Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*920-64)/792));const target=first[0]+ratio*(last[0]-first[0]);let index=0;for(let i=1;i<points.length;i++)if(Math.abs(points[i][0]-target)<Math.abs(points[index][0]-target))index=i;setHover(index);}} onPointerLeave={()=>setHover(null)}>
+ <defs><linearGradient id={gradient} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor={positive?'#94dfbb':'#e39599'} stopOpacity=".26"/><stop offset="100%" stopColor={positive?'#94dfbb':'#e39599'} stopOpacity="0"/></linearGradient></defs>
+ {[0,1,2,3].map(i=>{const v=ceiling-(ceiling-floor)*i/3;return <g key={i}><line x1="64" x2="856" y1={y(v)} y2={y(v)} stroke="#ffffff12" strokeDasharray="4 6"/><text x="8" y={y(v)+4} fill="#a6b2ad" fontSize="12">{new Intl.NumberFormat('sv-SE',{notation:'compact',maximumFractionDigits:2}).format(v)}</text></g>;})}
+ <path d={line+` L856,294 L64,294 Z`} fill={`url(#${gradient})`}/><path d={line} stroke={positive?'#94dfbb':'#e39599'} strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+ {active&&hover!==null&&<g><line x1={x(active[0])} x2={x(active[0])} y1="24" y2="294" stroke="#c5d3cb" strokeDasharray="3 4"/><circle cx={x(active[0])} cy={y(active[1])} r="5" fill="#e9f6ed" stroke="#17221c" strokeWidth="2"/></g>}
+ {[first,points[Math.floor(points.length/2)],last].map((p,i)=><text key={i} x={[64,460,856][i]} y="321" textAnchor={i===0?'start':i===2?'end':'middle'} fill="#a6b2ad" fontSize="12">{new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',month:'short',day:'numeric',...(range==='24h'||range==='today'?{hour:'2-digit',minute:'2-digit'}:{year:'numeric'})}).format(p[0])}</text>)}
+ </svg><input className="chart-scrubber" type="range" min="0" max={points.length-1} value={hover??points.length-1} onChange={e=>setHover(Number(e.target.value))} aria-label="Utforska historiska kurser"/>
+ <div className="chart-stats"><div><span>Lägst i perioden</span><b>{fmt(low,data.unit)}</b></div><div><span>Högst i perioden</span><b>{fmt(high,data.unit)}</b></div><div><span>Första datapunkt</span><b>{new Date(first[0]).toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm'})}</b></div></div>
+ <p className="chart-note"><b>{data.source} · {data.unit}.</b> {data.note}</p></>:null}</div>
+ <div className="chart-bottom"><button onClick={onNews}>Visa nyheter om {quote.symbol} <ArrowUpRight size={18}/></button><a href={'https://www.coingecko.com/en/coins/'+(trackedCoins.find(c=>c[1]===quote.symbol)?.[0]||'bitcoin')} target="_blank" rel="noopener noreferrer">Kurskälla <ExternalLink size={14}/></a></div>
+ </div></dialog>;
+}

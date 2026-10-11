@@ -10,9 +10,16 @@ export function loadCachedMarket():MarketData|null{
 }
 export async function fetchMarket():Promise<MarketData>{
  const params=new URLSearchParams({ids:trackedCoins.map(c=>c[0]).join(','),vs_currencies:'usd,sek',include_24hr_change:'true',include_last_updated_at:'true'});
+ let data:MarketData;
+ try{
  const response=await fetch('https://api.coingecko.com/api/v3/simple/price?'+params,{headers:{Accept:'application/json'},signal:AbortSignal.timeout(15000)});
  if(!response.ok)throw new Error('Kurskällan svarade med status '+response.status);
- const data=normalizeMarket(await response.json());
+ data=normalizeMarket(await response.json());
+ }catch{
+ const fallback=await fetch(import.meta.env.BASE_URL+'data/market.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(10000)});
+ if(!fallback.ok)throw new Error('Kurskällan är tillfälligt otillgänglig');
+ data=normalizeMarket(await fallback.json());
+ }
  try{localStorage.setItem(cacheKey,JSON.stringify(data));}catch{/* Browsing remains available without local storage. */}
  return data;
 }

@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "node tests/feed.test.mjs && node tests/market.test.mjs && node tests/pages.test.mjs"
+    "test": "node tests/feed.test.mjs && node tests/market.test.mjs && node tests/pages.test.mjs && node tests/chart.test.mjs"
   },
   "dependencies": {
     "react": "19.2.6",

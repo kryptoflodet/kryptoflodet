@@ -1,4 +1,4 @@
-import raw from './market-snapshot.json';
+import raw from '../../public/data/market.json';
 import {normalizeMarket,type MarketData} from './market';
 const imported=normalizeMarket(raw);
 // Saved real quotes remain explicitly stale until a fresh request succeeds.
