@@ -2,6 +2,8 @@
 
 Svensk nyhetstjänst med dom senaste kryptonyheterna. Allt på svenska. Inget krångel. Bara krypto
 
+https://kryptoflodet.github.io
+
 ## Starta lokalt
 
 Node.js 24 rekommenderas, samma version som publiceringsflödet använder.
