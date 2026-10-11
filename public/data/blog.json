@@ -1,1 +1,197 @@
-{"posts":[]}
+{
+  "posts": [
+    {
+      "id": "krypto-for-nyborjare",
+      "kind": "guide",
+      "title": "Vad är krypto – och vad ska vi egentligen ha det till?",
+      "dek": "Du kan skicka ett meddelande över hela världen på ett ögonblick. Varför är det inte alltid lika enkelt med pengar? Här förklarar vi krypto, blockkedjan och digitala betalningar från grunden.",
+      "publishedAt": "2026-10-11T16:41:31.941875+00:00",
+      "period": "Nybörjarguiden",
+      "readingMinutes": 7,
+      "takeaways": [
+        "Blockkedjan är en gemensam historik som hjälper ett nätverk att hålla reda på överföringar.",
+        "Snabba och billiga globala betalningar är en möjlighet, men hela kostnaden och tiden räknas.",
+        "Egen kontroll över digitala tillgångar innebär också ansvar och risker."
+      ],
+      "sections": [
+        {
+          "heading": "Varför pratar alla om krypto?",
+          "paragraphs": [
+            "Tänk dig att din syster bor på andra sidan jordklotet och behöver pengar en söndagskväll. Du kan skicka ett foto till henne på ett ögonblick. En betalning kan däremot behöva passera flera företag, växlas och vänta på att olika system öppnar. Det är en av de saker som kryptoteknik försöker förbättra: möjligheten att flytta värde över internet, även när bankkontoren är stängda.",
+            "Krypto är ett samlingsnamn för digitala tillgångar som använder kryptografi, alltså matematiska metoder för att skydda information och bevisa vem som får göra en överföring. Bitcoin är det mest kända exemplet. Ethereum är ett annat nätverk, där man också kan bygga program som hanterar digitala tillgångar. Krypto är alltså mer än kurser som går upp och ned på en skärm."
+          ],
+          "sourceIds": [
+            "ethereum",
+            "worldbank"
+          ]
+        },
+        {
+          "heading": "Blockkedjan: en gemensam bokföringsbok",
+          "paragraphs": [
+            "Tänk dig en digital bok där det står vilka överföringar som har gjorts. I ett vanligt banksystem sköter banken sin bokföring. På en offentlig blockkedja finns i stället kopior av historiken hos många datorer. Datorerna följer gemensamma regler för vilka överföringar som ska godkännas.",
+            "Nya uppgifter samlas i block som kopplas ihop med tidigare block. Därifrån kommer namnet blockkedja. Kopplingarna fungerar ungefär som digitala fingeravtryck: om någon ändrar en gammal uppgift förändras också fingeravtrycket. På ett väl skyddat nätverk är det därför mycket svårt att skriva om historiken i efterhand.",
+            "Det viktiga är att samma pengar inte ska kunna användas två gånger. Om du skickar en digital bild kan du behålla en kopia. Pengar fungerar inte om båda personerna kan behålla och spendera samma belopp. Nätverkets regler hjälper deltagarna att komma överens om vilka överföringar som faktiskt gäller."
+          ],
+          "sourceIds": [
+            "bitcoin"
+          ]
+        },
+        {
+          "heading": "Vad är då en digital plånbok?",
+          "paragraphs": [
+            "Plånboken är oftast en app som visar dina tillgångar och låter dig skicka och ta emot dem. Själva tillgångarna ligger inte som filer i telefonen. Det är blockkedjan som registrerar dem; plånboken hjälper dig att använda dem.",
+            "Din adress fungerar ungefär som ett kontonummer som andra kan skicka till. Din privata nyckel används för att godkänna överföringar. Den ska hållas hemlig. Vissa tjänster sköter nycklarna åt dig, medan andra låter dig ha hela ansvaret själv. Egen kontroll kan vara värdefull, men om du förlorar åtkomsten finns det inte alltid någon kundtjänst som kan återställa den."
+          ],
+          "sourceIds": [
+            "wallets"
+          ]
+        },
+        {
+          "heading": "Kan man skicka pengar över hela världen på en sekund?",
+          "paragraphs": [
+            "På vissa snabba nätverk kan en överföring synas mycket snabbt, ibland på under en sekund. Solanas egen betalningsdokumentation beskriver exempelvis överföringar på bråkdelar av en sekund. Det är en stor möjlighet för betalningar mellan digitala plånböcker som använder samma nätverk.",
+            "Men ”en sekund” är ingen garanti för all krypto. Tiden beror på nätverket och hur säker bekräftelse mottagaren kräver. Att betalningen syns är inte alltid samma sak som att den betraktas som slutgiltig. Bitcoin fungerar till exempel annorlunda än snabbare betalningsnätverk.",
+            "Och resan från svenska kronor på ditt bankkonto till lokal valuta på mottagarens konto innehåller fler steg. Köp, identitetskontroll, växling och uttag kan kosta pengar och ta tid. Den snabba delen på blockkedjan är därför inte automatiskt samma sak som en sekundsnabb banköverföring från början till slut."
+          ],
+          "sourceIds": [
+            "solana",
+            "safety",
+            "payments-study"
+          ]
+        },
+        {
+          "heading": "Stablecoins gör betalningar lättare att förstå",
+          "paragraphs": [
+            "Om du ska betala en räkning vill du förmodligen inte att pengarnas värde ska svänga kraftigt under tiden. Därför används ofta stablecoins, digitala tillgångar som är utformade för att följa exempelvis den amerikanska dollarn. USDC är ett sådant exempel. Målet är att en enhet ska motsvara ungefär en dollar.",
+            "Tänk dig att två personer redan har kompatibla plånböcker och använder samma stablecoin på samma nätverk. Då kan de överföra den direkt mellan adresserna, utan att varje betalning måste skickas genom en kedja av banker. Blockkedjan har inga vanliga bankdagar, även om appar och tjänster runt omkring kan ha driftproblem eller begränsningar.",
+            "Ordet stabil betyder däremot inte riskfri. Värdet beror bland annat på konstruktionen och, för reservbackade varianter, på utgivaren och tillgångarna bakom. En dollarkopplad tillgång kan dessutom ändra värde räknat i svenska kronor när dollarkursen rör sig."
+          ],
+          "sourceIds": [
+            "stablecoins",
+            "payments-study"
+          ]
+        },
+        {
+          "heading": "Varför kan det bli billigare?",
+          "paragraphs": [
+            "Vid internationella betalningar kan kostnaden bestå av en överföringsavgift, valutaväxling och avgifter hos andra aktörer på vägen. Världsbanken följer just kostnaderna för mindre överföringar mellan länder, eftersom även några procent kan spela stor roll för en familj som är beroende av pengarna.",
+            "Ett förenklat räkneexempel: om den totala kostnaden är 6 procent av 2 000 kronor blir det 120 kronor. Det är ett exempel, inte ett pris som gäller alla banker eller länder. Om en annan betalningsväg minskar kostnaden kan mer bli kvar hos mottagaren.",
+            "På vissa blockkedjor är nätverksavgiften mycket låg. Andra kan bli dyra när många vill använda dem samtidigt. Dessutom kan en app, kryptobörs eller växlingstjänst ta betalt. Den rättvisa jämförelsen är därför vad mottagaren faktiskt får ut, efter alla avgifter och växelkurser."
+          ],
+          "sourceIds": [
+            "worldbank",
+            "solana",
+            "fees",
+            "payments-study"
+          ]
+        },
+        {
+          "heading": "Men är inte banker redan snabba?",
+          "paragraphs": [
+            "Jo. I Sverige är vi vana vid Swish, där betalningar kan gå på sekunder även på helgen. Krypto behövs inte för att varje vardagsbetalning ska bli snabb. Utmaningen blir ofta större när olika länders valutor, banker och betalningssystem ska fungera tillsammans.",
+            "Fedwire är ett amerikanskt system som banker använder för dollarbetalningar. Det är ett system för överföringar i realtid under sina öppettider, inte ett annat namn för alla långsamma utlandsbetalningar. Enligt den publicerade tidtabellen har det särskilda bankdagar och stängningstider. En kunds totala väntetid kan också bero på bankernas egna rutiner och andra steg i betalningen.",
+            "Blockkedjornas möjlighet är framför allt en gemensam digital väg som kan användas över gränserna och dygnet runt. Bankerna försvinner inte för det. De kan också använda tekniken och fortsätta hjälpa kunder med sådant som växling, lån och förvaring."
+          ],
+          "sourceIds": [
+            "swish",
+            "fedwire",
+            "payments-study"
+          ]
+        },
+        {
+          "heading": "Mer än betalningar: regler som kan köras automatiskt",
+          "paragraphs": [
+            "På exempelvis Ethereum kan man använda smarta kontrakt. Namnet låter krångligt, men det handlar om program som utför bestämda instruktioner på blockkedjan. Tänk en varuautomat: när villkoren är uppfyllda händer något enligt reglerna.",
+            "Ett enkelt exempel är ett program som delar en inbetalning mellan två mottagare enligt förutbestämda andelar. Man behöver då inte manuellt räkna ut och skicka varje del. Samma grundidé kan användas i mer avancerade tjänster.",
+            "Automatik är dock ingen garanti för att något är klokt eller säkert. Ett program kan innehålla fel och det kan behöva information från världen utanför blockkedjan. Tekniken kan kontrollera att regler följs, men inte automatiskt avgöra om ett företag är ärligt eller en fysisk vara verkligen har levererats."
+          ],
+          "sourceIds": [
+            "ethereum"
+          ]
+        },
+        {
+          "heading": "Vad behöver man vara medveten om?",
+          "paragraphs": [
+            "Det finns ett ansvar som är lätt att missa när betalningar blir enkla att skicka. En felaktig överföring kan vara svår eller omöjlig att få tillbaka. Bedragare kan försöka få dig att lämna ut hemliga uppgifter eller godkänna något du inte förstår. Många offentliga blockkedjor visar dessutom överföringarna öppet; en adress utan ditt namn är inte samma sak som full anonymitet.",
+            "Kryptotillgångar kan också falla kraftigt i värde. Att ett nätverk är användbart betyder inte automatiskt att dess valuta är en bra investering. Och en tillgång behöver fungera med både mottagarens plånbok och det valda nätverket. Det är sådant tjänsterna måste göra begripligare om de ska användas av fler."
+          ],
+          "sourceIds": [
+            "wallets",
+            "safety"
+          ]
+        },
+        {
+          "heading": "Varför kan krypto ha en plats i ett modernt samhälle?",
+          "paragraphs": [
+            "För en person som enkelt kan betala med Swish är nyttan kanske inte uppenbar. För den som skickar pengar över landsgränser, arbetar med kunder i flera länder eller vill bygga en digital tjänst som är tillgänglig dygnet runt kan den vara mer konkret.",
+            "Kryptons möjliga värde ligger i att göra digitalt ägande och överföringar mer tillgängliga, och i vissa situationer snabbare och billigare. Om det blir bättre i praktiken beror på hela lösningen: kostnaden, användarvänligheten, säkerheten och möjligheten att använda pengarna efteråt.",
+            "Du behöver alltså inte tro att alla banker ska försvinna för att förstå idén. Det räcker att se behovet av fler sätt att flytta och använda värde i en värld där människor, företag och internet redan är globala."
+          ],
+          "sourceIds": [
+            "ethereum",
+            "solana",
+            "worldbank",
+            "payments-study"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin.org – så fungerar Bitcoin",
+          "url": "https://bitcoin.org/en/how-it-works"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum – nätverket och smarta kontrakt",
+          "url": "https://ethereum.org/what-is-ethereum/"
+        },
+        {
+          "id": "wallets",
+          "name": "Ethereum – digitala plånböcker",
+          "url": "https://ethereum.org/wallets/"
+        },
+        {
+          "id": "solana",
+          "name": "Solana – betalningsdokumentation",
+          "url": "https://solana.com/docs/payments/send-payments"
+        },
+        {
+          "id": "stablecoins",
+          "name": "Ethereum – stablecoins",
+          "url": "https://ethereum.org/stablecoins/"
+        },
+        {
+          "id": "worldbank",
+          "name": "Världsbanken – kostnader för utlandsöverföringar",
+          "url": "https://remittanceprices.worldbank.org/about-remittance-prices-worldwide"
+        },
+        {
+          "id": "fees",
+          "name": "Ethereum – nätverk och avgifter",
+          "url": "https://ethereum.org/what-is-the-ethereum-network/"
+        },
+        {
+          "id": "swish",
+          "name": "Riksbanken – sekundsnabba betalningar",
+          "url": "https://www.riksbank.se/sv/betalningar--kontanter/sa-betalar-svenskarna/sa-betalar-svenskarna-2019/riksbanken-anpassar-sig-till-den-digitala-varlden/riksbanken-avser-att-anvanda-tips/swish-mojliggor-sekundsnabba-betalningar/"
+        },
+        {
+          "id": "fedwire",
+          "name": "Federal Reserve – Fedwires öppettider",
+          "url": "https://www.frbservices.org/resources/financial-services/wires/fedwire-funds-service-national-settlement-service-operating-hours/"
+        },
+        {
+          "id": "payments-study",
+          "name": "Forskningsöversikt – stablecoins i betalningar",
+          "url": "https://arxiv.org/abs/2601.00196"
+        },
+        {
+          "id": "safety",
+          "name": "Bitcoin.org – säkerhet, bekräftelser och risker",
+          "url": "https://bitcoin.org/en/you-need-to-know"
+        }
+      ]
+    }
+  ]
+}

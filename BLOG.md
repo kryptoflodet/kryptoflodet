@@ -10,6 +10,8 @@ Wednesday covers Monday through Wednesday publication (Mittveckan); Sunday cover
 
 JSON object with `posts` array. Preserve existing entries. One entry per scheduled date; `id` is that date, preventing duplicate runs. Publish timestamps are actual ISO timestamps with a timezone. Future-dated posts are hidden until their publication time. All visible text is Swedish. Text is rendered as plain text; do not insert HTML or Markdown.
 
+Evergreen educational guides use `kind: "guide"` and a descriptive slug such as `krypto-for-nyborjare`. Preserve these alongside dated recaps; a guide is not the scheduled recap for that date.
+
 Each post:
 - `id`: YYYY-MM-DD
 - `title`: clear editorial headline
