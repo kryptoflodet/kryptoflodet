@@ -60,6 +60,8 @@ def translate_items(items):
    # Do not publish untranslated or numerically altered headlines.
    if not title or detector.detect_language_of(title)!=Language.SWEDISH or original_numbers!=translated_numbers:continue
    memo[item['_translationKey']]=title;item.update(title=title,translationStatus='machine-sv');accepted.append(item)
+ from reader_content import translate_excerpts
+ translate_excerpts(accepted, tokenizer, translator, detector, Language.SWEDISH, CACHE)
  for item in accepted:
   item.pop('_translationKey',None)
   item['summary']=item['summary'].replace(' Rubriken visas på originalspråket.','')

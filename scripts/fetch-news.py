@@ -1,6 +1,7 @@
 """Fetch public RSS/Atom metadata. Never treat a publisher's claim as verified fact."""
 import concurrent.futures, datetime as dt, email.utils, hashlib, html, json, pathlib, re, urllib.request, xml.etree.ElementTree as ET
 from crypto_scope import crypto_only
+from reader_content import feed_excerpt
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 TARGET = ROOT / 'public/data/news.json'
 FEEDS = json.loads((ROOT/'scripts/sources.json').read_text())
@@ -27,13 +28,14 @@ def parse_feed(payload, source, now):
   published=date(fields.get('pubDate') or fields.get('published') or fields.get('updated'))
   if not title or not link.startswith(('https://','http://')) or not published: continue
   if dt.datetime.fromisoformat(published.replace('Z','+00:00'))>dt.datetime.fromisoformat(now.replace('Z','+00:00'))+dt.timedelta(minutes=10): continue
-  # Retain headline metadata only, rather than republishing full RSS article bodies.
+  # Use a bounded publisher excerpt, never mirror the complete article.
+  excerpt=feed_excerpt(fields, title, source['id'])
   coins=[symbol for symbol,words in COINS.items() if any(re.search(r'\b'+re.escape(word)+r'\b',title,re.I) for word in words)]
   category='Makro' if source['id']=='fed' else 'Reglering' if source['id']=='sec' else 'ETF' if re.search(r'\bETF',title,re.I) else 'Säkerhet / Hacks' if re.search(r'\b(hack|exploit|breach)',title,re.I) else 'Bitcoin' if coins==['BTC'] else 'Ethereum' if coins==['ETH'] else 'Altcoins' if coins else 'Institutioner'
   if source.get('category') and not coins: category=source['category']
   if not crypto_only(title):continue
   uid=hashlib.sha256(link.encode()).hexdigest()[:20]
-  result.append(dict(id=uid,eventKey=link,originalTitle=title,originalText=title,originalLanguage=source.get('language','en'),title=title,translation='',summary=f"{source['name']} publicerar en nyhet inom {category.lower()}. Läs originalartikeln för fullständiga uppgifter. Rubriken visas på originalspråket.",why='Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.',author=source['name'],publishedAt=published,importedAt=now,category=category,coins=coins,topics=coins or [category],sourceId=source['id'],originalUrl=link,sourceType=source['type'],evidence=[dict(sourceId=source['id'],url=link,originId=link,direct=True,verified=False)],status='unconfirmed',confidence=0,sentiment='Neutral',importance=3,breaking=False,demo=False,analysisMethod='automated'))
+  result.append(dict(readerOriginal=excerpt,id=uid,eventKey=link,originalTitle=title,originalText=title,originalLanguage=source.get('language','en'),title=title,translation='',summary=f"{source['name']} publicerar en nyhet inom {category.lower()}. Läs originalartikeln för fullständiga uppgifter. Rubriken visas på originalspråket.",why='Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.',author=source['name'],publishedAt=published,importedAt=now,category=category,coins=coins,topics=coins or [category],sourceId=source['id'],originalUrl=link,sourceType=source['type'],evidence=[dict(sourceId=source['id'],url=link,originId=link,direct=True,verified=False)],status='unconfirmed',confidence=0,sentiment='Neutral',importance=3,breaking=False,demo=False,analysisMethod='automated'))
  # A valid feed may contain no articles matching the editorial scope.
  return result
 

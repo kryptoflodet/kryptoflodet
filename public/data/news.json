@@ -1,7 +1,50 @@
 {
-  "pendingTranslation": 48,
-  "generatedAt": "2026-10-11T15:16:39.848476Z",
+  "pendingTranslation": 46,
+  "generatedAt": "2026-10-11T15:36:24.687808Z",
   "items": [
+    {
+      "id": "a9b8f373ee194c02b391",
+      "eventKey": "https://cryptonews.com/news/sam-altman-chatgpt-ai-predicts-bitcoin-to-hit/",
+      "originalTitle": "Sam Altman ChatGPT AI Predicts Bitcoin to Hit Insane All-Time High in 2026",
+      "originalText": "Sam Altman ChatGPT AI Predicts Bitcoin to Hit Insane All-Time High in 2026",
+      "originalLanguage": "en",
+      "title": "Sam Altman ChatGPT AI förutspår Bitcoin att Hit Insane rekordnivå år 2026",
+      "translation": "Sam Altman ChatGPT AI förutspår Bitcoin att Hit Insane rekordnivå år 2026",
+      "summary": "Sam Altmans ChatGPT AI förutspår att Bitcoin kan nå en ny rekordnivå i 2026, nästan fördubbling sin oktober 2025 hög på $ 126 000.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Cryptonews",
+      "publishedAt": "2026-10-11T15:30:00Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptonews",
+      "originalUrl": "https://cryptonews.com/news/sam-altman-chatgpt-ai-predicts-bitcoin-to-hit/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptonews",
+          "url": "https://cryptonews.com/news/sam-altman-chatgpt-ai-predicts-bitcoin-to-hit/",
+          "originId": "https://cryptonews.com/news/sam-altman-chatgpt-ai-predicts-bitcoin-to-hit/",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv",
+      "readerText": "Sam Altmans ChatGPT AI förutspår att Bitcoin kan nå en ny rekordnivå i 2026, nästan fördubbling sin oktober 2025 hög på $ 126 000.",
+      "readerKind": "excerpt"
+    },
     {
       "id": "60f9890ac158ec863642",
       "eventKey": "https://cryptoslate.com/secs-tokenized-stock-exemption-leaves-key-price-feed-choices-to-venues/",
@@ -10,11 +53,11 @@
       "originalLanguage": "en",
       "title": "Tokeniserade aktier kan bära samma rättigheter utan samma handelsskydd",
       "translation": "Tokeniserade aktier kan bära samma rättigheter utan samma handelsskydd",
-      "summary": "CryptoSlate publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Douro Labs 'Oktober 9 inlämning söker foderkvalitet vägledning, medan arenan skydd och täckt FINRA-medlem mäklare uppgifter förblir distinkta.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T15:00:49Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -39,7 +82,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Douro Labs 'Oktober 9 inlämning söker foderkvalitet vägledning, medan arenan skydd och täckt FINRA-medlem mäklare uppgifter förblir distinkta.",
+      "readerKind": "excerpt"
     },
     {
       "id": "d1a9749304cf117e6708",
@@ -49,11 +94,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin prisprognos: Kan BTC USD hålla $ 82K före nästa veckas KPI-besked?",
       "translation": "Bitcoin prisprognos: Kan BTC USD hålla $ 82K före nästa veckas KPI-besked?",
-      "summary": "Cryptonews publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin prisprognos noterar en kort återhämtning på lördagen den 10 oktober, men marknaden förblir redo för en veckovis förlust som stigande oljepriser, högre USA.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-11T14:30:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -80,7 +125,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin prisprognos noterar en kort återhämtning på lördagen den 10 oktober, men marknaden förblir redo för en veckovis förlust som stigande oljepriser, högre USA.",
+      "readerKind": "excerpt"
     },
     {
       "id": "b0a8731616ee8a1ca01b",
@@ -90,11 +137,11 @@
       "originalLanguage": "en",
       "title": "XRP ETF:er utökar en 13-veckors följd av nettoinflöden som Bitcoin, Ethereum och Solana fonder kasta $ 1,25 miljarder",
       "translation": "XRP ETF:er utökar en 13-veckors följd av nettoinflöden som Bitcoin, Ethereum och Solana fonder kasta $ 1,25 miljarder",
-      "summary": "CryptoSlate publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "USA-listade XRP ETF:er förlängde sin inflödesstack till 13 veckor som Bitcoin, Ethereum och Solana fonder drabbades nästan $ 1,25 miljarder i kombinerade uttag under veckan slutade oktober 9.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T14:00:41Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -127,7 +174,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "USA-listade XRP ETF:er förlängde sin inflödesstack till 13 veckor som Bitcoin, Ethereum och Solana fonder drabbades nästan $ 1,25 miljarder i kombinerade uttag under veckan slutade oktober 9.",
+      "readerKind": "excerpt"
     },
     {
       "id": "6fecf625b5fa453541e9",
@@ -141,7 +190,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-11T13:49:53Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -182,7 +231,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-11T13:45:31Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -219,11 +268,11 @@
       "originalLanguage": "en",
       "title": "Ny iPhone spionprogram kan jaga för krypto plånböcker och extrahera sina data var 15 sekunder",
       "translation": "Ny iPhone spionprogram kan jaga för krypto plånböcker och extrahera sina data var 15 sekunder",
-      "summary": "CryptoSlate publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "iVerifys P7 DarkSword-rapport beskriver fjärrkommandon för att samla in imToken-relaterade data efter att en iPhone äventyras.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T13:00:14Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -248,7 +297,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "iVerifys P7 DarkSword-rapport beskriver fjärrkommandon för att samla in imToken-relaterade data efter att en iPhone äventyras.",
+      "readerKind": "excerpt"
     },
     {
       "id": "2dd362ce2716e8ecfba0",
@@ -258,11 +309,11 @@
       "originalLanguage": "en",
       "title": "Hur Zcash planerar att dölja dina nycklar från AI och kvantattacker",
       "translation": "Hur Zcash planerar att dölja dina nycklar från AI och kvantattacker",
-      "summary": "Decrypt publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Zakura, en Zcash full nodutvecklare, säger att det förväntar sig hash-baserade signaturer att landa i Zcash i januari och rulla ut ett integritetsverktyg för att rotera transparenta adresser denna vecka.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-11T13:00:03Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -287,7 +338,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Zakura, en Zcash full nodutvecklare, säger att det förväntar sig hash-baserade signaturer att landa i Zcash i januari och rulla ut ett integritetsverktyg för att rotera transparenta adresser denna vecka.",
+      "readerKind": "excerpt"
     },
     {
       "id": "0c2d5629fa7edbc706b3",
@@ -301,7 +354,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-11T13:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -336,11 +389,11 @@
       "originalLanguage": "en",
       "title": "Här är vad som hände i krypto idag",
       "translation": "Här är vad som hände i krypto idag",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Behöver du veta vad som hände i krypto idag? Här är de senaste nyheterna om dagliga trender och händelser som påverkar Bitcoin pris, blockchain, DeFi, Web3 och kryptoreglering.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-11T12:45:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -365,7 +418,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Behöver du veta vad som hände i krypto idag? Här är de senaste nyheterna om dagliga trender och händelser som påverkar Bitcoin pris, blockchain, DeFi, Web3 och kryptoreglering.",
+      "readerKind": "excerpt"
     },
     {
       "id": "54f9d43d6f8080b8e414",
@@ -375,11 +430,11 @@
       "originalLanguage": "en",
       "title": "Vad händer när krypto handlar aktier medan Wall Street sover?",
       "translation": "Vad händer när krypto handlar aktier medan Wall Street sover?",
-      "summary": "CryptoSlate publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Wall Street stänger klockan 4, men tydligen blir det mer av ett förslag än en regel. Du kan nu tillbringa kvällen med att titta på Netflix och göra hävstångsspel på amerikanska halvledarföretag medan utbytet där deras aktiehandel är stängd.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T12:00:20Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -404,7 +459,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Wall Street stänger klockan 4, men tydligen blir det mer av ett förslag än en regel. Du kan nu tillbringa kvällen med att titta på Netflix och göra hävstångsspel på amerikanska halvledarföretag medan utbytet där deras aktiehandel är stängd.",
+      "readerKind": "excerpt"
     },
     {
       "id": "f396e1dc51a2228842ea",
@@ -414,11 +471,11 @@
       "originalLanguage": "en",
       "title": "AI upptäcker XRP Ledger-fel som kan mynta 18 biljoner kryptoenheter och sätta 94 miljarder dollar i riskzonen",
       "translation": "AI upptäcker XRP Ledger-fel som kan mynta 18 biljoner kryptoenheter och sätta 94 miljarder dollar i riskzonen",
-      "summary": "CryptoSlate publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Testning producerade utgiftsbara XRP, men avslöjandet rapporterar inga bevis på offentligt nät exploatering och förklarar varför fixen trädde i kraft omedelbart.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T10:30:30Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -445,7 +502,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Testning producerade utgiftsbara XRP, men avslöjandet rapporterar inga bevis på offentligt nät exploatering och förklarar varför fixen trädde i kraft omedelbart.",
+      "readerKind": "excerpt"
     },
     {
       "id": "1432757448cd526aac6e",
@@ -455,11 +514,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin-företag lär sig att hålla för evigt tar kontanter",
       "translation": "Bitcoin-företag lär sig att hålla för evigt tar kontanter",
-      "summary": "CryptoSlate publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Metaplanet sålde 10 000 BTC och köpte tillbaka 11 000 till ett högre genomsnittligt pris för att visa att det var villigt att sälja sin Bitcoin. Det japanska statskassan företaget förföljde kreditbetyg och bättre tillgång till finansiering, och dess 5 oktober avslöjande förklarade varför vända mynt i kontanter var en del av den ansträngningen.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T07:00:24Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -486,7 +545,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Metaplanet sålde 10 000 BTC och köpte tillbaka 11 000 till ett högre genomsnittligt pris för att visa att det var villigt att sälja sin Bitcoin. Det japanska statskassan företaget förföljde kreditbetyg och bättre tillgång till finansiering, och dess 5 oktober avslöjande förklarade varför vända mynt i kontanter var en del av den ansträngningen.",
+      "readerKind": "excerpt"
     },
     {
       "id": "119bd48a436e94a53ca5",
@@ -500,7 +561,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-11T06:50:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -539,7 +600,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-11T05:40:55Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -576,11 +637,11 @@
       "originalLanguage": "en",
       "title": "Nyare AI-modeller missade mer betalningsbedrägeri i Coinbases riktmärke",
       "translation": "Nyare AI-modeller missade mer betalningsbedrägeri i Coinbases riktmärke",
-      "summary": "CryptoSlate publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En fast historisk replay fann svagare bedrägeribevakning över tre modelluppgraderingar, medan GPTs precision förbättrades.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-10T18:00:18Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -605,7 +666,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En fast historisk replay fann svagare bedrägeribevakning över tre modelluppgraderingar, medan GPTs precision förbättrades.",
+      "readerKind": "excerpt"
     },
     {
       "id": "3b060ad5fb63678a2950",
@@ -615,11 +678,11 @@
       "originalLanguage": "en",
       "title": "Att vara rätt om Bitcoin kommer inte att spara din 3x hävstångseffekt ETF-position",
       "translation": "Att vara rätt om Bitcoin kommer inte att spara din 3x hävstångseffekt ETF-position",
-      "summary": "CryptoSlate publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin nästa återhämtning kan rättfärdiga din investeringsavhandling men lämna din hävstångsfond djupt i rött, eftersom fondens dagliga återställning kan göra väntar en ganska dyr vana.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-10T17:00:12Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "BTC"
@@ -646,7 +709,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin nästa återhämtning kan rättfärdiga din investeringsavhandling men lämna din hävstångsfond djupt i rött, eftersom fondens dagliga återställning kan göra väntar en ganska dyr vana.",
+      "readerKind": "excerpt"
     },
     {
       "id": "1f3bf76588843832f786",
@@ -656,11 +721,11 @@
       "originalLanguage": "en",
       "title": "Sam Altman-Backed Life Insurer körs helt på Bitcoin, och bara ökade $ 37,5 miljoner",
       "translation": "Sam Altman-Backed Life Insurer körs helt på Bitcoin, och bara ökade $ 37,5 miljoner",
-      "summary": "Decrypt publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Den Bermuda-baserade försäkringsgivaren, som löper helt på Bitcoin, drog finansieringen från befintliga backers ledda av Bain Capital Crypto efter ett rekordår som drivs av efterfrågan från rika familjer i Asien, Europa och Mellanöstern.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-10T16:01:04Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -687,7 +752,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Den Bermuda-baserade försäkringsgivaren, som löper helt på Bitcoin, drog finansieringen från befintliga backers ledda av Bain Capital Crypto efter ett rekordår som drivs av efterfrågan från rika familjer i Asien, Europa och Mellanöstern.",
+      "readerKind": "excerpt"
     },
     {
       "id": "60ee332549a56241e7c3",
@@ -697,11 +764,11 @@
       "originalLanguage": "en",
       "title": "Ether ETF:er sträcker utflödesstammen till nio dagar som Solana fonder snap record 14-veckors inflow run",
       "translation": "Ether ETF:er sträcker utflödesstammen till nio dagar som Solana fonder snap record 14-veckors inflow run",
-      "summary": "The Block publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Spot bitcoin, solana och eter ETF:er alla inloggade veckovisa utflöden efter förra veckans handel, ett anmärkningsvärt skifte för några av medlen.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-10T15:10:37Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "ETH",
@@ -730,7 +797,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Spot bitcoin, solana och eter ETF:er alla inloggade veckovisa utflöden efter förra veckans handel, ett anmärkningsvärt skifte för några av medlen.",
+      "readerKind": "excerpt"
     },
     {
       "id": "1636f411b7bbc87e33e6",
@@ -740,11 +809,11 @@
       "originalLanguage": "en",
       "title": "Franska kommittén Backs stabil kryptovaluta Swap Tax och Crypto Exit Tax, sedan avvisar budgeten",
       "translation": "Franska kommittén Backs stabil kryptovaluta Swap Tax och Crypto Exit Tax, sedan avvisar budgeten",
-      "summary": "Decrypt publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En nationell församlingskommitté antog ändringar som beskattar stabil kryptovaluta swaps och krypto utgångar av rika innehavare, sedan avvisade 2027 budgetens intäkter sektion.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-10T13:01:03Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -769,7 +838,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En nationell församlingskommitté antog ändringar som beskattar stabil kryptovaluta swaps och krypto utgångar av rika innehavare, sedan avvisade 2027 budgetens intäkter sektion.",
+      "readerKind": "excerpt"
     },
     {
       "id": "0b7fc67feaca8525f343",
@@ -783,7 +854,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T12:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -822,11 +893,11 @@
       "originalLanguage": "en",
       "title": "Justin Sun säger att Trons kryptografi efter kvantum har gått live på testnet",
       "translation": "Justin Sun säger att Trons kryptografi efter kvantum har gått live på testnet",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "\"Vi är redo att få kvantmotstånd mot mainnet när som helst\", säger Sun i ett inlägg på X.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-10T11:52:14Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -851,7 +922,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "\"Vi är redo att få kvantmotstånd mot mainnet när som helst\", säger Sun i ett inlägg på X.",
+      "readerKind": "excerpt"
     },
     {
       "id": "d2c28431259b62d1f5c4",
@@ -865,7 +938,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T11:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -906,7 +979,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-10T09:34:59Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -943,11 +1016,11 @@
       "originalLanguage": "en",
       "title": "Sam Altman-stödda Bitcoin livförsäkringsgivare, samtidigt, höjer fler medel",
       "translation": "Sam Altman-stödda Bitcoin livförsäkringsgivare, samtidigt, höjer fler medel",
-      "summary": "Cointelegraph publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Rundan följer ökad internationell efterfrågan på Means Bitcoin livförsäkringar mitt i bredare makroinstabilitet.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-10T07:10:43Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -974,7 +1047,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Rundan följer ökad internationell efterfrågan på Means Bitcoin livförsäkringar mitt i bredare makroinstabilitet.",
+      "readerKind": "excerpt"
     },
     {
       "id": "44a79edc0af59e94daaa",
@@ -988,7 +1063,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T05:43:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1029,7 +1104,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-10T05:10:30Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1068,7 +1143,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T04:20:07Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -1109,7 +1184,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T03:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1148,7 +1223,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-10T01:00:34Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1185,11 +1260,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin Life Insurer ökar 37,5 miljoner dollar som rika familjer ser ut att passera på sin BTC",
       "translation": "Bitcoin Life Insurer ökar 37,5 miljoner dollar som rika familjer ser ut att passera på sin BTC",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine Bitcoin Life Insurer ökar 37,5 miljoner dollar som rika familjer ser ut att passera på sin BTC Bermuda-reglerade start, vars backers inkluderar Bain Capital Crypto och Sam Altman, har nu höjt mer än 180 miljoner dollar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-10T00:53:09Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1216,7 +1291,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine Bitcoin Life Insurer ökar 37,5 miljoner dollar som rika familjer ser ut att passera på sin BTC Bermuda-reglerade start, vars backers inkluderar Bain Capital Crypto och Sam Altman, har nu höjt mer än 180 miljoner dollar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "2e4896d3996f3e2b7782",
@@ -1230,7 +1307,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-09T21:00:17Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1267,11 +1344,11 @@
       "originalLanguage": "en",
       "title": "USA planerar att ta $ 1B i krypto kopplat till Iran denna vecka: Scott Bessent",
       "translation": "USA planerar att ta $ 1B i krypto kopplat till Iran denna vecka: Scott Bessent",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Statskontoret har meddelat flera digitala anfall av tillgångar relaterade till sanktioner mot Iran som en del av amerikanska sanktioner.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T20:39:17Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1296,7 +1373,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Statskontoret har meddelat flera digitala anfall av tillgångar relaterade till sanktioner mot Iran som en del av amerikanska sanktioner.",
+      "readerKind": "excerpt"
     },
     {
       "id": "5226809eb373cf3cc728",
@@ -1306,11 +1385,11 @@
       "originalLanguage": "en",
       "title": "\"Vi vet var det är\": statssekreterare hotar att frysa $ 1B av Irans krypto",
       "translation": "\"Vi vet var det är\": statssekreterare hotar att frysa $ 1B av Irans krypto",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine \"Vi vet var det är\": statssekreterare hotar att frysa $ 1B av Irans krypto USA kommer att gripa $ 1 miljard av Irans krypto denna vecka, USA: s finansminister Scott Bessent har sagt. Det är inte klart vilken tillgång men.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T20:10:14Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1335,7 +1414,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine \"Vi vet var det är\": statssekreterare hotar att frysa $ 1B av Irans krypto USA kommer att gripa $ 1 miljard av Irans krypto denna vecka, USA: s finansminister Scott Bessent har sagt. Det är inte klart vilken tillgång men.",
+      "readerKind": "excerpt"
     },
     {
       "id": "866d25a8e5a4b3799ddc",
@@ -1345,11 +1426,11 @@
       "originalLanguage": "en",
       "title": "Här är hur man inte skruva upp din Bitcoin Sekretess",
       "translation": "Här är hur man inte skruva upp din Bitcoin Sekretess",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine Här är hur man inte skruva upp din Bitcoin Privacy Speaking på Bitcoin Rails podcast, Cake Wallet Seth för integritet sa att folk måste vidta fler försiktighetsåtgärder för att skydda sina identiteter när de använder den största kryptovalutan.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T20:02:39Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1376,7 +1457,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine Här är hur man inte skruva upp din Bitcoin Privacy Speaking på Bitcoin Rails podcast, Cake Wallet Seth för integritet sa att folk måste vidta fler försiktighetsåtgärder för att skydda sina identiteter när de använder den största kryptovalutan.",
+      "readerKind": "excerpt"
     },
     {
       "id": "64cce5d2a71e052671d9",
@@ -1386,11 +1469,11 @@
       "originalLanguage": "en",
       "title": "THORChain exec anklagar Tether för att tillfälligt frysa USDT-valv",
       "translation": "THORChain exec anklagar Tether för att tillfälligt frysa USDT-valv",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Tchad Barraford, teknisk medgrundare av nätverket, sade att fonderna var frusna och sedan frysta utan förklaring.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T19:04:03Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1415,7 +1498,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Tchad Barraford, teknisk medgrundare av nätverket, sade att fonderna var frusna och sedan frysta utan förklaring.",
+      "readerKind": "excerpt"
     },
     {
       "id": "c9b16c7f39bf7aeb8568",
@@ -1425,11 +1510,11 @@
       "originalLanguage": "en",
       "title": "Blockchain.com söker godkännande för amerikanska prediktionsmarknader och kryptoderivat",
       "translation": "Blockchain.com söker godkännande för amerikanska prediktionsmarknader och kryptoderivat",
-      "summary": "Decrypt publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Kryptoplattformen lämnade in för utsedda kontraktsmarknader och terminskommissionens handelslicenser, vilket skulle låta den köra sin egen reglerade evenemangskontraktsplats istället för att förlita sig på utomeuropeiska partners.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T18:06:03Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1454,7 +1539,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Kryptoplattformen lämnade in för utsedda kontraktsmarknader och terminskommissionens handelslicenser, vilket skulle låta den köra sin egen reglerade evenemangskontraktsplats istället för att förlita sig på utomeuropeiska partners.",
+      "readerKind": "excerpt"
     },
     {
       "id": "b98f2ffba711095dcfbc",
@@ -1464,11 +1551,11 @@
       "originalLanguage": "en",
       "title": "XRP-priset kan ge upp för en kursuppgång till $ 1,70",
       "translation": "XRP-priset kan ge upp för en kursuppgång till $ 1,70",
-      "summary": "Cryptonews publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "XRP prisanalys väger $ 1,38 stöd mot $ 1,50-$ 1,53 återvinningszon, medan RSI, MACD och OBV håller utsikterna neutrala för nu.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T17:56:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -1495,7 +1582,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "XRP prisanalys väger $ 1,38 stöd mot $ 1,50-$ 1,53 återvinningszon, medan RSI, MACD och OBV håller utsikterna neutrala för nu.",
+      "readerKind": "excerpt"
     },
     {
       "id": "08c366cc6b259055137a",
@@ -1505,11 +1594,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin rebounds efter grov vecka, men handlare prissätter mer nackdel",
       "translation": "Bitcoin rebounds efter grov vecka, men handlare prissätter mer nackdel",
-      "summary": "Decrypt publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin studsade efter doppning till cirka 80 000 dollar. Handlare lägger allt högre odds BTC glider längre innan oktober är över.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T17:36:26Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1536,7 +1625,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin studsade efter doppning till cirka 80 000 dollar. Handlare lägger allt högre odds BTC glider längre innan oktober är över.",
+      "readerKind": "excerpt"
     },
     {
       "id": "ec74bda3f4e67ba1bb5c",
@@ -1546,11 +1637,11 @@
       "originalLanguage": "en",
       "title": "HSBC, Ant Digital test AI-agent betalningar med hjälp av tokeniserad insättningar",
       "translation": "HSBC, Ant Digital test AI-agent betalningar med hjälp av tokeniserad insättningar",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Den tekniska rättegången visade hur AI-agenter kunde upptäcka tjänster och göra mikrobetalningar med hjälp av HSBC: s tokeniserade insättningar, med realtidsavveckling och riskkontroller.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T17:21:07Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1575,7 +1666,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Den tekniska rättegången visade hur AI-agenter kunde upptäcka tjänster och göra mikrobetalningar med hjälp av HSBC: s tokeniserade insättningar, med realtidsavveckling och riskkontroller.",
+      "readerKind": "excerpt"
     },
     {
       "id": "893ea1b94d25b36c3649",
@@ -1585,11 +1678,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin ETF:er kasta $ 729M på två dagar som investerare omvänd kurs",
       "translation": "Bitcoin ETF:er kasta $ 729M på två dagar som investerare omvänd kurs",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine Bitcoin ETF:er Shed $ 729M på två dagar som investerare omvänd kursinvesterare har snabbt betalat ut av bitcoin-utbyteshandlade medel denna vecka. Det visar i priset. Detta inlägg Bitcoin ETF:er Shed $ 729M på två dagar som Investors Reverse Course först dök upp på Bitcoin Magazine och skrivs av Mathew Di Salvo.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T17:11:16Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "BTC"
@@ -1616,7 +1709,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine Bitcoin ETF:er Shed $ 729M på två dagar som investerare omvänd kursinvesterare har snabbt betalat ut av bitcoin-utbyteshandlade medel denna vecka. Det visar i priset. Detta inlägg Bitcoin ETF:er Shed $ 729M på två dagar som Investors Reverse Course först dök upp på Bitcoin Magazine och skrivs av Mathew Di Salvo.",
+      "readerKind": "excerpt"
     },
     {
       "id": "87a3b6ecd2c710504f19",
@@ -1630,7 +1725,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-09T17:00:02Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1667,11 +1762,11 @@
       "originalLanguage": "en",
       "title": "Ethereum L2 Starknet hoppar 20% efter att ha sagt att det vill bli en L1",
       "translation": "Ethereum L2 Starknet hoppar 20% efter att ha sagt att det vill bli en L1",
-      "summary": "Decrypt publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Starknet är \"aktivt överväger\" att bli en egen blockchain, ett drag som den säger skulle göra det till det första helt kvantbeständiga nätverket år 2027.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T16:36:03Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -1698,7 +1793,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Starknet är \"aktivt överväger\" att bli en egen blockchain, ett drag som den säger skulle göra det till det första helt kvantbeständiga nätverket år 2027.",
+      "readerKind": "excerpt"
     },
     {
       "id": "94b5cad10ed823a353da",
@@ -1708,11 +1805,11 @@
       "originalLanguage": "en",
       "title": "Blockchain.com bedriver CFTC-godkännande för förutsägelsemarknader: CNBC",
       "translation": "Blockchain.com bedriver CFTC-godkännande för förutsägelsemarknader: CNBC",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Kryptoföretaget har enligt uppgift ansökt om två licenser med den amerikanska råvaruregleringen när domstolarna väger förutsägelsemarknadsfall.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T16:22:45Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1737,7 +1834,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Kryptoföretaget har enligt uppgift ansökt om två licenser med den amerikanska råvaruregleringen när domstolarna väger förutsägelsemarknadsfall.",
+      "readerKind": "excerpt"
     },
     {
       "id": "63029bac2883e82cc783",
@@ -1747,11 +1846,11 @@
       "originalLanguage": "en",
       "title": "Blockchain.com söker CFTC Greenlight för amerikanska förutsägelsemarknader, kryptoderivathandel: CNBC",
       "translation": "Blockchain.com söker CFTC Greenlight för amerikanska förutsägelsemarknader, kryptoderivathandel: CNBC",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Blockchain.com har ansökt om DCM- och FCM-licenser att erbjuda före en planerad $ 500 miljoner IPO.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T16:05:22Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1776,7 +1875,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Blockchain.com har ansökt om DCM- och FCM-licenser att erbjuda före en planerad $ 500 miljoner IPO.",
+      "readerKind": "excerpt"
     },
     {
       "id": "709b1774ee172f71af59",
@@ -1786,11 +1887,11 @@
       "originalLanguage": "en",
       "title": "Crypto Biz: Rika investerare köper krypto, men deras rådgivare säljs inte",
       "translation": "Crypto Biz: Rika investerare köper krypto, men deras rådgivare säljs inte",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Rika investerare omfamnar krypto snabbare än sina rådgivare, medan OKX lockar ny finansiering och strategi skift mer kapital mot föredragna lager återköp.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T15:51:53Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1815,7 +1916,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Rika investerare omfamnar krypto snabbare än sina rådgivare, medan OKX lockar ny finansiering och strategi skift mer kapital mot föredragna lager återköp.",
+      "readerKind": "excerpt"
     },
     {
       "id": "a7a6b5acaeb192797f42",
@@ -1825,11 +1928,11 @@
       "originalLanguage": "en",
       "title": "Ledger Probes Potentiell stöld på 87 miljoner dollar i användarfonder knutna till Crypto Wallet Reseller",
       "translation": "Ledger Probes Potentiell stöld på 87 miljoner dollar i användarfonder knutna till Crypto Wallet Reseller",
-      "summary": "Decrypt publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Ledger bad återförsäljaren CryptoBilis att pausa försäljningen och uppmanade nya köpare att inte ställa in sina enheter, som en onchain-utredare spårade mer än 86 miljoner dollar i misstänkta stölder.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T15:30:36Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1854,7 +1957,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Ledger bad återförsäljaren CryptoBilis att pausa försäljningen och uppmanade nya köpare att inte ställa in sina enheter, som en onchain-utredare spårade mer än 86 miljoner dollar i misstänkta stölder.",
+      "readerKind": "excerpt"
     },
     {
       "id": "f45d13b074bf8ab4e959",
@@ -1864,11 +1969,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin konsoliderar nära $ 82.5K som crypto väder Ledger stöldrapporter",
       "translation": "Bitcoin konsoliderar nära $ 82.5K som crypto väder Ledger stöldrapporter",
-      "summary": "Cointelegraph publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin och kryptomarknader såg en återhämtning från torsdagens droppe trots oro för en annan hårdvaruplånboksexploatering.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T15:20:36Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1895,7 +2000,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin och kryptomarknader såg en återhämtning från torsdagens droppe trots oro för en annan hårdvaruplånboksexploatering.",
+      "readerKind": "excerpt"
     },
     {
       "id": "bae71be08057f49800a8",
@@ -1909,7 +2016,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T14:55:23Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1948,7 +2055,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T14:47:27Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1987,7 +2094,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T14:41:46Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2024,11 +2131,11 @@
       "originalLanguage": "en",
       "title": "USA riktar sig till $ 1 miljard Iran-länkade kryptobeslag, säger Bessent \"vi vet var det är\".",
       "translation": "USA riktar sig till $ 1 miljard Iran-länkade kryptobeslag, säger Bessent \"vi vet var det är\".",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bessents senaste kryptobeslagsplan följer månader av sanktioner och fryser inriktade på iranska tillgångar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T14:41:09Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2053,7 +2160,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bessents senaste kryptobeslagsplan följer månader av sanktioner och fryser inriktade på iranska tillgångar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "b6e4a206e2ae6e8f3b44",
@@ -2063,11 +2172,11 @@
       "originalLanguage": "en",
       "title": "Dragonfly partner avvisar \"bunker mode\" doomerism, kräver proaktiva blockchain åtgärder",
       "translation": "Dragonfly partner avvisar \"bunker mode\" doomerism, kräver proaktiva blockchain åtgärder",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Dragonflys Qureshi hävdade att tillgångsmigrering inte är en verklig lösning vid AI-modeller som bryter kryptografiska signaturer och uppmanar blockchains att vidta proaktiva åtgärder.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T13:49:22Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2092,7 +2201,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Dragonflys Qureshi hävdade att tillgångsmigrering inte är en verklig lösning vid AI-modeller som bryter kryptografiska signaturer och uppmanar blockchains att vidta proaktiva åtgärder.",
+      "readerKind": "excerpt"
     },
     {
       "id": "9c10e9b07a62d8757885",
@@ -2102,11 +2213,11 @@
       "originalLanguage": "en",
       "title": "XRP Prisförutsägelse: 3 Stora erbjudanden misslyckas med att lyfta XRP som priskampanjer",
       "translation": "XRP Prisförutsägelse: 3 Stora erbjudanden misslyckas med att lyfta XRP som priskampanjer",
-      "summary": "Cryptonews publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "XRP handlar nära $ 1.406 efter en kraftig nedgång när handlare tittar på $ 1,40 stöd, $ 1,50 motstånd, XRPL uppgraderingar och Ripples väntande utlåningsändring ändring.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T13:41:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -2133,7 +2244,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "XRP handlar nära $ 1.406 efter en kraftig nedgång när handlare tittar på $ 1,40 stöd, $ 1,50 motstånd, XRPL uppgraderingar och Ripples väntande utlåningsändring ändring.",
+      "readerKind": "excerpt"
     },
     {
       "id": "13d62028ee3e080222b3",
@@ -2143,11 +2256,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin Core-utvecklare svarar på AI & Quantum Risk",
       "translation": "Bitcoin Core-utvecklare svarar på AI & Quantum Risk",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine Bitcoin Core-utvecklare svarar på AI & Quantum Risk är AI-adress säkerhetsrädsla-mongering? Chaincode Labs Antoine Poinsot svar Justin Drakes virala inlägg, bryta ner kvantrisk och förberedelse. Detta inlägg Bitcoin Core utvecklare svarar på AI & Quantum Risk först dök upp på Bitcoin Magazine och skrivs av Patrick Green.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T13:38:38Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2174,7 +2287,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine Bitcoin Core-utvecklare svarar på AI & Quantum Risk är AI-adress säkerhetsrädsla-mongering? Chaincode Labs Antoine Poinsot svar Justin Drakes virala inlägg, bryta ner kvantrisk och förberedelse. Detta inlägg Bitcoin Core utvecklare svarar på AI & Quantum Risk först dök upp på Bitcoin Magazine och skrivs av Patrick Green.",
+      "readerKind": "excerpt"
     },
     {
       "id": "1b9bd5cc588eb1043a2c",
@@ -2184,11 +2299,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin blöder i Uptober - Hur lågt kan det gå? Experter väger in",
       "translation": "Bitcoin blöder i Uptober - Hur lågt kan det gå? Experter väger in",
-      "summary": "Decrypt publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Experter belyser flera stödnivåer, från $ 83.000 ner till $ 72.000, som Bitcoin kan behöva testa i en björnstart till Uptober.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T13:20:12Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2215,7 +2330,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Experter belyser flera stödnivåer, från $ 83.000 ner till $ 72.000, som Bitcoin kan behöva testa i en björnstart till Uptober.",
+      "readerKind": "excerpt"
     },
     {
       "id": "042bc9c4e9b3004267a3",
@@ -2225,11 +2342,11 @@
       "originalLanguage": "en",
       "title": "Base skapare Jesse Pollak säger aktier och icke-dollar stabila kryptovalutor kommer att leda kommande \"tokenisering supercycle\"",
       "translation": "Base skapare Jesse Pollak säger aktier och icke-dollar stabila kryptovalutor kommer att leda kommande \"tokenisering supercycle\"",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Coinbase lanserade tokeniserade aktier på Base för sex veckor sedan, med cirka 70 miljoner dollar till 100 miljoner dollar i daglig volym, enligt Pollak.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T13:12:57Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2254,7 +2371,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Coinbase lanserade tokeniserade aktier på Base för sex veckor sedan, med cirka 70 miljoner dollar till 100 miljoner dollar i daglig volym, enligt Pollak.",
+      "readerKind": "excerpt"
     },
     {
       "id": "3586ff862b8641d6a270",
@@ -2268,7 +2387,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T11:39:05Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2307,7 +2426,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T11:09:04Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2344,11 +2463,11 @@
       "originalLanguage": "en",
       "title": "Esma söker bevis tokeniserad säkerhet kan utbetalas i kris",
       "translation": "Esma söker bevis tokeniserad säkerhet kan utbetalas i kris",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Esma söker branschåterkoppling om de rättsliga, likviditets- och operativa riskerna med tokeniserad säkerhet innan man beslutar om ytterligare EU-regleringsåtgärder är nödvändiga.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:49:24Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2373,7 +2492,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Esma söker branschåterkoppling om de rättsliga, likviditets- och operativa riskerna med tokeniserad säkerhet innan man beslutar om ytterligare EU-regleringsåtgärder är nödvändiga.",
+      "readerKind": "excerpt"
     },
     {
       "id": "9169a3657525593f3102",
@@ -2387,7 +2508,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:44:22Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2424,11 +2545,11 @@
       "originalLanguage": "en",
       "title": "Thailand SEC utfärdar bitcoin och eter ETF regler som ska träda i kraft den 16 oktober",
       "translation": "Thailand SEC utfärdar bitcoin och eter ETF regler som ska träda i kraft den 16 oktober",
-      "summary": "The Block publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Thailands SEC har begränsade inledande krypto-ETF: er till bitcoin och eter, med ny vårdnad, exponering och handelsregler som träder i kraft den 16 oktober.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T10:40:59Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -2457,7 +2578,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Thailands SEC har begränsade inledande krypto-ETF: er till bitcoin och eter, med ny vårdnad, exponering och handelsregler som träder i kraft den 16 oktober.",
+      "readerKind": "excerpt"
     },
     {
       "id": "10543d7729698e4fa7d7",
@@ -2467,11 +2590,11 @@
       "originalLanguage": "en",
       "title": "Brittiska sanktioner tre kryptobörser knutna till ryska olagliga medel",
       "translation": "Brittiska sanktioner tre kryptobörser knutna till ryska olagliga medel",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Storbritannien sanktionerade kryptoutbyten och betalningsprocessorer, varav några var knutna till tusentals ryska enheter och den sanktionerade HTX-utbytet.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:34:37Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2496,7 +2619,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Storbritannien sanktionerade kryptoutbyten och betalningsprocessorer, varav några var knutna till tusentals ryska enheter och den sanktionerade HTX-utbytet.",
+      "readerKind": "excerpt"
     },
     {
       "id": "55525cc75205aa851735",
@@ -2506,11 +2631,11 @@
       "originalLanguage": "en",
       "title": "Sam Altman-stödd bitcoin livförsäkringsgivare Under tiden höjer $ 37,5 miljoner runda ledd av Bain Capital Crypto",
       "translation": "Sam Altman-stödd bitcoin livförsäkringsgivare Under tiden höjer $ 37,5 miljoner runda ledd av Bain Capital Crypto",
-      "summary": "The Block publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Under tiden ökade 37,5 miljoner dollar från befintliga investerare, vilket gav Sam Altman-stödda bitcoin livförsäkringsgivarens totala finansiering över 180 miljoner dollar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T10:33:46Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2537,7 +2662,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Under tiden ökade 37,5 miljoner dollar från befintliga investerare, vilket gav Sam Altman-stödda bitcoin livförsäkringsgivarens totala finansiering över 180 miljoner dollar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "d9930b84659151465edc",
@@ -2551,7 +2678,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:16:55Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -2590,11 +2717,11 @@
       "originalLanguage": "en",
       "title": "Franska lagstiftare tillbaka stabil kryptovaluta swap skatt i 2027 budgeträkning",
       "translation": "Franska lagstiftare tillbaka stabil kryptovaluta swap skatt i 2027 budgeträkning",
-      "summary": "Cointelegraph publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Frankrikes finanskommitté stödde skatter på stabil kryptovaluta swaps, liksom orealiserade kryptovinster när hushåll med mer än 800 000 euro flyttar utomlands.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:16:48Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2619,7 +2746,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Frankrikes finanskommitté stödde skatter på stabil kryptovaluta swaps, liksom orealiserade kryptovinster när hushåll med mer än 800 000 euro flyttar utomlands.",
+      "readerKind": "excerpt"
     },
     {
       "id": "08d7338e9434caa621e6",
@@ -2633,7 +2762,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:14:59Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2672,7 +2801,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T09:32:35Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2713,7 +2842,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T09:23:57Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2754,7 +2883,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T09:20:16Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2791,11 +2920,11 @@
       "originalLanguage": "en",
       "title": "XRP News: Ripple utmanar Wall Street för en skiva på $ 256B ETF Market",
       "translation": "XRP News: Ripple utmanar Wall Street för en skiva på $ 256B ETF Market",
-      "summary": "Cryptonews publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Ripple Prime går in i hävstångs-ETF-finansiering eftersom totalreturswappar medför avgifter och motpartsrisker till en $ 256 miljarder US-marknad på 593 fonder.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T09:11:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "XRP"
@@ -2822,7 +2951,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Ripple Prime går in i hävstångs-ETF-finansiering eftersom totalreturswappar medför avgifter och motpartsrisker till en $ 256 miljarder US-marknad på 593 fonder.",
+      "readerKind": "excerpt"
     },
     {
       "id": "fbec9d9adad5147d7421",
@@ -2836,7 +2967,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T09:08:09Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2873,11 +3004,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin Price återkräver 81 000 dollar som vätskor topp 1 miljarder dollar",
       "translation": "Bitcoin Price återkräver 81 000 dollar som vätskor topp 1 miljarder dollar",
-      "summary": "Cryptonews publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin prisanalys väger $ 80.000 stöd efter ett kort dopp under $ 82.000, med ETF utflöden och $ 1 miljard i likvidationer.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T09:07:52Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2904,7 +3035,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin prisanalys väger $ 80.000 stöd efter ett kort dopp under $ 82.000, med ETF utflöden och $ 1 miljard i likvidationer.",
+      "readerKind": "excerpt"
     },
     {
       "id": "b7de68b1fe0984a803d1",
@@ -2914,11 +3047,11 @@
       "originalLanguage": "en",
       "title": "Ethereum prisprognos: Är Tom Lees $ 25K ETH-mål för ambitiöst?",
       "translation": "Ethereum prisprognos: Är Tom Lees $ 25K ETH-mål för ambitiöst?",
-      "summary": "Cryptonews publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "ETH handlar nära $ 2.499 som handlare bedömer stöd, BitMines 5% leverans cap, makrotryck och Tom Lees $ 10 000 Ethereum mål.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T08:12:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -2945,7 +3078,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "ETH handlar nära $ 2.499 som handlare bedömer stöd, BitMines 5% leverans cap, makrotryck och Tom Lees $ 10 000 Ethereum mål.",
+      "readerKind": "excerpt"
     },
     {
       "id": "d21aeb4ab423bc1a9393",
@@ -2955,11 +3090,11 @@
       "originalLanguage": "en",
       "title": "Grekland Crypto Skatteförslag skulle undanta första € 500 i årliga vinster",
       "translation": "Grekland Crypto Skatteförslag skulle undanta första € 500 i årliga vinster",
-      "summary": "Cryptonews publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Greklands crypto skatteplaner pekar på en 10% kapitalvinstränta och 500 euro undantag, men samråd kan fortfarande ändra utkastet till parlamentet.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T07:04:02Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2984,7 +3119,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Greklands crypto skatteplaner pekar på en 10% kapitalvinstränta och 500 euro undantag, men samråd kan fortfarande ändra utkastet till parlamentet.",
+      "readerKind": "excerpt"
     },
     {
       "id": "fd2ca976edd531e41618",
@@ -2994,11 +3131,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin prisprognos: Är den amerikanska regeringen bakom Crypto Crash?",
       "translation": "Bitcoin prisprognos: Är den amerikanska regeringen bakom Crypto Crash?",
-      "summary": "Cryptonews publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin handlar nära $ 82.422 som statligt länkade överför bränslespekulationer. Nyckelstöd, likvidationstryck och bevisen bakom kraschen undersöktes.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T05:45:02Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3025,7 +3162,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin handlar nära $ 82.422 som statligt länkade överför bränslespekulationer. Nyckelstöd, likvidationstryck och bevisen bakom kraschen undersöktes.",
+      "readerKind": "excerpt"
     },
     {
       "id": "455acec9391f2a3e0a25",
@@ -3035,11 +3174,11 @@
       "originalLanguage": "en",
       "title": "Claude AI förutspår Bitcoin kunde Hit $ 250K av 2027",
       "translation": "Claude AI förutspår Bitcoin kunde Hit $ 250K av 2027",
-      "summary": "Cryptonews publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Anthropics Claude AI förutspår att om USA tillkännagav en strategisk Bitcoin-reserv och börjar köpa BTC på den öppna marknaden, kan det spika till $ 250.000 i januari 1, 2027. Bitcoin är för närvarande cirka $ 82.000-$ 83.000, ungefär -34% under dess ~ 126.000 rekordnivå.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T22:49:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3066,7 +3205,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Anthropics Claude AI förutspår att om USA tillkännagav en strategisk Bitcoin-reserv och börjar köpa BTC på den öppna marknaden, kan det spika till $ 250.000 i januari 1, 2027. Bitcoin är för närvarande cirka $ 82.000-$ 83.000, ungefär -34% under dess ~ 126.000 rekordnivå.",
+      "readerKind": "excerpt"
     },
     {
       "id": "7bac3793adf8de89a115",
@@ -3076,11 +3217,11 @@
       "originalLanguage": "en",
       "title": "AI-kodningsagenter kör överspänning i Bitcoin Integration Förfrågningar: Breez",
       "translation": "AI-kodningsagenter kör överspänning i Bitcoin Integration Förfrågningar: Breez",
-      "summary": "Bitcoin Magazine publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin Magazine AI Coding Agents Drive Surge i Bitcoin Integration Requests: Breez Bitcoin-programvaruföretaget Breez sa att efterfrågan på sina utvecklarverktyg har ökat sedan AI-kodningsagenter gick mainstream, med partnerskapsförfrågningar som stiger ungefär 14 gånger som utvecklare och alltmer de agenter de distribuerar, ser ut att lägga till bitcoinbetalningar till sina appar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-08T19:17:12Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3107,7 +3248,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin Magazine AI Coding Agents Drive Surge i Bitcoin Integration Requests: Breez Bitcoin-programvaruföretaget Breez sa att efterfrågan på sina utvecklarverktyg har ökat sedan AI-kodningsagenter gick mainstream, med partnerskapsförfrågningar som stiger ungefär 14 gånger som utvecklare och alltmer de agenter de distribuerar, ser ut att lägga till bitcoinbetalningar till sina appar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "5c6a6d35ec9ce1e7168d",
@@ -3117,11 +3260,11 @@
       "originalLanguage": "en",
       "title": "JPMorgan uppskattar 50 miljarder dollar har flugit in i krypto i år, eftersom momentum förbättras till Q4",
       "translation": "JPMorgan uppskattar 50 miljarder dollar har flugit in i krypto i år, eftersom momentum förbättras till Q4",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "JPMorgan-analytiker uppskattar att cirka 50 miljarder dollar har flugit till digitala tillgångar i år, vilket motsvarar en årlig takt på 66 miljarder dollar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T18:46:59Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3146,7 +3289,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "JPMorgan-analytiker uppskattar att cirka 50 miljarder dollar har flugit till digitala tillgångar i år, vilket motsvarar en årlig takt på 66 miljarder dollar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "54eba9e01f1c634d0029",
@@ -3156,11 +3301,11 @@
       "originalLanguage": "en",
       "title": "XRP Pris, Utflöden och Bitcoin Shorts Skicka Mixed Signaler",
       "translation": "XRP Pris, Utflöden och Bitcoin Shorts Skicka Mixed Signaler",
-      "summary": "Cryptonews publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "XRP valar körde 77% av rapporterade utbyte utflöden, medan fyra Hyperliquid plånböcker öppnade $ 12,5M Bitcoin shorts innan BTC föll under $ 84.000.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T18:21:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -3189,7 +3334,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "XRP valar körde 77% av rapporterade utbyte utflöden, medan fyra Hyperliquid plånböcker öppnade $ 12,5M Bitcoin shorts innan BTC föll under $ 84.000.",
+      "readerKind": "excerpt"
     },
     {
       "id": "020cbadaef30028a5e44",
@@ -3199,11 +3346,11 @@
       "originalLanguage": "en",
       "title": "Strategi aktieägare står inför utspädningsdrag trots ljusare bitcoin-prognoser, säger TD Cowen",
       "translation": "Strategi aktieägare står inför utspädningsdrag trots ljusare bitcoin-prognoser, säger TD Cowen",
-      "summary": "The Block publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "TD Cowen höll sitt prismål på 260 dollar på strategi (MSTR) eftersom utspädning begränsar fördelarna med högre bitcoinprognoser.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T17:18:24Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3230,7 +3377,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "TD Cowen höll sitt prismål på 260 dollar på strategi (MSTR) eftersom utspädning begränsar fördelarna med högre bitcoinprognoser.",
+      "readerKind": "excerpt"
     },
     {
       "id": "4bc145232bf0dfd1e957",
@@ -3240,11 +3389,11 @@
       "originalLanguage": "en",
       "title": "Block GCCI 2026 Country Profile: Inuti Koreas kryptomarknad",
       "translation": "Block GCCI 2026 Country Profile: Inuti Koreas kryptomarknad",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Avsnitt 1: Blockets Global Crypto Competitiveness Index Crypto-marknader har historiskt mätts på deras handelsvolym, ägande eller adoption. Medan dessa mätvärden förblir viktiga talar de till efterfrågefaktorer snarare än den miljö där kryptoföretag och kapital kan fungera.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T17:16:23Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3269,7 +3418,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Avsnitt 1: Blockets Global Crypto Competitiveness Index Crypto-marknader har historiskt mätts på deras handelsvolym, ägande eller adoption. Medan dessa mätvärden förblir viktiga talar de till efterfrågefaktorer snarare än den miljö där kryptoföretag och kapital kan fungera.",
+      "readerKind": "excerpt"
     },
     {
       "id": "e7d4c5655a6719cc6f0c",
@@ -3279,11 +3430,11 @@
       "originalLanguage": "en",
       "title": "Bitwise VD säger \"tragisk\" Dogecoin ETF misslyckande visar gap mellan ETF köpare och krypto-app användare",
       "translation": "Bitwise VD säger \"tragisk\" Dogecoin ETF misslyckande visar gap mellan ETF köpare och krypto-app användare",
-      "summary": "The Block publicerar en nyhet inom etf. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Vid sidan av sin senaste plats NEAR ETF-lansering prioriterar Bitwise AI och avser att göra mer i det området.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T16:43:47Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "ETF",
       "coins": [
         "DOGE"
@@ -3310,7 +3461,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Vid sidan av sin senaste plats NEAR ETF-lansering prioriterar Bitwise AI och avser att göra mer i det området.",
+      "readerKind": "excerpt"
     },
     {
       "id": "bba5f7c8ab96b31a1574",
@@ -3320,11 +3473,11 @@
       "originalLanguage": "en",
       "title": "Hashi Mainnet lanserar med $ 500M i kapitalbacking, lägger till förankring digitalt till koalition",
       "translation": "Hashi Mainnet lanserar med $ 500M i kapitalbacking, lägger till förankring digitalt till koalition",
-      "summary": "Sui publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Hashi mainnet rullar ut denna månad med $ 500M + i engagerat kapital och Anchorage Digital ombord.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-10-08T16:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3349,7 +3502,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Hashi mainnet rullar ut denna månad med $ 500M + i engagerat kapital och Anchorage Digital ombord.",
+      "readerKind": "excerpt"
     },
     {
       "id": "06d4cdc2f38a29c240e7",
@@ -3363,7 +3518,7 @@
       "why": "Integrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
       "author": "Sui",
       "publishedAt": "2026-10-08T15:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -3392,7 +3547,9 @@
       "analysisMethod": "editorial",
       "verificationNote": "Kontrollerat mot Sui Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller att projektet publicerat beskedet; utrullningen har inte testats oberoende.",
       "reviewedAt": "2026-10-11T15:15:00Z",
-      "translationStatus": "reviewed-sv"
+      "translationStatus": "reviewed-sv",
+      "readerText": "Sui Foundation har meddelat att Samsung Wallet ska stödja USDC på Sui, med inledande utrullning i USA. Beskedet gäller USDC, inte stöd för SUI-tokenen i plånboken.\n\nIntegrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
+      "readerKind": "reviewed"
     },
     {
       "id": "50e5cd05927f2865e682",
@@ -3402,11 +3559,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin drar tillbaka som analytiker prognostiserar $ 80 000 - $ 90 000 Q4 handelsintervall",
       "translation": "Bitcoin drar tillbaka som analytiker prognostiserar $ 80 000 - $ 90 000 Q4 handelsintervall",
-      "summary": "The Block publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin handlade nära 82 000 dollar på torsdagen, med analytiker på QCP som förväntar sig ett fjärde kvartalsintervall på 80 000 dollar till 90 000 dollar.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T14:52:27Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3433,7 +3590,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin handlade nära 82 000 dollar på torsdagen, med analytiker på QCP som förväntar sig ett fjärde kvartalsintervall på 80 000 dollar till 90 000 dollar.",
+      "readerKind": "excerpt"
     },
     {
       "id": "b9ea886fcb490bc53bd2",
@@ -3443,11 +3602,11 @@
       "originalLanguage": "en",
       "title": "Securitize lanserar 1:1-stödda tokeniserade aktier, med början med Apple, Nvidia, Strategi och mer",
       "translation": "Securitize lanserar 1:1-stödda tokeniserade aktier, med början med Apple, Nvidia, Strategi och mer",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Securitize lanserar tokeniserade amerikanska aktier på Solana, stödde 1:1 av verkliga aktier med utdelning och USDC-avveckling.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T14:04:39Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3472,7 +3631,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Securitize lanserar tokeniserade amerikanska aktier på Solana, stödde 1:1 av verkliga aktier med utdelning och USDC-avveckling.",
+      "readerKind": "excerpt"
     },
     {
       "id": "c6547322936d556aca4d",
@@ -3482,11 +3643,11 @@
       "originalLanguage": "en",
       "title": "XRP prisprognos: XRP Falls 5%, Analytiker ser vägen till $ 2",
       "translation": "XRP prisprognos: XRP Falls 5%, Analytiker ser vägen till $ 2",
-      "summary": "Cryptonews publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "XRP föll mot $ 1,40 som handlare tittar motstånd på $ 1,53-$ 1,60 och bedömer om en återhämtning kan öppna vägen mot $ 2.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T11:58:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -3513,7 +3674,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "XRP föll mot $ 1,40 som handlare tittar motstånd på $ 1,53-$ 1,60 och bedömer om en återhämtning kan öppna vägen mot $ 2.",
+      "readerKind": "excerpt"
     },
     {
       "id": "ffa484759ea05dd11872",
@@ -3523,11 +3686,11 @@
       "originalLanguage": "en",
       "title": "Blir Storbritannien en av världens mest fientliga kryptoskatter?",
       "translation": "Blir Storbritannien en av världens mest fientliga kryptoskatter?",
-      "summary": "Cryptonews publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "UK crypto skatterapportering är inställd på att breddas genom CARF, medan föreslagna HMRC-befogenheter kan öka inhemsk dataåtkomst utan att vara slutlig lag.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T11:46:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3552,7 +3715,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "UK crypto skatterapportering är inställd på att breddas genom CARF, medan föreslagna HMRC-befogenheter kan öka inhemsk dataåtkomst utan att vara slutlig lag.",
+      "readerKind": "excerpt"
     },
     {
       "id": "176e136a1d87db9633aa",
@@ -3562,11 +3727,11 @@
       "originalLanguage": "en",
       "title": "Crypto industrin delas över Justin Drake AI varning",
       "translation": "Crypto industrin delas över Justin Drake AI varning",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Crypto-spelare är oense om Justin Drakes AI-kryptografivarning, med vissa avfärdar det medan andra uppmanar till proaktiv förberedelse.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T10:20:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3591,7 +3756,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Crypto-spelare är oense om Justin Drakes AI-kryptografivarning, med vissa avfärdar det medan andra uppmanar till proaktiv förberedelse.",
+      "readerKind": "excerpt"
     },
     {
       "id": "a79dbf53d4aa244b8b2d",
@@ -3601,11 +3768,11 @@
       "originalLanguage": "en",
       "title": "Ethereum prisprognos: 5% Veckovisa droppar som Bitmin Planer för att stoppa ETH Buying",
       "translation": "Ethereum prisprognos: 5% Veckovisa droppar som Bitmin Planer för att stoppa ETH Buying",
-      "summary": "Cryptonews publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "ETH handlar nära $ 2.572 efter en skarp slutförsäljning som Bitmine närmar sig sitt 5% utbud mål. Key stöd, motstånd och nackdel scenarier.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T09:49:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -3632,48 +3799,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
-    },
-    {
-      "id": "8b4fcd5cd8b0edc8f932",
-      "eventKey": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
-      "originalTitle": "Michael Saylor's Bitcoin Credibility Splits Two Market Veterans Over ‘Buying Forever’ Pledge - Stocktwits",
-      "originalText": "Michael Saylor's Bitcoin Credibility Splits Two Market Veterans Over ‘Buying Forever’ Pledge - Stocktwits",
-      "originalLanguage": "en",
-      "title": "Michael Saylor Bitcoin Credibility delar två marknadsveteraner över \"köpa för evigt\" Pledge - Stocktwits",
-      "translation": "Michael Saylor Bitcoin Credibility delar två marknadsveteraner över \"köpa för evigt\" Pledge - Stocktwits",
-      "summary": "Michael Saylor – mediebevakning publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "Michael Saylor – mediebevakning",
-      "publishedAt": "2026-10-08T09:37:48Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
-      "category": "Bitcoin",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "saylor-watch",
-      "originalUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "saylor-watch",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
-          "originId": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "ETH handlar nära $ 2.572 efter en skarp slutförsäljning som Bitmine närmar sig sitt 5% utbud mål. Key stöd, motstånd och nackdel scenarier.",
+      "readerKind": "excerpt"
     },
     {
       "id": "64c47ecdab732fc356c6",
@@ -3683,11 +3811,11 @@
       "originalLanguage": "en",
       "title": "USDC-överföringar kommer till Samsung Wallet",
       "translation": "USDC-överföringar kommer till Samsung Wallet",
-      "summary": "Cryptonews publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Samsung Wallet planerar USDC-överföringar för berättigade amerikanska användare i oktober 2026, med krypto-plånbok och bankutbetalningar över mer än 60 länder.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T08:23:58Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3712,7 +3840,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Samsung Wallet planerar USDC-överföringar för berättigade amerikanska användare i oktober 2026, med krypto-plånbok och bankutbetalningar över mer än 60 länder.",
+      "readerKind": "excerpt"
     },
     {
       "id": "3cf66db7b4961c79db35",
@@ -3722,11 +3852,11 @@
       "originalLanguage": "en",
       "title": "Standard Chartered för att expandera krypto vårdnadstjänster i Singapore",
       "translation": "Standard Chartered för att expandera krypto vårdnadstjänster i Singapore",
-      "summary": "The Block publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Banken sa att tjänsten skulle förlänga sitt befintliga kryptoförvaringsavtryck i UAE, Luxemburg och Hong Kong.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T07:55:14Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3751,7 +3881,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Banken sa att tjänsten skulle förlänga sitt befintliga kryptoförvaringsavtryck i UAE, Luxemburg och Hong Kong.",
+      "readerKind": "excerpt"
     },
     {
       "id": "db691141544054d03c0f",
@@ -3761,11 +3893,11 @@
       "originalLanguage": "en",
       "title": "Vad är Crypto Bunker Mode? Ethereums Justin Drake varnar för en möjlig AI Break",
       "translation": "Vad är Crypto Bunker Mode? Ethereums Justin Drake varnar för en möjlig AI Break",
-      "summary": "Cryptonews publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Crypto Bunker är Justin Drakes plan för gradvis fondmigrering, inte bevis på att AI har brutit Bitcoin eller Ethereum kryptografi.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T07:26:14Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -3792,7 +3924,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Crypto Bunker är Justin Drakes plan för gradvis fondmigrering, inte bevis på att AI har brutit Bitcoin eller Ethereum kryptografi.",
+      "readerKind": "excerpt"
     },
     {
       "id": "9e77ee3b87a80cbc4f08",
@@ -3802,11 +3936,11 @@
       "originalLanguage": "en",
       "title": "Samsung Partners med Solana till Natively Deliver stabila kryptovalutor i Samsung Wallet till 82 miljoner amerikanska galaxenheter",
       "translation": "Samsung Partners med Solana till Natively Deliver stabila kryptovalutor i Samsung Wallet till 82 miljoner amerikanska galaxenheter",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Från och med den sista veckan i oktober 2026 kommer Samsung Wallet att stödja USDC gränsöverskridande överföringar på Solana över 82 miljoner amerikanska galaxenheter.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-10-07T23:30:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -3833,7 +3967,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Från och med den sista veckan i oktober 2026 kommer Samsung Wallet att stödja USDC gränsöverskridande överföringar på Solana över 82 miljoner amerikanska galaxenheter.",
+      "readerKind": "excerpt"
     },
     {
       "id": "06f274bb43e465877de8",
@@ -3847,7 +3983,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-07T17:07:21Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3888,7 +4024,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-07T13:51:47Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3925,11 +4061,11 @@
       "originalLanguage": "en",
       "title": "Sui sätter rekord för högsta verifierade genomströmning satt till en blockchain: 40 miljoner transaktioner per sekund",
       "translation": "Sui sätter rekord för högsta verifierade genomströmning satt till en blockchain: 40 miljoner transaktioner per sekund",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Sui bryter sin 6M TPS-post med 40 M TPS live på Sui Basecamp.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-10-07T13:23:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -3956,7 +4092,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Sui bryter sin 6M TPS-post med 40 M TPS live på Sui Basecamp.",
+      "readerKind": "excerpt"
     },
     {
       "id": "117e51a82e784ef66686",
@@ -3970,7 +4108,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru – mediebevakning",
       "publishedAt": "2026-10-07T09:40:53Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4007,11 +4145,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin pris faller under $ 84.000 som $487 miljoner i Longs Liquidate",
       "translation": "Bitcoin pris faller under $ 84.000 som $487 miljoner i Longs Liquidate",
-      "summary": "Watcher.Guru publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Bitcoin pris faller under $ 84.000 som hävstångsspel på ytterligare vinster unraveled, med de flesta av skadan packade ...",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru",
       "publishedAt": "2026-10-07T09:22:34Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4038,7 +4176,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Bitcoin pris faller under $ 84.000 som hävstångsspel på ytterligare vinster unraveled, med de flesta av skadan packade ...",
+      "readerKind": "excerpt"
     },
     {
       "id": "3f26abc040590d951862",
@@ -4052,7 +4192,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-07T08:34:26Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4091,7 +4231,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-06T04:18:01Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4132,7 +4272,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-06T04:06:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4169,11 +4309,11 @@
       "originalLanguage": "en",
       "title": "Solana Foundation lanserar Solana DvP, ett atombosättningsprogram byggt för finansiella institutioner",
       "translation": "Solana Foundation lanserar Solana DvP, ett atombosättningsprogram byggt för finansiella institutioner",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Onchain open-source leverans-versus-payment infrastruktur, skräddarsydd för världens ledande finansiella institutioner",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-10-06T02:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4200,7 +4340,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Onchain open-source leverans-versus-payment infrastruktur, skräddarsydd för världens ledande finansiella institutioner",
+      "readerKind": "excerpt"
     },
     {
       "id": "2b0f0cc2539cc1390674",
@@ -4214,7 +4356,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-05T23:04:54Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -4255,7 +4397,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – mediebevakning",
       "publishedAt": "2026-10-05T22:14:19Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -4298,7 +4440,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T12:58:34Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4328,6 +4470,47 @@
       "translationStatus": "machine-sv"
     },
     {
+      "id": "86c3edc0fd62ba45d4af",
+      "eventKey": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
+      "originalTitle": "Michael Saylor’s Strategy Buys 334 Bitcoin for $28.7 Million - Altcoin Buzz",
+      "originalText": "Michael Saylor’s Strategy Buys 334 Bitcoin for $28.7 Million - Altcoin Buzz",
+      "originalLanguage": "en",
+      "title": "Michael Saylors strategi köper 334 Bitcoin för 28,7 miljoner dollar - Altcoin Buzz",
+      "translation": "Michael Saylors strategi köper 334 Bitcoin för 28,7 miljoner dollar - Altcoin Buzz",
+      "summary": "Michael Saylor – mediebevakning publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Michael Saylor – mediebevakning",
+      "publishedAt": "2026-10-05T12:27:04Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "saylor-watch",
+      "originalUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "saylor-watch",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
+          "originId": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "b7efad29dc7a8f4d26ef",
       "eventKey": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOb2tLR0RJRmVKcjZwWGNTSXIwcjk2TzFNSmlkZFd1UzA0ZjlxNEg5c3Z5YWRSS3pmcTZ3d3RRMVBNVzRQa1FDV0x1c0JiUUdKbEZ0d2ktcW5RN3FHZkZRNFh5YnhfREF3X01mWUtMekJTWXNZemlBdXpQREtjOEdUWEEyZWI0V3hPNEpVOWduRlhuYzkxZ0NWRjdsUmNjMHlabUJKemFpT1hnVTYtakE?oc=5",
       "originalTitle": "'More orange than ever': Michael Saylor's Strategy buys 334 bitcoin for $28.7 million as total holdings top 848,000 BTC - The Block",
@@ -4339,7 +4522,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T12:13:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4380,7 +4563,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-05T08:11:01Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4421,7 +4604,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T06:44:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4462,7 +4645,7 @@
       "why": "Verktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
       "author": "Solana",
       "publishedAt": "2026-10-05T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4491,7 +4674,9 @@
       "analysisMethod": "editorial",
       "verificationNote": "Kontrollerat mot Solanas originalartikel den 11 oktober 2026. Bekräftelsen gäller presentationen av verktyget, inte oberoende test av dess funktion.",
       "reviewedAt": "2026-10-11T15:15:00Z",
-      "translationStatus": "reviewed-sv"
+      "translationStatus": "reviewed-sv",
+      "readerText": "Solana har presenterat ett verktyg med öppen källkod som hjälper utvecklare att följa programhändelser och få varningar.\n\nVerktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
+      "readerKind": "reviewed"
     },
     {
       "id": "f4b66971376fcbc7bf6e",
@@ -4501,11 +4686,11 @@
       "originalLanguage": "en",
       "title": "Kan XRP nå en ny rekordnivå år 2030? Experter förklara",
       "translation": "Kan XRP nå en ny rekordnivå år 2030? Experter förklara",
-      "summary": "Watcher.Guru publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "XRP all-time höga nivåer är fortfarande en lång väg av just nu, som token handel på $ 1,49.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru",
       "publishedAt": "2026-10-03T12:06:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -4532,7 +4717,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "XRP all-time höga nivåer är fortfarande en lång väg av just nu, som token handel på $ 1,49.",
+      "readerKind": "excerpt"
     },
     {
       "id": "a484b259ea9e0a9e7374",
@@ -4546,7 +4733,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-03T09:03:32Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4587,7 +4774,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-03T07:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4626,7 +4813,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-03T05:26:16Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4667,7 +4854,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-03T05:14:47Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4702,11 +4889,11 @@
       "originalLanguage": "en",
       "title": "SEC-förslag skulle ta itu med hur investeringsrådgivare och fonder kan vårda kryptotillgångar enligt lagarna om federala värdepapper",
       "translation": "SEC-förslag skulle ta itu med hur investeringsrådgivare och fonder kan vårda kryptotillgångar enligt lagarna om federala värdepapper",
-      "summary": "SEC publicerar en nyhet inom reglering. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Securities and Exchange Commission föreslog idag nya regler och ändringar för att ge en skräddarsydd ram för vårdnaden av kryptotillgångar för registrerade investeringsrådgivare och reglerade fonder, dvs. registrerade investmentbolag och företag.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "SEC",
       "publishedAt": "2026-10-01T16:16:07Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Reglering",
       "coins": [],
       "topics": [
@@ -4731,7 +4918,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Securities and Exchange Commission föreslog idag nya regler och ändringar för att ge en skräddarsydd ram för vårdnaden av kryptotillgångar för registrerade investeringsrådgivare och reglerade fonder, dvs. registrerade investmentbolag och företag.",
+      "readerKind": "excerpt"
     },
     {
       "id": "8108db8f921fb0b8f0de",
@@ -4741,11 +4930,11 @@
       "originalLanguage": "en",
       "title": "Öppna USD är live på Solana",
       "translation": "Öppna USD är live på Solana",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Open USD är live på Solana, så att företag minterar och bränner 1:1 för dollar utan kostnad, med över $ 1 miljard åtagit sig att likviditet.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-30T19:17:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4772,7 +4961,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Open USD är live på Solana, så att företag minterar och bränner 1:1 för dollar utan kostnad, med över $ 1 miljard åtagit sig att likviditet.",
+      "readerKind": "excerpt"
     },
     {
       "id": "a72176a463e4740ac366",
@@ -4786,7 +4977,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-09-30T07:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4825,7 +5016,7 @@
       "why": "Testnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-09-28T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [
         "ETH"
@@ -4854,7 +5045,9 @@
       "analysisMethod": "editorial",
       "verificationNote": "Kontrollerat mot Ethereum Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller det publicerade testnätsbeskedet.",
       "reviewedAt": "2026-10-11T15:15:00Z",
-      "translationStatus": "reviewed-sv"
+      "translationStatus": "reviewed-sv",
+      "readerText": "Ethereum Foundation har publicerat en plan för Glamsterdam på Sepolia. Artikeln anger ingen beslutad tidpunkt för huvudnätet.\n\nTestnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
+      "readerKind": "reviewed"
     },
     {
       "id": "e272f713fe898849b150",
@@ -4864,11 +5057,11 @@
       "originalLanguage": "en",
       "title": "Solana Foundation utser Rachel Conlan som Chief Strategy Officer och Jamal Raees som chef för betalningar",
       "translation": "Solana Foundation utser Rachel Conlan som Chief Strategy Officer och Jamal Raees som chef för betalningar",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Solana Foundation utsåg Rachel Conlan till att leda strategi och Jamal Raees för att expandera globala betalningar adoption.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-24T13:20:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4895,7 +5088,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Solana Foundation utsåg Rachel Conlan till att leda strategi och Jamal Raees för att expandera globala betalningar adoption.",
+      "readerKind": "excerpt"
     },
     {
       "id": "f7f0c68ca85b786e7807",
@@ -4905,11 +5100,11 @@
       "originalLanguage": "en",
       "title": "Stocks Go Onchain: Vad SEC: s innovationsbefrielse betyder för Solana",
       "translation": "Stocks Go Onchain: Vad SEC: s innovationsbefrielse betyder för Solana",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En femårig SEC-order låter tokeniserad aktier med fullrättshandel på offentliga blockkedjor utan lagerutbytesregistrering; Solanas arkitektur är levande.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-23T14:06:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4936,7 +5131,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En femårig SEC-order låter tokeniserad aktier med fullrättshandel på offentliga blockkedjor utan lagerutbytesregistrering; Solanas arkitektur är levande.",
+      "readerKind": "excerpt"
     },
     {
       "id": "4c078afdcb8fe4c948a0",
@@ -4946,11 +5143,11 @@
       "originalLanguage": "en",
       "title": "GraphQL på Sui stöder nu realtidsabonnemang",
       "translation": "GraphQL på Sui stöder nu realtidsabonnemang",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Byggare kan fråga och fortsätta att ta emot Sui-data via samma GraphQL-gränssnitt.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-21T18:36:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -4977,7 +5174,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Byggare kan fråga och fortsätta att ta emot Sui-data via samma GraphQL-gränssnitt.",
+      "readerKind": "excerpt"
     },
     {
       "id": "f98f1d9646ec510f2a33",
@@ -4987,11 +5186,11 @@
       "originalLanguage": "en",
       "title": "Hur AI förändrar Crypto Security, med Michael Coates",
       "translation": "Hur AI förändrar Crypto Security, med Michael Coates",
-      "summary": "Solana publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En ~ $ 116 miljoner Coldcard utnyttjande visar varför kryptosäkerhet måste eliminera enstaka punkter av misslyckande och automatisera försvar för AI-hastighet hot.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-19T10:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5016,7 +5215,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En ~ $ 116 miljoner Coldcard utnyttjande visar varför kryptosäkerhet måste eliminera enstaka punkter av misslyckande och automatisera försvar för AI-hastighet hot.",
+      "readerKind": "excerpt"
     },
     {
       "id": "834e36c22feff8030082",
@@ -5026,11 +5227,11 @@
       "originalLanguage": "en",
       "title": "Daya samarbetar med Sui för att aktivera gaslösa, stabil kryptovaluta-Powered betalningar över hela Afrika",
       "translation": "Daya samarbetar med Sui för att aktivera gaslösa, stabil kryptovaluta-Powered betalningar över hela Afrika",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Daya har integrerat Sui som bosättning infra, vilket ger afrikanska företag gaslösa stabil kryptovaluta överföringar",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-17T19:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5057,7 +5258,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Daya har integrerat Sui som bosättning infra, vilket ger afrikanska företag gaslösa stabil kryptovaluta överföringar",
+      "readerKind": "excerpt"
     },
     {
       "id": "b151da727177a1f38343",
@@ -5067,11 +5270,11 @@
       "originalLanguage": "en",
       "title": "Säkerhet bör följa värde: hur Sui tänker på onchain risk",
       "translation": "Säkerhet bör följa värde: hur Sui tänker på onchain risk",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Säkerhet bör utvecklas som kod och protokoll ändras och koncentrera sig där misslyckande skulle spridas längst",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-17T16:10:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5098,7 +5301,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Säkerhet bör utvecklas som kod och protokoll ändras och koncentrera sig där misslyckande skulle spridas längst",
+      "readerKind": "excerpt"
     },
     {
       "id": "3fbb0119863357882524",
@@ -5108,11 +5313,11 @@
       "originalLanguage": "en",
       "title": "SEC:s frågor ”Innovation Exemption” för att underlätta handeln med tokeniserade NMS-aktier och begäran om kommentarer",
       "translation": "SEC:s frågor ”Innovation Exemption” för att underlätta handeln med tokeniserade NMS-aktier och begäran om kommentarer",
-      "summary": "SEC publicerar en nyhet inom reglering. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "SEC tar ett betydande steg framåt, inom dess lagstadgade myndighet, för att få Amerikas kapitalmarknader in i den digitala tidsåldern genom att underlätta handel med vissa tokeniserade aktier.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "SEC",
       "publishedAt": "2026-09-17T12:55:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Reglering",
       "coins": [],
       "topics": [
@@ -5137,7 +5342,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "SEC tar ett betydande steg framåt, inom dess lagstadgade myndighet, för att få Amerikas kapitalmarknader in i den digitala tidsåldern genom att underlätta handel med vissa tokeniserade aktier.",
+      "readerKind": "excerpt"
     },
     {
       "id": "ab31ec8e3b58d04e745d",
@@ -5147,11 +5354,11 @@
       "originalLanguage": "en",
       "title": "Projekt Harmonia ger institutionella tokeniserade fonder till Solana",
       "translation": "Projekt Harmonia ger institutionella tokeniserade fonder till Solana",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Projekt Harmonia ansluter Allfunds, med cirka 1,9 biljoner euro under administration, till tokeniserad fonder på Solana; inlagor nära 24 oktober 2026.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-16T00:56:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5178,7 +5385,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Projekt Harmonia ansluter Allfunds, med cirka 1,9 biljoner euro under administration, till tokeniserad fonder på Solana; inlagor nära 24 oktober 2026.",
+      "readerKind": "excerpt"
     },
     {
       "id": "3dfe43aba83c26f5fec0",
@@ -5188,11 +5397,11 @@
       "originalLanguage": "en",
       "title": "Solana Summer School 2026: Från första programmet till demodag",
       "translation": "Solana Summer School 2026: Från första programmet till demodag",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En titt tillbaka på Solana Summer School 2026: 1 164 sökande från 69 länder, fem veckor av levande klasser, fyra veckors capstone byggnad och en demo dag.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-14T12:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5219,7 +5428,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En titt tillbaka på Solana Summer School 2026: 1 164 sökande från 69 länder, fem veckor av levande klasser, fyra veckors capstone byggnad och en demo dag.",
+      "readerKind": "excerpt"
     },
     {
       "id": "6e21d880d5f68e23fd5b",
@@ -5229,11 +5440,11 @@
       "originalLanguage": "en",
       "title": "Solana: Bygga, bevisa och tjäna förtroende i allmänhet",
       "translation": "Solana: Bygga, bevisa och tjäna förtroende i allmänhet",
-      "summary": "Solana publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Solana har bibehållit 100% upptid sedan februari 2024, inklusive när ett routingsfel tog nästan 29% av nätverkets insats offline.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-14T11:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5260,7 +5471,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Solana har bibehållit 100% upptid sedan februari 2024, inklusive när ett routingsfel tog nästan 29% av nätverkets insats offline.",
+      "readerKind": "excerpt"
     },
     {
       "id": "771784c1619cc96c9105",
@@ -5270,11 +5483,11 @@
       "originalLanguage": "en",
       "title": "Rapport: stabila kryptovalutor omformar remitteringar",
       "translation": "Rapport: stabila kryptovalutor omformar remitteringar",
-      "summary": "Solana publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Ny rapport om stabil kryptovaluta-remitteringar som täcker fyra genomförandevägar för penningöverföringsoperatörer, korridoröversikter och fallstudier.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-08T13:14:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5299,7 +5512,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Ny rapport om stabil kryptovaluta-remitteringar som täcker fyra genomförandevägar för penningöverföringsoperatörer, korridoröversikter och fallstudier.",
+      "readerKind": "excerpt"
     },
     {
       "id": "df8bbe9cf07b02466f50",
@@ -5309,11 +5524,11 @@
       "originalLanguage": "en",
       "title": "DeFi på Sui: DeepBook, Gasless stabila kryptovalutor och Bitcoin i DeFi med Hashi",
       "translation": "DeFi på Sui: DeepBook, Gasless stabila kryptovalutor och Bitcoin i DeFi med Hashi",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Hur DeFi fungerar på Sui: DeepBooks på blockkedjan orderbok, gaslösa stabila kryptovalutor och Bitcoin åtkomst via Hashi",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T22:30:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -5342,7 +5557,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Hur DeFi fungerar på Sui: DeepBooks på blockkedjan orderbok, gaslösa stabila kryptovalutor och Bitcoin åtkomst via Hashi",
+      "readerKind": "excerpt"
     },
     {
       "id": "b698c1540053d16c992b",
@@ -5352,11 +5569,11 @@
       "originalLanguage": "en",
       "title": "Blockchain för AI-agenter: Hur Agentic Commerce fungerar på Sui",
       "translation": "Blockchain för AI-agenter: Hur Agentic Commerce fungerar på Sui",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Vad AI-agenter behöver från en betalningsbana, och hur Sui svarar: Betalningsintentier, omfattande myndighet och 6M TPS i ett liveagent experiment.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T21:30:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5383,7 +5600,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Vad AI-agenter behöver från en betalningsbana, och hur Sui svarar: Betalningsintentier, omfattande myndighet och 6M TPS i ett liveagent experiment.",
+      "readerKind": "excerpt"
     },
     {
       "id": "6041667f621247302c6d",
@@ -5393,11 +5612,11 @@
       "originalLanguage": "en",
       "title": "Web3 Identitet och åtkomstkontroll på Sui: zkLogin, Seal och SuiNS",
       "translation": "Web3 Identitet och åtkomstkontroll på Sui: zkLogin, Seal och SuiNS",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Suis inhemska lösningar för två huvudutmaningar i Web3-identitet: att bevisa vem du är och kontrollera dig kan se dina data",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T21:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5424,7 +5643,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Suis inhemska lösningar för två huvudutmaningar i Web3-identitet: att bevisa vem du är och kontrollera dig kan se dina data",
+      "readerKind": "excerpt"
     },
     {
       "id": "cb7624e9fca8252bfa0c",
@@ -5434,11 +5655,11 @@
       "originalLanguage": "en",
       "title": "Tillkännager Sui Overflow 2026 Hackathon Winners",
       "translation": "Tillkännager Sui Overflow 2026 Hackathon Winners",
-      "summary": "Sui publicerar en nyhet inom säkerhet / hacks. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Möt de 16 lagen som vann Sui Overflow 2026: 16 vinnare över fyra spår, plus 10 University Award mottagare.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-27T01:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Säkerhet / Hacks",
       "coins": [
         "SUI"
@@ -5465,7 +5686,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Möt de 16 lagen som vann Sui Overflow 2026: 16 vinnare över fyra spår, plus 10 University Award mottagare.",
+      "readerKind": "excerpt"
     },
     {
       "id": "87a840540d5110fb4555",
@@ -5475,11 +5698,11 @@
       "originalLanguage": "en",
       "title": "TZERO för institutionell handel med digitala värdepappersinfrastruktur till Sui",
       "translation": "TZERO för institutionell handel med digitala värdepappersinfrastruktur till Sui",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "TZERO ger etablerad reglerad marknadsinfrastruktur till Sui, vilket ger institutioner och emittenter nya alternativ för att bygga tokeniserad värdepapper inchain.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-25T13:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5506,7 +5729,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "TZERO ger etablerad reglerad marknadsinfrastruktur till Sui, vilket ger institutioner och emittenter nya alternativ för att bygga tokeniserad värdepapper inchain.",
+      "readerKind": "excerpt"
     },
     {
       "id": "fd7bc8224255bbc2b135",
@@ -5516,11 +5741,11 @@
       "originalLanguage": "en",
       "title": "Från kryptografens skrivbord: hur vi valde Suis efterkvantsignatursystem",
       "translation": "Från kryptografens skrivbord: hur vi valde Suis efterkvantsignatursystem",
-      "summary": "Sui publicerar en nyhet inom altcoins. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Resonemanget bakom ML-DSA-65 och SLH-DSA-SHA2-128, testade mot återkoppling från externa kryptografer, plånboksleverantörer, HSM och molnleverantörer och finansiella myndigheter, genomförandet vi byggde på, riktmärkena och en migrationsväg som vi medvetet inte skickar ännu.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-18T16:23:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5547,7 +5772,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Resonemanget bakom ML-DSA-65 och SLH-DSA-SHA2-128, testade mot återkoppling från externa kryptografer, plånboksleverantörer, HSM och molnleverantörer och finansiella myndigheter, genomförandet vi byggde på, riktmärkena och en migrationsväg som vi medvetet inte skickar ännu.",
+      "readerKind": "excerpt"
     },
     {
       "id": "f75fbb25a9ffd601c259",
@@ -5557,11 +5784,11 @@
       "originalLanguage": "en",
       "title": "Tillkännager Platåberget Testnet",
       "translation": "Tillkännager Platåberget Testnet",
-      "summary": "Ethereum Foundation publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "tl;dr: Möt Platåberget: Glamsterdams (Gloas + Amsterdam) tidiga testplats öppna för allmänhetens deltagande. Denna uppgradering kommer med att bryta förändringar för applikationsutvecklare. Notably, alla verktyg som bygger på en hårdkapad maximal gasgräns (tänk plånböcker, indexerare och gasestimatorer) kommer att bryta och behöver uppdateras.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-08-17T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5586,7 +5813,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "tl;dr: Möt Platåberget: Glamsterdams (Gloas + Amsterdam) tidiga testplats öppna för allmänhetens deltagande. Denna uppgradering kommer med att bryta förändringar för applikationsutvecklare. Notably, alla verktyg som bygger på en hårdkapad maximal gasgräns (tänk plånböcker, indexerare och gasestimatorer) kommer att bryta och behöver uppdateras.",
+      "readerKind": "excerpt"
     },
     {
       "id": "09b89a352345b03a1613",
@@ -5596,11 +5825,11 @@
       "originalLanguage": "en",
       "title": "Konfidentiellt genom design: Varför integritet är nästa fas av blockchain-antagande",
       "translation": "Konfidentiellt genom design: Varför integritet är nästa fas av blockchain-antagande",
-      "summary": "Sui publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Ett samtal med Liam Glennon, chef för Nordamerika finansiella institutioner och integritet på TRM Labs, om varför institutionell integritet blir avgörande för framtiden för blockchain-baserad ekonomi.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-07T16:43:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5625,7 +5854,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Ett samtal med Liam Glennon, chef för Nordamerika finansiella institutioner och integritet på TRM Labs, om varför institutionell integritet blir avgörande för framtiden för blockchain-baserad ekonomi.",
+      "readerKind": "excerpt"
     },
     {
       "id": "54f4cb6cbcd363e0da38",
@@ -5635,11 +5866,11 @@
       "originalLanguage": "en",
       "title": "Ethereum för regeringar och institutioner: Varför neutral infrastruktur ärenden nu",
       "translation": "Ethereum för regeringar och institutioner: Varför neutral infrastruktur ärenden nu",
-      "summary": "Ethereum Foundation publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Aktuella globala förändringar signalerar tydligt ett kritiskt behov av delad, neutral digital offentlig infrastruktur utanför kontrollen av en enda centraliserad aktör. Som ett offentligt, programmerbart nätverk som syftar till att fungera utan beroende på någon enskild part byggdes Ethereum för att ta itu med just dessa behov.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-07-01T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5666,7 +5897,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "Aktuella globala förändringar signalerar tydligt ett kritiskt behov av delad, neutral digital offentlig infrastruktur utanför kontrollen av en enda centraliserad aktör. Som ett offentligt, programmerbart nätverk som syftar till att fungera utan beroende på någon enskild part byggdes Ethereum för att ta itu med just dessa behov.",
+      "readerKind": "excerpt"
     },
     {
       "id": "fbddc555f2a12d38fbe8",
@@ -5676,11 +5909,11 @@
       "originalLanguage": "en",
       "title": "Tydlig signering: Att göra transaktionsgodkännanden säkrare på Ethereum",
       "translation": "Tydlig signering: Att göra transaktionsgodkännanden säkrare på Ethereum",
-      "summary": "Ethereum Foundation publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "En Ethereum Working Group bestående av plånboksutvecklare, säkerhetsföretag och Ethereum Foundation Trillion Dollar Security Initiative lanserade idag en öppen standard utformad för att avsluta blind signering - en strukturell fel som har bidragit till miljarder i användarförluster, inklusive Bybit hack. Ethereum Foundation's Trillion Dollar Security Initiative...",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-05-12T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5707,7 +5940,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "En Ethereum Working Group bestående av plånboksutvecklare, säkerhetsföretag och Ethereum Foundation Trillion Dollar Security Initiative lanserade idag en öppen standard utformad för att avsluta blind signering - en strukturell fel som har bidragit till miljarder i användarförluster, inklusive Bybit hack. Ethereum Foundation's Trillion Dollar Security Initiative...",
+      "readerKind": "excerpt"
     },
     {
       "id": "181df2ba6aaefb4cf764",
@@ -5717,11 +5952,11 @@
       "originalLanguage": "en",
       "title": "Tillkännagivande av Cohort 7 av Ethereum Protocol Fellowship",
       "translation": "Tillkännagivande av Cohort 7 av Ethereum Protocol Fellowship",
-      "summary": "Ethereum Foundation publicerar en nyhet inom ethereum. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "TL;DR: ~ Ansökningar om EPF7 är öppna fram till 13 maj - Review programmets detaljer för EPF7 En inledande stadshus kommer att hållas den 6 maj vid 1500 UTC Vi är glada över att meddela att ansökningar nu är öppna för den sjunde kohorten av [Ethereum ...",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-04-30T00:00:00Z",
-      "importedAt": "2026-10-11T15:16:39.848476Z",
+      "importedAt": "2026-10-11T15:36:24.687808Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5748,7 +5983,9 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
+      "translationStatus": "machine-sv",
+      "readerText": "TL;DR: ~ Ansökningar om EPF7 är öppna fram till 13 maj - Review programmets detaljer för EPF7 En inledande stadshus kommer att hållas den 6 maj vid 1500 UTC Vi är glada över att meddela att ansökningar nu är öppna för den sjunde kohorten av [Ethereum ...",
+      "readerKind": "excerpt"
     }
   ],
   "sources": [
@@ -5762,11 +5999,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coindesk",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 15
     },
     {
@@ -5779,11 +6016,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cointelegraph",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 13
     },
     {
@@ -5796,12 +6033,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "decrypt",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
-      "count": 12
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "count": 11
     },
     {
       "id": "bitcoinmag",
@@ -5813,11 +6050,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoinmag",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 9
     },
     {
@@ -5830,11 +6067,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 2
     },
     {
@@ -5847,11 +6084,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "ethereum",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 7
     },
     {
@@ -5864,11 +6101,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sui",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 18
     },
     {
@@ -5881,11 +6118,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sec",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 2
     },
     {
@@ -5898,11 +6135,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "solana",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 18
     },
     {
@@ -5915,7 +6152,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "ondo",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
@@ -5932,7 +6169,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "chainlink",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
@@ -5949,11 +6186,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptonews",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 17
     },
     {
@@ -5966,12 +6203,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "theblock",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
-      "count": 15
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "count": 14
     },
     {
       "id": "cryptoslate",
@@ -5983,11 +6220,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptoslate",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 8
     },
     {
@@ -6000,11 +6237,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "saylor-watch",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 14
     },
     {
@@ -6017,11 +6254,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-watch",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 6
     },
     {
@@ -6034,11 +6271,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-watch",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 1
     },
     {
@@ -6051,11 +6288,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-watch",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 2
     },
     {
@@ -6068,11 +6305,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-watch",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 0
     },
     {
@@ -6085,11 +6322,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-video",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 11
     },
     {
@@ -6102,11 +6339,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-video",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 14
     },
     {
@@ -6119,11 +6356,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coinmarketcap",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Offentligt indexerade Community-artiklar via Google Nyheter. Inläggen är inte automatiskt verifierade av CoinMarketCap.",
-      "lastSuccessAt": "2026-10-11T15:16:39.848476Z",
+      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
       "count": 7
     },
     {
@@ -6136,7 +6373,7 @@
       "enabled": false,
       "connection": "planned",
       "independenceGroup": "coinglass",
-      "checkedAt": "2026-10-11T15:16:39.848476Z",
+      "checkedAt": "2026-10-11T15:36:24.687808Z",
       "language": "en",
       "category": null,
       "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",

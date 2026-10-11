@@ -52,3 +52,18 @@ class StrictPublicationTests(unittest.TestCase):
     self.assertIn(item['originalUrl'],reviews)
     self.assertTrue(item['evidence'][0]['verified'])
     self.assertTrue(item.get('verificationNote'))
+
+class ReaderTests(unittest.TestCase):
+ def test_safe_bounded_excerpt(self):
+  from reader_content import feed_excerpt
+  text=feed_excerpt({'description':'<script>unsafe()</script><p>Bitcoin developers published a new update for the network today.</p>'},'Bitcoin update','coindesk')
+  self.assertNotIn('unsafe',text);self.assertNotIn('<',text);self.assertIn('developers',text)
+  long=feed_excerpt({'description':' '.join(['word']*200)},'Bitcoin','test')
+  self.assertLessEqual(len(long.split()),55)
+  self.assertEqual(feed_excerpt({'description':'Bitcoin update'},'Bitcoin update','test'),'')
+ def test_reader_opens_from_headline(self):
+  import pathlib
+  app=pathlib.Path('src/App.tsx').read_text()
+  self.assertIn('onClick={onDetails} aria-haspopup="dialog"',app)
+  self.assertIn('aria-label="Nyhetstext"',app)
+  self.assertNotIn('dangerouslySetInnerHTML',app)
