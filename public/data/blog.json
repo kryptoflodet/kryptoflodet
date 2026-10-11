@@ -572,6 +572,129 @@
           "url": "https://bitcoin.org/en/secure-your-wallet"
         }
       ]
+    },
+    {
+      "id": "2026-10-11",
+      "title": "Kryptoveckan: säkerhetsrättningar, tokeniserade aktier och ansvar efter Celsius",
+      "dek": "Veckan 5–11 oktober gav konkreta besked om hur krypto byggs, används och granskas. Här går vi igenom fem nyheter från originalkällorna, med fokus på vad som faktiskt är klart och vad som fortfarande är planer.",
+      "publishedAt": "2026-10-11T18:00:11Z",
+      "period": "5–11 oktober 2026",
+      "readingMinutes": 4,
+      "takeaways": [
+        "XRP Ledger offentliggjorde två rättade säkerhetsfel; rapporten anger inga belägg för att XRP-felet utnyttjats på publika nätverk.",
+        "Securitize lanserade tokeniserade aktier på Solana, medan Bitmine rapporterade drygt sex miljoner ETH.",
+        "Celsius tidigare vd möter ett permanent branschförbud, och Storbritannien riktade sanktioner mot kryptotjänster."
+      ],
+      "sections": [
+        {
+          "heading": "En vecka där detaljerna gör skillnad",
+          "paragraphs": [
+            "Kryptonyheter blir lätt en tävling i stora belopp och snabba slutsatser. Veckans viktigaste lärdom är snarare att läsa villkoren: när åtgärdades ett säkerhetsfel, vilka rättigheter följer med en token och vad betyder ett företags redovisade innehav? De fem händelserna nedan belyser olika delar av samma fråga: hur digitala tillgångar ska fungera i praktiken när tekniken möter användare, företag och myndigheter. Urvalet täcker besked under måndag till söndagens publicering, inte varje rörelse på marknaden."
+          ],
+          "sourceIds": [
+            "xrpl",
+            "securitize",
+            "bitmine",
+            "celsius",
+            "uk"
+          ]
+        },
+        {
+          "heading": "XRP Ledger berättade om ett allvarligt, redan rättat fel",
+          "paragraphs": [
+            "Den 9 oktober offentliggjorde XRP Ledger en rapport om två säkerhetsbrister. Den allvarligaste fanns i betalningsmotorn och kunde ha gjort det möjligt att skapa nya XRP i strid med nätverkets regler. Orsaken var ett heltalsöverflöde: en beräkning blev större än vad programmets talformat kunde hantera och gav därför ett felaktigt resultat.",
+            "Rättningen hade redan släppts i version 3.4.1 den 25 september. Rapporten säger att man inte har hittat belägg för utnyttjande på något publikt nätverk. Det är alltså ett offentliggörande av en åtgärdad sårbarhet, inte ett besked om en konstaterad stöld under veckan.",
+            "Det andra felet gällde funktionen Batch, som samlar flera transaktioner. Dess rättning aktiverades den 9 oktober. Vår bedömning är att rapporten visar varför oberoende granskning, snabb uppdatering och öppen redovisning är centrala även för etablerade blockkedjor."
+          ],
+          "sourceIds": [
+            "xrpl"
+          ]
+        },
+        {
+          "heading": "Securitize tog amerikanska aktier till Solana",
+          "paragraphs": [
+            "Den 8 oktober meddelade Securitize lanseringen av Securitize Stocks på Solana, inledningsvis via företagets registrerade mäklarplattform. Utbudet omfattar rättigheter kopplade till tolv amerikanska aktier, bland annat Apple, Microsoft och Nvidia. Enligt bolaget backas varje token av en underliggande aktie.",
+            "Tokenisering betyder här att en rättighet till en traditionell tillgång representeras digitalt på en blockkedja. Konstruktionen beskrivs som en värdepappersrättighet med tillämpliga ekonomiska förmåner, däribland utdelningar och rösträtt när aktieslaget medger det. Tillgången begränsas till behöriga investerare och tillåtna jurisdiktioner.",
+            "Det kryptorelaterade ligger i infrastrukturen och möjligheten att använda tillgångarna i fler blockkedjebaserade tjänster. Men framtida handel på nya handelsplatser och ytterligare användningsområden är planer med villkor. Lanseringen bevisar inte att all aktiehandel redan har blivit tillgänglig dygnet runt eller att alla svenskar kan använda tjänsten."
+          ],
+          "sourceIds": [
+            "securitize"
+          ]
+        },
+        {
+          "heading": "Bitmine redovisade drygt sex miljoner ether",
+          "paragraphs": [
+            "Bitmine offentliggjorde den 5 oktober att bolaget hade 6 016 414 ETH vid mättillfället den 4 oktober. Företaget uppgav köp av ytterligare 15 112 ETH under den föregående veckan och beräknade innehavet till cirka 4,9 procent av det totala utbudet. Det nya denna vecka är rapporteringen; köpen ska inte automatiskt dateras till publiceringsdagen.",
+            "Bolaget rapporterade också drygt fem miljoner ETH i staking. Det innebär att tillgångar används för att delta i nätverkets validering och kan ge belöningar, med tillhörande tekniska och ekonomiska risker.",
+            "Storleken gör utvecklingen relevant för den som följer företagens roll i Ethereum. Samtidigt är siffrorna bolagets egna uppgifter. Vår tolkning är att så stora innehav gör frågor om finansiering, koncentration och staking mer betydelsefulla. De innebär varken att ett företag ensamt styr nätverket eller att priset måste stiga."
+          ],
+          "sourceIds": [
+            "bitmine"
+          ]
+        },
+        {
+          "heading": "Nytt rättsligt besked efter Celsius",
+          "paragraphs": [
+            "New Yorks justitieminister meddelade den 9 oktober en uppgörelse som omfattar upp till 35 miljoner dollar från Celsius medgrundare och tidigare vd Alex Mashinsky samt ett permanent förbud mot deltagande i värdepappers-, råvaru- och kryptobranscherna. Formuleringen ”upp till” är viktig: beloppet ska inte beskrivas som redan utbetald ersättning.",
+            "Myndigheten beskriver hur kunder lockades att lämna kryptotillgångar till Celsius med löften om avkastning och missvisande uppgifter om säkerheten. Detta besked är skilt från det federala brottmål där Mashinsky redan avtjänar ett tolvårigt fängelsestraff.",
+            "Fallet belyser motpartsrisk: när ett företag förvaltar tillgångarna beror kundens situation också på företagets agerande och ekonomi. Att en tjänst använder krypto eller talar om ränta gör den inte likvärdig med ett bankkonto. Det är en skillnad mellan tillgångens teknik och säkerheten hos tjänsten runt den."
+          ],
+          "sourceIds": [
+            "celsius"
+          ]
+        },
+        {
+          "heading": "Storbritannien riktade sanktioner mot kryptotjänster",
+          "paragraphs": [
+            "Den 8 oktober meddelade den brittiska regeringen sanktioner mot tre kryptobörser och två betalningsplattformar som del av ett större paket. Regeringen uppgav att den misstänker att aktörerna används för att kringgå finansiella sanktioner mot Ryssland. Två av dem uppgavs ha hanterat eller underlättat transaktioner med A7-nätverket.",
+            "För kryptosektorn är den direkta nyheten att handels- och betalningstjänster pekas ut som delar av finansiella överföringsvägar. Regeringens misstankar och motivering ska samtidigt återges som myndighetens uppgifter, inte som en egen redaktionell brottsdom.",
+            "Vår bedömning är att beskedet understryker tjänsteleverantörernas betydelse: en blockkedja kan vara global, medan börser och betalningsföretag fortfarande påverkas av nationella beslut och krav."
+          ],
+          "sourceIds": [
+            "uk"
+          ]
+        },
+        {
+          "heading": "Det här är värt att följa",
+          "paragraphs": [
+            "Nästa steg är att följa genomförandet bakom beskeden: XRP Ledgers fortsatta säkerhetsarbete, vilka av Securitizes planerade integrationer som faktiskt blir tillgängliga och Bitmines nästa daterade innehavsrapport. För Celsius bör eventuella betalningar hållas isär från uppgörelsens maximibelopp.",
+            "Den gemensamma slutsatsen är redaktionell: kryptons utveckling avgörs inte bara av kursdiagram. Teknisk robusthet, tydliga ägarrättigheter och ansvar hos företagen runt nätverken är minst lika viktiga att förstå. Veckans källor ger konkreta hållpunkter för den utvecklingen, men ingen grund för säkra prisprognoser."
+          ],
+          "sourceIds": [
+            "xrpl",
+            "securitize",
+            "bitmine",
+            "celsius"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "xrpl",
+          "name": "XRP Ledger – säkerhetsrapport, 9 oktober 2026",
+          "url": "https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-20261009"
+        },
+        {
+          "id": "securitize",
+          "name": "Securitize – lanseringsbesked, 8 oktober 2026",
+          "url": "https://investors.securitize.io/news/news-details/2026/Securitize-Launches-Global-Onchain-Trading-of-U-S--Stocks-with-Security-Entitlements/default.aspx"
+        },
+        {
+          "id": "bitmine",
+          "name": "Bitmine – bolagets pressmeddelande, 5 oktober 2026",
+          "url": "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-6-02-million-tokens-and-total-crypto-and-total-cash--marketable-securities-holdings-of-17-4-billion-302897949.html"
+        },
+        {
+          "id": "celsius",
+          "name": "New Yorks justitieminister – Celsius-uppgörelsen, 9 oktober 2026",
+          "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-bans-former-cryptocurrency-ceo-who-defrauded-investors"
+        },
+        {
+          "id": "uk",
+          "name": "Storbritanniens regering – sanktionsbesked, 8 oktober 2026",
+          "url": "https://www.gov.uk/government/news/new-uk-sanctions-hit-the-money-oil-and-supply-chains-fuelling-russias-war"
+        }
+      ]
     }
   ]
 }
