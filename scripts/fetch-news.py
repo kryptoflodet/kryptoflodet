@@ -59,7 +59,7 @@ def main():
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(fetch,FEEDS))
  sources=[s for s,_ in results]
  # Preserve already imported video posts even when they leave YouTube's short RSS window.
- unique={n['originalUrl']:n for n in old['items'] if n['sourceId'] in {'moon-video','altcoin-daily-video','rover-video'}}
+ unique={n['originalUrl']:n for n in old['items'] if n['sourceId'] in {'moon-video','altcoin-daily-video','rover-video','felix-video'}}
  unique.update({n['originalUrl']:n for _,items in results for n in items})
  items=sorted([n for n in unique.values() if crypto_only(n['originalTitle'])],key=lambda n:n['publishedAt'],reverse=True)[:500]
  if not items: raise RuntimeError('Alla källor misslyckades; befintlig fil lämnas orörd')
@@ -76,8 +76,8 @@ def main():
  items=translate_items(items)
  if not items: raise RuntimeError('Inga svenska rubriker; tidigare publicering behålls')
  for item in items:
-  if item['sourceId'] in {'moon-video','altcoin-daily-video','rover-video'}:
-   item['summary']='Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.'
+  if item['sourceId'] in {'moon-video','altcoin-daily-video','rover-video','felix-video'}:
+   item['summary']='Se videon på svenska direkt i nyheten.' if item['originalLanguage']=='sv' else 'Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.'
  payload=dict(pendingTranslation=raw_count-len(items),generatedAt=now,items=items,sources=sources,intervalMinutes=5)
  TARGET.parent.mkdir(parents=True,exist_ok=True);tmp=TARGET.with_suffix('.tmp');tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');tmp.replace(TARGET)
  print(f'Sparade {len(items)} artiklar från {sum(s["connection"]=="connected" for s in sources)} källor')

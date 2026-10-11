@@ -4,6 +4,9 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 CACHE=ROOT/'.cache/translation'
 MODEL_URLS=['https://data.argosopentech.com/argospm/v1/translate-en_sv-1_5.argosmodel','https://argos-net.com/v1/translate-en_sv-1_5.argosmodel']
 MODEL_SHA256='d697224b443d212a04d24eb2ea0b615cb663eb24d4d21b70979673507b4d1e49'
+# Human-checked language exceptions for short titles misclassified by Lingua.
+# This approves only the language, never the factual claims or evidence status.
+REVIEWED_SWEDISH_TITLES={('felix-video','https://www.youtube.com/watch?v=YKH8vMJyyKw','Du har inte missat bitcoin. Än.')}
 GLOSSARY={'quantum attacks':'kvantattacker','quantum attack':'kvantattack','stablecoins':'stabila kryptovalutor','stablecoin':'stabil kryptovaluta','bullish':'positiv marknadssyn','bearish':'negativ marknadssyn','breaking':'senaste nytt','treasury':'kryptoreserv','spot etf':'spot-ETF','tokenized':'tokeniserad','tokenization':'tokenisering','price prediction':'prisprognos','all-time high':'rekordnivå','all time high':'rekordnivå','on-chain':'på blockkedjan','whales':'storägare','whale':'storägare','airdrop':'tokenutdelning','staking':'låsning av kryptovaluta','rally':'kursuppgång','sell-off':'utförsäljning','selloff':'utförsäljning'}
 GLOSSARY.update({'pris förutsägelse':'prisprognos','pris prediction':'prisprognos','cpi drop':'KPI-besked','phishing':'nätfiske','mint':'skapa','tokens':'kryptoenheter','etfs':'ETF:er','inflow streak':'följd av nettoinflöden','inflows':'inflöden','outflows':'utflöden','cash':'kontanter','holding':'innehav','trading':'handel','bull run':'uppgångsfas','whale alert':'storägarbevakning'})
 def prepare_model():
@@ -42,7 +45,8 @@ def translate_items(items):
   if item.get('analysisMethod')=='editorial':item.update(translationStatus='reviewed-sv');accepted.append(item);continue
   if item['originalLanguage']=='sv':
    lang=detector.detect_language_of(item['originalTitle'])
-   if lang==Language.SWEDISH:item.update(title=item['originalTitle'],translationStatus='original-sv');accepted.append(item);continue
+   reviewed=(item.get('sourceId'),item.get('originalUrl'),item['originalTitle']) in REVIEWED_SWEDISH_TITLES
+   if lang==Language.SWEDISH or reviewed:item.update(title=item['originalTitle'],translationStatus='original-sv');accepted.append(item);continue
    if lang!=Language.ENGLISH:continue
    item['originalLanguage']='en'
   key=hashlib.sha256(('v3:'+item['originalTitle']).encode()).hexdigest();item['_translationKey']=key

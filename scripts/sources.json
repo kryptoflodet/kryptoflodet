@@ -201,5 +201,14 @@
     "language": "en",
     "category": null,
     "coverage": "Videor från Altcoin Dailys egen YouTube-kanal. Kryptorelaterade rubriker översätts till svenska; videon visas på originalspråket."
+  },
+  {
+    "id": "felix-video",
+    "name": "Felix Nordqvist – kryptovideor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYmd4EGOIYtG6RBMAi6mxyQ",
+    "language": "sv",
+    "category": null,
+    "coverage": "Direkt från Felix Nordqvists YouTube-kanal. Endast videor med ett uttryckligt kryptoämne i rubriken tas med. Allmän börs och privatekonomi sorteras bort."
   }
 ]
