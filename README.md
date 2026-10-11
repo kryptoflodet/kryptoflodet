@@ -1,6 +1,6 @@
 # Kryptoflödet
 
-Svensk kryptonyhetstjänst med dom senaste kryptonyheterna. Allt på svenska. Inget krångel. Bara krypto
+Svensk nyhetstjänst med dom senaste kryptonyheterna. Allt på svenska. Inget krångel. Bara krypto
 
 ## Starta lokalt
 
