@@ -1,6 +1,6 @@
 # Kryptoflödet
 
-Svensk kryptonyhetstjänst med mörk responsiv design, bilder, sökning, kategorier, coin-filter, källgranskning, lokala bokmärken och en sömlöst rullande marknadsticker.
+Svensk kryptonyhetstjänst med dom senaste kryptonyheterna. Allt på svenska. Inget krångel. Bara krypto
 
 ## Starta lokalt
 
