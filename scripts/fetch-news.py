@@ -57,7 +57,10 @@ def main():
    s.update(error=str(exc)[:160],lastSuccessAt=previous.get('lastSuccessAt'));print(f'{sid}: {exc}')
    return s,[i for i in old['items'] if i['sourceId']==sid]
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(fetch,FEEDS))
- sources=[s for s,_ in results]; unique={n['originalUrl']:n for _,items in results for n in items}
+ sources=[s for s,_ in results]
+ # Preserve already imported video posts even when they leave YouTube's short RSS window.
+ unique={n['originalUrl']:n for n in old['items'] if n['sourceId'] in {'moon-video','altcoin-daily-video','rover-video'}}
+ unique.update({n['originalUrl']:n for _,items in results for n in items})
  items=sorted([n for n in unique.values() if crypto_only(n['originalTitle'])],key=lambda n:n['publishedAt'],reverse=True)[:500]
  if not items: raise RuntimeError('Alla källor misslyckades; befintlig fil lämnas orörd')
  for sid,name,url,channel in [('saylor','Michael Saylor','https://x.com/saylor','X'),('rover','CryptoRover','https://x.com/rovercrc','X'),('moon','The Moon Show','https://x.com/TheMoonShow','X'),('bitcoin','Bitcoin','https://x.com/bitcoin','X'),('instagram','Instagram – officiella konton','https://www.instagram.com','Instagram'),('strategy','Strategy','https://www.strategy.com','API'),('blackrock','BlackRock','https://www.blackrock.com','API')]:
@@ -72,6 +75,9 @@ def main():
  raw_count=len(items)
  items=translate_items(items)
  if not items: raise RuntimeError('Inga svenska rubriker; tidigare publicering behålls')
+ for item in items:
+  if item['sourceId'] in {'moon-video','altcoin-daily-video','rover-video'}:
+   item['summary']='Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.'
  payload=dict(pendingTranslation=raw_count-len(items),generatedAt=now,items=items,sources=sources,intervalMinutes=5)
  TARGET.parent.mkdir(parents=True,exist_ok=True);tmp=TARGET.with_suffix('.tmp');tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');tmp.replace(TARGET)
  print(f'Sparade {len(items)} artiklar från {sum(s["connection"]=="connected" for s in sources)} källor')

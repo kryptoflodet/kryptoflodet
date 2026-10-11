@@ -1,7 +1,214 @@
 {
-  "pendingTranslation": 46,
-  "generatedAt": "2026-10-11T15:36:24.687808Z",
+  "pendingTranslation": 51,
+  "generatedAt": "2026-10-11T17:05:41.687935Z",
   "items": [
+    {
+      "id": "5d8e91decff1e169499b",
+      "eventKey": "https://cryptoslate.com/krakens-held-futures-limit-orders-can-still-fill-after-a-successful-cancel/",
+      "originalTitle": "Some Kraken futures limit orders can still fill after a successful cancel",
+      "originalText": "Some Kraken futures limit orders can still fill after a successful cancel",
+      "originalLanguage": "en",
+      "title": "Vissa Kraken futures gränsorder kan fortfarande fylla efter en lyckad avbokning",
+      "translation": "Vissa Kraken futures gränsorder kan fortfarande fylla efter en lyckad avbokning",
+      "summary": "Den 8 oktober Maker Protection-expansionen ger fler kontrakt under en regel som kasserar ofyllda återstoder medan de fortfarande tillåter utförande.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-11T17:00:04Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "cryptoslate",
+      "originalUrl": "https://cryptoslate.com/krakens-held-futures-limit-orders-can-still-fill-after-a-successful-cancel/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/krakens-held-futures-limit-orders-can-still-fill-after-a-successful-cancel/",
+          "originId": "https://cryptoslate.com/krakens-held-futures-limit-orders-can-still-fill-after-a-successful-cancel/",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv",
+      "readerText": "Den 8 oktober Maker Protection-expansionen ger fler kontrakt under en regel som kasserar ofyllda återstoder medan de fortfarande tillåter utförande.",
+      "readerKind": "excerpt"
+    },
+    {
+      "id": "ed65b7fcd0a2a729664f",
+      "eventKey": "https://cryptonews.com/news/xrp-price-prediction-can-ripple-hold-1-40-or-is-1-20-next/",
+      "originalTitle": "XRP Price Prediction: Can Ripple Hold $1.40 or is $1.20 Next?",
+      "originalText": "XRP Price Prediction: Can Ripple Hold $1.40 or is $1.20 Next?",
+      "originalLanguage": "en",
+      "title": "XRP prisprognos: Kan Ripple Hålla $ 1,40 eller är $ 1,20 Nästa?",
+      "translation": "XRP prisprognos: Kan Ripple Hålla $ 1,40 eller är $ 1,20 Nästa?",
+      "summary": "Dagens XRP-prisförutsägelsecenter på Ripples expansion till Wall Street-finansiering, reigniting en bekant oro för XRP-innehavare: hur mycket av företagets framgång kommer faktiskt att gynna token?En Wall Street Journal-artikel den 7 oktober markerade Ripple växande engagemang i finansiering av utnyttjade börshandlade fonder, en sektor som vanligtvis domineras av banker och värdepappersföretag.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Cryptonews",
+      "publishedAt": "2026-10-11T16:30:00Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Altcoins",
+      "coins": [
+        "XRP"
+      ],
+      "topics": [
+        "XRP"
+      ],
+      "sourceId": "cryptonews",
+      "originalUrl": "https://cryptonews.com/news/xrp-price-prediction-can-ripple-hold-1-40-or-is-1-20-next/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptonews",
+          "url": "https://cryptonews.com/news/xrp-price-prediction-can-ripple-hold-1-40-or-is-1-20-next/",
+          "originId": "https://cryptonews.com/news/xrp-price-prediction-can-ripple-hold-1-40-or-is-1-20-next/",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv",
+      "readerText": "Dagens XRP-prisförutsägelsecenter på Ripples expansion till Wall Street-finansiering, reigniting en bekant oro för XRP-innehavare: hur mycket av företagets framgång kommer faktiskt att gynna token?En Wall Street Journal-artikel den 7 oktober markerade Ripple växande engagemang i finansiering av utnyttjade börshandlade fonder, en sektor som vanligtvis domineras av banker och värdepappersföretag.",
+      "readerKind": "excerpt"
+    },
+    {
+      "id": "6fecf625b5fa453541e9",
+      "eventKey": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
+      "originalTitle": "New Trade Setups on Bitcoin & Alts (Live Trading)🟢",
+      "originalText": "New Trade Setups on Bitcoin & Alts (Live Trading)🟢",
+      "originalLanguage": "en",
+      "title": "Nya handelsinställningar på Bitcoin & Alts (Live handel)",
+      "translation": "Nya handelsinställningar på Bitcoin & Alts (Live handel)",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "The Moon Show – videor",
+      "publishedAt": "2026-10-11T16:29:14Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "moon-video",
+      "originalUrl": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "moon-video",
+          "url": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
+          "originId": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
+      "id": "0aaf079c0cec8c236903",
+      "eventKey": "https://cryptoslate.com/bitcoin-hedge-funds-face-a-liquidation-trap-when-their-collateral-is-split-across-markets/",
+      "originalTitle": "Bitcoin hedge funds face a liquidation trap when their collateral is split across markets",
+      "originalText": "Bitcoin hedge funds face a liquidation trap when their collateral is split across markets",
+      "originalLanguage": "en",
+      "title": "Bitcoin hedgefonder står inför en likvidationsfälla när deras säkerhet delas över marknaderna",
+      "translation": "Bitcoin hedgefonder står inför en likvidationsfälla när deras säkerhet delas över marknaderna",
+      "summary": "Här är en hypotetisk situation: en hedgefond tjänar pengar, men en av dess utbyten är på väg att likvidera sin position ändå. Bitcoin har fallit, dess korta position på CME är lönsam, och matchningen lång på Hyperliquid blöder kontanter.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-11T16:00:20Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptoslate",
+      "originalUrl": "https://cryptoslate.com/bitcoin-hedge-funds-face-a-liquidation-trap-when-their-collateral-is-split-across-markets/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/bitcoin-hedge-funds-face-a-liquidation-trap-when-their-collateral-is-split-across-markets/",
+          "originId": "https://cryptoslate.com/bitcoin-hedge-funds-face-a-liquidation-trap-when-their-collateral-is-split-across-markets/",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv",
+      "readerText": "Här är en hypotetisk situation: en hedgefond tjänar pengar, men en av dess utbyten är på väg att likvidera sin position ändå. Bitcoin har fallit, dess korta position på CME är lönsam, och matchningen lång på Hyperliquid blöder kontanter.",
+      "readerKind": "excerpt"
+    },
+    {
+      "id": "f5c69ed5f8a0ef5a3bcb",
+      "eventKey": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+      "originalTitle": "Clarity's failure could speed crypto innovation while shielding incumbents",
+      "originalText": "Clarity's failure could speed crypto innovation while shielding incumbents",
+      "originalLanguage": "en",
+      "title": "Claritys misslyckande kan påskynda kryptoinnovationen samtidigt som man sköljer inkumbents",
+      "translation": "Claritys misslyckande kan påskynda kryptoinnovationen samtidigt som man sköljer inkumbents",
+      "summary": "CoinDesk publicerar en nyhet inom institutioner. Läs originalartikeln för fullständiga uppgifter.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "CoinDesk",
+      "publishedAt": "2026-10-11T16:00:00Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "coindesk",
+      "originalUrl": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "coindesk",
+          "url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+          "originId": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
     {
       "id": "a9b8f373ee194c02b391",
       "eventKey": "https://cryptonews.com/news/sam-altman-chatgpt-ai-predicts-bitcoin-to-hit/",
@@ -14,7 +221,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-11T15:30:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -57,7 +264,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T15:00:49Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -98,7 +305,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-11T14:30:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -141,7 +348,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T14:00:41Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -179,47 +386,6 @@
       "readerKind": "excerpt"
     },
     {
-      "id": "6fecf625b5fa453541e9",
-      "eventKey": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
-      "originalTitle": "New Trade Setups on Bitcoin & Alts (Live Trading)🟢",
-      "originalText": "New Trade Setups on Bitcoin & Alts (Live Trading)🟢",
-      "originalLanguage": "en",
-      "title": "Nya handelsinställningar på Bitcoin & Alts (Live handel)",
-      "translation": "Nya handelsinställningar på Bitcoin & Alts (Live handel)",
-      "summary": "The Moon Show – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "The Moon Show – videor",
-      "publishedAt": "2026-10-11T13:49:53Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Bitcoin",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "moon-video",
-      "originalUrl": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
-      "sourceType": "INFLUENCER",
-      "evidence": [
-        {
-          "sourceId": "moon-video",
-          "url": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
-          "originId": "https://www.youtube.com/watch?v=-zGjZyIgoOs",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
-    },
-    {
       "id": "6f70003d1c1eae0d81dc",
       "eventKey": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ3EyWHkxM01ETmxyajlTdkdFOGdYWHJKWHJtUk04SWhfWlo5TFdBN3hlNk13WmN6cUZIT0Y1YWpyXy1ud1JmRzd6eFFxbUo3LTJucFQ1N09qN2dzQjFrZ0FNTW9oLWFjV2JqZ29DLWkyUm9aeWo2Mlg0ZjFHbDN3WE9TMHA5Q0pFOG1xT3l4Vl83Vm94OWVIZFc5LVhvc01ZNWdsbXN0Y3hrdVRQRjRhbDl4ellwYjdVUnZUcE5LRUg?oc=5",
       "originalTitle": "JUST IN: Michael Saylor hints at another Bitcoin announcement tomorrow 👀 \"There's always room for more orange.\" - Moomoo",
@@ -231,7 +397,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-11T13:45:31Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -272,7 +438,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T13:00:14Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -313,7 +479,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-11T13:00:03Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -354,7 +520,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-11T13:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -393,7 +559,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-11T12:45:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -434,7 +600,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T12:00:20Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -475,7 +641,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T10:30:30Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -518,7 +684,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-11T07:00:24Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -561,7 +727,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-11T06:50:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -596,11 +762,11 @@
       "originalLanguage": "en",
       "title": "Live handel - Min Nästa Bitcoin Lång",
       "translation": "Live handel - Min Nästa Bitcoin Lång",
-      "summary": "The Moon Show – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-11T05:40:55Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -641,7 +807,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoSlate",
       "publishedAt": "2026-10-10T18:00:18Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -671,49 +837,6 @@
       "readerKind": "excerpt"
     },
     {
-      "id": "3b060ad5fb63678a2950",
-      "eventKey": "https://cryptoslate.com/being-right-about-bitcoin-wont-save-your-3x-leveraged-etf-position/",
-      "originalTitle": "Being right about Bitcoin won’t save your 3x leveraged ETF position",
-      "originalText": "Being right about Bitcoin won’t save your 3x leveraged ETF position",
-      "originalLanguage": "en",
-      "title": "Att vara rätt om Bitcoin kommer inte att spara din 3x hävstångseffekt ETF-position",
-      "translation": "Att vara rätt om Bitcoin kommer inte att spara din 3x hävstångseffekt ETF-position",
-      "summary": "Bitcoin nästa återhämtning kan rättfärdiga din investeringsavhandling men lämna din hävstångsfond djupt i rött, eftersom fondens dagliga återställning kan göra väntar en ganska dyr vana.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "CryptoSlate",
-      "publishedAt": "2026-10-10T17:00:12Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "ETF",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "cryptoslate",
-      "originalUrl": "https://cryptoslate.com/being-right-about-bitcoin-wont-save-your-3x-leveraged-etf-position/",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "cryptoslate",
-          "url": "https://cryptoslate.com/being-right-about-bitcoin-wont-save-your-3x-leveraged-etf-position/",
-          "originId": "https://cryptoslate.com/being-right-about-bitcoin-wont-save-your-3x-leveraged-etf-position/",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv",
-      "readerText": "Bitcoin nästa återhämtning kan rättfärdiga din investeringsavhandling men lämna din hävstångsfond djupt i rött, eftersom fondens dagliga återställning kan göra väntar en ganska dyr vana.",
-      "readerKind": "excerpt"
-    },
-    {
       "id": "1f3bf76588843832f786",
       "eventKey": "https://decrypt.co/380633/sam-altman-backed-life-insurer-bitcoin-raise",
       "originalTitle": "This Sam Altman-Backed Life Insurer Runs Entirely on Bitcoin, and Just Raised $37.5 Million",
@@ -725,7 +848,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-10T16:01:04Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -768,7 +891,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-10T15:10:37Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "ETH",
@@ -813,7 +936,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-10T13:01:03Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -854,7 +977,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T12:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -897,7 +1020,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-10T11:52:14Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -938,7 +1061,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T11:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -975,11 +1098,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin: den mest kritiska förändringen är nu",
       "translation": "Bitcoin: den mest kritiska förändringen är nu",
-      "summary": "CryptoRover – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-10T09:34:59Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1020,7 +1143,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-10T07:10:43Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1063,7 +1186,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T05:43:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1104,7 +1227,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-10T05:10:30Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1143,7 +1266,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T04:20:07Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -1184,7 +1307,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-10T03:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1219,11 +1342,11 @@
       "originalLanguage": "en",
       "title": "BITCOIN negativ marknadssyn DIVERGENCE!!!!",
       "translation": "BITCOIN negativ marknadssyn DIVERGENCE!!!!",
-      "summary": "The Moon Show – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-10T01:00:34Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1264,7 +1387,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-10T00:53:09Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1303,11 +1426,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin: Jag väntar på måndag!!!!",
       "translation": "Bitcoin: Jag väntar på måndag!!!!",
-      "summary": "The Moon Show – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-09T21:00:17Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1348,7 +1471,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T20:39:17Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1389,7 +1512,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T20:10:14Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1430,7 +1553,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T20:02:39Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1473,7 +1596,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T19:04:03Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1514,7 +1637,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T18:06:03Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1555,7 +1678,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T17:56:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -1598,7 +1721,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T17:36:26Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1641,7 +1764,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T17:21:07Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1682,7 +1805,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T17:11:16Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "BTC"
@@ -1721,11 +1844,11 @@
       "originalLanguage": "en",
       "title": "MIN negativ marknadssyn BITCOIN SCENARIO!!!!",
       "translation": "MIN negativ marknadssyn BITCOIN SCENARIO!!!!",
-      "summary": "The Moon Show – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – videor",
       "publishedAt": "2026-10-09T17:00:02Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -1766,7 +1889,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T16:36:03Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -1809,7 +1932,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T16:22:45Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1850,7 +1973,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T16:05:22Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1891,7 +2014,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T15:51:53Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1932,7 +2055,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T15:30:36Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -1973,7 +2096,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T15:20:36Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2016,7 +2139,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T14:55:23Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2055,7 +2178,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T14:47:27Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2094,7 +2217,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T14:41:46Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2135,7 +2258,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T14:41:09Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2176,7 +2299,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T13:49:22Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2217,7 +2340,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T13:41:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -2260,7 +2383,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-09T13:38:38Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2303,7 +2426,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Decrypt",
       "publishedAt": "2026-10-09T13:20:12Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2346,7 +2469,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T13:12:57Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2387,7 +2510,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T11:39:05Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2426,7 +2549,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T11:09:04Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2467,7 +2590,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:49:24Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2508,7 +2631,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:44:22Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2549,7 +2672,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T10:40:59Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -2594,7 +2717,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:34:37Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2635,7 +2758,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-09T10:33:46Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2678,7 +2801,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:16:55Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "BTC",
@@ -2721,7 +2844,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cointelegraph",
       "publishedAt": "2026-10-09T10:16:48Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2762,7 +2885,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinDesk",
       "publishedAt": "2026-10-09T10:14:59Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -2801,7 +2924,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T09:32:35Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2842,7 +2965,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-09T09:23:57Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -2872,47 +2995,6 @@
       "translationStatus": "machine-sv"
     },
     {
-      "id": "239ad169f48fd6a2b4ba",
-      "eventKey": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
-      "originalTitle": "Dark web drug market operator sentenced to 40 years, forfeits $101 million in bitcoin",
-      "originalText": "Dark web drug market operator sentenced to 40 years, forfeits $101 million in bitcoin",
-      "originalLanguage": "en",
-      "title": "Mörk webbläkemedelsmarknadsoperatör dömd till 40 år, förlorar 101 miljoner dollar i bitcoin",
-      "translation": "Mörk webbläkemedelsmarknadsoperatör dömd till 40 år, förlorar 101 miljoner dollar i bitcoin",
-      "summary": "CoinDesk publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "CoinDesk",
-      "publishedAt": "2026-10-09T09:20:16Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Bitcoin",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "coindesk",
-      "originalUrl": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "coindesk",
-          "url": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
-          "originId": "https://www.coindesk.com/policy/2026/10/09/dark-web-drug-market-operator-forfeits-1-230-bitcoin-and-faces-40-years-in-prison",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
-    },
-    {
       "id": "65a76a01f7f36bbdab2e",
       "eventKey": "https://cryptonews.com/news/ripple-prime-etf-financing-xrp-news/",
       "originalTitle": "XRP News: Ripple Challenges Wall Street for a Slice of $256B ETF Market",
@@ -2924,7 +3006,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T09:11:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "XRP"
@@ -2956,47 +3038,6 @@
       "readerKind": "excerpt"
     },
     {
-      "id": "fbec9d9adad5147d7421",
-      "eventKey": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
-      "originalTitle": "MARA transfers $81.1 million in bitcoin to Galaxy Digital as strategy pivots to AI",
-      "originalText": "MARA transfers $81.1 million in bitcoin to Galaxy Digital as strategy pivots to AI",
-      "originalLanguage": "en",
-      "title": "MARA överför $ 81.1 miljoner i bitcoin till Galaxy Digital som strategipivots till AI",
-      "translation": "MARA överför $ 81.1 miljoner i bitcoin till Galaxy Digital som strategipivots till AI",
-      "summary": "CoinDesk publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "CoinDesk",
-      "publishedAt": "2026-10-09T09:08:09Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Bitcoin",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "coindesk",
-      "originalUrl": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "coindesk",
-          "url": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
-          "originId": "https://www.coindesk.com/markets/2026/10/09/mara-transfers-usd81-1-million-in-bitcoin-to-galaxy-digital-as-strategy-pivots-to-ai",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
-    },
-    {
       "id": "cf11acdb3fa0a2452551",
       "eventKey": "https://cryptonews.com/news/bitcoin-price-80000-support-liquidations/",
       "originalTitle": "Bitcoin Price Briefly Reclaims $81,000 as Liquidations Top $1 Billion",
@@ -3008,7 +3049,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T09:07:52Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3051,7 +3092,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T08:12:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -3094,7 +3135,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T07:04:02Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3135,7 +3176,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-09T05:45:02Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3167,6 +3208,45 @@
       "readerKind": "excerpt"
     },
     {
+      "id": "06b931d2e7f725f1a6be",
+      "eventKey": "https://www.youtube.com/watch?v=7lay6ry9IrA",
+      "originalTitle": "my high conviction altcoins for 2027",
+      "originalText": "my high conviction altcoins for 2027",
+      "originalLanguage": "en",
+      "title": "Min höga övertygelse altcoins för 2027",
+      "translation": "Min höga övertygelse altcoins för 2027",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-09T01:47:51Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=7lay6ry9IrA",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=7lay6ry9IrA",
+          "originId": "https://www.youtube.com/watch?v=7lay6ry9IrA",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "455acec9391f2a3e0a25",
       "eventKey": "https://cryptonews.com/news/claude-ai-predicts-bitcoin-could-hit-250k-by-2027/",
       "originalTitle": "Claude AI Predicts Bitcoin Could Hit $250K by 2027",
@@ -3178,7 +3258,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T22:49:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3221,7 +3301,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-08T19:17:12Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3264,7 +3344,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T18:46:59Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3305,7 +3385,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T18:21:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -3350,7 +3430,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T17:18:24Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3393,7 +3473,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T17:16:23Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3434,7 +3514,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T16:43:47Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "ETF",
       "coins": [
         "DOGE"
@@ -3477,7 +3557,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-10-08T16:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3518,7 +3598,7 @@
       "why": "Integrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
       "author": "Sui",
       "publishedAt": "2026-10-08T15:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -3563,7 +3643,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T14:52:27Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -3606,7 +3686,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T14:04:39Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3647,7 +3727,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T11:58:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -3690,7 +3770,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T11:46:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3731,7 +3811,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T10:20:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3772,7 +3852,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-08T09:49:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -3804,31 +3884,33 @@
       "readerKind": "excerpt"
     },
     {
-      "id": "64c47ecdab732fc356c6",
-      "eventKey": "https://cryptonews.com/news/samsung-wallet-usdc-transfers/",
-      "originalTitle": "USDC Transfers Are Coming to Samsung Wallet",
-      "originalText": "USDC Transfers Are Coming to Samsung Wallet",
+      "id": "8b4fcd5cd8b0edc8f932",
+      "eventKey": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
+      "originalTitle": "Michael Saylor's Bitcoin Credibility Splits Two Market Veterans Over ‘Buying Forever’ Pledge - Stocktwits",
+      "originalText": "Michael Saylor's Bitcoin Credibility Splits Two Market Veterans Over ‘Buying Forever’ Pledge - Stocktwits",
       "originalLanguage": "en",
-      "title": "USDC-överföringar kommer till Samsung Wallet",
-      "translation": "USDC-överföringar kommer till Samsung Wallet",
-      "summary": "Samsung Wallet planerar USDC-överföringar för berättigade amerikanska användare i oktober 2026, med krypto-plånbok och bankutbetalningar över mer än 60 länder.",
+      "title": "Michael Saylor Bitcoin Credibility delar två marknadsveteraner över \"köpa för evigt\" Pledge - Stocktwits",
+      "translation": "Michael Saylor Bitcoin Credibility delar två marknadsveteraner över \"köpa för evigt\" Pledge - Stocktwits",
+      "summary": "Michael Saylor – mediebevakning publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "Cryptonews",
-      "publishedAt": "2026-10-08T08:23:58Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Institutioner",
-      "coins": [],
-      "topics": [
-        "Institutioner"
+      "author": "Michael Saylor – mediebevakning",
+      "publishedAt": "2026-10-08T09:37:48Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
       ],
-      "sourceId": "cryptonews",
-      "originalUrl": "https://cryptonews.com/news/samsung-wallet-usdc-transfers/",
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "saylor-watch",
+      "originalUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
       "sourceType": "MEDIA",
       "evidence": [
         {
-          "sourceId": "cryptonews",
-          "url": "https://cryptonews.com/news/samsung-wallet-usdc-transfers/",
-          "originId": "https://cryptonews.com/news/samsung-wallet-usdc-transfers/",
+          "sourceId": "saylor-watch",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
+          "originId": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUJLM0VvWmk0aU5rUTBkUV9NTGhKejN2NmlELXVMeXA0clQwcDBnMVJwZDBoYzFEcEZ6RXRhSUlObWtrUEFJdEdPQnVoLUdtWXRxblg4Z2tpSFVGbExOQUM0V3R3cVpDcWJ4TGlGSTFnbF93aDZPYzRjRVZoSUhCempLbVFMRlptMVI1YXQ2bGVzWEp4VTFiN2pveURLXzZUUDZPX00wUEEyd0Jp?oc=5",
           "direct": true,
           "verified": false
         }
@@ -3840,9 +3922,7 @@
       "breaking": false,
       "demo": false,
       "analysisMethod": "automated",
-      "translationStatus": "machine-sv",
-      "readerText": "Samsung Wallet planerar USDC-överföringar för berättigade amerikanska användare i oktober 2026, med krypto-plånbok och bankutbetalningar över mer än 60 länder.",
-      "readerKind": "excerpt"
+      "translationStatus": "machine-sv"
     },
     {
       "id": "3cf66db7b4961c79db35",
@@ -3856,7 +3936,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Block",
       "publishedAt": "2026-10-08T07:55:14Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -3886,49 +3966,6 @@
       "readerKind": "excerpt"
     },
     {
-      "id": "db691141544054d03c0f",
-      "eventKey": "https://cryptonews.com/news/what-is-crypto-bunker-mode-drake-ethereum-warning/",
-      "originalTitle": "What is Crypto Bunker Mode? Ethereum’s Justin Drake Warns of a Possible AI Break",
-      "originalText": "What is Crypto Bunker Mode? Ethereum’s Justin Drake Warns of a Possible AI Break",
-      "originalLanguage": "en",
-      "title": "Vad är Crypto Bunker Mode? Ethereums Justin Drake varnar för en möjlig AI Break",
-      "translation": "Vad är Crypto Bunker Mode? Ethereums Justin Drake varnar för en möjlig AI Break",
-      "summary": "Crypto Bunker är Justin Drakes plan för gradvis fondmigrering, inte bevis på att AI har brutit Bitcoin eller Ethereum kryptografi.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "Cryptonews",
-      "publishedAt": "2026-10-08T07:26:14Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Ethereum",
-      "coins": [
-        "ETH"
-      ],
-      "topics": [
-        "ETH"
-      ],
-      "sourceId": "cryptonews",
-      "originalUrl": "https://cryptonews.com/news/what-is-crypto-bunker-mode-drake-ethereum-warning/",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "cryptonews",
-          "url": "https://cryptonews.com/news/what-is-crypto-bunker-mode-drake-ethereum-warning/",
-          "originId": "https://cryptonews.com/news/what-is-crypto-bunker-mode-drake-ethereum-warning/",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv",
-      "readerText": "Crypto Bunker är Justin Drakes plan för gradvis fondmigrering, inte bevis på att AI har brutit Bitcoin eller Ethereum kryptografi.",
-      "readerKind": "excerpt"
-    },
-    {
       "id": "9e77ee3b87a80cbc4f08",
       "eventKey": "https://solana.com/news/samsung-wallet",
       "originalTitle": "Samsung Partners with Solana to Natively Deliver Stablecoins in Samsung Wallet to 82 Million U.S. Galaxy Devices",
@@ -3940,7 +3977,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-10-07T23:30:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -3972,6 +4009,45 @@
       "readerKind": "excerpt"
     },
     {
+      "id": "fc78fe139b35498f1b1a",
+      "eventKey": "https://www.youtube.com/watch?v=TW1d6boUN_k",
+      "originalTitle": "Watching This 10m Crypto Video Could LITERALLY Change Your Life!",
+      "originalText": "Watching This 10m Crypto Video Could LITERALLY Change Your Life!",
+      "originalLanguage": "en",
+      "title": "Titta på denna 10m Crypto Video kan förändra ditt liv!",
+      "translation": "Titta på denna 10m Crypto Video kan förändra ditt liv!",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-07T22:23:59Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=TW1d6boUN_k",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=TW1d6boUN_k",
+          "originId": "https://www.youtube.com/watch?v=TW1d6boUN_k",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "06f274bb43e465877de8",
       "eventKey": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZTFTaTV6c0trR2V2dkN1Y1hvTXFaX3p2dTBGVU5ZSHJ3MG1RZWJKRWowMllDdWlCM2dZaDVvLWltd3ZJSUdzM0xqZXZEY1VCUVg3alRNb0dKSERGRmNKUGtZZVVTdUFqTWQ4UG1DYjJBVmRLS2MzeV9uOHZxSk1uN0w0Y1hHMXpBdHBIbEgzVmV4aFdPNUgwb2t1azdqNVBDbmNVWXlFS0U0U0ZJaVlhNFpMcTkzcmllM09YZFdlSTQtcVFvbmg0cy1KZ3JyaS0tYUt2dQ?oc=5",
       "originalTitle": "Michael Saylor Compares Bitcoin’s Slump To Apple, Amazon ‘Wilderness’ Years Amid MSTR’s $9B Paper Losses - Stocktwits",
@@ -3983,7 +4059,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-07T17:07:21Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4024,7 +4100,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-07T13:51:47Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4065,7 +4141,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-10-07T13:23:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -4108,7 +4184,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru – mediebevakning",
       "publishedAt": "2026-10-07T09:40:53Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4149,7 +4225,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru",
       "publishedAt": "2026-10-07T09:22:34Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4192,7 +4268,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-07T08:34:26Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4220,6 +4296,47 @@
       "translationStatus": "machine-sv"
     },
     {
+      "id": "3f07f61bde595b2437ec",
+      "eventKey": "https://www.youtube.com/watch?v=AbYPwOQllec",
+      "originalTitle": "How to Retire on SOLANA by 2030 or sooner",
+      "originalText": "How to Retire on SOLANA by 2030 or sooner",
+      "originalLanguage": "en",
+      "title": "Hur man går i pension på Solana 2030 eller förr",
+      "translation": "Hur man går i pension på Solana 2030 eller förr",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-06T18:30:35Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Altcoins",
+      "coins": [
+        "SOL"
+      ],
+      "topics": [
+        "SOL"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=AbYPwOQllec",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=AbYPwOQllec",
+          "originId": "https://www.youtube.com/watch?v=AbYPwOQllec",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "df21bf7f3d56771d68e9",
       "eventKey": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0QtZE1lQXk5ZVJDVkphNnNCaTVFRlhPNDJRTkFfQkVSUEpTRjkxbnNCbjhpRk93SU0tSjc4V1Z1eWxBemtCblNrNFBRNkI3TXFtQmNGYTNvcnJaNDlGOHRHSnNsUmg4dG9HeFBTWHVZcW5pY0tqTmhXZVJpQUFWb0Q1MG5XLTZEQmhtSUxUdjB0XzNibFVmWWZaN3JEa21iZVV4dHk4bVl6QXZROFNtVFBHTEtYS3dia2Fr?oc=5",
       "originalTitle": "Trump’s $5,000 Checks Could Send Billions Into Bitcoin and Crypto: But There’s a Catch - CryptoRank",
@@ -4231,7 +4348,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-06T04:18:01Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4272,7 +4389,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – mediebevakning",
       "publishedAt": "2026-10-06T04:06:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4313,7 +4430,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-10-06T02:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4356,7 +4473,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-05T23:04:54Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -4386,6 +4503,45 @@
       "translationStatus": "machine-sv"
     },
     {
+      "id": "2e9bc0f345031a325f4c",
+      "eventKey": "https://www.youtube.com/watch?v=6SIu6kixAoc",
+      "originalTitle": "Why I Just Went ALL IN (6 Crypto Coins) Fully Explained in 14 minutes!",
+      "originalText": "Why I Just Went ALL IN (6 Crypto Coins) Fully Explained in 14 minutes!",
+      "originalLanguage": "en",
+      "title": "Varför jag bara gick all in (6 kryptomynt) förklarade helt på 14 minuter!",
+      "translation": "Varför jag bara gick all in (6 kryptomynt) förklarade helt på 14 minuter!",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-05T22:30:12Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=6SIu6kixAoc",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=6SIu6kixAoc",
+          "originId": "https://www.youtube.com/watch?v=6SIu6kixAoc",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "26aa27677769f55bd0e8",
       "eventKey": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSkE0Q2ozZll1VDZzNmJvcUxYRERJOURPTEMzeWxQT3hxUTVjQm5xbEI2LU9ZbVNvUmE3Njd6Z3BVUFAtUm9SQm9XUUp3bVVXUzhacjhTQWxDMG5iNmJFZzZDOEFtdFVVaXdGQmc4R1c1Zlo5ODNZZUljQ1I1SEJDcGx4akN1Tk9hOU5iSTg2bGNvdw?oc=5",
       "originalTitle": "ADA Surges 11% Without Clear Catalyst as Bitcoin Stalls - KuCoin",
@@ -4397,7 +4553,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "The Moon Show – mediebevakning",
       "publishedAt": "2026-10-05T22:14:19Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -4429,6 +4585,47 @@
       "translationStatus": "machine-sv"
     },
     {
+      "id": "df3151362adf13a61fff",
+      "eventKey": "https://www.youtube.com/shorts/s8RokLp8F-o",
+      "originalTitle": "Ethereum to $16,000? 🚀",
+      "originalText": "Ethereum to $16,000? 🚀",
+      "originalLanguage": "en",
+      "title": "Ethereum till 16 000 dollar?",
+      "translation": "Ethereum till 16 000 dollar?",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-05T17:10:08Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Ethereum",
+      "coins": [
+        "ETH"
+      ],
+      "topics": [
+        "ETH"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/shorts/s8RokLp8F-o",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/shorts/s8RokLp8F-o",
+          "originId": "https://www.youtube.com/shorts/s8RokLp8F-o",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "38bfcb48f8df5ab3e776",
       "eventKey": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU3hCczA5bUlVMDFQRlVwQ3ItNHI4Vmd0RFpnOWgxU29oNjZSb0YzcXVub3hpU29la0QzWHkyRS1ZelZfWEJ5bjRqeVBISm5JSnVydGJib2NZVUl3eERYSGNGMWFlT2dsZ21TWjNqdzNLNHRndXRramM4SzZYUjZaV1g0RS1yUTg1UXBscHJPdFdQdmplZXpMNjNPem12TjNUUHQw?oc=5",
       "originalTitle": "Michael Saylor’s Strategy Forecasts $20.9B Q3 Digital-Asset Gain As MSTR Bitcoin Stack Hits 848,000 BTC - Yahoo Finance",
@@ -4440,7 +4637,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T12:58:34Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4470,47 +4667,6 @@
       "translationStatus": "machine-sv"
     },
     {
-      "id": "86c3edc0fd62ba45d4af",
-      "eventKey": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
-      "originalTitle": "Michael Saylor’s Strategy Buys 334 Bitcoin for $28.7 Million - Altcoin Buzz",
-      "originalText": "Michael Saylor’s Strategy Buys 334 Bitcoin for $28.7 Million - Altcoin Buzz",
-      "originalLanguage": "en",
-      "title": "Michael Saylors strategi köper 334 Bitcoin för 28,7 miljoner dollar - Altcoin Buzz",
-      "translation": "Michael Saylors strategi köper 334 Bitcoin för 28,7 miljoner dollar - Altcoin Buzz",
-      "summary": "Michael Saylor – mediebevakning publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
-      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
-      "author": "Michael Saylor – mediebevakning",
-      "publishedAt": "2026-10-05T12:27:04Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
-      "category": "Bitcoin",
-      "coins": [
-        "BTC"
-      ],
-      "topics": [
-        "BTC"
-      ],
-      "sourceId": "saylor-watch",
-      "originalUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
-      "sourceType": "MEDIA",
-      "evidence": [
-        {
-          "sourceId": "saylor-watch",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
-          "originId": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFVW5xd0V3MXZvVndUTmNBV3R1SXZyNlNEMTNmUXl3T3Z1S1J6WEJBTFpQbEgyNlJUWjV1MlE4WVFwUU5ydGx1Skkxai04VHZsTUxkWktkUGpqdEk4OVRzbXdFOTVWSWRWWHpiOTctRmwtUHM?oc=5",
-          "direct": true,
-          "verified": false
-        }
-      ],
-      "status": "unconfirmed",
-      "confidence": 0,
-      "sentiment": "Neutral",
-      "importance": 3,
-      "breaking": false,
-      "demo": false,
-      "analysisMethod": "automated",
-      "translationStatus": "machine-sv"
-    },
-    {
       "id": "b7efad29dc7a8f4d26ef",
       "eventKey": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOb2tLR0RJRmVKcjZwWGNTSXIwcjk2TzFNSmlkZFd1UzA0ZjlxNEg5c3Z5YWRSS3pmcTZ3d3RRMVBNVzRQa1FDV0x1c0JiUUdKbEZ0d2ktcW5RN3FHZkZRNFh5YnhfREF3X01mWUtMekJTWXNZemlBdXpQREtjOEdUWEEyZWI0V3hPNEpVOWduRlhuYzkxZ0NWRjdsUmNjMHlabUJKemFpT1hnVTYtakE?oc=5",
       "originalTitle": "'More orange than ever': Michael Saylor's Strategy buys 334 bitcoin for $28.7 million as total holdings top 848,000 BTC - The Block",
@@ -4522,7 +4678,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T12:13:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4559,11 +4715,11 @@
       "originalLanguage": "en",
       "title": "Bitcoin är borta för att utvecklas ... * Gör dig redo *",
       "translation": "Bitcoin är borta för att utvecklas ... * Gör dig redo *",
-      "summary": "CryptoRover – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-05T08:11:01Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4604,7 +4760,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Michael Saylor – mediebevakning",
       "publishedAt": "2026-10-05T06:44:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4645,7 +4801,7 @@
       "why": "Verktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
       "author": "Solana",
       "publishedAt": "2026-10-05T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4679,6 +4835,86 @@
       "readerKind": "reviewed"
     },
     {
+      "id": "2abfd8a4edf82b71ba49",
+      "eventKey": "https://www.youtube.com/watch?v=27VB8wKnm38",
+      "originalTitle": "How to Retire on ETHEREUM by 2030 or sooner",
+      "originalText": "How to Retire on ETHEREUM by 2030 or sooner",
+      "originalLanguage": "en",
+      "title": "Hur man går i pension på ETHEREUM 2030 eller förr",
+      "translation": "Hur man går i pension på ETHEREUM 2030 eller förr",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-04T23:09:10Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Ethereum",
+      "coins": [
+        "ETH"
+      ],
+      "topics": [
+        "ETH"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=27VB8wKnm38",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=27VB8wKnm38",
+          "originId": "https://www.youtube.com/watch?v=27VB8wKnm38",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
+      "id": "330edd9e3d9ca47e3f48",
+      "eventKey": "https://www.youtube.com/watch?v=qD3skT3CKsE",
+      "originalTitle": "Why Crypto Holders Should Be EXCITED & What Comes NEXT!!",
+      "originalText": "Why Crypto Holders Should Be EXCITED & What Comes NEXT!!",
+      "originalLanguage": "en",
+      "title": "Varför Crypto Holders bör vara EXCITED & Vad kommer NEXT!!",
+      "translation": "Varför Crypto Holders bör vara EXCITED & Vad kommer NEXT!!",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-03T20:28:50Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=qD3skT3CKsE",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=qD3skT3CKsE",
+          "originId": "https://www.youtube.com/watch?v=qD3skT3CKsE",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "f4b66971376fcbc7bf6e",
       "eventKey": "https://watcher.guru/news/can-xrp-reach-a-new-all-time-high-by-2030-experts-explain",
       "originalTitle": "Can XRP Reach a New All-Time High by 2030? Experts Explain",
@@ -4690,7 +4926,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Watcher.Guru",
       "publishedAt": "2026-10-03T12:06:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "XRP"
@@ -4729,11 +4965,11 @@
       "originalLanguage": "en",
       "title": "President Trump säger att inflationen snabbt kan betala ner $ 40T US-skulden... Se till att äga Bitcoin!",
       "translation": "President Trump säger att inflationen snabbt kan betala ner $ 40T US-skulden... Se till att äga Bitcoin!",
-      "summary": "CryptoRover – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-03T09:03:32Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4774,7 +5010,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-03T07:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4809,11 +5045,11 @@
       "originalLanguage": "en",
       "title": "BITCOIN TRADERS är trappade...",
       "translation": "BITCOIN TRADERS är trappade...",
-      "summary": "CryptoRover – videor publicerar en nyhet inom bitcoin. Läs originalartikeln för fullständiga uppgifter.",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CryptoRover – videor",
       "publishedAt": "2026-10-03T05:26:16Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Bitcoin",
       "coins": [
         "BTC"
@@ -4854,7 +5090,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-10-03T05:14:47Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -4882,6 +5118,84 @@
       "translationStatus": "machine-sv"
     },
     {
+      "id": "16ec4fbd8421293feb7f",
+      "eventKey": "https://www.youtube.com/watch?v=5Ky_d1gBKrU",
+      "originalTitle": "STILL EARLY! Buying Crypto Today Will Make Trillionaires (5 coins)",
+      "originalText": "STILL EARLY! Buying Crypto Today Will Make Trillionaires (5 coins)",
+      "originalLanguage": "en",
+      "title": "Att köpa krypto idag kommer att göra trillionärer (5 mynt)",
+      "translation": "Att köpa krypto idag kommer att göra trillionärer (5 mynt)",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-03T00:04:17Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=5Ky_d1gBKrU",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=5Ky_d1gBKrU",
+          "originId": "https://www.youtube.com/watch?v=5Ky_d1gBKrU",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
+      "id": "7e5a33198ec1da29e452",
+      "eventKey": "https://www.youtube.com/watch?v=gQup6wyp3rQ",
+      "originalTitle": "Why Crypto Is About To Explode! (Watch Before I Delete)",
+      "originalText": "Why Crypto Is About To Explode! (Watch Before I Delete)",
+      "originalLanguage": "en",
+      "title": "Varför Crypto handlar om att explodera! (Titta innan jag tar bort)",
+      "translation": "Varför Crypto handlar om att explodera! (Titta innan jag tar bort)",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-01T23:10:34Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=gQup6wyp3rQ",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=gQup6wyp3rQ",
+          "originId": "https://www.youtube.com/watch?v=gQup6wyp3rQ",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "407737ead9a541c352c4",
       "eventKey": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal",
       "originalTitle": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
@@ -4893,7 +5207,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "SEC",
       "publishedAt": "2026-10-01T16:16:07Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Reglering",
       "coins": [],
       "topics": [
@@ -4923,6 +5237,45 @@
       "readerKind": "excerpt"
     },
     {
+      "id": "d2bab86e32b9a36866c7",
+      "eventKey": "https://www.youtube.com/watch?v=EaLhVhx22vk",
+      "originalTitle": "Crypto Holders - Prepare For The Biggest Event In The Last Decade",
+      "originalText": "Crypto Holders - Prepare For The Biggest Event In The Last Decade",
+      "originalLanguage": "en",
+      "title": "Crypto Holders - Förbered dig för den största händelsen i det sista decenniet",
+      "translation": "Crypto Holders - Förbered dig för den största händelsen i det sista decenniet",
+      "summary": "Se videon direkt i nyheten. Rubriken är översatt till svenska; videon visas på originalspråket.",
+      "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
+      "author": "Altcoin Daily – videor",
+      "publishedAt": "2026-10-01T01:12:39Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "altcoin-daily-video",
+      "originalUrl": "https://www.youtube.com/watch?v=EaLhVhx22vk",
+      "sourceType": "INFLUENCER",
+      "evidence": [
+        {
+          "sourceId": "altcoin-daily-video",
+          "url": "https://www.youtube.com/watch?v=EaLhVhx22vk",
+          "originId": "https://www.youtube.com/watch?v=EaLhVhx22vk",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "automated",
+      "translationStatus": "machine-sv"
+    },
+    {
       "id": "8108db8f921fb0b8f0de",
       "eventKey": "https://solana.com/news/open-usd-is-live-on-solana",
       "originalTitle": "Open USD Is Live on Solana",
@@ -4934,7 +5287,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-30T19:17:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -4977,7 +5330,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "CoinMarketCap – offentlig nyhetsbevakning",
       "publishedAt": "2026-09-30T07:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5016,7 +5369,7 @@
       "why": "Testnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-09-28T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [
         "ETH"
@@ -5061,7 +5414,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-24T13:20:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5104,7 +5457,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-23T14:06:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5147,7 +5500,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-21T18:36:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5190,7 +5543,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-19T10:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5231,7 +5584,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-17T19:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5274,7 +5627,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-17T16:10:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5317,7 +5670,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "SEC",
       "publishedAt": "2026-09-17T12:55:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Reglering",
       "coins": [],
       "topics": [
@@ -5358,7 +5711,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-16T00:56:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5401,7 +5754,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-14T12:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5444,7 +5797,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-14T11:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SOL"
@@ -5487,7 +5840,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Solana",
       "publishedAt": "2026-09-08T13:14:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5528,7 +5881,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T22:30:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "BTC",
@@ -5573,7 +5926,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T21:30:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5616,7 +5969,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-09-02T21:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5659,7 +6012,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-27T01:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Säkerhet / Hacks",
       "coins": [
         "SUI"
@@ -5702,7 +6055,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-25T13:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5745,7 +6098,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-18T16:23:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Altcoins",
       "coins": [
         "SUI"
@@ -5788,7 +6141,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-08-17T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5829,7 +6182,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Sui",
       "publishedAt": "2026-08-07T16:43:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Institutioner",
       "coins": [],
       "topics": [
@@ -5870,7 +6223,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-07-01T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5913,7 +6266,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-05-12T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5956,7 +6309,7 @@
       "why": "Automatiskt kategoriserad källpost. Händelsens innebörd och eventuell marknadspåverkan har inte bedömts redaktionellt.",
       "author": "Ethereum Foundation",
       "publishedAt": "2026-04-30T00:00:00Z",
-      "importedAt": "2026-10-11T15:36:24.687808Z",
+      "importedAt": "2026-10-11T17:05:41.687935Z",
       "category": "Ethereum",
       "coins": [
         "ETH"
@@ -5999,12 +6352,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coindesk",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
-      "count": 15
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
+      "count": 14
     },
     {
       "id": "cointelegraph",
@@ -6016,11 +6369,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cointelegraph",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 13
     },
     {
@@ -6033,12 +6386,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "decrypt",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
-      "count": 11
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
+      "count": 12
     },
     {
       "id": "bitcoinmag",
@@ -6050,11 +6403,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoinmag",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 9
     },
     {
@@ -6067,11 +6420,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 2
     },
     {
@@ -6084,11 +6437,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "ethereum",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 7
     },
     {
@@ -6101,11 +6454,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sui",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 18
     },
     {
@@ -6118,11 +6471,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sec",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 2
     },
     {
@@ -6135,11 +6488,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "solana",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 18
     },
     {
@@ -6152,7 +6505,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "ondo",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
@@ -6169,7 +6522,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "chainlink",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
@@ -6186,12 +6539,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptonews",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
-      "count": 17
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
+      "count": 16
     },
     {
       "id": "theblock",
@@ -6203,11 +6556,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "theblock",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 14
     },
     {
@@ -6220,12 +6573,12 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptoslate",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
-      "count": 8
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
+      "count": 9
     },
     {
       "id": "saylor-watch",
@@ -6237,11 +6590,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "saylor-watch",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 14
     },
     {
@@ -6254,11 +6607,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-watch",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 6
     },
     {
@@ -6271,11 +6624,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-watch",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 1
     },
     {
@@ -6288,11 +6641,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-watch",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 2
     },
     {
@@ -6305,11 +6658,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-watch",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 0
     },
     {
@@ -6322,11 +6675,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-video",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 11
     },
     {
@@ -6339,11 +6692,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-video",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 14
     },
     {
@@ -6356,11 +6709,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coinmarketcap",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Offentligt indexerade Community-artiklar via Google Nyheter. Inläggen är inte automatiskt verifierade av CoinMarketCap.",
-      "lastSuccessAt": "2026-10-11T15:36:24.687808Z",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
       "count": 7
     },
     {
@@ -6373,11 +6726,28 @@
       "enabled": false,
       "connection": "planned",
       "independenceGroup": "coinglass",
-      "checkedAt": "2026-10-11T15:36:24.687808Z",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
       "language": "en",
       "category": null,
       "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",
       "error": "Direkt nyhetsflöde kräver CoinGlass API-åtkomst. Datadiagram räknas inte som nyhetsartiklar."
+    },
+    {
+      "id": "altcoin-daily-video",
+      "name": "Altcoin Daily – videor",
+      "type": "INFLUENCER",
+      "channel": "RSS",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbLhGKVY-bJPcawebgtNfbw",
+      "trust": 0,
+      "enabled": true,
+      "connection": "connected",
+      "independenceGroup": "altcoin-daily-video",
+      "checkedAt": "2026-10-11T17:05:41.687935Z",
+      "language": "en",
+      "category": null,
+      "coverage": "Videor från Altcoin Dailys egen YouTube-kanal. Kryptorelaterade rubriker översätts till svenska; videon visas på originalspråket.",
+      "lastSuccessAt": "2026-10-11T17:05:41.687935Z",
+      "count": 14
     },
     {
       "id": "saylor",

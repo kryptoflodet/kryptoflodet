@@ -192,5 +192,14 @@
     "category": null,
     "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",
     "disabledReason": "Direkt nyhetsflöde kräver CoinGlass API-åtkomst. Datadiagram räknas inte som nyhetsartiklar."
+  },
+  {
+    "id": "altcoin-daily-video",
+    "name": "Altcoin Daily – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbLhGKVY-bJPcawebgtNfbw",
+    "language": "en",
+    "category": null,
+    "coverage": "Videor från Altcoin Dailys egen YouTube-kanal. Kryptorelaterade rubriker översätts till svenska; videon visas på originalspråket."
   }
 ]
