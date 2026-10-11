@@ -1,0 +1,13 @@
+import {useEffect,useRef,useState} from 'react';
+import {Check,Copy,Share2} from 'lucide-react';
+import type {NewsItem} from '../lib/types';
+export function newsShareUrl(item:Pick<NewsItem,'id'|'originalUrl'>){const url=new URL(import.meta.env.BASE_URL,location.origin);url.searchParams.set('article',item.id);url.searchParams.set('source',item.originalUrl);return url.href;}
+export default function ShareNews({item}:{item:NewsItem}){
+ const [open,setOpen]=useState(false);const [copied,setCopied]=useState(false);const [manual,setManual]=useState(false);const root=useRef<HTMLDivElement>(null);const input=useRef<HTMLInputElement>(null);const url=newsShareUrl(item);
+ useEffect(()=>{if(!open)return;const outside=(e:PointerEvent)=>{if(!root.current?.contains(e.target as Node))setOpen(false);};const escape=(e:KeyboardEvent)=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();setOpen(false);root.current?.querySelector('button')?.focus();}};document.addEventListener('pointerdown',outside);root.current?.addEventListener('keydown',escape);const el=root.current;return()=>{document.removeEventListener('pointerdown',outside);el?.removeEventListener('keydown',escape);};},[open]);
+ useEffect(()=>{if(manual)input.current?.select();},[manual]);
+ useEffect(()=>{if(!copied)return;const timer=setTimeout(()=>setCopied(false),2500);return()=>clearTimeout(timer);},[copied]);
+ async function copy(){try{if(!navigator.clipboard)throw new Error('clipboard unavailable');await navigator.clipboard.writeText(url);setCopied(true);setManual(false);}catch{setManual(true);}}
+ async function share(){try{await navigator.share({title:item.title,url});setOpen(false);}catch(e){if((e as Error).name!=='AbortError')setManual(true);}}
+ return <div className="news-share" ref={root}><button className="share-trigger" onClick={()=>setOpen(!open)} aria-expanded={open} aria-label={'Dela nyheten: '+item.title}><Share2 size={16}/><span>Dela</span></button>{open&&<div className="share-panel"><b>Dela nyheten</b><button onClick={copy}>{copied?<Check size={17}/>:<Copy size={17}/>}<span aria-live="polite">{copied?'Länken är kopierad!':'Kopiera länk'}</span></button>{typeof navigator.share==='function'&&<button onClick={share}><Share2 size={17}/>Dela via andra appar</button>}{manual&&<label>Kopiera länken här:<input ref={input} aria-label="Direktlänk till nyheten" readOnly value={url} onFocus={e=>e.target.select()}/></label>}</div>}</div>;
+}
