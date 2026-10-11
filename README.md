@@ -46,3 +46,26 @@ Förväntad adress: https://kryptoflodet.github.io/kryptoflodet/
 - `public/`: favicon och optimerade bilder.
 - `tests/`: kontroll av filter, marknadsdata och Pages-sökvägar.
 - `backend/`: bevarad serverkod, importgränssnitt och databasmigreringar från Sites-versionen. Den körs inte och ingår inte i Pages-bygget. Se `backend/README.md`.
+
+## Aktuell GitHub Pages-publicering
+
+Repositoryt heter `kryptoflodet.github.io` och Vites base är `/`.
+`.github/workflows/news-pages.yml` bygger och publicerar vid push till main,
+manuell körning och enligt ett femminutersschema. GitHub kan fördröja
+schemakörningar och inaktiverar scheman i inaktiva publika repositoryn.
+GitHub Pages måste använda **GitHub Actions** som publiceringskälla.
+
+`python scripts/fetch-news.py` hämtar RSS/Atom och sparar metadata i
+`public/data/news.json`. Källfel behåller senaste lyckade poster via Actions cache;
+om allt misslyckas utan tidigare data stoppas publicering. Inga API-nycklar krävs
+för de öppna RSS-källorna. Källornas status visas i appen. X, Instagram, Strategy
+och BlackRock är inte anslutna utan separat godkänd dataåtkomst. Ondo och Chainlink
+visas som hämtningsfel om deras provade feed inte svarar med giltig RSS.
+
+Rubriker visas på originalspråket. Svensk automatisk översättning är inte ansluten.
+RSS-publicering räknas inte som oberoende bekräftelse, och automatiska poster har
+varken sentimentanalys eller påhittad konfidens. Bilderna är AI-illustrationer.
+Öppna webbläsare hämtar ny publicerad JSON varje minut utan att tappa filter.
+
+Kontroll: `npm ci`, `npm run build`, `npm test`,
+`python -m unittest discover -s tests -p '*_test.py'`.
