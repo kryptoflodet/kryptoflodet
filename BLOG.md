@@ -28,3 +28,5 @@ Every factual news section must reference its supporting original source URL. Fi
 ## Publishing
 
 Read current main and current blog.json. Add the post, validate schema and unique IDs, build and run existing tests. Use GitHub create_tree with current base tree, create_commit with current parent, then update_ref with expected_sha. If main changed, re-read and merge changes; no forced overwrite. Existing news-pages workflow deploys automatically. Blog data is not part of the news cache; never overwrite it while fetching RSS. Verify Actions success and the public JSON/post link. Report failure honestly if any step fails.
+
+Sections may include optional `table: {headers: string[], rows: string[][]}` for factual comparisons. Every row must match the header length; source links belong in sourceIds.

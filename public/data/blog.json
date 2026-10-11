@@ -192,6 +192,386 @@
           "url": "https://bitcoin.org/en/you-need-to-know"
         }
       ]
+    },
+    {
+      "id": "bitcoin-digitalt-guld-21-miljoner",
+      "kind": "guide",
+      "title": "Bitcoin för nybörjare: historien, de 21 miljonerna och idén om digitalt guld",
+      "dek": "Varför vill människor, företag och vissa stater äga bitcoin? Här förklarar vi vad som gör Bitcoin speciellt, hur det har utvecklats och varför ett begränsat utbud både lockar och väcker frågor.",
+      "publishedAt": "2026-10-11T16:58:02.565005+00:00",
+      "period": "Bitcoinguiden · Faktakontrollerad 11 oktober 2026",
+      "readingMinutes": 11,
+      "takeaways": [
+        "Bitcoins utbud följer ett granskbart schema med ett tak på 21 miljoner enligt nätverkets nuvarande regler.",
+        "Digitalt guld beskriver en idé om långsiktigt värdebevarande, inte ett löfte om stabilt pris.",
+        "Statliga köp, mining, donationer och beslag är olika saker och ska inte blandas ihop."
+      ],
+      "sections": [
+        {
+          "heading": "Bitcoin på en minut",
+          "paragraphs": [
+            "Tänk dig en digital tillgång som du kan äga och överföra utan att ett enskilt företag för register över alla konton. Ingen vd bestämmer vem som får använda den. Ingen centralbank kan ensam besluta att skapa fler av den. Det är grundidén bakom Bitcoin.",
+            "Bitcoin är både namnet på ett nätverk och på tillgången som flyttas i nätverket. Förkortningen är BTC. Det är inte en aktie i ett företag och ger ingen automatisk ränta eller utdelning. Värdet uppstår därför att människor vill äga och använda det.",
+            "Det som fascinerar många är kombinationen: ett begränsat utbud, möjlighet till eget ägande och ett nätverk som fungerar över landsgränser. För att förstå varför detta kan vara värdefullt behöver vi börja med historien."
+          ],
+          "sourceIds": [
+            "whitepaper",
+            "faq"
+          ]
+        },
+        {
+          "heading": "Från Satoshi Nakamoto till de berömda pizzorna",
+          "paragraphs": [
+            "Den 31 oktober 2008 presenterades en text som beskrev ett elektroniskt betalningssystem där människor kunde skicka pengar direkt till varandra. Författaren använde namnet Satoshi Nakamoto. Det är en pseudonym, och vem eller vilka som står bakom namnet är inte fastställt.",
+            "Det första blocket skapades den 3 januari 2009. Bitcoin växte fram i skuggan av finanskrisen, när förtroendet för banker hade skadats. I det första blocket finns en hänvisning till en tidningsrubrik om bankräddningar. Nätverkets centrala idé var att överföringar skulle kunna kontrolleras med matematiska bevis i stället för att alla måste lita på samma mellanhand.",
+            "I början var det främst ett experiment för teknikintresserade. Den 22 maj 2010 berättade programmeraren Laszlo Hanyecz att han hade bytt 10 000 bitcoin mot pizza, efter att ha erbjudit beloppet för två pizzor. Händelsen har blivit känd som Bitcoin Pizza Day. Den visar hur annorlunda värderingen var innan Bitcoin hade en stor marknad.",
+            "Berättelsen är lätt att läsa som ett misstag i efterhand. Men vid den tiden kunde ingen veta vad Bitcoin skulle bli. Att någon faktiskt använde det för att köpa något hjälpte till att visa att tekniken fungerade utanför ett datorprogram."
+          ],
+          "sourceIds": [
+            "history",
+            "genesis",
+            "whitepaper",
+            "pizza"
+          ]
+        },
+        {
+          "heading": "Hur kan digitala pengar vara svåra att kopiera?",
+          "paragraphs": [
+            "En bild går att kopiera hur många gånger som helst. Pengar får inte fungera så. Om du skickar en bitcoin måste nätverket kunna kontrollera att du har rätt att använda den och att du inte samtidigt spenderar den någon annanstans.",
+            "Bitcoin använder en blockkedja: en gemensam historik av överföringar. Många datorer, så kallade noder, kontrollerar att reglerna följs. Nya överföringar samlas i block som kopplas till tidigare block.",
+            "Miners, eller utvinnare, använder specialiserade datorer och el för att tävla om att skapa nästa block. Metoden kallas proof of work, arbetsbevis. Att skriva om historiken blir dyrt eftersom arbetet måste göras om och en konkurrerande historik måste komma ikapp nätverket.",
+            "Miners får ersättning, men de får inte hitta på vilka regler de vill. Andra deltagare kan avvisa block som bryter mot reglerna. Det är en viktig del av varför nätverket kan fungera utan en central bokförare. Elförbrukningen är samtidigt en verklig kostnad och en viktig del av debatten om Bitcoin."
+          ],
+          "sourceIds": [
+            "whitepaper",
+            "how"
+          ]
+        },
+        {
+          "heading": "21 miljoner: varför gränsen spelar roll",
+          "paragraphs": [
+            "Enligt Bitcoins nuvarande regler ska det totala utbudet aldrig överstiga 21 miljoner bitcoin. Nya bitcoin skapas gradvis, enligt ett schema som alla kan granska. Ett högre marknadspris gör inte att nätverket plötsligt får skapa dubbelt så många.",
+            "Det här skiljer Bitcoin från vanliga nationella valutor. Utbudet är inte tänkt att anpassas efter konjunkturen eller politiska önskemål. För den som oroar sig för att pengar ska förlora köpkraft är den förutsägbarheten en central del av argumentet för Bitcoin.",
+            "Gränsen hålls inte uppe av magi. Den upprätthålls av regler som deltagarna väljer att följa. Någon kan kopiera programkoden och skriva in ett större utbud, men kan inte därmed tvinga andra att godta det som Bitcoin. En sådan ändring skulle kräva att den accepteras brett och skulle kunna splittra nätverket.",
+            "Du behöver inte köpa en hel bitcoin. En bitcoin kan delas i 100 miljoner satoshi. Att dela samma mängd i mindre enheter skapar inte fler bitcoin, lika lite som att växla en hundralapp till enkronor skapar mer pengar.",
+            "Alla bitcoin kommer inte heller nödvändigtvis att kunna användas. Om nycklar går förlorade kan tillgångarna bli oåtkomliga. Det skapas inte automatiskt ersättningsmynt för att någon har tappat bort sin plånbok."
+          ],
+          "sourceIds": [
+            "amount",
+            "faq",
+            "custody"
+          ]
+        },
+        {
+          "heading": "Halveringen: allt färre nya bitcoin",
+          "paragraphs": [
+            "När Bitcoin startade var blocksubventionen 50 nya bitcoin per block. Efter varje 210 000 block halveras den. Det sker ungefär vart fjärde år: 25 år 2012, 12,5 år 2016, 6,25 år 2020 och 3,125 år 2024.",
+            "Med ungefär tio minuter mellan blocken innebär nivån efter 2024 års halvering omkring 450 nya bitcoin per dygn i genomsnitt. Den verkliga mängden varierar från dag till dag. Nästa halvering väntas omkring 2028, men bestäms av antalet block, inte ett förutbestämt kalenderdatum.",
+            "Utgivningen fortsätter i allt mindre steg till ungefär år 2140. Därefter är tanken att miners ska få sin ersättning från transaktionsavgifter. Hur väl avgifterna finansierar nätverkets säkerhet på mycket lång sikt är därför en viktig fråga.",
+            "Halveringen minskar mängden nya bitcoin. Den halverar inte dina innehav och garanterar inte en prisuppgång. Händelsen är känd långt i förväg, och priset påverkas också av hur många som vill köpa och sälja."
+          ],
+          "sourceIds": [
+            "halving"
+          ]
+        },
+        {
+          "heading": "Vanliga pengar kan skapas – men vad betyder det?",
+          "paragraphs": [
+            "Uttrycket ”trycka pengar” är en förenkling. Mycket av dagens pengar är elektroniska banktillgodohavanden. När en bank beviljar ett lån skapas normalt en insättning på ett konto. När lånet återbetalas kan den typen av pengar försvinna igen. Centralbanker kan också öka eller minska mängden centralbankspengar.",
+            "Det betyder inte att banker får skapa hur mycket som helst. Kapitalregler, finansiering, kreditrisk och penningpolitik sätter gränser. Systemet har däremot inget fast totalt tak som Bitcoins 21 miljoner.",
+            "Inflation betyder att priserna i genomsnitt stiger, så att samma belopp köper mindre. Om priserna hypotetiskt stiger med 2 procent varje år har 1 000 kronor utan ränta efter tio år ungefär samma köpkraft som 820 kronor hade från början. Det är ett räkneexempel, inte en prognos. Inflation påverkas av flera saker, inte bara mängden pengar.",
+            "Riksbankens mål är inflation kring 2 procent. Bitcoins förespråkare uppskattar ett annat upplägg: ett utbud som inte kan utökas genom ett vanligt politiskt beslut. Det är en skillnad i hur systemen är konstruerade, inte ett bevis för att Bitcoins pris alltid kommer att stiga."
+          ],
+          "sourceIds": [
+            "money",
+            "inflation"
+          ]
+        },
+        {
+          "heading": "Digitalt guld och ”store of value”",
+          "paragraphs": [
+            "Store of value betyder värdebevarare: något man äger för att kunna använda dess köpkraft i framtiden. Guld har länge haft den rollen. Bitcoin brukar kallas digitalt guld eftersom utbudet är begränsat och innehavet kan flyttas och kontrolleras digitalt.",
+            "Argumentet handlar om flera egenskaper tillsammans. Tillgången är delbar, kan överföras över gränser och behöver inte förvaras av en bank om ägaren hanterar sina egna nycklar. Nätverkets regler gör det också möjligt att kontrollera att bitcoin är giltiga.",
+            "Men knapphet räcker inte ensam. Du kan skapa en unik teckning som ingen vill köpa. Bitcoin behöver fortsatt efterfrågan, fungerande teknik och förtroende för nätverket. Det betalar inte heller någon utdelning som kan användas för att räkna fram ett självklart värde.",
+            "En fast mängd är inte samma sak som stabil köpkraft. Bitcoin har haft mycket stora kursfall, även under perioder då människor har varit oroliga för inflation. Det är därför mer korrekt att beskriva det som en möjlig långsiktig värdebevarare med hög risk än som ett säkert skydd för nästa månads hyra."
+          ],
+          "sourceIds": [
+            "value",
+            "how",
+            "risk"
+          ]
+        },
+        {
+          "heading": "Prisutvecklingen: stora uppgångar och djupa fall",
+          "paragraphs": [
+            "Bitcoin har gått från ett litet experiment till en globalt handlad tillgång. Men resan har varit långt ifrån jämn. Tabellen visar några hållpunkter från handeln BTC/USDT på Binance. USDT försöker följa dollarn men är inte samma sak som amerikanska dollar. Priserna är avrundade intradagsnoteringar på en handelsplats, inte årsgenomsnitt eller en universell Bitcoin-kurs.",
+            "Från 69 000 till 15 476 innebär ett fall på ungefär 78 procent. Ett innehav värt 100 000 kronor skulle vid samma procentuella nedgång vara värt omkring 22 000 kronor, före hänsyn till växelkurs och avgifter. Sådana nedgångar är en viktig del av historien, inte en fotnot till uppgångarna.",
+            "Efter tidigare nedgångar har nya toppar följt, men det är ingen garanti för att samma sak upprepas. För en svensk ägare påverkar även dollarkursen mot kronan resultatet."
+          ],
+          "sourceIds": [
+            "prices2017",
+            "prices2021",
+            "prices2022",
+            "prices2024",
+            "prices2025"
+          ],
+          "table": {
+            "headers": [
+              "Tidpunkt",
+              "Ungefärligt pris",
+              "Vad siffran visar"
+            ],
+            "rows": [
+              [
+                "17 december 2017",
+                "19 800 USDT",
+                "Toppnotering under 2017 på Binance"
+              ],
+              [
+                "10 november 2021",
+                "69 000 USDT",
+                "Toppnotering under 2021"
+              ],
+              [
+                "21 november 2022",
+                "15 500 USDT",
+                "Bottennotering under 2022"
+              ],
+              [
+                "17 december 2024",
+                "108 400 USDT",
+                "Toppnotering under 2024"
+              ],
+              [
+                "6 oktober 2025",
+                "126 200 USDT",
+                "Toppnotering under 2025"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "En ögonblicksbild när guiden skrevs",
+          "paragraphs": [
+            "CoinGeckos senaste tillgängliga notering vid faktakontrollen var cirka 83 867 USD, eller 838 604 kronor, per bitcoin. Prisets tidsstämpel är 11 oktober 2026 kl. 18.54 svensk tid. Siffrorna är en ögonblicksbild och uppdateras inte automatiskt i denna artikel.",
+            "För ett nyare pris kan du använda marknadsöversikten på sidan. Skillnader mellan börser, tidpunkter och valutor är normala. Ett historiskt toppvärde ska aldrig förväxlas med dagens pris."
+          ],
+          "sourceIds": [
+            "current"
+          ]
+        },
+        {
+          "heading": "Vilka länder köper eller äger bitcoin?",
+          "paragraphs": [
+            "Rubriken ”ett land köper bitcoin” kan betyda flera olika saker. Ett land kan ha köpt på marknaden, fått bitcoin genom mining, tagit emot donationer eller övertagit tillgångar efter brott. Det är viktigt att skilja mellan dem. Följande exempel är kontrollerade den 11 oktober 2026.",
+            "El Salvador är det välkända tidiga exemplet på en stat som har köpt bitcoin och infört en Bitcoin-satsning. Men bilden av ständiga nya köp med skattepengar behöver nyanseras. IMF uppgav i september 2026 att den senare ökningen av innehavet efter den första programöversynen kom från privata donationer, utan offentliga medel. IMF:s beslut den 1 oktober beskrev också att ytterligare ackumulering utöver dokumenterade donationer inte förutsågs.",
+            "Tjeckiens centralbank har gjort ett faktiskt marknadsköp till en testportfölj. Den totala inköpssumman var 1 miljon dollar för flera digitala tillgångar, däribland bitcoin. Hela miljonen var alltså inte ett renodlat Bitcoin-köp. Portföljen ligger utanför landets internationella reserver och ska ge praktisk erfarenhet, inte signalera att Bitcoin har ersatt valutareserven.",
+            "USA beslutade i mars 2025 att upprätta en strategisk Bitcoin-reserv med utgångspunkt i bitcoin som staten fått genom rättsligt förverkande. Beslutet öppnade för att utreda budgetneutrala sätt att skaffa mer. Det är inte i sig bevis för att USA därefter har gjort stora köp på marknaden.",
+            "Bhutan visar ett annat spår: statligt kopplad mining. Det statliga holdingbolaget DHI offentliggjorde 2023 ett samarbete med Bitdeer om digital utvinning, och Bitdeer har senare rapporterat om Bitcoin-anläggningar i landet. Att producera bitcoin genom mining är något annat än att köpa dem över en börs.",
+            "Dessa exempel visar att offentliga institutioner intresserar sig för tekniken. De bevisar inte att alla stater kommer att köpa Bitcoin, och ett statligt innehav är ingen garanti för ett högre pris."
+          ],
+          "sourceIds": [
+            "salvador2021",
+            "salvador2026",
+            "salvadoroct",
+            "cnb",
+            "usa",
+            "bhutan",
+            "bhutan2025"
+          ]
+        },
+        {
+          "heading": "Företag och börsprodukter har förändrat tillgången",
+          "paragraphs": [
+            "Det har också blivit enklare att få ekonomisk exponering mot Bitcoin utan att hantera en egen plånbok. Den amerikanska finansmyndigheten SEC godkände i januari 2024 notering och handel i ett antal börshandlade spotprodukter för bitcoin. Myndigheten underströk att beslutet inte var ett godkännande av Bitcoin som investering.",
+            "Sådana produkter kan öppna vägen för fler sparare och institutioner. Samtidigt är det skillnad mellan att äga bitcoin med egna nycklar och att äga en fondandel, ett certifikat eller annan börsprodukt som följer priset. En börsprodukt har sina egna villkor, avgifter och risker. Den ger normalt inte möjlighet att skicka bitcoin till en väns plånbok.",
+            "Förstå därför vad du faktiskt äger. Att två produkter följer samma pris betyder inte att de ger samma rättigheter eller samma skydd."
+          ],
+          "sourceIds": [
+            "sec"
+          ]
+        },
+        {
+          "heading": "Är Bitcoin bra för betalningar också?",
+          "paragraphs": [
+            "Bitcoin skapades som ett betalningssystem och nätverket kan användas dygnet runt. Men en betalning på grundlagret får inte en säker slutlig bekräftelse på en sekund. Ett nytt block kommer i genomsnitt ungefär var tionde minut, och större betalningar kan kräva flera bekräftelser.",
+            "Lightning Network är ett extra betalningslager ovanpå Bitcoin som kan ge snabba och billiga betalningar. Det använder betalningskanaler och har andra praktiska krav, till exempel tillgänglig likviditet. En del appar sköter detta åt användaren, vilket kan innebära att man återigen litar på en tjänsteleverantör.",
+            "Därför kan Bitcoin samtidigt diskuteras som långsiktigt sparande och som betalningsteknik. Vilken lösning som passar beror på vad man vill göra, hur snabbt det måste gå och hur mycket ansvar man vill ta själv."
+          ],
+          "sourceIds": [
+            "risk",
+            "lightning"
+          ]
+        },
+        {
+          "heading": "Eget ägande kräver eget ansvar",
+          "paragraphs": [
+            "Om du förvarar bitcoin själv är det de privata nycklarna som ger dig möjlighet att använda innehavet. En återställningsfras kan vara vägen tillbaka om en plånbok försvinner. Den som kommer över hemligheterna kan också komma över tillgångarna.",
+            "Om du i stället lämnar tillgångarna hos en börs eller annan förvarare måste du lita på dess säkerhet, ekonomi och regler för uttag. Egen förvaring och förvaring hos ett företag har olika risker; ingen av dem gör ett innehav riskfritt.",
+            "Det finns också bedrägerier, tekniska risker, regleringsrisker och begränsad möjlighet att ångra fel. Bitcoin är inte helt anonymt: överföringar registreras offentligt. Att förstå dessa egenskaper är en del av att förstå tillgången, även om man bara vill följa utvecklingen."
+          ],
+          "sourceIds": [
+            "custody",
+            "risk",
+            "cnb"
+          ]
+        },
+        {
+          "heading": "Vad är det starkaste argumentet för Bitcoin?",
+          "paragraphs": [
+            "Min sammanvägda bedömning är att Bitcoins mest intressanta egenskap är kombinationen av förutsägbart utbud och möjlighet att äga och överföra värde utan en enda central operatör. Var och en av egenskaperna finns i andra former, men tillsammans skapar de något ovanligt.",
+            "Den som tror på Bitcoin tror ofta att fler människor och institutioner kommer att värdera just den kombinationen. Om efterfrågan växer samtidigt som utbudet är begränsat kan priset stiga. Om efterfrågan minskar kan priset falla kraftigt trots att taket på 21 miljoner finns kvar.",
+            "Bitcoin behöver alltså inte ersätta alla banker eller bli valutan i varje butik för att ha en funktion. Men historiska uppgångar, statliga innehav och ett begränsat utbud räcker inte för att lova framtida avkastning. Att förstå både styrkan och begränsningarna ger en bättre grund än att bara titta på kursen."
+          ],
+          "sourceIds": [
+            "faq",
+            "value",
+            "whitepaper"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "whitepaper",
+          "name": "Satoshi Nakamoto – originaltexten",
+          "url": "https://bitcoin.org/bitcoin.pdf"
+        },
+        {
+          "id": "faq",
+          "name": "Bitcoin.org – vanliga frågor",
+          "url": "https://bitcoin.org/en/faq"
+        },
+        {
+          "id": "history",
+          "name": "EU-kommissionen – Bitcoins tidiga historia",
+          "url": "https://ec.europa.eu/newsroom/cef/items/663083/default"
+        },
+        {
+          "id": "genesis",
+          "name": "Bitcoin Core – första blocket och nätverksregler",
+          "url": "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
+        },
+        {
+          "id": "pizza",
+          "name": "Laszlo Hanyecz – det ursprungliga pizzainlägget",
+          "url": "https://bitcointalk.org/index.php?topic=137.0"
+        },
+        {
+          "id": "how",
+          "name": "Bitcoin.org – så fungerar nätverket",
+          "url": "https://bitcoin.org/en/how-it-works"
+        },
+        {
+          "id": "amount",
+          "name": "Bitcoin Core – enheter och utbudsgräns",
+          "url": "https://github.com/bitcoin/bitcoin/blob/master/src/consensus/amount.h"
+        },
+        {
+          "id": "halving",
+          "name": "Bitcoin.org – halveringarna",
+          "url": "https://bitcoin.org/en/halving"
+        },
+        {
+          "id": "money",
+          "name": "Bank of England – hur pengar skapas",
+          "url": "https://www.bankofengland.co.uk/explainers/how-is-money-created"
+        },
+        {
+          "id": "inflation",
+          "name": "Riksbanken – inflationsmålet",
+          "url": "https://www.riksbank.se/sv/penningpolitik/inflationsmalet/"
+        },
+        {
+          "id": "value",
+          "name": "BlackRock – Bitcoin, efterfrågan och kursrisk",
+          "url": "https://www.blackrock.com/institutions/en-global/literature/whitepaper/bii-investment-perspectives-december-2024.pdf"
+        },
+        {
+          "id": "risk",
+          "name": "Bitcoin.org – säkerhet och risker",
+          "url": "https://bitcoin.org/en/you-need-to-know"
+        },
+        {
+          "id": "current",
+          "name": "CoinGecko – Bitcoin, USD och SEK",
+          "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd,sek&include_last_updated_at=true"
+        },
+        {
+          "id": "salvador2021",
+          "name": "IMF – El Salvadors Bitcoin-satsning 2021",
+          "url": "https://www.imf.org/en/news/articles/2021/11/22/mcs-el-salvador-staff-concluding-statement-of-the-2021-article-iv-mission"
+        },
+        {
+          "id": "salvador2026",
+          "name": "IMF – El Salvador, 3 september 2026",
+          "url": "https://www.imf.org/en/news/articles/2026/09/03/pr26285-el-salvador-imf-reaches-sla-on-combined-2nd-and-3rd-rev-under-eff-arrangement"
+        },
+        {
+          "id": "salvadoroct",
+          "name": "IMF – El Salvador, 1 oktober 2026",
+          "url": "https://www.imf.org/en/news/articles/2026/10/01/pr26316-el-salvador-imf-concludes-2nd-and-3rd-reviews-under-the-eff"
+        },
+        {
+          "id": "cnb",
+          "name": "Tjeckiens centralbank – testportföljen",
+          "url": "https://www.cnb.cz/en/economic-research/cnb-lab/digital-assets-pilot/index.html"
+        },
+        {
+          "id": "usa",
+          "name": "Vita huset – beslutet om Bitcoin-reserven",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
+        },
+        {
+          "id": "bhutan",
+          "name": "Bitdeer och statliga DHI – mining i Bhutan",
+          "url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-and-druk-holding-investments-jointly-develop-green"
+        },
+        {
+          "id": "bhutan2025",
+          "name": "Bitdeer – verksamhetsuppdatering juni 2025",
+          "url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2025-production-and-operations-update"
+        },
+        {
+          "id": "sec",
+          "name": "SEC – beslut om spotprodukter, januari 2024",
+          "url": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
+        },
+        {
+          "id": "lightning",
+          "name": "Lightning Network – betalningslager för Bitcoin",
+          "url": "https://lightning.network/"
+        },
+        {
+          "id": "prices2017",
+          "name": "Binance – historiska BTC/USDT-priser 2017",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1483228800000&endTime=1514764799999"
+        },
+        {
+          "id": "prices2021",
+          "name": "Binance – historiska BTC/USDT-priser 2021",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1609459200000&endTime=1640995199999"
+        },
+        {
+          "id": "prices2022",
+          "name": "Binance – historiska BTC/USDT-priser 2022",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1640995200000&endTime=1672531199999"
+        },
+        {
+          "id": "prices2024",
+          "name": "Binance – historiska BTC/USDT-priser 2024",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1704067200000&endTime=1735689599999"
+        },
+        {
+          "id": "prices2025",
+          "name": "Binance – historiska BTC/USDT-priser 2025",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1735689600000&endTime=1767225599999"
+        },
+        {
+          "id": "custody",
+          "name": "Bitcoin.org – skydda din plånbok",
+          "url": "https://bitcoin.org/en/secure-your-wallet"
+        }
+      ]
     }
   ]
 }
