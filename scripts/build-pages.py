@@ -1,10 +1,10 @@
 """Export real, indexable Pages documents. No server, API key or client router required."""
-import datetime as dt,html,json,pathlib,re,unicodedata
+import datetime as dt,html,json,pathlib,re,shutil,unicodedata
 from urllib.parse import urlsplit,parse_qs
 from zoneinfo import ZoneInfo
 from editorial import readable,enrich,deduplicate
 ROOT=pathlib.Path(__file__).resolve().parents[1];DIST=ROOT/'dist';DOMAIN='https://kryptokollen.online'
-CATEGORIES=['Bitcoin','Ethereum','Altcoins','SUI','Solana','Reglering','Institutionellt','Marknaden']
+CATEGORIES=['Bitcoin','Ethereum','Altcoins','Reglering','Institutionellt','Marknaden']
 def esc(value):return html.escape(str(value),quote=True)
 def cat_slug(value):return unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().lower()
 def date(value):return dt.datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(ZoneInfo('Europe/Stockholm')).strftime('%Y-%m-%d kl. %H:%M')
@@ -32,6 +32,10 @@ def main():
  rows=json.loads(archive.read_text())['items'] if archive.exists() else feed['items']
  items=[enrich(n) for n in deduplicate(rows) if readable(n)]
  if not items:raise ValueError('No readable articles: refusing to export empty site')
+ category_root=DIST/'kategori';active_categories={cat_slug(c) for c in CATEGORIES}
+ if category_root.exists():
+  for old_page in category_root.iterdir():
+   if old_page.is_dir() and old_page.name not in active_categories:shutil.rmtree(old_page)
  urls=['/'];paths=set()
  def write(path,content):
   if not re.fullmatch(r'/[a-z0-9/-]+/',path):raise ValueError('Unsafe permanent URL')

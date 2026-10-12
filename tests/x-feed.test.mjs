@@ -9,7 +9,7 @@ try{
  writeFileSync(join(dir,'x-feed.js'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
  const {mergeFeed,validXPost}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
  const now=Date.parse('2026-10-12T12:00:00Z');
- const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Solana','Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
+ const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
  const article={id:'article',publishedAt:'2026-10-12T11:00:00Z',importance:4};
  assert.ok(validXPost(post));
  assert.equal(mergeFeed([article],[post,post],{},false,[],now).length,2,'Deduplicate X IDs');

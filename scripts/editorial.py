@@ -30,7 +30,7 @@ def enrich(item):
  elif re.search(r'\b(analysis|analyst\w*|analys\w*)\b',lower):kind='analys'
  tags=list(item.get('coins',[]))
  categories=[]
- for symbol,name in [('BTC','Bitcoin'),('ETH','Ethereum'),('SUI','SUI'),('SOL','Solana')]:
+ for symbol,name in [('BTC','Bitcoin'),('ETH','Ethereum')]:
   if symbol in tags:categories.append(name)
  if any(s not in ('BTC','ETH') for s in tags):categories.append('Altcoins')
  rules=[('Reglering',r'\b(sec|regulat\w*|court|law|legislation|domstol)\b'),('Institutionellt',r'\b(etf|etfs|institution\w*|blackrock|strategy|treasury)\b'),('Marknaden',r'\b(price|market|rises?|falls?|inflows?|outflows?|pris|marknad\w*)\b')]

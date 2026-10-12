@@ -37,4 +37,4 @@ class XFailureTests(unittest.TestCase):
    root=pathlib.Path(folder);(root/'scripts').mkdir();(root/'public/data').mkdir(parents=True)
    (root/'scripts/x-sources.json').write_text(json.dumps([account]));target=root/'public/data/x.json';target.write_text(json.dumps({'posts':[post],'sources':[],'discovery':{}}))
    with patch.object(x,'ROOT',root),patch.object(x,'TARGET',target),patch.object(x,'get',side_effect=TimeoutError),contextlib.redirect_stdout(io.StringIO()):x.main()
-   data=json.loads(target.read_text());self.assertEqual(data['posts'],[post]);self.assertEqual(data['sources'][0]['connection'],'error')
+   data=json.loads(target.read_text());self.assertEqual(len(data['posts']),1);self.assertEqual(data['posts'][0]['id'],post['id']);self.assertEqual(data['posts'][0]['categories'],[]);self.assertEqual(data['sources'][0]['connection'],'error')

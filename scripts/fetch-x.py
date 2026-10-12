@@ -41,7 +41,7 @@ def parse_post(t,account,now,context=None):
  # Drop pure promotion, referral offers and obvious engagement bait.
  if re.search(r'\b(airdrop|giveaway|deposit bonus|referral|promo code|join my|sign up|subscribe to|follow us)\b',text,re.I):return None
  coins=[sym for sym,pattern in [('BTC',r'\b(bitcoin|btc)\b'),('ETH',r'\b(ethereum|eth|ether)\b'),('SUI',r'\bsui\b'),('SOL',r'\b(solana|sol)\b'),('XRP',r'\b(xrp|ripple)\b'),('HBAR',r'\b(hbar|hedera)\b'),('ONDO',r'\bondo\b'),('ADA',r'\b(cardano|ada)\b'),('DOGE',r'\b(dogecoin|doge)\b'),('LINK',r'\bchainlink\b'),('AVAX',r'\b(avalanche|avax)\b'),('XLM',r'\b(stellar|xlm)\b'),('BNB',r'\bbnb\b')] if re.search(pattern,text,re.I)]
- categories=[{'BTC':'Bitcoin','ETH':'Ethereum','SUI':'SUI','SOL':'Solana'}.get(c,'Altcoins') for c in coins]
+ categories=[{'BTC':'Bitcoin','ETH':'Ethereum'}.get(c,'Altcoins') for c in coins]
  if any(c not in ['BTC','ETH'] for c in coins) or re.search(r'\baltcoins?\b',text,re.I):categories.append('Altcoins')
  if re.search(r'\b(regulat\w*|approv\w*|sec|law)\b',text,re.I):categories.append('Reglering')
  if re.search(r'\b(etfs?|institution\w*|treasury)\b',text,re.I):categories.append('Institutionellt')
@@ -74,6 +74,11 @@ def main():
  posts={n['id']:n for n in old['posts'] if timestamp(n.get('publishedAt')) and 0<=(now-timestamp(n['publishedAt'])).total_seconds()<=14*86400 and any(n.get('handle')==a['handle'] for a in accounts)}
  for _,rows in results:
   posts.update({n['id']:n for n in rows})
+ # Keep coin tickers as filters, while grouping SUI and Solana under Altcoins.
+ for n in posts.values():
+  categories=[c for c in n.get('categories',[]) if c not in {'SUI','Solana'}]
+  if any(c not in ('BTC','ETH') for c in n.get('coins',[])) and 'Altcoins' not in categories:categories.append('Altcoins')
+  n['categories']=categories
  # Some profiles return only old/popular posts. Discover canonical post IDs in a
  # bounded set of directly fetched RSS publishers' articles, then verify with X.
  # Never infer a post's text, author or date from a secondary publication.
