@@ -43,3 +43,16 @@ Startsidan visar nu en Från X-del direkt i nyhetsflödet, med filter för de fy
 Insamlingen körs efter RSS i befintlig Pages-workflow. X-fel hålls separata, senaste urval cachas och utgivna nyhetsartiklar påverkas inte. 26 Python-tester och befintliga frontendtester passerar. Kontrollera aktuell release efter push.
 
 Översättning: inte löst. Google dokumenterar en Gemini API-gratisnivå även i EU, men den kräver en API-nyckel för ett projekt utan aktiverad fakturering. Ingen nyckel finns ansluten här, inga faktureringsinställningar har ändrats och ingen otestad integration har slagits på. Det är ett möjligt nästa försök; kvalitet och kvot måste testas innan automatisk publicering.
+
+X-release publicerad i commit 4bb234c39b8d41faaadfbc28a6d2764f2db9654b. Actions 38242365778 slutfördes med success, inklusive 26 Python-tester, frontendtester och Pages. X:s oEmbed svarade 200 och gav giltig native embed-markup för ett hämtat Watcher.Guru-inlägg. Ingen betald API eller autentisering användes.
+
+Sju aktuella originalinlägg har fått separat skrivna svenska sammanfattningar, kontrollerade mot den hämtade originaltexten. De är inte oberoende faktagranskningar. scripts/x-summaries.json binder varje sammanfattning till exakt källtext med SHA-256 och ursprungs-URL; ändrad text tar bort sammanfattningen tills ny kontroll gjorts. Detta löser läsbarheten för dessa sju inlägg men är inte löpande automatisk översättning.
+
+
+## Kontrollpunkt: svenska X-kort i samma flöde (12 oktober 2026)
+
+Ersätter ovanstående Från X-sektion och sjutextslösning. 44 aktuella originalposter har källbundna svenska versioner. Svenska visas först, originalet kan fällas ut utan att lämna sidan; konto, svensk publiceringstid och direktlänk till X finns kvar. Inga separata X- eller SUI/Solana-flikar har lagts till. X och artiklar använder samma kronologiska lista, sökning, filter, sidvisning och bokmärken. Gamla reservposter äldre än 14 dagar döljs.
+
+Automatisk språkhantering använder begränsade fullständigt matchade regler; övriga nya texter kräver granskning. Två gratis översättningsmodeller testades men gav betydelsefel. Detta är **inte** en generell självgående AI-översättare. Se OPERATIONS.md för exakt gräns och nästa steg. Inga betalda API:er, nya hemligheter eller modellnedladdningar i produktionsflödet.
+
+Verifiering före publicering: byggtest, befintliga frontendtester, nya tester för blandat flöde och språkgrind. Lokal riktig webbläsare kunde inte installeras (Playwright-nedladdningen gav en trasig zip); ingen fullständig visuell desktop-/mobilgranskning påstås. Interaktionskontroller i DOM körs separat. Publicera till main med villkorad ref-uppdatering och följ Pages-körningen; kontrollera därefter live x.json och den publicerade appen.

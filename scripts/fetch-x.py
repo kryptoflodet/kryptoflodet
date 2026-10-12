@@ -1,6 +1,6 @@
 """Read X's public embed data, without login, cookies, paid APIs or mirror services.
 This is a limited public selection, NOT a complete chronological X API.
-Only original posts by configured account IDs are accepted. UI uses native X embeds.
+Only original posts by configured account IDs are accepted. Original text is preserved.
 """
 import concurrent.futures,datetime as dt,email.utils,html,json,pathlib,re,urllib.request
 from html.parser import HTMLParser
@@ -51,7 +51,7 @@ def parse_post(t,account,now,context=None):
  for m in (t.get('extended_entities',{}).get('media') or t.get('entities',{}).get('media') or t.get('photos') or [])[:4]:
   url=m.get('media_url_https') or m.get('url','')
   if urlsplit(url).scheme=='https' and urlsplit(url).hostname=='pbs.twimg.com':media.append({'url':url,'alt':m.get('ext_alt_text') or m.get('alt_text') or ''})
- return {'media':media,'id':pid,'handle':handle,'author':u.get('name') or account['name'].removesuffix(' – X'),'sourceId':account['id'],'url':f'https://x.com/{handle}/status/{pid}','publishedAt':date.isoformat().replace('+00:00','Z'),'text':text,'coins':coins,'categories':categories,'originalLanguage':t.get('lang','en'),'kind':'original-x-post','verified':False,'discoveredVia':'article-reference' if context else 'x-embed','contextSource':context}
+ return {'media':media,'id':pid,'handle':handle,'author':u.get('name') or account['name'].removesuffix(' – X'),'sourceId':account['id'],'url':f'https://x.com/{handle}/status/{pid}','publishedAt':date.isoformat().replace('+00:00','Z'),'text':text,'coins':coins,'categories':categories,'originalLanguage':t.get('lang') or 'und','kind':'original-x-post','verified':False,'discoveredVia':'article-reference' if context else 'x-embed','contextSource':context}
 def parse_timeline(payload,account,now):
  p=NextData();p.feed(payload);d=json.loads(''.join(p.parts));es=d['props']['pageProps']['timeline']['entries']
  if not isinstance(es,list):raise ValueError('Missing timeline entries')

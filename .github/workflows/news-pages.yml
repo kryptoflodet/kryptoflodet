@@ -43,6 +43,8 @@ jobs:
           restore-keys: x-embed-v1-
       - name: Collect original X posts
         run: python scripts/fetch-x.py
+      - name: Prepare Swedish X cards
+        run: python scripts/x_language.py
       - run: python scripts/fetch-market.py
       - run: npm ci
       - run: npm run build
@@ -63,7 +65,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: editorial-review-queue
-          path: state/pending.json
+          path: |
+            state/pending.json
+            state/x-language-review.json
           retention-days: 3
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

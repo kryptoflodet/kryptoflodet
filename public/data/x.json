@@ -16,7 +16,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att Ledger har bekräftat ett dolt hårdvaruimplantat i en kunds plånbok. Inlägget hänvisar samtidigt till misstänkta kryptostölder på över 93 miljoner dollar.",
+        "method": "summary",
+        "sourceHash": "c788b018f0ef0da0d335d398401f39d9bc6d2d0864b70dff4a6e77df215f761f",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -40,7 +46,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Altcoin-säsongen kommer förr eller senare. Ju längre den dröjer, desto större kan uppgången bli.",
+        "method": "translation",
+        "sourceHash": "da0b9243fbcb2dd8f2d14db3c87ded5afe2539ab7da1ac3bf37e6c618dfb298c",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -57,7 +69,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Kryptobörsen Kraken ska lanseras i Förenade arabemiraten efter att ha fått fullt godkännande från tillsynsmyndigheten.",
+        "method": "translation",
+        "sourceHash": "8272b3381e7d8c41b80f6c651acefa19f3a86fd6101baaaba7aca4b583cbd047",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -87,7 +105,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Smarter Web Company, ett brittiskt bolag med bitcoin i sin kassa, tar villkorat in 10 miljoner pund (13,2 miljoner dollar). Omkring 4 miljoner pund (5,3 miljoner dollar) av nettolikviden är avsatta för ytterligare BTC-köp.",
+        "method": "summary",
+        "sourceHash": "8d4a1d79b91059906d649e052ea90fcd855df9a790ce3b0afdf15ef97f5c1b30",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -113,7 +137,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon skriver att Rysslands största börs, MOEX, förbereder en lansering av kryptohandel den 1 december och beskriver det som ett stort steg för användningen av krypto.",
+        "method": "summary",
+        "sourceHash": "d165cfbf30b068373e752d129d4cee796db2d1a1067511471aaf98aec6154765",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -143,7 +173,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att Rysslands största börs, MOEX, ska lansera handel med bitcoin och andra kryptovalutor den 1 december. Kontot jämför detta med vad det beskriver som USA:s misslyckande med CLARITY Act.",
+        "method": "summary",
+        "sourceHash": "e6f13f556c5600ec16bddccf76e1e2763b99a6c018d99d627f6911eec31bde18",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -169,7 +205,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Standard Chartered lanserar förvaringstjänster för institutioners innehav av Ripples stablecoin RLUSD i Dubai. Banken planerar också att utöka användningen av RLUSD som säkerhet vid handel genom LMAX Group.",
+        "method": "summary",
+        "sourceHash": "8facdb233732393f2a9d2890e594b4ccaef8a5473a1efd8b1d76e8f390f47032",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -199,7 +241,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "President Trump har tidigare förespråkat att skatter på bitcoin- och kryptotransaktioner ska tas bort. Se till att det händer!",
+        "method": "translation",
+        "sourceHash": "c292dc35a11170dd46489ead0f53eb14086a90cb079eb1a3aad19195e91e7991",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -225,7 +273,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Kraken-ägaren Payward har enligt The Moon fått slutligt godkännande från tillsynsmyndigheten i Dubai. Kryptobörsen planerar en lansering i Förenade arabemiraten inom några veckor, med bland annat spothandel, staking och tokeniserade aktier.",
+        "method": "summary",
+        "sourceHash": "2bff63be1df5e3773e2d8d0f8cfbdfc387e9b7c0cb9ff4e7d0634b4d0c5c7bb7",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -242,7 +296,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Morgan Stanley har enligt uppgift skjutit upp lanseringen av tokeniserade aktier till första kvartalet 2027.",
+        "method": "translation",
+        "sourceHash": "290cac19eb421ce82d96b56c16e1cf66d015ff0659c4d22cd0eed88c614a93d4",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -263,7 +323,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover hävdar att en person lyckades pricka bitcoins exakta botten under nedgångsmarknaden med en enkel strategi och att indikatorn aldrig har slagit fel. Kontot rekommenderar personens uppdateringar för den som vill bedöma när det är dags att ta hem vinster.",
+        "method": "summary",
+        "sourceHash": "59caccb8b00292475dcb09ea161ae4c4f4c4415a217c0abc308323a545c24e81",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -292,7 +358,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger, med Wu Blockchain som källa, att värdet på tokeniserade aktier på blockkedjor har nått rekordnivån 3,9 miljarder dollar. BNB Chain står för 1,2 miljarder dollar, följt av Ethereum och Solana; tillsammans står de tre nätverken för ungefär 70 procent av totalen.",
+        "method": "summary",
+        "sourceHash": "36990d27835bff9fb9f4588d8944b3f5498990a5f805c00eb8e07846a642c583",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -318,7 +390,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover hävdar att ett historiskt ”death cross” återigen markerade bitcoins cykelbotten och tolkar historiken som ett tecken på en kommande kraftig uppgång.",
+        "method": "summary",
+        "sourceHash": "aad140ebbdc1ca6e413b561f1bd517f26e1fe06eb21b083758bf4f7411f13d87",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -344,7 +422,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin: Historien upprepar sig … Titta nu.",
+        "method": "translation",
+        "sourceHash": "c4b23349e9c0061d78102cf4f547542dbe08806e7fd46292704edb844b5cdf05",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -365,7 +449,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "En lång position i bitcoin på 3 miljoner dollar – och han backar inte! Carl ser något intressant i diagrammen.",
+        "method": "translation",
+        "sourceHash": "dc45abe48f554fc5076b79b75d688460db0ec8257e8cb3587ed0b9d67a297e07",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -391,7 +481,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att bitcoins veckostängning för fjärde veckan i rad ligger över det glidande medelvärdet för 50 veckor. Kontot tolkar detta som att en uppgångsmarknad är ”100 % bekräftad”.",
+        "method": "summary",
+        "sourceHash": "ffca4824d65b129cdb665fc6312afca173d55a4fc5ca22739cd595c34e48689d",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -423,7 +519,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att en stor plånbok sålde 410 BTC (34,16 miljoner dollar) på Hyperliquid och direkt därefter bytte till 14 341 ETH (36,14 miljoner dollar) via decentraliserade börser.",
+        "method": "summary",
+        "sourceHash": "30b10bfaadcf4e12c0b0b7643e61258f7909d1997e82b882cb07f57d232f5909",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -457,7 +559,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att två adresser med koppling till Ethereum Foundation förde över 4 393 ETH (11,13 miljoner dollar) till Kraken några timmar före inlägget. Samma plånböcker ska ha fått 59 751 ETH för ett decennium sedan, när priset låg kring 0,90 dollar.",
+        "method": "summary",
+        "sourceHash": "9bb909c515b0af0f3644c298dc814e274adaf4520795329dac0fbe87a80f863f",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -483,7 +591,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Det mesta av likviditeten under bitcoins kurs har redan svepts bort. Du vet redan vad det betyder …",
+        "method": "translation",
+        "sourceHash": "2f8f3cb55ea1be61c9ad74c1472ed64495c7dabb22c75bba54981e9ea1a6c277",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -513,7 +627,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att Genesis Digital Assets ställer om från bitcoinutvinning till AI-datacenter. Huvudägaren SWI Group ska ha säkrat omkring 900 miljoner dollar i ny finansiering för att uppgradera och bygga ut anläggningar i Texas, delstaterna North och South Carolina samt Sverige.",
+        "method": "summary",
+        "sourceHash": "c3c722c039651a5b8f973030dc2e7d3fa7d447164b585e5318683c71e855ea0a",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -539,7 +659,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att Frankrikes finansutskott har ställt sig bakom ändringsförslag I-CF821 om rapportering av privata kryptoplånböcker. Enligt inlägget omfattar förslaget plånböcker med innehav på över 100 000 euro (112 000 dollar) och böter på upp till 10 000 euro vid utebliven rapportering.",
+        "method": "summary",
+        "sourceHash": "ca09f4d4c83368bd3b4f24dd4603a5cab2d32d53d4d09b001a247c9699037f58",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -571,7 +697,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Stora utflöden har noterats under veckan för både bitcoin- och ethereum-ETF:er: 681,10 miljoner dollar från BTC-ETF:er och 542,07 miljoner dollar från ETH-ETF:er.",
+        "method": "translation",
+        "sourceHash": "d7fcc6c22c7d8761f68ca8e415b07c69c3fe365bf85e5d4909f39f7e57fc7469",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -597,7 +729,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon uppger att BTC stängde veckan över en viktig stöd- och motståndsnivå. Om nivån håller siktar kontot först på 90 000 dollar och därefter på 100 000 dollar.",
+        "method": "summary",
+        "sourceHash": "c140e944a361c6c7d8727ccce8114739300148165edfc9d98ef1fb7cb2252947",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -623,7 +761,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att korta positioner för 140 miljoner dollar likviderades samtidigt som bitcoin stängde veckan över 83 000 dollar. Kontot tolkar utvecklingen som att köparna återtagit kontrollen.",
+        "method": "summary",
+        "sourceHash": "a8521aa73d499b365deea93b0899b09c52e010da40f4ef7545bbae2fc2b090a7",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -649,7 +793,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin stängde ännu en vecka över 83 000 dollar. Köparna har fortfarande kontrollen!",
+        "method": "translation",
+        "sourceHash": "5ccb82925e04bfeb3c65d2da53d72e16f2edaa301185956e933f50dd56d0da01",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -675,7 +825,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att stora aktörer på Binance och Coinbase lägger köporder för bitcoin i intervallet 74 000–80 000 dollar. Kontot antyder att detta säger något om den fortsatta utvecklingen, utan att uttryckligen ange vad.",
+        "method": "summary",
+        "sourceHash": "a8dc16e543375e5ff35822a9c30f81d18c121d4c183ab7f13a9153855d90cb26",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -701,7 +857,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin … Tänk om?",
+        "method": "translation",
+        "sourceHash": "a7add029a7a73cdb277949f087ed36252f38126810baba008b12bc5de7d989cf",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -727,7 +889,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin är åter på 84 000 dollar.",
+        "method": "translation",
+        "sourceHash": "c521c54a1b7923797cb53e7a4b8c04214ef039fbd816a2a599f35819c410e880",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -753,7 +921,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin är åter på 84 000 dollar! Kan vi lita på den här lilla helguppgången?",
+        "method": "translation",
+        "sourceHash": "bdadbb6c3ad4708b183e97518a07a651b7fff2326673614d174498a4caad7ebf",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -779,7 +953,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Mitt kursmål för bitcoin är 160 000–180 000 dollar! Nu kör vi!",
+        "method": "translation",
+        "sourceHash": "7d9fc295cb6c55b68f7872a9f3417daa00be5b48350d3128351097c280ae2f8e",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -805,7 +985,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover återger ett rykte om att Kina använder Hongkong för att testa kryptoreglering medan landet undersöker hur digitala tillgångar kan tas i bruk. Kontot tror dessutom att krypto är på väg in i en ny kraftig uppgångsfas.",
+        "method": "summary",
+        "sourceHash": "9c499965363503562249c01c417b6b271fa56b8f7d38e32ab929b767fb779765",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -822,7 +1008,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover återger obekräftade uppgifter om att påstådda hårdvaruimplantat i Ledgers leveranskedja också ska ha upptäckts i Europa. Kontot påpekar att Ledger ännu inte officiellt har bekräftat dessa rapporter.",
+        "method": "summary",
+        "sourceHash": "46817dc1437020bd4057864b12dfae666a54f47f1850bfcfab9fef0f2b17d92c",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -843,7 +1035,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoins uppgångsmarknad är 100 % bekräftad! Gör dig redo …",
+        "method": "translation",
+        "sourceHash": "394004f881d70058a58685a819611b1732c2bac74043af7d61330717914cf3c6",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -873,7 +1071,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Tom Lee förutspår att ethereum, ETH, kommer att passera 5 000 dollar före årets slut.",
+        "method": "translation",
+        "sourceHash": "1fff6e3d0a166d3b2c96b25cfbb4758b927cdee506b8e2979fe03a03edc6eedb",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -890,7 +1094,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "IMF säger att tokeniserade aktier är mindre likvida och har större kurssvängningar än traditionella aktier.",
+        "method": "translation",
+        "sourceHash": "f651691f12c10bb4aedf493092a6efd38a3a713aa782f865cf1d6ce456bdc110",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -916,7 +1126,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att kryptomarknadens värde har ökat med 650 miljarder dollar sedan Jim Cramer sålde hela sitt bitcoininnehav på grund av ”kvantrisker”. Kontot kommenterar detta med att Cramer ”aldrig slår fel”.",
+        "method": "summary",
+        "sourceHash": "97b5062abee1f58a9550c7023a4ca414ee86d6228461475fe37a8c1509f477b4",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -937,7 +1153,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Jag tror att bitcoin når 200 000 dollar under den här cykeln!",
+        "method": "translation",
+        "sourceHash": "df190b360c971221c7c40112708735473959d68063a13ef8eddf33a7c89fa972",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -959,6 +1181,12 @@
       "contextSource": {
         "url": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks",
         "title": "Saylor teases Strategy Bitcoin buying"
+      },
+      "swedish": {
+        "text": "Det finns alltid plats för mer orange.",
+        "method": "translation",
+        "sourceHash": "af7a58477ff0d897315165df31c0035b3a43e998ba202c8c475f96741ac6efca",
+        "engine": "reviewed"
       }
     },
     {
@@ -993,7 +1221,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin, BTC, har ett större börsvärde än Bank of America och Bank of China tillsammans.",
+        "method": "translation",
+        "sourceHash": "bb9914859f644806ea1eade2edc47812faea40b4309f9541febb3eb03a4065a5",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -1010,7 +1244,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Kina uppmanar officiellt till att bygga ett nationellt blockkedjenätverk som en del av sin ekonomiska strategi.",
+        "method": "translation",
+        "sourceHash": "8fc54cd41073ebe8e6b5693bf858b7225477f46aef79316ebda76e24e82bc5db",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -1027,7 +1267,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "XRP Ledger åtgärdar en kritisk säkerhetsbrist som kunde ha låtit angripare skapa obegränsat med XRP ur tomma intet.",
+        "method": "translation",
+        "sourceHash": "e0cc9e078a228e1ef19e0775f658a0ed9397212a7b0c5c6a93ccf7ba78d2a1f1",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -1049,7 +1295,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "För ett år sedan i dag drabbades kryptomarknaden av sin största likvidationshändelse hittills. Positioner med hävstång till ett värde av över 19,1 miljarder dollar slogs ut.",
+        "method": "translation",
+        "sourceHash": "07f088f7fc01d8ec2b52e9cf599f363f7491859bbdcc0287b370f39f6fb60665",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [],
@@ -1072,7 +1324,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Thailand ska tillåta handel med bitcoin- och ethereum-ETF:er på sin börs från den 16 oktober.",
+        "method": "translation",
+        "sourceHash": "580612161ba170a087205a74dedac597be9932ba7d544d4c04a313190620d096",
+        "engine": "reviewed"
+      }
     },
     {
       "media": [
@@ -1102,7 +1360,13 @@
       "kind": "original-x-post",
       "verified": false,
       "discoveredVia": "x-embed",
-      "contextSource": null
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin, BTC, väntas inte längre åter nå 100 000 dollar i år.",
+        "method": "translation",
+        "sourceHash": "2bdbdf91d2dc0e0ad07775596d2be1a6f49d1a21e105f1fad98d043ea8397436",
+        "engine": "reviewed"
+      }
     }
   ],
   "sources": [
@@ -1160,5 +1424,13 @@
       "newestPostAt": "2026-10-11T12:04:30Z"
     }
   ],
-  "discovery": {}
+  "discovery": {},
+  "language": {
+    "version": "x-sv-rules-v1",
+    "checkedAt": "2026-10-12T15:19:36.597789+00:00",
+    "original": 0,
+    "reviewed": 44,
+    "automatic": 0,
+    "pending": 0
+  }
 }

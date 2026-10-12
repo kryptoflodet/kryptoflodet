@@ -1,0 +1,32 @@
+import {mkdtempSync,readFileSync,writeFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {createRequire} from 'node:module';
+import ts from 'typescript';
+import assert from 'node:assert/strict';
+const dir=mkdtempSync(join(tmpdir(),'x-feed-tests-'));
+try{
+ writeFileSync(join(dir,'x-feed.js'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
+ const {mergeFeed,validXPost}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
+ const now=Date.parse('2026-10-12T12:00:00Z');
+ const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Solana','Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
+ const article={id:'article',publishedAt:'2026-10-12T11:00:00Z',importance:4};
+ assert.ok(validXPost(post));
+ assert.equal(mergeFeed([article],[post,post],{},false,[],now).length,2,'Deduplicate X IDs');
+ assert.deepEqual(mergeFeed([article],[post],{},false,[],now).map(n=>n.type),['news','x'],'One chronological feed');
+ assert.equal(mergeFeed([], [post],{category:'Altcoins'},false,[],now).length,1);
+ assert.equal(mergeFeed([], [post],{category:'Bitcoin'},false,[],now).length,0);
+ assert.equal(mergeFeed([], [post],{coin:'SOL',q:'skulle kunna'},false,[],now).length,1,'Search Swedish');
+ assert.equal(mergeFeed([], [post],{q:'could'},false,[],now).length,1,'Search original');
+ assert.equal(mergeFeed([], [post],{q:'example'},false,[],now).length,1);
+ for(const noise of ['important','confirmed'])assert.equal(mergeFeed([], [post],{noise},false,[],now).length,0,'A source post is not fact-checked news');
+ assert.equal(mergeFeed([], [post],{},true,['x:'+post.id],now).length,1,'X bookmarks');
+ assert.equal(mergeFeed([], [post],{},true,[],now).length,0);
+ assert.equal(mergeFeed([], [{...post,swedish:undefined}],{},false,[],now).length,0,'English waits for Swedish text');
+ assert.equal(mergeFeed([], [{...post,swedish:undefined,originalLanguage:'sv'}],{},false,[],now).length,1,'Swedish original');
+ assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
+ assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
+ for(const bad of [null,{}, {...post,url:'javascript:alert(1)'},{...post,url:post.url+'.evil'},{...post,categories:[12]},{...post,swedish:{text:123,method:'translation'}}])assert.equal(validXPost(bad),false);
+ assert.equal(mergeFeed([article],[{...post,publishedAt:'2026-10-12T11:30:00Z'}],{sort:'importance'},false,[],now)[0].type,'news','Importance does not promote raw claims');
+ console.log('X feed checks passed: mixed chronology, Swedish/original search, filters, bookmarks, trust, freshness and invalid data.');
+}finally{rmSync(dir,{recursive:true,force:true});}

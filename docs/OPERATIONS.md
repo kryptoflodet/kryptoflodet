@@ -50,12 +50,23 @@ Nästa förbättring av språkautomationen behöver en kostnadsfri lösning som 
 
 Kön med källänkar, originalrubriker och publiceringstid sparas som Actions-artifact i tre dagar. Fulla källtexter finns inte i kön. Den hjälper nästa redaktionella genomgång utan att otillräckliga artiklar visas för läsaren. Avancerad automatisk sammanhängande dagsanalys och oberoende flerkällsverifiering är ännu inte implementerade; dagsöversikten är ett deterministiskt urval av granskade artiklar.
 
-## Från X – drift
+## X-inlägg i det gemensamma flödet – drift
 
 X:s egna publika inbäddningsflöden används som kostnadsfri källa. De lämnar inte nödvändigtvis ut alla poster eller de senaste posterna. Särskilt Saylor kan ge gamla populära inlägg. Kontonas fasta numeriska ID:n valideras så att ett ändrat användarnamn inte kan byta avsändare obemärkt. Endast relevanta originalinlägg inom 14 dagar visas.
 
-En begränsad komplettering hämtar X-länkar från högst tre aktuella artiklar hos tillåtna RSS-utgivare per körning. Artikellänkar cachas ett dygn. Upp till åtta nya post-ID:n kontrolleras mot X; aldrig mot sekundärkällans omskrivning. Den kontrollerade avsändaren och publiceringstiden måste matcha. Detta är ofullständig upptäckt, vilket även UI upplyser om.
+En begränsad komplettering hämtar X-länkar från högst tre aktuella artiklar hos tillåtna RSS-utgivare per körning. Artikellänkar cachas ett dygn. Upp till åtta nya post-ID:n kontrolleras mot X; aldrig mot sekundärkällans omskrivning. Den kontrollerade avsändaren och publiceringstiden måste matcha. Detta är ofullständig upptäckt, vilket även källregistret och metodbeskrivningen upplyser om.
 
-public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-delens originalspråk är avsiktligt tydligt märkt och passerar inte den separata grinden för svenska nyhetsartiklar. Reservtext med källans datum visas om X-widgeten blockeras. Sidan kontaktar X för widgets och bilder; inget X-konto eller X-token används av insamlingen.
+public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-korten blandas kronologiskt med artiklarna. Svenska visas först, originalet fälls ut lokalt med Visa original. Ingen widget laddas; originalbilder från pbs.twimg.com hämtas först vid utfällning. Inget X-konto eller X-token används. X-påståenden räknas aldrig automatiskt som bekräftade nyheter och visas inte av filtren Viktigt/Endast bekräftat. Vanliga kategori-, coin-, sök-, sorterings- och bokmärkesfunktioner omfattar korten.
 
 X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och Actions-loggen vid bortfall. Försök inte kringgå inloggning, botkontroller eller åtkomstspärrar. Ordinarie RSS, marknadskurser och artikelarkiv fortsätter oberoende.
+
+
+## Svenska X-texter
+
+`python scripts/x_language.py` körs efter insamlingen och före bygget. `scripts/x-summaries.json` återanvänds för källbundna svenska texter (översättning eller sammanfattning). En granskning gäller endast exakt SHA-256 av originalet och samma käll-URL; ändrade/indragna texter återanvänds inte från cache. Originalfältet `text` ändras aldrig. Svenska original visas oförändrade.
+
+Automatiken är avsiktligt begränsad: fullständigt matchade engelska formuleringar för prisnivåer, kursmål, uttryckliga prognoser och ETF-flöden kan återges med naturliga, fasta svenska språkregler och korrekt talformat. Hela inlägget måste passa, inklusive varje mening. Okända påståenden, varningar eller extra förbehåll stoppas; ingen mening kapas bort för att få igenom en post. Korta inlägg översätts; längre godkända texter återges i 1–3 meningar. En generell automatisk sammanfattare för alla typer av inlägg är **inte** aktiverad.
+
+Inlägg utan godkänd svensk text sparas i `public/data/x.json` och `state/x-language-review.json`, men visas inte i det svenska flödet. Kön följer med Actions-artifact `editorial-review-queue`. Fältet `language` i x.json visar räknare för original/reviewed/automatic/pending. Ingen betald tjänst eller extra API-nyckel används. Inga nya modellpaket behöver installeras i produktionskörningen.
+
+Två lokala gratis alternativ prövades på 44 faktiska X-texter: befintlig Argos en_sv 1.5 och OPUS-MT en-sv (Helsinki-NLP, CTranslate2-konvertering Sams200, revision 0e1787c21c03d475b53ee417c92d2849375edba1). Båda underkändes på naturlighet och betydelse; bland annat blev stora belopp fel och centrala facktermer förvanskades. Därför får ingen av dem automatiskt publicera X-text. Nästa steg för bredare automatisering är att utvärdera en bättre kostnadsfri språkmodell mot dessa fall, inklusive oberoende kvalitetsgranskning, före aktivering.
