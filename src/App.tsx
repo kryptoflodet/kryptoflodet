@@ -13,7 +13,7 @@ import {trackedCoins,emptyQuotes,type MarketData} from '@/lib/market';
 import {initialMarket} from '@/lib/market-initial';
 import {fetchMarket,loadCachedMarket} from '@/lib/market-client';
 const BASE=import.meta.env.BASE_URL;
-const nav=['Senaste','Bitcoin','Ethereum','Altcoins','SUI','Solana','Reglering','Blog'];
+const nav=['Senaste','Bitcoin','Ethereum','Altcoins','Reglering','Blog'];
 const names:Record<string,string>=Object.fromEntries(trackedCoins.map(([,symbol,name])=>[symbol,name]));
 const marks:Record<string,string>={BTC:'₿',ETH:'Ξ',SOL:'≋',SUI:'◈',XRP:'×',HBAR:'ℏ',ONDO:'◎',ADA:'₳',DOGE:'Ð',XLM:'✦',AVAX:'▲',LINK:'⬡',BNB:'◇',HYPE:'H',LTC:'Ł'};
 const statusNames={confirmed:'Bekräftad',unconfirmed:'Ej bekräftad',rumor:'Rykte'};
