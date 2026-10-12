@@ -2,11 +2,13 @@ name: Uppdatera nyheter och publicera
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'public/data/**'
   workflow_dispatch:
   schedule:
     - cron: '3-58/5 * * * *'
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -15,7 +17,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,25 +30,33 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: pip
-          cache-dependency-path: scripts/translation-requirements.txt
-      - uses: actions/cache@v4
-        with:
-          path: public/data/news.json
-          key: news-crypto-v2-${{ github.run_id }}
-          restore-keys: news-crypto-v2-
-      - uses: actions/cache@v4
-        with:
-          path: .cache/translation
-          key: translation-v3-${{ github.run_id }}
-          restore-keys: translation-v3-
-      - run: pip install -r scripts/translation-requirements.txt
-      - run: python scripts/fetch-news.py
+      - name: Collect and edit news
+        env:
+          RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
+          EDITOR_MODE: 'reviewed-only'
+        run: python scripts/fetch-news.py
       - run: python scripts/fetch-market.py
       - run: npm ci
       - run: npm run build
       - run: npm test
       - run: python -m unittest discover -s tests -p '*_test.py'
+      - name: Persist new articles before deployment
+        run: |
+          if ! git diff --quiet -- public/data/archive.json || [ -n "$(git ls-files --others --exclude-standard public/data/archive.json)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add public/data/archive.json public/data/news.json public/data/health.json
+            git commit -m 'Archive approved Kryptokollen articles [skip ci]'
+            # A concurrent code push must never be overwritten. A rejected push stops deployment.
+            git push origin HEAD:main
+            npm run build
+          fi
+      - name: Save review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-review-queue
+          path: state/pending.json
+          retention-days: 3
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

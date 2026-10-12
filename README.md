@@ -57,3 +57,9 @@ npm run dev
 ```
 
 `backend/` bevarar tidigare serverkod men körs inte på GitHub Pages.
+
+## Nyhetsmotor v2
+
+Se [drift och begränsningar](docs/OPERATIONS.md) och [aktuell utvecklingsstatus](docs/DEVELOPMENT.md). Produktionen använder inga betalda API:er. Nyhetsinsamlingen är automatisk; svenska artiklar kräver i nuläget redaktionell granskning eftersom de kostnadsfria lokala modellerna inte klarade kvalitetstesterna.
+
+`npm run build` exporterar också permanenta artikelsidor, kategoriarkiv, dagsöversikter och sitemap. Python 3.12 behövs. `python -m unittest discover -s tests -p '*_test.py'` testar insamling, publiceringsregler och export.

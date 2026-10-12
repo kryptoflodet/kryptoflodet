@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    {
+      "id": "06d4cdc2f38a29c240e7",
+      "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
+      "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
+      "originalText": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
+      "originalLanguage": "en",
+      "title": "Sui meddelar integration av USDC i Samsung Wallet",
+      "translation": "Sui meddelar integration av USDC i Samsung Wallet",
+      "summary": "Sui Foundation har meddelat att Samsung Wallet ska stödja USDC på Sui, med inledande utrullning i USA. Beskedet gäller USDC, inte stöd för SUI-tokenen i plånboken.",
+      "why": "Integrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
+      "author": "Sui",
+      "publishedAt": "2026-10-08T15:00:00Z",
+      "importedAt": "2026-10-11T17:43:06.865560Z",
+      "category": "Altcoins",
+      "coins": [
+        "SUI"
+      ],
+      "topics": [
+        "SUI"
+      ],
+      "sourceId": "sui",
+      "originalUrl": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
+      "sourceType": "OFFICIELL",
+      "evidence": [
+        {
+          "sourceId": "sui",
+          "url": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
+          "originId": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
+          "direct": true,
+          "verified": true
+        }
+      ],
+      "status": "confirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 4,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "editorial",
+      "verificationNote": "Kontrollerat mot Sui Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller att projektet publicerat beskedet; utrullningen har inte testats oberoende.",
+      "reviewedAt": "2026-10-11T15:15:00Z",
+      "translationStatus": "reviewed-sv",
+      "readerText": "Sui Foundation har meddelat att Samsung Wallet ska stödja USDC på Sui, med inledande utrullning i USA. Beskedet gäller USDC, inte stöd för SUI-tokenen i plånboken.\n\nIntegrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
+      "readerKind": "reviewed",
+      "contentVersion": 2,
+      "contentType": "rapportering",
+      "categories": [
+        "SUI",
+        "Altcoins"
+      ],
+      "importanceReason": "Beslut, köp eller förändring i ett nätverk",
+      "slug": "sui-meddelar-integration-av-usdc-i-samsung-wallet-06d4cdc2f3",
+      "path": "/nyheter/sui-meddelar-integration-av-usdc-i-samsung-wallet-06d4cdc2f3/"
+    },
+    {
+      "id": "59efa96949882ae65d97",
+      "eventKey": "https://solana.com/news/solana-microscope",
+      "originalTitle": "Introducing Solana Microscope: Program Monitoring and Alerts",
+      "originalText": "Introducing Solana Microscope: Program Monitoring and Alerts",
+      "originalLanguage": "en",
+      "title": "Solana presenterar Microscope för övervakning av blockkedjeprogram",
+      "translation": "Solana presenterar Microscope för övervakning av blockkedjeprogram",
+      "summary": "Solana har presenterat ett verktyg med öppen källkod som hjälper utvecklare att följa programhändelser och få varningar.",
+      "why": "Verktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
+      "author": "Solana",
+      "publishedAt": "2026-10-05T00:00:00Z",
+      "importedAt": "2026-10-11T17:43:06.865560Z",
+      "category": "Altcoins",
+      "coins": [
+        "SOL"
+      ],
+      "topics": [
+        "SOL"
+      ],
+      "sourceId": "solana",
+      "originalUrl": "https://solana.com/news/solana-microscope",
+      "sourceType": "OFFICIELL",
+      "evidence": [
+        {
+          "sourceId": "solana",
+          "url": "https://solana.com/news/solana-microscope",
+          "originId": "https://solana.com/news/solana-microscope",
+          "direct": true,
+          "verified": true
+        }
+      ],
+      "status": "confirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "editorial",
+      "verificationNote": "Kontrollerat mot Solanas originalartikel den 11 oktober 2026. Bekräftelsen gäller presentationen av verktyget, inte oberoende test av dess funktion.",
+      "reviewedAt": "2026-10-11T15:15:00Z",
+      "translationStatus": "reviewed-sv",
+      "readerText": "Solana har presenterat ett verktyg med öppen källkod som hjälper utvecklare att följa programhändelser och få varningar.\n\nVerktyget är avsett för drift och övervakning på Solana. Beskedet säger inget om framtida SOL-pris.",
+      "readerKind": "reviewed",
+      "contentVersion": 2,
+      "contentType": "rapportering",
+      "categories": [
+        "Solana",
+        "Altcoins"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "solana-presenterar-microscope-for-overvakning-av-blockkedjeprogram-59efa96949",
+      "path": "/nyheter/solana-presenterar-microscope-for-overvakning-av-blockkedjeprogram-59efa96949/"
+    },
+    {
+      "id": "bc50945e3cbbceb91205",
+      "eventKey": "https://blog.ethereum.org/en/2026/09/17/glamsterdam-testnet-announcement",
+      "originalTitle": "Glamsterdam Testnet Announcement",
+      "originalText": "Glamsterdam Testnet Announcement",
+      "originalLanguage": "en",
+      "title": "Ethereum publicerar besked om Glamsterdam på testnätet Sepolia",
+      "translation": "Ethereum publicerar besked om Glamsterdam på testnätet Sepolia",
+      "summary": "Ethereum Foundation har publicerat en plan för Glamsterdam på Sepolia. Artikeln anger ingen beslutad tidpunkt för huvudnätet.",
+      "why": "Testnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
+      "author": "Ethereum Foundation",
+      "publishedAt": "2026-09-28T00:00:00Z",
+      "importedAt": "2026-10-11T17:43:06.865560Z",
+      "category": "Institutioner",
+      "coins": [
+        "ETH"
+      ],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "ethereum",
+      "originalUrl": "https://blog.ethereum.org/en/2026/09/17/glamsterdam-testnet-announcement",
+      "sourceType": "OFFICIELL",
+      "evidence": [
+        {
+          "sourceId": "ethereum",
+          "url": "https://blog.ethereum.org/en/2026/09/17/glamsterdam-testnet-announcement",
+          "originId": "https://blog.ethereum.org/en/2026/09/17/glamsterdam-testnet-announcement",
+          "direct": true,
+          "verified": true
+        }
+      ],
+      "status": "confirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "editorial",
+      "verificationNote": "Kontrollerat mot Ethereum Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller det publicerade testnätsbeskedet.",
+      "reviewedAt": "2026-10-11T15:15:00Z",
+      "translationStatus": "reviewed-sv",
+      "readerText": "Ethereum Foundation har publicerat en plan för Glamsterdam på Sepolia. Artikeln anger ingen beslutad tidpunkt för huvudnätet.\n\nTestnätet används för att prova protokolländringar. Ett testnätsbesked innebär inte att huvudnätet har uppgraderats.",
+      "readerKind": "reviewed",
+      "contentVersion": 2,
+      "contentType": "rapportering",
+      "categories": [
+        "Ethereum"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "ethereum-publicerar-besked-om-glamsterdam-pa-testnatet-sepolia-bc50945e3c",
+      "path": "/nyheter/ethereum-publicerar-besked-om-glamsterdam-pa-testnatet-sepolia-bc50945e3c/"
+    }
+  ]
+}

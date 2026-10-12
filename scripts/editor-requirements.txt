@@ -1,0 +1,4 @@
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+--only-binary=:all:
+llama-cpp-python==0.3.36
+lingua-language-detector==2.1.1

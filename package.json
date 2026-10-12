@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && python scripts/build-pages.py",
     "preview": "vite preview",
     "test": "node tests/feed.test.mjs && node tests/market.test.mjs && node tests/pages.test.mjs && node tests/chart.test.mjs && node tests/video.test.mjs"
   },
