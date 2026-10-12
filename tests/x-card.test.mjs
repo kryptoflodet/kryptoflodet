@@ -35,7 +35,7 @@ try{
  assert.equal(host.querySelector('figcaption').textContent,'Illustrationsbild');
  await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
- await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/institutions-640.webp'));
+ await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Bitcoin posts use the Bitcoin logo even in another category');
  await render({...post,swedish:undefined});assert.equal(host.textContent,'','No English-first fallback');
  console.log('X card interactions passed: Swedish first, original toggle, exact text, safe links/media, bookmarks, coin filters and Swedish originals.');
 }finally{await act(()=>root.unmount());dom.window.close();rmSync(dir,{recursive:true,force:true});}

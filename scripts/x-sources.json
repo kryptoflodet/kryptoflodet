@@ -33,5 +33,11 @@
     "handle": "BitcoinArchive",
     "type": "MEDIA",
     "userId": "970994516357472257"
+  },
+  {
+    "id": "mmcrypto-x",
+    "name": "MMCrypto – X",
+    "handle": "MMCrypto",
+    "type": "INFLUENCER"
   }
 ]

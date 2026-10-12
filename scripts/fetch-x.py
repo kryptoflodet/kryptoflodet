@@ -56,7 +56,17 @@ def parse_timeline(payload,account,now):
  p=NextData();p.feed(payload);d=json.loads(''.join(p.parts));es=d['props']['pageProps']['timeline']['entries']
  if not isinstance(es,list):raise ValueError('Missing timeline entries')
  raw=[e.get('content',{}).get('tweet',{}) for e in es if e.get('type')=='tweet']
- items=[n for t in raw if (n:=parse_post(t,account,now))]
+ # Some public X profiles do not expose a stable ID in the profile config.
+ # Resolve it only from the response itself, requiring one unique numeric ID
+ # and an exact screen-name match; established accounts remain pinned to IDs.
+ resolved=account
+ if not account.get('userId'):
+  authors={str(t.get('user',{}).get('id_str','')) for t in raw
+           if t.get('user',{}).get('screen_name','').lower()==account['handle'].lower()}
+  authors={value for value in authors if re.fullmatch(r'\d{5,22}',value)}
+  if len(authors)!=1:raise ValueError('Could not validate X profile identity')
+  resolved={**account,'userId':authors.pop()}
+ items=[n for t in raw if (n:=parse_post(t,resolved,now))]
  dates=[d for t in raw if (d:=timestamp(t.get('created_at'))) is not None]
  return list({n['id']:n for n in items}.values()),max(dates).isoformat() if dates else None
 

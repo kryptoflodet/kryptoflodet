@@ -31,6 +31,7 @@ function RollingTicker({quotes,currency,onCoin}:{quotes:MarketData['quotes'];cur
 }
 const topicIcons:Record<string,typeof Activity>={'Reglering':Landmark,'Institutioner':Building2,'Bitcoin':WalletCards,'Ethereum':Gem,'Altcoins':Network,'Makro':Landmark,'Säkerhet / Hacks':ShieldAlert,'Mining':Pickaxe,'DeFi':Layers3,'ETF':ChartNoAxesCombined,'Börser':ChartNoAxesCombined,'Stablecoins':WalletCards,'On-chain':Network};
 function articleArt(item:NewsItem){
+ if(item.coins.includes('BTC'))return {name:'bitcoin',alt:'Orange Bitcoin-logotyp mot svart bakgrund'};
  if(['Makro','Institutioner','ETF','Reglering'].includes(item.category))return {name:'institutions',alt:'Konceptuell illustration av en finansiell institution i sten och brons'};
  if(['Altcoins','DeFi','Säkerhet / Hacks','On-chain'].includes(item.category))return {name:'network',alt:'Konceptuell illustration av ett blockkedjenätverk i glas och metall'};
  if(item.coins[0]==='ETH')return {name:'ethereum',alt:'Ethereum-symbol i facetterat glas på en mörk sockel'};

@@ -21,6 +21,14 @@ class XTests(unittest.TestCase):
   entry={'type':'tweet','content':{'tweet':self.post}};payload='<script id="__NEXT_DATA__" type="application/json">'+json.dumps({'props':{'pageProps':{'timeline':{'entries':[entry,entry]}}}})+'</script>'
   rows,_=x.parse_timeline(payload,self.account,self.now);self.assertEqual(len(rows),1)
   with self.assertRaises(Exception):x.parse_timeline('<html>Login</html>',self.account,self.now)
+ def test_unpinned_profile_is_resolved_only_from_one_matching_author(self):
+  account={'id':'mmcrypto-x','handle':'MMCrypto','name':'MMCrypto'}
+  post={**self.post,'id_str':'2109000000000000001','user':{'id_str':'123456789','screen_name':'MMCrypto','name':'MMCrypto'}}
+  entry={'type':'tweet','content':{'tweet':post}};payload='<script id="__NEXT_DATA__" type="application/json">'+json.dumps({'props':{'pageProps':{'timeline':{'entries':[entry]}}}})+'</script>'
+  rows,_=x.parse_timeline(payload,account,self.now);self.assertEqual(len(rows),1);self.assertEqual(rows[0]['handle'],'MMCrypto')
+  impostor={**post,'user':{'id_str':'987654321','screen_name':'other','name':'Other'}}
+  payload='<script id="__NEXT_DATA__" type="application/json">'+json.dumps({'props':{'pageProps':{'timeline':{'entries':[entry,{'type':'tweet','content':{'tweet':impostor}}]}}}})+'</script>'
+  rows,_=x.parse_timeline(payload,account,self.now);self.assertEqual(len(rows),1)
  def test_media_host_allowlist(self):
   self.post['photos']=[{'url':'https://pbs.twimg.com/image.jpg'},{'url':'https://pbs.twimg.com.evil.test/image.jpg'},{'url':'javascript:alert(1)'}]
   n=x.parse_post(self.post,self.account,self.now);self.assertEqual(len(n['media']),1)

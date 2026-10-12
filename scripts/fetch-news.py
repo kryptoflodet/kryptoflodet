@@ -19,6 +19,21 @@ def date(text):
   return value.astimezone(dt.timezone.utc).isoformat().replace('+00:00','Z')
  except (ValueError,TypeError,AttributeError):return None
 
+def youtube_feed_url(handle,fetch=getattr(urllib.request,'urlopen',None)):
+ """Resolve a public YouTube @handle to its stable RSS channel ID."""
+ if not re.fullmatch(r'[A-Za-z0-9._-]{3,30}',handle):raise ValueError('Invalid YouTube handle')
+ request=urllib.request.Request('https://www.youtube.com/@'+handle,headers={'User-Agent':'Mozilla/5.0 (compatible; Kryptokollen/2.0)','Accept':'text/html'})
+ with fetch(request,timeout=12) as response:page=response.read(2_000_001).decode('utf-8','replace')
+ if len(page)>2_000_000:raise ValueError('YouTube page too large')
+ # YouTube exposes the channel ID in page metadata/initial JSON; do not use
+ # guessed IDs or third-party scraping services.
+ candidates=re.findall(r'(?:itemprop=["\']channelId["\'][^>]*content=["\']|content=["\'])(UC[A-Za-z0-9_-]{22})',page)
+ candidates+=re.findall(r'"(?:externalId|channelId)"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',page)
+ candidates+=re.findall(r'/channel/(UC[A-Za-z0-9_-]{22})',page)
+ ids=set(candidates)
+ if len(ids)!=1:raise ValueError('Could not resolve one YouTube channel ID')
+ return 'https://www.youtube.com/feeds/videos.xml?channel_id='+ids.pop()
+
 def parse_feed(payload,source,now):
  if b'<!DOCTYPE' in (payload if isinstance(payload,bytes) else payload.encode()).upper():raise ValueError('DTD is not permitted')
  root=ET.fromstring(payload);entries=root.findall('./channel/item') or root.findall('{http://www.w3.org/2005/Atom}entry');result=[]
@@ -66,7 +81,8 @@ def main():
   s=dict(id=sid,name=spec['name'],type=spec['type'],channel=spec.get('channel','RSS'),url=public_url,trust=0,enabled=True,connection='planned',independenceGroup=sid,checkedAt=now,language=spec.get('language','en'),coverage=spec.get('coverage','Direkt RSS från utgivaren'))
   if spec.get('disabledReason'):s.update(enabled=False,error=spec['disabledReason']);return s,[]
   try:
-   req=urllib.request.Request(spec['url'],headers={'User-Agent':'Kryptokollen/2.0 (+https://kryptokollen.online)','Accept':'application/rss+xml, application/atom+xml, application/xml'})
+   feed_url=youtube_feed_url(spec['youtubeHandle']) if spec.get('youtubeHandle') else spec['url']
+   req=urllib.request.Request(feed_url,headers={'User-Agent':'Kryptokollen/2.0 (+https://kryptokollen.online)','Accept':'application/rss+xml, application/atom+xml, application/xml'})
    with urllib.request.urlopen(req,timeout=12) as r:payload=r.read(3_000_001)
    if len(payload)>3_000_000:raise ValueError('Feed too large')
    rows=parse_feed(payload,s,now);s.update(connection='connected',lastSuccessAt=now,count=len(rows));print(f'{sid}: {len(rows)} kandidater',flush=True);return s,rows

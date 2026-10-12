@@ -5,7 +5,7 @@ function XImage({post}:{post:XPost}){
  const [failedUrl,setFailedUrl]=useState('');
  const media=post.media?.find(m=>{try{const u=new URL(m.url);return u.protocol==='https:'&&u.hostname==='pbs.twimg.com';}catch{return false;}});
  const original=media&&media.url!==failedUrl;
- const art=post.categories.some(c=>['Reglering','Institutionellt'].includes(c))?'institutions':post.coins.includes('ETH')?'ethereum':post.coins.some(c=>!['BTC','ETH'].includes(c))||post.categories.includes('Altcoins')?'network':post.coins.includes('BTC')||post.handle==='saylor'?'bitcoin':'network';
+ const art=post.coins.includes('BTC')||post.handle==='saylor'?'bitcoin':post.categories.some(c=>['Reglering','Institutionellt'].includes(c))?'institutions':post.coins.includes('ETH')?'ethereum':post.coins.some(c=>!['BTC','ETH'].includes(c))||post.categories.includes('Altcoins')?'network':'network';
  const alt={bitcoin:'Orange bitcoinlogotyp mot svart bakgrund',ethereum:'Illustration av ethereum',institutions:'Illustration av en finansiell institution',network:'Illustration av ett blockkedjenätverk'}[art];
  return <figure className={'x-card-image '+(original?'is-original':'is-illustration')}><img src={original?media.url:`./images/${art}-640.webp`} srcSet={original?undefined:`./images/${art}-640.webp 640w, ./images/${art}-1280.webp 1280w`} sizes="(max-width:600px) 90vw, 220px" alt={original?(media.alt||`Bild från ${post.author}s originalinlägg på X`):alt} width="640" height="400" loading="lazy" decoding="async" onError={original?()=>setFailedUrl(media.url):undefined}/><figcaption>{original?'Bild från originalinlägget':'Illustrationsbild'}</figcaption></figure>;
 }

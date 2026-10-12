@@ -210,5 +210,15 @@
     "language": "sv",
     "category": null,
     "coverage": "Direkt från Felix Nordqvists YouTube-kanal. Endast videor med ett uttryckligt kryptoämne i rubriken tas med. Allmän börs och privatekonomi sorteras bort."
+  },
+  {
+    "id": "mmcrypto-video",
+    "name": "MMCrypto – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/@MMCryptoTube",
+    "youtubeHandle": "MMCryptoTube",
+    "language": "en",
+    "category": null,
+    "coverage": "Videor från MMCryptos YouTube-kanal. Videon visas på originalspråket och nyheten sammanfattas på svenska."
   }
 ]

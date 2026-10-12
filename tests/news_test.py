@@ -12,6 +12,15 @@ class FeedTests(unittest.TestCase):
   self.assertEqual(news.clean('&lt;b&gt;hello&lt;/b&gt;'),'hello')
  def test_broken_feed_fails(self):
   with self.assertRaises(Exception):news.parse_feed('<html/>',{},'2026-10-11T14:00:00Z')
+ def test_youtube_handle_resolves_only_one_real_channel_id(self):
+  import io
+  class Response:
+   def __enter__(self):return self
+   def __exit__(self,*args):pass
+   def read(self,size):return b'<meta itemprop="channelId" content="UC1234567890123456789012">'
+  url=news.youtube_feed_url('MMCryptoTube',lambda request,timeout:Response())
+  self.assertEqual(url,'https://www.youtube.com/feeds/videos.xml?channel_id=UC1234567890123456789012')
+  with self.assertRaises(ValueError):news.youtube_feed_url('bad/handle',lambda *a,**k:Response())
 if __name__=='__main__':unittest.main()
 
 class PublicationTests(unittest.TestCase):
