@@ -34,6 +34,11 @@ class EditorialTests(unittest.TestCase):
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':''}):self.assertTrue(all(x.get('disabledReason') for x in sources()))
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':'https://rss.example.org'}):
    rows=sources();self.assertEqual(len(rows),5);self.assertEqual(rows[-1]["handle"],"BitcoinArchive");self.assertTrue(rows[-1]["url"].endswith("/BitcoinArchive/exclude_rts_replies"));self.assertTrue(all(x['url'].endswith('/exclude_rts_replies') for x in rows))
+ def test_archive_x_seeds_are_bounded_and_have_reviewed_swedish(self):
+  seeds=json.loads(pathlib.Path('scripts/x-posts.json').read_text());summaries=json.loads(pathlib.Path('scripts/x-summaries.json').read_text())
+  archive=[x for x in seeds if x['handle']=='BitcoinArchive']
+  self.assertEqual(len(archive),15)
+  self.assertTrue(all(x['id'] in summaries and summaries[x['id']]['sourceUrl'].endswith('/'+x['id']) for x in archive))
 class ExportTests(unittest.TestCase):
  def test_all_articles_have_safe_permanent_pages_and_metadata(self):
   from html.parser import HTMLParser

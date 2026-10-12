@@ -96,7 +96,10 @@ def main():
    for handle,pid in found:
     if any(handle.lower()==a['handle'].lower() for a in accounts):links[(handle.lower(),pid)]={'url':key,'title':n['originalTitle']}
   except Exception as e:print('X discovery',type(e).__name__,flush=True)
- for (handle,pid),context in list(links.items())[:8]:
+ # Profile embeds can fail independently for a whole account. Keep a bounded
+ # batch of known public status IDs so a newly configured account can still
+ # populate the feed through X's individual public embed endpoint.
+ for (handle,pid),context in list(links.items())[:24]:
   if pid in posts and 'media' in posts[pid]:continue
   account=next((a for a in accounts if a['handle'].lower()==handle),None)
   if not account:continue
