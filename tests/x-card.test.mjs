@@ -31,7 +31,7 @@ try{
  assert.equal(host.querySelector('[lang="sv"]').textContent,'Bitcoin kan stiga – men det är osäkert.');assert.ok(host.textContent.includes('Svenskt original'));assert.equal(host.querySelector('[aria-expanded]'),null);
  await render({...post,swedish:{...post.swedish,method:'summary'}});assert.ok(host.textContent.includes('Sammanfattat på svenska'));
  await act(()=>host.querySelector('.x-card-image img').dispatchEvent(new window.Event('error')));
- assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Broken X image falls back to local illustration');
+ assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Broken X image falls back to the Bitcoin logo illustration');
  assert.equal(host.querySelector('figcaption').textContent,'Illustrationsbild');
  await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));

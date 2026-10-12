@@ -34,7 +34,7 @@ function articleArt(item:NewsItem){
  if(['Makro','Institutioner','ETF','Reglering'].includes(item.category))return {name:'institutions',alt:'Konceptuell illustration av en finansiell institution i sten och brons'};
  if(['Altcoins','DeFi','Säkerhet / Hacks','On-chain'].includes(item.category))return {name:'network',alt:'Konceptuell illustration av ett blockkedjenätverk i glas och metall'};
  if(item.coins[0]==='ETH')return {name:'ethereum',alt:'Ethereum-symbol i facetterat glas på en mörk sockel'};
- return {name:'bitcoin',alt:'Illustration av ett Bitcoin-mynt med finansiell arkitektur i bakgrunden'};
+ return {name:'bitcoin',alt:'Orange bitcoinlogotyp mot svart bakgrund'};
 }
 function ArticleImage({item,onOpen}:{item:NewsItem;onOpen:()=>void}){const art=articleArt(item);const video=youtubeVideo(item);return <button className="article-image" onClick={onOpen} aria-label={'Öppna '+item.title}>{video?<><img src={'https://i.ytimg.com/vi/'+video+'/hqdefault.jpg'} width="480" height="360" alt={item.title} loading="lazy"/><span className="video-card-badge"><Play size={24} fill="currentColor"/>SE VIDEO</span></>:<img src={BASE+'images/'+art.name+'-640.webp'} srcSet={BASE+'images/'+art.name+'-640.webp 640w, '+BASE+'images/'+art.name+'-1280.webp 1280w'} sizes={item.breaking?'(max-width:760px) 100vw, 850px':'(max-width:760px) 100vw, 230px'} width="1672" height="941" alt={art.alt} loading={item.breaking?'eager':'lazy'} decoding="async"/>}<span className="image-open"><ArrowUpRight size={18}/></span>{item.breaking&&<span className="image-featured"><Activity size={13}/> I FOKUS</span>}</button>;}
 function NewsCard({item,saved,toggle,onCoin,onDetails}:{item:NewsItem;saved:boolean;toggle:()=>void;onCoin:(s:string)=>void;onDetails:()=>void}){
