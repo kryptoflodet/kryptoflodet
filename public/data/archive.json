@@ -48,7 +48,6 @@
       "contentVersion": 2,
       "contentType": "rapportering",
       "categories": [
-        "SUI",
         "Altcoins"
       ],
       "importanceReason": "Beslut, köp eller förändring i ett nätverk",
@@ -102,7 +101,6 @@
       "contentVersion": 2,
       "contentType": "rapportering",
       "categories": [
-        "Solana",
         "Altcoins"
       ],
       "importanceReason": "Ordinarie kryptobevakning",
