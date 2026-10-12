@@ -33,7 +33,7 @@ class EditorialTests(unittest.TestCase):
  def test_x_optional_and_correct_route(self):
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':''}):self.assertTrue(all(x.get('disabledReason') for x in sources()))
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':'https://rss.example.org'}):
-   rows=sources();self.assertEqual(len(rows),4);self.assertTrue(all(x['url'].endswith('/exclude_rts_replies') for x in rows))
+   rows=sources();self.assertEqual(len(rows),5);self.assertEqual(rows[-1]["handle"],"BitcoinArchive");self.assertTrue(rows[-1]["url"].endswith("/BitcoinArchive/exclude_rts_replies"));self.assertTrue(all(x['url'].endswith('/exclude_rts_replies') for x in rows))
 class ExportTests(unittest.TestCase):
  def test_all_articles_have_safe_permanent_pages_and_metadata(self):
   from html.parser import HTMLParser

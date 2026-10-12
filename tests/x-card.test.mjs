@@ -18,18 +18,24 @@ try{
  const render=p=>act(()=>root.render(React.createElement(Card,{post:p,saved:false,toggle:()=>saves++,onCoin:c=>coin=c})));
  await render(post);
  assert.ok(host.textContent.includes('Bitcoin skulle kunna stiga.'));assert.ok(host.textContent.includes('Översatt till svenska'));
- assert.equal(host.querySelector('blockquote'),null,'Original collapsed by default');assert.equal(host.querySelector('img'),null,'No X media requests before expanding');
+ assert.equal(host.querySelector('blockquote'),null,'Original collapsed by default');assert.equal(host.querySelector('.x-card-image img').src,post.media[0].url,'Original picture visible in the feed');
  assert.equal(host.querySelector('time').getAttribute('datetime'),post.publishedAt);
  const link=host.querySelector('a');assert.equal(link.href,post.url);assert.equal(link.target,'_blank');assert.ok(link.rel.includes('noopener'));
  const toggle=host.querySelector('[aria-expanded]');assert.equal(toggle.textContent,'Visa original');
  await act(()=>toggle.click());
- assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(toggle.textContent,'Dölj original');assert.equal(host.querySelector('blockquote').textContent,post.text);assert.equal(host.querySelector('script'),null,'Original text escaped');assert.equal(host.querySelectorAll('img').length,1);
+ assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(toggle.textContent,'Dölj original');assert.equal(host.querySelector('blockquote').textContent,post.text);assert.equal(host.querySelector('script'),null,'Original text escaped');assert.equal(host.querySelectorAll('img').length,2);
  await act(()=>toggle.click());assert.equal(host.querySelector('blockquote'),null);
  await act(()=>host.querySelector('[aria-label="Spara X-inlägg"]').click());assert.equal(saves,1);
  await act(()=>host.querySelector('.coin-tag').click());assert.equal(coin,'BTC');
  await render({...post,originalLanguage:'sv',text:'Bitcoin kan stiga – men det är osäkert.'});
  assert.equal(host.querySelector('[lang="sv"]').textContent,'Bitcoin kan stiga – men det är osäkert.');assert.ok(host.textContent.includes('Svenskt original'));assert.equal(host.querySelector('[aria-expanded]'),null);
  await render({...post,swedish:{...post.swedish,method:'summary'}});assert.ok(host.textContent.includes('Sammanfattat på svenska'));
+ await act(()=>host.querySelector('.x-card-image img').dispatchEvent(new window.Event('error')));
+ assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Broken X image falls back to local illustration');
+ assert.equal(host.querySelector('figcaption').textContent,'Illustrationsbild');
+ await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
+ await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
+ await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/institutions-640.webp'));
  await render({...post,swedish:undefined});assert.equal(host.textContent,'','No English-first fallback');
  console.log('X card interactions passed: Swedish first, original toggle, exact text, safe links/media, bookmarks, coin filters and Swedish originals.');
 }finally{await act(()=>root.unmount());dom.window.close();rmSync(dir,{recursive:true,force:true});}

@@ -20,7 +20,7 @@ Originalets tid bevaras med tidszon. Samma URL normaliseras, spårningsparametra
 
 ## X / RSSHub
 
-RSSHub-adaptern är valfri och ej ansluten. Direkt visning av originalinlägg använder nu i stället X:s publika inbäddningsdata via scripts/fetch-x.py. WatcherGuru, cryptorover, TheMoonShow och saylor finns i scripts/x-sources.json. Route: `/twitter/user/<handle>/exclude_rts_replies`. RSSHub kräver numera autentiseringsmaterial på sin server för X-routen. GitHub Pages kan inte köra den servern.
+RSSHub-adaptern är valfri och ej ansluten. Direkt visning av originalinlägg använder nu i stället X:s publika inbäddningsdata via scripts/fetch-x.py. WatcherGuru, cryptorover, TheMoonShow, saylor och BitcoinArchive (@BitcoinArchive, konto-ID 970994516357472257) finns i scripts/x-sources.json. Route: `/twitter/user/<handle>/exclude_rts_replies`. RSSHub kräver numera autentiseringsmaterial på sin server för X-routen. GitHub Pages kan inte köra den servern.
 
 Tester 2026-10-12: offentlig rsshub.app-route gav 404; nitter.net RSS gav 410. Därför används inte någon av dem som obligatorisk dependency. Watcher.Gurus egen nyhetssidas RSS fungerar som separat källa. Mediebevakning är inte samma sak som kontots egna X-inlägg.
 
@@ -56,7 +56,7 @@ X:s egna publika inbäddningsflöden används som kostnadsfri källa. De lämnar
 
 En begränsad komplettering hämtar X-länkar från högst tre aktuella artiklar hos tillåtna RSS-utgivare per körning. Artikellänkar cachas ett dygn. Upp till åtta nya post-ID:n kontrolleras mot X; aldrig mot sekundärkällans omskrivning. Den kontrollerade avsändaren och publiceringstiden måste matcha. Detta är ofullständig upptäckt, vilket även källregistret och metodbeskrivningen upplyser om.
 
-public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-korten blandas kronologiskt med artiklarna. Svenska visas först, originalet fälls ut lokalt med Visa original. Ingen widget laddas; originalbilder från pbs.twimg.com hämtas först vid utfällning. Inget X-konto eller X-token används. X-påståenden räknas aldrig automatiskt som bekräftade nyheter och visas inte av filtren Viktigt/Endast bekräftat. Vanliga kategori-, coin-, sök-, sorterings- och bokmärkesfunktioner omfattar korten.
+public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-korten blandas kronologiskt med artiklarna. Svenska visas först, originalet fälls ut lokalt med Visa original. Ingen widget laddas. Varje X-kort visar en lazy-loadad originalbild från pbs.twimg.com när sådan finns, annars en lokal ämnesillustration. Bildfel ger samma lokala reservbild. Illustrationen märks tydligt och originaltexten kan fortfarande fällas ut. Inget X-konto eller X-token används. X-påståenden räknas aldrig automatiskt som bekräftade nyheter och visas inte av filtren Viktigt/Endast bekräftat. Vanliga kategori-, coin-, sök-, sorterings- och bokmärkesfunktioner omfattar korten.
 
 X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och Actions-loggen vid bortfall. Försök inte kringgå inloggning, botkontroller eller åtkomstspärrar. Ordinarie RSS, marknadskurser och artikelarkiv fortsätter oberoende.
 

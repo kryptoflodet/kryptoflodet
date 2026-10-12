@@ -26,5 +26,12 @@
     "handle": "saylor",
     "type": "OFFICIELL",
     "userId": "244647486"
+  },
+  {
+    "id": "bitcoin-archive-x",
+    "name": "Bitcoin Archive – X",
+    "handle": "BitcoinArchive",
+    "type": "MEDIA",
+    "userId": "970994516357472257"
   }
 ]
