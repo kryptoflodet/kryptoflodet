@@ -11,15 +11,15 @@ const dom=new JSDOM('<!doctype html><div id="root"></div>',{url:'https://kryptok
 Object.assign(globalThis,{window:dom.window,document:dom.window.document,IS_REACT_ACT_ENVIRONMENT:true});
 const host=document.getElementById('root');const root=createRoot(host);
 try{
- writeFileSync(join(dir,'ShareNews.js'),`const React=require('react');exports.__esModule=true;exports.xPostShareUrl=id=>'https://kryptokollen.online/?xpost='+id;exports.default=function ShareNews({title,url}){return React.createElement('button',{type:'button','aria-label':'Dela inlägget: '+title,'data-url':url},'Dela');};`);
+ writeFileSync(join(dir,'ShareNews.js'),`const React=require('react');exports.__esModule=true;exports.xPostShareUrl=id=>'https://kryptokollen.online/?xpost='+id+'&preview=logo-v1';exports.default=function ShareNews({title,url}){return React.createElement('button',{type:'button','aria-label':'Dela inlägget: '+title,'data-url':url},'Dela');};`);
  writeFileSync(join(dir,'card.cjs'),ts.transpileModule(readFileSync('src/components/XPostCard.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
  const Card=createRequire(import.meta.url)(join(dir,'card.cjs')).default;
  const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Bitcoin could rise. <script>unsafe()</script>',coins:['BTC'],categories:['Bitcoin'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Bitcoin skulle kunna stiga.',method:'translation'},media:[{url:'https://pbs.twimg.com/photo.jpg',alt:'Originalbild'},{url:'https://evil.example/photo.jpg',alt:'unsafe'}]};
- let saves=0;let coin='';
- const render=p=>act(()=>root.render(React.createElement(Card,{post:p,saved:false,toggle:()=>saves++,onCoin:c=>coin=c})));
+ let coin='';
+ const render=p=>act(()=>root.render(React.createElement(Card,{post:p,onCoin:c=>coin=c})));
  await render(post);
  assert.ok(host.textContent.includes('Bitcoin skulle kunna stiga.'));assert.ok(host.textContent.includes('Översatt till svenska'));
- const share=host.querySelector('[aria-label="Dela inlägget: X · Example"]');assert.ok(share,'X posts have a share button');assert.equal(share.dataset.url,'https://kryptokollen.online/?xpost='+post.id,'X post shares a direct link to its Kryptokollen feed card');
+ const share=host.querySelector('[aria-label="Dela inlägget: X · Example"]');assert.ok(share,'X posts have a share button');assert.equal(share.dataset.url,'https://kryptokollen.online/?xpost='+post.id+'&preview=logo-v1','X post shares a direct link to its Kryptokollen feed card');
  assert.equal(host.querySelector('blockquote'),null,'Original collapsed by default');assert.equal(host.querySelector('.x-card-image img').src,post.media[0].url,'Original picture visible in the feed');
  assert.equal(host.querySelector('time').getAttribute('datetime'),post.publishedAt);
  const link=host.querySelector('a');assert.equal(link.href,post.url);assert.equal(link.target,'_blank');assert.ok(link.rel.includes('noopener'));
@@ -27,7 +27,7 @@ try{
  await act(()=>toggle.click());
  assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(toggle.textContent,'Dölj original');assert.equal(host.querySelector('blockquote').textContent,post.text);assert.equal(host.querySelector('script'),null,'Original text escaped');assert.equal(host.querySelectorAll('img').length,2);
  await act(()=>toggle.click());assert.equal(host.querySelector('blockquote'),null);
- await act(()=>host.querySelector('[aria-label="Spara X-inlägg"]').click());assert.equal(saves,1);
+ assert.equal(host.querySelector('[aria-label="Spara X-inlägg"]'),null,'X cards no longer expose a nonessential save control');
  await act(()=>host.querySelector('.coin-tag').click());assert.equal(coin,'BTC');
  await render({...post,originalLanguage:'sv',text:'Bitcoin kan stiga – men det är osäkert.'});
  assert.equal(host.querySelector('[lang="sv"]').textContent,'Bitcoin kan stiga – men det är osäkert.');assert.ok(host.textContent.includes('Svenskt original'));assert.equal(host.querySelector('[aria-expanded]'),null);
@@ -39,5 +39,5 @@ try{
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
  await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Bitcoin posts use the Bitcoin logo even in another category');
  await render({...post,swedish:undefined});assert.equal(host.textContent,'','No English-first fallback');
- console.log('X card interactions passed: Swedish first, original toggle, exact text, safe links/media, bookmarks, coin filters and Swedish originals.');
+ console.log('X card interactions passed: Swedish first, original toggle, direct Kryptokollen share link, safe links/media, coin filters and Swedish originals.');
 }finally{await act(()=>root.unmount());dom.window.close();rmSync(dir,{recursive:true,force:true});}
