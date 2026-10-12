@@ -16,7 +16,7 @@ Befintligt repo kryptoflodet/kryptoflodet.github.io. Inga extra API-kostnader. G
 - Befintliga 15 marknadskurser, blogg, lokala bokmärken och grafer behålls.
 
 ## Avsiktliga begränsningar
-Direkt X-import är inte ansluten. Publik RSSHub gav 404 och Nitter 410; valfri egen RSSHub-adapter finns för fyra konton. Den kräver ingen betald X API, men en fungerande server och RSSHub-autentisering saknas. Resten fungerar utan den.
+Tidigare kontrollpunkt: direkt X-import var inte ansluten (ersatt av lösningen nedan). Publik RSSHub gav 404 och Nitter 410; valfri egen RSSHub-adapter finns för fyra konton. Den kräver ingen betald X API, men en fungerande server och RSSHub-autentisering saknas. Resten fungerar utan den.
 
 Tre fria lokala Qwen-modeller utvärderades: 1.7B, 4B Instruct och 8B. Alla gav språkproblem eller osäkra fakta i prov. 8B hittade dessutom på en inflationsuppgift i ett test om ett försäkringsbolag; källstödsgrinden avvisade den. En 4B-text passerade modellens egen kontroll trots tydliga språkfel och togs bort före publicering. Därför är produktionsläget reviewed-only. Experimentmodulen är till för lokala utkast. GitHub Models har avvecklats och används inte. Betalda tjänster har inte aktiverats.
 
@@ -31,3 +31,15 @@ Visuell desktop-/mobilkontroll är INTE slutförd: molnwebbläsaren fastnade med
 
 ## Återuppta
 Arbetsgren kryptokollen-release (tidigare kryptokollen-news-service). Kontrollera git status, senaste remote main och denna logg. Förbättra språkautomationen endast med en gratis metod som klarar en separat svensk kvalitetsutvärdering. Slå inte på automatisk publicering av nuvarande modellförslag. Läs docs/OPERATIONS.md för begränsningar och drift. Automatisk återstart av ChatGPT efter användningsgräns kan inte garanteras; inga försök att kringgå gränser ska göras.
+
+## X-inlägg – uppföljning 12 oktober
+
+Ny fungerande väg: X:s offentliga inbäddningsdata, utan konto, cookies eller betalt API. Testet hämtade 44 kryptorelevanta originalinlägg. Avsändarens numeriska konto-ID, användarnamn och originalets publiceringstid valideras. Ovidkommande innehåll, svar, retweets, uppenbar reklam, framtida datum och inlägg äldre än 14 dagar sorteras bort. Gamla pinnade/populära inlägg används inte som nya.
+
+Crypto Rovers aktuella konto är @cryptorover, bekräftat av hans egen webbplats crypto-rover.com. @rovercrc är borttaget ur anslutningen. WatcherGuru, TheMoonShow och cryptorover gav aktuella profiler. Saylors profil gav gamla populära inlägg; för honom används dessutom riktiga X-länkar från nyhetsartiklar, vars text, avsändare och tid därefter hämtas från X:s enskilda inbäddningsdata. Ett aktuellt Saylor-inlägg kunde verifieras. Detta ger begränsad bevakning, inte ett komplett kronologiskt flöde.
+
+Startsidan visar nu en Från X-del direkt i nyhetsflödet, med filter för de fyra kontona, originaltext som reserv och X:s egna inbäddningar. Dessa är tydligt märkta originalinlägg på originalspråket och räknas inte som granskade svenska nyhetsartiklar. Ursprungliga bilder visas även om widgets inte fungerar. Ingen svensk automatiserad text publiceras genom denna väg.
+
+Insamlingen körs efter RSS i befintlig Pages-workflow. X-fel hålls separata, senaste urval cachas och utgivna nyhetsartiklar påverkas inte. 26 Python-tester och befintliga frontendtester passerar. Kontrollera aktuell release efter push.
+
+Översättning: inte löst. Google dokumenterar en Gemini API-gratisnivå även i EU, men den kräver en API-nyckel för ett projekt utan aktiverad fakturering. Ingen nyckel finns ansluten här, inga faktureringsinställningar har ändrats och ingen otestad integration har slagits på. Det är ett möjligt nästa försök; kvalitet och kvot måste testas innan automatisk publicering.

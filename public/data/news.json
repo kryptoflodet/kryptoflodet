@@ -571,28 +571,26 @@
       "channel": "X",
       "url": "https://x.com/WatcherGuru",
       "trust": 0,
-      "enabled": false,
-      "connection": "planned",
+      "enabled": true,
+      "connection": "connected",
       "independenceGroup": "watcher-x",
-      "checkedAt": "2026-10-12T04:55:04.735894Z",
-      "language": "en",
-      "coverage": "Inlägg från kontots X-flöde via egen RSSHub. Uttalanden är inte oberoende bekräftade fakta.",
-      "error": "Ej ansluten. Kräver en fungerande egen RSSHub-instans; publika RSSHub/Nitter-alternativ svarade inte. RSS och YouTube körs oberoende."
+      "checkedAt": "2026-10-12T11:18:51.417130Z",
+      "coverage": "Begränsat offentligt urval från X:s inbäddningsflöde; inte fullständig bevakning. ",
+      "count": 10
     },
     {
       "id": "rover-x",
       "name": "Crypto Rover – X",
       "type": "INFLUENCER",
       "channel": "X",
-      "url": "https://x.com/rovercrc",
+      "url": "https://x.com/cryptorover",
       "trust": 0,
-      "enabled": false,
-      "connection": "planned",
+      "enabled": true,
+      "connection": "connected",
       "independenceGroup": "rover-x",
-      "checkedAt": "2026-10-12T04:55:04.735894Z",
-      "language": "en",
-      "coverage": "Inlägg från kontots X-flöde via egen RSSHub. Uttalanden är inte oberoende bekräftade fakta.",
-      "error": "Ej ansluten. Kräver en fungerande egen RSSHub-instans; publika RSSHub/Nitter-alternativ svarade inte. RSS och YouTube körs oberoende."
+      "checkedAt": "2026-10-12T11:18:51.417130Z",
+      "coverage": "Begränsat offentligt urval från X:s inbäddningsflöde; inte fullständig bevakning. ",
+      "count": 18
     },
     {
       "id": "moon-x",
@@ -601,13 +599,12 @@
       "channel": "X",
       "url": "https://x.com/TheMoonShow",
       "trust": 0,
-      "enabled": false,
-      "connection": "planned",
+      "enabled": true,
+      "connection": "connected",
       "independenceGroup": "moon-x",
-      "checkedAt": "2026-10-12T04:55:04.735894Z",
-      "language": "en",
-      "coverage": "Inlägg från kontots X-flöde via egen RSSHub. Uttalanden är inte oberoende bekräftade fakta.",
-      "error": "Ej ansluten. Kräver en fungerande egen RSSHub-instans; publika RSSHub/Nitter-alternativ svarade inte. RSS och YouTube körs oberoende."
+      "checkedAt": "2026-10-12T11:18:51.417130Z",
+      "coverage": "Begränsat offentligt urval från X:s inbäddningsflöde; inte fullständig bevakning. ",
+      "count": 15
     },
     {
       "id": "saylor-x",
@@ -616,13 +613,12 @@
       "channel": "X",
       "url": "https://x.com/saylor",
       "trust": 0,
-      "enabled": false,
-      "connection": "planned",
+      "enabled": true,
+      "connection": "connected",
       "independenceGroup": "saylor-x",
-      "checkedAt": "2026-10-12T04:55:04.735894Z",
-      "language": "en",
-      "coverage": "Inlägg från kontots X-flöde via egen RSSHub. Uttalanden är inte oberoende bekräftade fakta.",
-      "error": "Ej ansluten. Kräver en fungerande egen RSSHub-instans; publika RSSHub/Nitter-alternativ svarade inte. RSS och YouTube körs oberoende."
+      "checkedAt": "2026-10-12T11:18:51.417130Z",
+      "coverage": "Begränsat offentligt urval från X:s inbäddningsflöde; inte fullständig bevakning. Profilflödet är begränsat. Enskilda originalinlägg har verifierats via X; alla nya inlägg kan inte garanteras.",
+      "count": 1
     }
   ],
   "intervalMinutes": 5,

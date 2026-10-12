@@ -20,7 +20,7 @@ Originalets tid bevaras med tidszon. Samma URL normaliseras, spårningsparametra
 
 ## X / RSSHub
 
-Direkt X-import är förberedd men inte ansluten utan egen fungerande RSSHub. WatcherGuru, rovercrc, TheMoonShow och saylor finns i scripts/x-sources.json. Route: `/twitter/user/<handle>/exclude_rts_replies`. RSSHub kräver numera autentiseringsmaterial på sin server för X-routen. GitHub Pages kan inte köra den servern.
+RSSHub-adaptern är valfri och ej ansluten. Direkt visning av originalinlägg använder nu i stället X:s publika inbäddningsdata via scripts/fetch-x.py. WatcherGuru, cryptorover, TheMoonShow och saylor finns i scripts/x-sources.json. Route: `/twitter/user/<handle>/exclude_rts_replies`. RSSHub kräver numera autentiseringsmaterial på sin server för X-routen. GitHub Pages kan inte köra den servern.
 
 Tester 2026-10-12: offentlig rsshub.app-route gav 404; nitter.net RSS gav 410. Därför används inte någon av dem som obligatorisk dependency. Watcher.Gurus egen nyhetssidas RSS fungerar som separat källa. Mediebevakning är inte samma sak som kontots egna X-inlägg.
 
@@ -49,3 +49,13 @@ GitHub Models kontrollerades som möjligt gratisalternativ men har enligt https:
 Nästa förbättring av språkautomationen behöver en kostnadsfri lösning som klarar en separat svensk utvärderingsmängd och faktagranskning. Behåll reviewed-only tills det finns sådan evidens. Ändra inte bara en flagga för att få ett större flöde. Kör `pip install -r scripts/editor-requirements.txt` och `EDITOR_MODE=draft python scripts/fetch-news.py` för experiment; produktionskörningen installerar inte modellen och påverkas inte av modellserverns tillgänglighet.
 
 Kön med källänkar, originalrubriker och publiceringstid sparas som Actions-artifact i tre dagar. Fulla källtexter finns inte i kön. Den hjälper nästa redaktionella genomgång utan att otillräckliga artiklar visas för läsaren. Avancerad automatisk sammanhängande dagsanalys och oberoende flerkällsverifiering är ännu inte implementerade; dagsöversikten är ett deterministiskt urval av granskade artiklar.
+
+## Från X – drift
+
+X:s egna publika inbäddningsflöden används som kostnadsfri källa. De lämnar inte nödvändigtvis ut alla poster eller de senaste posterna. Särskilt Saylor kan ge gamla populära inlägg. Kontonas fasta numeriska ID:n valideras så att ett ändrat användarnamn inte kan byta avsändare obemärkt. Endast relevanta originalinlägg inom 14 dagar visas.
+
+En begränsad komplettering hämtar X-länkar från högst tre aktuella artiklar hos tillåtna RSS-utgivare per körning. Artikellänkar cachas ett dygn. Upp till åtta nya post-ID:n kontrolleras mot X; aldrig mot sekundärkällans omskrivning. Den kontrollerade avsändaren och publiceringstiden måste matcha. Detta är ofullständig upptäckt, vilket även UI upplyser om.
+
+public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-delens originalspråk är avsiktligt tydligt märkt och passerar inte den separata grinden för svenska nyhetsartiklar. Reservtext med källans datum visas om X-widgeten blockeras. Sidan kontaktar X för widgets och bilder; inget X-konto eller X-token används av insamlingen.
+
+X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och Actions-loggen vid bortfall. Försök inte kringgå inloggning, botkontroller eller åtkomstspärrar. Ordinarie RSS, marknadskurser och artikelarkiv fortsätter oberoende.
