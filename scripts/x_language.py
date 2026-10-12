@@ -37,6 +37,12 @@ def sentence_rule(source):
  ]
  for pattern,render in patterns:
   if render and (m:=re.fullmatch(pattern,s,re.I)):return render(m)
+ m=re.fullmatch(rf"(Michael Saylor['’]s ['’]?Strategy['’]?|Tom Lee['’]s ['’]?BitMine['’]?)( \$MSTR)? buys ({AMOUNT}) (Bitcoin|\$ETH) worth \$({AMOUNT})",s,re.I)
+ if m:
+  company='Michael Saylors Strategy' if m[1].lower().startswith('michael') else 'Tom Lees BitMine'
+  return company+(' (MSTR)' if m[2] else '')+f' köper {amount_sv(m[3])} {m[4].lstrip("$")} för {amount_sv(m[5])} dollar.'
+ m=re.fullmatch(rf'They now hold a total of ({AMOUNT}) \$BTC valued at \$({AMOUNT})',s,re.I)
+ if m:return f'De har nu sammanlagt {amount_sv(m[1])} BTC till ett värde av {amount_sv(m[2])} dollar.'
  m=re.fullmatch(rf'({ASSET}) (?:rises|climbs) (to|above) \$({AMOUNT})',s,re.I)
  if m:return f'{m[1]} stiger '+('till' if m[2].lower()=='to' else 'över')+f' {amount_sv(m[3])} dollar.'
  return None

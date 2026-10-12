@@ -32,6 +32,11 @@ class XLanguageTests(unittest.TestCase):
   text='Bitcoin reclaims $90,000. Ethereum could reach $6,500.'
   self.assertEqual(automatic(text)[0],'Bitcoin är åter på 90 000 dollar. Ethereum skulle kunna nå 6 500 dollar.')
   self.assertIsNone(automatic(text+' However, neither claim has been confirmed.'))
+ def test_explicit_purchase_is_attributed_but_never_inferred(self):
+  self.assertEqual(automatic("JUST IN: Michael Saylor's 'Strategy' buys 275 Bitcoin worth $22.5 million.")[0],'Michael Saylors Strategy köper 275 Bitcoin för 22,5 miljoner dollar.')
+  self.assertEqual(automatic("Tom Lee's 'BitMine' buys 12,532 $ETH worth $31 million.")[0],'Tom Lees BitMine köper 12 532 ETH för 31 miljoner dollar.')
+  for source in ["Michael Saylor's 'Strategy' could buy 275 Bitcoin worth $22.5 million.","Michael Saylor denies: Strategy buys 275 Bitcoin worth $22.5 million.","Michael Saylor's 'Strategy' buys 275 Bitcoin worth $22.5 million. This is an unconfirmed rumor."]:
+   self.assertIsNone(automatic(source))
  def test_existing_reviews_match_originals_and_preserve_data(self):
   data=json.loads(pathlib.Path('public/data/x.json').read_text());reviews=json.loads(pathlib.Path('scripts/x-summaries.json').read_text());before={p['id']:p['text'] for p in data['posts']}
   counts,_=apply_language(data['posts'],reviews)
