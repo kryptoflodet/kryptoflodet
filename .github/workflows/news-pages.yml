@@ -12,14 +12,14 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: github-pages
+  group: github-pages-automatic
   cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     environment:
-      name: github-pages
+      name: github-pages-automatic
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
