@@ -2,6 +2,112 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "3577aa9bf17ea69253b1",
+      "eventKey": "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves",
+      "originalTitle": "Global watchdog warns the $300 billion stablecoin market could face bank runs even with full reserves",
+      "originalText": "Global watchdog warns the $300 billion stablecoin market could face bank runs even with full reserves",
+      "originalLanguage": "en",
+      "title": "Världsmyndigheten varnar för bankstängningar i stabila myntmarknaden",
+      "translation": "",
+      "summary": "CryptoSlate uppger: Global watchdog uppger att marknaden med 300 miljarder dollar i stabila mynt kan utsättas för bankstängningar även om alla utgifter är täckta.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T22:10:30Z",
+      "importedAt": "2026-10-13T08:13:56.159932Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves/",
+          "originId": "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: Global watchdog uppger att marknaden med 300 miljarder dollar i stabila mynt kan utsättas för bankstängningar även om alla utgifter är täckta.\\n\\nFör utgivare med separata reserver kan efterfrågan för återbetalning koncentreras på ett enda företag, samtidigt som överföringar över gränser blir svåra.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T08:13:56.159932Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Marknaden"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "varldsmyndigheten-varnar-for-bankstangningar-i-stabila-myntmarknaden-3577aa9bf1",
+      "path": "/nyheter/varldsmyndigheten-varnar-for-bankstangningar-i-stabila-myntmarknaden-3577aa9bf1/"
+    },
+    {
+      "id": "2bd4c2d9e4eb2646b608",
+      "eventKey": "https://bitcoinmagazine.com/news/south-korea-bank-offers-bitcoin-loans",
+      "originalTitle": "South Korean Lender Jeonbuk Bank to Offer Bitcoin-Backed Loans",
+      "originalText": "South Korean Lender Jeonbuk Bank to Offer Bitcoin-Backed Loans",
+      "originalLanguage": "en",
+      "title": "Jeonbuk Bank blir första i Korea med bitkoinbaserade lån",
+      "translation": "",
+      "summary": "Bitcoin Magazine uppger: Jeonbuk Bank uppger att den har börjat erbjuda bitkoinbaserade lån och blir första banken i Korea att göra det.",
+      "why": "",
+      "author": "Bitcoin Magazine",
+      "publishedAt": "2026-10-12T22:06:36Z",
+      "importedAt": "2026-10-13T08:13:56.159932Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "bitcoinmag",
+      "channel": "RSS",
+      "originalUrl": "https://bitcoinmagazine.com/news/south-korea-bank-offers-bitcoin-loans",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "bitcoinmag",
+          "url": "https://bitcoinmagazine.com/news/south-korea-bank-offers-bitcoin-loans",
+          "originId": "https://bitcoinmagazine.com/news/south-korea-bank-offers-bitcoin-loans",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Bitcoin Magazine uppger: Jeonbuk Bank uppger att den har börjat erbjuda bitkoinbaserade lån och blir första banken i Korea att göra det.\\n\\nService är en ny bitcoin-relaterad funktion inom bankens erbjudanden, men inga detaljer om pris eller belopp finns i källan.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T08:13:56.159932Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "jeonbuk-bank-blir-forsta-i-korea-med-bitkoinbaserade-lan-2bd4c2d9e4",
+      "path": "/nyheter/jeonbuk-bank-blir-forsta-i-korea-med-bitkoinbaserade-lan-2bd4c2d9e4/"
+    },
+    {
       "id": "362510102b4a05f9f6e7",
       "eventKey": "https://cryptoslate.com/ftxs-former-bitcoin-mining-bet-gets-new-life-as-parent-raises-e800-million-for-ai",
       "originalTitle": "FTX’s former Bitcoin mining bet gets new life as parent raises €800 million for AI",
