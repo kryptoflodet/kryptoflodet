@@ -4,6 +4,130 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUgQ7kZWkAAUiKW.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgQ7krXMAAugGa.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109955188450562485",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109955188450562485",
+      "publishedAt": "2026-10-13T10:31:32Z",
+      "text": "BREAKING: 🇬🇧 UK court rules in favor of the government potentially keeping its 61,000 seized $BTC worth over $5 BILLION.\n\nThis could prevent the Bitcoin from being sold.\n\nHUGE! 🚀 https://t.co/qCopjF03DV",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En brittisk domstol har beslutat att regeringen kan behålla sina 61 000 beslagtagna BTC-dollar värda över 5 miljarder dollar.\n\nDetta kan förhindra att Bitcoin säljs.\n\n- Det är jättestort!",
+        "method": "translation",
+        "sourceHash": "023e693e2263c825ad2974b830d3ba50379c8823985132b81b3fcdcee47f2de7",
+        "engine": "nllb-200-600m-q8-v1"
+      },
+      "archivedAt": "2026-10-13T10:45:29.177424Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgOkwDWgAA2KGG.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109952476518478324",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109952476518478324",
+      "publishedAt": "2026-10-13T10:20:46Z",
+      "text": "BREAKING: THE UK GOVERNMENT COULD KEEP OVER $5 BILLION IN SEIZED BITCOIN! 👀\n\nThe High Court has ruled in its favor over most of the 61,000 $BTC. https://t.co/tJIU3tU0xq",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Den brittiska regeringen kan behålla över 5 miljarder dollar i beslagtagna Bitcoin!\n\nHögsta domstolen har beslutat till sin fördel över de flesta av de 61 000 dollarna.",
+        "method": "translation",
+        "sourceHash": "b46d5dcd391317fcf00ff4ceb8e2db16448d1e7546f3640ddd7de45900116cc8",
+        "engine": "nllb-200-600m-q8-v1"
+      },
+      "archivedAt": "2026-10-13T10:45:29.177424Z"
+    },
+    {
+      "media": [],
+      "id": "2109950685127319735",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109950685127319735",
+      "publishedAt": "2026-10-13T10:13:38Z",
+      "text": "JUST IN: 🇬🇧🇨🇳 UK court blocks Chinese fraud victims from reclaiming $5 billion in seized Bitcoin, \"likely\" allowing UK government to keep it.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Brittisk domstol blockerar kinesiska bedrägerioffer från att återkräva 5 miljarder $ i beslagtagen Bitcoin, vilket \"sannolikt\" tillåter den brittiska regeringen att behålla den.",
+        "method": "translation",
+        "sourceHash": "042935189f2e8f248f8fbf8fa71f97b01a4e4ace2c81156d33a6f5f399a5f48f",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T10:45:29.177424Z"
+    },
+    {
+      "media": [],
+      "id": "2109948510133166429",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109948510133166429",
+      "publishedAt": "2026-10-13T10:05:00Z",
+      "text": "You will become the first crypto millionaire in your family this bull market.\n\nBelieve in yourself.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Du blir den första kryptomillionsaren i din familj på den här tjurmarknaden.\n\nTro på dig själv.",
+        "method": "translation",
+        "sourceHash": "a0f03ee42c5b7818bc1e1fca2c9e630239caf2f9e889392cd111e524719801f0",
+        "engine": "nllb-200-600m-q8-v1"
+      },
+      "archivedAt": "2026-10-13T10:45:29.177424Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUfE-zPXsAAsTfv.jpg",
           "alt": ""
         }
@@ -872,6 +996,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin-köpare visar lågt förtroende, med de flesta bud på $ 80 500 och $ 80 000.",
+        "method": "translation",
+        "sourceHash": "acd980e5ff7a29b16089114d35d19b0e21823be992d2a05745581cbbe7f81a94",
+        "engine": "mymemory-free-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
