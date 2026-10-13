@@ -245,5 +245,16 @@
     "status": "unconfirmed",
     "reviewedAt": "2026-10-13T00:00:00Z",
     "note": "Språket har granskats mot källtexten. Texten återger intervjupersonens uppfattning och är inte en oberoende faktagranskning."
+  },
+  "https://cryptonews.com/news/evernorth-xrp-news-valuation-gap/": {
+    "title": "Evernorths Nasdaq-notering: XRP-reserven värderades till 677 miljoner dollar",
+    "summary": "CryptoNews rapporterar att Evernorth har börjat handlas på Nasdaq under tickern XRPN. Bolaget uppges ha cirka 473 miljoner XRP och 300 miljoner dollar i bruttokassa; XRP-reserven värderades till omkring 677 miljoner dollar vid den angivna referenskursen. Artikeln jämför detta värde med en finansieringsuppgift på över 1 miljard dollar, men beloppen avser olika saker. Aktien ger exponering mot bolaget, inte direkt innehav av XRP.",
+    "why": "XRPN:s aktiekurs kan avvika från värdet på bolagets tillgångar och påverkas även av kassa, verksamhet och framtida aktieutgivning. Ett begränsat antal aktier i fri handel kan också ge större kursrörelser.",
+    "coins": [
+      "XRP"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot CryptoNews originaltext. Värderingar och bolagsuppgifter återges från artikeln och är inte faktagranskade oberoende."
   }
 }

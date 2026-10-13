@@ -11,6 +11,8 @@ _BAD_SWEDISH_PATTERNS=tuple(re.compile(pattern,re.I) for pattern in (
  r'\b(?:fixer|blockchain)\b',
  r'\bBitcoin:s\b',
  r'\b(?:kvantförsvar|QSB-utgifter|människans utrymme|Bitcoin-ai-konvergens|öppen källkod AI)\b',
+ r'\bEvernorth:s\b',
+ r'\b(?:brokerer|svag marknadsfördelning|risker av förändring i utdelning|miljarders gap)\b',
 ))
 
 def is_swedish_quality(*parts):

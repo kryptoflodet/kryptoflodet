@@ -27,7 +27,7 @@ class EditorialTests(unittest.TestCase):
  def test_missing_body_never_readable(self):
   self.assertFalse(readable(dict(self.item(),readerText='Bara en rubrik')))
  def test_known_garbled_swedish_fails_closed(self):
-  for bad in ['Australia uppger ett förslag om ett lövförlopp i kryptodrivsprodukter.','Defraudning räcker inte.','Krypto-portfolio når alltid högre nivå.','Treasury-secretary hotar att sejka krypto.','Bitcoin:s kvantförsvar blir billigare genom QSB-utgifter.','AI-risk är inte människans utrymme, utan centraliserad kontroll med öppen källkod AI.']:
+  for bad in ['Australia uppger ett förslag om ett lövförlopp i kryptodrivsprodukter.','Defraudning räcker inte.','Krypto-portfolio når alltid högre nivå.','Treasury-secretary hotar att sejka krypto.','Bitcoin:s kvantförsvar blir billigare genom QSB-utgifter.','AI-risk är inte människans utrymme, utan centraliserad kontroll med öppen källkod AI.','Evernorth:s Nasdaq-listning ger brokerer tillgång, men visar ett miljarders gap.']:
    item=self.item();item.update(title='Nyhet på svenska',summary=bad,readerText=' '.join(['svensk text']*25))
    self.assertFalse(is_swedish_quality(item['title'],item['summary'],item['readerText']),bad)
    self.assertFalse(readable(item),bad)
