@@ -1,13 +1,13 @@
 import {useEffect,useId,useRef,useState} from 'react';
 import {X,Activity,ArrowUpRight,ArrowDownRight,RefreshCw,ExternalLink} from 'lucide-react';
 import {chartRanges,fetchChart,type ChartData,type RangeKey} from '../lib/chart';
-import {trackedCoins,type LiveQuote} from '../lib/market';
-const fmt=(v:number,unit:string)=>new Intl.NumberFormat('sv-SE',{maximumFractionDigits:v<1?5:2,minimumFractionDigits:v>=1?2:0}).format(v)+' '+unit;
+import type {LiveQuote} from '../lib/market';
+const fmt=(v:number,unit:string)=>new Intl.NumberFormat('sv-SE',{maximumFractionDigits:v>=10?2:v>=1?4:v>=0.01?6:v>=0.0001?8:10,minimumFractionDigits:v>=1?2:0}).format(v)+' '+unit;
 const date=(t:number)=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(t);
 export default function MarketDialog({quote,currency,onClose,onNews}:{quote:LiveQuote;currency:string;onClose:()=>void;onNews:()=>void}){
  const dialog=useRef<HTMLDialogElement>(null);const gradient=useId().replaceAll(':','');const [range,setRange]=useState<RangeKey>('24h');const [data,setData]=useState<ChartData|null>(null);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [hover,setHover]=useState<number|null>(null);const [retry,setRetry]=useState(0);
  useEffect(()=>{const previous=document.activeElement as HTMLElement;dialog.current?.showModal();const overflow=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=overflow;previous?.focus();};},[]);
- useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError(e instanceof Error?e.message:'Kunde inte hämta diagrammet');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.symbol,range,currency,retry]);
+ useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal,quote.id).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError(e instanceof Error?e.message:'Kunde inte hämta diagrammet');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.id,quote.symbol,range,currency,retry]);
  useEffect(()=>{const timer=setInterval(()=>{if(!document.hidden)setRetry(v=>v+1);},60000);return()=>clearInterval(timer);},[]);
  const current=currency==='SEK'?quote.priceSek:quote.price;const movement=currency==='SEK'?quote.changeSek24h:quote.change24h;
  const points=data?.points||[];const low=points.length?Math.min(...points.map(p=>p[1])):0;const high=points.length?Math.max(...points.map(p=>p[1])):0;const pad=(high-low)*.12||high*.01||1;const floor=low-pad,ceiling=high+pad;
@@ -32,6 +32,6 @@ export default function MarketDialog({quote,currency,onClose,onNews}:{quote:Live
  </svg><input className="chart-scrubber" type="range" min="0" max={points.length-1} value={hover??points.length-1} onChange={e=>setHover(Number(e.target.value))} aria-label="Utforska historiska kurser"/>
  <div className="chart-stats"><div><span>Lägst i perioden</span><b>{fmt(low,data.unit)}</b></div><div><span>Högst i perioden</span><b>{fmt(high,data.unit)}</b></div><div><span>Första datapunkt</span><b>{new Date(first[0]).toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm'})}</b></div></div>
  <p className="chart-note"><b>{data.source} · {data.unit}.</b> {data.note}</p></>:null}</div>
- <div className="chart-bottom"><button onClick={onNews}>Visa nyheter om {quote.symbol} <ArrowUpRight size={18}/></button><a href={'https://www.coingecko.com/en/coins/'+(trackedCoins.find(c=>c[1]===quote.symbol)?.[0]||'bitcoin')} target="_blank" rel="noopener noreferrer">Kurskälla <ExternalLink size={14}/></a></div>
+ <div className="chart-bottom"><button onClick={onNews}>Visa nyheter om {quote.symbol} <ArrowUpRight size={18}/></button><a href={'https://www.coingecko.com/en/coins/'+encodeURIComponent(quote.id)} target="_blank" rel="noopener noreferrer">Kurskälla <ExternalLink size={14}/></a></div>
  </div></dialog>;
 }

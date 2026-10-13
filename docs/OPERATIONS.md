@@ -32,7 +32,9 @@ Dokumentation: https://docs.rsshub.app/deploy/ och https://github.com/DIYgod/RSS
 
 Videor får bara publiceras med tillräckligt textunderlag och svensk sammanfattning. YouTube beskrivningar är inte fullständiga transkript; detta anges på artikelsidan. Tillåtna kanaler och värdnamn kontrolleras innan inbäddning. Felaktiga eller otillgängliga kanaler slår inte ut RSS.
 
-Befintlig CoinGecko-marknadsöversikt och dess reservdata behålls. Ingen Fear & Greed eller ny marknadsleverantör har lagts till utan stabilitetsbehov. Föråldrade priser märks enligt befintlig kod.
+CoinGecko hämtar topp 50 efter marknadsvärde i USD och SEK. Webbläsaren återanvänder ett färskt lokalt svar i en minut; vid API-fel används den publicerade snapshoten. `scripts/fetch-market.py` skriver snapshoten åt GitHub Actions och behåller senast fungerande data om USD-hämtningen misslyckas. SEK-kurser kan återanvändas från föregående snapshot vid ett separat SEK-fel. Föråldrade priser märks i gränssnittet.
+
+Fear & Greed hämtas från Alternative.me. Marknadsdominans och dygnstrender hämtas från CoinGecko Global. Altcoin Season försöker CoinMarketCap först och använder BlockchainCenter som reserv. Senast fungerande indikatorvärden behålls om källorna tillfälligt inte svarar. Källor och kontrolltider visas i mätarna.
 
 ## Vidareutveckling
 

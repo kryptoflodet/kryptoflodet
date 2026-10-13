@@ -20,14 +20,14 @@ export function normalizePoints(raw:unknown,now=Date.now()):[number,number][]{
  if(points.length<2)throw new Error('För lite kurshistorik för perioden');return points;
 }
 const cache=new Map<string,ChartData>();
-export async function fetchChart(symbol:string,range:RangeKey,currency:string,signal:AbortSignal):Promise<ChartData>{
- const coin=trackedCoins.find(c=>c[1]===symbol);if(!coin)throw new Error('Okänd valuta');
- const key=[symbol,range,currency].join(':');const saved=cache.get(key);if(saved&&Date.now()-saved.fetchedAt<60000)return saved;
+export async function fetchChart(symbol:string,range:RangeKey,currency:string,signal:AbortSignal,coinId?:string):Promise<ChartData>{
+ const id=coinId||trackedCoins.find(c=>c[1]===symbol)?.[0];if(!id)throw new Error('Okänd valuta');
+ const key=[id,range,currency].join(':');const saved=cache.get(key);if(saved&&Date.now()-saved.fetchedAt<60000)return saved;
  const now=Date.now(),start=rangeStart(range,now);const long=['3y','5y','max'].includes(range);
  if(!long){
   try{
    const days=Math.min(365,Math.max(1,Math.ceil((now-start)/86400000)));
-   const r=await fetch(`https://api.coingecko.com/api/v3/coins/${coin[0]}/market_chart?vs_currency=${currency.toLowerCase()}&days=${days}`,{signal:AbortSignal.any([signal,AbortSignal.timeout(12000)])});
+   const r=await fetch(`https://api.coingecko.com/api/v3/coins/${encodeURIComponent(id)}/market_chart?vs_currency=${currency.toLowerCase()}&days=${days}`,{signal:AbortSignal.any([signal,AbortSignal.timeout(12000)])});
    if(!r.ok)throw new Error('Kurskälla tillfälligt otillgänglig');
    const raw=await r.json();const points=normalizePoints(raw.prices).filter(p=>p[0]>=start);
    if(points.length<2)throw new Error('Historik saknas');

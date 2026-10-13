@@ -24,6 +24,14 @@ class MarketContextTests(unittest.TestCase):
         self.assertEqual(parsed['btcChange24h'], 2.4)
         self.assertEqual(parsed['ethChange24h'], 1.2)
 
+    def test_global_metrics_read_top_50_snapshot_shape(self):
+        parsed = M['parse_global_market'](
+            {'data': {'market_cap_percentage': {'btc': 58.7, 'eth': 11.1}, 'market_cap_change_percentage_24h_usd': 0.8}},
+            {'schemaVersion': 2, 'coins': [{'id': 'bitcoin', 'price_change_percentage_24h': 3.2}, {'id': 'ethereum', 'price_change_percentage_24h': -0.5}]},
+        )
+        self.assertEqual(parsed['btcChange24h'], 3.2)
+        self.assertEqual(parsed['ethChange24h'], -0.5)
+
     def test_keyless_cmc_envelope_and_index_bounds(self):
         value, observed = M['parse_altcoin_season']({'data': {'altcoin_index': 77, 'snapshot_time': '2026-10-13T12:00:00Z'}, 'status': {'error_code': '0'}})
         self.assertEqual(value, 77)

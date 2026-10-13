@@ -32,9 +32,15 @@ eller påverkan på tokenpriset. Granskningsanteckningen visas i artikeln.
 
 ## Marknad och diagram
 
-Alla 15 kurser kontrolleras var 30:e sekund hos CoinGecko. En separat, tidsstämplad
-reserv hämtas av GitHub med `scripts/fetch-market.py`. Gamla/saknade kurser visas
-som fördröjda; tidsstämplarna kommer från kurskällan, inte från publiceringstid.
+De 50 största kryptovalutorna hämtas från CoinGecko med pris, 24-timmarsförändring,
+marknadsvärde och handelsvolym i USD och SEK. Webbläsaren uppdaterar ungefär varje
+minut; GitHub Actions bygger samtidigt en tidsstämplad reserv med
+`scripts/fetch-market.py`. Marknadsöversikten kan sorteras efter rank, namn, pris,
+dygnsförändring, marknadsvärde och handelsvolym. Urvalet av synliga valutor sparas
+i webbläsaren. Äldre eller saknade kurser märks som fördröjda.
+
+Under kurstickern visas Fear & Greed Index och Altcoin Season Index sida vid sida.
+Mätarna länkar till sina källor och visar när värdena senast kontrollerades.
 
 Klick på tickern eller marknadsöversikten öppnar ett tillgängligt dialogfönster.
 Perioder: 24 timmar, i dag (Stockholm), vecka, månad, kvartal, i år, ett år, tre år,

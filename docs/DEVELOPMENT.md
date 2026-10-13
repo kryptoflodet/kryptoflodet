@@ -13,7 +13,7 @@ Befintligt repo kryptoflodet/kryptoflodet.github.io. Inga extra API-kostnader. G
 - Varför är detta viktigt, originalkälla, tydlig osäkerhet och videoinbäddning med tillåtna källor.
 - Daterade dagsöversikter av granskade poster, SEO, canonical, OG, JSON-LD, sitemap och robots.
 - Femminutersschema, tester före publicering, arkivering före deployment och kö som Actions-artifact.
-- Befintliga 15 marknadskurser, blogg, lokala bokmärken och grafer behålls.
+- Marknadsöversikten hämtar CoinGeckos 50 största kryptovalutor, med sortering och lokalt sparat urval. Fear & Greed och Altcoin Season visas i varsin lika bred mätare under kurstickern.
 
 ## Avsiktliga begränsningar
 Tidigare kontrollpunkt: direkt X-import var inte ansluten (ersatt av lösningen nedan). Publik RSSHub gav 404 och Nitter 410; valfri egen RSSHub-adapter finns för fyra konton. Den kräver ingen betald X API, men en fungerande server och RSSHub-autentisering saknas. Resten fungerar utan den.

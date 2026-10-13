@@ -119,14 +119,16 @@ def parse_global_market(payload: Any, market_data: Any) -> dict[str, Any]:
         raise ValueError('CoinGecko Global saknar marknadsdominans')
     observed = iso_from_unix(data.get('updated_at')) or iso_now()
     quotes = market_data if isinstance(market_data, dict) else {}
-    btc = quotes.get('bitcoin') if isinstance(quotes.get('bitcoin'), dict) else {}
-    eth = quotes.get('ethereum') if isinstance(quotes.get('ethereum'), dict) else {}
+    rows = quotes.get('coins') if isinstance(quotes.get('coins'), list) else quotes.get('quotes') if isinstance(quotes.get('quotes'), list) else None
+    by_id = {row.get('id'): row for row in rows if isinstance(row, dict) and isinstance(row.get('id'), str)} if isinstance(rows, list) else {}
+    btc = quotes.get('bitcoin') if isinstance(quotes.get('bitcoin'), dict) else by_id.get('bitcoin', {})
+    eth = quotes.get('ethereum') if isinstance(quotes.get('ethereum'), dict) else by_id.get('ethereum', {})
     result = {
         'btcDominance': as_number(percentages.get('btc'), 0, 100),
         'ethDominance': as_number(percentages.get('eth'), 0, 100),
         'marketCapChange24h': as_number(data.get('market_cap_change_percentage_24h_usd'), -1000, 1000),
-        'btcChange24h': as_number(btc.get('usd_24h_change'), -1000, 1000),
-        'ethChange24h': as_number(eth.get('usd_24h_change'), -1000, 1000),
+        'btcChange24h': as_number(btc.get('usd_24h_change', btc.get('price_change_percentage_24h', btc.get('change24h'))), -1000, 1000),
+        'ethChange24h': as_number(eth.get('usd_24h_change', eth.get('price_change_percentage_24h', eth.get('change24h'))), -1000, 1000),
         'observedAt': observed,
     }
     if result['btcDominance'] is None or result['ethDominance'] is None or result['marketCapChange24h'] is None:
