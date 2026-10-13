@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-10-13T16:45:04.184134Z",
+  "generatedAt": "2026-10-13T17:08:10.316186Z",
   "posts": [
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110052989016670208/img/0bmw7OW88TpgYsQT.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110053932500464014",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110053932500464014",
+      "publishedAt": "2026-10-13T17:03:55Z",
+      "text": "JUST IN: Michel Saylor sees end to AI headwind draining capital from markets.\n\nSays Bitcoin will gain from monetary expansion and BTC reserve stock offers. https://t.co/5KNqbijPnM",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Michel Saylor ser slutet på AI-motvind som dränerar kapital från marknaderna.\n\nHan säger att Bitcoin kommer att vinna på expansion och BTC reservakt.",
+        "method": "translation",
+        "sourceHash": "6028b9e53688f6f2d2bbf61408b6be39da85e7fc4e5c4cee6083d04645f884b3",
+        "engine": "nllb-200-600m-q8-v2"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhluUcXsAAAFa4.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhl15nXAAAfh4o.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110052954329800818",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110052954329800818",
+      "publishedAt": "2026-10-13T17:00:01Z",
+      "text": "AI meets crypto. \n\n21Shares is launching a new product that gives investors exposure to Anthropic’s implied pre-IPO valuation through crypto derivatives.\n\nPrivate AI companies and crypto markets are getting closer than ever. 🚀 https://t.co/uBPXl4qQax",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "AI möter kryptografi.\n\n21Shares lanserar en ny produkt som ger investerare exponering för Anthropics implicita pre-ipo värdering genom kryptoderivat.\n\nPrivata AI-företag och kryptomarknader närmar sig varandra.",
+        "method": "translation",
+        "sourceHash": "cb950bfe9dc657db14228826bb1d46b597e24881e6599004e8e89fcd99498bbc",
+        "engine": "nllb-200-600m-q8-v2"
+      }
+    },
     {
       "media": [
         {
@@ -2340,33 +2406,6 @@
       "contextSource": null
     },
     {
-      "media": [],
-      "id": "2109734851280503261",
-      "handle": "TheMoonShow",
-      "author": "The Moon Show",
-      "sourceId": "moon-x",
-      "url": "https://x.com/TheMoonShow/status/2109734851280503261",
-      "publishedAt": "2026-10-12T19:56:00Z",
-      "text": "Bitcoin is going to explode and melt faces.\n\nAlts will follow.\n\nStay patient. The real moves are about to begin.",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Bitcoin kommer att explodera och smälta ansikten.\n\nAlts kommer att följa efter.\n\nVar tålmodig.\n\nDe verkliga rörelserna börjar snart.",
-        "method": "translation",
-        "sourceHash": "e73a98f5dbff32d6d5e26f18d96b659efed63102c1ef319c940f7a18b9ec2a62",
-        "engine": "nllb-200-600m-q8-v1"
-      }
-    },
-    {
       "media": [
         {
           "url": "https://pbs.twimg.com/media/HUcO8wEXgAAY_Zq.jpg",
@@ -3275,42 +3314,6 @@
       }
     },
     {
-      "media": [
-        {
-          "url": "https://pbs.twimg.com/media/HUbiblbWAAAeowL.png",
-          "alt": ""
-        },
-        {
-          "url": "https://pbs.twimg.com/media/HUbib0uWYAAXnr1.png",
-          "alt": ""
-        }
-      ],
-      "id": "2109622480457396648",
-      "handle": "BitcoinArchive",
-      "author": "Bitcoin Archive",
-      "sourceId": "bitcoin-archive-x",
-      "url": "https://x.com/BitcoinArchive/status/2109622480457396648",
-      "publishedAt": "2026-10-12T12:29:28Z",
-      "text": "JUST IN: Michael Saylor's Strategy bought 250 Bitcoin this past week for $21M.\n\n• Now holds 848,250 BTC.\n\n• Bought back $192M worth of STRC preferred shares.\n\n• Total cash reserves fell to $5.5B. https://t.co/ZN82QoS16X",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Bitcoin Archive uppger att Strategy köpte 250 bitcoin för 21 miljoner dollar under den gångna veckan och nu äger 848 250 BTC. Bolaget köpte även tillbaka preferensaktier av typen STRC för 192 miljoner dollar. Kassareserven sjönk samtidigt till 5,5 miljarder dollar.",
-        "method": "summary",
-        "sourceHash": "0c698d0500f40475b6033e3a4e3d2e7fe00a0049d60acc2b71860dbb011233f5",
-        "engine": "reviewed"
-      }
-    },
-    {
       "media": [],
       "id": "2109615811954630703",
       "handle": "saylor",
@@ -3702,10 +3705,10 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastSuccessAt": "2026-10-13T17:08:10.316186Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3715,7 +3718,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-13T16:19:19+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 15,
@@ -3726,10 +3729,10 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastSuccessAt": "2026-10-13T17:08:10.316186Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3739,7 +3742,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-13T16:30:58+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3750,10 +3753,10 @@
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastSuccessAt": "2026-10-13T17:08:10.316186Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3762,19 +3765,19 @@
           "eligiblePosts": 9
         }
       ],
-      "newestAvailableAt": "2026-10-13T16:45:00+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "newestAvailableAt": "2026-10-13T17:00:01+00:00",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
-      "newestPostAt": "2026-10-13T16:45:00Z"
+      "newestPostAt": "2026-10-13T17:00:01Z"
     },
     {
       "id": "saylor-x",
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T16:42:32.754854Z",
@@ -3799,7 +3802,7 @@
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -3811,16 +3814,16 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T16:45:04.184134Z",
-      "lastIndividualSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastSuccessAt": "2026-10-13T17:08:10.316186Z",
+      "lastIndividualSuccessAt": "2026-10-13T17:08:10.316186Z",
       "attempts": [
         {
           "method": "user-id",
           "result": "ok",
-          "eligiblePosts": 16
+          "eligiblePosts": 15
         },
         {
           "method": "individual-post",
@@ -3833,19 +3836,19 @@
           "result": "ok"
         }
       ],
-      "newestAvailableAt": "2026-10-13T16:34:24+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "newestAvailableAt": "2026-10-13T17:03:55+00:00",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
-      "newestPostAt": "2026-10-13T16:06:36Z"
+      "newestPostAt": "2026-10-13T17:03:55Z"
     },
     {
       "id": "mmcrypto-x",
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T16:42:32.754854Z",
@@ -3870,7 +3873,7 @@
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -3882,7 +3885,7 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T16:42:32.754854Z",
@@ -3907,7 +3910,7 @@
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-13T16:45:04.184134Z",
+      "lastProfileSuccessAt": "2026-10-13T17:08:10.316186Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4156,7 +4159,7 @@
       ]
     },
     "x-public-profile:cryptokid": {
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "links": [
         [
           "CryptoKid",
@@ -4184,7 +4187,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:mmcrypto": {
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "links": [
         [
           "MMCrypto",
@@ -4216,7 +4219,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:saylor": {
-      "checkedAt": "2026-10-13T16:45:04.184134Z",
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
       "links": [
         [
           "saylor",
@@ -4298,19 +4301,35 @@
           "2109978048175251562"
         ]
       ]
+    },
+    "https://decrypt.co/380842/bitcoin-shakes-off-spooky-season-jitters": {
+      "checkedAt": "2026-10-13T16:54:21.382687Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/amount-of-bitcoin-exchanges-is-shrinking": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
+    },
+    "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million/": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/sec-leadership-facilitate-crypto-rulemaking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
     }
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-13T16:45:06.279118+00:00",
+    "checkedAt": "2026-10-13T17:08:11.910855+00:00",
     "original": 0,
-    "reviewed": 28,
+    "reviewed": 27,
     "automatic": 2,
     "pending": 14,
     "machine": {
       "engine": "nllb-200-600m-q8-v2",
-      "cached": 72,
-      "local": 0,
+      "cached": 71,
+      "local": 2,
       "freeFallback": 0,
       "pending": 14
     }

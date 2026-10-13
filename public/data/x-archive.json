@@ -4,6 +4,74 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110052989016670208/img/0bmw7OW88TpgYsQT.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110053932500464014",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110053932500464014",
+      "publishedAt": "2026-10-13T17:03:55Z",
+      "text": "JUST IN: Michel Saylor sees end to AI headwind draining capital from markets.\n\nSays Bitcoin will gain from monetary expansion and BTC reserve stock offers. https://t.co/5KNqbijPnM",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Michel Saylor ser slutet på AI-motvind som dränerar kapital från marknaderna.\n\nHan säger att Bitcoin kommer att vinna på expansion och BTC reservakt.",
+        "method": "translation",
+        "sourceHash": "6028b9e53688f6f2d2bbf61408b6be39da85e7fc4e5c4cee6083d04645f884b3",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T17:08:24.851949Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhluUcXsAAAFa4.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhl15nXAAAfh4o.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110052954329800818",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110052954329800818",
+      "publishedAt": "2026-10-13T17:00:01Z",
+      "text": "AI meets crypto. \n\n21Shares is launching a new product that gives investors exposure to Anthropic’s implied pre-IPO valuation through crypto derivatives.\n\nPrivate AI companies and crypto markets are getting closer than ever. 🚀 https://t.co/uBPXl4qQax",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "AI möter kryptografi.\n\n21Shares lanserar en ny produkt som ger investerare exponering för Anthropics implicita pre-ipo värdering genom kryptoderivat.\n\nPrivata AI-företag och kryptomarknader närmar sig varandra.",
+        "method": "translation",
+        "sourceHash": "cb950bfe9dc657db14228826bb1d46b597e24881e6599004e8e89fcd99498bbc",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T17:08:24.851949Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhiSjSbcAAn9v_.jpg",
           "alt": ""
         },

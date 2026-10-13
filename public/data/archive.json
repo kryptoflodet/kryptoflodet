@@ -2,6 +2,58 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "73943698898be143080a",
+      "eventKey": "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million",
+      "originalTitle": "Australia moves to close crypto derivatives loophole after retail traders lose A$458 million",
+      "originalText": "Australia moves to close crypto derivatives loophole after retail traders lose A$458 million",
+      "originalLanguage": "en",
+      "title": "Australia vill stänga lövförlopp i kryptodrivsprodukter",
+      "translation": "",
+      "summary": "CryptoSlate uppger: Australia uppger att det har föreslagits stänga ett lövförlopp i kryptodrivsprodukter efter att handelsföretag har förlorat 458 miljoner australiska dollar.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-13T17:00:31Z",
+      "importedAt": "2026-10-13T17:07:01.690644Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million/",
+          "originId": "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: Australia uppger att det har föreslagits stänga ett lövförlopp i kryptodrivsprodukter efter att handelsföretag har förlorat 458 miljoner australiska dollar.\\n\\nFörslaget innebär att kvalificerade token-avslutade derivat ska ingå i de nuvarande skydden för privata handlare, meddelar CryptoSlate. Vissa fastvarande krypto produkter förblir utan skydd.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T17:07:01.690644Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Marknaden"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "australia-vill-stanga-lovforlopp-i-kryptodrivsprodukter-7394369889",
+      "path": "/nyheter/australia-vill-stanga-lovforlopp-i-kryptodrivsprodukter-7394369889/"
+    },
+    {
       "id": "28b0e0935aad010975c7",
       "eventKey": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it",
       "originalTitle": "A $5 billion Bitcoin fortune is at stake, but UK court says being defrauded isn’t enough to claim it",
