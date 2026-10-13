@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T19:12:34.398420Z",
+  "generatedAt": "2026-10-13T19:24:44.046502Z",
   "items": [
     {
       "id": "e0d8099509764f8cd530",
@@ -500,15 +500,17 @@
       "originalTitle": "Binance Pool Closure Requires Miners to Change Endpoints",
       "originalText": "Binance Pool Closure Requires Miners to Change Endpoints",
       "originalLanguage": "en",
-      "title": "Binance avslutar pool-tjänst på november",
+      "title": "Binance stänger Binance Pool den 10 november",
       "translation": "",
-      "summary": "Cryptonews rapporterar att Binance Pool stängs ner den 10 november 2026, vilket innebär avslutande av minningstjänster och kräver att minerare byter utgångspunkter innan anslutningar avslutas. ",
-      "why": "",
+      "summary": "CryptoNews rapporterar att Binance avvecklar Binance Pool och flera närliggande tjänster den 10 november 2026. Anslutningarna stängs klockan 07.00 UTC; utvinnare som använder poolen behöver byta till en annan tjänst före dess.",
+      "why": "Avvecklingen gäller poolen och dess anslutningstjänster, inte själva utrustningen. Den som vill fortsätta utvinningen behöver konfigurera om sina maskiner till en annan pool.",
       "author": "Cryptonews",
       "publishedAt": "2026-10-13T07:43:50Z",
       "importedAt": "2026-10-13T19:12:34.398420Z",
       "category": "Institutioner",
-      "coins": [],
+      "coins": [
+        "BTC"
+      ],
       "topics": [
         "Institutioner"
       ],
@@ -531,20 +533,21 @@
       "importance": 2,
       "breaking": false,
       "demo": false,
-      "analysisMethod": "local-model-validated",
-      "readerText": "Cryptonews rapporterar att Binance Pool stängs ner den 10 november 2026, vilket innebär avslutande av minningstjänster och kräver att minerare byter utgångspunkter innan anslutningar avslutas. \\n\\nMinerare måste förekomma förändringar i konfigurationen för att kunna fortsätta utvinning efter datumet.",
-      "readerKind": "edited",
+      "analysisMethod": "editorial",
+      "readerText": "CryptoNews rapporterar att Binance avvecklar Binance Pool och flera närliggande tjänster den 10 november 2026. Anslutningarna stängs klockan 07.00 UTC; utvinnare som använder poolen behöver byta till en annan tjänst före dess.\n\nAvvecklingen gäller poolen och dess anslutningstjänster, inte själva utrustningen. Den som vill fortsätta utvinningen behöver konfigurera om sina maskiner till en annan pool.",
+      "readerKind": "reviewed",
       "contentVersion": 2,
-      "translationStatus": "edited-sv",
+      "translationStatus": "reviewed-sv",
       "editedAt": "2026-10-13T19:12:34.398420Z",
-      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "verificationNote": "Språket har granskats mot CryptoNews originaltext. Tidsplanen återges från källan och är inte faktagranskad oberoende.",
       "contentType": "rapportering",
       "categories": [
-        "Marknaden"
+        "Bitcoin"
       ],
       "importanceReason": "Ordinarie kryptobevakning",
       "slug": "binance-avslutar-pool-tjanst-pa-november-3ff9c3fc6d",
-      "path": "/nyheter/binance-avslutar-pool-tjanst-pa-november-3ff9c3fc6d/"
+      "path": "/nyheter/binance-avslutar-pool-tjanst-pa-november-3ff9c3fc6d/",
+      "reviewedAt": "2026-10-13T00:00:00Z"
     },
     {
       "id": "19ae85fe6242e5bf7756",
@@ -552,10 +555,10 @@
       "originalTitle": "Moscow Exchange to Launch Bitcoin Trading, Testing Underway",
       "originalText": "Moscow Exchange to Launch Bitcoin Trading, Testing Underway",
       "originalLanguage": "en",
-      "title": "Moskowss handel med bitcoin börjar testas",
+      "title": "Moskvabörsen testar kryptohandel inför planerad start i december",
       "translation": "",
-      "summary": "Bitcoin Magazine uppger att Moskowss handel med bitcoin börjar testas. Testen har startat i samband med att Ryssland öppnar vägen för sina medborgare att handla bitcoin.",
-      "why": "Förändringar i ett kryptonätverk eller en tjänst kan påverka hur den används. Skilj mellan en plan, en testversion och en funktion som faktiskt har blivit tillgänglig.",
+      "summary": "Bitcoin Magazine rapporterar att Moskvabörsen testar handel med kryptovalutor tillsammans med professionella marknadsaktörer. Börsen uppges planera att starta handeln i december, efter att Rysslands regler för digitala valutor trädde i kraft i september.",
+      "why": "Det rör sig om testning och en planerad lansering. Artikeln säger inte att tjänsten redan är öppen för allmänheten.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-12T22:10:39Z",
       "importedAt": "2026-10-13T19:12:34.398420Z",
@@ -585,20 +588,21 @@
       "importance": 4,
       "breaking": false,
       "demo": false,
-      "analysisMethod": "local-model-validated",
-      "readerText": "Bitcoin Magazine uppger att Moskowss handel med bitcoin börjar testas. Testen har startat i samband med att Ryssland öppnar vägen för sina medborgare att handla bitcoin.\\n\\nUppgifterna kommer från Mathew Di Salvo, som skriver i artikeln. Det finns ingen information om när eller hur mycket handeln kommer att utvecklas.",
-      "readerKind": "edited",
+      "analysisMethod": "editorial",
+      "readerText": "Bitcoin Magazine rapporterar att Moskvabörsen testar handel med kryptovalutor tillsammans med professionella marknadsaktörer. Börsen uppges planera att starta handeln i december, efter att Rysslands regler för digitala valutor trädde i kraft i september.\n\nDet rör sig om testning och en planerad lansering. Artikeln säger inte att tjänsten redan är öppen för allmänheten.",
+      "readerKind": "reviewed",
       "contentVersion": 2,
-      "translationStatus": "edited-sv",
+      "translationStatus": "reviewed-sv",
       "editedAt": "2026-10-13T19:12:34.398420Z",
-      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "verificationNote": "Språket har granskats mot Bitcoin Magazines originaltext. Tidsplan och testning återges från källan och är inte faktagranskade oberoende.",
       "contentType": "rapportering",
       "categories": [
         "Bitcoin"
       ],
       "importanceReason": "Beslut, köp eller förändring i ett nätverk",
       "slug": "moskowss-handel-med-bitcoin-borjar-testas-19ae85fe62",
-      "path": "/nyheter/moskowss-handel-med-bitcoin-borjar-testas-19ae85fe62/"
+      "path": "/nyheter/moskowss-handel-med-bitcoin-borjar-testas-19ae85fe62/",
+      "reviewedAt": "2026-10-13T00:00:00Z"
     },
     {
       "id": "3577aa9bf17ea69253b1",
@@ -769,10 +773,10 @@
       "originalTitle": "Bitcoin Extends Slide — Can ‘Uptober’ 2026 Beat Last Year’s?",
       "originalText": "Bitcoin Extends Slide — Can ‘Uptober’ 2026 Beat Last Year’s?",
       "originalLanguage": "en",
-      "title": "Bitcoin fortsätter sänka — kan 'Uptober' 2026 vinna mot förra året?",
+      "title": "Bitcoin faller vidare – kan oktober ändå bli en stark månad?",
       "translation": "",
-      "summary": "Bitcoin Magazine uppger att bitcoin fortsätter sänka och har en svår start på månaden. Men situationen kan ändå förbättras.",
-      "why": "",
+      "summary": "Bitcoin Magazine skriver att bitcoinpriset föll omkring 2 procent det senaste dygnet och även var ned sett över veckan och månaden. Oktober har historiskt ofta varit en stark månad för bitcoin, men i år har kursutvecklingen hittills varit den motsatta.",
+      "why": "Historiska säsongsmönster garanterar inte framtida avkastning. De tecken på en möjlig botten som artikeln tar upp är analytikers bedömningar, inte ett besked om att nedgången har vänt.",
       "author": "Bitcoin Magazine",
       "publishedAt": "2026-10-12T19:43:18Z",
       "importedAt": "2026-10-13T19:12:34.398420Z",
@@ -802,20 +806,21 @@
       "importance": 2,
       "breaking": false,
       "demo": false,
-      "analysisMethod": "local-model-validated",
-      "readerText": "Bitcoin Magazine uppger att bitcoin fortsätter sänka och har en svår start på månaden. Men situationen kan ändå förbättras.\\n\\nMathew Di Salvo skriver att det finns möjlighet att 'Uptober' 2026 kan bli bättre än förra året, trots aktuella nedgångar.",
-      "readerKind": "edited",
+      "analysisMethod": "editorial",
+      "readerText": "Bitcoin Magazine skriver att bitcoinpriset föll omkring 2 procent det senaste dygnet och även var ned sett över veckan och månaden. Oktober har historiskt ofta varit en stark månad för bitcoin, men i år har kursutvecklingen hittills varit den motsatta.\n\nHistoriska säsongsmönster garanterar inte framtida avkastning. De tecken på en möjlig botten som artikeln tar upp är analytikers bedömningar, inte ett besked om att nedgången har vänt.",
+      "readerKind": "reviewed",
       "contentVersion": 2,
-      "translationStatus": "edited-sv",
+      "translationStatus": "reviewed-sv",
       "editedAt": "2026-10-13T19:12:34.398420Z",
-      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "verificationNote": "Språket har granskats mot Bitcoin Magazines originaltext. Kursrörelserna återges från källan; framtida utveckling är osäker.",
       "contentType": "rapportering",
       "categories": [
         "Bitcoin"
       ],
       "importanceReason": "Ordinarie kryptobevakning",
       "slug": "bitcoin-fortsatter-sanka-kan-uptober-2026-vinna-mot-forra-aret-5ae6fbf50c",
-      "path": "/nyheter/bitcoin-fortsatter-sanka-kan-uptober-2026-vinna-mot-forra-aret-5ae6fbf50c/"
+      "path": "/nyheter/bitcoin-fortsatter-sanka-kan-uptober-2026-vinna-mot-forra-aret-5ae6fbf50c/",
+      "reviewedAt": "2026-10-13T00:00:00Z"
     },
     {
       "id": "a7c32c5afbbaa7adc217",
@@ -1537,10 +1542,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coindesk",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 21
     },
     {
@@ -1553,11 +1558,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cointelegraph",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
-      "count": 17
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
+      "count": 16
     },
     {
       "id": "decrypt",
@@ -1569,10 +1574,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "decrypt",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 16
     },
     {
@@ -1585,10 +1590,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoinmag",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 8
     },
     {
@@ -1601,10 +1606,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 1
     },
     {
@@ -1617,10 +1622,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "ethereum",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 0
     },
     {
@@ -1633,10 +1638,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sui",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 4
     },
     {
@@ -1649,10 +1654,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sec",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 0
     },
     {
@@ -1665,10 +1670,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "solana",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 4
     },
     {
@@ -1681,7 +1686,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "ondo",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
       "error": "Källan kunde inte hämtas (HTTPError). Tidigare publicerade nyheter behålls.",
@@ -1697,7 +1702,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "chainlink",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
       "error": "Källan kunde inte hämtas (ValueError). Tidigare publicerade nyheter behålls.",
@@ -1713,10 +1718,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptonews",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 17
     },
     {
@@ -1729,10 +1734,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "theblock",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 18
     },
     {
@@ -1745,10 +1750,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptoslate",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 8
     },
     {
@@ -1761,10 +1766,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "saylor-watch",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 22
     },
     {
@@ -1777,10 +1782,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-watch",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 10
     },
     {
@@ -1793,10 +1798,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-watch",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 1
     },
     {
@@ -1809,10 +1814,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-watch",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 1
     },
     {
@@ -1825,10 +1830,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-watch",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 0
     },
     {
@@ -1841,10 +1846,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-video",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 11
     },
     {
@@ -1857,10 +1862,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-video",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 7
     },
     {
@@ -1873,10 +1878,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coinmarketcap",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Offentligt indexerade Community-artiklar via Google Nyheter. Inläggen är inte automatiskt verifierade av CoinMarketCap.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 3
     },
     {
@@ -1889,7 +1894,7 @@
       "enabled": false,
       "connection": "planned",
       "independenceGroup": "coinglass",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",
       "error": "Direkt nyhetsflöde kräver CoinGlass API-åtkomst. Datadiagram räknas inte som nyhetsartiklar."
@@ -1904,10 +1909,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "altcoin-daily-video",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Videor från Altcoin Dailys egen YouTube-kanal. Kryptorelaterade rubriker översätts till svenska; videon visas på originalspråket.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 8
     },
     {
@@ -1920,10 +1925,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "felix-video",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "sv",
       "coverage": "Direkt från Felix Nordqvists YouTube-kanal. Endast videor med ett uttryckligt kryptoämne i rubriken tas med. Allmän börs och privatekonomi sorteras bort.",
-      "lastSuccessAt": "2026-10-13T19:12:34.398420Z",
+      "lastSuccessAt": "2026-10-13T19:24:44.046502Z",
       "count": 0
     },
     {
@@ -1936,7 +1941,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "mmcrypto-video",
-      "checkedAt": "2026-10-13T19:12:34.398420Z",
+      "checkedAt": "2026-10-13T19:24:44.046502Z",
       "language": "en",
       "coverage": "Videor från MMCryptos YouTube-kanal. Videon visas på originalspråket och nyheten sammanfattas på svenska.",
       "error": "Källan kunde inte hämtas (ValueError). Tidigare publicerade nyheter behålls.",
@@ -1952,7 +1957,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 15
     },
@@ -1966,7 +1971,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -1980,7 +1985,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -1994,7 +1999,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "saylor-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "count": 4
     },
@@ -2008,7 +2013,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-archive-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -2022,7 +2027,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "mmcrypto-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "count": 4
     },
@@ -2036,7 +2041,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "kid-x",
-      "checkedAt": "2026-10-13T19:16:05.064273Z",
+      "checkedAt": "2026-10-13T19:24:45.490069Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "count": 3
     }
@@ -2049,21 +2054,19 @@
     "5e426bd68efd1968d892"
   ],
   "health": {
-    "checkedAt": "2026-10-13T19:12:34.398420Z",
+    "checkedAt": "2026-10-13T19:24:44.046502Z",
     "sourcesConnected": 22,
     "sourcesTotal": 25,
-    "candidates": 177,
+    "candidates": 176,
     "published": 28,
-    "held": 162,
+    "held": 161,
     "heldReasons": {
-      "previously_rejected": 12,
-      "editor_queue": 1,
-      "insufficient_source": 144,
-      "rejected": 5
+      "insufficient_source": 143,
+      "awaiting_editorial_review": 18
     },
-    "editorAttempts": 8,
+    "editorAttempts": 0,
     "paidApis": false,
-    "editorMode": "local-validated",
-    "awaitingReview": 162
+    "editorMode": "reviewed-only",
+    "awaitingReview": 161
   }
 }
