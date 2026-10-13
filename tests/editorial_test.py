@@ -32,7 +32,7 @@ class EditorialTests(unittest.TestCase):
   draft['title']='Bitcoinfonden redovisar nya inflöden';draft['support'][0]='fabricated evidence';self.assertFalse(validate(draft,source))
  def test_local_summary_requires_explicit_source_attribution(self):
   source='Bitcoin ETF issuer reported net inflows of 25 million on Monday. The company declined to provide a forecast.'
-  draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['CoinDesk uppger att Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.','Bolaget lämnade ingen prognos. Uppgiften beskriver utgivarens redovisning och innehåller ingen prognos om utvecklingen på marknaden framöver.'],'support':['Bitcoin ETF issuer reported net inflows of 25 million on Monday.','The company declined to provide a forecast.']}
+  draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['CoinDesk uppger att Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.','Bolaget lämnade ingen prognos. Det framgår inte heller hur inflödena kan förändras över tid eller vilka faktorer som ligger bakom dem. Texten återger utgivarens besked utan att dra slutsatser om den bredare marknadsutvecklingen.'],'support':['Bitcoin ETF issuer reported net inflows of 25 million on Monday.','The company declined to provide a forecast.']}
   self.assertTrue(validate(draft,source,'CoinDesk'))
   draft['paragraphs'][0]='Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.'
   self.assertFalse(validate(draft,source,'CoinDesk'))
