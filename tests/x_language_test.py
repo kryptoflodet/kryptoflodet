@@ -28,6 +28,13 @@ class XLanguageTests(unittest.TestCase):
   p=self.post('An unfamiliar statement about crypto.');p['url']+='x';apply_language([p],review);self.assertNotIn('swedish',p)
  def test_unknown_language_is_not_assumed_english(self):
   p=self.post('Bitcoin reclaims $90,000','und');counts,_=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1)
+ def test_stale_machine_translation_is_removed_until_reviewed(self):
+  p=self.post('An unfamiliar statement about crypto.');p['swedish']={'text':'Krypto: dålig maskinöversättning.','method':'translation','engine':'nllb-200-600m-q8-v2','sourceHash':source_hash(p['text'])}
+  counts,queue=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1);self.assertEqual(queue[0]['text'],p['text'])
+ def test_production_workflow_does_not_publish_automatic_x_translations(self):
+  workflow=pathlib.Path('.github/workflows/news-pages.yml').read_text()
+  self.assertIn('scripts/x_language.py',workflow);self.assertIn('scripts/x_archive.py',workflow)
+  self.assertNotIn('scripts/x_translate.py',workflow);self.assertNotIn('prepare_x_translator.py',workflow)
  def test_multiple_sentences_never_drop_warning(self):
   text='Bitcoin reclaims $90,000. Ethereum could reach $6,500.'
   self.assertEqual(automatic(text)[0],'Bitcoin är åter på 90 000 dollar. Ethereum skulle kunna nå 6 500 dollar.')

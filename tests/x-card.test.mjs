@@ -12,9 +12,11 @@ Object.assign(globalThis,{window:dom.window,document:dom.window.document,IS_REAC
 const host=document.getElementById('root');const root=createRoot(host);
 try{
  writeFileSync(join(dir,'ShareNews.js'),`const React=require('react');exports.__esModule=true;exports.xPostShareUrl=id=>'https://kryptopuls.se/x/'+id+'/';exports.default=function ShareNews({title,url}){return React.createElement('button',{type:'button','aria-label':'Dela inlägget: '+title,'data-url':url},'Dela');};`);
- writeFileSync(join(dir,'card.cjs'),ts.transpileModule(readFileSync('src/components/XPostCard.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
+ writeFileSync(join(dir,'x-feed.cjs'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
+ const cardCode=ts.transpileModule(readFileSync('src/components/XPostCard.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText.replace('require("../lib/x-feed")',"require('./x-feed.cjs')");
+ writeFileSync(join(dir,'card.cjs'),cardCode);
  const Card=createRequire(import.meta.url)(join(dir,'card.cjs')).default;
- const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Bitcoin could rise. <script>unsafe()</script> https://t.co/example https://x.com.evil.test/unsafe',coins:['BTC'],categories:['Bitcoin'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Bitcoin skulle kunna stiga.',method:'translation'},media:[{url:'https://pbs.twimg.com/photo.jpg',alt:'Originalbild'},{url:'https://evil.example/photo.jpg',alt:'unsafe'}]};
+ const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Bitcoin could rise. <script>unsafe()</script> https://t.co/example https://x.com.evil.test/unsafe',coins:['BTC'],categories:['Bitcoin'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Bitcoin skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'},media:[{url:'https://pbs.twimg.com/photo.jpg',alt:'Originalbild'},{url:'https://evil.example/photo.jpg',alt:'unsafe'}]};
  let coin='';
  const render=p=>act(()=>root.render(React.createElement(Card,{post:p,onCoin:c=>coin=c})));
  await render(post);
@@ -23,7 +25,7 @@ try{
  assert.equal(host.querySelector('blockquote'),null,'Original collapsed by default');assert.equal(host.querySelector('.x-card-image img').src,post.media[0].url,'Original picture visible in the feed');
  assert.equal(host.querySelector('time').getAttribute('datetime'),post.publishedAt);
  const link=host.querySelector('a');assert.equal(link.href,post.url);assert.equal(link.target,'_blank');assert.ok(link.rel.includes('noopener'));
- const toggle=host.querySelector('[aria-expanded]');assert.equal(toggle.textContent,'Visa original');
+ const toggle=host.querySelector('[aria-expanded]');assert.equal(toggle.textContent,'Visa original på engelska');
  await act(()=>toggle.click());
  assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(toggle.textContent,'Dölj original');assert.equal(host.querySelector('blockquote').textContent,post.text);assert.equal(host.querySelector('script'),null,'Original text escaped');assert.equal(host.querySelectorAll('img').length,2);assert.equal(host.querySelector('blockquote a').href,'https://t.co/example');assert.equal(host.querySelectorAll('blockquote a').length,1,'Only real X/t.co URLs become links');
  await act(()=>toggle.click());assert.equal(host.querySelector('blockquote'),null);
@@ -38,8 +40,8 @@ try{
  await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
  await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin.svg'),'Bitcoin posts use the local Bitcoin symbol even in another category');
- await render({...post,swedish:undefined});assert.ok(host.textContent.includes('Svensk översättning förbereds'),'An unavailable translation never hides the real post');assert.equal(host.querySelector('blockquote'),null,'Original stays collapsed behind Swedish explanation');await act(()=>host.querySelector('[aria-expanded]').click());assert.equal(host.querySelector('blockquote').textContent,post.text);
- await render({...post,swedish:{...post.swedish,engine:'nllb-200-600m-q8-v1'}});assert.ok(host.textContent.includes('Maskinöversatt till svenska'));assert.ok(host.textContent.includes('Maskinöversättning kan innehålla fel'));
+ await render({...post,swedish:undefined});assert.ok(host.textContent.includes('Svensk översättning inväntar granskning'),'An unavailable translation never hides the real post');assert.equal(host.querySelector('blockquote'),null,'Original stays collapsed behind Swedish explanation');await act(()=>host.querySelector('[aria-expanded]').click());assert.equal(host.querySelector('blockquote').textContent,post.text);
+ await render({...post,swedish:{...post.swedish,text:'felaktig maskintext',engine:'nllb-200-600m-q8-v1'}});assert.ok(host.textContent.includes('Svensk översättning inväntar granskning'));assert.ok(!host.textContent.includes('felaktig maskintext'),'Unreviewed output is never presented as a Swedish translation');
  writeFileSync(join(dir,'FeedChannels.cjs'),ts.transpileModule(readFileSync('src/components/FeedChannels.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
  const Channels=createRequire(import.meta.url)(join(dir,'FeedChannels.cjs')).default;const accounts=JSON.parse(readFileSync('scripts/x-sources.json','utf8')).map(s=>({handle:s.handle,name:s.name,count:2}));let chosen='';
  await act(()=>root.render(React.createElement(Channels,{channel:'x',account:'',accounts,onChange:(channel,account)=>{chosen=channel+':'+(account||'');}})));

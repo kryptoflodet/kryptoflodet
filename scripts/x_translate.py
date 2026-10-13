@@ -1,8 +1,8 @@
-"""Exact-source cached, free Swedish X translation with bounded CPU/network use.
+"""Legacy translation helpers. Automatic model output is disabled for publication.
 
-Reviewed text and deterministic rules take priority. Local NLLB runs without an
-inference service. MyMemory's anonymous free allowance is a small fallback.
-Rejected/unavailable translations leave the real X card and original accessible.
+The active workflow uses only source-bound reviewed text and exact Swedish rules
+through x_language.py. This module remains to support regression tests for the
+old validators; its entry point is intentionally inert.
 """
 import collections,datetime as dt,decimal,hashlib,json,os,pathlib,re,subprocess,time,urllib.request,urllib.parse,urllib.error
 from x_language import source_hash
@@ -106,6 +106,8 @@ def free_fallback(text,memo):
   print('X free translation fallback:',type(error).__name__,getattr(error,'code',None),flush=True);return None
 
 def main():
+ print('Automatic X translation is disabled; run scripts/x_language.py for reviewed Swedish text.',flush=True)
+ return
  target=ROOT/'public/data/x.json';data=json.loads(target.read_text());memo=load_history(CACHE);entries=memo.setdefault('items',{})
  counts={'cached':0,'local':0,'freeFallback':0,'pending':0}
  pending=[]

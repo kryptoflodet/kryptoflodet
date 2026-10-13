@@ -1,6 +1,7 @@
 """Publication rules shared by ingestion, archive and HTML export. No paid services."""
 import datetime as dt, hashlib, re, unicodedata
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from swedish_quality import is_swedish_quality
 UTC=dt.timezone.utc
 
 def canonical_url(url):
@@ -18,7 +19,7 @@ def slug(item):
 
 def readable(item):
  text=item.get('readerText','')
- return item.get('contentVersion')==2 and len(text.split())>=(30 if item.get('translationStatus')=='reviewed-sv' else 35) and item.get('translationStatus') in {'reviewed-sv','edited-sv'} and not re.search(r'Läs originalartikeln för fullständiga|Se videon direkt i nyheten',text)
+ return item.get('contentVersion')==2 and len(text.split())>=(30 if item.get('translationStatus')=='reviewed-sv' else 35) and item.get('translationStatus') in {'reviewed-sv','edited-sv'} and is_swedish_quality(item.get('title',''),item.get('summary',''),text) and not re.search(r'Läs originalartikeln för fullständiga|Se videon direkt i nyheten',text)
 
 def enrich(item):
  text=item.get('originalTitle','')+' '+item.get('originalText','')

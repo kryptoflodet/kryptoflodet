@@ -110,8 +110,9 @@ def main():
  for n in candidates+list(previous.values()):
   review=reviews.get(n['originalUrl'])
   if review:
-   n.update(title=review['title'],summary=review['summary'],readerText=review['summary']+'\n\n'+review['why'],why=review['why'],readerKind='reviewed',coins=review['coins'],status='confirmed',analysisMethod='editorial',verificationNote=review['note'],reviewedAt='2026-10-11T15:15:00Z',translationStatus='reviewed-sv',contentVersion=2)
-   n['evidence'][0]['verified']=True;n.pop('sourceText',None)
+   review_status=review.get('status','confirmed')
+   n.update(title=review['title'],summary=review['summary'],readerText=review['summary']+'\n\n'+review['why'],why=review['why'],readerKind='reviewed',coins=review['coins'],status=review_status,analysisMethod='editorial',verificationNote=review['note'],reviewedAt=review.get('reviewedAt','2026-10-11T15:15:00Z'),translationStatus='reviewed-sv',contentVersion=2)
+   n['evidence'][0]['verified']=review_status=='confirmed';n.pop('sourceText',None)
    accepted_by_url[canonical_url(n['originalUrl'])]=enrich(n)
  from local_editor import cache_key
  memo=read_json(ROOT/'.cache/editor/edits-v2.json',{})
@@ -135,7 +136,9 @@ def main():
    finally:signal.alarm(0)
    if not draft:held[n['id']]=reason;continue
    # The local model and deterministic checks support faithful summaries, not independent confirmation.
-   accepted_by_url[key]=apply_local_edit(n,draft,now)
+   edited=apply_local_edit(n,draft,now)
+   if not readable(edited):held[n['id']]='swedish_quality_check';continue
+   accepted_by_url[key]=edited
    drafts.append({'originalUrl':n['originalUrl'],'publishedAt':n['publishedAt'],'source':n['author'],'title':n['title']})
    continue
   except Exception as exc:held[n['id']]='editor_unavailable';print('Lokal redaktör:',type(exc).__name__,flush=True);break

@@ -2,6 +2,7 @@
 import copy,datetime as dt,json,pathlib,re
 from x_language import source_hash
 ROOT=pathlib.Path(__file__).resolve().parents[1]
+TRUSTED_SWEDISH_ENGINES={'reviewed','x-sv-rules-v1'}
 
 def archivable_post(post):
  if not isinstance(post,dict):return False
@@ -22,10 +23,15 @@ def readable_post(post):
  if not archivable_post(post):return False
  if post.get('originalLanguage')=='sv':return True
  swedish=post.get('swedish',{})
- return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('sourceHash')==source_hash(post['text'])
+ return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('engine') in TRUSTED_SWEDISH_ENGINES and swedish.get('sourceHash')==source_hash(post['text'])
 
 def archive_posts(previous,posts,now):
- saved={p['id']:copy.deepcopy(p) for p in previous if archivable_post(p)}
+ saved={}
+ for post in previous:
+  if not archivable_post(post):continue
+  p=copy.deepcopy(post)
+  if not readable_post(p):p.pop('swedish',None)
+  saved[p['id']]=p
  for post in posts:
   if not archivable_post(post):continue
   p=copy.deepcopy(post);prior=saved.get(p['id'])

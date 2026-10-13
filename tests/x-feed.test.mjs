@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 const dir=mkdtempSync(join(tmpdir(),'x-feed-tests-'));
 try{
  writeFileSync(join(dir,'x-feed.js'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
- const {mergeFeed,validXPost,filterFeedChannel,archivedXPostUrl,sourceConnectionLabel}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
+ const {mergeFeed,validXPost,filterFeedChannel,archivedXPostUrl,sourceConnectionLabel,readableX,swedishText}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
  const now=Date.parse('2026-10-12T12:00:00Z');
  const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
  const article={id:'article',publishedAt:'2026-10-12T11:00:00Z',importance:4};
@@ -24,6 +24,10 @@ try{
  assert.equal(mergeFeed([], [post],{},true,[],now).length,0);
  assert.equal(mergeFeed([], [{...post,swedish:undefined}],{},false,[],now).length,1,'A real X post stays available during a translation outage');
  assert.equal(mergeFeed([], [{...post,swedish:undefined,originalLanguage:'sv'}],{},false,[],now).length,1,'Swedish original');
+ const unreviewed={...post,swedish:{text:'felaktigmaskintext',method:'translation',engine:'nllb-200-600m-q8-v2',sourceHash:'hash'}};
+ assert.equal(swedishText(unreviewed),null,'Unreviewed model output is not presented as Swedish');assert.equal(readableX(unreviewed),false);
+ assert.equal(mergeFeed([], [unreviewed],{q:'felaktigmaskintext'},false,[],now).length,0,'Search excludes unreviewed machine text');
+ assert.equal(mergeFeed([], [unreviewed],{},false,[],now).length,1,'The original X post remains in the feed');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
  for(const bad of [null,{}, {...post,url:'javascript:alert(1)'},{...post,url:post.url+'.evil'},{...post,categories:[12]},{...post,swedish:{text:123,method:'translation'}}])assert.equal(validXPost(bad),false);

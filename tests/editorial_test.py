@@ -3,6 +3,7 @@ from unittest.mock import patch
 sys.path.insert(0,'scripts')
 from editorial import canonical_url,deduplicate,enrich,readable,select_important
 from local_editor import validate
+from swedish_quality import is_swedish_quality
 from x_sources import sources
 class EditorialTests(unittest.TestCase):
  def item(self,**extra):
@@ -25,6 +26,11 @@ class EditorialTests(unittest.TestCase):
   self.assertEqual(a['path'],path);self.assertTrue({'Altcoins','Institutionellt'}<=set(a['categories']));self.assertFalse({'Solana','SUI'}&set(a['categories']))
  def test_missing_body_never_readable(self):
   self.assertFalse(readable(dict(self.item(),readerText='Bara en rubrik')))
+ def test_known_garbled_swedish_fails_closed(self):
+  for bad in ['Australia uppger ett förslag om ett lövförlopp i kryptodrivsprodukter.','Defraudning räcker inte.','Krypto-portfolio når alltid högre nivå.','Treasury-secretary hotar att sejka krypto.']:
+   item=self.item();item.update(title='Nyhet på svenska',summary=bad,readerText=' '.join(['svensk text']*25))
+   self.assertFalse(is_swedish_quality(item['title'],item['summary'],item['readerText']),bad)
+   self.assertFalse(readable(item),bad)
  def test_generated_claim_guards(self):
   source='The Bitcoin fund reported inflows of 25 million on Monday. The company declined to provide a forecast.'
   draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['Enligt fondens besked kom det in 25 miljoner under måndagen. Uppgiften gäller de inflöden som fonden själv har redovisat i sitt meddelande.','Bolaget lämnade inte någon prognos. Beskedet innehåller därmed ingen bedömning av hur utvecklingen väntas se ut framöver.']}

@@ -33,21 +33,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci
-      - name: Restore X translation model
-        uses: actions/cache@v4
-        with:
-          path: .cache/x-translation/model
-          key: x-nllb-sv-q8-261c31d-v1
-      - name: Restore X translations
-        uses: actions/cache@v4
-        with:
-          path: .cache/x-translation/history.json
-          key: x-sv-text-${{ github.run_id }}
-          restore-keys: x-sv-text-
-      - name: Prepare local X translator
-        continue-on-error: true
-        timeout-minutes: 3
-        run: python scripts/prepare_x_translator.py
       - name: Restore local editor model
         uses: actions/cache@v4
         with:
@@ -81,11 +66,6 @@ jobs:
         run: python scripts/fetch-x.py
       - name: Prepare Swedish X cards
         run: python scripts/x_language.py
-      - name: Translate new X cards
-        env:
-          X_TRANSLATION_MAX_ITEMS: '24'
-          X_TRANSLATION_SECONDS: '120'
-        run: python scripts/x_translate.py
       - name: Preserve permanent X links
         run: python scripts/x_archive.py
       - run: python scripts/fetch-market.py
