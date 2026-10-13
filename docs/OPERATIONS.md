@@ -52,13 +52,15 @@ Kön med källänkar, originalrubriker och publiceringstid sparas som Actions-ar
 
 ## X-inlägg i det gemensamma flödet – drift
 
-X:s egna publika inbäddningsflöden används som kostnadsfri källa. De lämnar inte nödvändigtvis ut alla poster eller de senaste posterna. Särskilt Saylor kan ge gamla populära inlägg. Kontonas fasta numeriska ID:n valideras så att ett ändrat användarnamn inte kan byta avsändare obemärkt. Endast relevanta originalinlägg inom 14 dagar visas.
+X:s egna publika inbäddningsflöden används som kostnadsfri källa. Tester 2026-10-13: `timeline-profile/user-id/<id>` hämtade färska inlägg från Watcher.Guru, Crypto Rover, The Moon Show och Bitcoin Archive. Den alternativa `screen-name/<handle>` hämtade aktuella poster från flera av samma konton när ID-vägen inte svarade. Enskilda statusar fungerade även via X:s publika `tweet-result`-endpoint. Profilflöden kan ändå sakna nya poster eller fastna på äldre, populära inlägg; sådana visas inte som nya.
+
+Hämtningen provar först ett fast konto-ID och sedan kontonamnet när det behövs. Timeout är 20 sekunder och högst tre konton hämtas parallellt. Loggen visar endpoint, feltyp och HTTP-status. Vid fel bevaras tidigare inlägg från Actions-cache. Upp till 30 poster hålls per konto och 180 totalt, så stora konton inte tränger undan mindre. HTTP 429 dokumenteras med `Retry-After` när X skickar detta. Undvik täta extraförsök; schemat kör var femte minut.
 
 En begränsad komplettering hämtar X-länkar från högst tre aktuella artiklar hos tillåtna RSS-utgivare per körning. Artikellänkar cachas ett dygn. Upp till åtta nya post-ID:n kontrolleras mot X; aldrig mot sekundärkällans omskrivning. Den kontrollerade avsändaren och publiceringstiden måste matcha. Detta är ofullständig upptäckt, vilket även källregistret och metodbeskrivningen upplyser om.
 
 public/data/x.json innehåller aktuella originalposter, källstatus och metadata för upptäckt. GitHub Actions cachar urvalet separat; ett källfel tar inte bort senast hämtade aktuella poster. X-korten blandas kronologiskt med artiklarna. Svenska visas först, originalet fälls ut lokalt med Visa original. Ingen widget laddas. Varje X-kort visar en lazy-loadad originalbild från pbs.twimg.com när sådan finns, annars en lokal ämnesillustration. Bildfel ger samma lokala reservbild. Illustrationen märks tydligt och originaltexten kan fortfarande fällas ut. Inget X-konto eller X-token används. X-påståenden räknas aldrig automatiskt som bekräftade nyheter och visas inte av filtren Viktigt/Endast bekräftat. Vanliga kategori-, coin-, sök-, sorterings- och bokmärkesfunktioner omfattar korten.
 
-X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och Actions-loggen vid bortfall. Försök inte kringgå inloggning, botkontroller eller åtkomstspärrar. Ordinarie RSS, marknadskurser och artikelarkiv fortsätter oberoende.
+X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och Actions-loggen vid bortfall. En publik X-status renderades i Chrome utan inloggning. RSSHub gav 404, nitter.net 410, nitter.poast.org 502, xcancel 451 och FxTwitter/vxTwitter 403. Den lokala Playwright Chromium-nedladdningen var trasig, så automatisk skärmdump via GitHub Actions är inte verifierad och har inte lagts till. Kortens X-media och fungerande lokala illustrationsbilder fortsätter användas. Försök inte kringgå inloggning, botkontroller eller åtkomstspärrar. Ordinarie RSS, marknadskurser och artikelarkiv fortsätter oberoende.
 
 
 ## Svenska X-texter

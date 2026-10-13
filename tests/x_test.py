@@ -1,4 +1,4 @@
-import datetime as dt,importlib.util,json,sys,unittest
+import datetime as dt,importlib.util,json,pathlib,sys,unittest
 sys.path.insert(0,'scripts');spec=importlib.util.spec_from_file_location('x','scripts/fetch-x.py');x=importlib.util.module_from_spec(spec);spec.loader.exec_module(x)
 class XTests(unittest.TestCase):
  def setUp(self):
@@ -32,6 +32,15 @@ class XTests(unittest.TestCase):
  def test_media_host_allowlist(self):
   self.post['photos']=[{'url':'https://pbs.twimg.com/image.jpg'},{'url':'https://pbs.twimg.com.evil.test/image.jpg'},{'url':'javascript:alert(1)'}]
   n=x.parse_post(self.post,self.account,self.now);self.assertEqual(len(n['media']),1)
+ def test_balanced_retention_keeps_quieter_sources(self):
+  accounts=[{'id':'busy'},{'id':'quiet'}];posts={}
+  for source,count in [('busy',80),('quiet',4)]:
+   for i in range(count):
+    pid=f'{2109000000000000000+i}'
+    posts[pid]={'sourceId':source,'publishedAt':(self.now-dt.timedelta(minutes=i)).isoformat(),'id':pid}
+  kept=x.balanced_posts(posts,accounts,per_account=30,maximum=40)
+  self.assertEqual(sum(p['sourceId']=='quiet' for p in kept),4)
+  self.assertEqual(sum(p['sourceId']=='busy' for p in kept),30)
 if __name__=='__main__':unittest.main()
 
 class XFailureTests(unittest.TestCase):
@@ -46,3 +55,11 @@ class XFailureTests(unittest.TestCase):
    (root/'scripts/x-sources.json').write_text(json.dumps([account]));target=root/'public/data/x.json';target.write_text(json.dumps({'posts':[post],'sources':[],'discovery':{}}))
    with patch.object(x,'ROOT',root),patch.object(x,'TARGET',target),patch.object(x,'get',side_effect=TimeoutError),contextlib.redirect_stdout(io.StringIO()):x.main()
    data=json.loads(target.read_text());self.assertEqual(len(data['posts']),1);self.assertEqual(data['posts'][0]['id'],post['id']);self.assertEqual(data['posts'][0]['categories'],[]);self.assertEqual(data['sources'][0]['connection'],'error')
+
+class LocalAssetTests(unittest.TestCase):
+ def test_bitcoin_art_is_a_valid_local_webp_at_both_sizes(self):
+  root=pathlib.Path(__file__).resolve().parents[1]
+  for width in (640,1280):
+   payload=(root/f'public/images/bitcoin-{width}.webp').read_bytes()
+   self.assertEqual(payload[:4],b'RIFF')
+   self.assertEqual(payload[8:12],b'WEBP')

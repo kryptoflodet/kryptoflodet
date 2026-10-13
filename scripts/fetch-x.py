@@ -20,7 +20,7 @@ def load(path,default):
  except (OSError,ValueError):return default
 def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'text/html,application/json'})
- with urllib.request.urlopen(req,timeout=12) as r:
+ with urllib.request.urlopen(req,timeout=20) as r:
   data=r.read(2_000_001)
   if len(data)>2_000_000:raise ValueError('Response too large')
   return data.decode('utf-8')
@@ -70,24 +70,55 @@ def parse_timeline(payload,account,now):
  dates=[d for t in raw if (d:=timestamp(t.get('created_at'))) is not None]
  return list({n['id']:n for n in items}.values()),max(dates).isoformat() if dates else None
 
+def balanced_posts(posts,accounts,per_account=30,maximum=180):
+ selected=[]
+ for account in accounts:
+  own=sorted((p for p in posts.values() if p.get('sourceId')==account['id']),key=lambda p:p['publishedAt'],reverse=True)
+  selected.extend(own[:per_account])
+ return sorted(selected,key=lambda n:n['publishedAt'],reverse=True)[:maximum]
+
 def main():
  now=dt.datetime.now(UTC);stamp=now.isoformat().replace('+00:00','Z');accounts=load(ROOT/'scripts/x-sources.json',[]);old=load(TARGET,{'posts':[],'sources':[],'discovery':{}})
  def fetch(account):
-  status={'id':account['id'],'name':account['name'],'handle':account['handle'],'url':'https://x.com/'+account['handle'],'checkedAt':stamp,'connection':'error','coverage':'Begränsat offentligt urval från X:s inbäddningsflöde; inte fullständig bevakning.'}
-  try:
-   rows,newest=parse_timeline(get('https://syndication.twitter.com/srv/timeline-profile/screen-name/'+account['handle']+'?dnt=true&lang=sv'),account,now)
-   status.update(connection='connected' if rows else 'limited',newestAvailableAt=newest,count=len(rows),lastSuccessAt=stamp)
-   if not rows:status['message']='X gav inga aktuella relevanta originalinlägg. Äldre populära inlägg visas inte som nya.'
-   return status,rows
-  except Exception as e:
-   previous=next((s for s in old.get('sources',[]) if s.get('id')==account['id']),{})
-   status['lastSuccessAt']=previous.get('lastSuccessAt')
-   if isinstance(e,urllib.error.HTTPError):
-    status['httpStatus']=e.code
-    status['message']=f'X svarade med HTTP {e.code}. Tidigare hämtade inlägg behålls.'
-   else:status['message']='Inbäddningsflödet kunde inte uppdateras. Tidigare hämtade inlägg behålls.'
-   print(account['id'],type(e).__name__,getattr(e,'code',''),flush=True);return status,[]
- with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(fetch,accounts))
+  previous=next((s for s in old.get('sources',[]) if s.get('id')==account['id']),{})
+  status={'id':account['id'],'name':account['name'],'handle':account['handle'],'url':'https://x.com/'+account['handle'],'checkedAt':stamp,'connection':'error','coverage':'Begränsat offentligt urval från X:s publika inbäddning; inte fullständig bevakning.','lastSuccessAt':previous.get('lastSuccessAt'),'attempts':[]}
+  routes=[]
+  if account.get('userId'):routes.append(('user-id/'+account['userId'],'user-id'))
+  routes.append(('screen-name/'+account['handle'],'screen-name'))
+  errors=[]
+  for route,method in routes:
+   try:
+    rows,newest=parse_timeline(get('https://syndication.twitter.com/srv/timeline-profile/'+route+'?dnt=true&lang=sv'),account,now)
+    status['attempts'].append({'method':method,'result':'ok' if rows else 'empty','eligiblePosts':len(rows)})
+    if not rows and len(routes)>1 and route!=routes[-1][0]:
+     errors.append(ValueError('No eligible recent posts returned'))
+     continue
+    status.update(connection='connected' if rows else 'limited',method=method,newestAvailableAt=newest,count=len(rows),lastSuccessAt=stamp)
+    if not rows:status['message']='X:s endpoints svarade men hittade inga aktuella relevanta originalinlägg.'
+    if method!='user-id' and account.get('userId'):
+     print(f"{account['id']}: user-id endpoint failed; screen-name fallback returned {len(rows)} posts",flush=True)
+    return status,rows
+   except Exception as e:
+    code=e.code if isinstance(e,urllib.error.HTTPError) else None
+    status['attempts'].append({'method':method,'result':'error','error':type(e).__name__,'httpStatus':code})
+    errors.append(e)
+    # Record concrete HTTP errors without logging response bodies or credentials.
+    print(f"{account['id']}: {method} {type(e).__name__}"+(f" HTTP {code}" if code else ''),flush=True)
+  status['errorType']=type(errors[-1]).__name__ if errors else 'UnknownError'
+  if errors and isinstance(errors[-1],urllib.error.HTTPError):
+   e=errors[-1];status['httpStatus']=e.code
+   retry=e.headers.get('Retry-After') if e.headers else None
+   if retry:
+    try:status['retryAfterAt']=(now+dt.timedelta(seconds=max(0,min(int(retry),86400)))).isoformat().replace('+00:00','Z')
+    except ValueError:
+     try:status['retryAfterAt']=email.utils.parsedate_to_datetime(retry).astimezone(UTC).isoformat().replace('+00:00','Z')
+     except (TypeError,ValueError,OverflowError):pass
+   status['message']=f'X svarade med HTTP {e.code}. Senast hämtade inlägg behålls.'
+  else:status['message']='X:s publika flöde kunde inte hämtas från någon endpoint. Senast hämtade inlägg behålls.'
+  return status,[]
+ # X's public endpoint can be slow. Lower concurrency and allow a realistic
+ # response window instead of marking valid responses as timeouts.
+ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(fetch,accounts))
  posts={n['id']:n for n in old['posts'] if timestamp(n.get('publishedAt')) and 0<=(now-timestamp(n['publishedAt'])).total_seconds()<=14*86400 and any(n.get('handle')==a['handle'] for a in accounts)}
  for _,rows in results:
   posts.update({n['id']:n for n in rows})
@@ -135,7 +166,9 @@ def main():
   found=[n for n in posts.values() if n['sourceId']==s['id']];s['count']=len(found)
   s['newestPostAt']=max((n['publishedAt'] for n in found),default=None)
   if s['connection']=='limited' and found:s['message']='Profilflödet är begränsat. Enskilda originalinlägg har verifierats via X; alla nya inlägg kan inte garanteras.'
- data={'generatedAt':stamp,'posts':sorted(posts.values(),key=lambda n:n['publishedAt'],reverse=True)[:100],'sources':sources,'discovery':{k:v for k,v in discovery.items() if timestamp(v.get('checkedAt')) and (now-timestamp(v['checkedAt'])).total_seconds()<14*86400}}
+ # Keep a fair rolling window for every followed account so the busiest feeds
+ # cannot evict every post from quieter accounts.
+ data={'generatedAt':stamp,'posts':balanced_posts(posts,accounts),'sources':sources,'discovery':{k:v for k,v in discovery.items() if timestamp(v.get('checkedAt')) and (now-timestamp(v['checkedAt'])).total_seconds()<14*86400}}
  tmp=TARGET.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(TARGET)
  news_path=ROOT/'public/data/news.json';news=load(news_path,None)
  if news:
