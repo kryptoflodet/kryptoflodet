@@ -218,6 +218,58 @@
       "path": "/nyheter/franska-skattemyndighet-foreslar-skatt-pa-bitcoin-til-usdc-swap-5642bea8e3/"
     },
     {
+      "id": "fc9807185ba4a0837fcf",
+      "eventKey": "https://cryptoslate.com/eu-targets-mica-loophole-that-lets-crypto-exchanges-serve-27-countries-with-one-license",
+      "originalTitle": "EU targets MiCA loophole that lets crypto exchanges serve 27 countries with one license",
+      "originalText": "EU targets MiCA loophole that lets crypto exchanges serve 27 countries with one license",
+      "originalLanguage": "en",
+      "title": "EU målar mot MiCA-loophole som låter kryptoexchanger tjäna på 27 länder med en licens",
+      "translation": "",
+      "summary": "CryptoSlate uppger: EU uppger att det finns en loophole i MiCA som låter kryptoexchanger tjäna på 27 länder med en licens.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T13:20:55Z",
+      "importedAt": "2026-10-13T06:20:57.693133Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/eu-targets-mica-loophole-that-lets-crypto-exchanges-serve-27-countries-with-one-license/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/eu-targets-mica-loophole-that-lets-crypto-exchanges-serve-27-countries-with-one-license/",
+          "originId": "https://cryptoslate.com/eu-targets-mica-loophole-that-lets-crypto-exchanges-serve-27-countries-with-one-license",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: EU uppger att det finns en loophole i MiCA som låter kryptoexchanger tjäna på 27 länder med en licens.\\n\\nRådets valda ESMA-modell skulle lösa en del av övervakningsgapet i MiCA vid korsnationell övervakning, medan nationell övervakning behålls annars.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T06:20:57.693133Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Marknaden"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "eu-malar-mot-mica-loophole-som-later-kryptoexchanger-tjana-pa-27-lander-med-en-fc9807185b",
+      "path": "/nyheter/eu-malar-mot-mica-loophole-som-later-kryptoexchanger-tjana-pa-27-lander-med-en-fc9807185b/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",

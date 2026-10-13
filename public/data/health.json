@@ -1,20 +1,19 @@
 {
-  "checkedAt": "2026-10-13T05:57:20.377468Z",
+  "checkedAt": "2026-10-13T06:20:57.693133Z",
   "sourcesConnected": 18,
   "sourcesTotal": 25,
-  "candidates": 202,
-  "published": 7,
-  "held": 195,
+  "candidates": 200,
+  "published": 8,
+  "held": 192,
   "heldReasons": {
-    "insufficient_source": 151,
+    "rejected": 2,
+    "editor_queue": 28,
     "source_not_eligible": 1,
-    "rejected": 1,
-    "review_rejected": 1,
-    "previously_rejected": 10,
-    "editor_queue": 31
+    "previously_rejected": 12,
+    "insufficient_source": 149
   },
   "editorAttempts": 3,
   "paidApis": false,
   "editorMode": "local-validated",
-  "awaitingReview": 195
+  "awaitingReview": 192
 }
