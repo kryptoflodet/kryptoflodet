@@ -2,6 +2,34 @@
   "schemaVersion": 1,
   "posts": [
     {
+      "media": [],
+      "id": "2109963456241860642",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109963456241860642",
+      "publishedAt": "2026-10-13T11:04:23Z",
+      "text": "Carl just revealed a Bitcoin chart that could predict the next bull market top! 🚀\n\nWatch his latest video! 👀",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Carl avslöjade just ett Bitcoin-diagram som kunde förutsäga nästa bullmarkets topp!\n\nSe hans senaste video!",
+        "method": "translation",
+        "sourceHash": "1a29e79a83310b89df2dadaf1ccd548291a01bd451dcdd1944f37758c81a13a4",
+        "engine": "nllb-200-600m-q8-v1"
+      },
+      "archivedAt": "2026-10-13T11:11:52.313274Z"
+    },
+    {
       "media": [
         {
           "url": "https://pbs.twimg.com/media/HUgQ7kZWkAAUiKW.jpg",
@@ -1793,6 +1821,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin kommer att skapa miljonärer.\n\nAltcoins kommer att skapa miljardärer.",
+        "method": "translation",
+        "sourceHash": "41090a9df447e4234efe116bee4626f43b5a699ef7ba49bfe4846cdbf8fe832f",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1815,6 +1849,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin pumpar 5% och ingen frågar varför.\n\nBitcoin sjunker med 2%: Alla blir makroekonomer.",
+        "method": "translation",
+        "sourceHash": "197d174352b486e870316520b77c47e24b87b3c95ffee6e0388b6f8c57906381",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1856,6 +1896,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Rysslands Moskvabörsa kommer att lansera Bitcoin, Ethereum och USD-handel den 1 december.",
+        "method": "translation",
+        "sourceHash": "218bb487b5cec7cbddddcdfa8c5ead09beda3a935e34be83f23dd25dd7344433",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1881,6 +1927,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Stripe, Mastercard och Circle gör stora rörelser mot stabila mynt!\n\nDe tre företagen har meddelat förvärv värda över 3 miljarder dollar tillsammans.\n\nStablecoin-infrastrukturen blir en stor affär!",
+        "method": "translation",
+        "sourceHash": "98c0984d1492f0dda0bb5e04cfec5389d21f922b8f41264b57955cd6dc1197f9",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1913,6 +1965,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Wall Street tokenisering kan skapa nästa stora kryptobom!\n\nDet inflytelserika forskningsföretaget Citrini Research säger att tokenized aktier, obligationer och lån kan öppna en helt ny finansiell marknad.\n\nFöretaget tror att vissa altcoins kan gynna mer än Bitcoin",
+        "method": "translation",
+        "sourceHash": "8e6962459b0745962dfdd776037da10d496cefc924f525da7cddd72dee1a38ea",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1940,6 +1998,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "BTC kommer att nå 160 000 dollar.\n\nDet är oundvikligt.\n\nOch de flesta av er skall se [den som ni gör] från sidan.",
+        "method": "translation",
+        "sourceHash": "afc1df92f921d1e3039dad915d3d88ca616cb54b64347e54c8d57ff7c8313ee1",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2035,6 +2099,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Massiv köpsignal IS blinkar efter altcoins!",
+        "method": "translation",
+        "sourceHash": "984173826ab18096f536af304f862058ddb9479cf676b51ad77c58bedbc3fe97",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2129,6 +2199,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "BTC är i en handelsavståndszon, det är bäst att vänta på de stora svängarna.\n\nFörlora inte hela din portfölj i den här skärmen.",
+        "method": "translation",
+        "sourceHash": "cf11ac8c27cf49398c2627a3dfc247a821bd776285f5058f6f455de590a19771",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2157,6 +2233,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Big: Matt Hougan förutspår att Bitcoin kan nå en marknadskapital på 30 biljoner dollar!\n\nHan tror att BTC kan följa guldets stora tillväxttraktor efter ETF:s antagning.",
+        "method": "translation",
+        "sourceHash": "0d7c11c0270742524e9fee86f314f6d72ae035a0d9ab67ae430df3d8678d15b9",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2221,6 +2303,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "$ 2 biljoner bankjätten Morgan Stanley förutspår att den symboliserade tillgångsmarknaden kommer att explodera till $ 3–10 biljoner år 2030.\n\nframtiden för finansiering ÄR ON-chain!",
+        "method": "translation",
+        "sourceHash": "7a085ac8bc0e706b8ba84ae9f3112f563504ee3f04f5a4d16fbacb23358f79c1",
+        "engine": "mymemory-free-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2279,6 +2367,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Morgan Stanley säger att den tokenized tillgångsmarknaden kommer att bli en 3 till 10 biljoner dollar marknad år 2030.",
+        "method": "translation",
+        "sourceHash": "54c4dc82b124620424e3b6eb08aafc7f48a3b0af8831c69331b91f7ff97b6f86",
+        "engine": "nllb-200-600m-q8-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {

@@ -2,6 +2,60 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "f9b10c94f5b5010a275d",
+      "eventKey": "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants",
+      "originalTitle": "Now Accepting Bitcoin: Moonflower Coffee and 300+ Colorado Bitcoin Merchants",
+      "originalText": "Now Accepting Bitcoin: Moonflower Coffee and 300+ Colorado Bitcoin Merchants",
+      "originalLanguage": "en",
+      "title": "Många butiker i Colorado accepterar nu bitcoin",
+      "translation": "",
+      "summary": "Bitcoin Magazine uppger att Moonflower Coffee och över 300 butiker i Colorado nu accepterar bitcoin. Det inkluderar en bitcoinkaffe i Moonflower och steak och ägg vid Butcher Block Cafe.",
+      "why": "",
+      "author": "Bitcoin Magazine",
+      "publishedAt": "2026-10-13T11:00:00Z",
+      "importedAt": "2026-10-13T11:08:49.671081Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "bitcoinmag",
+      "channel": "RSS",
+      "originalUrl": "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "bitcoinmag",
+          "url": "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants",
+          "originId": "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Bitcoin Magazine uppger att Moonflower Coffee och över 300 butiker i Colorado nu accepterar bitcoin. Det inkluderar en bitcoinkaffe i Moonflower och steak och ägg vid Butcher Block Cafe.\\n\\nVagabond skriver om utvecklingen i artikeln 'Now Accepting Bitcoin: Moonflower Coffee and 300+ Colorado Bitcoin Merchants'.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T11:08:49.671081Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "manga-butiker-i-colorado-accepterar-nu-bitcoin-f9b10c94f5",
+      "path": "/nyheter/manga-butiker-i-colorado-accepterar-nu-bitcoin-f9b10c94f5/"
+    },
+    {
       "id": "3577aa9bf17ea69253b1",
       "eventKey": "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves",
       "originalTitle": "Global watchdog warns the $300 billion stablecoin market could face bank runs even with full reserves",
