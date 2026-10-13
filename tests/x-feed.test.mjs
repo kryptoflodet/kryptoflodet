@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 const dir=mkdtempSync(join(tmpdir(),'x-feed-tests-'));
 try{
  writeFileSync(join(dir,'x-feed.js'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
- const {mergeFeed,validXPost,archivedXPostUrl,sourceConnectionLabel}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
+ const {mergeFeed,validXPost,filterFeedChannel,archivedXPostUrl,sourceConnectionLabel}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
  const now=Date.parse('2026-10-12T12:00:00Z');
  const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
  const article={id:'article',publishedAt:'2026-10-12T11:00:00Z',importance:4};
@@ -22,12 +22,17 @@ try{
  for(const noise of ['important','confirmed'])assert.equal(mergeFeed([], [post],{noise},false,[],now).length,0,'A source post is not fact-checked news');
  assert.equal(mergeFeed([], [post],{},true,['x:'+post.id],now).length,1,'X bookmarks');
  assert.equal(mergeFeed([], [post],{},true,[],now).length,0);
- assert.equal(mergeFeed([], [{...post,swedish:undefined}],{},false,[],now).length,0,'English waits for Swedish text');
+ assert.equal(mergeFeed([], [{...post,swedish:undefined}],{},false,[],now).length,1,'A real X post stays available during a translation outage');
  assert.equal(mergeFeed([], [{...post,swedish:undefined,originalLanguage:'sv'}],{},false,[],now).length,1,'Swedish original');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
  for(const bad of [null,{}, {...post,url:'javascript:alert(1)'},{...post,url:post.url+'.evil'},{...post,categories:[12]},{...post,swedish:{text:123,method:'translation'}}])assert.equal(validXPost(bad),false);
  assert.equal(mergeFeed([article],[{...post,publishedAt:'2026-10-12T11:30:00Z'}],{sort:'importance'},false,[],now)[0].type,'news','Importance does not promote raw claims');
+ const mixed=mergeFeed([article],[post],{},false,[],now);
+ assert.equal(filterFeedChannel(mixed,'x').length,1);assert.equal(filterFeedChannel(mixed,'news').length,1);assert.equal(filterFeedChannel(mixed,'all').length,2);
+ assert.equal(filterFeedChannel(mixed,'x','EXAMPLE').length,1);assert.equal(filterFeedChannel(mixed,'x','someone_else').length,0);
+ const configured=JSON.parse(readFileSync('scripts/x-sources.json','utf8'));const fixtures=configured.map((source,i)=>{const id=String(BigInt(post.id)+BigInt(i));return {...post,id,handle:source.handle,author:source.name,url:'https://x.com/'+source.handle+'/status/'+id,swedish:undefined};});const actual=mergeFeed([],fixtures,{},false,[],now);
+ for(const source of configured)assert.ok(filterFeedChannel(actual,'x',source.handle).length>0,'Every followed account remains visible during a translation outage: '+source.handle);
  assert.equal(sourceConnectionLabel({connection:'limited',enabled:true}),'Begränsat urval');
  assert.equal(sourceConnectionLabel({connection:'error',enabled:true}),'Hämtningsfel');
  let requested='';const url=await archivedXPostUrl(post.id,'https://kryptokollen.online/',async (url,options)=>{requested=url;assert.equal(options.method,'HEAD');return {ok:true};});

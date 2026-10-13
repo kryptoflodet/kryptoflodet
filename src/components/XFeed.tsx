@@ -1,7 +1,7 @@
 import {useCallback,useEffect,useRef,useState} from 'react';
 import seed from '../../public/data/x.json';
 import {validXPost,type XPost} from '../lib/x-feed';
-type XSourceStatus={id:string;name:string;connection:string;checkedAt?:string;lastSuccessAt?:string|null;message?:string};
+type XSourceStatus={id:string;handle:string;name:string;connection:string;checkedAt?:string;lastSuccessAt?:string|null;message?:string};
 export function useXPosts(){
  const [posts,setPosts]=useState<XPost[]>(seed.posts.filter(validXPost) as XPost[]);
  const [sources,setSources]=useState<XSourceStatus[]>(Array.isArray(seed.sources)?seed.sources:[]);

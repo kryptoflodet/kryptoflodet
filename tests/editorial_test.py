@@ -39,7 +39,7 @@ class EditorialTests(unittest.TestCase):
  def test_x_optional_and_correct_route(self):
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':''}):self.assertTrue(all(x.get('disabledReason') for x in sources()))
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':'https://rss.example.org'}):
-   rows=sources();self.assertEqual(len(rows),6);self.assertEqual(rows[-2]["handle"],"BitcoinArchive");self.assertEqual(rows[-1]["handle"],"MMCrypto");self.assertTrue(rows[-2]["url"].endswith("/BitcoinArchive/exclude_rts_replies"));self.assertTrue(all(x['url'].endswith('/exclude_rts_replies') for x in rows))
+   rows=sources();self.assertEqual(len(rows),7);self.assertEqual(rows[-3]["handle"],"BitcoinArchive");self.assertEqual(rows[-2]["handle"],"MMCrypto");self.assertEqual(rows[-1]["handle"],"CryptoKid");self.assertTrue(rows[-3]["url"].endswith("/BitcoinArchive/exclude_rts_replies"));self.assertTrue(all(x['url'].endswith('/exclude_rts_replies') for x in rows))
  def test_archive_x_seeds_are_bounded_and_have_reviewed_swedish(self):
   seeds=json.loads(pathlib.Path('scripts/x-posts.json').read_text());summaries=json.loads(pathlib.Path('scripts/x-summaries.json').read_text())
   archive=[x for x in seeds if x['handle']=='BitcoinArchive']

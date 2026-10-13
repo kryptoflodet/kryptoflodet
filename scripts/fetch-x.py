@@ -70,12 +70,12 @@ def parse_timeline(payload,account,now):
  dates=[d for t in raw if (d:=timestamp(t.get('created_at'))) is not None]
  return list({n['id']:n for n in items}.values()),max(dates).isoformat() if dates else None
 
-def balanced_posts(posts,accounts,per_account=30,maximum=180):
+def balanced_posts(posts,accounts,per_account=30,maximum=None):
  selected=[]
  for account in accounts:
   own=sorted((p for p in posts.values() if p.get('sourceId')==account['id']),key=lambda p:p['publishedAt'],reverse=True)
   selected.extend(own[:per_account])
- return sorted(selected,key=lambda n:n['publishedAt'],reverse=True)[:maximum]
+ return sorted(selected,key=lambda n:n['publishedAt'],reverse=True)[:maximum or per_account*len(accounts)]
 
 def retry_after(error,now):
  value=error.headers.get('Retry-After') if error.headers else None
@@ -127,6 +127,23 @@ def article_references(items,now):
    selected[item['originalUrl']]=item
  return sorted(selected.values(),key=lambda n:(bool(re.search(r'Saylor|Strategy|\bMSTR\b|MMCrypto|Jaszczynski|Crypto Rover|The Moon|Watcher.Guru',n.get('originalTitle',''),re.I)),n['publishedAt']),reverse=True)
 
+def profile_references(payload,handle):
+ """Use public profile pages only to discover IDs; X must verify every post.
+
+ Ignore replies and non-crypto snippets so a small request budget is not spent
+ repeatedly checking travel posts. Mirror text is never published as an original.
+ """
+ found=set();seen=set()
+ for match in re.finditer(r'href=[\"\']/'+re.escape(handle)+r'/status/(\d{15,22})[^\"\']*[\"\']',payload,re.I):
+  if match[1] in seen:continue
+  seen.add(match[1])
+  tail=payload[match.end():match.end()+4000]
+  body=re.search(r'<div\b[^>]*class=[\"\']activity-descp[\"\'][^>]*>\s*<p[^>]*>(.*?)</p>',tail,re.S)
+  if not body:continue
+  snippet=html.unescape(re.sub(r'<[^>]*>','',body[1])).strip()
+  if not re.match(r'^@[A-Za-z0-9_]+\b',snippet) and crypto_only(snippet):found.add(match[1])
+ return sorted(found,key=int,reverse=True)[:8]
+
 def main():
  now=dt.datetime.now(UTC);stamp=now.isoformat().replace('+00:00','Z');accounts=load(ROOT/'scripts/x-sources.json',[]);old=load(TARGET,{'posts':[],'sources':[],'discovery':{}})
  def fetch(account):
@@ -171,6 +188,31 @@ def main():
   for handle,pid in found:
    if any(handle.lower()==a['handle'].lower() for a in accounts):links[(handle.lower(),pid)]={'url':n['originalUrl'],'title':n['originalTitle']}
  sources=[s for s,_ in results]
+ # Profile embeds can expose only popular posts from years ago. A public mirror
+ # supplies candidate links, not trusted text; the pinned X account ID, timestamp
+ # and original JSON are checked by the individual-post endpoint below.
+ def discover_profile(pair):
+  account,status=pair
+  newest=timestamp(status.get('newestAvailableAt'))
+  if status['connection']=='connected' and newest and (now-newest).total_seconds()<5400:return []
+  url='https://www6.twstalker.com/'+account['handle'];cached=discovery.get(url,{})
+  checked=timestamp(cached.get('checkedAt'))
+  if checked and (now-checked).total_seconds()<1800:return cached.get('links',[])
+  try:
+   found=[[account['handle'],pid] for pid in profile_references(get(url),account['handle'])]
+   discovery[url]={'checkedAt':stamp,'links':found}
+   status['attempts'].append({'method':'public-profile-reference','result':'ok','candidateIds':len(found)})
+   print(f"{account['id']}: public-profile-reference found {len(found)} candidate IDs",flush=True)
+   return found
+  except Exception as e:
+   code=e.code if isinstance(e,urllib.error.HTTPError) else None
+   discovery[url]={'checkedAt':stamp,'links':cached.get('links',[]),'httpStatus':code,'error':type(e).__name__}
+   status['attempts'].append({'method':'public-profile-reference','result':'error','httpStatus':code,'error':type(e).__name__})
+   print(f"{account['id']}: public-profile-reference {type(e).__name__}"+(f' HTTP {code}' if code else ''),flush=True)
+   return cached.get('links',[])
+ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+  for account,found in zip(accounts,pool.map(discover_profile,zip(accounts,sources))):
+   for handle,pid in found:links.setdefault((handle.lower(),pid),None)
  # Give each limited profile its own bounded status budget. New references must
  # not be crowded out by a long, fixed list of older seeds from another account.
  def fetch_individual(pair):

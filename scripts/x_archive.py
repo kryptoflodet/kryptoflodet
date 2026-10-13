@@ -3,7 +3,7 @@ import copy,datetime as dt,json,pathlib,re
 from x_language import source_hash
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 
-def readable_post(post):
+def archivable_post(post):
  if not isinstance(post,dict):return False
  pid=post.get('id','');handle=post.get('handle','')
  if not isinstance(pid,str) or not re.fullmatch(r'\d{15,22}',pid):return False
@@ -16,15 +16,21 @@ def readable_post(post):
   published=dt.datetime.fromisoformat(post['publishedAt'].replace('Z','+00:00'))
   if published.tzinfo is None:return False
  except (KeyError,ValueError,AttributeError,TypeError):return False
+ return isinstance(post.get('originalLanguage'),str)
+
+def readable_post(post):
+ if not archivable_post(post):return False
  if post.get('originalLanguage')=='sv':return True
  swedish=post.get('swedish',{})
  return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('sourceHash')==source_hash(post['text'])
 
 def archive_posts(previous,posts,now):
- saved={p['id']:copy.deepcopy(p) for p in previous if readable_post(p)}
+ saved={p['id']:copy.deepcopy(p) for p in previous if archivable_post(p)}
  for post in posts:
-  if not readable_post(post):continue
+  if not archivable_post(post):continue
   p=copy.deepcopy(post);prior=saved.get(p['id'])
+  # A missing/rejected translation never removes an authenticated original.
+  if not readable_post(p):p.pop('swedish',None)
   p.pop('originalCheckedAt',None)
   p['archivedAt']=prior.get('archivedAt',now) if prior and prior['text']==p['text'] else now
   saved[p['id']]=p

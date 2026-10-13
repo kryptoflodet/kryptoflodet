@@ -51,10 +51,23 @@ class PermanentXLinkTests(unittest.TestCase):
   archive=archive_posts([], [self.post], '2026-10-13T08:00:00Z')
   later=archive_posts(archive,[], '2027-01-01T08:00:00Z')
   self.assertEqual(later,archive);self.assertTrue(readable_post(later[0]))
- def test_unsafe_url_and_stale_translation_are_not_archived(self):
+ def test_unsafe_url_is_rejected_and_stale_translation_is_removed(self):
   self.assertFalse(readable_post({**self.post,'url':'javascript:alert(1)'}))
+  self.assertEqual(archive_posts([], [{**self.post,'url':'javascript:alert(1)'}], '2026-10-13T08:00:00Z'),[])
   changed=copy.deepcopy(self.post);changed['text']='Completely different Bitcoin claim'
-  self.assertFalse(readable_post(changed));self.assertEqual(archive_posts([], [changed], '2026-10-13T08:00:00Z'),[])
+  self.assertFalse(readable_post(changed));saved=archive_posts([], [changed], '2026-10-13T08:00:00Z')
+  self.assertEqual(saved[0]['text'],changed['text']);self.assertNotIn('swedish',saved[0])
+ def test_untranslated_original_still_has_a_working_shared_page(self):
+  original={k:v for k,v in self.post.items() if k!='swedish'}
+  saved=archive_posts([], [original], '2026-10-13T08:00:00Z')
+  spec=importlib.util.spec_from_file_location('x_pending_pages','scripts/build-pages.py');pages=importlib.util.module_from_spec(spec);spec.loader.exec_module(pages)
+  path,html=pages.x_page(saved[0]);self.assertEqual(path,'/x/'+self.post['id']+'/')
+  self.assertIn('Svensk text förbereds',html);self.assertIn('Visa original',html);self.assertIn('href="'+self.post['url']+'"',html)
+ def test_withdrawn_language_is_not_revived_from_the_archive(self):
+  previous=archive_posts([], [self.post], '2026-10-13T08:00:00Z')
+  current={k:v for k,v in self.post.items() if k!='swedish'}
+  saved=archive_posts(previous,[current], '2026-10-13T09:00:00Z')
+  self.assertEqual(saved[0]['text'],self.post['text']);self.assertNotIn('swedish',saved[0])
  def test_export_has_own_metadata_original_link_and_escaped_text(self):
   spec=importlib.util.spec_from_file_location('x_pages','scripts/build-pages.py');pages=importlib.util.module_from_spec(spec);spec.loader.exec_module(pages)
   path,html=pages.x_page(self.post)

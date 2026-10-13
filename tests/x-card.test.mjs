@@ -38,7 +38,14 @@ try{
  await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
  await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Bitcoin posts use the Bitcoin logo even in another category');
- await render({...post,swedish:undefined});assert.equal(host.textContent,'','No English-first fallback');
+ await render({...post,swedish:undefined});assert.ok(host.textContent.includes('Svensk översättning förbereds'),'An unavailable translation never hides the real post');assert.equal(host.querySelector('blockquote'),null,'Original stays collapsed behind Swedish explanation');await act(()=>host.querySelector('[aria-expanded]').click());assert.equal(host.querySelector('blockquote').textContent,post.text);
+ await render({...post,swedish:{...post.swedish,engine:'nllb-200-600m-q8-v1'}});assert.ok(host.textContent.includes('Maskinöversatt till svenska'));assert.ok(host.textContent.includes('Maskinöversättning kan innehålla fel'));
+ writeFileSync(join(dir,'FeedChannels.cjs'),ts.transpileModule(readFileSync('src/components/FeedChannels.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
+ const Channels=createRequire(import.meta.url)(join(dir,'FeedChannels.cjs')).default;const accounts=JSON.parse(readFileSync('scripts/x-sources.json','utf8')).map(s=>({handle:s.handle,name:s.name,count:2}));let chosen='';
+ await act(()=>root.render(React.createElement(Channels,{channel:'x',account:'',accounts,onChange:(channel,account)=>{chosen=channel+':'+(account||'');}})));
+ assert.equal(host.querySelectorAll('option').length,8);assert.ok(host.textContent.includes('Crypto Kid'));assert.ok(host.textContent.includes('MMCrypto'));
+ await act(()=>{const select=host.querySelector('select');select.value='CryptoKid';select.dispatchEvent(new window.Event('change',{bubbles:true}));});assert.equal(chosen,'x:CryptoKid');
+ await act(()=>Array.from(host.querySelectorAll('button')).find(b=>b.textContent==='Nyheter').click());assert.equal(chosen,'news:');
  writeFileSync(join(dir,'ActualShareNews.cjs'),ts.transpileModule(readFileSync('src/components/ShareNews.tsx','utf8').replaceAll('import.meta.env.BASE_URL',"'./'"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
  const actualShare=createRequire(import.meta.url)(join(dir,'ActualShareNews.cjs'));
  globalThis.location=dom.window.location;

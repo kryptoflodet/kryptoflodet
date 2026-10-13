@@ -40,5 +40,12 @@
     "handle": "MMCrypto",
     "type": "INFLUENCER",
     "userId": "904700529988820992"
+  },
+  {
+    "id": "kid-x",
+    "name": "Crypto Kid – X",
+    "handle": "CryptoKid",
+    "type": "INFLUENCER",
+    "userId": "1443582062963822599"
   }
 ]
