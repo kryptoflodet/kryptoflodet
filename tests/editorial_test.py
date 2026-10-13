@@ -30,6 +30,12 @@ class EditorialTests(unittest.TestCase):
   draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['Enligt fondens besked kom det in 25 miljoner under måndagen. Uppgiften gäller de inflöden som fonden själv har redovisat i sitt meddelande.','Bolaget lämnade inte någon prognos. Beskedet innehåller därmed ingen bedömning av hur utvecklingen väntas se ut framöver.'],'support':['The Bitcoin fund reported inflows of 25 million on Monday.','The company declined to provide a forecast.']}
   self.assertTrue(validate(draft,source));draft['title']='Bitcoinfonden får 90 miljoner';self.assertFalse(validate(draft,source))
   draft['title']='Bitcoinfonden redovisar nya inflöden';draft['support'][0]='fabricated evidence';self.assertFalse(validate(draft,source))
+ def test_local_summary_requires_explicit_source_attribution(self):
+  source='Bitcoin ETF issuer reported net inflows of 25 million on Monday. The company declined to provide a forecast.'
+  draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['CoinDesk uppger att Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.','Bolaget lämnade ingen prognos. Uppgiften beskriver utgivarens redovisning och innehåller ingen prognos om utvecklingen på marknaden framöver.'],'support':['Bitcoin ETF issuer reported net inflows of 25 million on Monday.','The company declined to provide a forecast.']}
+  self.assertTrue(validate(draft,source,'CoinDesk'))
+  draft['paragraphs'][0]='Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.'
+  self.assertFalse(validate(draft,source,'CoinDesk'))
  def test_x_optional_and_correct_route(self):
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':''}):self.assertTrue(all(x.get('disabledReason') for x in sources()))
   with patch.dict('os.environ',{'RSSHUB_BASE_URL':'https://rss.example.org'}):
@@ -66,8 +72,9 @@ class FailureIsolationTests(unittest.TestCase):
    with patch.object(m,'ROOT',root),patch.object(m,'TARGET',root/'public/data/news.json'),patch.object(m,'ARCHIVE',root/'public/data/archive.json'),patch('urllib.request.urlopen',side_effect=TimeoutError),patch.dict('os.environ',{'EDITOR_MODE':'reviewed-only','RSSHUB_BASE_URL':''}),contextlib.redirect_stdout(io.StringIO()):m.main()
    after=json.loads((root/'public/data/archive.json').read_text());health=json.loads((root/'public/data/health.json').read_text())
    self.assertEqual([n['path'] for n in before['items']],[n['path'] for n in after['items']]);self.assertEqual(health['sourcesConnected'],0);self.assertEqual(health['editorAttempts'],0)
- def test_unreviewed_model_output_not_readopted(self):
-  # The production archive accepts reviewed texts only, even if a model labelled its own work valid.
+ def test_only_local_validated_media_can_be_auto_summarized(self):
   source=pathlib.Path('scripts/fetch-news.py').read_text()
   self.assertIn("n.get('translationStatus')=='reviewed-sv'",source)
-  self.assertIn("held[n['id']]='draft_requires_review'",source)
+  self.assertIn("os.environ.get('EDITOR_MODE','reviewed-only')!='local-validated'",source)
+  self.assertIn("n.get('sourceType') not in {'MEDIA','OFFICIELL'}",source)
+  self.assertIn("status='unconfirmed'",source)
