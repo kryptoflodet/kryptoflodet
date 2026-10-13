@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit
 from crypto_scope import crypto_only
 ROOT=pathlib.Path(__file__).resolve().parents[1];TARGET=ROOT/'public/data/x.json';UTC=dt.timezone.utc
-UA='Kryptokollen/2.0 (+https://kryptokollen.online)'
+UA='Kryptopuls/2.0 (+https://kryptopuls.se)'
 class NextData(HTMLParser):
  def __init__(self):super().__init__();self.active=False;self.parts=[]
  def handle_starttag(self,tag,attrs):self.active=tag=='script' and dict(attrs).get('id')=='__NEXT_DATA__' if tag=='script' else self.active

@@ -23,7 +23,7 @@ def market_url(currency: str, ids: list[str] | None = None) -> str:
 
 
 def fetch_rows(url: str) -> list[dict[str, Any]]:
-    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptokollen/1.0 (+https://kryptokollen.online)', 'Accept': 'application/json'})
+    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptopuls/1.0 (+https://kryptopuls.se)', 'Accept': 'application/json'})
     with urllib.request.urlopen(request, timeout=24) as response:
         if response.status != 200:
             raise RuntimeError(f'CoinGecko svarade med HTTP {response.status}')

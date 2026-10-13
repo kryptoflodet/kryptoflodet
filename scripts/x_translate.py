@@ -98,7 +98,7 @@ def free_fallback(text,memo):
  memo['quotaChars']=memo.get('quotaChars',0)+len(text)
  url='https://api.mymemory.translated.net/get?'+urllib.parse.urlencode({'langpair':'en|sv','q':text})
  try:
-  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Kryptokollen/2.0 (+https://kryptokollen.online)'}),timeout=12) as response:data=json.load(response)
+  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Kryptopuls/2.0 (+https://kryptopuls.se)'}),timeout=12) as response:data=json.load(response)
   if data.get('quotaFinished') or int(data.get('responseStatus',0))!=200:memo['quotaChars']=4500;return None
   return data.get('responseData',{}).get('translatedText')
  except Exception as error:

@@ -97,7 +97,7 @@ jobs:
           restore-keys: market-context-
       - name: Refresh fear, trend, dominance and altcoin season
         env:
-          MARKET_CONTEXT_STATE_URL: https://kryptokollen.online/data/market-context.json
+          MARKET_CONTEXT_STATE_URL: https://kryptopuls.se/data/market-context.json
         run: python scripts/fetch-market-context.py
       - run: npm run build
       - run: npm test
@@ -108,7 +108,7 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add public/data/archive.json public/data/news.json public/data/health.json public/data/x-archive.json public/data/x.json
-            git commit -m 'Archive approved Kryptokollen articles [skip ci]'
+            git commit -m 'Archive approved Kryptopuls articles [skip ci]'
             # A concurrent code push must never be overwritten. A rejected push stops deployment.
             git push origin HEAD:main
             npm run build

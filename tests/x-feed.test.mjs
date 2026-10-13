@@ -35,9 +35,9 @@ try{
  for(const source of configured)assert.ok(filterFeedChannel(actual,'x',source.handle).length>0,'Every followed account remains visible during a translation outage: '+source.handle);
  assert.equal(sourceConnectionLabel({connection:'limited',enabled:true}),'Begränsat urval');
  assert.equal(sourceConnectionLabel({connection:'error',enabled:true}),'Hämtningsfel');
- let requested='';const url=await archivedXPostUrl(post.id,'https://kryptokollen.online/',async (url,options)=>{requested=url;assert.equal(options.method,'HEAD');return {ok:true};});
- assert.equal(url,'https://kryptokollen.online/x/'+post.id+'/');assert.equal(requested,url);
- assert.equal(await archivedXPostUrl(post.id,'https://kryptokollen.online/',async()=>({ok:false})),null,'A missing post must not redirect to a 404');
- assert.equal(await archivedXPostUrl('../evil','https://kryptokollen.online/',async()=>{throw new Error('should not fetch');}),null);
+ let requested='';const url=await archivedXPostUrl(post.id,'https://kryptopuls.se/',async (url,options)=>{requested=url;assert.equal(options.method,'HEAD');return {ok:true};});
+ assert.equal(url,'https://kryptopuls.se/x/'+post.id+'/');assert.equal(requested,url);
+ assert.equal(await archivedXPostUrl(post.id,'https://kryptopuls.se/',async()=>({ok:false})),null,'A missing post must not redirect to a 404');
+ assert.equal(await archivedXPostUrl('../evil','https://kryptopuls.se/',async()=>{throw new Error('should not fetch');}),null);
  console.log('X feed checks passed: mixed chronology, Swedish/original search, filters, bookmarks, trust, freshness and invalid data.');
 }finally{rmSync(dir,{recursive:true,force:true});}

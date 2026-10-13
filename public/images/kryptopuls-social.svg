@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#101214"/>
+  <path d="M0 126.5H1200M0 252.5H1200M0 378.5H1200M0 504.5H1200M150.5 0V630M300.5 0V630M450.5 0V630M600.5 0V630M750.5 0V630M900.5 0V630M1050.5 0V630" stroke="#ffffff" stroke-opacity=".035"/>
+  <rect x="74" y="74" width="70" height="70" rx="20" fill="#191e1b" stroke="#39453d" stroke-width="2"/>
+  <path d="M87 111h12l7-17 11 32 8-20 6 5h9" stroke="#9bd8b0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="168" y="120" fill="#f1f3f1" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" letter-spacing="4">KRYPTOPULS</text>
+  <text x="76" y="282" fill="#f1f3f1" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">Kryptomarknaden.</text>
+  <text x="76" y="365" fill="#f1f3f1" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">På svenska. I realtid.</text>
+  <path d="M76 428H1124" stroke="#343a36" stroke-width="2"/>
+  <circle cx="88" cy="486" r="5" fill="#9bd8b0"/><text x="108" y="493" fill="#aeb7b1" font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing="1.4">NYHETER</text>
+  <circle cx="270" cy="486" r="5" fill="#9bd8b0"/><text x="290" y="493" fill="#aeb7b1" font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing="1.4">BITCOIN · ETHEREUM · ALTCOINS</text>
+  <circle cx="682" cy="486" r="5" fill="#9bd8b0"/><text x="702" y="493" fill="#aeb7b1" font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing="1.4">MARKNADSDATA</text>
+  <text x="76" y="568" fill="#728078" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2">KRYPTO PÅ SVENSKA · KRYPTOPULS.SE</text>
+</svg>

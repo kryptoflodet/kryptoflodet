@@ -1,6 +1,6 @@
-# Kryptokollen
+# Kryptopuls
 
-Svenska kryptonyheter och marknadsdata på https://kryptokollen.online
+Svenska kryptonyheter och marknadsdata på https://kryptopuls.se
 
 ## Nyhetsflöde
 
@@ -35,12 +35,13 @@ eller påverkan på tokenpriset. Granskningsanteckningen visas i artikeln.
 De 50 största kryptovalutorna hämtas från CoinGecko med pris, 24-timmarsförändring,
 marknadsvärde och handelsvolym i USD och SEK. Webbläsaren uppdaterar ungefär varje
 minut; GitHub Actions bygger samtidigt en tidsstämplad reserv med
-`scripts/fetch-market.py`. Marknadsöversikten kan sorteras efter rank, namn, pris,
-dygnsförändring, marknadsvärde och handelsvolym. Urvalet av synliga valutor sparas
-i webbläsaren. Äldre eller saknade kurser märks som fördröjda.
+`scripts/fetch-market.py`. Du väljer vilka valutor som visas och drar raderna till
+önskad ordning. Urval och ordning sparas i webbläsaren. Äldre eller saknade kurser
+märks som fördröjda.
 
-Under kurstickern visas Fear & Greed Index och Altcoin Season Index sida vid sida.
-Mätarna länkar till sina källor och visar när värdena senast kontrollerades.
+Direkt under Marknaden live visas Marknadspuls: Fear & Greed och Altcoin Season,
+BTC-dominans, BTC jämfört med ETH samt total marknadstrend. Marknadsöversikten
+Valda valutor visas även i den rullande marknadstickern.
 
 Klick på tickern eller marknadsöversikten öppnar ett tillgängligt dialogfönster.
 Perioder: 24 timmar, i dag (Stockholm), vecka, månad, kvartal, i år, ett år, tre år,

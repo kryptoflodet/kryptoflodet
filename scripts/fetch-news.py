@@ -25,7 +25,7 @@ def date(text):
 def youtube_feed_url(handle,fetch=getattr(urllib.request,'urlopen',None)):
  """Resolve a public YouTube @handle to its stable RSS channel ID."""
  if not re.fullmatch(r'[A-Za-z0-9._-]{3,30}',handle):raise ValueError('Invalid YouTube handle')
- request=urllib.request.Request('https://www.youtube.com/@'+handle,headers={'User-Agent':'Mozilla/5.0 (compatible; Kryptokollen/2.0)','Accept':'text/html'})
+ request=urllib.request.Request('https://www.youtube.com/@'+handle,headers={'User-Agent':'Mozilla/5.0 (compatible; Kryptopuls/2.0)','Accept':'text/html'})
  with fetch(request,timeout=12) as response:page=response.read(2_000_001).decode('utf-8','replace')
  if len(page)>2_000_000:raise ValueError('YouTube page too large')
  # YouTube exposes the channel ID in page metadata/initial JSON; do not use
@@ -92,7 +92,7 @@ def main():
   if spec.get('disabledReason'):s.update(enabled=False,error=spec['disabledReason']);return s,[]
   try:
    feed_url=youtube_feed_url(spec['youtubeHandle']) if spec.get('youtubeHandle') else spec['url']
-   req=urllib.request.Request(feed_url,headers={'User-Agent':'Kryptokollen/2.0 (+https://kryptokollen.online)','Accept':'application/rss+xml, application/atom+xml, application/xml'})
+   req=urllib.request.Request(feed_url,headers={'User-Agent':'Kryptopuls/2.0 (+https://kryptopuls.se)','Accept':'application/rss+xml, application/atom+xml, application/xml'})
    with urllib.request.urlopen(req,timeout=12) as r:payload=r.read(3_000_001)
    if len(payload)>3_000_000:raise ValueError('Feed too large')
    rows=parse_feed(payload,s,now);s.update(connection='connected',lastSuccessAt=now,count=len(rows));print(f'{sid}: {len(rows)} kandidater',flush=True);return s,rows

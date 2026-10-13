@@ -15,7 +15,7 @@ from typing import Any
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'public/data/market-context.json'
 CACHE = ROOT / '.cache/market-context/context.json'
-PUBLIC_STATE_URL = os.environ.get('MARKET_CONTEXT_STATE_URL', 'https://kryptokollen.online/data/market-context.json')
+PUBLIC_STATE_URL = os.environ.get('MARKET_CONTEXT_STATE_URL', 'https://kryptopuls.se/data/market-context.json')
 FNG_URL = 'https://api.alternative.me/fng/?limit=1&format=json'
 GLOBAL_URL = 'https://api.coingecko.com/api/v3/global'
 ALT_URL = 'https://pro-api.coinmarketcap.com/public-api/v1/altcoin-season-index/latest'
@@ -180,7 +180,7 @@ def should_refresh(metric: dict[str, Any], ttl_seconds: int, now: float | None =
 
 
 def fetch_json(url: str) -> Any:
-    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptokollen/1.0 (+https://kryptokollen.online)', 'Accept': 'application/json'})
+    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptopuls/1.0 (+https://kryptopuls.se)', 'Accept': 'application/json'})
     with urllib.request.urlopen(request, timeout=18) as response:
         if response.status != 200:
             raise RuntimeError(f'HTTP {response.status}')
@@ -188,7 +188,7 @@ def fetch_json(url: str) -> Any:
 
 
 def fetch_text(url: str) -> str:
-    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptokollen/1.0 (+https://kryptokollen.online)', 'Accept': 'text/html,application/xhtml+xml'})
+    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptopuls/1.0 (+https://kryptopuls.se)', 'Accept': 'text/html,application/xhtml+xml'})
     with urllib.request.urlopen(request, timeout=18) as response:
         if response.status != 200:
             raise RuntimeError(f'HTTP {response.status}')

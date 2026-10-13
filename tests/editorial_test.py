@@ -54,7 +54,7 @@ class ExportTests(unittest.TestCase):
   data=json.loads(pathlib.Path('public/data/news.json').read_text())
   for n in data['items']:
    self.assertTrue(readable(n),n['id']);text=(pathlib.Path('dist')/n['path'].strip('/')/'index.html').read_text()
-   self.assertIn('https://kryptokollen.online'+n['path'],text);self.assertIn('NewsArticle',text);self.assertIn('Nyhetstext',text);self.assertIn('og:title',text)
+   self.assertIn('https://kryptopuls.se'+n['path'],text);self.assertIn('NewsArticle',text);self.assertIn('Nyhetstext',text);self.assertIn('og:title',text)
   self.assertTrue(pathlib.Path('dist/kategori/altcoins/index.html').exists());self.assertFalse(pathlib.Path('dist/kategori/sui/index.html').exists());self.assertFalse(pathlib.Path('dist/kategori/solana/index.html').exists());self.assertFalse(pathlib.Path('dist/idag/index.html').exists())
  def test_video_hosts(self):
   spec=importlib.util.spec_from_file_location('pages','scripts/build-pages.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)

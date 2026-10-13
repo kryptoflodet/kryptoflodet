@@ -71,8 +71,8 @@ class PermanentXLinkTests(unittest.TestCase):
  def test_export_has_own_metadata_original_link_and_escaped_text(self):
   spec=importlib.util.spec_from_file_location('x_pages','scripts/build-pages.py');pages=importlib.util.module_from_spec(spec);spec.loader.exec_module(pages)
   path,html=pages.x_page(self.post)
-  self.assertEqual(path,'/x/'+self.post['id']+'/');self.assertIn('rel="canonical" href="https://kryptokollen.online'+path+'"',html)
-  self.assertIn('property="og:url" content="https://kryptokollen.online'+path+'"',html);self.assertIn('name="twitter:card"',html)
+  self.assertEqual(path,'/x/'+self.post['id']+'/');self.assertIn('rel="canonical" href="https://kryptopuls.se'+path+'"',html)
+  self.assertIn('property="og:url" content="https://kryptopuls.se'+path+'"',html);self.assertIn('name="twitter:card"',html)
   self.assertIn('href="'+self.post['url']+'"',html);self.assertIn('href="https://t.co/example"',html)
   self.assertNotIn('<script>alert(1)</script>',html);self.assertIn('&lt;script&gt;alert(1)&lt;/script&gt;',html)
  def test_every_saved_post_has_a_page_after_build(self):

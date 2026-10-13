@@ -1,6 +1,6 @@
-# Kryptokollen: drift utan betalda API:er
+# Kryptopuls: drift utan betalda API:er
 
-Befintligt repo: kryptoflodet/kryptoflodet.github.io. Behåll GitHub Pages och den befintliga domäninställningen för kryptokollen.online.
+Befintligt repo: kryptoflodet/kryptoflodet.github.io. GitHub Pages används med kryptopuls.se som avsedd anpassad domän.
 
 ## Drift
 
@@ -32,9 +32,9 @@ Dokumentation: https://docs.rsshub.app/deploy/ och https://github.com/DIYgod/RSS
 
 Videor får bara publiceras med tillräckligt textunderlag och svensk sammanfattning. YouTube beskrivningar är inte fullständiga transkript; detta anges på artikelsidan. Tillåtna kanaler och värdnamn kontrolleras innan inbäddning. Felaktiga eller otillgängliga kanaler slår inte ut RSS.
 
-CoinGecko hämtar topp 50 efter marknadsvärde i USD och SEK. Webbläsaren återanvänder ett färskt lokalt svar i en minut; vid API-fel används den publicerade snapshoten. `scripts/fetch-market.py` skriver snapshoten åt GitHub Actions och behåller senast fungerande data om USD-hämtningen misslyckas. SEK-kurser kan återanvändas från föregående snapshot vid ett separat SEK-fel. Föråldrade priser märks i gränssnittet.
+CoinGecko hämtar topp 50 efter marknadsvärde i USD och SEK. Besökarens urval och dragordning sparas lokalt, och valda valutor visas i tickern. Webbläsaren återanvänder ett färskt lokalt svar i en minut; vid API-fel används den publicerade snapshoten. `scripts/fetch-market.py` skriver snapshoten åt GitHub Actions och behåller senast fungerande data om USD-hämtningen misslyckas. SEK-kurser kan återanvändas från föregående snapshot vid ett separat SEK-fel. Föråldrade priser märks i gränssnittet.
 
-Fear & Greed hämtas från Alternative.me. Marknadsdominans och dygnstrender hämtas från CoinGecko Global. Altcoin Season försöker CoinMarketCap först och använder BlockchainCenter som reserv. Senast fungerande indikatorvärden behålls om källorna tillfälligt inte svarar. Källor och kontrolltider visas i mätarna.
+Marknadspulsen använder Fear & Greed från Alternative.me, dominans och dygnstrend från CoinGecko Global, BTC/ETH dygnsförändringar från CoinGecko och Altcoin Season från CoinMarketCap med BlockchainCenter som reserv. Senast fungerande indikatorvärden behålls om källorna tillfälligt inte svarar.
 
 ## Vidareutveckling
 
@@ -69,7 +69,7 @@ X kan ändra eller begränsa inbäddningsformatet. Kontrollera data/x.json och A
 
 MMCrypto är låst till konto-ID `904700529988820992`, verifierat mot X:s egna originaldata. Tester 2026-10-13: Saylors och MMCryptos profilflöden visade gamla populära poster, medan aktuella statusar fungerade via `tweet-result`. Därför är profilflödet och reservhämtningen separata i statusen. En fungerande reservväg märks `Begränsat urval`; den innebär inte fullständig bevakning.
 
-`python scripts/x_archive.py` sparar X-original, inklusive poster som ännu saknar svensk text i `public/data/x-archive.json`. Arkivet och genererade sidor på `/x/<post-id>/` bevaras när poster lämnar 14-dagarsflödet. Kopiera länk använder den permanenta Kryptokollen-sidan, som har egen canonical/Open Graph och en länk till originalposten. Tidigare `?xpost=<id>`-länkar öppnar den permanenta sidan när den finns. Saknad post får ett tydligt meddelande och en säker länk till X. Arkivering kräver rätt post-URL och giltigt original. Svenska texter kräver dessutom exakt språkhash; en felaktig språkhash tar bort översättningen, inte den riktiga originalposten. Gamla texter återpubliceras inte som nya.
+`python scripts/x_archive.py` sparar X-original, inklusive poster som ännu saknar svensk text i `public/data/x-archive.json`. Arkivet och genererade sidor på `/x/<post-id>/` bevaras när poster lämnar 14-dagarsflödet. Kopiera länk använder den permanenta Kryptopuls-sidan, som har egen canonical/Open Graph och en länk till originalposten. Tidigare `?xpost=<id>`-länkar öppnar den permanenta sidan när den finns. Saknad post får ett tydligt meddelande och en säker länk till X. Arkivering kräver rätt post-URL och giltigt original. Svenska texter kräver dessutom exakt språkhash; en felaktig språkhash tar bort översättningen, inte den riktiga originalposten. Gamla texter återpubliceras inte som nya.
 
 ## Svenska X-texter
 
