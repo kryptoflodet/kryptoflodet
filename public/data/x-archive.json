@@ -4,6 +4,78 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhAmIsaMAEY8SJ.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110027782520447262",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110027782520447262",
+      "publishedAt": "2026-10-13T15:20:00Z",
+      "text": "$ETH vs $BTC longs are EXPLODING! \n\nSmart money is betting on altseason. https://t.co/dybfBjg5dD",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "ETH vs BTC-lågor exploderar!\n\n- Det är bra pengar att satsa på altseason.",
+        "method": "translation",
+        "sourceHash": "fd0099b187c90971837cd74c682c313eac59b0a69964a6e28ebd47df81134a57",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T15:22:59.255302Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhSAVoaQAAMx1F.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhSBukbsAE4Wgo.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110026631452807231",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110026631452807231",
+      "publishedAt": "2026-10-13T15:15:25Z",
+      "text": "ICYMI: Strive has bought 3,311 $BTC worth $275 MILLION. 📢 https://t.co/KtkfAbpX6j",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Strive har köpt 3311 BTC värda 275 miljoner dollar.",
+        "method": "translation",
+        "sourceHash": "c5b223b7dab033dc4f1968184f562c76d17e9d118bee9c6bd85146761570b99f",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T15:22:59.255302Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUgv39cWAAAgsPI.jpg",
           "alt": ""
         }

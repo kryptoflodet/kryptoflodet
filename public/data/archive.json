@@ -2,6 +2,60 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "305dceb77658eb70658d",
+      "eventKey": "https://cryptonews.com/news/bitway-crypto-all-time-high",
+      "originalTitle": "Bitway Crypto Hits All-Time High, Showing the Need for a Bitcoin-Compatible Chain",
+      "originalText": "Bitway Crypto Hits All-Time High, Showing the Need for a Bitcoin-Compatible Chain",
+      "originalLanguage": "en",
+      "title": "Bitway nådde alltid högsta nivå, visar behov av bitcoin-kompatibel chain",
+      "translation": "",
+      "summary": "Cryptonews uppger: Bitway uppger att sitt krypto-portfolio har nått en alltid högre nivå. Det sker samtidigt som Bitcoin håller sig kvar i marknadsresistens. ",
+      "why": "",
+      "author": "Cryptonews",
+      "publishedAt": "2026-10-13T15:09:57Z",
+      "importedAt": "2026-10-13T15:21:37.807135Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptonews",
+      "channel": "RSS",
+      "originalUrl": "https://cryptonews.com/news/bitway-crypto-all-time-high/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptonews",
+          "url": "https://cryptonews.com/news/bitway-crypto-all-time-high/",
+          "originId": "https://cryptonews.com/news/bitway-crypto-all-time-high",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 3,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Cryptonews uppger: Bitway uppger att sitt krypto-portfolio har nått en alltid högre nivå. Det sker samtidigt som Bitcoin håller sig kvar i marknadsresistens. \\n\\nKällan pekar på att BTC-nivåer, inflation och behovet av bitcoin-kompatibel infrastruktur är viktiga faktorer.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T15:21:37.807135Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Kapitalflöden eller marknadshändelse",
+      "slug": "bitway-nadde-alltid-hogsta-niva-visar-behov-av-bitcoin-kompatibel-chain-305dceb776",
+      "path": "/nyheter/bitway-nadde-alltid-hogsta-niva-visar-behov-av-bitcoin-kompatibel-chain-305dceb776/"
+    },
+    {
       "id": "ac69c55887e23ff967e1",
       "eventKey": "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin",
       "originalTitle": "Matt Dines: Why a Rising Dollar is Bullish for Bitcoin",
