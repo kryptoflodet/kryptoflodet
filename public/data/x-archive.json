@@ -2,6 +2,41 @@
   "schemaVersion": 1,
   "posts": [
     {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgdgQAWcAAmJlw.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgdgP_XsAAAVfZ.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109968905389183169",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109968905389183169",
+      "publishedAt": "2026-10-13T11:26:03Z",
+      "text": "HUGE: 🇷🇺 Russia's largest bank, Sberbank, to launch crypto trading on December 1.\n\nWhile the US fails on the CLARITY Act, Russia is going ALL-IN on crypto! 🚀 https://t.co/T2Ii9rGrbV",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Rysslands största bank, Sberbank, kommer att lansera kryptotrading den 1 december.\n\nMedan USA misslyckas med klarhetsakten, går Ryssland helt in på kryptotjänster!",
+        "method": "translation",
+        "sourceHash": "d797691b1866ee61473555ca3196ee2140fe4142cd82b30e0bb7446fd1b150d7",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T11:33:09.907273Z"
+    },
+    {
       "media": [],
       "id": "2109963456241860642",
       "handle": "TheMoonShow",
