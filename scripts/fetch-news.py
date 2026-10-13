@@ -11,6 +11,9 @@ FEEDS=json.loads((ROOT/'scripts/sources.json').read_text())
 COINS={'BTC':['bitcoin','btc'],'ETH':['ethereum','ether','eth'],'SOL':['solana'],'SUI':['sui'],'HBAR':['hedera','hbar'],'ONDO':['ondo'],'XRP':['xrp','ripple'],'ADA':['cardano'],'DOGE':['dogecoin','doge'],'XLM':['stellar','xlm'],'AVAX':['avalanche','avax'],'LINK':['chainlink'],'BNB':['bnb'],'HYPE':['hyperliquid'],'LTC':['litecoin','ltc']}
 def clean(text):
  parser=PlainText();parser.feed(html.unescape(text or ''));return re.sub(r'\s+',' ',''.join(parser.parts)).strip()
+def prioritize_candidates(items):
+ return sorted(items,key=lambda item:item.get('publishedAt',''),reverse=True)
+
 def date(text):
  try:
   try:value=email.utils.parsedate_to_datetime(text)
@@ -49,7 +52,7 @@ def parse_feed(payload,source,now):
   published=date(fields.get('pubDate') or fields.get('published') or fields.get('updated'))
   if not title or not published or not crypto_only(title):continue
   age=(dt.datetime.fromisoformat(now.replace('Z','+00:00'))-dt.datetime.fromisoformat(published.replace('Z','+00:00'))).total_seconds()
-  if age < -600:continue
+  if age < -600 or age > 7*24*60*60:continue
   # Keep a bounded private working excerpt; do not publish the source prose.
   raw=fields.get('description') or fields.get('summary') or fields.get('encoded') or fields.get('content') or ''
   if source['id'].endswith('-video'):
@@ -99,7 +102,7 @@ def main():
    s.update(error='Källan kunde inte hämtas ('+type(exc).__name__+'). Tidigare publicerade nyheter behålls.',lastSuccessAt=prior.get('lastSuccessAt'));print(f'{sid}: {type(exc).__name__}',flush=True);return s,[]
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:results=list(pool.map(fetch,FEEDS+x_sources(ROOT)))
  registry=[s for s,_ in results]
- candidates=deduplicate([n for _,rows in results for n in rows])
+ candidates=prioritize_candidates(deduplicate([n for _,rows in results for n in rows]))
  reviews=read_json(ROOT/'scripts/reviewed.json',{})
  held={};drafts=[];accepted=[enrich(n) for n in previous.values() if readable(n) and n.get('translationStatus') in {'reviewed-sv','edited-sv'}]
  accepted_by_url={canonical_url(n['originalUrl']):n for n in accepted}

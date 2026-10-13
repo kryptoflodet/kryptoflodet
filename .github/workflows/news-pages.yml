@@ -48,8 +48,8 @@ jobs:
         env:
           RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
           EDITOR_MODE: 'local-validated'
-          EDITOR_MAX_ITEMS: '3'
-          EDITOR_SECONDS: '210'
+          EDITOR_MAX_ITEMS: '8'
+          EDITOR_SECONDS: '300'
         run: python scripts/fetch-news.py
       - name: Restore recent X selection
         uses: actions/cache@v4
