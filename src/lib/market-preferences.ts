@@ -1,6 +1,7 @@
 import type {LiveQuote} from './market';
 export type MarketSort='rank'|'name'|'price-high'|'price-low'|'change-high'|'change-low'|'cap-high'|'cap-low'|'volume-high'|'volume-low';
 export const MARKET_HIDDEN_KEY='kryptokollen-market-hidden-v1';
+export const MARKET_ORDER_KEY='kryptokollen-market-order-v1';
 function metric(q:LiveQuote,sort:MarketSort,currency:string):number|null {
  if(sort==='price-high'||sort==='price-low')return currency==='SEK'?q.priceSek:q.price;
  if(sort==='change-high'||sort==='change-low')return currency==='SEK'?q.changeSek24h:q.change24h;
@@ -24,4 +25,12 @@ export function normalizeHiddenSymbols(raw:unknown):string[]{
 }
 export function toggleHiddenSymbol(hidden:string[],symbol:string,hide:boolean):string[]{
  const current=new Set(normalizeHiddenSymbols(hidden));if(hide)current.add(symbol.toUpperCase());else current.delete(symbol.toUpperCase());return [...current];
+}
+export function normalizeMarketOrder(raw:unknown,availableSymbols:readonly string[]):string[]{
+ const available=normalizeHiddenSymbols([...availableSymbols]);const availableSet=new Set(available);const preferred=normalizeHiddenSymbols(raw).filter(symbol=>availableSet.has(symbol));const preferredSet=new Set(preferred);
+ return [...preferred,...available.filter(symbol=>!preferredSet.has(symbol))];
+}
+export function moveMarketSymbol(order:string[],symbol:string,targetSymbol:string,after=false):string[]{
+ const next=normalizeMarketOrder(order,order);const moving=symbol.toUpperCase(),target=targetSymbol.toUpperCase();const sourceIndex=next.indexOf(moving);if(sourceIndex<0||moving===target||!next.includes(target))return next;
+ next.splice(sourceIndex,1);const targetIndex=next.indexOf(target);next.splice(targetIndex+(after?1:0),0,moving);return next;
 }
