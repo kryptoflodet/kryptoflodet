@@ -543,6 +543,112 @@
       "path": "/nyheter/thailand-vill-ha-sin-del-av-bitcoin-och-ethereum-etf-marknaden-5e426bd68e/"
     },
     {
+      "id": "61a373a27cb4c9bd65cb",
+      "eventKey": "https://cryptonews.com/news/ledger-wallet-exploit-implant-cryptobilis-investigation",
+      "originalTitle": "Ledger Exploit Explained: What Ex Mt.Gox CEO Found, and How to Protect Your Crypto",
+      "originalText": "Ledger Exploit Explained: What Ex Mt.Gox CEO Found, and How to Protect Your Crypto",
+      "originalLanguage": "en",
+      "title": "Ledger-hanterad exploatering hittas i CryptoBilis-enhet",
+      "translation": "",
+      "summary": "Cryptonews rapporterar att en hårdvarukomponent hittades i en enhet kopplad till CryptoBilis, vilket kan ha orsakat förluster på 93 miljoner dollar i 311 walleter över fem blockchain.",
+      "why": "Säkerhetsincidenter kan påverka tillgången till en tjänst och användarnas medel. Omfattning och orsaker behöver bekräftas; tidiga uppgifter kan förändras.",
+      "author": "Cryptonews",
+      "publishedAt": "2026-10-12T07:33:59Z",
+      "importedAt": "2026-10-13T08:50:23.938732Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "cryptonews",
+      "channel": "RSS",
+      "originalUrl": "https://cryptonews.com/news/ledger-wallet-exploit-implant-cryptobilis-investigation/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptonews",
+          "url": "https://cryptonews.com/news/ledger-wallet-exploit-implant-cryptobilis-investigation/",
+          "originId": "https://cryptonews.com/news/ledger-wallet-exploit-implant-cryptobilis-investigation",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 5,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Cryptonews rapporterar att en hårdvarukomponent hittades i en enhet kopplad till CryptoBilis, vilket kan ha orsakat förluster på 93 miljoner dollar i 311 walleter över fem blockchain.\\n\\nUppgifterna är baserade på en analys av en tidigare utvecklad enhet som kopplades till CryptoBilis, men det finns ingen bekräftelse av att det var en Ledger-hanterad exploatering.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T08:50:23.938732Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Marknaden"
+      ],
+      "importanceReason": "Säkerhetsincident eller säkerhetsuppdatering",
+      "slug": "ledger-hanterad-exploatering-hittas-i-cryptobilis-enhet-61a373a27c",
+      "path": "/nyheter/ledger-hanterad-exploatering-hittas-i-cryptobilis-enhet-61a373a27c/"
+    },
+    {
+      "id": "3ef30fcd4083499cfc1d",
+      "eventKey": "https://cryptonews.com/news/meta-ai-predicts-this-huge-catalyst-could-lead-to",
+      "originalTitle": "Meta AI Predicts This Huge Catalyst Could Lead to $40 XRP",
+      "originalText": "Meta AI Predicts This Huge Catalyst Could Lead to $40 XRP",
+      "originalLanguage": "en",
+      "title": "Meta AI förutsäger hög prisnivå för XRP",
+      "translation": "",
+      "summary": "Cryptonews uppger: Meta AI uppger att XRP kan nå $40 till januari 2027, med en utvidgad målning av $50 om en stark kryptobullmarknad uppstår och får stöd från en viktig katalysator.",
+      "why": "",
+      "author": "Cryptonews",
+      "publishedAt": "2026-10-11T20:30:00Z",
+      "importedAt": "2026-10-13T08:50:23.938732Z",
+      "category": "Altcoins",
+      "coins": [
+        "XRP"
+      ],
+      "topics": [
+        "XRP"
+      ],
+      "sourceId": "cryptonews",
+      "channel": "RSS",
+      "originalUrl": "https://cryptonews.com/news/meta-ai-predicts-this-huge-catalyst-could-lead-to/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptonews",
+          "url": "https://cryptonews.com/news/meta-ai-predicts-this-huge-catalyst-could-lead-to/",
+          "originId": "https://cryptonews.com/news/meta-ai-predicts-this-huge-catalyst-could-lead-to",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Cryptonews uppger: Meta AI uppger att XRP kan nå $40 till januari 2027, med en utvidgad målning av $50 om en stark kryptobullmarknad uppstår och får stöd från en viktig katalysator.\\n\\nXRP handlar mellan $1.39 som avslutning på 11 oktober 2026. Det finns ingen bekräftelse om att en sådan katalysator är nära eller exakt beskriven.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T08:50:23.938732Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "prognos",
+      "categories": [
+        "Altcoins"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "meta-ai-forutsager-hog-prisniva-for-xrp-3ef30fcd40",
+      "path": "/nyheter/meta-ai-forutsager-hog-prisniva-for-xrp-3ef30fcd40/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
