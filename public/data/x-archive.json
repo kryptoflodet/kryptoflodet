@@ -4,6 +4,39 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhdfC6asAAbmRk.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110045398739845349",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110045398739845349",
+      "publishedAt": "2026-10-13T16:30:00Z",
+      "text": "🐳 Bitcoin Whales are showing signs of a major shift.\n\nAfter months of selling or holding less $BTC, their holdings are moving back toward growth.\n\nAre Whales getting ready to buy more Bitcoin? \n\nSource: CryptoQuant https://t.co/3kBYu6wgrG",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin-valer visar tecken på en stor förändring.\n\nEfter månader av att ha sålt eller innehatt mindre BTC, går deras innehav tillbaka mot tillväxt.\n\nÄr Whales redo att köpa mer Bitcoin?\n\nKälla: CryptoQuant",
+        "method": "translation",
+        "sourceHash": "9cc32fc45de8093d4eefbc7956cb50d362660586457c0009d81a8e8feacf5913",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:33:58.859300Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhdfntW4AE7eRM.jpg",
           "alt": ""
         }
@@ -6123,6 +6156,34 @@
         "engine": "reviewed"
       },
       "archivedAt": "2026-10-13T09:06:33.817546Z"
+    },
+    {
+      "media": [],
+      "id": "2108598752877625702",
+      "handle": "MMCrypto",
+      "author": "MMCrypto",
+      "sourceId": "mmcrypto-x",
+      "url": "https://x.com/MMCrypto/status/2108598752877625702",
+      "publishedAt": "2026-10-09T16:41:33Z",
+      "text": "Bitcoin: enough is enough..\n\n👉 https://t.co/BBuQqzqRz1 https://t.co/ztE89cK08p",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin: tillräckligt är tillräckligt..",
+        "method": "translation",
+        "sourceHash": "b056000e3a5e9931ed93a3a0bb220b0ab3f0e588a9ac0801e0a984ec12b8f7eb",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:33:58.859300Z"
     },
     {
       "media": [],
