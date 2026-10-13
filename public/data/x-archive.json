@@ -4,6 +4,39 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhl0lUaAAIHPRa.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110063013730599162",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110063013730599162",
+      "publishedAt": "2026-10-13T17:40:00Z",
+      "text": "Bitcoin’s next move: UP or DOWN? 👀\n\nGot a prediction? Put it to the test with 1win’s crypto UP & DOWN markets.\n\nChoose your direction 👉 https://t.co/YGD2bqvdse https://t.co/ryR85X9r2E",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin:s nästa steg: Upp eller ner?\n\n- Har du en förutsägelse?\n\nTesta det med 1wins kryptomarknader.\n\nVälj din riktning",
+        "method": "translation",
+        "sourceHash": "6273e9a0d6d9e54bc4c907fa157246888f0fce0d68573895f6539dcf1eec743d",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T17:44:52.844576Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhtoMZW4AAkWQ6.png",
           "alt": ""
         },
