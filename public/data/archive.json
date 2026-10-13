@@ -2,6 +2,60 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "ac69c55887e23ff967e1",
+      "eventKey": "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin",
+      "originalTitle": "Matt Dines: Why a Rising Dollar is Bullish for Bitcoin",
+      "originalText": "Matt Dines: Why a Rising Dollar is Bullish for Bitcoin",
+      "originalLanguage": "en",
+      "title": "Varför är en stigande dollar positiv för Bitcoin?",
+      "translation": "",
+      "summary": "Bitcoin Magazine uppger att Matt Dines från Build Asset Management menar att en stigande dollar är positiv för Bitcoin. Han förklarar en övergång till en ny monetär ordning med amerikansk ledning.",
+      "why": "",
+      "author": "Bitcoin Magazine",
+      "publishedAt": "2026-10-13T13:17:03Z",
+      "importedAt": "2026-10-13T13:39:26.706407Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "bitcoinmag",
+      "channel": "RSS",
+      "originalUrl": "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "bitcoinmag",
+          "url": "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin",
+          "originId": "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Bitcoin Magazine uppger att Matt Dines från Build Asset Management menar att en stigande dollar är positiv för Bitcoin. Han förklarar en övergång till en ny monetär ordning med amerikansk ledning.\\n\\nDines skriver att både dollar och Bitcoin stiger, vilket är ett positivt tecken enligt hans analys. Texten skrevs av Patrick Green och publicerades först på Bitcoin Magazine.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T13:39:26.706407Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "varfor-ar-en-stigande-dollar-positiv-for-bitcoin-ac69c55887",
+      "path": "/nyheter/varfor-ar-en-stigande-dollar-positiv-for-bitcoin-ac69c55887/"
+    },
+    {
       "id": "f9b10c94f5b5010a275d",
       "eventKey": "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants",
       "originalTitle": "Now Accepting Bitcoin: Moonflower Coffee and 300+ Colorado Bitcoin Merchants",

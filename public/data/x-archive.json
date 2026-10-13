@@ -4,6 +4,150 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2109975385085812736/img/yoNrHbSfXh-HEOFn.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110001358115864905",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110001358115864905",
+      "publishedAt": "2026-10-13T13:35:00Z",
+      "text": "Once Bitcoin reclaims this \"Legendary\" support line.\n\n$160,000 FOLLOWS SOON 🚀 https://t.co/t2fMcMN1so",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "När Bitcoin återkräver denna \"Legendary\" stöd linje.\n\n160 000 dollar kommer snart.",
+        "method": "translation",
+        "sourceHash": "61914fc098b0123c608776d218b258b867939f8498c16b7d04537c68542d7b21",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:41:26.071397Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg6U24WsAAMuYr.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg67uNXcAAKPC2.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110001239668728248",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110001239668728248",
+      "publishedAt": "2026-10-13T13:34:32Z",
+      "text": "JUST IN: Binance scraps Bitcoin and crypto mining pool services. https://t.co/ApGqvxqT34",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Binance skraper Bitcoin och kryptogruv pool tjänster.",
+        "method": "translation",
+        "sourceHash": "54f41517b5e893798a4250529e3c0de8f6c198cd7a097f227e3c5cf2f4a3068f",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:41:26.071397Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg4wbIXIAENRS9.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg4y-FWwAAIM9F.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109999013743173909",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109999013743173909",
+      "publishedAt": "2026-10-13T13:25:41Z",
+      "text": "JUST IN: 🇬🇧 U.K. wants to keep 61,000 Bitcoin from Chinese fraudster jailed in Britain, worth $5B.\n\nFraud victims plan to appeal. https://t.co/gxdPeMOFFD",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Storbritannien vill behålla 61 000 Bitcoin från en kinesisk bedräger som sitter i fängelse i Storbritannien, värd 5 miljarder dollar.\n\nBedrägeris offer planerar att överklaga.",
+        "method": "translation",
+        "sourceHash": "ec4c29824e2d441c1c5e94b2f91cdd891afc7f081d7b36f7f25a1746281a66ec",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:41:26.071397Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg3Le7WQAAJBIA.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg3KutX0AAje7W.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109997135051849897",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109997135051849897",
+      "publishedAt": "2026-10-13T13:18:13Z",
+      "text": "JUST IN: Jack Dorsey's Square is preparing to offer 3% Bitcoin cashback to credit card holders!\n\nMore BTC rewards are coming! https://t.co/pRuVVCzTwm",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Jack Dorsey's Square förbereder sig för att erbjuda 3% Bitcoin cashback till kreditkortsinnehavare!\n\nMer BTC-belöningar kommer!",
+        "method": "translation",
+        "sourceHash": "e4c2e061bf9c4b87f833e774256849aa5960f8429b136d196e9a631941477fdb",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:41:26.071397Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUg1BruW4AAPw-B.png",
           "alt": ""
         },
