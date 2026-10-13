@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import pathlib
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -18,7 +19,8 @@ PUBLIC_STATE_URL = os.environ.get('MARKET_CONTEXT_STATE_URL', 'https://kryptokol
 FNG_URL = 'https://api.alternative.me/fng/?limit=1&format=json'
 GLOBAL_URL = 'https://api.coingecko.com/api/v3/global'
 ALT_URL = 'https://pro-api.coinmarketcap.com/public-api/v1/altcoin-season-index/latest'
-FRESH_FOR = {'fearGreed': 6 * 60 * 60, 'market': 60 * 60, 'altcoinSeason': 30 * 60}
+BLOCKCHAIN_CENTER_URL = 'https://www.blockchaincenter.net/altcoin-season-index/'
+FRESH_FOR = {'fearGreed': 6 * 60 * 60, 'market': 60 * 60, 'altcoinSeason': 60 * 60}
 
 
 def iso_now() -> str:
@@ -150,6 +152,20 @@ def parse_altcoin_season(payload: Any) -> tuple[int, str]:
     return round(value), observed
 
 
+def parse_blockchaincenter_html(payload: Any) -> tuple[int, str]:
+    if not isinstance(payload, str):
+        raise ValueError('BlockchainCenter svarade inte med HTML-text')
+    match = re.search(r'Altcoin Season Snapshot:\s*(\d{1,3})(?:\.\d+)?%', payload, re.IGNORECASE)
+    if not match:
+        raise ValueError('BlockchainCenter-sidan saknar indexvärde')
+    value = as_number(match.group(1), 0, 100)
+    if value is None:
+        raise ValueError('BlockchainCenter-indexet är utanför 0–100')
+    day = re.search(r'altcoin-season-snapshot/\?d=(\d{4}-\d{2}-\d{2})', payload, re.IGNORECASE)
+    observed = iso_value(day.group(1) + 'T00:00:00Z') if day else iso_now()
+    return round(value), observed
+
+
 def should_refresh(metric: dict[str, Any], ttl_seconds: int, now: float | None = None) -> bool:
     checked = iso_value(metric.get('checkedAt'))
     if not checked:
@@ -169,6 +185,14 @@ def fetch_json(url: str) -> Any:
         return json.loads(response.read().decode('utf-8'))
 
 
+def fetch_text(url: str) -> str:
+    request = urllib.request.Request(url, headers={'User-Agent': 'Kryptokollen/1.0 (+https://kryptokollen.online)', 'Accept': 'text/html,application/xhtml+xml'})
+    with urllib.request.urlopen(request, timeout=18) as response:
+        if response.status != 200:
+            raise RuntimeError(f'HTTP {response.status}')
+        return response.read(2_000_000).decode('utf-8', errors='replace')
+
+
 def load_published_snapshot() -> dict[str, Any]:
     if not PUBLIC_STATE_URL:
         return empty_snapshot()
@@ -180,7 +204,7 @@ def load_published_snapshot() -> dict[str, Any]:
         return empty_snapshot()
 
 
-def update_from_sources(snapshot: dict[str, Any], market_data: Any, now: float | None = None, fetcher=fetch_json) -> dict[str, Any]:
+def update_from_sources(snapshot: dict[str, Any], market_data: Any, now: float | None = None, fetcher=fetch_json, text_fetcher=fetch_text) -> dict[str, Any]:
     checked_now = iso_now()
     if should_refresh(snapshot['fearGreed'], FRESH_FOR['fearGreed'], now):
         try:
@@ -202,7 +226,13 @@ def update_from_sources(snapshot: dict[str, Any], market_data: Any, now: float |
             snapshot['altcoinSeason'].update(value=value, source='CoinMarketCap', observedAt=observed, checkedAt=checked_now)
             print(f'CoinMarketCap Altcoin Season Index hämtat: {value}/100, observation {observed}')
         except Exception as exc:
-            print(f"Altcoin Season-index misslyckades; sparat värde behålls: {exc}")
+            print(f"CoinMarketCap Altcoin Season-index misslyckades; testar BlockchainCenter: {exc}")
+            try:
+                value, observed = parse_blockchaincenter_html(text_fetcher(BLOCKCHAIN_CENTER_URL))
+                snapshot['altcoinSeason'].update(value=value, source='BlockchainCenter', observedAt=observed, checkedAt=checked_now)
+                print(f'BlockchainCenter Altcoin Season Index hämtat: {value}/100, observation {observed}')
+            except Exception as fallback_exc:
+                print(f"BlockchainCenter Altcoin Season-index misslyckades; senast sparat värde behålls: {fallback_exc}")
     snapshot['generatedAt'] = checked_now
     return snapshot
 

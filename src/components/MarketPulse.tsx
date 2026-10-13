@@ -34,7 +34,7 @@ export default function MarketPulse({context}:{context:MarketContext}){
    </div>
   </div>
   <div className="altseason-card">
-   <div className="altseason-heading"><div><span><Activity size={15}/> ALTCOIN SEASON INDEX <a href="https://coinmarketcap.com/charts/altcoin-season-index/" target="_blank" rel="noopener noreferrer">Källa ↗</a></span><small>Andel av de 100 största altcoinen som slagit Bitcoin senaste 90 dagarna</small></div><div className="altseason-score"><b>{alt===null?'—':alt}</b><span>/100 · {altLabel}</span></div></div>
+   <div className="altseason-heading"><div><span><Activity size={15}/> ALTCOIN SEASON INDEX <a href={context.altcoinSeason.source==='BlockchainCenter'?'https://www.blockchaincenter.net/altcoin-season-index/':'https://coinmarketcap.com/charts/altcoin-season-index/'} target="_blank" rel="noopener noreferrer">Källa ↗</a></span><small>{context.altcoinSeason.source==='BlockchainCenter'?'Andel av de 50 största altcoinen som slagit Bitcoin senaste 90 dagarna':'Andel av de 100 största altcoinen som slagit Bitcoin senaste 90 dagarna'}</small></div><div className="altseason-score"><b>{alt===null?'—':alt}</b><span>/100 · {altLabel}</span></div></div>
    <div className="altseason-meter" role="meter" aria-label="Altcoin Season Index" aria-valuemin={0} aria-valuemax={100} aria-valuenow={alt??undefined} aria-valuetext={alt===null?'Index saknas':`${alt} av 100, ${altLabel.toLocaleLowerCase('sv')}`}>
     <div className="altseason-zones"><i/><i/><i/></div>{alt!==null&&<span className="altseason-needle" style={{left:`${alt}%`}}/>}
    </div>

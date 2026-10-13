@@ -33,6 +33,26 @@ class MarketContextTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             M['parse_altcoin_season']({'data': {'altcoin_index': 50}, 'status': {'error_code': '429'}})
 
+    def test_blockchaincenter_page_fallback(self):
+        source = '<script>"imagePath":"/api/og/altcoin-season-snapshot/?d=2026-10-13","imageAlt":"Altcoin Season Snapshot: 45% — It is not Altcoin Season! on Oct 13, 2026"</script>'
+        value, observed = M['parse_blockchaincenter_html'](source)
+        self.assertEqual(value, 45)
+        self.assertEqual(observed, '2026-10-13T00:00:00Z')
+        with self.assertRaises(ValueError):
+            M['parse_blockchaincenter_html']('<html>No index</html>')
+
+    def test_coinmarketcap_rate_limit_uses_blockchaincenter(self):
+        now = datetime(2026, 10, 13, 15, 0, tzinfo=timezone.utc).timestamp()
+        fresh = '2026-10-13T14:30:00Z'
+        snap = M['empty_snapshot']()
+        snap['fearGreed']['checkedAt'] = fresh
+        snap['market']['checkedAt'] = fresh
+        fixture = '<script>"imagePath":"/api/og/altcoin-season-snapshot/?d=2026-10-13","imageAlt":"Altcoin Season Snapshot: 45%"</script>'
+        with contextlib.redirect_stdout(io.StringIO()):
+            updated = M['update_from_sources'](snap, {}, now=now, fetcher=lambda _: (_ for _ in ()).throw(RuntimeError('HTTP 429')), text_fetcher=lambda _: fixture)
+        self.assertEqual(updated['altcoinSeason']['value'], 45)
+        self.assertEqual(updated['altcoinSeason']['source'], 'BlockchainCenter')
+
     def test_refresh_windows_use_checked_time_and_preserve_old_snapshot(self):
         now = datetime(2026, 10, 13, 15, 0, tzinfo=timezone.utc).timestamp()
         recent = {'checkedAt': '2026-10-13T14:30:00Z'}
