@@ -4,6 +4,109 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhtoMZW4AAkWQ6.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhtrG8WcAA64NU.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110057577296138551",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110057577296138551",
+      "publishedAt": "2026-10-13T17:18:24Z",
+      "text": "BREAKING: $120B Wealth Enhancement buys more Bitcoin ETFs, raising position from $22M to $33M. https://t.co/L0Tef8BRJ8",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "$120B Wealth Enhancement köper fler Bitcoin ETF, höjer positionen från $22M till $33M.",
+        "method": "translation",
+        "sourceHash": "29d52f126cbad3d14a832d94c622cf5e2bb61d6f21a1aff3acc430f604d2abdb",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T17:24:07.590981Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhQn9fbkAAr-EI.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhQn-GaQAAjsK2.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110056722328908098",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110056722328908098",
+      "publishedAt": "2026-10-13T17:15:00Z",
+      "text": "🇺🇸 US Treasury is set to conduct a $4,000,000,000 debt buyback within 48 hours. \n\nBULLISH FOR $BTC 🚀 https://t.co/R2IREXLCHZ",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "US Treasury kommer att genomföra ett skuldköp på 4 000 000 000 $ inom 48 timmar. \n\nhausse för BTC",
+        "method": "translation",
+        "sourceHash": "9175d133a631fc3516a8f9f8815cb400220d611ed3401a1f7ac972a07566ff48",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T17:24:07.590981Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhpbWgXAAA86sf.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110056722291454148",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110056722291454148",
+      "publishedAt": "2026-10-13T17:15:00Z",
+      "text": "$88K was Bitcoin's main break-even wall.\n\nPeople who bought at higher prices over the last 1-2 years sold off as 6-12 month buyers got back to break-even, stopping the rally.\n\nThe good news? That distribution has slowed down significantly. \n\nThe market is absorbing the extra https://t.co/1k1A6nfjVS",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T17:24:07.590981Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/amplify_video_thumb/2110052989016670208/img/0bmw7OW88TpgYsQT.jpg",
           "alt": ""
         }
