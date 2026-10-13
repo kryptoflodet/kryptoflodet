@@ -35,7 +35,7 @@ def validate(output,source,author=None):
  title=output.get('title');paras=output.get('paragraphs');support=output.get('support')
  if not isinstance(title,str) or not 15<=len(title)<=145:return False
  if not isinstance(paras,list) or len(paras)!=2 or not all(isinstance(p,str) for p in paras):return False
- if author and (author.casefold() not in paras[0].casefold() or not re.search(r'\\b(uppger|skriver|meddelar|rapporterar|beskriver|enligt)\\b',paras[0],re.I)):return False
+ if author and (author.casefold() not in paras[0].casefold() or not re.search(r'\b(uppger|skriver|meddelar|rapporterar|beskriver|enligt)\b',paras[0],re.I)):return False
  text=' '.join([title]+paras)
  if not 35<=len(' '.join(paras).split())<=100:return False
  if re.search(r'<|https?://|\b(?:however|according to|inflows?|outflows?|nettoinflow|bullish|bearish|has been|will be|in conclusion)\b',text,re.I):return False
