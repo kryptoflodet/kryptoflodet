@@ -4,6 +4,43 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhZvFRa8AArzRI.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhZvFMbgAAn-Sm.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110035099437899893",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110035099437899893",
+      "publishedAt": "2026-10-13T15:49:04Z",
+      "text": "🤯 BREAKING: 27% chance Bitcoin will cross its ATH by June 2027. https://t.co/Q8HytiliFg",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "27% chans att Bitcoin kommer att krossa sin ath i juni 2027.",
+        "method": "translation",
+        "sourceHash": "73ef6b69185cfeeeb74b6b0aee3aa065ce9058ef6c0a0401889e7269590ded50",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:03:56.976226Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhSdnEboAA3Km0.png",
           "alt": ""
         },

@@ -2,6 +2,61 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "28b0e0935aad010975c7",
+      "eventKey": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it",
+      "originalTitle": "A $5 billion Bitcoin fortune is at stake, but UK court says being defrauded isn’t enough to claim it",
+      "originalText": "A $5 billion Bitcoin fortune is at stake, but UK court says being defrauded isn’t enough to claim it",
+      "originalLanguage": "en",
+      "title": "UK-dom i Bitcoin-fall: defraudning räcker inte för att få fonden",
+      "translation": "",
+      "summary": "CryptoSlate uppger att en UK-dom har avgjort att defraudning inte är tillräckligt för att kräva en Bitcoin-fond på 5 miljarder dollar.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-13T15:40:44Z",
+      "importedAt": "2026-10-13T16:01:37.349109Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it/",
+          "originId": "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger att en UK-dom har avgjort att defraudning inte är tillräckligt för att kräva en Bitcoin-fond på 5 miljarder dollar.\\n\\nEget ärende är fortfarande oavgjort, och offer måste fortfarande bekräfta sina rättigheter enligt kinesisk lag.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T16:01:37.349109Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin",
+        "Reglering"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "uk-dom-i-bitcoin-fall-defraudning-racker-inte-for-att-fa-fonden-28b0e0935a",
+      "path": "/nyheter/uk-dom-i-bitcoin-fall-defraudning-racker-inte-for-att-fa-fonden-28b0e0935a/"
+    },
+    {
       "id": "305dceb77658eb70658d",
       "eventKey": "https://cryptonews.com/news/bitway-crypto-all-time-high",
       "originalTitle": "Bitway Crypto Hits All-Time High, Showing the Need for a Bitcoin-Compatible Chain",
