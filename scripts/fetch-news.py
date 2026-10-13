@@ -71,6 +71,13 @@ def read_json(path,default):
 def atomic_json(path,data):
  path.parent.mkdir(parents=True,exist_ok=True);tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
 
+def apply_local_edit(item,draft,now):
+ paragraphs=draft['paragraphs']
+ item.update(title=draft['title'],summary=paragraphs[0],readerText='\\n\\n'.join(paragraphs),readerKind='edited',contentVersion=2,translationStatus='edited-sv',analysisMethod='local-model-validated',editedAt=now,status='unconfirmed',confidence=0,verificationNote='Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.')
+ item.pop('sourceText',None);item.pop('readerOriginal',None)
+ for evidence in item.get('evidence',[]):evidence['verified']=False
+ return enrich(item)
+
 def main():
  now=dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00','Z')
  old=read_json(TARGET,{'items':[],'sources':[]})
@@ -105,13 +112,14 @@ def main():
    accepted_by_url[canonical_url(n['originalUrl'])]=enrich(n)
  from local_editor import cache_key
  memo=read_json(ROOT/'.cache/editor/edits-v2.json',{})
- editor=None;attempts=0;max_edits=int(os.environ.get('EDITOR_MAX_ITEMS','4'));deadline=time.monotonic()+int(os.environ.get('EDITOR_SECONDS','150'))
+ editor=None;attempts=0;max_edits=int(os.environ.get('EDITOR_MAX_ITEMS','1'));deadline=time.monotonic()+int(os.environ.get('EDITOR_SECONDS','210'))
  for n in candidates:
   key=canonical_url(n['originalUrl'])
   if key in accepted_by_url:continue
   if len(n.get('sourceText','').split())<35:held[n['id']]='insufficient_source';continue
   if cache_key(n) in memo and memo[cache_key(n)] is None:held[n['id']]='previously_rejected';continue
-  if os.environ.get('EDITOR_MODE','reviewed-only')!='draft':held[n['id']]='awaiting_editorial_review';continue
+  if os.environ.get('EDITOR_MODE','reviewed-only')!='local-validated':held[n['id']]='awaiting_editorial_review';continue
+  if n.get('sourceType') not in {'MEDIA','OFFICIELL'}:held[n['id']]='source_not_eligible';continue
   if attempts>=max_edits or time.monotonic()>deadline:held[n['id']]='editor_queue';continue
   attempts+=1
   try:
@@ -123,16 +131,16 @@ def main():
    try:draft,reason=editor.edit(n)
    finally:signal.alarm(0)
    if not draft:held[n['id']]=reason;continue
-   # Local inference is experimental: even a passing model check needs a human review.
-   held[n['id']]='draft_requires_review'
-   drafts.append({'originalUrl':n['originalUrl'],'publishedAt':n['publishedAt'],'source':n['author'],**draft})
+   # The local model and deterministic checks support faithful summaries, not independent confirmation.
+   accepted_by_url[key]=apply_local_edit(n,draft,now)
+   drafts.append({'originalUrl':n['originalUrl'],'publishedAt':n['publishedAt'],'source':n['author'],'title':n['title']})
    continue
   except Exception as exc:held[n['id']]='editor_unavailable';print('Lokal redaktör:',type(exc).__name__,flush=True);break
  accepted=deduplicate([n for n in accepted_by_url.values() if readable(n)])
  if not accepted:raise RuntimeError('Ingen godkänd artikel; tidigare publicering lämnas orörd')
  for n in accepted:n.pop('sourceText',None);n.pop('readerOriginal',None)
  important=select_important(accepted)
- health={'checkedAt':now,'sourcesConnected':sum(s['connection']=='connected' for s in registry),'sourcesTotal':sum(s['enabled'] for s in registry),'candidates':len(candidates),'published':len(accepted),'held':len(held),'heldReasons':{reason:list(held.values()).count(reason) for reason in set(held.values())},'editorAttempts':attempts,'paidApis':False,'editorMode':'reviewed-only','awaitingReview':len([n for n in candidates if canonical_url(n['originalUrl']) not in accepted_by_url])}
+ health={'checkedAt':now,'sourcesConnected':sum(s['connection']=='connected' for s in registry),'sourcesTotal':sum(s['enabled'] for s in registry),'candidates':len(candidates),'published':len(accepted),'held':len(held),'heldReasons':{reason:list(held.values()).count(reason) for reason in set(held.values())},'editorAttempts':attempts,'paidApis':False,'editorMode':os.environ.get('EDITOR_MODE','reviewed-only'),'awaitingReview':len([n for n in candidates if canonical_url(n['originalUrl']) not in accepted_by_url])}
  pending=[{k:n[k] for k in ('id','originalUrl','originalTitle','publishedAt','sourceId')} | {'reason':held.get(n['id'],'editor_queue')} for n in candidates if canonical_url(n['originalUrl']) not in accepted_by_url]
  atomic_json(ROOT/'state/pending.json',{'checkedAt':now,'items':pending})
  if drafts:atomic_json(ROOT/'.cache/editor/drafts.json',{'drafts':drafts})
