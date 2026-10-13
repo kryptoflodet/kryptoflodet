@@ -74,7 +74,7 @@ class FailureIsolationTests(unittest.TestCase):
    self.assertEqual([n['path'] for n in before['items']],[n['path'] for n in after['items']]);self.assertEqual(health['sourcesConnected'],0);self.assertEqual(health['editorAttempts'],0)
  def test_only_local_validated_media_can_be_auto_summarized(self):
   source=pathlib.Path('scripts/fetch-news.py').read_text()
-  self.assertIn("n.get('translationStatus')=='reviewed-sv'",source)
+  self.assertIn("n.get('translationStatus') in {'reviewed-sv','edited-sv'}",source)
   self.assertIn("os.environ.get('EDITOR_MODE','reviewed-only')!='local-validated'",source)
   self.assertIn("n.get('sourceType') not in {'MEDIA','OFFICIELL'}",source)
   self.assertIn("status='unconfirmed'",source)
