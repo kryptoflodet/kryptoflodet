@@ -2,8 +2,9 @@ import type {MarketContext} from '../lib/market-context';
 import {altcoinSeasonLabel,calculateSentiment,isMetricStale,sentimentLabel} from '../lib/market-context';
 import {Activity,ArrowDownRight,ArrowUpRight,BarChart3,Bitcoin,Globe2,ShieldAlert} from 'lucide-react';
 
-const moodStops=['EXTREMT RÄDD','RÄDD','NEUTRAL','GIRIG','EXTREMT GIRIG'];
+const moodStops=['EXTREMT RÄDD','← RÄDD','← NEUTRAL','→ GIRIG','→ EXTREMT GIRIG'];
 function percent(value:number|null,digits=2){return value===null?'—':`${value>0?'+':''}${value.toLocaleString('sv-SE',{minimumFractionDigits:digits,maximumFractionDigits:digits})}%`;}
+function sharePercent(value:number|null){return value===null?'—':`${value.toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})}%`;}
 function compactDate(value:string|null){return value?new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',hour:'2-digit',minute:'2-digit'}).format(new Date(value)):'—';}
 function fearName(value:string|null){if(!value)return 'Saknas';const map:Record<string,string>={'Extreme Fear':'Extrem rädsla',Fear:'Rädsla',Neutral:'Neutral',Greed:'Girighet','Extreme Greed':'Extrem girighet'};return map[value]||value;}
 function movementIcon(value:number|null){if(value===null)return <Activity size={15}/>;return value>=0?<ArrowUpRight size={15}/>:<ArrowDownRight size={15}/>;}
@@ -29,7 +30,7 @@ export default function MarketPulse({context}:{context:MarketContext}){
     <div className="pulse-fact"><span>FEAR &amp; GREED <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener noreferrer">↗</a></span><b>{context.fearGreed.value===null?'—':`${context.fearGreed.value}/100`}</b><small className={fearStale?'fact-stale':''}>{fearName(context.fearGreed.classification)}{fearStale&&context.fearGreed.value!==null?' · fördröjt':''}</small></div>
     <div className="pulse-fact"><span><Bitcoin size={13}/> BTC · 24 H</span><b className={context.market.btcChange24h===null?'':context.market.btcChange24h>=0?'fact-up':'fact-down'}>{percent(context.market.btcChange24h)}{movementIcon(context.market.btcChange24h)}</b><small>Bitcoinrörelse</small></div>
     <div className="pulse-fact"><span><Globe2 size={13}/> HELA MARKNADEN · 24 H</span><b className={context.market.marketCapChange24h===null?'':context.market.marketCapChange24h>=0?'fact-up':'fact-down'}>{percent(context.market.marketCapChange24h)}{movementIcon(context.market.marketCapChange24h)}</b><small className={marketStale?'fact-stale':''}>Total marknadsvärdering{marketStale?' · fördröjt':''}</small></div>
-    <div className="pulse-fact"><span><BarChart3 size={13}/> MARKNADS­DOMINANS</span><b><em>BTC</em> {percent(context.market.btcDominance,1)} <em>ETH</em> {percent(context.market.ethDominance,1)}</b><small>Andel av kryptomarknaden</small></div>
+    <div className="pulse-fact"><span><BarChart3 size={13}/> MARKNADSDOMINANS</span><b><em>BTC</em> {sharePercent(context.market.btcDominance)} <em>ETH</em> {sharePercent(context.market.ethDominance)}</b><small>Andel av kryptomarknaden</small></div>
     <div className="pulse-fact"><span>BTC JÄMFÖRT MED ETH · 24 H</span><b className={comparison===null?'':comparison>=0?'fact-up':'fact-down'}>{comparison===null?'—':`${comparison>0?'BTC leder':'ETH leder'} ${Math.abs(comparison).toLocaleString('sv-SE',{minimumFractionDigits:2,maximumFractionDigits:2})} pp`}</b><small>Skillnad i procentenheter</small></div>
    </div>
   </div>
