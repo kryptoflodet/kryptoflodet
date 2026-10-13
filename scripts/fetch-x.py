@@ -20,7 +20,7 @@ def load(path,default):
  except (OSError,ValueError):return default
 def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'text/html,application/json'})
- with urllib.request.urlopen(req,timeout=20) as r:
+ with urllib.request.urlopen(req,timeout=12) as r:
   data=r.read(2_000_001)
   if len(data)>2_000_000:raise ValueError('Response too large')
   return data.decode('utf-8')
@@ -70,88 +70,63 @@ def parse_timeline(payload,account,now):
  dates=[d for t in raw if (d:=timestamp(t.get('created_at'))) is not None]
  return list({n['id']:n for n in items}.values()),max(dates).isoformat() if dates else None
 
-def balanced_posts(posts,accounts,per_account=30,maximum=None):
- selected=[]
- for account in accounts:
-  own=sorted((p for p in posts.values() if p.get('sourceId')==account['id']),key=lambda p:p['publishedAt'],reverse=True)
-  selected.extend(own[:per_account])
- return sorted(selected,key=lambda n:n['publishedAt'],reverse=True)[:maximum or per_account*len(accounts)]
+def profile_post_ids(payload,account):
+ # X's logged-out profile HTML still contains canonical post links even when
+ # its legacy timeline embed is rate-limited. Only accept links for this user.
+ pattern=r'https?://(?:www\.)?(?:x|twitter)\.com/'+re.escape(account['handle'])+r'/status/(\d{15,22})'
+ return list(dict.fromkeys(re.findall(pattern,html.unescape(payload),re.I)))[:12]
 
-def retry_after(error,now):
- value=error.headers.get('Retry-After') if error.headers else None
- try:until=now+dt.timedelta(seconds=max(60,min(int(value),86400)))
- except (TypeError,ValueError):
-  until=timestamp(value) or now+dt.timedelta(minutes=30)
- return until.isoformat().replace('+00:00','Z')
-
-def fetch_profile(account,previous,now):
- stamp=now.isoformat().replace('+00:00','Z')
- status={'id':account['id'],'name':account['name'],'handle':account['handle'],'url':'https://x.com/'+account['handle'],'checkedAt':stamp,'connection':'error','coverage':'Begränsat offentligt urval från X; inte fullständig bevakning.','lastSuccessAt':previous.get('lastSuccessAt'),'lastIndividualSuccessAt':previous.get('lastIndividualSuccessAt'),'attempts':[]}
- routes=[]
- if account.get('userId'):routes.append(('user-id/'+account['userId'],'user-id'))
- routes.append(('screen-name/'+account['handle'],'screen-name'))
- empty=False
- for route,method in routes:
-  prior=next((a for a in previous.get('attempts',[]) if a.get('method')==method),{})
-  until=timestamp(prior.get('retryAfterAt'))
-  if until and until>now:
-   status['attempts'].append({'method':method,'result':'cooldown','retryAfterAt':prior['retryAfterAt'],'httpStatus':prior.get('httpStatus')})
-   continue
+def parse_profile_posts(payload,account,now,existing_ids):
+ posts=[];failed=False
+ for pid in profile_post_ids(payload,account):
+  if pid in existing_ids:continue
   try:
-   rows,newest=parse_timeline(get('https://syndication.twitter.com/srv/timeline-profile/'+route+'?dnt=true&lang=sv'),account,now)
-   status['attempts'].append({'method':method,'result':'ok' if rows else 'empty','eligiblePosts':len(rows)})
-   status.update(newestAvailableAt=newest,lastProfileSuccessAt=stamp)
-   if rows:
-    status.update(connection='connected',profileConnection='connected',method=method,count=len(rows),lastSuccessAt=stamp)
-    return status,rows
-   empty=True
-   print(f"{account['id']}: {method} returned no eligible recent posts; newest={newest}",flush=True)
-  except Exception as error:
-   code=error.code if isinstance(error,urllib.error.HTTPError) else None
-   attempt={'method':method,'result':'error','error':type(error).__name__,'httpStatus':code}
-   if code==429:attempt['retryAfterAt']=retry_after(error,now)
-   status['attempts'].append(attempt)
-   status.update(errorType=type(error).__name__,httpStatus=code)
-   print(f"{account['id']}: {method} {type(error).__name__}"+(f" HTTP {code}" if code else ''),flush=True)
- status['connection']=status['profileConnection']='limited' if empty else 'error'
- status['message']='Profilflödet gav inga aktuella originalinlägg. Enskilda originalposter och sparade inlägg används som reserv.' if empty else 'Profilflödet kunde inte uppdateras. Senast hämtade inlägg behålls.'
- return status,[]
-
-def article_references(items,now):
- allowed={'cointelegraph.com','coindesk.com','decrypt.co','bitcoinmagazine.com','cryptoslate.com','theblock.co'}
- selected={}
- for item in items:
-  host=(urlsplit(item.get('originalUrl','')).hostname or '').removeprefix('www.')
-  published=timestamp(item.get('publishedAt'))
-  if host in allowed and published and -600<=(now-published).total_seconds()<3*86400:
-   selected[item['originalUrl']]=item
- return sorted(selected.values(),key=lambda n:(bool(re.search(r'Saylor|Strategy|\bMSTR\b|MMCrypto|Jaszczynski|Crypto Rover|The Moon|Watcher.Guru',n.get('originalTitle',''),re.I)),n['publishedAt']),reverse=True)
-
-def profile_references(payload,handle):
- """Use public profile pages only to discover IDs; X must verify every post.
-
- Ignore replies and non-crypto snippets so a small request budget is not spent
- repeatedly checking travel posts. Mirror text is never published as an original.
- """
- found=set();seen=set()
- for match in re.finditer(r'href=[\"\']/'+re.escape(handle)+r'/status/(\d{15,22})[^\"\']*[\"\']',payload,re.I):
-  if match[1] in seen:continue
-  seen.add(match[1])
-  tail=payload[match.end():match.end()+4000]
-  body=re.search(r'<div\b[^>]*class=[\"\']activity-descp[\"\'][^>]*>\s*<p[^>]*>(.*?)</p>',tail,re.S)
-  if not body:continue
-  snippet=html.unescape(re.sub(r'<[^>]*>','',body[1])).strip()
-  if not re.match(r'^@[A-Za-z0-9_]+\b',snippet) and crypto_only(snippet):found.add(match[1])
- return sorted(found,key=int,reverse=True)[:8]
+   tweet=json.loads(get('https://cdn.syndication.twimg.com/tweet-result?id='+pid+'&lang=sv&token=0'))
+   post=parse_post(tweet,account,now)
+   if post:posts.append(post)
+   if len(posts)>=4:break
+  except Exception as e:
+   failed=True
+   print(f"X post lookup {account['handle']}/{pid}: {type(e).__name__} {getattr(e,'code','')}",flush=True)
+ return posts,failed
 
 def main():
  now=dt.datetime.now(UTC);stamp=now.isoformat().replace('+00:00','Z');accounts=load(ROOT/'scripts/x-sources.json',[]);old=load(TARGET,{'posts':[],'sources':[],'discovery':{}})
+ previous_sources={s.get('id'):s for s in old.get('sources',[])}
+ previous_posts=old.get('posts',[])
  def fetch(account):
-  previous=next((s for s in old.get('sources',[]) if s.get('id')==account['id']),{})
-  return fetch_profile(account,previous,now)
- # X's public endpoint can be slow. Lower concurrency and allow a realistic
- # response window instead of marking valid responses as timeouts.
- with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(fetch,accounts))
+  status={'id':account['id'],'name':account['name'],'handle':account['handle'],'url':'https://x.com/'+account['handle'],'checkedAt':stamp,'connection':'error','coverage':'Begränsat urval från offentliga X-profiler; inte fullständig bevakning.'}
+  previous=previous_sources.get(account['id'],{})
+  cached_ids={str(n.get('id')) for n in previous_posts if n.get('sourceId')==account['id']}
+  last_scan=timestamp(previous.get('profileCheckedAt'))
+  if last_scan and (now-last_scan).total_seconds()<15*60:
+   status.update({k:v for k,v in previous.items() if k not in {'checkedAt','count','newestPostAt'}})
+   status['checkedAt']=stamp
+   status['message']='Publik X-profil kontrolleras högst var 15:e minut. Senast hämtade inlägg behålls.'
+   return status,[]
+  try:
+   payload=get('https://x.com/'+account['handle'])
+   rows,lookup_failed=parse_profile_posts(payload,account,now,cached_ids)
+   if lookup_failed and not rows:raise RuntimeError('All individual X post lookups failed')
+   status.update(connection='connected' if rows else 'limited',count=len(rows),profileCheckedAt=stamp,lastSuccessAt=stamp if rows else previous.get('lastSuccessAt'),fallbackMethod='public-profile+syndication-post')
+   if not rows:status['message']='Den offentliga profilen svarade, men gav inga nya verifierade krypto-inlägg. Tidigare inlägg behålls.'
+   return status,rows
+  except Exception as e:
+   print(f"X public profile {account['handle']}: {type(e).__name__} {getattr(e,'code','')}; trying legacy embed",flush=True)
+   try:
+    rows,newest=parse_timeline(get('https://syndication.twitter.com/srv/timeline-profile/screen-name/'+account['handle']+'?dnt=true&lang=sv'),account,now)
+    status.update(connection='connected' if rows else 'limited',newestAvailableAt=newest,count=len(rows),lastSuccessAt=stamp if rows else previous.get('lastSuccessAt'),profileCheckedAt=stamp,fallbackMethod='legacy-profile-embed')
+    return status,rows
+   except Exception as fallback_error:
+    e=fallback_error
+   status['lastSuccessAt']=previous.get('lastSuccessAt')
+   status['profileCheckedAt']=stamp
+   if isinstance(e,urllib.error.HTTPError):
+    status['httpStatus']=e.code
+    status['message']=f'X:s profil- och inläggsflöden svarade med HTTP {e.code}. Tidigare hämtade inlägg behålls.'
+   else:status['message']='Inbäddningsflödet kunde inte uppdateras. Tidigare hämtade inlägg behålls.'
+   print(f"X fallback exhausted {account['handle']}: {type(e).__name__} {getattr(e,'code','')}",flush=True);return status,[]
+ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(fetch,accounts))
  posts={n['id']:n for n in old['posts'] if timestamp(n.get('publishedAt')) and 0<=(now-timestamp(n['publishedAt'])).total_seconds()<=14*86400 and any(n.get('handle')==a['handle'] for a in accounts)}
  for _,rows in results:
   posts.update({n['id']:n for n in rows})
@@ -164,112 +139,48 @@ def main():
  # bounded set of directly fetched RSS publishers' articles, then verify with X.
  # Never infer a post's text, author or date from a secondary publication.
  pending=load(ROOT/'state/pending.json',{'items':[]})['items'];discovery=old.get('discovery',{})
- news_path=ROOT/'public/data/news.json';news=load(news_path,None)
+ allowed={'cointelegraph.com','coindesk.com','decrypt.co','bitcoinmagazine.com','cryptoslate.com','theblock.co'}
  seeds=load(ROOT/'scripts/x-posts.json',[])
  links={(s['handle'].lower(),s['id']):s.get('context') for s in seeds}
- # Approved articles can contain the best original references too. Do not drop
- # them from discovery as soon as their Swedish summary has been published.
- selected=article_references(pending+(news.get('items',[]) if news else []),now)
- references=[];uncached=[]
- for n in selected:
+ selected=[]
+ for n in pending:
+  host=(urlsplit(n['originalUrl']).hostname or '').removeprefix('www.')
+  published=timestamp(n['publishedAt'])
+  if host in allowed and published and (now-published).total_seconds()<3*86400 and re.search(r'Saylor|Crypto Rover|The Moon|Watcher.Guru',n['originalTitle'],re.I):selected.append(n)
+ for n in selected[:3]:
   key=n['originalUrl'];cached=discovery.get(key);checked=timestamp(cached.get('checkedAt')) if cached else None
-  if checked and (now-checked).total_seconds()<86400:references.append((n,cached['links']))
-  elif len(uncached)<6:uncached.append(n)
- def discover(n):
   try:
-   payload=html.unescape(get(n['originalUrl']));found=list(set(re.findall(r'https?://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]+)/status/(\d{15,22})',payload)))[:12]
-   return n,found
-  except Exception as e:print('X discovery',type(e).__name__,flush=True);return n,None
- with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-  for n,found in pool.map(discover,uncached):
-   if found is not None:
-    discovery[n['originalUrl']]={'checkedAt':stamp,'links':found};references.append((n,found))
- for n,found in references:
-  for handle,pid in found:
-   if any(handle.lower()==a['handle'].lower() for a in accounts):links[(handle.lower(),pid)]={'url':n['originalUrl'],'title':n['originalTitle']}
+   if checked and (now-checked).total_seconds()<86400:found=cached['links']
+   else:
+    payload=html.unescape(get(key));found=list(set(re.findall(r'https?://(?:www\.)?(?:x|twitter)\.com/([A-Za-z0-9_]+)/status/(\d{15,22})',payload)))[:12]
+    discovery[key]={'checkedAt':stamp,'links':found}
+   for handle,pid in found:
+    if any(handle.lower()==a['handle'].lower() for a in accounts):links[(handle.lower(),pid)]={'url':key,'title':n['originalTitle']}
+  except Exception as e:print('X discovery',type(e).__name__,flush=True)
+ # Profile embeds can fail independently for a whole account. Keep a bounded
+ # batch of known public status IDs so a newly configured account can still
+ # populate the feed through X's individual public embed endpoint.
+ for (handle,pid),context in list(links.items())[:24]:
+  if pid in posts and 'media' in posts[pid]:continue
+  account=next((a for a in accounts if a['handle'].lower()==handle),None)
+  if not account:continue
+  try:
+   t=json.loads(get('https://cdn.syndication.twimg.com/tweet-result?id='+pid+'&lang=sv&token=0'))
+   n=parse_post(t,account,now,context)
+   if n:posts[pid]=n
+  except Exception as e:print('X individual post',type(e).__name__,flush=True)
  sources=[s for s,_ in results]
- # Profile embeds can expose only popular posts from years ago. A public mirror
- # supplies candidate links, not trusted text; the pinned X account ID, timestamp
- # and original JSON are checked by the individual-post endpoint below.
- def discover_profile(pair):
-  account,status=pair
-  newest=timestamp(status.get('newestAvailableAt'))
-  if status['connection']=='connected' and newest and (now-newest).total_seconds()<5400:return []
-  url='https://www6.twstalker.com/'+account['handle'];cached=discovery.get(url,{})
-  checked=timestamp(cached.get('checkedAt'))
-  if checked and (now-checked).total_seconds()<1800:return cached.get('links',[])
-  try:
-   found=[[account['handle'],pid] for pid in profile_references(get(url),account['handle'])]
-   discovery[url]={'checkedAt':stamp,'links':found}
-   status['attempts'].append({'method':'public-profile-reference','result':'ok','candidateIds':len(found)})
-   print(f"{account['id']}: public-profile-reference found {len(found)} candidate IDs",flush=True)
-   return found
-  except Exception as e:
-   code=e.code if isinstance(e,urllib.error.HTTPError) else None
-   discovery[url]={'checkedAt':stamp,'links':cached.get('links',[]),'httpStatus':code,'error':type(e).__name__}
-   status['attempts'].append({'method':'public-profile-reference','result':'error','httpStatus':code,'error':type(e).__name__})
-   print(f"{account['id']}: public-profile-reference {type(e).__name__}"+(f' HTTP {code}' if code else ''),flush=True)
-   return cached.get('links',[])
- with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-  for account,found in zip(accounts,pool.map(discover_profile,zip(accounts,sources))):
-   for handle,pid in found:links.setdefault((handle.lower(),pid),None)
- # Give each limited profile its own bounded status budget. New references must
- # not be crowded out by a long, fixed list of older seeds from another account.
- def fetch_individual(pair):
-  account,status=pair;previous=next((s for s in old.get('sources',[]) if s.get('id')==account['id']),{})
-  recovered={}
-  own={(handle,pid):context for (handle,pid),context in links.items() if handle==account['handle'].lower()}
-  if status['connection']!='connected':
-   for p in posts.values():
-    if p['sourceId']==account['id']:own.setdefault((account['handle'].lower(),p['id']),p.get('contextSource'))
-  candidates=sorted(own.items(),key=lambda entry:(entry[0][1] not in posts,int(entry[0][1])),reverse=True)
-  attempts=0;successes=0
-  for (handle,pid),context in candidates:
-   cached=posts.get(pid);checked=timestamp(cached.get('originalCheckedAt')) if cached else None
-   if cached and status['connection']=='connected':continue
-   if checked and (now-checked).total_seconds()<3600:continue
-   prior=next((a for a in previous.get('attempts',[]) if a.get('method')=='individual-post' and a.get('id')==pid),{})
-   until=timestamp(prior.get('retryAfterAt'))
-   if until and until>now:
-    status['attempts'].append({'method':'individual-post','id':pid,'result':'cooldown','retryAfterAt':prior['retryAfterAt']});continue
-   if attempts>=2:break
-   attempts+=1
-   try:
-    t=json.loads(get('https://cdn.syndication.twimg.com/tweet-result?id='+pid+'&lang=sv&token=0'))
-    n=parse_post(t,account,now,context)
-    status['attempts'].append({'method':'individual-post','id':pid,'result':'ok' if n else 'rejected'})
-    if n:
-     n['originalCheckedAt']=stamp;recovered[pid]=n;successes+=1
-   except Exception as e:
-    code=e.code if isinstance(e,urllib.error.HTTPError) else None
-    attempt={'method':'individual-post','id':pid,'result':'error','httpStatus':code,'error':type(e).__name__}
-    if code==429:attempt['retryAfterAt']=retry_after(e,now)
-    status['attempts'].append(attempt)
-    print(f"{account['id']}: individual-post {pid} {type(e).__name__}"+(f' HTTP {code}' if code else ''),flush=True)
-  if successes:
-   status.update(lastSuccessAt=stamp,lastIndividualSuccessAt=stamp)
-   if status['connection']!='connected':
-    status.update(connection='limited',method='individual-post',message='Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.')
-   print(f"{account['id']}: individual-post fallback verified {successes} posts",flush=True)
-  elif status['connection']!='connected' and status.get('lastIndividualSuccessAt') and any(p['sourceId']==account['id'] for p in posts.values()):
-   status.update(connection='limited',method='cached-individual-post',message='Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.')
-  return recovered
- with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-  recovered=list(pool.map(fetch_individual,zip(accounts,sources)))
- for rows in recovered:posts.update(rows)
  for s in sources:
   found=[n for n in posts.values() if n['sourceId']==s['id']];s['count']=len(found)
   s['newestPostAt']=max((n['publishedAt'] for n in found),default=None)
-  if s['connection']=='limited' and not found:s['message']='Profilflödet gav bara äldre eller irrelevanta poster. Inga aktuella originalposter kunde verifieras i reservvägen.'
- # Keep a fair rolling window for every followed account so the busiest feeds
- # cannot evict every post from quieter accounts.
- data={'generatedAt':stamp,'posts':balanced_posts(posts,accounts),'sources':sources,'discovery':{k:v for k,v in discovery.items() if timestamp(v.get('checkedAt')) and (now-timestamp(v['checkedAt'])).total_seconds()<14*86400}}
- for status in sources:status['count']=sum(p['sourceId']==status['id'] for p in data['posts'])
+  if s['connection']=='limited' and found:s['message']='Profilflödet är begränsat. Enskilda originalinlägg har verifierats via X; alla nya inlägg kan inte garanteras.'
+ data={'generatedAt':stamp,'posts':sorted(posts.values(),key=lambda n:n['publishedAt'],reverse=True)[:100],'sources':sources,'discovery':{k:v for k,v in discovery.items() if timestamp(v.get('checkedAt')) and (now-timestamp(v['checkedAt'])).total_seconds()<14*86400}}
  tmp=TARGET.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(TARGET)
+ news_path=ROOT/'public/data/news.json';news=load(news_path,None)
  if news:
   ids={a['id'] for a in accounts};news['sources']=[s for s in news['sources'] if s['id'] not in ids]
   for account,status in zip(accounts,sources):
-   news['sources'].append({'id':account['id'],'name':account['name'],'type':account['type'],'channel':'X','url':status['url'],'trust':0,'enabled':True,'connection':status['connection'],'independenceGroup':account['id'],'checkedAt':stamp,'coverage':status['coverage']+' '+status.get('message',''),'count':status['count']})
+   news['sources'].append({'id':account['id'],'name':account['name'],'type':account['type'],'channel':'X','url':status['url'],'trust':0,'enabled':True,'connection':'connected' if status['count'] and status['connection']!='error' else 'planned','independenceGroup':account['id'],'checkedAt':stamp,'coverage':status['coverage']+' '+status.get('message',''),'count':status['count']})
   tmp=news_path.with_suffix('.tmp');tmp.write_text(json.dumps(news,ensure_ascii=False,indent=2)+'\n');tmp.replace(news_path)
  print(json.dumps({'xPosts':len(data['posts']),'sources':[{k:s[k] for k in ['handle','connection','count']} for s in sources]},ensure_ascii=False),flush=True)
 if __name__=='__main__':main()

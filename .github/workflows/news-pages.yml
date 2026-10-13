@@ -17,9 +17,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 16
-    env:
-      ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+    timeout-minutes: 12
     environment:
       name: github-pages-automatic
       url: ${{ steps.deployment.outputs.page_url }}
@@ -32,22 +30,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: npm ci
-      - name: Restore X translation model
-        uses: actions/cache@v4
-        with:
-          path: .cache/x-translation/model
-          key: x-nllb-sv-q8-261c31d-v1
-      - name: Restore X translations
-        uses: actions/cache@v4
-        with:
-          path: .cache/x-translation/history.json
-          key: x-sv-text-${{ github.run_id }}
-          restore-keys: x-sv-text-
-      - name: Prepare local X translator
-        continue-on-error: true
-        timeout-minutes: 3
-        run: python scripts/prepare_x_translator.py
       - name: Restore local editor model
         uses: actions/cache@v4
         with:
@@ -66,36 +48,32 @@ jobs:
         env:
           RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
           EDITOR_MODE: 'local-validated'
-          EDITOR_MAX_ITEMS: '8'
-          EDITOR_SECONDS: '300'
+          EDITOR_MAX_ITEMS: '3'
+          EDITOR_SECONDS: '210'
         run: python scripts/fetch-news.py
       - name: Restore recent X selection
         uses: actions/cache@v4
         with:
           path: public/data/x.json
-          key: x-embed-v1-${{ github.run_id }}
-          restore-keys: x-embed-v1-
+          key: x-public-profile-v2-${{ github.run_id }}
+          restore-keys: |
+            x-public-profile-v2-
+            x-embed-v1-
       - name: Collect original X posts
         run: python scripts/fetch-x.py
       - name: Prepare Swedish X cards
         run: python scripts/x_language.py
-      - name: Translate new X cards
-        env:
-          X_TRANSLATION_MAX_ITEMS: '24'
-          X_TRANSLATION_SECONDS: '120'
-        run: python scripts/x_translate.py
-      - name: Preserve permanent X links
-        run: python scripts/x_archive.py
       - run: python scripts/fetch-market.py
+      - run: npm ci
       - run: npm run build
       - run: npm test
       - run: python -m unittest discover -s tests -p '*_test.py'
       - name: Persist new articles before deployment
         run: |
-          if ! git diff --quiet -- public/data/archive.json public/data/x-archive.json || [ -n "$(git ls-files --others --exclude-standard public/data/archive.json public/data/x-archive.json)" ]; then
+          if ! git diff --quiet -- public/data/archive.json || [ -n "$(git ls-files --others --exclude-standard public/data/archive.json)" ]; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add public/data/archive.json public/data/news.json public/data/health.json public/data/x-archive.json public/data/x.json
+            git add public/data/archive.json public/data/news.json public/data/health.json
             git commit -m 'Archive approved Kryptokollen articles [skip ci]'
             # A concurrent code push must never be overwritten. A rejected push stops deployment.
             git push origin HEAD:main
