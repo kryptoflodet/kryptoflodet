@@ -2,6 +2,60 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "362510102b4a05f9f6e7",
+      "eventKey": "https://cryptoslate.com/ftxs-former-bitcoin-mining-bet-gets-new-life-as-parent-raises-e800-million-for-ai",
+      "originalTitle": "FTX’s former Bitcoin mining bet gets new life as parent raises €800 million for AI",
+      "originalText": "FTX’s former Bitcoin mining bet gets new life as parent raises €800 million for AI",
+      "originalLanguage": "en",
+      "title": "FTX:s tidigare bitcoin-minningssats får ny liv i AI-fond",
+      "translation": "",
+      "summary": "CryptoSlate uppger: FTX:s före detta bitcoin-minningssats får ny liv genom att parent företaget samlar €800 miljoner till en AI-fond.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T20:50:19Z",
+      "importedAt": "2026-10-13T05:01:51.465831Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/ftxs-former-bitcoin-mining-bet-gets-new-life-as-parent-raises-e800-million-for-ai/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/ftxs-former-bitcoin-mining-bet-gets-new-life-as-parent-raises-e800-million-for-ai/",
+          "originId": "https://cryptoslate.com/ftxs-former-bitcoin-mining-bet-gets-new-life-as-parent-raises-e800-million-for-ai",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: FTX:s före detta bitcoin-minningssats får ny liv genom att parent företaget samlar €800 miljoner till en AI-fond.\\n\\nSWI fortsätter sin plan att omorganisera Genesis Digital Assets' minningssitier samtidigt som den nya ekvity stödjer en bredare AI-plattform.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T05:01:51.465831Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "ftx-s-tidigare-bitcoin-minningssats-far-ny-liv-i-ai-fond-362510102b",
+      "path": "/nyheter/ftx-s-tidigare-bitcoin-minningssats-far-ny-liv-i-ai-fond-362510102b/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
