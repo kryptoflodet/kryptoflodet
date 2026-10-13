@@ -33,8 +33,14 @@ jobs:
       - name: Restore local editor model
         uses: actions/cache@v4
         with:
-          path: .cache/editor
-          key: kryptokollen-qwen3-4b-q4km-linux-v2
+          path: .cache/editor/model4.gguf
+          key: kryptokollen-qwen3-4b-q4km-linux-v1
+      - name: Restore local editor history
+        uses: actions/cache@v4
+        with:
+          path: .cache/editor/edits-v2.json
+          key: kryptokollen-editor-history-${{ github.run_id }}
+          restore-keys: kryptokollen-editor-history-
       - name: Install optional local editor
         continue-on-error: true
         run: pip install -r scripts/editor-requirements.txt
