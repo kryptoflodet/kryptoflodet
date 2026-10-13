@@ -4,6 +4,72 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUgv39cWAAAgsPI.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110020231854997839",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110020231854997839",
+      "publishedAt": "2026-10-13T14:50:00Z",
+      "text": "Bitcoin long/short account ratio has dropped below 1.\n\nMore people are going short on Bitcoin.\n\nThis could trigger a massive short squeeze. https://t.co/8db3T9glHO",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin lång/kortskonton förhållande har sjunkit under 1.\n\nFler människor går inte på Bitcoin.\n\nDet kan utlösa en stor kortpressning.",
+        "method": "translation",
+        "sourceHash": "628a5b2fc7def7c155b54b61c2dc2fd639f5a7a9e0945da60ebe03b730396a4c",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:54:31.455786Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhL2qdWwAAons1.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110020221104701773",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110020221104701773",
+      "publishedAt": "2026-10-13T14:49:57Z",
+      "text": "JUST IN: Bitcoin perpetual futures funding rate flips positive.\n\nStill far from bullish, but up from Sunday’s pessimistic low. https://t.co/xSScWhiCYb",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin evig terminsfinansieringsränta vänder positivt.\n\nFortfarande långt ifrån hausseartad, men upp från söndagens pessimistiska låga.",
+        "method": "translation",
+        "sourceHash": "48784800005769256b40dfdaefa8710c3fc0953821de1986c5817230710a0b82",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T14:54:31.455786Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhHf8_XEAAZSxH.jpg",
           "alt": ""
         },
