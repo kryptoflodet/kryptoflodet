@@ -7,6 +7,12 @@ export interface XPost {
  media?:{url:string;alt:string}[];
 }
 export type FeedEntry={type:'news';id:string;date:string;importance:number;item:NewsItem}|{type:'x';id:string;date:string;importance:number;item:XPost};
+export function sourceConnectionLabel(source:{connection:string;enabled?:boolean}){return source.connection==='connected'?'Ansluten':source.connection==='limited'?'Begränsat urval':source.enabled?'Hämtningsfel':'Ej ansluten';}
+export async function archivedXPostUrl(id:string,base:string,request:typeof fetch=fetch){
+ if(!/^\d{15,22}$/.test(id))return null;
+ const url=new URL(`x/${id}/`,base);
+ try{const response=await request(url.href,{method:'HEAD',cache:'force-cache',signal:AbortSignal.timeout(5000)});return response.ok?url.href:null;}catch{return null;}
+}
 export function validXPost(value:unknown):value is XPost {
  if(!value||typeof value!=='object')return false;
  const n=value as XPost;

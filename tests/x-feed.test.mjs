@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 const dir=mkdtempSync(join(tmpdir(),'x-feed-tests-'));
 try{
  writeFileSync(join(dir,'x-feed.js'),ts.transpileModule(readFileSync('src/lib/x-feed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
- const {mergeFeed,validXPost}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
+ const {mergeFeed,validXPost,archivedXPostUrl,sourceConnectionLabel}=createRequire(import.meta.url)(join(dir,'x-feed.js'));
  const now=Date.parse('2026-10-12T12:00:00Z');
  const post={id:'2109000000000000000',handle:'example',author:'Example',url:'https://x.com/example/status/2109000000000000000',publishedAt:'2026-10-12T10:00:00Z',text:'Solana could rise.',coins:['SOL'],categories:['Altcoins'],kind:'original-x-post',originalLanguage:'en',swedish:{text:'Solana skulle kunna stiga.',method:'translation',engine:'reviewed',sourceHash:'hash'}};
  const article={id:'article',publishedAt:'2026-10-12T11:00:00Z',importance:4};
@@ -28,5 +28,11 @@ try{
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
  for(const bad of [null,{}, {...post,url:'javascript:alert(1)'},{...post,url:post.url+'.evil'},{...post,categories:[12]},{...post,swedish:{text:123,method:'translation'}}])assert.equal(validXPost(bad),false);
  assert.equal(mergeFeed([article],[{...post,publishedAt:'2026-10-12T11:30:00Z'}],{sort:'importance'},false,[],now)[0].type,'news','Importance does not promote raw claims');
+ assert.equal(sourceConnectionLabel({connection:'limited',enabled:true}),'Begränsat urval');
+ assert.equal(sourceConnectionLabel({connection:'error',enabled:true}),'Hämtningsfel');
+ let requested='';const url=await archivedXPostUrl(post.id,'https://kryptokollen.online/',async (url,options)=>{requested=url;assert.equal(options.method,'HEAD');return {ok:true};});
+ assert.equal(url,'https://kryptokollen.online/x/'+post.id+'/');assert.equal(requested,url);
+ assert.equal(await archivedXPostUrl(post.id,'https://kryptokollen.online/',async()=>({ok:false})),null,'A missing post must not redirect to a 404');
+ assert.equal(await archivedXPostUrl('../evil','https://kryptokollen.online/',async()=>{throw new Error('should not fetch');}),null);
  console.log('X feed checks passed: mixed chronology, Swedish/original search, filters, bookmarks, trust, freshness and invalid data.');
 }finally{rmSync(dir,{recursive:true,force:true});}

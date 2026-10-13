@@ -1,6 +1,9 @@
 import {useState} from 'react';
 import ShareNews,{xPostShareUrl} from './ShareNews';
 import type {XPost} from '../lib/x-feed';
+function XText({text}:{text:string}){
+ return <>{text.split(/(https?:\/\/[^\s<>]+)/g).map((part,i)=>{let safe=false;try{const url=new URL(part);safe=url.protocol==='https:'&&['x.com','twitter.com','t.co'].includes(url.hostname)&&!url.username&&!url.password&&!url.port;}catch{}return safe?<a key={i} href={part} target="_blank" rel="noopener noreferrer">{part}</a>:part;})}</>;
+}
 function XImage({post}:{post:XPost}){
  const [failedUrl,setFailedUrl]=useState('');
  const media=post.media?.find(m=>{try{const u=new URL(m.url);return u.protocol==='https:'&&u.hostname==='pbs.twimg.com';}catch{return false;}});
@@ -15,10 +18,10 @@ export default function XCard({post,onCoin,highlighted=false}:{post:XPost;onCoin
  if(!text)return null;
  return <article id={'x-post-'+post.id} className={'x-post '+(highlighted?'is-shared':'')} aria-label={'X · '+post.author}>
   <div className="x-post-meta"><b>X · {post.author}</b><span>@{post.handle}</span><time dateTime={post.publishedAt}>{new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(post.publishedAt))}</time></div>
-  <div className="x-post-content"><XImage post={post}/><div className="x-swedish"><small>{method==='original'?'Svenskt original':method==='summary'?'Sammanfattat på svenska':'Översatt till svenska'}</small>{!original&&<p className="x-attribution">{post.author} skriver:</p>}<p lang="sv">{text}</p></div></div>
+  <div className="x-post-content"><XImage post={post}/><div className="x-swedish"><small>{method==='original'?'Svenskt original':method==='summary'?'Sammanfattat på svenska':'Översatt till svenska'}</small>{!original&&<p className="x-attribution">{post.author} skriver:</p>}<p lang="sv">{original?<XText text={text||''}/>:text}</p></div></div>
   {post.coins.length>0&&<div className="x-coins">{post.coins.map(c=><button key={c} className="coin-tag" onClick={()=>onCoin(c)}>{c}</button>)}</div>}
   <div className="x-post-actions">{!original&&<button aria-expanded={expanded} aria-controls={'x-original-'+post.id} onClick={()=>setExpanded(!expanded)}>{expanded?'Dölj original':'Visa original'}</button>}<ShareNews title={`X · ${post.author}`} url={xPostShareUrl(post.id)}/><a href={post.url} target="_blank" rel="noopener noreferrer">Visa på X →</a></div>
-  {!original&&expanded&&<div id={'x-original-'+post.id} className="x-original"><blockquote lang={post.originalLanguage==='en'?'en':undefined}>{post.text}</blockquote>{post.media?.filter(m=>{try{return new URL(m.url).protocol==='https:'&&new URL(m.url).hostname==='pbs.twimg.com';}catch{return false;}}).slice(0,4).map(m=><img key={m.url} src={m.url} alt={m.alt||'Bild från originalinlägget'} loading="lazy"/>)}</div>}
+  {!original&&expanded&&<div id={'x-original-'+post.id} className="x-original"><blockquote lang={post.originalLanguage==='en'?'en':undefined}><XText text={post.text}/></blockquote>{post.media?.filter(m=>{try{return new URL(m.url).protocol==='https:'&&new URL(m.url).hostname==='pbs.twimg.com';}catch{return false;}}).slice(0,4).map(m=><img key={m.url} src={m.url} alt={m.alt||'Bild från originalinlägget'} loading="lazy"/>)}</div>}
   <small className="x-claim-note">Kontots uppgifter · inte oberoende bekräftade</small>
  </article>;
 }

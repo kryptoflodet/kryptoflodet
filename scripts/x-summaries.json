@@ -558,5 +558,17 @@
     "text": "Räcker 5 bitcoin för att gå i pension om tolv år?",
     "method": "translation",
     "checkedAt": "2026-10-12T16:52:10.638917+00:00"
+  },
+  "2109513358278054238": {
+    "sourceUrl": "https://x.com/MMCrypto/status/2109513358278054238",
+    "textSha256": "c2365b6799289390b27e603393673cecc9d8a7da427fbcf74edaa84e1ad2deda",
+    "text": "MMCrypto beskriver bitcoins veckostängning som ett försiktigt positivt besked, men säger att den ännu inte bekräftar en fortsatt uppgång. Kontots kursmål på 102 000 dollar gäller enligt inlägget bara om bitcoin stänger en vecka över 87 200 dollar med stöd av handelsvolymen.",
+    "method": "summary"
+  },
+  "2109615811954630703": {
+    "sourceUrl": "https://x.com/saylor/status/2109615811954630703",
+    "textSha256": "9080cdcd2f1b869752dc37e6d8f750ba14c339c42b520c09c933b6e1cdc8e1ba",
+    "text": "Michael Saylor uppger att Strategy har köpt 250 BTC och återköpt STRC för 192 miljoner dollar. Enligt inlägget hade bolaget den 11 oktober 2026 totalt 848 250 BTC och dollartillgångar på 5,5 miljarder dollar.",
+    "method": "summary"
   }
 }
