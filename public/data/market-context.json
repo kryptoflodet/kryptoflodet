@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "fearGreed": {"value": null, "classification": null, "checkedAt": null, "observedAt": null},
+  "market": {"btcDominance": null, "ethDominance": null, "marketCapChange24h": null, "btcChange24h": null, "ethChange24h": null, "checkedAt": null, "observedAt": null},
+  "altcoinSeason": {"value": null, "source": "CoinMarketCap", "checkedAt": null, "observedAt": null}
+}

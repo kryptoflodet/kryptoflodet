@@ -89,6 +89,16 @@ jobs:
       - name: Preserve permanent X links
         run: python scripts/x_archive.py
       - run: python scripts/fetch-market.py
+      - name: Restore latest market context values
+        uses: actions/cache@v4
+        with:
+          path: .cache/market-context/context.json
+          key: market-context-${{ github.run_id }}
+          restore-keys: market-context-
+      - name: Refresh fear, trend, dominance and altcoin season
+        env:
+          MARKET_CONTEXT_STATE_URL: https://kryptokollen.online/data/market-context.json
+        run: python scripts/fetch-market-context.py
       - run: npm run build
       - run: npm test
       - run: python -m unittest discover -s tests -p '*_test.py'

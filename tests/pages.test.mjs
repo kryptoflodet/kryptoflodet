@@ -17,4 +17,6 @@ assert.match(readFileSync('scripts/build-pages.py','utf8'),/images\/kryptokollen
 assert.ok(existsSync('public/images/kryptokollen-social.png'),'Branded social preview image is available to Pages build');
 for(const name of ['bitcoin-news','ethereum','network','institutions'])for(const width of [640,1280])assert.ok(existsSync(`dist/images/${name}-${width}.webp`));
 assert.ok(existsSync('dist/images/bitcoin.svg'),'Bitcoin logo source is included in the Pages build');
+assert.ok(existsSync('dist/data/market-context.json'),'Market context snapshot is shipped on the same origin');
+assert.match(readFileSync('dist/data/market-context.json','utf8'),/"schemaVersion":\s*1/);
 console.log('Pages checks passed: base path, no server fetches, assets and lockfile.');

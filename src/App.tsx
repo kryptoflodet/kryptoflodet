@@ -15,6 +15,9 @@ import type {NewsItem} from '@/lib/types';
 import {trackedCoins,emptyQuotes,type MarketData} from '@/lib/market';
 import {initialMarket} from '@/lib/market-initial';
 import {fetchMarket,loadCachedMarket} from '@/lib/market-client';
+import MarketPulse from './components/MarketPulse';
+import {initialMarketContext,fetchMarketContext,loadCachedMarketContext} from '@/lib/market-context-client';
+import type {MarketContext} from '@/lib/market-context';
 const BASE=import.meta.env.BASE_URL;
 const nav=['Senaste','Bitcoin','Ethereum','Altcoins','Reglering','Blog'];
 const names:Record<string,string>=Object.fromEntries(trackedCoins.map(([,symbol,name])=>[symbol,name]));
@@ -60,7 +63,8 @@ export default function Home(){
  const xUnavailable=xSources.length>0&&xSources.every(s=>s.connection==='error');
  const xPartiallyUnavailable=xSources.some(s=>s.connection==='error');
  const [items,setItems]=useState<NewsItem[]>(initialNews.items);const [marketData,setMarketData]=useState<MarketData>(()=>loadCachedMarket()||initialMarket);const [marketLoading,setMarketLoading]=useState(true);const [clock,setClock]=useState(Date.now());const marketRequest=useRef(false);const quotes=marketData.quotes;
- const [chartCoin,setChartCoin]=useState<string|null>(null);
+  const [chartCoin,setChartCoin]=useState<string|null>(null);
+  const [marketContext,setMarketContext]=useState<MarketContext>(()=>loadCachedMarketContext()||initialMarketContext);const marketContextRequest=useRef(false);const marketContextRequestedAt=useRef(0);
  const [category,setCategory]=useState('Senaste');const [coin,setCoin]=useState('');const [query,setQuery]=useState('');const [noise,setNoise]=useState('all');const [sort,setSort]=useState('latest');const [currency,setCurrency]=useState('USD');const [menu,setMenu]=useState(false);const [modal,setModal]=useState<'method'|'sources'|NewsItem|null>(null);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [limit,setLimit]=useState(7);const [mode,setMode]=useState('rss');
  const [channel,setChannel]=useState<FeedChannel>('all');const [xAccount,setXAccount]=useState('');
  const [linkedArticle,setLinkedArticle]=useState('');const [linkedXPost,setLinkedXPost]=useState('');const openedLink=useRef('');const scrolledXPost=useRef('');
@@ -71,8 +75,9 @@ export default function Home(){
  const [newsTime,setNewsTime]=useState(initialNews.generatedAt);const [feedSources,setFeedSources]=useState(initialNews.sources);const newsRequest=useRef(false);
  async function refreshNews(){if(newsRequest.current)return;newsRequest.current=true;try{const data=await fetchNews();setItems(data.items);setNewsTime(data.generatedAt);setFeedSources(data.sources);sources.splice(0,sources.length,...data.sources);setError('');setMode('rss');}catch{setError('Kunde inte uppdatera nyheterna. Senast hämtade flöde visas.');}finally{newsRequest.current=false;setLoading(false);}}
  async function refreshMarket(){if(marketRequest.current)return;marketRequest.current=true;setMarketLoading(true);try{const data=await fetchMarket();setMarketData(data);}catch{setMarketData(previous=>({...previous,mode:previous.fetchedAt?'stale':'unavailable'}));}finally{marketRequest.current=false;setMarketLoading(false);setClock(Date.now());}}
- function refresh(){void refreshX();void refreshNews();void refreshMarket();}
- useEffect(()=>{void refreshNews();void refreshMarket();const timer=window.setInterval(()=>{setClock(Date.now());if(!document.hidden){void refreshMarket();void refreshNews();}},30000);const visible=()=>{if(!document.hidden){setClock(Date.now());void refreshMarket();void refreshNews();}};document.addEventListener('visibilitychange',visible);return()=>{clearInterval(timer);document.removeEventListener('visibilitychange',visible);};},[]);
+  async function refreshMarketContext(){if(marketContextRequest.current)return;marketContextRequest.current=true;marketContextRequestedAt.current=Date.now();try{setMarketContext(await fetchMarketContext());}catch{/* Keep the last snapshot in state and local storage if the network is unavailable. */}finally{marketContextRequest.current=false;}}
+  function refresh(){void refreshX();void refreshNews();void refreshMarket();void refreshMarketContext();}
+  useEffect(()=>{void refreshNews();void refreshMarket();void refreshMarketContext();const timer=window.setInterval(()=>{const now=Date.now();setClock(now);if(!document.hidden){void refreshMarket();void refreshNews();if(now-marketContextRequestedAt.current>=300000)void refreshMarketContext();}},30000);const visible=()=>{if(!document.hidden){const now=Date.now();setClock(now);void refreshMarket();void refreshNews();if(now-marketContextRequestedAt.current>=300000)void refreshMarketContext();}};document.addEventListener('visibilitychange',visible);return()=>{clearInterval(timer);document.removeEventListener('visibilitychange',visible);};},[]);
  const quotePrice=(q:typeof quotes[number])=>currency==='SEK'?q.priceSek:q.price;
  const quoteChange=(q:typeof quotes[number])=>currency==='SEK'?q.changeSek24h:q.change24h;
  const marketFresh=marketData.mode==='live'&&quotes.every(q=>q.updatedAt&&clock-Date.parse(q.updatedAt)<300000);
@@ -110,6 +115,7 @@ export default function Home(){
  {missingArticle&&<div className="shared-missing" role="status"><h2>Nyheten finns inte längre i det aktuella flödet.</h2><p>Du kan fortfarande läsa den hos originalkällan.</p>{sharedSource&&<a href={sharedSource} target="_blank" rel="noopener noreferrer">Öppna originalartikeln <ExternalLink size={16}/></a>}<button onClick={closeModal}>Visa senaste nyheterna</button></div>}
  {missingXPost&&<div className="shared-missing" role="status"><h2>X-inlägget finns inte i det aktuella urvalet.</h2><p>Du kan öppna originalposten hos X.</p><a href={`https://x.com/i/status/${linkedXPost}`} target="_blank" rel="noopener noreferrer">Visa originalposten på X →</a><button onClick={reset}>Visa senaste nyheterna</button></div>}
   <div className="intro"><div><div className="section-kicker"><span className="tiny-line"/> KRYPTONYHETER. PÅ SVENSKA. UTAN BRUSET.</div><h1>{coin?<><span className="coin-title"><Coin symbol={coin}/>{names[coin]||coin}</span><span className="title-muted"> / nyheter</span></>:category==='Senaste'?<>Marknaden rör sig.<br className="mobile-break"/> <span className="title-muted">Håll dig uppdaterad.</span></>:`${category}. Utan bruset.`}</h1><p>{subtitle}</p></div><div className="edition"><span>{new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',weekday:'long',day:'numeric',month:'long'}).format(new Date()).toUpperCase()}</span><b>En tydligare bild av krypto.</b><small>Automatiskt nyhetsflöde</small></div></div>
+  <MarketPulse context={marketContext}/>
   {coin&&<div className="coin-overview"><button className="text-button" onClick={reset}><ArrowLeft size={15}/>Alla nyheter</button><div><span>{names[coin]||coin} <small>MARKNADSPRIS</small></span><b>{selectedQuote?price(quotePrice(selectedQuote),currency):'Pris ej tillgängligt'}</b>{selectedQuote&&<span className={(quoteChange(selectedQuote)??0)>=0?'up':'down'}>{change(quoteChange(selectedQuote))} · 24h</span>}</div><p>Flödet visar endast poster märkta {coin}.</p></div>}
   <div className="workspace"><section className="feed-column" id="news-feed" aria-label="Nyhetsflöde">
    <div className="feed-heading"><div><Radio size={19}/><h2>{coin?`${coin}-flödet`:'Nyhetsflödet'}</h2><span className="count">{mixed.length}</span></div><div className="feed-heading-actions"><button className={'refresh '+(loading?'spinning':'')} onClick={refresh} disabled={loading} aria-label="Uppdatera flödet"><RefreshCw size={13}/><span>{loading?'Hämtar':'Uppdatera'}</span></button></div></div>
