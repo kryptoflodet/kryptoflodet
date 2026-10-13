@@ -1,7 +1,7 @@
 {
   "model": "Xenova/nllb-200-distilled-600M",
   "revision": "261c31d1a5732c67cdd16d80e8d6088507c7ccea",
-  "engine": "nllb-200-600m-q8-v2",
+  "engine": "nllb-200-600m-q8-v3",
   "license": "CC-BY-NC-4.0",
   "files": {
     "tokenizer_config.json": "ddf411c9f790d081e72de76bb8e8b714d74e160e61bc10c9bd8f56022dcd7fd7",

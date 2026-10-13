@@ -17,7 +17,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 16
+    timeout-minutes: 25
     env:
       ONNXRUNTIME_NODE_INSTALL_CUDA: skip
     environment:
@@ -48,8 +48,20 @@ jobs:
             x-embed-v1-
       - name: Collect original X posts
         run: python scripts/fetch-x.py
+      - name: Restore source-bound X translations and local model
+        uses: actions/cache@v4
+        with:
+          path: .cache/x-translation
+          key: x-swedish-v3-${{ github.run_id }}
+          restore-keys: x-swedish-v3-
+      - name: Prepare local Swedish translator
+        run: python scripts/prepare_x_translator.py
       - name: Prepare Swedish X cards
         run: python scripts/x_language.py
+      - name: Translate every collected X post automatically
+        env:
+          X_TRANSLATION_SECONDS: '480'
+        run: python scripts/x_translate.py
       - name: Preserve permanent X links
         run: python scripts/x_archive.py
       - run: python scripts/fetch-market.py

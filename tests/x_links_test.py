@@ -62,7 +62,7 @@ class PermanentXLinkTests(unittest.TestCase):
   saved=archive_posts([], [original], '2026-10-13T08:00:00Z')
   spec=importlib.util.spec_from_file_location('x_pending_pages','scripts/build-pages.py');pages=importlib.util.module_from_spec(spec);spec.loader.exec_module(pages)
   path,html=pages.x_page(saved[0]);self.assertEqual(path,'/x/'+self.post['id']+'/')
-  self.assertIn('Svensk text förbereds',html);self.assertIn('Visa original',html);self.assertIn('href="'+self.post['url']+'"',html)
+  self.assertIn('X-inlägg · Original',html);self.assertNotIn('förbereds',html);self.assertIn('Visa original',html);self.assertIn('href="'+self.post['url']+'"',html)
  def test_withdrawn_language_is_not_revived_from_the_archive(self):
   previous=archive_posts([], [self.post], '2026-10-13T08:00:00Z')
   current={k:v for k,v in self.post.items() if k!='swedish'}

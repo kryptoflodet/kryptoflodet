@@ -41,8 +41,8 @@ def linked_x_text(text):
 def x_page(post):
  title='X · '+post['author'];path='/x/'+post['id']+'/'
  original=post['originalLanguage']=='sv';pending=not readable_post(post)
- text=post['text'] if original else 'Svensk översättning förbereds. Du kan läsa originaltexten via Visa original.' if pending else post['swedish']['text']
- label='Svensk text förbereds' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
+ text=post['text'] if original else post['text'] if pending else post['swedish']['text']
+ label='X-inlägg · Original' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
  art='bitcoin' if 'BTC' in post['coins'] else 'ethereum' if 'ETH' in post['coins'] else 'network'
  fallback_art='bitcoin-news' if art=='bitcoin' else art
  media=''

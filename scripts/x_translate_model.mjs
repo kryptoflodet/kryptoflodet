@@ -10,12 +10,12 @@ for(const item of request.items){
  try{
   // Separate sentences/paragraphs so a short post's second sentence cannot vanish
   // in an over-short whole-post translation. Reject, rather than truncate, long input.
-  const parts=item.text.split(/\n\s*\n|(?<=[.!?])\s+(?=[A-Z@])/).filter(s=>s.trim());
+  const parts=item.text.split(/\n+|(?<=[.!?])\s+(?=[A-Z@])/).filter(s=>s.trim());
   const translated=[];
   for(const part of parts){
    const encoded=await model.tokenizer(part,{truncation:false});
    if(encoded.input_ids.dims[1]>320)throw new Error('Input too long');
-   const result=await model(part,{src_lang:'eng_Latn',tgt_lang:'swe_Latn',max_new_tokens:256,num_beams:2});
+   const result=await model(part,{src_lang:({en:'eng_Latn',de:'deu_Latn',fr:'fra_Latn',es:'spa_Latn',it:'ita_Latn',pt:'por_Latn',no:'nob_Latn',da:'dan_Latn',fi:'fin_Latn'}[item.language]||'eng_Latn'),tgt_lang:'swe_Latn',max_new_tokens:256,num_beams:2});
    if(!result[0]?.translation_text)throw new Error('Empty translation');
    translated.push(result[0].translation_text);
   }

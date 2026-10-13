@@ -1,10 +1,35 @@
 import unittest,sys,tempfile,pathlib
 sys.path.insert(0,'scripts')
-from x_translate import amounts,valid_translation,input_text,cache_key,ordered_candidates,load_history
+from unittest.mock import patch
+from x_translate import translate_posts,ENGINE,normalize_translation,amounts,valid_translation,input_text,cache_key,ordered_candidates,load_history
 from importlib.machinery import SourceFileLoader
 fx=SourceFileLoader('fetch_x_translation_tests','scripts/fetch-x.py').load_module()
 
 class TranslationTests(unittest.TestCase):
+ def test_automatic_model_output_is_published_and_cached_without_review(self):
+  import json
+  from types import SimpleNamespace
+  p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
+  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.'}]))
+  with patch('x_translate.subprocess.run',return_value=result) as run:
+   counts=translate_posts([p],memo);self.assertEqual(counts['local'],1);self.assertEqual(counts['pending'],0);self.assertEqual(p['swedish']['engine'],ENGINE)
+  p.pop('swedish')
+  with patch('x_translate.subprocess.run') as run:
+   counts=translate_posts([p],memo);self.assertEqual(counts['cached'],1);run.assert_not_called()
+ def test_model_failure_uses_free_translation_and_retries_on_next_refresh(self):
+  p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
+  with patch('x_translate.subprocess.run',side_effect=RuntimeError),patch('x_translate.free_fallback',return_value='Bitcoin skulle kunna stiga.'):
+   counts=translate_posts([p],memo);self.assertEqual(counts['freeFallback'],1);self.assertEqual(p['swedish']['engine'],'mymemory-free-v2')
+  p.pop('swedish');p['text']='Bitcoin could not rise.'
+  with patch('x_translate.subprocess.run',side_effect=RuntimeError),patch('x_translate.free_fallback',return_value=None):
+   counts=translate_posts([p],memo);self.assertEqual(counts['pending'],1);self.assertNotIn('swedish',p);self.assertNotIn('rejectedUntil',str(memo))
+ def test_financial_terms_and_numeric_format_are_normalized(self):
+  self.assertEqual(normalize_translation('Bitcoin rises to $82,000.', 'Bitcoin stiger till $82,000.'),'Bitcoin stiger till $82 000.')
+  self.assertEqual(normalize_translation('Bitcoin is bullish.', 'Bitcoin är bullish.'),'Bitcoin är positiv till marknaden.')
+ def test_old_profile_ids_cannot_block_recent_discovery(self):
+  import datetime as dt
+  now=dt.datetime.now(dt.timezone.utc);pid=str((int(now.timestamp()*1000)-1288834974657)<<22)
+  self.assertEqual(fx.recent_post_links([['saylor','1234567890123456789'],['saylor',pid]],now),[['saylor',pid]])
  def test_asset_quantity_cannot_turn_into_money(self):
   source=input_text('The government could keep 61,000 seized $BTC worth over $5 billion.')
   self.assertNotIn('$BTC',source)

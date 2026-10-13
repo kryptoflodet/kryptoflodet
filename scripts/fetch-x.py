@@ -159,6 +159,16 @@ def public_profile_post_ids(payload,handle):
  for pattern in patterns:ids.extend(re.findall(pattern,html.unescape(payload),re.I))
  return list(dict.fromkeys(ids))[:8]
 
+def recent_post_links(links,now):
+ """Discard old pinned/profile IDs before they suppress the fallback route."""
+ selected=[]
+ for handle,pid in links:
+  if not re.fullmatch(r'\d{15,22}',str(pid)):continue
+  milliseconds=(int(pid)>>22)+1288834974657
+  age=now.timestamp()-milliseconds/1000
+  if -600<=age<=14*86400:selected.append([handle,str(pid)])
+ return selected
+
 def main():
  now=dt.datetime.now(UTC);stamp=now.isoformat().replace('+00:00','Z');accounts=load(ROOT/'scripts/x-sources.json',[]);old=load(TARGET,{'posts':[],'sources':[],'discovery':{}})
  def fetch(account):
@@ -213,13 +223,15 @@ def main():
   x_url='x-public-profile:'+account['handle'].lower();x_cached=discovery.get(x_url,{})
   x_checked=timestamp(x_cached.get('checkedAt'))
   if x_checked and (now-x_checked).total_seconds()<900 and not x_cached.get('error'):
-   return x_cached.get('links',[])
+   fresh=recent_post_links(x_cached.get('links',[]),now)
+   if fresh:return fresh
   try:
    found=[[account['handle'],pid] for pid in public_profile_post_ids(get('https://x.com/'+account['handle']),account['handle'])]
    discovery[x_url]={'checkedAt':stamp,'links':found,'method':'x-public-profile'}
    status['attempts'].append({'method':'x-public-profile-reference','result':'ok','candidateIds':len(found)})
    print(f"{account['id']}: x-public-profile-reference found {len(found)} candidate IDs",flush=True)
-   if found:return found
+   fresh=recent_post_links(found,now)
+   if fresh:return fresh
   except Exception as e:
    code=e.code if isinstance(e,urllib.error.HTTPError) else None
    discovery[x_url]={'checkedAt':stamp,'links':x_cached.get('links',[]),'method':'x-public-profile','httpStatus':code,'error':type(e).__name__}
@@ -262,7 +274,7 @@ def main():
    until=timestamp(prior.get('retryAfterAt'))
    if until and until>now:
     status['attempts'].append({'method':'individual-post','id':pid,'result':'cooldown','retryAfterAt':prior['retryAfterAt']});continue
-   if attempts>=2:break
+   if attempts>=6:break
    attempts+=1
    try:
     t=json.loads(get('https://cdn.syndication.twimg.com/tweet-result?id='+pid+'&lang=sv&token=0'))

@@ -1,8 +1,7 @@
 """Keep permanent, readable X snapshots so shared links outlive the rolling feed."""
 import copy,datetime as dt,json,pathlib,re
-from x_language import source_hash
+from x_language import source_hash,TRUSTED_SWEDISH_ENGINES
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-TRUSTED_SWEDISH_ENGINES={'reviewed','x-sv-rules-v1'}
 
 def archivable_post(post):
  if not isinstance(post,dict):return False

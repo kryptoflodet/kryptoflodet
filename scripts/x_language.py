@@ -1,11 +1,10 @@
-"""Fail-closed Swedish presentation of X posts. No API or model inference costs.
-Reuse the existing reviewed-text store, keyed by exact original text + source URL.
-Automatic rules cover fully matched, unambiguous English sentences; never guess.
-Unsupported text remains in the review queue and cannot appear as English-first news.
+"""Apply source-bound Swedish originals, reviews, rules and current translation cache.
+The next workflow step automatically translates the remaining originals.
 """
 import hashlib,json,pathlib,re,datetime as dt
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 VERSION='x-sv-rules-v1'
+TRUSTED_SWEDISH_ENGINES={'reviewed',VERSION,'nllb-200-600m-q8-v3','mymemory-free-v2'}
 ASSET=r'(?:Bitcoin|Ethereum|Solana|SUI|XRP|BTC|ETH|SOL)'
 # English numeric syntax only. Formatting must never change numeric value or unit.
 AMOUNT=r'(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)(?:[kKmMbB]| million| billion)?'
@@ -67,13 +66,15 @@ def apply_language(posts,reviews):
  for post in posts:
   # Cached text must be revalidated on every run. Never reuse an old translation
   # after an X edit or while its review has been withdrawn.
-  post.pop('swedish',None);post.pop('swedishSummary',None)
+  cached=post.pop('swedish',None);post.pop('swedishSummary',None)
   text=post.get('text','');digest=source_hash(text)
   if post.get('originalLanguage')=='sv':
    post['swedish']={'text':text,'method':'original','sourceHash':digest,'engine':'original'};counts['original']+=1;continue
   review=reviews.get(post['id'],{})
   if review.get('sourceUrl')==post.get('url') and review.get('textSha256')==digest and isinstance(review.get('text'),str) and review['text'] and review.get('method') in ('translation','summary'):
    post['swedish']={'text':review['text'],'method':review['method'],'sourceHash':digest,'engine':'reviewed'};counts['reviewed']+=1;continue
+  if isinstance(cached,dict) and cached.get('sourceHash')==digest and cached.get('engine') in {'nllb-200-600m-q8-v3','mymemory-free-v2'} and isinstance(cached.get('text'),str) and 0<len(cached['text'])<=6000:
+   post['swedish']=cached;counts['automatic']+=1;continue
   auto=automatic(text) if post.get('originalLanguage')=='en' else None
   if auto:
    post['swedish']={'text':auto[0],'method':auto[1],'sourceHash':digest,'engine':VERSION};counts['automatic']+=1

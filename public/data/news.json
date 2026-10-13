@@ -1955,11 +1955,11 @@
       "url": "https://x.com/WatcherGuru",
       "trust": 0,
       "enabled": true,
-      "connection": "limited",
+      "connection": "connected",
       "independenceGroup": "watcher-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
-      "count": 15
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
+      "count": 16
     },
     {
       "id": "rover-x",
@@ -1969,10 +1969,10 @@
       "url": "https://x.com/cryptorover",
       "trust": 0,
       "enabled": true,
-      "connection": "limited",
+      "connection": "connected",
       "independenceGroup": "rover-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
     {
@@ -1983,10 +1983,10 @@
       "url": "https://x.com/TheMoonShow",
       "trust": 0,
       "enabled": true,
-      "connection": "limited",
+      "connection": "connected",
       "independenceGroup": "moon-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
     {
@@ -1999,8 +1999,8 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "saylor-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "count": 4
     },
     {
@@ -2011,10 +2011,10 @@
       "url": "https://x.com/BitcoinArchive",
       "trust": 0,
       "enabled": true,
-      "connection": "limited",
+      "connection": "connected",
       "independenceGroup": "bitcoin-archive-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
     {
@@ -2027,9 +2027,9 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "mmcrypto-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
-      "count": 4
+      "count": 5
     },
     {
       "id": "kid-x",
@@ -2041,8 +2041,8 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "kid-x",
-      "checkedAt": "2026-10-13T20:02:57.658877Z",
-      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "checkedAt": "2026-10-13T20:16:05.482053Z",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "count": 3
     }
   ],

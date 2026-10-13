@@ -27,6 +27,7 @@ try{
  const unreviewed={...post,swedish:{text:'felaktigmaskintext',method:'translation',engine:'nllb-200-600m-q8-v2',sourceHash:'hash'}};
  assert.equal(swedishText(unreviewed),null,'Unreviewed model output is not presented as Swedish');assert.equal(readableX(unreviewed),false);
  assert.equal(mergeFeed([], [unreviewed],{q:'felaktigmaskintext'},false,[],now).length,0,'Search excludes unreviewed machine text');
+ const automatic={...unreviewed,swedish:{...unreviewed.swedish,text:'Solana skulle kunna stiga.',engine:'nllb-200-600m-q8-v3'}};assert.equal(swedishText(automatic),automatic.swedish.text);assert.equal(readableX(automatic),true);
  assert.equal(mergeFeed([], [unreviewed],{},false,[],now).length,1,'The original X post remains in the feed');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');

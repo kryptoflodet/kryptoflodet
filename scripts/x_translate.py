@@ -1,12 +1,7 @@
-"""Legacy translation helpers. Automatic model output is disabled for publication.
-
-The active workflow uses only source-bound reviewed text and exact Swedish rules
-through x_language.py. This module remains to support regression tests for the
-old validators; its entry point is intentionally inert.
-"""
+"""Translate X originals automatically on the runner, without paid APIs."""
 import collections,datetime as dt,decimal,hashlib,json,os,pathlib,re,subprocess,time,urllib.request,urllib.parse,urllib.error
 from x_language import source_hash
-from prepare_x_translator import MODEL,MANIFEST,checksum
+from prepare_x_translator import MODEL,MANIFEST
 ROOT=pathlib.Path(__file__).resolve().parents[1];ENGINE=MANIFEST['engine']
 CACHE=ROOT/'.cache/x-translation/history.json'
 
@@ -23,9 +18,9 @@ def input_text(text):
 
 def amounts(text,swedish=False):
  values=[]
- for m in re.finditer(r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:billion|million|thousand|miljarder|miljoner|tusen|[kKmMbB])\b)?',text,re.I):
-  token=m[0];unit=re.search(r'(billion|million|thousand|miljarder|miljoner|tusen|[kmb])$',token,re.I)
-  scale={'billion':10**9,'miljarder':10**9,'b':10**9,'million':10**6,'miljoner':10**6,'m':10**6,'thousand':1000,'tusen':1000,'k':1000}.get(unit[1].lower(),1) if unit else 1
+ for m in re.finditer(r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kKmMbB])\b)?',text,re.I):
+  token=m[0];unit=re.search(r'(trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kmb])$',token,re.I)
+  scale={'trillion':10**12,'biljoner':10**12,'biljon':10**12,'miljard':10**9,'miljon':10**6,'billion':10**9,'miljarder':10**9,'b':10**9,'million':10**6,'miljoner':10**6,'m':10**6,'thousand':1000,'tusen':1000,'k':1000}.get(unit[1].lower(),1) if unit else 1
   number=token[:unit.start()] if unit else token
   number=re.sub(r'[’\'\u00a0\u202f ]','',number)
   if swedish:
@@ -38,7 +33,7 @@ def amounts(text,swedish=False):
 def quantity_units(text,swedish=False):
  """Keep each quoted quantity attached to its asset/currency, not just its digits."""
  units=[]
- numeric=r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:billion|million|thousand|miljarder|miljoner|tusen|[kKmMbB])\b)?'
+ numeric=r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kKmMbB])\b)?'
  for m in re.finditer(numeric,text,re.I):
   value=amounts(m[0],swedish)
   if not value:continue
@@ -53,6 +48,19 @@ def quantity_units(text,swedish=False):
   if unit:units.extend((number,unit) for number,count in value.items() for _ in range(count))
  return collections.Counter(units)
 
+def normalize_translation(source,text):
+ if not isinstance(text,str):return text
+ # Financial terms often remain English in otherwise Swedish model output.
+ glossary={r'\bbullish\b':'positiv till marknaden',r'\bbearish\b':'negativ till marknaden',r'\bbull market\b':'uppgångsmarknad',r'\bbear market\b':'nedgångsmarknad',r'\binflows?\b':'inflöden',r'\boutflows?\b':'utflöden',r'\byear[- ]over[- ]year\b':'jämfört med föregående år',r'\bår[- ]över[- ]år\b':'jämfört med föregående år',r'\btjurmarknad\w*\b':'uppgångsmarknad',r'\bbjörnmarknad\w*\b':'nedgångsmarknad',r'\bouppnådda aktier\b':'orealiserade aktievinster'}
+ for pattern,replacement in glossary.items():text=re.sub(pattern,replacement,text,flags=re.I)
+ # Normalize English-formatted figures copied verbatim by the model.
+ from x_language import amount_sv
+ pattern=r'(?<![\w])(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)(?:[kKmMbB]| million| billion)?'
+ for match in sorted(re.finditer(pattern,source),key=lambda m:len(m[0]),reverse=True):
+  token=match[0]
+  text=re.sub(r'(?<![\w])'+re.escape(token)+r'(?![\w]|[.,]\d)',lambda m:amount_sv(token),text)
+ return text.strip()
+
 def valid_translation(source,text):
  if not isinstance(text,str) or not 1<=len(text)<=6000 or len(text)<len(source)*.5 or len(text)>len(source)*3:return False
  if '<' in text or 'https://' in text or source.casefold()==text.casefold():return False
@@ -63,7 +71,7 @@ def valid_translation(source,text):
  if len(re.findall(r'%|\bpercent\b',source,re.I))!=len(re.findall(r'%|\bprocent\b',text,re.I)):return False
  # These checks preserve explicit caveats; they are not independent fact checking.
  checks=[(r'\b(?:not|never|no)\b|n[’\']t\b',r'\b(?:inte|aldrig|ingen|inget|inga|utan|ej|obekräftad\w*)\b'),
-  (r'\b(?:could|might|possibly|likely|potential|unconfirmed|rumou?r)\b',r'\b(?:kan|kunde|skulle|möjlig\w*|sannolik\w*|trolig\w*|potentiell\w*|kanske|rykte\w*|obekräftad\w*)\b'),
+  (r'\b(?:could|might|possibly|likely|potential|unconfirmed|rumou?r)\b',r'\b(?:kan|kunde|skulle|möjlig\w*|sannolik\w*|trolig\w*|potentiell\w*|förmodligen|kanske|rykte\w*|obekräftad\w*)\b'),
   (r'\bif\b',r'\b(?:om|ifall|förutsatt)\b'),
   (r'\d(?:[.,]\d+)?[kmb]?\+',r'\b(?:över|mer än)\b|\+')]
  if any(re.search(a,source,re.I) and not re.search(b,text,re.I) for a,b in checks):return False
@@ -82,7 +90,7 @@ def load_history(path):
  return {'items':{}}
 
 def ordered_candidates(posts):
- pending=sorted((p for p in posts if not p.get('swedish') and p.get('originalLanguage')=='en'),key=lambda p:p['publishedAt'],reverse=True)
+ pending=sorted((p for p in posts if not p.get('swedish') and p.get('originalLanguage')!='sv'),key=lambda p:p['publishedAt'],reverse=True)
  first=[];rest=[];seen=set()
  for post in pending:
   if post['handle'] not in seen:first.append(post);seen.add(post['handle'])
@@ -105,42 +113,45 @@ def free_fallback(text,memo):
   memo['retryAfterAt']=time.time()+1800
   print('X free translation fallback:',type(error).__name__,getattr(error,'code',None),flush=True);return None
 
-def main():
- print('Automatic X translation is disabled; run scripts/x_language.py for reviewed Swedish text.',flush=True)
- return
- target=ROOT/'public/data/x.json';data=json.loads(target.read_text());memo=load_history(CACHE);entries=memo.setdefault('items',{})
- counts={'cached':0,'local':0,'freeFallback':0,'pending':0}
- pending=[]
- for post in ordered_candidates(data['posts']):
-  source=input_text(post['text']);key=cache_key(post);cached=entries.get(key) or entries.get(cache_key(post,'nllb-200-600m-q8-v1'),{})
-  if cached.get('sourceUrl')==post['url'] and cached.get('sourceHash')==source_hash(post['text']) and valid_translation(source,cached.get('text')):
+def translate_posts(posts, memo):
+ entries=memo.setdefault('items',{});pending=[];counts={'cached':0,'local':0,'freeFallback':0,'pending':0}
+ for post in ordered_candidates(posts):
+  cached=entries.get(cache_key(post),{})
+  if cached.get('sourceUrl')==post['url'] and cached.get('sourceHash')==source_hash(post['text']) and valid_translation(input_text(post['text']),cached.get('text')):
    post['swedish']={k:cached[k] for k in ('text','method','sourceHash','engine')};counts['cached']+=1
-   entries[key]=cached
-  elif not cached.get('rejectedUntil',0)>time.time():pending.append(post)
- selected=pending[:int(os.environ.get('X_TRANSLATION_MAX_ITEMS','24'))];seconds=int(os.environ.get('X_TRANSLATION_SECONDS','120'))
+  else:pending.append(post)
  outputs={}
- ready=all((MODEL/name).exists() and checksum(MODEL/name)==expected for name,expected in MANIFEST['files'].items())
- if selected and ready:
-  request={'model':str(MODEL),'seconds':seconds,'items':[{'id':p['id'],'text':input_text(p['text'])} for p in selected]}
+ if pending:
+  request={'model':str(MODEL),'seconds':int(os.environ.get('X_TRANSLATION_SECONDS','480')),'items':[{'id':p['id'],'text':input_text(p['text']),'language':p.get('originalLanguage','en')} for p in pending]}
   try:
-   result=subprocess.run(['node',str(ROOT/'scripts/x_translate_model.mjs')],input=json.dumps(request),text=True,capture_output=True,timeout=seconds+40,check=True)
+   result=subprocess.run(['node',str(ROOT/'scripts/x_translate_model.mjs')],input=json.dumps(request),text=True,capture_output=True,timeout=request['seconds']+90,check=True)
    outputs={p['id']:p.get('text') for p in json.loads(result.stdout)}
   except Exception as error:print('X local translation unavailable:',type(error).__name__,flush=True)
- for post in selected:
-  source=input_text(post['text']);text=outputs.get(post['id']);engine=ENGINE
-  prior_chars=memo.get('quotaChars',0)
-  if not valid_translation(source,text):text=free_fallback(source,memo);engine='mymemory-free-v1'
-  key=cache_key(post)
+ for post in pending:
+  source=input_text(post['text']);text=normalize_translation(source,outputs.get(post['id']));engine=ENGINE
+  if not valid_translation(source,text):text=normalize_translation(source,free_fallback(source,memo));engine='mymemory-free-v2'
   if valid_translation(source,text):
    post['swedish']={'text':text,'method':'translation','sourceHash':source_hash(post['text']),'engine':engine}
-   entries[key]={**post['swedish'],'sourceUrl':post['url'],'checkedAt':time.time()};counts['local' if engine==ENGINE else 'freeFallback']+=1
-  elif post['id'] in outputs or memo.get('quotaChars',0)>prior_chars:entries[key]={'rejectedUntil':time.time()+86400,'sourceUrl':post['url'],'sourceHash':source_hash(post['text']),'checkedAt':time.time()}
- counts['pending']=sum(not p.get('swedish') for p in data['posts']);data.setdefault('language',{})['machine']={'engine':ENGINE,**counts};data['language']['pending']=counts['pending']
- tmp=target.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(target)
- memo['items']={k:v for k,v in entries.items() if v.get('checkedAt',0)>time.time()-30*86400};CACHE.parent.mkdir(parents=True,exist_ok=True);tmp_cache=CACHE.with_suffix('.tmp');tmp_cache.write_text(json.dumps(memo,ensure_ascii=False)+'\n');tmp_cache.replace(CACHE)
- queue=ROOT/'state/x-language-review.json'
- if queue.exists():
-  report=json.loads(queue.read_text());waiting={p['id'] for p in data['posts'] if not p.get('swedish')};report['items']=[p for p in report['items'] if p['id'] in waiting];report['counts']=data['language'];queue.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+   entries[cache_key(post)]={**post['swedish'],'sourceUrl':post['url'],'checkedAt':time.time()};counts['local' if engine==ENGINE else 'freeFallback']+=1
+ counts['pending']=sum(not p.get('swedish') for p in posts)
+ return counts
+
+def main():
+ target=ROOT/'public/data/x.json';data=json.loads(target.read_text());memo=load_history(CACHE)
+ # Include permanent pages in the same source-bound cache; deduplicate originals.
+ archive=ROOT/'public/data/x-archive.json';saved=json.loads(archive.read_text()) if archive.exists() else {'posts':[]}
+ from x_language import apply_language
+ reviews=json.loads((ROOT/'scripts/x-summaries.json').read_text())
+ apply_language(saved['posts'],reviews)
+ posts={p['id']:p for p in saved['posts']};posts.update({p['id']:p for p in data['posts']})
+ counts=translate_posts(list(posts.values()),memo)
+ data['posts']=[posts[p['id']] for p in data['posts']]
+ saved['posts']=[posts[p['id']] for p in saved['posts']]
+ data.setdefault('language',{})['machine']={'engine':ENGINE,**counts};data['language']['pending']=sum(not p.get('swedish') for p in data['posts'])
+ for path,value in [(target,data),(archive,saved)]:
+  tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
+ # Cache successful translations only. Failures retry on the next refresh.
+ CACHE.parent.mkdir(parents=True,exist_ok=True);tmp_cache=CACHE.with_suffix('.tmp');tmp_cache.write_text(json.dumps(memo,ensure_ascii=False)+'\n');tmp_cache.replace(CACHE)
  print('X translation:',json.dumps(counts),flush=True)
 
 if __name__=='__main__':main()
