@@ -24,8 +24,9 @@ export default function MarketOverview({marketData,currency,marketStatus,marketT
  function handleDragEnd(){draggingRef.current=null;setDraggingSymbol(null);setDropIndicator(null);}
  function handleRowKeyDown(event:KeyboardEvent<HTMLButtonElement>,symbol:string){if(!event.altKey||(event.key!=='ArrowUp'&&event.key!=='ArrowDown'))return;const index=orderedSymbols.indexOf(symbol);const direction=event.key==='ArrowDown'?1:-1;const target=orderedSymbols[index+direction];if(!target)return;event.preventDefault();saveOrder(moveMarketSymbol(orderedSymbols,symbol,target,direction>0));}
  return <section className="side-panel market-panel" aria-labelledby="market-overview-title">
-  <div className="panel-heading"><h2 id="market-overview-title"><ChartNoAxesCombined size={17}/>Marknadsöversikt</h2><span className="subtle-label">{marketStatus} · {currency}</span></div>
-  <div className="market-controls">
+  <div className="market-heading-stack">
+   <div className="panel-heading"><h2 id="market-overview-title"><ChartNoAxesCombined size={17}/>Marknadsöversikt</h2><span className="subtle-label">{marketStatus} · {currency}</span></div>
+   <div className="market-controls">
    <details className="market-selection"><summary aria-label={`Välj vilka valutor som visas. ${selectedCount} valda`}><SlidersHorizontal size={14}/>Urval <b>{selectedCount}/{quotes.length}</b></summary>
     <div className="market-selection-panel"><div className="market-selection-title"><b>Visa i översikten</b><div><button type="button" onClick={()=>onHiddenSymbolsChange([])}>Visa alla</button><button type="button" onClick={()=>onHiddenSymbolsChange([...availableSymbols])}>Dölj alla</button></div></div>
      <label className="market-selection-search"><Search size={14}/><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Sök valuta" aria-label="Sök i topp 50"/></label>
@@ -33,6 +34,7 @@ export default function MarketOverview({marketData,currency,marketStatus,marketT
      {!chooser.length&&<p className="market-selection-empty">Ingen valuta matchar sökningen.</p>}
     </div>
    </details>
+   </div>
   </div>
   <div className="market-table-heading"><span>TILLGÅNG · RANK</span><span>PRIS · 24 H</span></div>
   <div className="market-table-scroll" aria-label="Valutor i marknadsöversikten">{visible.map(q=>{const isDropTarget=dropIndicator?.symbol===q.symbol;return <button className={`market-row${draggingSymbol===q.symbol?' is-dragging':''}${isDropTarget?` is-drop-${dropIndicator.after?'after':'before'}`:''}`} onClick={()=>{if(ignoreClick.current){ignoreClick.current=false;return;}onCoin(q.symbol);}} onKeyDown={event=>handleRowKeyDown(event,q.symbol)} onDragStart={event=>handleDragStart(event,q.symbol)} onDragOver={event=>handleDragOver(event,q.symbol)} onDrop={event=>handleDrop(event,q.symbol)} onDragEnd={handleDragEnd} draggable aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown" title="Dra för att ändra ordning" key={q.id} aria-label={`Visa diagram för ${q.name}. Dra för att ändra ordning; Alt+upp eller Alt+ned för att flytta.`}><span className="market-rank">{q.marketCapRank?`#${q.marketCapRank}`:'—'}</span><CoinMark quote={q}/><span className="market-name"><b>{q.name}</b><small>{q.symbol}</small></span><span className="market-values"><b>{formatPrice(priceValue(q),currency)}</b><small className={(priceChange(q)??0)>=0?'up':'down'}>{formatChange(priceChange(q))}</small></span></button>;})}

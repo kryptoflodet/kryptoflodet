@@ -257,5 +257,6 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 @media(max-width:380px){.brand-copy small{display:none}.market-pulse .mood-labels,.market-pulse .mood-labels span{font-size:5.4px}.market-pulse .altseason-labels{font-size:5px}.market-pulse .pulse-fact{padding:8px 7px}}
 @media(prefers-reduced-motion:reduce){.pulse-live-dot{animation:none}}
 
-.market-panel .panel-heading{margin-bottom:4px}
-.market-controls{margin:0 0 8px}
+.market-heading-stack{display:flex;flex-direction:column;gap:4px;margin-bottom:8px}
+.market-heading-stack>.panel-heading{margin:0}
+.market-heading-stack>.market-controls{justify-content:flex-start;margin:0}
