@@ -4,6 +4,64 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUglJMSW0AAGiU6.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109977553565823171",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109977553565823171",
+      "publishedAt": "2026-10-13T12:00:24Z",
+      "text": "🚨 BITCOIN BEAR MARKET IS OVER!\n\nCryptoQuant founder Ki Young Ju believes BTC has entered a new phase, expecting bullish or sideways price action over the next 12–24 months! 👀 https://t.co/SToGbXsS6i",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T12:12:50.767106Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgi_1TbYAAK186.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109977456598024526",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109977456598024526",
+      "publishedAt": "2026-10-13T12:00:01Z",
+      "text": "HUGE: 🤯 🚀 $650 BILLION has been added to the crypto market since the U.S. Treasury doubled its debt buyback program.\n\nThis is no coincidence. https://t.co/Rct4G0mbdk",
+      "coins": [],
+      "categories": [
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "enormt: 650 miljarder dollar har lagt till på kryptomarknaden sedan USA\n\nSkatteverket fördubblade sitt skuldköpprogram.\n\nDet här är ingen slump.",
+        "method": "translation",
+        "sourceHash": "21957786f855e133f58136b332d10ec648cfa04174c9d977343137ac337acfb1",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T12:12:50.767106Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUgftdjXMAAouvW.jpg",
           "alt": ""
         }
