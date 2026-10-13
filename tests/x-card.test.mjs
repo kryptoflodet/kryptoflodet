@@ -33,11 +33,11 @@ try{
  assert.equal(host.querySelector('[lang="sv"]').textContent,'Bitcoin kan stiga – men det är osäkert.');assert.ok(host.textContent.includes('Svenskt original'));assert.equal(host.querySelector('[aria-expanded]'),null);
  await render({...post,swedish:{...post.swedish,method:'summary'}});assert.ok(host.textContent.includes('Sammanfattat på svenska'));
  await act(()=>host.querySelector('.x-card-image img').dispatchEvent(new window.Event('error')));
- assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Broken X image falls back to the Bitcoin logo illustration');
+ assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-news-640.webp'),'Broken X image falls back to the Bitcoin logo illustration');
  assert.equal(host.querySelector('figcaption').textContent,'Illustrationsbild');
  await render({...post,media:[],coins:['ETH'],categories:['Ethereum']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/ethereum-640.webp'));
  await render({...post,media:[{url:'https://evil.example/image.jpg',alt:'bad'}],coins:['SOL'],categories:['Altcoins']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/network-640.webp'));
- await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-640.webp'),'Bitcoin posts use the Bitcoin logo even in another category');
+ await render({...post,media:[],categories:['Reglering']});assert.ok(host.querySelector('.x-card-image img').src.endsWith('/images/bitcoin-news-640.webp'),'Bitcoin posts use the Bitcoin logo even in another category');
  await render({...post,swedish:undefined});assert.ok(host.textContent.includes('Svensk översättning förbereds'),'An unavailable translation never hides the real post');assert.equal(host.querySelector('blockquote'),null,'Original stays collapsed behind Swedish explanation');await act(()=>host.querySelector('[aria-expanded]').click());assert.equal(host.querySelector('blockquote').textContent,post.text);
  await render({...post,swedish:{...post.swedish,engine:'nllb-200-600m-q8-v1'}});assert.ok(host.textContent.includes('Maskinöversatt till svenska'));assert.ok(host.textContent.includes('Maskinöversättning kan innehålla fel'));
  writeFileSync(join(dir,'FeedChannels.cjs'),ts.transpileModule(readFileSync('src/components/FeedChannels.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);

@@ -57,9 +57,12 @@ class XFailureTests(unittest.TestCase):
    data=json.loads(target.read_text());self.assertEqual(len(data['posts']),1);self.assertEqual(data['posts'][0]['id'],post['id']);self.assertEqual(data['posts'][0]['categories'],[]);self.assertEqual(data['sources'][0]['connection'],'error')
 
 class LocalAssetTests(unittest.TestCase):
- def test_bitcoin_art_is_a_valid_local_webp_at_both_sizes(self):
+ def test_replacement_bitcoin_logo_and_local_webps_are_valid(self):
   root=pathlib.Path(__file__).resolve().parents[1]
+  source=(root/'public/images/bitcoin.svg').read_text()
+  self.assertIn('fill="#F7931A"',source)
+  self.assertIn('<path fill="#fff" d=',source)
   for width in (640,1280):
-   payload=(root/f'public/images/bitcoin-{width}.webp').read_bytes()
+   payload=(root/f'public/images/bitcoin-news-{width}.webp').read_bytes()
    self.assertEqual(payload[:4],b'RIFF')
    self.assertEqual(payload[8:12],b'WEBP')

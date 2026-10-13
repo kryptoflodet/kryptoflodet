@@ -15,5 +15,6 @@ assert.match(sourceHtml,/property="og:image" content="https:\/\/kryptokollen\.on
 assert.match(sourceHtml,/name="twitter:image" content="https:\/\/kryptokollen\.online\/images\/kryptokollen-social\.png"/);
 assert.match(readFileSync('scripts/build-pages.py','utf8'),/images\/kryptokollen-social\.png/);
 assert.ok(existsSync('public/images/kryptokollen-social.png'),'Branded social preview image is available to Pages build');
-for(const name of ['bitcoin','ethereum','network','institutions'])for(const width of [640,1280])assert.ok(existsSync(`dist/images/${name}-${width}.webp`));
+for(const name of ['bitcoin-news','ethereum','network','institutions'])for(const width of [640,1280])assert.ok(existsSync(`dist/images/${name}-${width}.webp`));
+assert.ok(existsSync('dist/images/bitcoin.svg'),'Bitcoin logo source is included in the Pages build');
 console.log('Pages checks passed: base path, no server fetches, assets and lockfile.');
