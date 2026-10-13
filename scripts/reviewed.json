@@ -223,5 +223,27 @@
     "status": "unconfirmed",
     "reviewedAt": "2026-10-13T00:00:00Z",
     "note": "Rubrik och sammanfattning är språkgranskade. Uppgifterna återges från källan och har inte faktagranskats oberoende."
+  },
+  "https://cryptoslate.com/bitcoins-quantum-safe-protection-gets-82-cheaper-as-researchers-race-to-secure-6-million-exposed-btc/": {
+    "title": "Kostnaden för kvantsäkert bitcoin-skydd sjunker med 82 procent",
+    "summary": "CryptoSlate rapporterar att forskare har sänkt den beräknade kostnaden för en särskild kvantsäker bitcointransaktion med 82 procent, till omkring 59 dollar, genom effektivare beräkningar på grafikkort. Beloppet är en uppskattning utifrån simulerad hårdvara, inte en kostnad som har verifierats i en fullständig transaktion.",
+    "why": "Metoden Quantum-Safe Bitcoin kan ge ett tillfälligt skydd medan bredare lösningar utvecklas. Den fungerar dock bara för vissa bitcoininnehav och förutsätter att en bitcoinutvinnare tar emot transaktionen; nätverksavgifter tillkommer.",
+    "coins": [
+      "BTC"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot källtexten. Kostnaden återges som en uppskattning; uppgifterna är inte oberoende faktagranskade."
+  },
+  "https://bitcoinmagazine.com/videos/alex-gladstein-how-the-bitcoin-ai-convergence-impacts-the-fight-for-freedom": {
+    "title": "Alex Gladstein: Så kan mötet mellan Bitcoin och AI påverka kampen för frihet",
+    "summary": "Bitcoin Magazine intervjuar HRF:s Alex Gladstein om hur mötet mellan Bitcoin och AI kan påverka kampen för frihet. Gladstein beskriver koncentrerad AI-makt hos diktaturer, regeringar och ett fåtal stora företag som en större risk än att AI skulle utplåna mänskligheten.",
+    "why": "Han lyfter AI som körs lokalt och har öppen källkod som ett sätt att ge fler människor kontroll över tekniken och värna mänskliga rättigheter. Det är hans ståndpunkt i intervjun, inte en oberoende riskanalys.",
+    "coins": [
+      "BTC"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot källtexten. Texten återger intervjupersonens uppfattning och är inte en oberoende faktagranskning."
   }
 }
