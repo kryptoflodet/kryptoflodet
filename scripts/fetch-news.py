@@ -104,7 +104,7 @@ def main():
  registry=[s for s,_ in results]
  candidates=prioritize_candidates(deduplicate([n for _,rows in results for n in rows]))
  reviews=read_json(ROOT/'scripts/reviewed.json',{})
- held={};drafts=[];accepted=[enrich(n) for n in previous.values() if readable(n) and n.get('translationStatus') in {'reviewed-sv','edited-sv'}]
+ held={};drafts=[];accepted=[enrich(n) for n in previous.values() if readable(n)]
  accepted_by_url={canonical_url(n['originalUrl']):n for n in accepted}
  # Preserve old reviewed original announcements with independently written Swedish text.
  for n in candidates+list(previous.values()):

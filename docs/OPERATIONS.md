@@ -14,7 +14,7 @@ Godkända artiklar lagras i `public/data/archive.json`. Actions sparar nya artik
 
 Originalets tid bevaras med tidszon. Samma URL normaliseras, spårningsparametrar tas bort; liknande rubriker slås inte ihop till ett påstått verifierat händelsekluster. Endast uttryckligt kryptoinnehåll tas med. Korta RSS-rubriker, reklamdominerade videobeskrivningar och aggregatorlänkar utan underlag publiceras inte.
 
-Nya artiklar från tillåtna medier och officiella utgivare kan sammanfattas automatiskt med den lokala Qwen-modellen (`EDITOR_MODE=local-validated`). Den föreslår två svenska stycken. Deterministiska kontroller granskar språk, siffror och omfattande kopiering; en andra modellpassage granskar texten mot källunderlaget. Detta är **inte oberoende faktagranskning** och kan missa fel. Om kontrollerna underkänner en kandidat publiceras den inte. Källor med kort eller otillräckligt textunderlag ligger kvar i granskningskön. Nyheter märks rapportering, uttalande, analys, prognos eller rykte. Bekräftad status ges endast åt manuellt granskade besked i `scripts/reviewed.json`. Originaltexter och källcookies publiceras inte.
+RSS-insamlingen fortsätter automatiskt, men nya svenska nyhetstexter publiceras först efter manuell språkgranskning mot originalkällan och registrering i `scripts/reviewed.json`. Övriga kandidater sparas i granskningskön. Produktionsflödet använder `EDITOR_MODE=reviewed-only`; maskinöversatta `edited-sv`-texter godkänns aldrig av publiceringsregeln. Detta minskar nyhetsmängden, men hindrar obestyrkta maskinöversättningar från att presenteras som färdig svenska. Varje publicerad nyhet är fortfarande obekräftad om inte artikelns status uttryckligen säger något annat. Granskning av språket är inte oberoende faktagranskning. Originaltexter och källcookies publiceras inte.
 
 “Viktigast just nu” visar upp till fem publicerade nyheter från senaste 48 timmarna. Urvalet är en transparent ämnesheuristik, inte en säker bedömning av marknadspåverkan. Rykten och prognoser lyfts inte där. Dagsöversikterna bygger enbart på godkänt material och kan vara begränsade; gammalt material ges inte dagens datum.
 
@@ -48,7 +48,7 @@ Testat 2026-10-12: Qwen3-1.7B Q8 svarade engelska eller hoppade över användbar
 
 GitHub Models kontrollerades som möjligt gratisalternativ men har enligt https://docs.github.com/en/github-models lagts ned 30 juli 2026. Ingen integration med denna avvecklade tjänst har byggts. Inga betalda alternativ aktiverades.
 
-Nästa förbättring av språkautomationen behöver en kostnadsfri lösning som klarar en separat svensk utvärderingsmängd och faktagranskning. Behåll reviewed-only tills det finns sådan evidens. Ändra inte bara en flagga för att få ett större flöde. Kör `pip install -r scripts/editor-requirements.txt` och `EDITOR_MODE=draft python scripts/fetch-news.py` för experiment; produktionskörningen installerar inte modellen och påverkas inte av modellserverns tillgänglighet.
+Nästa förbättring av språkautomationen behöver en kostnadsfri lösning som klarar en separat svensk utvärderingsmängd och faktagranskning. Behåll reviewed-only tills sådan evidens finns. Ändra inte produktionsläget för att få ett större flöde. Produktionskörningen installerar eller startar inte språkmodellen; lokala modellexperiment får inte godkänna text för publicering.
 
 Kön med källänkar, originalrubriker och publiceringstid sparas som Actions-artifact i tre dagar. Fulla källtexter finns inte i kön. Den hjälper nästa redaktionella genomgång utan att otillräckliga artiklar visas för läsaren. Avancerad automatisk sammanhängande dagsanalys och oberoende flerkällsverifiering är ännu inte implementerade; dagsöversikten är ett deterministiskt urval av granskade artiklar.
 
@@ -81,7 +81,7 @@ Automatiken är avsiktligt begränsad: endast hela, entydiga formuleringar som m
 
 ## Svenska nyhetstexter
 
-Nyhetsrubriker och sammanfattningar passerar den lokala redaktörens faktakontroller och en separat språkbedömning. `scripts/swedish_quality.py` stoppar dessutom kända felöversättningar och svengelska facktermer innan text blir synlig. Ett nytt fel läggs i granskningskön; originalkälla, RSS-insamling och övriga nyhetsfunktioner behålls. Manuellt språkgranskade texter ligger i `scripts/reviewed.json`. Granskning av språket innebär inte i sig oberoende faktabekräftelse, vilket visas i artikelns källnotis.
+Endast manuellt språkgranskade nyhetstexter från `scripts/reviewed.json` kan publiceras. `scripts/swedish_quality.py` stoppar dessutom vissa kända felöversättningar som en extra spärr. Nya RSS-kandidater läggs i granskningskön tills rubrik och sammanfattning har kontrollerats mot originalet. Marknadsdata, X-hämtning, källinsamling och övriga nyhetsfunktioner fortsätter automatiskt. Språkgranskning innebär inte oberoende faktabekräftelse; detta framgår av artikelns källnotis.
 
 
 ## Praktisk kontroll 2026-10-13: synliga X-poster

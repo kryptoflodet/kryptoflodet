@@ -33,26 +33,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci
-      - name: Restore local editor model
-        uses: actions/cache@v4
-        with:
-          path: .cache/editor/model4.gguf
-          key: kryptokollen-qwen3-4b-q4km-linux-v1
-      - name: Restore local editor history
-        uses: actions/cache@v4
-        with:
-          path: .cache/editor/edits-v2.json
-          key: kryptokollen-editor-history-${{ github.run_id }}
-          restore-keys: kryptokollen-editor-history-
-      - name: Install optional local editor
-        continue-on-error: true
-        run: pip install -r scripts/editor-requirements.txt
       - name: Collect and edit news
         env:
           RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
-          EDITOR_MODE: 'local-validated'
-          EDITOR_MAX_ITEMS: '8'
-          EDITOR_SECONDS: '300'
+          EDITOR_MODE: 'reviewed-only'
         run: python scripts/fetch-news.py
       - name: Restore recent X selection
         uses: actions/cache@v4

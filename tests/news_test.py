@@ -33,7 +33,7 @@ class PublicationTests(unittest.TestCase):
   data=json.loads(pathlib.Path('public/data/news.json').read_text())
   self.assertGreater(len(data['items']),0)
   for item in data['items']:
-   self.assertIn(item.get('translationStatus'),['edited-sv','reviewed-sv'])
+   self.assertEqual(item.get('translationStatus'),'reviewed-sv')
    self.assertFalse(item['demo'])
   app=pathlib.Path('src/App.tsx').read_text()
   self.assertNotIn('>AI-ILLUSTRATION<',app)

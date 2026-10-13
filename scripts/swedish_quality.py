@@ -1,4 +1,4 @@
-"""Fast fail-closed checks for obvious English leftovers and known bad crypto terms."""
+"""Secondary checks for known mistranslations; these do not replace human review."""
 import re
 
 _BAD_SWEDISH_PATTERNS=tuple(re.compile(pattern,re.I) for pattern in (
@@ -13,9 +13,11 @@ _BAD_SWEDISH_PATTERNS=tuple(re.compile(pattern,re.I) for pattern in (
  r'\b(?:kvantförsvar|QSB-utgifter|människans utrymme|Bitcoin-ai-konvergens|öppen källkod AI)\b',
  r'\bEvernorth:s\b',
  r'\b(?:brokerer|svag marknadsfördelning|risker av förändring i utdelning|miljarders gap)\b',
+ r'\b(?:Moskowss|minningstjänster|fortsätter sänka|pool-tjänst på november)\b',
+ r'\b(?:byta|ändra|uppdatera)\s+(?:sina\s+)?utgångspunkter\b',
 ))
 
 def is_swedish_quality(*parts):
- """Reject known mistranslations; unknown language stays in the review queue."""
+ """Reject known mistranslations as an extra check before manual approval."""
  text=' '.join(part for part in parts if isinstance(part,str))
  return bool(text.strip()) and not any(pattern.search(text) for pattern in _BAD_SWEDISH_PATTERNS)

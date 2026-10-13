@@ -7,7 +7,7 @@ from swedish_quality import is_swedish_quality
 from x_sources import sources
 class EditorialTests(unittest.TestCase):
  def item(self,**extra):
-  return dict(id='1234567890',title='Bitcoin får ett nytt börshandlat instrument',originalTitle='Bitcoin ETF approved',originalText='',originalUrl='https://example.org/a',publishedAt='2026-10-12T08:00:00Z',importedAt='2026-10-12T09:00:00Z',translationStatus='edited-sv',readerText=' '.join(['svensk']*40),contentVersion=2,sourceType='MEDIA',coins=['BTC'],**extra)
+  return dict(id='1234567890',title='Bitcoin får ett nytt börshandlat instrument',originalTitle='Bitcoin ETF approved',originalText='',originalUrl='https://example.org/a',publishedAt='2026-10-12T08:00:00Z',importedAt='2026-10-12T09:00:00Z',translationStatus='reviewed-sv',readerText=' '.join(['svensk']*40),contentVersion=2,sourceType='MEDIA',coins=['BTC'],**extra)
  def test_canonical_and_dedup(self):
   self.assertEqual(canonical_url('https://www.example.org/a/?utm_source=x#y'),'https://example.org/a')
   self.assertEqual(canonical_url('https://twitter.com/saylor/status/1'),'https://x.com/saylor/status/1')
@@ -26,8 +26,20 @@ class EditorialTests(unittest.TestCase):
   self.assertEqual(a['path'],path);self.assertTrue({'Altcoins','Institutionellt'}<=set(a['categories']));self.assertFalse({'Solana','SUI'}&set(a['categories']))
  def test_missing_body_never_readable(self):
   self.assertFalse(readable(dict(self.item(),readerText='Bara en rubrik')))
+ def test_only_manually_reviewed_swedish_is_publishable(self):
+  item=self.item();item.update(translationStatus='reviewed-sv')
+  self.assertTrue(readable(item))
+  item['translationStatus']='edited-sv'
+  self.assertFalse(readable(item))
+ def test_recently_corrected_news_translations_are_publishable(self):
+  reviews=json.loads(pathlib.Path('scripts/reviewed.json').read_text())
+  urls=['https://cryptonews.com/news/binance-pool-closure/','https://bitcoinmagazine.com/news/moscow-exchange-to-debut-bitcoin-trading','https://bitcoinmagazine.com/markets/bitcoin-slides-how-will-uptober-2026-fare']
+  for url in urls:
+   review=reviews[url];item=self.item();item['originalUrl']=url
+   item.update(title=review['title'],summary=review['summary'],readerText=review['summary']+'\n\n'+review['why'],translationStatus='reviewed-sv')
+   self.assertTrue(readable(item),url)
  def test_known_garbled_swedish_fails_closed(self):
-  for bad in ['Australia uppger ett förslag om ett lövförlopp i kryptodrivsprodukter.','Defraudning räcker inte.','Krypto-portfolio når alltid högre nivå.','Treasury-secretary hotar att sejka krypto.','Bitcoin:s kvantförsvar blir billigare genom QSB-utgifter.','AI-risk är inte människans utrymme, utan centraliserad kontroll med öppen källkod AI.','Evernorth:s Nasdaq-listning ger brokerer tillgång, men visar ett miljarders gap.']:
+  for bad in ['Australia uppger ett förslag om ett lövförlopp i kryptodrivsprodukter.','Defraudning räcker inte.','Krypto-portfolio når alltid högre nivå.','Treasury-secretary hotar att sejka krypto.','Bitcoin:s kvantförsvar blir billigare genom QSB-utgifter.','AI-risk är inte människans utrymme, utan centraliserad kontroll med öppen källkod AI.','Evernorth:s Nasdaq-listning ger brokerer tillgång, men visar ett miljarders gap.','Binance avslutar pool-tjänst på november med minningstjänster och utgångspunkter.','Binance ber användarna byta utgångspunkter för poolen.','Moskowss handel med bitcoin börjar testas.','Bitcoin fortsätter sänka — kan Uptober vinna?']:
    item=self.item();item.update(title='Nyhet på svenska',summary=bad,readerText=' '.join(['svensk text']*25))
    self.assertFalse(is_swedish_quality(item['title'],item['summary'],item['readerText']),bad)
    self.assertFalse(readable(item),bad)
@@ -78,9 +90,10 @@ class FailureIsolationTests(unittest.TestCase):
    with patch.object(m,'ROOT',root),patch.object(m,'TARGET',root/'public/data/news.json'),patch.object(m,'ARCHIVE',root/'public/data/archive.json'),patch('urllib.request.urlopen',side_effect=TimeoutError),patch.dict('os.environ',{'EDITOR_MODE':'reviewed-only','RSSHUB_BASE_URL':''}),contextlib.redirect_stdout(io.StringIO()):m.main()
    after=json.loads((root/'public/data/archive.json').read_text());health=json.loads((root/'public/data/health.json').read_text())
    self.assertEqual([n['path'] for n in before['items']],[n['path'] for n in after['items']]);self.assertEqual(health['sourcesConnected'],0);self.assertEqual(health['editorAttempts'],0)
- def test_only_local_validated_media_can_be_auto_summarized(self):
-  source=pathlib.Path('scripts/fetch-news.py').read_text()
-  self.assertIn("n.get('translationStatus') in {'reviewed-sv','edited-sv'}",source)
-  self.assertIn("os.environ.get('EDITOR_MODE','reviewed-only')!='local-validated'",source)
-  self.assertIn("n.get('sourceType') not in {'MEDIA','OFFICIELL'}",source)
-  self.assertIn("status='unconfirmed'",source)
+ def test_production_requires_manual_news_review(self):
+  workflow=pathlib.Path('.github/workflows/news-pages.yml').read_text()
+  source=pathlib.Path('scripts/editorial.py').read_text()
+  self.assertIn("EDITOR_MODE: 'reviewed-only'",workflow)
+  self.assertIn("item.get('translationStatus')=='reviewed-sv'",source)
+  self.assertNotIn('Restore local editor model',workflow)
+  self.assertIn("status='unconfirmed'",pathlib.Path('scripts/fetch-news.py').read_text())

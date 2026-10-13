@@ -256,5 +256,38 @@
     "status": "unconfirmed",
     "reviewedAt": "2026-10-13T00:00:00Z",
     "note": "Språket har granskats mot CryptoNews originaltext. Värderingar och bolagsuppgifter återges från artikeln och är inte faktagranskade oberoende."
+  },
+  "https://cryptonews.com/news/binance-pool-closure/": {
+    "title": "Binance stänger Binance Pool den 10 november",
+    "summary": "CryptoNews rapporterar att Binance avvecklar Binance Pool och flera närliggande tjänster den 10 november 2026. Anslutningarna stängs klockan 07.00 UTC; utvinnare som använder poolen behöver byta till en annan tjänst före dess.",
+    "why": "Avvecklingen gäller poolen och dess anslutningstjänster, inte själva utrustningen. Den som vill fortsätta utvinningen behöver konfigurera om sina maskiner till en annan pool.",
+    "coins": [
+      "BTC"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot CryptoNews originaltext. Tidsplanen återges från källan och är inte faktagranskad oberoende."
+  },
+  "https://bitcoinmagazine.com/news/moscow-exchange-to-debut-bitcoin-trading": {
+    "title": "Moskvabörsen testar kryptohandel inför planerad start i december",
+    "summary": "Bitcoin Magazine rapporterar att Moskvabörsen testar handel med kryptovalutor tillsammans med professionella marknadsaktörer. Börsen uppges planera att starta handeln i december, efter att Rysslands regler för digitala valutor trädde i kraft i september.",
+    "why": "Det rör sig om testning och en planerad lansering. Artikeln säger inte att tjänsten redan är öppen för allmänheten.",
+    "coins": [
+      "BTC"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot Bitcoin Magazines originaltext. Tidsplan och testning återges från källan och är inte faktagranskade oberoende."
+  },
+  "https://bitcoinmagazine.com/markets/bitcoin-slides-how-will-uptober-2026-fare": {
+    "title": "Bitcoin faller vidare – kan oktober ändå bli en stark månad?",
+    "summary": "Bitcoin Magazine skriver att bitcoinpriset föll omkring 2 procent det senaste dygnet och även var ned sett över veckan och månaden. Oktober har historiskt ofta varit en stark månad för bitcoin, men i år har kursutvecklingen hittills varit den motsatta.",
+    "why": "Historiska säsongsmönster garanterar inte framtida avkastning. De tecken på en möjlig botten som artikeln tar upp är analytikers bedömningar, inte ett besked om att nedgången har vänt.",
+    "coins": [
+      "BTC"
+    ],
+    "status": "unconfirmed",
+    "reviewedAt": "2026-10-13T00:00:00Z",
+    "note": "Språket har granskats mot Bitcoin Magazines originaltext. Kursrörelserna återges från källan; framtida utveckling är osäker."
   }
 }
