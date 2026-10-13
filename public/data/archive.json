@@ -110,6 +110,60 @@
       "path": "/nyheter/standard-chartered-tar-inom-ripple-s-rlusd-efter-765-miljoner-dollar-okning-a7c32c5afb/"
     },
     {
+      "id": "2ba45aeb96107f1227df",
+      "eventKey": "https://cryptoslate.com/eclair-merges-fixes-for-lightning-fee-losses-that-do-not-require-stolen-keys",
+      "originalTitle": "Eclair merges fixes for Lightning flaws that could burn Bitcoin in fees",
+      "originalText": "Eclair merges fixes for Lightning flaws that could burn Bitcoin in fees",
+      "originalLanguage": "en",
+      "title": "Eclair fixar Lightning-fel som kan leda till Bitcoin-förbrukning i avgifter",
+      "translation": "",
+      "summary": "CryptoSlate uppger: Eclair uppger att den har slarvigt sammanslagit fixer för fel i Lightning-nätverket som kan leda till att Bitcoin förbrukas i avgifter.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T16:20:36Z",
+      "importedAt": "2026-10-13T05:38:32.617942Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/eclair-merges-fixes-for-lightning-fee-losses-that-do-not-require-stolen-keys/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/eclair-merges-fixes-for-lightning-fee-losses-that-do-not-require-stolen-keys/",
+          "originId": "https://cryptoslate.com/eclair-merges-fixes-for-lightning-fee-losses-that-do-not-require-stolen-keys",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: Eclair uppger att den har slarvigt sammanslagit fixer för fel i Lightning-nätverket som kan leda till att Bitcoin förbrukas i avgifter.\\n\\nUppgifterna visar att de senaste finansieringarna och reparationsarbetena begränsar peer-avgifterna och verifierar bakendtransaktioner, medan den senaste listade versionen fortfarande är septemberversionen v0.14.3.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T05:38:32.617942Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "eclair-fixar-lightning-fel-som-kan-leda-till-bitcoin-forbrukning-i-avgifter-2ba45aeb96",
+      "path": "/nyheter/eclair-fixar-lightning-fel-som-kan-leda-till-bitcoin-forbrukning-i-avgifter-2ba45aeb96/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
