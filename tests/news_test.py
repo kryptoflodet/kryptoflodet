@@ -80,3 +80,12 @@ class ReaderTests(unittest.TestCase):
   self.assertIn('onClick={onDetails} aria-haspopup="dialog"',app)
   self.assertIn('aria-label="Nyhetstext"',app)
   self.assertNotIn('dangerouslySetInnerHTML',app)
+
+class LocalEditorValidationTests(unittest.TestCase):
+ def test_local_summary_does_not_need_model_generated_evidence_quotes(self):
+  from local_editor import validate,cache_key
+  source='Bitcoin climbed after spot exchange-traded funds recorded net inflows on Tuesday, CoinDesk reported. Analysts said the activity was the strongest in several weeks as market volatility eased. Investors continue to watch demand and trading volumes across major digital assets.'
+  draft={'title':'Bitcoin stiger efter ökad efterfrågan på börshandlade fonder','paragraphs':['CoinDesk rapporterar att bitcoin steg efter att börshandlade fonder fått nettoinflöden på tisdagen. Analytiker beskriver aktiviteten som den starkaste på flera veckor när marknadens svängningar minskade.','Investerare fortsätter enligt underlaget att följa efterfrågan och handelsvolymer för större digitala tillgångar. Texten pekar inte ut någon säker riktning för bitcoinpriset.']}
+  self.assertTrue(validate(draft,source,'CoinDesk'))
+  key=cache_key({'originalTitle':'Bitcoin moves','sourceText':source})
+  self.assertNotEqual(key, __import__('hashlib').sha256(('v2:Bitcoin moves\\n'+source).encode()).hexdigest())
