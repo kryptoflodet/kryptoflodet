@@ -260,3 +260,17 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 .market-heading-stack{display:flex;flex-direction:column;gap:4px;margin-bottom:8px}
 .market-heading-stack>.panel-heading{margin:0}
 .market-heading-stack>.market-controls{justify-content:flex-start;margin:0}
+
+/* Search lives in the compact header; the feed keeps its category filter. */
+.header-search{position:relative}
+.header-search-panel{position:absolute;right:0;top:calc(100% + 18px);width:min(420px,calc(100vw - 32px));padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px #0005;display:flex;flex-direction:column;gap:12px;z-index:40}
+.header-search-panel>label{font-size:13px;color:var(--text);font-weight:600}
+.header-search-panel .search-box{flex:none;height:44px}
+.header-search-panel .search-box input{font-size:14px}
+.header-search-submit{align-self:flex-end;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);padding:7px 0}
+.feed-category-row{display:flex;justify-content:flex-end}
+.ticker-wrap,.market-status-line{border:0}
+.ticker-shell .ticker-group .ticker-quote{border-left:0}
+.ticker-shell .rolling-viewport{scrollbar-width:none}
+.ticker-shell .rolling-viewport::-webkit-scrollbar{display:none}
+@media(max-width:760px){.header-search-panel{position:fixed;right:16px;top:70px}.feed-category-row .category-select select{max-width:100%}}
