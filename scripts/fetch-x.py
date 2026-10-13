@@ -2,7 +2,7 @@
 This is a limited public selection, NOT a complete chronological X API.
 Only original posts by configured account IDs are accepted. Original text is preserved.
 """
-import concurrent.futures,datetime as dt,email.utils,html,json,pathlib,re,urllib.request
+import concurrent.futures,datetime as dt,email.utils,html,json,pathlib,re,urllib.request,urllib.error
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
 from crypto_scope import crypto_only
@@ -79,7 +79,14 @@ def main():
    status.update(connection='connected' if rows else 'limited',newestAvailableAt=newest,count=len(rows),lastSuccessAt=stamp)
    if not rows:status['message']='X gav inga aktuella relevanta originalinlägg. Äldre populära inlägg visas inte som nya.'
    return status,rows
-  except Exception as e:status['message']='Inbäddningsflödet kunde inte uppdateras. Senast hämtade inlägg kan visas.';print(account['id'],type(e).__name__,flush=True);return status,[]
+  except Exception as e:
+   previous=next((s for s in old.get('sources',[]) if s.get('id')==account['id']),{})
+   status['lastSuccessAt']=previous.get('lastSuccessAt')
+   if isinstance(e,urllib.error.HTTPError):
+    status['httpStatus']=e.code
+    status['message']=f'X svarade med HTTP {e.code}. Tidigare hämtade inlägg behålls.'
+   else:status['message']='Inbäddningsflödet kunde inte uppdateras. Tidigare hämtade inlägg behålls.'
+   print(account['id'],type(e).__name__,getattr(e,'code',''),flush=True);return status,[]
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(fetch,accounts))
  posts={n['id']:n for n in old['posts'] if timestamp(n.get('publishedAt')) and 0<=(now-timestamp(n['publishedAt'])).total_seconds()<=14*86400 and any(n.get('handle')==a['handle'] for a in accounts)}
  for _,rows in results:
