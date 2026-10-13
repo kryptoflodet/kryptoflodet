@@ -4,6 +4,98 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUh1aR8bEAAr_B2.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110068050485772472",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110068050485772472",
+      "publishedAt": "2026-10-13T18:00:01Z",
+      "text": "Bitcoin at $200K might sound ambitious today.\n\nBut imagine how different the conversation will be if it gets there. 🚀\n\nAre you bullish enough to see it happening? https://t.co/xF0PEOox2C",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T18:01:43.899538Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhzdiZXsAAxGTG.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110064283677585906",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110064283677585906",
+      "publishedAt": "2026-10-13T17:45:02Z",
+      "text": "ULTRA-BULLISH BITCOIN SETUP INCOMING! 👀\n\n• Fed rate hikes\n• Global money supply expansion\n• U.S. strikes enemy in the Middle East\n\nThis all happened in Q1 and Q2 2017.\n\nBTC jumped 1,500% by year-end.\n\nDon't fade this signal!!! https://t.co/dKE72lOj4S",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T18:01:43.899538Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhxrbzbcAAY4c1.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhxvXubAAA76V_.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110064272273183085",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110064272273183085",
+      "publishedAt": "2026-10-13T17:45:00Z",
+      "text": "Institutional flow continues! 🟠\n\nWealth Enhancement Group has expanded its spot #Bitcoin ETF position by another $11 MILLION. https://t.co/60gofN7kjs",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Institutionella flöden fortsätter!\n\nWealth Enhancement Group har utvidgat sin plats #Bitcoin ETF position med ytterligare 11 miljoner dollar.",
+        "method": "translation",
+        "sourceHash": "21f5ba9ea43c058cf99d524672b1a470a3c7d4f84b4daf34629a428f2e373ed5",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T18:01:43.899538Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhl0lUaAAIHPRa.jpg",
           "alt": ""
         }
