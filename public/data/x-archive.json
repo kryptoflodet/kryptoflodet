@@ -4,6 +4,37 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhiSjSbcAAn9v_.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhiU0OaAAE4cYW.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110049172476891140",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110049172476891140",
+      "publishedAt": "2026-10-13T16:45:00Z",
+      "text": "Metaplanet plans to raise $328.5 MILLION through convertible bonds. 🚀\n\nAround $149 MILLION will be used to pay off Bitcoin-backed loans, and up to $179 MILLION will go toward buying back its own shares. https://t.co/rzzh5DHek0",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T16:45:16.125932Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhdfC6asAAbmRk.jpg",
           "alt": ""
         }
