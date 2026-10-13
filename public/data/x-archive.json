@@ -4,6 +4,78 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhSdnEboAA3Km0.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhShbjbYAApWs7.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110030300592120133",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110030300592120133",
+      "publishedAt": "2026-10-13T15:30:00Z",
+      "text": "📢 Stablecoin seems to be growing! \n\nWells Fargo CEO has said, the bank is actively looking at how it could engage with stablecoins if the U.S. regulatory path opens further. https://t.co/BAMExDbTE1",
+      "coins": [],
+      "categories": [
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Stablecoin verkar växa!\n\nWells Fargo-chef har sagt att banken aktivt tittar på hur den kan engagera sig med stabila pengar om den amerikanska regleringsvägen öppnas ytterligare.",
+        "method": "translation",
+        "sourceHash": "c1f8f2e5abb6428d04b1e15672c1f7933efa6cd3a8ed1a7f3ca8970a4642cb96",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T15:37:52.193342Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhVBmhXgAARoIq.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhVFWTXMAEb6-O.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110029994252546418",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110029994252546418",
+      "publishedAt": "2026-10-13T15:28:47Z",
+      "text": "JUST IN: Germany’s Bitcoin tax-free rule under threat.\n\n44,400 petitioned against 25% tax.\n\nCabinet decides Wednesday. https://t.co/uixFZNqmwp",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Tyskland's Bitcoin skattefrihet under hot.\n\n44 400 har anmält en ansökan om 25% skatt.\n\n- Cabinet beslutar onsdag.",
+        "method": "translation",
+        "sourceHash": "3ff3a8e0de7dd1de64634feb396fbd532e33d9c9b77f0cf8cb4f574eeb9cd73b",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T15:37:52.193342Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhAmIsaMAEY8SJ.jpg",
           "alt": ""
         }
