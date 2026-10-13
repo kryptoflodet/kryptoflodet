@@ -6031,6 +6031,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "När Bitcoin dumpar pumpa din muskel!!",
+        "method": "translation",
+        "sourceHash": "54e54eafde66c08c9873548002e8d6f8321bfac93394767d2bfde6e0da27139c",
+        "engine": "nllb-200-600m-q8-v2"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
