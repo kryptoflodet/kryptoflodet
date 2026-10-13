@@ -191,8 +191,10 @@ dialog.market-dialog{width:min(980px,calc(100vw - 32px));max-width:980px;border:
 .market-values small{font-size:10px}
 @media(max-width:760px){.market-pulse{margin:10px auto 16px;padding:11px 10px}.market-pulse .pulse-grid{gap:8px}.market-pulse .sentiment-card,.market-pulse .altseason-card{padding:9px 10px 8px}.market-pulse .fear-reading>b,.market-pulse .altseason-score>b{font-size:22px}.market-pulse .mood-labels span,.market-pulse .altseason-labels{font-size:6.5px}.market-row{gap:5px}.market-rank{width:22px;font-size:9px}.market-row .coin{height:30px;width:30px;font-size:20px}.market-name{max-width:126px}.market-name b{font-size:12px}.market-name small{font-size:10px}.market-values{min-width:87px}.market-values b{font-size:10px}.market-values small{font-size:9px}}
 
-.market-selection>summary{font-size:11px;min-height:35px;padding:7px 10px}
-.market-selection>summary b{font-size:10px}
+.market-controls{justify-content:flex-start;margin:5px 0 12px}
+.market-selection>summary{gap:4px;font-size:9px;min-height:27px;padding:4px 7px}
+.market-selection>summary svg{width:12px;height:12px}
+.market-selection>summary b{font-size:8px}
 .market-row{cursor:grab;user-select:none;touch-action:pan-y}
 .market-row:active{cursor:grabbing}
 .market-row.is-dragging{opacity:.42}
