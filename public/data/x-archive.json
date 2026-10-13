@@ -4,6 +4,102 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110006956907794432/img/_WE3ZiKMTIRRL1u7.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110008701650399534",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110008701650399534",
+      "publishedAt": "2026-10-13T14:04:11Z",
+      "text": "Could Bitcoin hit $90,000 THIS WEEK? 👀🚀 https://t.co/pEnolae5Q6",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kan Bitcoin nå 90 000 dollar i veckan?",
+        "method": "translation",
+        "sourceHash": "6e326c0162267b3732daa53160dbc6778e7d99ec46ae6fae838ee01c2fea28c1",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:05:11.726994Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg-UJGXYAEThAK.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg-UvdXkAAFOze.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110005027947655448",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110005027947655448",
+      "publishedAt": "2026-10-13T13:49:35Z",
+      "text": "JUST IN: Blockchain․com files for U.S. CFTC licenses to offer Bitcoin & crypto derivatives. https://t.co/h5qgURre26",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Blockchain.com filer för US cftc licenser att erbjuda Bitcoin & kryptoderivat.",
+        "method": "translation",
+        "sourceHash": "61106ec45d0330409d05cf5560c282d60367a9269b319223895f53836402b098",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:05:11.726994Z"
+    },
+    {
+      "media": [],
+      "id": "2110003510989488586",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110003510989488586",
+      "publishedAt": "2026-10-13T13:43:33Z",
+      "text": "MOST PEOPLE ARE SLEEPING ON ALTCOINS.\n\nThe final accumulation phase could be almost over.\n\nTHEY WON'T STAY CHEAP FOREVER. 👀",
+      "coins": [],
+      "categories": [
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "De flesta sover på altcoins.\n\nDen slutliga ackumulationen kan vara över.\n\nDe kommer inte att vara billiga för evigt.",
+        "method": "translation",
+        "sourceHash": "65b9835424e4d8947d97c650aff177fd27550fb729a7647be7712e682fc1497d",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:05:11.726994Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/amplify_video_thumb/2109975385085812736/img/yoNrHbSfXh-HEOFn.jpg",
           "alt": ""
         }
