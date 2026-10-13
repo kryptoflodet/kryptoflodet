@@ -4,6 +4,110 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUg1BruW4AAPw-B.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg1Cb6XsAAVj1t.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109995214362571243",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109995214362571243",
+      "publishedAt": "2026-10-13T13:10:35Z",
+      "text": "JUST IN: Jack Dorsey's Square will soon pay credit card holders 3% back in Bitcoin. https://t.co/b5xdKq7emY",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Jack Dorsey's Square kommer snart att betala kreditkortsinnehavare 3% tillbaka i Bitcoin.",
+        "method": "translation",
+        "sourceHash": "3e6d9f282e8f8c503877c07e87f56b0086a36ded7f5564cbd4c1b42387eacc4d",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:11:19.547194Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgxrwyXUAAYYV3.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109991617553629595",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109991617553629595",
+      "publishedAt": "2026-10-13T12:56:18Z",
+      "text": "Bitcoin's ETF cost basis is turning into support! 🚀\n\nAfter spending much of the year below it, bitcoin:native has now defended the $81,500 level twice.\n\nA potential shift in market structure! https://t.co/bBTmr4RNZq",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoins ETF-kostnadsbas förvandlas till support! \n\nEfter att ha tillbringat en stor del av året nedanför har bitcoin:native nu försvarat nivån på 81 500 $ två gånger.\n\nEn potentiell förändring i marknadsstrukturen!",
+        "method": "translation",
+        "sourceHash": "2410641b4bebfeeb18e911709d0dcfa34c1183a5b59ad2fb87d95cb2027c702e",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T13:11:19.547194Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgjMCmbAAEIZlb.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109990033046622417",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109990033046622417",
+      "publishedAt": "2026-10-13T12:50:00Z",
+      "text": "If Bitcoin breaks this bull flag to the upside.\n\n$90,000 IS NEXT! https://t.co/MkYB3fds8Z",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Om Bitcoin bryter den här tjurflaggan uppåt.\n\n-Några 90 000 dollar är nästa!",
+        "method": "translation",
+        "sourceHash": "6c049a50d5838202f20d1b68678992df0ef11dda96b923aef686f03336661ee2",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T13:11:19.547194Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUgvFCjXkAAKWRs.png",
           "alt": ""
         },
