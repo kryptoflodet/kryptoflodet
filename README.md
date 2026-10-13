@@ -1,6 +1,6 @@
 # Kryptokollen
 
-Svenska kryptonyheter och marknadsdata på https://kryptoflodet.github.io/.
+Svenska kryptonyheter och marknadsdata på https://kryptokollen.online
 
 ## Nyhetsflöde
 
