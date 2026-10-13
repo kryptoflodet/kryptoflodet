@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-13T14:29:37.629230Z",
+  "generatedAt": "2026-10-13T14:48:35.713508Z",
   "posts": [
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf8_XEAAZSxH.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf85WMAAb_6S.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110016205658710194",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110016205658710194",
+      "publishedAt": "2026-10-13T14:34:00Z",
+      "text": "HUGE: 🇺🇸 $2.3 trillion Wells Fargo CEO says the bank is already preparing to work with stablecoins in the US.\n\nBanks are coming for crypto! 🚀 https://t.co/479lh8f8Pv",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "enormt:  $ 2,3 biljoner Wells Fargo VD säger att banken redan förbereder sig för att arbeta med stablecoins i USA.\n\nBanker kommer för krypto!",
+        "method": "translation",
+        "sourceHash": "da539dde031c1a2fae9e02c75c3ccd5d50112b7ffb898d3fb880a103f7763213",
+        "engine": "mymemory-free-v1"
+      }
+    },
     {
       "media": [],
       "id": "2110012906574365018",
@@ -2984,42 +3018,6 @@
       }
     },
     {
-      "media": [
-        {
-          "url": "https://pbs.twimg.com/media/HUbmKjVX0AAYW_P.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://pbs.twimg.com/media/HUbmKjYWQAAdtkH.jpg",
-          "alt": ""
-        }
-      ],
-      "id": "2109626821591683171",
-      "handle": "cryptorover",
-      "author": "Crypto Rover",
-      "sourceId": "rover-x",
-      "url": "https://x.com/cryptorover/status/2109626821591683171",
-      "publishedAt": "2026-10-12T12:46:43Z",
-      "text": "BREAKING: $450 billion banking giant Standard Chartered unveils custody services for Ripple’s $RLUSD stablecoin on the $XRP Ledger.\n\nHUGE! 🚀 https://t.co/E9gOrbYgIx",
-      "coins": [
-        "XRP"
-      ],
-      "categories": [
-        "Altcoins"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Standard Chartered, en bankjätte på 450 miljarder dollar, presenterar förvaringstjänster för Ripples stablecoin RLUSD på XRP Ledger. Stort!",
-        "method": "translation",
-        "sourceHash": "24fbf635b4d7bfc0b5b595648b9b96166559581885138319171a4e30ebf65b31",
-        "engine": "reviewed"
-      }
-    },
-    {
       "media": [],
       "id": "2109625613862719965",
       "handle": "WatcherGuru",
@@ -3500,10 +3498,10 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastSuccessAt": "2026-10-13T14:48:35.713508Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3513,7 +3511,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-13T14:20:53+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 15,
@@ -3524,10 +3522,10 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastSuccessAt": "2026-10-13T14:48:35.713508Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3536,22 +3534,22 @@
           "eligiblePosts": 16
         }
       ],
-      "newestAvailableAt": "2026-10-13T14:16:00+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "newestAvailableAt": "2026-10-13T14:34:00+00:00",
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
-      "newestPostAt": "2026-10-13T14:16:00Z"
+      "newestPostAt": "2026-10-13T14:34:00Z"
     },
     {
       "id": "moon-x",
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastSuccessAt": "2026-10-13T14:48:35.713508Z",
       "lastIndividualSuccessAt": null,
       "attempts": [
         {
@@ -3561,7 +3559,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-13T14:28:50+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3572,7 +3570,7 @@
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T14:04:51.681607Z",
@@ -3585,22 +3583,19 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-13T14:59:37.629230Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-13T14:59:37.629230Z",
+          "httpStatus": 429
         },
         {
-          "method": "public-profile-reference",
+          "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -3612,11 +3607,11 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-13T14:29:37.629230Z",
-      "lastIndividualSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastSuccessAt": "2026-10-13T14:48:35.713508Z",
+      "lastIndividualSuccessAt": "2026-10-13T14:48:35.713508Z",
       "attempts": [
         {
           "method": "user-id",
@@ -3630,7 +3625,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-13T13:49:35+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3641,7 +3636,7 @@
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T14:04:51.681607Z",
@@ -3654,22 +3649,19 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-13T14:59:37.629230Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-13T14:59:37.629230Z",
+          "httpStatus": 429
         },
         {
-          "method": "public-profile-reference",
+          "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -3681,7 +3673,7 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-13T14:29:37.629230Z",
@@ -3694,35 +3686,22 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-13T14:59:37.629230Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-13T14:59:37.629230Z",
+          "httpStatus": 429
         },
         {
-          "method": "public-profile-reference",
+          "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
-        },
-        {
-          "method": "individual-post",
-          "id": "2109623947969098114",
-          "result": "ok"
-        },
-        {
-          "method": "individual-post",
-          "id": "2109614430459961492",
-          "result": "ok"
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-13T14:29:37.629230Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-13T14:48:35.713508Z",
       "profileConnection": "limited",
-      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
-      "method": "individual-post",
+      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
+      "method": "cached-individual-post",
       "count": 2,
       "newestPostAt": "2026-10-12T12:35:18Z"
     }
@@ -3966,19 +3945,40 @@
           "2109651036465934723"
         ]
       ]
+    },
+    "x-public-profile:cryptokid": {
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "x-public-profile:mmcrypto": {
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "x-public-profile:saylor": {
+      "checkedAt": "2026-10-13T14:48:35.713508Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
     }
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-13T14:29:39.604915+00:00",
+    "checkedAt": "2026-10-13T14:48:36.757598+00:00",
     "original": 0,
-    "reviewed": 34,
+    "reviewed": 33,
     "automatic": 2,
     "pending": 13,
     "machine": {
       "engine": "nllb-200-600m-q8-v2",
-      "cached": 58,
-      "local": 2,
+      "cached": 61,
+      "local": 0,
       "freeFallback": 1,
       "pending": 13
     }

@@ -2,6 +2,41 @@
   "schemaVersion": 1,
   "posts": [
     {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf8_XEAAZSxH.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf85WMAAb_6S.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110016205658710194",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110016205658710194",
+      "publishedAt": "2026-10-13T14:34:00Z",
+      "text": "HUGE: 🇺🇸 $2.3 trillion Wells Fargo CEO says the bank is already preparing to work with stablecoins in the US.\n\nBanks are coming for crypto! 🚀 https://t.co/479lh8f8Pv",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "enormt:  $ 2,3 biljoner Wells Fargo VD säger att banken redan förbereder sig för att arbeta med stablecoins i USA.\n\nBanker kommer för krypto!",
+        "method": "translation",
+        "sourceHash": "da539dde031c1a2fae9e02c75c3ccd5d50112b7ffb898d3fb880a103f7763213",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T14:48:47.324422Z"
+    },
+    {
       "media": [],
       "id": "2110012906574365018",
       "handle": "WatcherGuru",
