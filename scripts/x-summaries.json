@@ -606,5 +606,17 @@
     "textSha256": "b952ba517d3fa82bba6223f7e6eaec1ac88b90346c778462a1792680d22d64f7",
     "text": "Crypto Kid uppger att Strategy har köpt 250 BTC. Det är kontots återgivning av köpbeskedet; inlägget innehåller inga ytterligare detaljer.",
     "method": "summary"
+  },
+  "2109955188450562485": {
+    "sourceUrl": "https://x.com/cryptorover/status/2109955188450562485",
+    "textSha256": "023e693e2263c825ad2974b830d3ba50379c8823985132b81b3fcdcee47f2de7",
+    "text": "Crypto Rover uppger att en brittisk domstol dömt till regeringens fördel i ett ärende om 61 000 beslagtagna BTC, värderade till över 5 miljarder dollar. Kontot skriver att beslutet kan innebära att regeringen behåller innehavet och att en försäljning av bitcoin därmed kan undvikas.",
+    "method": "summary"
+  },
+  "2109952476518478324": {
+    "sourceUrl": "https://x.com/TheMoonShow/status/2109952476518478324",
+    "textSha256": "b46d5dcd391317fcf00ff4ceb8e2db16448d1e7546f3640ddd7de45900116cc8",
+    "text": "The Moon Show uppger att den brittiska regeringen kan få behålla över 5 miljarder dollar i beslagtagna bitcoin. Kontot hänvisar till ett domstolsbeslut som enligt inlägget gäller huvuddelen av de 61 000 BTC som beslagtogs.",
+    "method": "summary"
   }
 }

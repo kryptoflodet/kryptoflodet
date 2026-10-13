@@ -5,6 +5,17 @@ from importlib.machinery import SourceFileLoader
 fx=SourceFileLoader('fetch_x_translation_tests','scripts/fetch-x.py').load_module()
 
 class TranslationTests(unittest.TestCase):
+ def test_asset_quantity_cannot_turn_into_money(self):
+  source=input_text('The government could keep 61,000 seized $BTC worth over $5 billion.')
+  self.assertNotIn('$BTC',source)
+  self.assertTrue(valid_translation(source,'Regeringen kan behålla 61 000 beslagtagna BTC värda över 5 miljarder dollar.'))
+  self.assertFalse(valid_translation(source,'Regeringen kan behålla 61 000 dollar värda över 5 miljarder dollar.'))
+  self.assertFalse(valid_translation(source,'Regeringen kan behålla 61 000 beslagtagna BTC-dollar värda över 5 miljarder dollar.'))
+ def test_fiat_currency_cannot_be_relabelled_as_bitcoin(self):
+  self.assertFalse(valid_translation('Bitcoin is worth $82,000.','Bitcoin är värt 82 000 BTC.'))
+  self.assertTrue(valid_translation('Bitcoin is worth $82,000.','Bitcoin är värt 82 000 dollar.'))
+ def test_court_name_cannot_become_a_different_institution(self):
+  self.assertFalse(valid_translation('The High Court has ruled on Bitcoin.','Högsta domstolen har beslutat om Bitcoin.'))
  def test_bad_or_missing_cache_cannot_stop_the_feed(self):
   with tempfile.TemporaryDirectory() as temp:
    path=pathlib.Path(temp)/'cache.json';self.assertEqual(load_history(path),{'items':{}})
