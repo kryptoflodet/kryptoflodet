@@ -527,6 +527,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Den senaste gången Bitcoin blinkade detta Gyllene Kors markerade det slutet på björnmarknaden.\n\nBTC gick vidare till rally över 500%.",
+        "method": "translation",
+        "sourceHash": "cb7b680ef821e945e661998b8179bcb6f9a6ef9d218cb7b8713e499356f3125f",
+        "engine": "nllb-200-600m-q8-v2"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -591,6 +597,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "En nästan perfekt rekord!\n\nEn Wallet som driver fyra plånböcker på Hyperliquid har avslutat 15 affärer för $ 29.75M i total vinst.\n\nIdag öppnade de en ny 24 000 ETH-lån på 60,7 miljoner dollar som redan står på 2,6 miljoner dollar i ouppnådda vinster.",
+        "method": "translation",
+        "sourceHash": "d8ff9c91461bf9c9ebeb69179895acf88fb94986056ebe9f6133972ad07552c7",
+        "engine": "nllb-200-600m-q8-v2"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -1461,6 +1473,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin släpar ofta efter den globala monetära expansionen, men kommer alltid ikapp.\n\n$ 140K BTC är oundvikligt!",
+        "method": "translation",
+        "sourceHash": "5d6ba151a6db950f36909a49e5cf94e9d2383d00bb3bd9607f7d17a487b5d2e4",
+        "engine": "mymemory-free-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
@@ -2337,6 +2355,12 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "swedish": {
+        "text": "Morgan Stanley säger att den tokeniserade tillgångsmarknaden kommer att bli en marknad på $ 3 biljoner till $ 10 biljoner år 2030.",
+        "method": "translation",
+        "sourceHash": "54c4dc82b124620424e3b6eb08aafc7f48a3b0af8831c69331b91f7ff97b6f86",
+        "engine": "mymemory-free-v1"
+      },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
     {
