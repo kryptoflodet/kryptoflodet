@@ -30,6 +30,16 @@ def cache_key(item):
 def number_tokens(text):
  return set(re.findall(r'\d+(?:[.,]\d+)*',text))
 
+def attribute_source(output,author):
+ """Attach a clear publisher attribution without changing reported facts."""
+ if not author or not isinstance(output,dict) or not isinstance(output.get('paragraphs'),list) or len(output['paragraphs'])!=2:return output
+ first=output['paragraphs'][0]
+ if not isinstance(first,str):return output
+ has_attribution=bool(re.search(r'\b(uppger|skriver|meddelar|rapporterar|beskriver|enligt)\b',first,re.I))
+ if author.casefold() not in first.casefold():output['paragraphs'][0]=f'{author} uppger: {first}'
+ elif not has_attribution:output['paragraphs'][0]=re.sub(re.escape(author),lambda m:m.group(0)+' uppger',first,count=1,flags=re.I)
+ return output
+
 def validate(output,source,author=None):
  if not isinstance(output,dict) or output.get('skip'):return False
  title=output.get('title');paras=output.get('paragraphs');support=output.get('support')
@@ -65,6 +75,7 @@ class Editor:
   key=cache_key(item)
   if key in self.memo:return self.memo[key], 'cache'
   draft=self.complete(SYSTEM,{'source':item['author'],'publishedAt':item['publishedAt'],'text':source},schema=SCHEMA)
+  draft=attribute_source(draft,item.get('author'))
   reason='rejected'
   valid=validate(draft,source,item.get('author'))
   if valid:
