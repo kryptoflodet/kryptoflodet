@@ -71,7 +71,7 @@ class MarketContextTests(unittest.TestCase):
             'altcoinSeason': {'value': 44, 'source': 'CoinMarketCap', 'checkedAt': '2020-01-01T00:00:00Z'},
         })
         with contextlib.redirect_stdout(io.StringIO()):
-            updated = M['update_from_sources'](snap, {}, now=datetime(2026, 10, 13, 15, 0, tzinfo=timezone.utc).timestamp(), fetcher=lambda _: (_ for _ in ()).throw(TimeoutError('offline')))
+            updated = M['update_from_sources'](snap, {}, now=datetime(2026, 10, 13, 15, 0, tzinfo=timezone.utc).timestamp(), fetcher=lambda _: (_ for _ in ()).throw(TimeoutError('offline')), text_fetcher=lambda _: (_ for _ in ()).throw(TimeoutError('offline')))
         self.assertEqual(updated['fearGreed']['value'], 62)
         self.assertEqual(updated['market']['btcDominance'], 58.1)
         self.assertEqual(updated['altcoinSeason']['value'], 44)
