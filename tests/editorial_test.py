@@ -27,9 +27,9 @@ class EditorialTests(unittest.TestCase):
   self.assertFalse(readable(dict(self.item(),readerText='Bara en rubrik')))
  def test_generated_claim_guards(self):
   source='The Bitcoin fund reported inflows of 25 million on Monday. The company declined to provide a forecast.'
-  draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['Enligt fondens besked kom det in 25 miljoner under måndagen. Uppgiften gäller de inflöden som fonden själv har redovisat i sitt meddelande.','Bolaget lämnade inte någon prognos. Beskedet innehåller därmed ingen bedömning av hur utvecklingen väntas se ut framöver.'],'support':['The Bitcoin fund reported inflows of 25 million on Monday.','The company declined to provide a forecast.']}
+  draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['Enligt fondens besked kom det in 25 miljoner under måndagen. Uppgiften gäller de inflöden som fonden själv har redovisat i sitt meddelande.','Bolaget lämnade inte någon prognos. Beskedet innehåller därmed ingen bedömning av hur utvecklingen väntas se ut framöver.']}
   self.assertTrue(validate(draft,source));draft['title']='Bitcoinfonden får 90 miljoner';self.assertFalse(validate(draft,source))
-  draft['title']='Bitcoinfonden redovisar nya inflöden';draft['support'][0]='fabricated evidence';self.assertFalse(validate(draft,source))
+  draft['title']='Bitcoinfonden redovisar nya inflöden';draft['paragraphs'][0]='The Bitcoin fund reported inflows of 25 million on Monday.';self.assertFalse(validate(draft,source))
  def test_local_summary_requires_explicit_source_attribution(self):
   source='Bitcoin ETF issuer reported net inflows of 25 million on Monday. The company declined to provide a forecast.'
   draft={'title':'Bitcoinfonden redovisar nya inflöden','paragraphs':['CoinDesk uppger att Bitcoin ETF-utgivaren redovisade nettoinflöden på 25 miljoner på måndagen.','Bolaget lämnade ingen prognos. Det framgår inte heller hur inflödena kan förändras över tid eller vilka faktorer som ligger bakom dem. Texten återger utgivarens besked utan att dra slutsatser om den bredare marknadsutvecklingen.'],'support':['Bitcoin ETF issuer reported net inflows of 25 million on Monday.','The company declined to provide a forecast.']}
