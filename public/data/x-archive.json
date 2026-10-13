@@ -4,6 +4,40 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUhdfntW4AE7eRM.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110039508469059796",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110039508469059796",
+      "publishedAt": "2026-10-13T16:06:36Z",
+      "text": "JUST IN: Hyperliquid whale bought $50M in Bitcoin futures, selling $84M in tech stocks and altcoins.\n\nCurrent profit/loss: +$2.8M https://t.co/sLtKxhkjYO",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Hyperliquid Whale köpte 50 miljoner dollar i Bitcoin-futurer och sålde 84 miljoner dollar i teknikaktier och altcoins.\n\nRuntgående vinst/förlust: + 2,8 miljoner dollar",
+        "method": "translation",
+        "sourceHash": "a5c03ed904968e9d841c3bd8e1f4a96bc421f458c66668d44c3dc2a8ccb00481",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:20:47.861632Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUhZvFRa8AArzRI.jpg",
           "alt": ""
         },
@@ -181,6 +215,29 @@
         "engine": "nllb-200-600m-q8-v2"
       },
       "archivedAt": "2026-10-13T15:22:59.255302Z"
+    },
+    {
+      "media": [],
+      "id": "2110021321975308351",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2110021321975308351",
+      "publishedAt": "2026-10-13T14:54:20Z",
+      "text": "The future of Bitcoin is the future of finance.\n\nThis morning at the World Bank, I joined Chris Brummer, Founder & CEO of The Fintech Foundation, for a 25-minute fireside chat at DC Fintech Week. @fintechthinksdc\n\n00:52 - Strategy as a reserve institution built on Digital https://t.co/si86CPSP2D",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T16:20:47.861632Z"
     },
     {
       "media": [
@@ -539,6 +596,37 @@
         "engine": "nllb-200-600m-q8-v2"
       },
       "archivedAt": "2026-10-13T13:41:26.071397Z"
+    },
+    {
+      "media": [],
+      "id": "2110000863473447384",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2110000863473447384",
+      "publishedAt": "2026-10-13T13:33:02Z",
+      "text": "Strive is turning demand for digital equity ($ASST) and digital credit ($SATA) into demand for Bitcoin. Its hypergrowth shows how the capital markets are accelerating Bitcoin adoption.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "article-reference",
+      "contextSource": {
+        "url": "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "Strive reports $208M in warrant exercises as Bitcoin holdings jump 11%"
+      },
+      "swedish": {
+        "text": "Strive förvandlar efterfrågan på digital kapital ($ asst) och digital kredit ($ sata) till efterfrågan på Bitcoin.\n\nDen hypertillväxten visar hur kapitalmarknaderna accelererar Bitcoin-användningen.",
+        "method": "translation",
+        "sourceHash": "914a04d1eb201c04866cbb0fcb9f38178b71177d85b80cdb8cd3baf558c86942",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:20:47.861632Z"
     },
     {
       "media": [
@@ -1079,6 +1167,32 @@
         "engine": "reviewed"
       },
       "archivedAt": "2026-10-13T10:45:29.177424Z"
+    },
+    {
+      "media": [],
+      "id": "2109952890924335334",
+      "handle": "CryptoKid",
+      "author": "Crypto Kid",
+      "sourceId": "kid-x",
+      "url": "https://x.com/CryptoKid/status/2109952890924335334",
+      "publishedAt": "2026-10-13T10:22:24Z",
+      "text": "It’s extremely unfortunate that @YouTube has terminated yet again another crypto account!\n\nThis was the worst experience in my life, but I was lucky that they understood their mistake and reinstated my channel within 24 hours.\n\nStay strong my friend, good luck with your new",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Det är oerhört olyckligt att @YouTube har avslutat ännu ett kryptot konto!\n\nDet var den värsta upplevelsen i mitt liv, men jag var lycklig att de förstod sitt misstag och återställde min kanal inom 24 timmar.\n\nHåll dig stark, min vän. Lycka till med din nya",
+        "method": "translation",
+        "sourceHash": "e39b6754492837fbf73e512e933a7bb187d62ca9e6ae06161ad5a2dbd13061d3",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T16:20:47.861632Z"
     },
     {
       "media": [
@@ -5561,7 +5675,7 @@
         "text": "Bitcoin: Väktaligt stängning om 8 timmar!",
         "method": "translation",
         "sourceHash": "69b0dd90b43fb50f7aca8f659b88a00f9f30490de947c1ece0b9add8e9c59b0f",
-        "engine": "nllb-200-600m-q8-v1"
+        "engine": "nllb-200-600m-q8-v2"
       },
       "archivedAt": "2026-10-13T10:22:29.733814Z"
     },
