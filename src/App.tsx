@@ -13,6 +13,7 @@ import {categories} from '@/lib/demo';
 import {initialNews,fetchNews,sources} from '@/lib/news-client';
 import {filterNews,trending,deduplicate} from '@/lib/feed';
 import type {NewsItem} from '@/lib/types';
+import {isBitcoinStory,isEthereumStory} from '@/lib/crypto-story';
 import {isMarketFresh,trackedCoins,emptyQuotes,type MarketData} from '@/lib/market';
 import {initialMarket} from '@/lib/market-initial';
 import {fetchMarket,loadCachedMarket} from '@/lib/market-client';
@@ -38,11 +39,11 @@ function RollingTicker({quotes,currency,onCoin}:{quotes:MarketData['quotes'];cur
 }
 const topicIcons:Record<string,typeof Activity>={'Reglering':Landmark,'Institutioner':Building2,'Bitcoin':WalletCards,'Ethereum':Gem,'Altcoins':Network,'Makro':Landmark,'Säkerhet / Hacks':ShieldAlert,'Mining':Pickaxe,'DeFi':Layers3,'ETF':ChartNoAxesCombined,'Börser':ChartNoAxesCombined,'Stablecoins':WalletCards,'On-chain':Network};
 function articleArt(item:NewsItem){
- if(item.coins.includes('BTC'))return {name:'bitcoin',alt:'Orange Bitcoin-logotyp mot svart bakgrund'};
+ if(isBitcoinStory(item.coins,[item.category]))return {name:'bitcoin',alt:'Orange Bitcoin-symbol mot svart bakgrund'};
  if(['Makro','Institutioner','ETF','Reglering'].includes(item.category))return {name:'institutions',alt:'Konceptuell illustration av en finansiell institution i sten och brons'};
  if(['Altcoins','DeFi','Säkerhet / Hacks','On-chain'].includes(item.category))return {name:'network',alt:'Konceptuell illustration av ett blockkedjenätverk i glas och metall'};
- if(item.coins[0]==='ETH')return {name:'ethereum',alt:'Ethereum-symbol i facetterat glas på en mörk sockel'};
- return {name:'bitcoin',alt:'Orange bitcoinlogotyp mot svart bakgrund'};
+ if(isEthereumStory(item.coins,[item.category]))return {name:'ethereum',alt:'Ethereum-symbol i facetterat glas på en mörk sockel'};
+ return {name:'network',alt:'Konceptuell illustration av ett blockkedjenätverk i glas och metall'};
 }
 function articleArtUrl(item:NewsItem,size:640|1280){const name=articleArt(item).name;return name==='bitcoin'?BASE+'images/bitcoin.svg':BASE+`images/${name}-${size}.webp`; }
 function ArticleImage({item,onOpen}:{item:NewsItem;onOpen:()=>void}){const art=articleArt(item);const video=youtubeVideo(item);return <button className="article-image" onClick={onOpen} aria-label={'Öppna '+item.title}>{video?<><img src={'https://i.ytimg.com/vi/'+video+'/hqdefault.jpg'} width="480" height="360" alt={item.title} loading="lazy"/><span className="video-card-badge"><Play size={24} fill="currentColor"/>SE VIDEO</span></>:<img src={articleArtUrl(item,640)} srcSet={art.name==='bitcoin'?undefined:BASE+'images/'+art.name+'-640.webp 640w, '+BASE+'images/'+art.name+'-1280.webp 1280w'} sizes={item.breaking?'(max-width:760px) 100vw, 850px':'(max-width:760px) 100vw, 230px'} width="1672" height="941" alt={art.alt} loading={item.breaking?'eager':'lazy'} decoding="async"/>}<span className="image-open"><ArrowUpRight size={18}/></span>{item.breaking&&<span className="image-featured"><Activity size={13}/> I FOKUS</span>}</button>;}

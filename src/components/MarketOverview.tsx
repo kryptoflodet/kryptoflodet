@@ -24,9 +24,9 @@ export default function MarketOverview({marketData,currency,marketStatus,marketT
  function handleDragEnd(){draggingRef.current=null;setDraggingSymbol(null);setDropIndicator(null);}
  function handleRowKeyDown(event:KeyboardEvent<HTMLButtonElement>,symbol:string){if(!event.altKey||(event.key!=='ArrowUp'&&event.key!=='ArrowDown'))return;const index=orderedSymbols.indexOf(symbol);const direction=event.key==='ArrowDown'?1:-1;const target=orderedSymbols[index+direction];if(!target)return;event.preventDefault();saveOrder(moveMarketSymbol(orderedSymbols,symbol,target,direction>0));}
  return <section className="side-panel market-panel" aria-labelledby="market-overview-title">
-  <div className="market-heading-stack" style={{display:'flex',flexDirection:'column',gap:4,marginBottom:8}}>
+  <div className="market-heading-stack" style={{display:'flex',flexDirection:'column',gap:0,marginBottom:8}}>
    <div className="panel-heading" style={{margin:0}}><h2 id="market-overview-title"><ChartNoAxesCombined size={17}/>Marknadsöversikt</h2><span className="subtle-label">{marketStatus} · {currency}</span></div>
-   <div className="market-controls" style={{display:'flex',justifyContent:'flex-start',gap:7,margin:0}}>
+   <div className="market-controls" style={{display:'flex',justifyContent:'flex-start',gap:7,margin:0,marginTop:-28}}>
    <details className="market-selection"><summary aria-label={`Välj vilka valutor som visas. ${selectedCount} valda`}><SlidersHorizontal size={14}/>Urval <b>{selectedCount}/{quotes.length}</b></summary>
     <div className="market-selection-panel"><div className="market-selection-title"><b>Visa i översikten</b><div><button type="button" onClick={()=>onHiddenSymbolsChange([])}>Visa alla</button><button type="button" onClick={()=>onHiddenSymbolsChange([...availableSymbols])}>Dölj alla</button></div></div>
      <label className="market-selection-search"><Search size={14}/><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Sök valuta" aria-label="Sök i topp 50"/></label>
