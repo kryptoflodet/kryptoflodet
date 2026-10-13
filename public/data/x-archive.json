@@ -4,6 +4,174 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUgvFCjXkAAKWRs.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgvFxVW8AA7mqf.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109988572279267443",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109988572279267443",
+      "publishedAt": "2026-10-13T12:44:11Z",
+      "text": "JUST IN: Strive bought 3,311 Bitcoin past week, worth $275M.\n\n• Total holdings at 32,773 BTC worth $2.7B\n\n$ASST https://t.co/9tKIQ8xt29",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Strive köpte 3311 Bitcoin förra veckan, värt 275 miljoner dollar.\n\n• Totalt innehav på 32 773 BTC värt 2,7 miljarder dollar\n\nFör att",
+        "method": "translation",
+        "sourceHash": "9ff25816015015ed8edf276c52db9bfe143f3f68e14f3b1f322da8cefccb2ee4",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T12:44:39.456001Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgs9WobsAAkDop.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgs9WsagAAws5u.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109985864524980706",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109985864524980706",
+      "publishedAt": "2026-10-13T12:33:26Z",
+      "text": "JUST IN: 🇺🇸 Vivek Ramaswamy's 'Strive' buys 3,311 Bitcoin worth $275 million. https://t.co/O8v5cLM1eX",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T12:44:39.456001Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgqxVfWwAAOQ4J.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgq_rkXIAAlOfj.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109983974806417507",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109983974806417507",
+      "publishedAt": "2026-10-13T12:25:55Z",
+      "text": "BREAKING: BlackRock ETF-linked wallets just transferred $202.54 million in Bitcoin and Ethereum to Coinbase Prime!\n\n• 860 $BTC ($71.54M)\n• 52,488 $ETH ($131M)\n\nAll within the past hour! https://t.co/Vf08UCp1ur",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T12:44:39.456001Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgqgq1XcAAZkjS.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgqjp0W8AAnzWg.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109983334667292863",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2109983334667292863",
+      "publishedAt": "2026-10-13T12:23:23Z",
+      "text": "BREAKING: 🇺🇸 S&P Dow Jones Indices completes its first-ever on-chain derivatives transaction using the Canton Network.\n\nWALL STREET IS MOVING ON-CHAIN! 🚀 https://t.co/p6aAwzeXrX",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "S&P Dow Jones Indices avslutar sin första transaktion med derivat på kedjan med hjälp av Canton Network.\n\nWall Street är på väg!",
+        "method": "translation",
+        "sourceHash": "06ea79a3879eafdcfb282ac862a05cf6c76f1951de0ec9b864a75bd0bf7f2357",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T12:44:39.456001Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgoQAnW4AA_YTF.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgoQ80W0AA5gDf.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109980705610457154",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109980705610457154",
+      "publishedAt": "2026-10-13T12:12:56Z",
+      "text": "BREAKING: STRIVE ADDED 3,311 BITCOIN LAST WEEK!\n\nTotal holdings now stand at 32,773 $BTC, worth approximately $2.7 BILLION! 🔥 https://t.co/LPfj1SePSA",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-13T12:44:39.456001Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUglJMSW0AAGiU6.jpg",
           "alt": ""
         }
