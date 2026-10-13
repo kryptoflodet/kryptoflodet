@@ -2,6 +2,97 @@
   "schemaVersion": 1,
   "posts": [
     {
+      "media": [],
+      "id": "2110012906574365018",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110012906574365018",
+      "publishedAt": "2026-10-13T14:20:53Z",
+      "text": "JUST IN: 🇺🇸 Wells Fargo CEO says the bank is preparing for potential crypto stablecoin opportunities in the US.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Wells Fargo CEO säger att banken förbereder sig för potentiella kryptostalcoin möjligheter i USA.",
+        "method": "translation",
+        "sourceHash": "c6ac095157180c3865c2c48f29d15c744b674f55b198875f5a20a1dfdb2fa38c",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:29:53.335721Z"
+    },
+    {
+      "media": [],
+      "id": "2110011675634282909",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110011675634282909",
+      "publishedAt": "2026-10-13T14:16:00Z",
+      "text": "Once the CLARITY Act passes, $200,000 is easily within reach for Bitcoin.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "När Clarity Act har passerat är $ 200 000 lätt inom räckhåll för Bitcoin.",
+        "method": "translation",
+        "sourceHash": "c0bae27c7f073286f5d50043283acec3bdc62d0e1f1cff963727af95270b7b82",
+        "engine": "mymemory-free-v1"
+      },
+      "archivedAt": "2026-10-13T14:29:53.335721Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhDq7jW0AAr6b_.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhDq6LW4AA0Okp.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110011013311738171",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110011013311738171",
+      "publishedAt": "2026-10-13T14:13:22Z",
+      "text": "BREAKING: 🇺🇸 Interactive Brokers, with over 5.5 MILLION client accounts, officially launches $ETH staking services.\n\nThis is MASSIVE! https://t.co/mMeo5l3GfZ",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Interactive Brokers, med över 5,5 miljoner kundkonton, lanserar officiellt ETH-spinningstjänster.\n\nDet här är enormt!",
+        "method": "translation",
+        "sourceHash": "adfa6e709c381cd9c838daef0878a0c78397dfce1cb71d830f9c4cfed6390093",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T14:29:53.335721Z"
+    },
+    {
       "media": [
         {
           "url": "https://pbs.twimg.com/amplify_video_thumb/2110006956907794432/img/_WE3ZiKMTIRRL1u7.jpg",
