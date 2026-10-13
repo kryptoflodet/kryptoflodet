@@ -649,6 +649,58 @@
       "path": "/nyheter/meta-ai-forutsager-hog-prisniva-for-xrp-3ef30fcd40/"
     },
     {
+      "id": "5226809eb373cf3cc728",
+      "eventKey": "https://bitcoinmagazine.com/news/treasury-to-seize-one-billion-of-iran-crypto",
+      "originalTitle": "‘We Know Where It Is’: Treasury Secretary Threatens To Freeze $1B of Iran’s Crypto",
+      "originalText": "‘We Know Where It Is’: Treasury Secretary Threatens To Freeze $1B of Iran’s Crypto",
+      "originalLanguage": "en",
+      "title": "Förvaltare threatar att sejka 1 miljard dollar av Irans krypto",
+      "translation": "",
+      "summary": "Bitcoin Magazine uppger: Treasury-secretary Scott Bessent uppger att USA kommer att sejka 1 miljard dollar av Irans krypto detta veckor, men det är oklart vilket aktie eller krypto som påverkas.",
+      "why": "",
+      "author": "Bitcoin Magazine",
+      "publishedAt": "2026-10-09T20:10:14Z",
+      "importedAt": "2026-10-13T09:21:10.979760Z",
+      "category": "Institutioner",
+      "coins": [],
+      "topics": [
+        "Institutioner"
+      ],
+      "sourceId": "bitcoinmag",
+      "channel": "RSS",
+      "originalUrl": "https://bitcoinmagazine.com/news/treasury-to-seize-one-billion-of-iran-crypto",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "bitcoinmag",
+          "url": "https://bitcoinmagazine.com/news/treasury-to-seize-one-billion-of-iran-crypto",
+          "originId": "https://bitcoinmagazine.com/news/treasury-to-seize-one-billion-of-iran-crypto",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "Bitcoin Magazine uppger: Treasury-secretary Scott Bessent uppger att USA kommer att sejka 1 miljard dollar av Irans krypto detta veckor, men det är oklart vilket aktie eller krypto som påverkas.\\n\\nBitcoin Magazine rapporterar att uttalandet kom från Bessent och skrivs av Mathew Di Salvo.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T09:21:10.979760Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Institutionellt"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "forvaltare-threatar-att-sejka-1-miljard-dollar-av-irans-krypto-5226809eb3",
+      "path": "/nyheter/forvaltare-threatar-att-sejka-1-miljard-dollar-av-irans-krypto-5226809eb3/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
