@@ -164,6 +164,60 @@
       "path": "/nyheter/eclair-fixar-lightning-fel-som-kan-leda-till-bitcoin-forbrukning-i-avgifter-2ba45aeb96/"
     },
     {
+      "id": "5642bea8e31eb97fc411",
+      "eventKey": "https://cryptoslate.com/frances-tax-proposal-would-make-bitcoin-to-usdc-swaps-taxable-before-cash-out",
+      "originalTitle": "France’s tax proposal would tax Bitcoin-to-USDC swaps before investors cash out",
+      "originalText": "France’s tax proposal would tax Bitcoin-to-USDC swaps before investors cash out",
+      "originalLanguage": "en",
+      "title": "Franska skattemyndighet föreslår skatt på Bitcoin-til-USDC-swap",
+      "translation": "",
+      "summary": "CryptoSlate uppger: Franska myndigheter uppger att en förslag om skatt på Bitcoin-til-USDC-swap föreslås, och att detta skatt skulle läggas till innan investorer kassar ut. ",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T15:20:19Z",
+      "importedAt": "2026-10-13T05:57:20.377468Z",
+      "category": "Bitcoin",
+      "coins": [
+        "BTC"
+      ],
+      "topics": [
+        "BTC"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/frances-tax-proposal-would-make-bitcoin-to-usdc-swaps-taxable-before-cash-out/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/frances-tax-proposal-would-make-bitcoin-to-usdc-swaps-taxable-before-cash-out/",
+          "originId": "https://cryptoslate.com/frances-tax-proposal-would-make-bitcoin-to-usdc-swaps-taxable-before-cash-out",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: Franska myndigheter uppger att en förslag om skatt på Bitcoin-til-USDC-swap föreslås, och att detta skatt skulle läggas till innan investorer kassar ut. \\n\\nAmendementet som godkänts av kommittén skulle avsluta deferral för utbyte till MiCA e-money tokens och ändra den bas som används för att räkna ut vinster.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T05:57:20.377468Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Bitcoin"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "franska-skattemyndighet-foreslar-skatt-pa-bitcoin-til-usdc-swap-5642bea8e3",
+      "path": "/nyheter/franska-skattemyndighet-foreslar-skatt-pa-bitcoin-til-usdc-swap-5642bea8e3/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
