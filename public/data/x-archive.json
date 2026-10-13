@@ -4,6 +4,42 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUgftdjXMAAouvW.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109971440573501575",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2109971440573501575",
+      "publishedAt": "2026-10-13T11:36:07Z",
+      "text": "CRYPTO MARKETS ARE UNDER PRESSURE! 📉\n\nWintermute reports:\nBTC ETFs: $679M outflows\nETH ETFs: $542M outflows\nLiquidations: $1.19 BILLION\n\nInstitutional demand is weakening as macro pressure builds. https://t.co/NIGF1gMuLU",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kryptomarknader är pressade!\n\nWintermute rapporterar: BTC ETF: $679M utflöden ETH ETF: $542M utflöden Liquidationer: $1.19 miljarder\n\nInstitutionell efterfrågan försvagas när makrotrycket ökar.",
+        "method": "translation",
+        "sourceHash": "6741ca2fd2909301facb4a53d78f2734699fa71abce6d9e76b80b00683862029",
+        "engine": "nllb-200-600m-q8-v2"
+      },
+      "archivedAt": "2026-10-13T11:40:32.266793Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUgdgQAWcAAmJlw.jpg",
           "alt": ""
         },
