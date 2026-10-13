@@ -2,6 +2,60 @@
   "schemaVersion": 2,
   "items": [
     {
+      "id": "e0d8099509764f8cd530",
+      "eventKey": "https://cryptoslate.com/ethereum-name-service-plans-major-eth-overhaul-with-one-irreversible-catch-for-domain-holders",
+      "originalTitle": "Ethereum Name Service plans major .eth overhaul with one irreversible catch for domain holders",
+      "originalText": "Ethereum Name Service plans major .eth overhaul with one irreversible catch for domain holders",
+      "originalLanguage": "en",
+      "title": "Ethereum Name Service planerar stora ändringar i .eth-meddelanden",
+      "translation": "",
+      "summary": "CryptoSlate uppger att Ethereum Name Service planerar en större överföring av .eth-domäner. Ändringen innebär att en domän som flyttas kommer att förlora sin hantering på v1-versionen.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-13T18:20:02Z",
+      "importedAt": "2026-10-13T18:28:20.015608Z",
+      "category": "Ethereum",
+      "coins": [
+        "ETH"
+      ],
+      "topics": [
+        "ETH"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/ethereum-name-service-plans-major-eth-overhaul-with-one-irreversible-catch-for-domain-holders/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/ethereum-name-service-plans-major-eth-overhaul-with-one-irreversible-catch-for-domain-holders/",
+          "originId": "https://cryptoslate.com/ethereum-name-service-plans-major-eth-overhaul-with-one-irreversible-catch-for-domain-holders",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger att Ethereum Name Service planerar en större överföring av .eth-domäner. Ändringen innebär att en domän som flyttas kommer att förlora sin hantering på v1-versionen.\\n\\nIngen migrationstidpunkt är fastställd i förslaget. Förändringen har en oändlig konsekvens för domänägare som flyttar domäner.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T18:28:20.015608Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Ethereum"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "ethereum-name-service-planerar-stora-andringar-i-eth-meddelanden-e0d8099509",
+      "path": "/nyheter/ethereum-name-service-planerar-stora-andringar-i-eth-meddelanden-e0d8099509/"
+    },
+    {
       "id": "73943698898be143080a",
       "eventKey": "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million",
       "originalTitle": "Australia moves to close crypto derivatives loophole after retail traders lose A$458 million",
