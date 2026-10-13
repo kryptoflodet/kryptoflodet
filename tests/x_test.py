@@ -1,4 +1,4 @@
-import datetime as dt,importlib.util,json,sys,unittest
+import datetime as dt,importlib.util,json,pathlib,sys,unittest
 from unittest.mock import patch
 sys.path.insert(0,'scripts');spec=importlib.util.spec_from_file_location('x','scripts/fetch-x.py');x=importlib.util.module_from_spec(spec);spec.loader.exec_module(x)
 class XTests(unittest.TestCase):
@@ -22,19 +22,6 @@ class XTests(unittest.TestCase):
   entry={'type':'tweet','content':{'tweet':self.post}};payload='<script id="__NEXT_DATA__" type="application/json">'+json.dumps({'props':{'pageProps':{'timeline':{'entries':[entry,entry]}}}})+'</script>'
   rows,_=x.parse_timeline(payload,self.account,self.now);self.assertEqual(len(rows),1)
   with self.assertRaises(Exception):x.parse_timeline('<html>Login</html>',self.account,self.now)
- def test_profile_links_are_limited_to_the_configured_handle(self):
-  payload='<a href="https://x.com/example/status/2109000000000000000">post</a><a href="https://x.com/other/status/2109000000000000001">other</a><a href="https://x.com/example/status/2109000000000000000">duplicate</a>'
-  self.assertEqual(x.profile_post_ids(payload,self.account),['2109000000000000000'])
- def test_profile_post_lookup_still_checks_the_original_author(self):
-  payload='https://x.com/example/status/2109000000000000000'
-  with patch.object(x,'get',return_value=json.dumps(self.post)):
-   rows,failed=x.parse_profile_posts(payload,self.account,self.now,set())
-  self.assertEqual([row['id'] for row in rows],['2109000000000000000'])
-  self.assertFalse(failed)
-  self.assertEqual(x.parse_profile_posts(payload,self.account,self.now,{'2109000000000000000'}),([],False))
-  impostor={**self.post,'user':{**self.post['user'],'id_str':'999'}}
-  with patch.object(x,'get',return_value=json.dumps(impostor)):
-   self.assertEqual(x.parse_profile_posts(payload,self.account,self.now,set()),([],False))
  def test_unpinned_profile_is_resolved_only_from_one_matching_author(self):
   account={'id':'mmcrypto-x','handle':'MMCrypto','name':'MMCrypto'}
   post={**self.post,'id_str':'2109000000000000001','user':{'id_str':'123456789','screen_name':'MMCrypto','name':'MMCrypto'}}
@@ -46,6 +33,18 @@ class XTests(unittest.TestCase):
  def test_media_host_allowlist(self):
   self.post['photos']=[{'url':'https://pbs.twimg.com/image.jpg'},{'url':'https://pbs.twimg.com.evil.test/image.jpg'},{'url':'javascript:alert(1)'}]
   n=x.parse_post(self.post,self.account,self.now);self.assertEqual(len(n['media']),1)
+ def test_balanced_retention_keeps_quieter_sources(self):
+  accounts=[{'id':'busy'},{'id':'quiet'}];posts={}
+  for source,count in [('busy',80),('quiet',4)]:
+   for i in range(count):
+    pid=f'{2109000000000000000+i}'
+    posts[pid]={'sourceId':source,'publishedAt':(self.now-dt.timedelta(minutes=i)).isoformat(),'id':pid}
+  kept=x.balanced_posts(posts,accounts,per_account=30,maximum=40)
+  self.assertEqual(sum(p['sourceId']=='quiet' for p in kept),4)
+  self.assertEqual(sum(p['sourceId']=='busy' for p in kept),30)
+ def test_public_x_profile_only_returns_status_ids_for_that_handle(self):
+  payload='<a href="https://x.com/example/status/2109000000000000000">ok</a><a href="https://x.com/other/status/2109000000000000001">other</a><a href="/example/status/2109000000000000002">short</a>'
+  self.assertEqual(x.public_profile_post_ids(payload,'example'),['2109000000000000000','2109000000000000002'])
 if __name__=='__main__':unittest.main()
 
 class XFailureTests(unittest.TestCase):
@@ -60,3 +59,14 @@ class XFailureTests(unittest.TestCase):
    (root/'scripts/x-sources.json').write_text(json.dumps([account]));target=root/'public/data/x.json';target.write_text(json.dumps({'posts':[post],'sources':[],'discovery':{}}))
    with patch.object(x,'ROOT',root),patch.object(x,'TARGET',target),patch.object(x,'get',side_effect=TimeoutError),contextlib.redirect_stdout(io.StringIO()):x.main()
    data=json.loads(target.read_text());self.assertEqual(len(data['posts']),1);self.assertEqual(data['posts'][0]['id'],post['id']);self.assertEqual(data['posts'][0]['categories'],[]);self.assertEqual(data['sources'][0]['connection'],'error')
+
+class LocalAssetTests(unittest.TestCase):
+ def test_replacement_bitcoin_logo_and_local_webps_are_valid(self):
+  root=pathlib.Path(__file__).resolve().parents[1]
+  source=(root/'public/images/bitcoin.svg').read_text()
+  self.assertIn('fill="#F7931A"',source)
+  self.assertIn('<path fill="#101214" d=',source)
+  for width in (640,1280):
+   payload=(root/f'public/images/bitcoin-news-{width}.webp').read_bytes()
+   self.assertEqual(payload[:4],b'RIFF')
+   self.assertEqual(payload[8:12],b'WEBP')

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title">
-  <title id="title">Orange Bitcoin-symbol</title>
-  <rect width="640" height="400" fill="#101214"/>
-  <circle cx="320" cy="200" r="150" fill="#f7931a"/>
-  <path fill="#101214" d="M263 91h72c57 0 87 27 87 69 0 28-13 48-36 59 31 10 48 31 48 64 0 47-35 76-96 76h-75v-30h-22v-25h22V126h-22v-25h22zm37 33v81h34c33 0 49-14 49-41 0-26-16-40-49-40zm0 110v91h39c38 0 57-15 57-45s-19-46-57-46zM246 78h14v245h-14zM219 91h14v220h-14z"/>
-</svg>
