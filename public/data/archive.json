@@ -56,6 +56,60 @@
       "path": "/nyheter/ftx-s-tidigare-bitcoin-minningssats-far-ny-liv-i-ai-fond-362510102b/"
     },
     {
+      "id": "a7c32c5afbbaa7adc217",
+      "eventKey": "https://cryptoslate.com/standard-chartered-brings-ripples-rlusd-into-banking-custody-after-765-million-quarterly-surge",
+      "originalTitle": "Standard Chartered brings Ripple’s RLUSD into banking custody after $765 million quarterly surge",
+      "originalText": "Standard Chartered brings Ripple’s RLUSD into banking custody after $765 million quarterly surge",
+      "originalLanguage": "en",
+      "title": "Standard Chartered tar inom Ripple's RLUSD efter 765 miljoner-dollar-ökning",
+      "translation": "",
+      "summary": "CryptoSlate uppger: Standard Chartered uppger att det har tagit in Ripple's RLUSD i bankens kustod, efter en kvartalsökning på 765 miljoner dollar.",
+      "why": "",
+      "author": "CryptoSlate",
+      "publishedAt": "2026-10-12T19:30:19Z",
+      "importedAt": "2026-10-13T05:14:52.012907Z",
+      "category": "Altcoins",
+      "coins": [
+        "XRP"
+      ],
+      "topics": [
+        "XRP"
+      ],
+      "sourceId": "cryptoslate",
+      "channel": "RSS",
+      "originalUrl": "https://cryptoslate.com/standard-chartered-brings-ripples-rlusd-into-banking-custody-after-765-million-quarterly-surge/",
+      "sourceType": "MEDIA",
+      "evidence": [
+        {
+          "sourceId": "cryptoslate",
+          "url": "https://cryptoslate.com/standard-chartered-brings-ripples-rlusd-into-banking-custody-after-765-million-quarterly-surge/",
+          "originId": "https://cryptoslate.com/standard-chartered-brings-ripples-rlusd-into-banking-custody-after-765-million-quarterly-surge",
+          "direct": true,
+          "verified": false
+        }
+      ],
+      "status": "unconfirmed",
+      "confidence": 0,
+      "sentiment": "Neutral",
+      "importance": 2,
+      "breaking": false,
+      "demo": false,
+      "analysisMethod": "local-model-validated",
+      "readerText": "CryptoSlate uppger: Standard Chartered uppger att det har tagit in Ripple's RLUSD i bankens kustod, efter en kvartalsökning på 765 miljoner dollar.\\n\\nEligible kunder kan använda XRPL-utgiven RLUSD via DIFC-branchen; den planerade LMAX-kollateralkopplingen är fortfarande betingad och ej datierad.",
+      "readerKind": "edited",
+      "contentVersion": 2,
+      "translationStatus": "edited-sv",
+      "editedAt": "2026-10-13T05:14:52.012907Z",
+      "verificationNote": "Automatiskt sammanfattad på svenska med en lokal modell och kontrollerad mot källutdraget. Uppgifterna är inte oberoende bekräftade.",
+      "contentType": "rapportering",
+      "categories": [
+        "Altcoins"
+      ],
+      "importanceReason": "Ordinarie kryptobevakning",
+      "slug": "standard-chartered-tar-inom-ripple-s-rlusd-efter-765-miljoner-dollar-okning-a7c32c5afb",
+      "path": "/nyheter/standard-chartered-tar-inom-ripple-s-rlusd-efter-765-miljoner-dollar-okning-a7c32c5afb/"
+    },
+    {
       "id": "06d4cdc2f38a29c240e7",
       "eventKey": "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices",
       "originalTitle": "Samsung Collaborates with Sui to Bring USDC to Samsung Wallet on 82 Million U.S. Galaxy Devices",
