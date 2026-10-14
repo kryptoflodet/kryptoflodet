@@ -3,15 +3,15 @@
 .kp-entry-loader{--mark-size:clamp(148px,26vw,220px);display:none;position:fixed;inset:0;z-index:1000;overflow:hidden;pointer-events:none;--intro-bg:#101214;--intro-mark:#171a1c;--intro-border:#39453d;--intro-pulse:#9bd8b0;--intro-text:#eef0ee}
 :root[data-theme="light"] .kp-entry-loader{--intro-bg:#f1f3f1;--intro-mark:#f7f9f7;--intro-border:#dfe5e0;--intro-pulse:#28764f;--intro-text:#202923}
 :root[data-kp-entry="show"] .kp-entry-loader{display:block}
-.kp-entry-backdrop{position:absolute;inset:0;background:var(--intro-bg);animation:kp-entry-fallback 180ms ease-out 2450ms forwards}
-.kp-entry-logo{position:absolute;left:50%;top:50%;width:var(--mark-size);height:var(--mark-size);margin-left:calc(var(--mark-size) / -2);margin-top:calc(var(--mark-size) / -2);transform-origin:center;will-change:transform;animation:kp-entry-fallback 180ms ease-out 2450ms forwards}
+.kp-entry-backdrop{position:absolute;inset:0;background:var(--intro-bg);animation:kp-entry-fallback 180ms ease-out 4000ms forwards}
+.kp-entry-logo{position:absolute;left:50%;top:50%;width:var(--mark-size);height:var(--mark-size);margin-left:calc(var(--mark-size) / -2);margin-top:calc(var(--mark-size) / -2);transform-origin:center;will-change:transform;animation:kp-entry-fallback 180ms ease-out 4000ms forwards}
 .kp-entry-logo svg{display:block;width:100%;height:100%;overflow:visible}
-.kp-entry-logo rect{fill:var(--intro-mark);stroke:var(--intro-border);stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-frame 1450ms ease-out forwards}
-.kp-entry-pulse{fill:none;stroke:var(--intro-pulse);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-trace 1800ms linear 100ms forwards}
-.kp-entry-scan{fill:none;stroke:var(--intro-pulse);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 100;stroke-dashoffset:100;opacity:0;filter:drop-shadow(0 0 1px var(--intro-pulse));animation:kp-entry-scan 1800ms linear 100ms forwards}
-.kp-entry-name{position:absolute;left:0;right:0;top:calc(50% + var(--mark-size) / 2 + 24px);text-align:center;color:var(--intro-text);font:700 clamp(15px,3vw,21px)/1.2 system-ui,sans-serif;letter-spacing:4px;opacity:0;animation:kp-entry-name 700ms ease-out 950ms forwards}
-.kp-entry-loader.is-docking .kp-entry-logo{animation:kp-entry-dock 450ms cubic-bezier(.4,0,.2,1) forwards}
-.kp-entry-loader.is-docking .kp-entry-backdrop{animation:kp-entry-fallback 450ms ease-out forwards}
+.kp-entry-logo rect{fill:var(--intro-mark);stroke:var(--intro-border);stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-frame 2400ms ease-out forwards}
+.kp-entry-pulse{fill:none;stroke:var(--intro-pulse);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-trace 3500ms linear forwards}
+.kp-entry-scan{fill:none;stroke:var(--intro-pulse);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 100;stroke-dashoffset:100;opacity:0;filter:drop-shadow(0 0 1px var(--intro-pulse));animation:kp-entry-scan 3500ms linear forwards}
+.kp-entry-name{position:absolute;left:0;right:0;top:calc(50% + var(--mark-size) / 2 + 24px);text-align:center;color:var(--intro-text);font:700 clamp(15px,3vw,21px)/1.2 system-ui,sans-serif;letter-spacing:4px;opacity:0;animation:kp-entry-name 900ms ease-out 1700ms forwards}
+.kp-entry-loader.is-docking .kp-entry-logo{animation:kp-entry-dock 500ms cubic-bezier(.4,0,.2,1) forwards}
+.kp-entry-loader.is-docking .kp-entry-backdrop{animation:kp-entry-fallback 500ms ease-out forwards}
 .kp-entry-loader.is-docking .kp-entry-name{animation:kp-entry-fallback 160ms ease-out forwards;opacity:1}
 @keyframes kp-entry-frame{to{stroke-dashoffset:0}}
 @keyframes kp-entry-trace{to{stroke-dashoffset:0}}
@@ -44,10 +44,10 @@
 (() => {
   const overlay = document.querySelector('.kp-entry-loader');
   if (document.documentElement.dataset.kpEntry !== 'show') { overlay.remove(); return; }
-  let dockTimer;
+  let docked = false;
   let exitTimer;
   const finish = () => {
-    clearTimeout(dockTimer);
+
     clearTimeout(exitTimer);
     overlay.remove();
     document.documentElement.removeAttribute('data-kp-entry');
@@ -58,6 +58,8 @@
   const visibility = () => { if (document.hidden) finish(); };
   const restore = event => { if (event.persisted) finish(); };
   const dock = () => {
+    if (docked) return;
+    docked = true;
     const target = document.querySelector('header .brand-icon, header .brand-mark');
     const logo = overlay.querySelector('.kp-entry-logo');
     if (target) {
@@ -72,12 +74,13 @@
     overlay.classList.add('is-docking');
   };
   overlay.addEventListener('animationend', event => {
+    if (event.animationName === 'kp-entry-trace') dock();
     if (event.animationName === 'kp-entry-dock' || event.animationName === 'kp-entry-fallback' && event.target.classList.contains('kp-entry-backdrop')) finish();
   });
   document.addEventListener('keydown', finish);
   document.addEventListener('visibilitychange', visibility);
   window.addEventListener('pageshow', restore);
-  dockTimer = setTimeout(dock, 2000);
-  exitTimer = setTimeout(finish, 2700);
+  // Dock only after CSS has actually finished drawing, not a pre-paint JS timer.
+  exitTimer = setTimeout(finish, 5000);
 })();
 </script>
