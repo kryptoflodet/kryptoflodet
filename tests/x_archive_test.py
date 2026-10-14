@@ -17,7 +17,7 @@ class XArchiveTranslationTests(unittest.TestCase):
  def test_matching_checked_translation_survives_an_outage(self):
   import copy
   prior=self.post()
-  prior['swedish'].update(engine='qwen3-4b-sv-checked-v1',qualityVersion='x-swedish-v4')
+  prior['swedish'].update(engine='translategemma-12b-sv-v1',qualityVersion='x-swedish-v5')
   incoming=copy.deepcopy(prior);incoming.pop('swedish')
   rows=archive_posts([prior],[incoming],'2026-10-14T00:00:00Z')
   self.assertEqual(rows[0]['swedish']['text'],prior['swedish']['text'])

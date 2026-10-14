@@ -4,8 +4,8 @@ The next workflow step automatically translates the remaining originals.
 import hashlib,json,pathlib,re,datetime as dt
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 VERSION='x-sv-rules-v1'
-CHECKED_ENGINE='qwen3-4b-sv-checked-v1'
-CHECK_VERSION='x-swedish-v4'
+CHECKED_ENGINE='translategemma-12b-sv-v1'
+CHECK_VERSION='x-swedish-v5'
 TRUSTED_SWEDISH_ENGINES={'reviewed',VERSION,CHECKED_ENGINE}
 ASSET=r'(?:Bitcoin|Ethereum|Solana|SUI|XRP|BTC|ETH|SOL)'
 # English numeric syntax only. Formatting must never change numeric value or unit.
@@ -61,7 +61,7 @@ def automatic(text):
  outputs=[sentence_rule(s) for s in sentences]
  if not all(outputs):return None
  result=' '.join(outputs)
- return result,('summary' if len(normalized)>280 or len(normalized.split())>50 else 'translation')
+ return result,'translation'
 
 def apply_language(posts,reviews):
  counts={'original':0,'reviewed':0,'automatic':0,'pending':0};queue=[]
@@ -76,7 +76,7 @@ def apply_language(posts,reviews):
   if review.get('sourceUrl')==post.get('url') and review.get('textSha256')==digest and isinstance(review.get('text'),str) and review['text'] and review.get('method') in ('translation','summary'):
    if review.get('sourceTruncated'):post['sourceTruncated']=True
    post['swedish']={'text':review['text'],'method':review['method'],'sourceHash':digest,'engine':'reviewed'};counts['reviewed']+=1;continue
-  if isinstance(cached,dict) and cached.get('sourceHash')==digest and cached.get('engine') in TRUSTED_SWEDISH_ENGINES and cached.get('engine')!='reviewed' and (cached.get('engine')!=CHECKED_ENGINE or cached.get('qualityVersion')==CHECK_VERSION) and isinstance(cached.get('text'),str) and 0<len(cached['text'])<=6000:
+  if isinstance(cached,dict) and cached.get('sourceHash')==digest and cached.get('engine') in TRUSTED_SWEDISH_ENGINES and cached.get('engine')!='reviewed' and (cached.get('engine')!=CHECKED_ENGINE or cached.get('qualityVersion')==CHECK_VERSION) and isinstance(cached.get('text'),str) and 0<len(cached['text'])<=15000:
    post['swedish']=cached;counts['automatic']+=1;continue
   auto=automatic(text) if post.get('originalLanguage')=='en' else None
   if auto:

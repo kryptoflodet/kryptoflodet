@@ -10,7 +10,7 @@ class TranslationTests(unittest.TestCase):
   import json
   from types import SimpleNamespace
   p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
-  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':True}]))
+  result=SimpleNamespace(stderr='',stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':True}]))
   with patch('x_translate.subprocess.run',return_value=result) as run:
    counts=translate_posts([p],memo);self.assertEqual(counts['local'],1);self.assertEqual(counts['pending'],0);self.assertEqual(p['swedish']['engine'],ENGINE)
   p.pop('swedish')
@@ -20,7 +20,7 @@ class TranslationTests(unittest.TestCase):
   p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
   from types import SimpleNamespace
   import json
-  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':False}]))
+  result=SimpleNamespace(stderr='',stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':False}]))
   with patch('x_translate.subprocess.run',return_value=result):
    counts=translate_posts([p],memo);self.assertEqual(counts['pending'],1);self.assertNotIn('swedish',p)
   with patch('x_translate.subprocess.run',side_effect=RuntimeError):
@@ -35,6 +35,8 @@ class TranslationTests(unittest.TestCase):
  def test_trading_slang_and_english_remnants_are_rejected(self):
   self.assertFalse(valid_translation('Why are the bears waiting?','Varför väntar björnarna?'))
   self.assertFalse(valid_translation('Ethereum leads tokenized ETF market cap.','Ethereum leder tokenized ETF marknadskapital.'))
+  self.assertFalse(valid_translation('Bitfinex whales are opening longs. Smart money is going long!','Bitfinex stora ägare öppnar längder. Smart money går längs!'))
+  self.assertFalse(valid_translation('The transfer does not prove a sale.','Overförsändelsen bevisar inte en salg.'))
   self.assertTrue(valid_translation('Peter Schiff says sell Bitcoin.','Peter Schiff uppmanar till att sälja Bitcoin.'))
  def test_full_note_tweet_is_used_instead_of_clipped_excerpt(self):
   import datetime as dt
@@ -66,6 +68,10 @@ class TranslationTests(unittest.TestCase):
   self.assertFalse(valid_translation(source,'Bitcoin stiger till 82 000 dollar. Likvidationerna uppgår till 814 miljarder dollar.'))
   self.assertFalse(valid_translation(source,'Bitcoin stiger till 83 000 dollar. Likvidationerna uppgår till 814 miljoner dollar.'))
   self.assertEqual(amounts('170K and 18.9 million'),amounts('170 tusen och 18,9 miljoner',True))
+ def test_trillion_ranges_share_their_unit_and_currency(self):
+  self.assertTrue(valid_translation('Morgan Stanley forecasts $3 trillion to $10 trillion by 2030.','Morgan Stanley förutspår 3–10 biljoner dollar fram till 2030.'))
+  self.assertEqual(amounts('$31.7T'),amounts('31,7 biljoner dollar',True))
+  self.assertFalse(valid_translation('Morgan Stanley forecasts $3 trillion to $10 trillion by 2030.','Morgan Stanley förutspår 3–10 miljarder dollar fram till 2030.'))
  def test_qualifiers_names_and_negation_survive(self):
   self.assertTrue(valid_translation('Bitcoin could rise, but this is not confirmed.','Bitcoin skulle kunna stiga, men detta är inte bekräftat.'))
   self.assertFalse(valid_translation('Bitcoin could rise, but this is not confirmed.','Bitcoin stiger och är nu bekräftat.'))

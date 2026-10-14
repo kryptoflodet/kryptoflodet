@@ -74,7 +74,7 @@ def x_page(post):
  title='X · '+post['author'];path='/x/'+post['id']+'/'
  original=post['originalLanguage']=='sv';pending=not readable_post(post)
  text=post['text'] if original else post['swedish']['text'] if not pending else 'Svensk översättning saknas för det här inlägget.'
- label='Svensk översättning saknas' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Översatt och språkgranskat automatiskt' if post['swedish'].get('engine')=='qwen3-4b-sv-checked-v1' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
+ label='Svensk översättning saknas' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Maskinöversatt till svenska' if post['swedish'].get('engine')=='translategemma-12b-sv-v1' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
  art='bitcoin' if 'BTC' in post['coins'] else 'ethereum' if 'ETH' in post['coins'] else 'network'
  fallback_art='bitcoin-news' if art=='bitcoin' else art
  media=''
@@ -83,7 +83,7 @@ def x_page(post):
    u=urlsplit(image.get('url',''))
    if u.scheme!='https' or u.hostname!='pbs.twimg.com' or u.username or u.password or u.port:continue
   except (ValueError,AttributeError):continue
-  media+=f'<img src="{esc(image["url"])}" alt="{esc(image.get("alt") or "Bild från originalinlägget på X")}" loading="lazy" onerror="this.onerror=null;this.src=\'/images/{fallback_art}-640.webp\';this.alt=\'Illustrationsbild\'" style="display:block;max-width:100%;height:auto;margin:20px 0;border-radius:8px">'
+  media+=f'<img src="{esc(image["url"])}" alt="{esc("Bild från originalinlägget på X")}" loading="lazy" onerror="this.onerror=null;this.src=\'/images/{fallback_art}-640.webp\';this.alt=\'Illustrationsbild\'" style="display:block;max-width:100%;height:auto;margin:20px 0;border-radius:8px">'
  language=''
  original_html='<p class="meta">Den insamlade originaltexten är avklippt. Öppna originalinlägget på X för hela texten.</p>' if post.get('sourceTruncated') else ''
  original_html+='' if original else '<p class="meta">Originaltexten visas på avsändarens X-sida och återges inte här.</p>'

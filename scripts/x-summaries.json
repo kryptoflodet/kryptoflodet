@@ -114,7 +114,7 @@
   },
   "2109524968757445045": {
     "textSha256": "2f8f3cb55ea1be61c9ad74c1472ed64495c7dabb22c75bba54981e9ea1a6c277",
-    "text": "Det mesta av likviditeten under bitcoins kurs har redan svepts bort. Du vet redan vad det betyder …",
+    "text": "Merparten av likviditeten under Bitcoins aktuella kurs har redan förbrukats.\n\nDu vet redan vad det betyder …",
     "method": "translation",
     "sourceUrl": "https://x.com/cryptorover/status/2109524968757445045",
     "checkedAt": "2026-10-12T15:16:21.538794+00:00"
@@ -632,7 +632,7 @@
   },
   "2109922085195989320": {
     "textSha256": "20884dcb8a28bee1dbc4b3f4c243320286a05b32165f2b995bee74a15b77cd88",
-    "text": "Crypto Rover håller med Binances grundare CZ om att bitcoin kan nå 1 miljon dollar tidigare än många tror.",
+    "text": "Binances grundare CZ tror att Bitcoin kommer att nå 1 000 000 dollar tidigare än de flesta tror.\n\nJag håller med till 100 procent.",
     "method": "translation",
     "sourceUrl": "https://x.com/cryptorover/status/2109922085195989320",
     "checkedAt": "2026-10-13T00:00:00Z"
@@ -1141,7 +1141,7 @@
   "2109690567445582289": {
     "sourceUrl": "https://x.com/cryptorover/status/2109690567445582289",
     "textSha256": "e871a87563ae24fd2577ffe5429dae65ab7b6aa846dfcf447db4f150a8ff11bb",
-    "text": "Uppgången inom tokenisering av krypto kommer att bli ihågkommen i årtionden. Den har precis börjat!",
+    "text": "Uppgången för krypto och tokenisering kommer att bli ihågkommen i årtionden.\n\nDen har bara börjat!",
     "method": "translation"
   },
   "2109683876981555701": {
@@ -1255,7 +1255,7 @@
   "2108379018450141293": {
     "sourceUrl": "https://x.com/MMCrypto/status/2108379018450141293",
     "textSha256": "f5b78253024c3502efd319f26760d175d4e26f0f151a58f7e04ab6f2828d67fe",
-    "text": "Bitcoin: det här veckoljuset i kursdiagrammet blir avgörande!",
+    "text": "Bitcoin: veckans kursstapel blir avgörande!",
     "method": "translation"
   },
   "2110398915098956162": {
@@ -1682,7 +1682,7 @@
   "2110371295867355346": {
     "sourceUrl": "https://x.com/cryptorover/status/2110371295867355346",
     "textSha256": "7020de63bc797a3b27f9c36121c961f44d62f2a55579f21737180368d200ddac",
-    "text": "Bitcoin kommer att stiga igen.\n\nAlternativa kryptovalutor kommer att göra en stark comeback!\n\nKöp vid nedgångarna.",
+    "text": "Bitcoin kommer att stiga igen.\n\nAlternativa kryptovalutor kommer att återhämta sig kraftigt!\n\nKöp vid nedgångarna.",
     "method": "translation"
   },
   "2110369607290912783": {
@@ -1749,6 +1749,36 @@
     "sourceUrl": "https://x.com/TheMoonShow/status/2110427018307522883",
     "textSha256": "340851b7595743c58e038f9c592f33de9a64bb7bf28c2648ef5c57637bb8a7da",
     "text": "ORANJEBTC:s vd säger att Brasilien har ”kommit ganska långt” med att börja använda Bitcoin.\n\nHan säger att ett av deras främsta mål är att hjälpa den lokala marknaden att förstå ”hur Bitcoin kan vara ett meningsfullt sätt att bevara förmögenhet på lång sikt”.\n\nAlla vill vara med!",
+    "method": "translation"
+  },
+  "2110445534981112268": {
+    "sourceUrl": "https://x.com/cryptorover/status/2110445534981112268",
+    "textSha256": "ad3154855f62726f0d759aaa82c2809101f3565a685e7a70c8e88412081266b6",
+    "text": "Storägare på Bitfinex öppnar långa positioner i BTC och ETH under den här marknadskorrigeringen.\n\nErfarna investerare satsar på uppgång!",
+    "method": "translation"
+  },
+  "2110445030812901742": {
+    "sourceUrl": "https://x.com/BitcoinArchive/status/2110445030812901742",
+    "textSha256": "eae8af32424158721ce548dbcd25e13b00a2aab1ac4e9d270823ea1f0317220d",
+    "text": "Bitcoin löser det här!",
+    "method": "translation"
+  },
+  "2110440604685509067": {
+    "sourceUrl": "https://x.com/BitcoinArchive/status/2110440604685509067",
+    "textSha256": "ac95a98aa124712730162a445c17bdcd47d7a4eace7904e382ce1a73dcc67fce",
+    "text": "Wellington-Altus (40 miljarder dollar) säger att Bitcoin kommer att gynnas kraftigt när världsekonomin övergår till blockkedjeteknik.\n\n”Bitcoin löser det problemet. Det kommer att ta fart!”",
+    "method": "translation"
+  },
+  "2110450828809236822": {
+    "sourceUrl": "https://x.com/BitcoinArchive/status/2110450828809236822",
+    "textSha256": "069085abbef8be05d28832450063e96eacc4cd11070070c6fec134f0e31d4cba",
+    "text": "Bitcoin är fortfarande ett fynd. Missa inte chansen.",
+    "method": "translation"
+  },
+  "2110450176687288699": {
+    "sourceUrl": "https://x.com/TheMoonShow/status/2110450176687288699",
+    "textSha256": "801b001e111a3fd55500e5a38327a4e1e3518c34c24fc53ea435e52ec5a87b07",
+    "text": "Jim Cramer säger: ”Just nu går det inte att stoppa dem som räknar med en nedgång …”\n\nBitcoin gillar en oväntad vändning.\n\nÄr du redo för den?",
     "method": "translation"
   }
 }

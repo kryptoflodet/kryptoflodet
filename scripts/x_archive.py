@@ -22,7 +22,7 @@ def readable_post(post):
  if not archivable_post(post):return False
  if post.get('originalLanguage')=='sv':return True
  swedish=post.get('swedish',{})
- return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('engine') in TRUSTED_SWEDISH_ENGINES and (swedish.get('engine')!=CHECKED_ENGINE or swedish.get('qualityVersion')==CHECK_VERSION) and swedish.get('sourceHash')==source_hash(post['text'])
+ return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=15000 and swedish.get('method') in ('summary','translation') and swedish.get('engine') in TRUSTED_SWEDISH_ENGINES and (swedish.get('engine')!=CHECKED_ENGINE or swedish.get('qualityVersion')==CHECK_VERSION) and swedish.get('sourceHash')==source_hash(post['text'])
 
 def archive_posts(previous,posts,now):
  saved={}

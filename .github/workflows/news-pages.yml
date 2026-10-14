@@ -17,7 +17,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     env:
       ONNXRUNTIME_NODE_INSTALL_CUDA: skip
     environment:
@@ -49,33 +49,49 @@ jobs:
       - name: Collect original X posts
         run: python scripts/fetch-x.py
       - name: Restore source-bound Swedish translations
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: |
             .cache/x-translation/history.json
             .cache/x-translation/smoke-v1.json
-          key: x-swedish-v4-${{ github.run_id }}
-          restore-keys: x-swedish-v4-
-      - name: Restore local Swedish editor
-        uses: actions/cache@v4
+          key: x-swedish-v5-${{ github.run_id }}
+          restore-keys: x-swedish-v5-
+      - name: Restore local Swedish translator
+        id: swedish-model
+        uses: actions/cache/restore@v4
         with:
-          path: .cache/editor/model4.gguf
-          key: x-swedish-qwen3-4b-3605803b982c
+          path: .cache/x-translation/model12.gguf
+          key: x-swedish-translategemma12-b7aac4b4be7a
       - name: Prepare local Swedish translator
         run: |
           python -m pip install --only-binary=:all: llama-cpp-python==0.3.36 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
           python -m pip install lingua-language-detector==2.1.1
-          python scripts/local_editor.py
+          python scripts/x_translation_model.py
+      - name: Save verified local model
+        if: steps.swedish-model.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/x-translation/model12.gguf
+          key: x-swedish-translategemma12-b7aac4b4be7a
       - name: Verify natural Swedish with real model
         run: python scripts/x_translation_smoke.py
       - name: Prepare Swedish X cards
         run: python scripts/x_language.py
       - name: Translate every collected X post automatically
         env:
-          X_TRANSLATION_SECONDS: '600'
+          X_TRANSLATION_SECONDS: '1200'
         run: python scripts/x_translate.py
       - name: Preserve permanent X links
         run: python scripts/x_archive.py
+      - name: Save successful Swedish translations for retries
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache/x-translation/history.json
+            .cache/x-translation/smoke-v1.json
+          key: x-swedish-v5-${{ github.run_id }}
+      - name: Require Swedish for every X post before publication
+        run: python scripts/x_translation_gate.py
       - run: python scripts/fetch-market.py
       - name: Restore latest market context values
         uses: actions/cache@v4

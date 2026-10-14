@@ -1,8 +1,8 @@
 """Translate X originals automatically on the runner, without paid APIs."""
 import collections,datetime as dt,decimal,hashlib,json,os,pathlib,re,subprocess,sys,time
 from x_language import source_hash
-ROOT=pathlib.Path(__file__).resolve().parents[1];ENGINE='qwen3-4b-sv-checked-v1'
-CHECK_VERSION='x-swedish-v4'
+ROOT=pathlib.Path(__file__).resolve().parents[1];ENGINE='translategemma-12b-sv-v1'
+CHECK_VERSION='x-swedish-v5'
 CACHE=ROOT/'.cache/x-translation/history.json'
 
 def input_text(text):
@@ -16,7 +16,15 @@ def input_text(text):
  text=re.sub(r'\b[A-Z]{3,}\b',lambda m:names.get(m[0],m[0] if m[0] in keep else m[0].lower()),text)
  return text.strip()
 
+def expand_numeric_ranges(text):
+ # Both ends share the written scale/currency: $3–10T = $3T to $10T.
+ number=r'\d+(?:[.,]\d+)*'
+ units=r'trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kmbt]'
+ pattern=rf'(?P<currency>[$€£¥]?)(?P<first>{number})\s*[-–—]\s*[$€£¥]?(?P<last>{number})\s*(?P<unit>{units})\b(?P<suffix>\s*(?:dollars?|USD|euro|EUR|pund|GBP|yen|JPY))?'
+ return re.sub(pattern,lambda m:f"{m['currency']}{m['first']} {m['unit']}{m['suffix'] or ''} / {m['currency']}{m['last']} {m['unit']}{m['suffix'] or ''}",text,flags=re.I)
+
 def amounts(text,swedish=False):
+ text=expand_numeric_ranges(text)
  values=[]
  for m in re.finditer(r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kKmMbBtT])\b)?',text,re.I):
   token=m[0];unit=re.search(r'(trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kmbt])$',token,re.I)
@@ -32,6 +40,7 @@ def amounts(text,swedish=False):
 
 def quantity_units(text,swedish=False):
  """Keep each quoted quantity attached to its asset/currency, not just its digits."""
+ text=expand_numeric_ranges(text)
  units=[]
  numeric=r'(?<![\w])\d+(?:[.,’\'\u00a0\u202f ]\d+)*(?:\s*(?:trillion|billion|million|thousand|biljoner|biljon|miljarder|miljard|miljoner|miljon|tusen|[kKmMbBtT])\b)?'
  for m in re.finditer(numeric,text,re.I):
@@ -62,9 +71,9 @@ def normalize_translation(source,text):
  return text.strip()
 
 def valid_translation(source,text):
- if not isinstance(text,str) or not 1<=len(text)<=6000 or len(text)<len(source)*.5 or len(text)>len(source)*3:return False
+ if not isinstance(text,str) or not 1<=len(text)<=15000 or len(text)<len(source)*.5 or len(text)>len(source)*3:return False
  if re.search(r'\b(?:bulls?|bears?)\b',source,re.I) and re.search(r'\b(?:björn\w*|tjur\w*|bärs\w*|björs\w*)\b',text,re.I):return False
- if re.search(r'\b(?:tokenized|market cap|marknadskapital|enligt till|lagra sin rikedom)\b',text,re.I):return False
+ if re.search(r'\b(?:tokenized|market cap|marknadskapital|enligt till|lagra sin rikedom|smart money|on-chain|chains|longs|JUST IN|salg|overförsändelsen|öppnar längder|går längs)\b',text,re.I):return False
  if '<' in text or 'https://' in text or source.casefold()==text.casefold():return False
  if amounts(source)!=amounts(text,True):return False
  if quantity_units(source)!=quantity_units(text,True):return False
@@ -113,6 +122,7 @@ def translate_posts(posts, memo):
   request={'seconds':int(os.environ.get('X_TRANSLATION_SECONDS','600')),'items':[{'id':p['id'],'text':p['text'],'language':p.get('originalLanguage','und')} for p in pending]}
   try:
    result=subprocess.run([sys.executable,str(ROOT/'scripts/x_proofread.py')],input=json.dumps(request),text=True,capture_output=True,timeout=request['seconds']+180,check=True)
+   if result.stderr:print(result.stderr,file=sys.stderr,flush=True)
    outputs={p['id']:p for p in json.loads(result.stdout)}
   except Exception as error:print('X local Swedish translation unavailable:',type(error).__name__,flush=True)
  for post in pending:

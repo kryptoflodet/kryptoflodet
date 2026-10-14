@@ -21,13 +21,13 @@ export async function archivedXPostUrl(id:string,base:string,request:typeof fetc
 export function validXPost(value:unknown):value is XPost {
  if(!value||typeof value!=='object')return false;
  const n=value as XPost;
- return typeof n.id==='string'&&/^\d{15,22}$/.test(n.id)&&typeof n.handle==='string'&&/^[A-Za-z0-9_]{1,15}$/.test(n.handle)&&n.url===`https://x.com/${n.handle}/status/${n.id}`&&typeof n.author==='string'&&typeof n.originalLanguage==='string'&&typeof n.text==='string'&&n.text.trim().length>0&&n.text.length<=5000&&Array.isArray(n.coins)&&n.coins.every(c=>typeof c==='string')&&Array.isArray(n.categories)&&n.categories.every(c=>typeof c==='string')&&Number.isFinite(Date.parse(n.publishedAt))&&n.kind==='original-x-post'&&(!n.media||(Array.isArray(n.media)&&n.media.every(m=>m&&typeof m.url==='string'&&typeof m.alt==='string')))&&(!n.swedish||(typeof n.swedish.text==='string'&&n.swedish.text.length>0&&n.swedish.text.length<=6000&&['translation','summary','original'].includes(n.swedish.method)));
+ return typeof n.id==='string'&&/^\d{15,22}$/.test(n.id)&&typeof n.handle==='string'&&/^[A-Za-z0-9_]{1,15}$/.test(n.handle)&&n.url===`https://x.com/${n.handle}/status/${n.id}`&&typeof n.author==='string'&&typeof n.originalLanguage==='string'&&typeof n.text==='string'&&n.text.trim().length>0&&n.text.length<=5000&&Array.isArray(n.coins)&&n.coins.every(c=>typeof c==='string')&&Array.isArray(n.categories)&&n.categories.every(c=>typeof c==='string')&&Number.isFinite(Date.parse(n.publishedAt))&&n.kind==='original-x-post'&&(!n.media||(Array.isArray(n.media)&&n.media.every(m=>m&&typeof m.url==='string'&&typeof m.alt==='string')))&&(!n.swedish||(typeof n.swedish.text==='string'&&n.swedish.text.length>0&&n.swedish.text.length<=15000&&['translation','summary','original'].includes(n.swedish.method)));
 }
-const trustedSwedishEngines=new Set(['reviewed','x-sv-rules-v1','qwen3-4b-sv-checked-v1']);
+const trustedSwedishEngines=new Set(['reviewed','x-sv-rules-v1','translategemma-12b-sv-v1']);
 export function swedishText(post:XPost):string|null{
  if(post.originalLanguage==='sv')return post.text;
  const translation=post.swedish;
- return translation?.text&&trustedSwedishEngines.has(translation.engine)&&(translation.engine!=='qwen3-4b-sv-checked-v1'||translation.qualityVersion==='x-swedish-v4')?translation.text:null;
+ return translation?.text&&trustedSwedishEngines.has(translation.engine)&&(translation.engine!=='translategemma-12b-sv-v1'||translation.qualityVersion==='x-swedish-v5')?translation.text:null;
 }
 export function readableX(post:XPost){return Boolean(swedishText(post));}
 export function mergeFeed(news:NewsItem[],posts:XPost[],query:FeedQuery,savedOnly=false,saved:string[]=[],now=Date.now()):FeedEntry[]{
