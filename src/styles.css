@@ -294,25 +294,31 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 :root[data-theme="light"] body,:root[data-theme="light"] header,:root[data-theme="light"] .ticker-wrap,:root[data-theme="light"] .news-card,:root[data-theme="light"] .x-post,:root[data-theme="light"] .side-panel,:root[data-theme="light"] .market-pulse,:root[data-theme="light"] .sentiment-card,:root[data-theme="light"] .altseason-card,:root[data-theme="light"] dialog{transition:background-color .16s ease,color .16s ease,border-color .16s ease}
 @media(prefers-reduced-motion:reduce){body,header,.news-card,.x-post,.side-panel,.market-pulse,.sentiment-card,.altseason-card,dialog{transition:none!important}}
 
-/* On phones, show the chosen market coins immediately after the sentiment meters. */
+/* Keep the mobile market overview useful, compact, and visually quiet above the feed. */
 @media(max-width:760px){
- .workspace{display:flex;flex-direction:column;gap:18px}
+ .workspace{display:flex;flex-direction:column;gap:13px}
  .workspace>.feed-column{order:2}
- .workspace>.market-panel{order:1;width:100%;padding:15px 12px 0}
+ .workspace>.market-panel{order:1;width:100%;padding:11px 12px 0;border-radius:10px}
  .workspace>aside{display:none}
- .market-panel .panel-heading h2{font-size:17px}
- .market-panel .market-table-heading{display:none}
- .market-panel .market-table-scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,142px),1fr));gap:8px;max-height:none;overflow:visible;padding:2px 0 8px}
- .market-panel .market-row{display:grid;grid-template-columns:32px minmax(0,1fr);grid-template-areas:"coin name" "coin values";align-items:center;gap:4px 8px;min-width:0;padding:11px 9px;border:1px solid var(--border,#2b3430);border-radius:10px;background:var(--surface-raised,var(--panel2));text-align:left}
- .market-panel .market-rank{display:none}
- .market-panel .market-row>.coin{grid-area:coin;width:32px;height:32px;font-size:21px}
- .market-panel .market-name{grid-area:name;display:block;max-width:none;min-width:0}
- .market-panel .market-name b{display:block;max-width:100%;font-size:12px}
- .market-panel .market-name small{display:block;font-size:10px}
- .market-panel .market-values{grid-area:values;display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;margin:0;text-align:left}
- .market-panel .market-values b{max-width:100%;font-size:11px;white-space:normal;overflow-wrap:anywhere}
- .market-panel .market-values small{font-size:10px}
- .market-panel .market-foot{padding:8px 0 12px;font-size:10px}
+ .market-panel .market-heading-stack{margin-bottom:7px!important}
+ .market-panel .panel-heading{min-height:24px}
+ .market-panel .panel-heading h2{font-size:15px;gap:7px}
+ .market-panel .panel-heading h2 svg{width:15px;height:15px}
+ .market-panel .panel-heading>.subtle-label{display:none}
+ .market-panel .market-controls{margin:3px 0 0!important}
+ .market-panel .market-selection summary{min-height:28px;padding:4px 7px;font-size:10px}
+ .market-panel .market-table-heading,.market-panel .market-foot{display:none}
+ .market-panel .market-table-scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr));gap:6px;max-height:none;overflow:visible;padding:1px 0 8px}
+ .market-panel .market-row{display:grid;grid-template-columns:23px minmax(0,1fr);grid-template-areas:"coin name" "coin values";align-items:center;gap:3px 6px;min-width:0;min-height:48px;padding:7px;border:1px solid var(--border,#2b3430);border-radius:7px;background:var(--surface, #17191c);text-align:left}
+ .market-panel .market-row>.market-rank{display:none}
+ .market-panel .market-row>.coin{grid-area:coin;width:22px;height:22px;font-size:15px}
+ .market-panel .market-name{grid-area:name;display:block;max-width:none;min-width:0;line-height:1.2}
+ .market-panel .market-name b{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:600}
+ .market-panel .market-name small{display:block;margin-top:2px;font-size:9px;line-height:1;color:var(--text-secondary,var(--muted))}
+ .market-panel .market-values{grid-area:values;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:4px;min-width:0;margin:0;text-align:left}
+ .market-panel .market-values b{max-width:100%;font-size:8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+ .market-panel .market-values small{font-size:8px;line-height:1;white-space:nowrap}
+ .market-panel .market-empty{padding:9px;font-size:11px}
 }
 
 @media(min-width:761px){.workspace{grid-template-areas:"feed market" "feed aside";grid-template-rows:auto auto}.workspace>.feed-column{grid-area:feed}.workspace>.market-panel{grid-area:market}.workspace>aside{grid-area:aside}}
