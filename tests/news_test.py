@@ -17,14 +17,20 @@ class FeedTests(unittest.TestCase):
  def test_broken_feed_fails(self):
   with self.assertRaises(Exception):news.parse_feed('<html/>',{},'2026-10-11T14:00:00Z')
  def test_youtube_handle_resolves_only_one_real_channel_id(self):
-  import io
   class Response:
+   def __init__(self,page):self.page=page
    def __enter__(self):return self
    def __exit__(self,*args):pass
-   def read(self,size):return b'<meta itemprop="channelId" content="UC1234567890123456789012">'
-  url=news.youtube_feed_url('MMCryptoTube',lambda request,timeout:Response())
-  self.assertEqual(url,'https://www.youtube.com/feeds/videos.xml?channel_id=UC1234567890123456789012')
-  with self.assertRaises(ValueError):news.youtube_feed_url('bad/handle',lambda *a,**k:Response())
+   def read(self,size):return self.page
+  own='UC'+'1'*22;other='UC'+'2'*22
+  cases=[f'<meta itemprop="channelId" content="{own}"><meta content="{other}">',f'<meta content="{own}" itemprop="channelId">',f'<script>{{"channelMetadataRenderer":{{"externalId":"{own}"}}}}</script>']
+  for page in cases:
+   url=news.youtube_feed_url('MMCryptoTube',lambda request,timeout:Response(page.encode()))
+   self.assertEqual(url,'https://www.youtube.com/feeds/videos.xml?channel_id='+own)
+  large_page=(f'<meta itemprop="channelId" content="{own}">'+(' '*(2_100_000))).encode()
+  self.assertIn(own,news.youtube_feed_url('TheDiaryOfACEO',lambda request,timeout:Response(large_page)))
+  with self.assertRaises(ValueError):news.youtube_feed_url('bad/handle',lambda *a,**k:Response(b''))
+  with self.assertRaises(ValueError):news.youtube_feed_url('ambiguous',lambda *a,**k:Response(f'<meta itemprop="channelId" content="{own}"><meta itemprop="channelId" content="{other}">'.encode()))
 if __name__=='__main__':unittest.main()
 
 class PublicationTests(unittest.TestCase):

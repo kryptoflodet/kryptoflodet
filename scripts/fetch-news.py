@@ -26,16 +26,24 @@ def youtube_feed_url(handle,fetch=getattr(urllib.request,'urlopen',None)):
  """Resolve a public YouTube @handle to its stable RSS channel ID."""
  if not re.fullmatch(r'[A-Za-z0-9._-]{3,30}',handle):raise ValueError('Invalid YouTube handle')
  request=urllib.request.Request('https://www.youtube.com/@'+handle,headers={'User-Agent':'Mozilla/5.0 (compatible; Kryptopuls/2.0)','Accept':'text/html'})
- with fetch(request,timeout=12) as response:page=response.read(2_000_001).decode('utf-8','replace')
- if len(page)>2_000_000:raise ValueError('YouTube page too large')
+ # Only the leading page metadata is needed. Large channels can return several
+ # megabytes of initial video data, so read a bounded prefix and ignore the rest.
+ with fetch(request,timeout=12) as response:page=response.read(8_000_000).decode('utf-8','replace')
  # YouTube exposes the channel ID in page metadata/initial JSON; do not use
  # guessed IDs or third-party scraping services.
- candidates=re.findall(r'(?:itemprop=["\']channelId["\'][^>]*content=["\']|content=["\'])(UC[A-Za-z0-9_-]{22})',page)
- candidates+=re.findall(r'"(?:externalId|channelId)"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',page)
- candidates+=re.findall(r'/channel/(UC[A-Za-z0-9_-]{22})',page)
- ids=set(candidates)
- if len(ids)!=1:raise ValueError('Could not resolve one YouTube channel ID')
- return 'https://www.youtube.com/feeds/videos.xml?channel_id='+ids.pop()
+ # A channel page also contains IDs for recommended videos and channels. Only
+ # trust metadata that identifies the page's own channel, never any UC ID found
+ # elsewhere in the HTML.
+ channel_ids=set()
+ for tag in re.findall(r'<meta\b[^>]*>',page,re.I):
+  prop=re.search(r'\bitemprop=["\']channelId["\']',tag,re.I)
+  content=re.search(r'\bcontent=["\'](UC[A-Za-z0-9_-]{22})["\']',tag,re.I)
+  if prop and content:channel_ids.add(content.group(1))
+ if not channel_ids:
+  metadata=re.search(r'"channelMetadataRenderer"\s*:\s*\{.{0,5000}?"externalId"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',page,re.S)
+  if metadata:channel_ids.add(metadata.group(1))
+ if len(channel_ids)!=1:raise ValueError('Could not resolve one YouTube channel ID')
+ return 'https://www.youtube.com/feeds/videos.xml?channel_id='+channel_ids.pop()
 
 def parse_feed(payload,source,now):
  if b'<!DOCTYPE' in (payload if isinstance(payload,bytes) else payload.encode()).upper():raise ValueError('DTD is not permitted')
