@@ -3,7 +3,7 @@ export type MarketContext={
  schemaVersion:1;
  generatedAt:string|null;
  fearGreed:ContextMetric<{value:number|null;classification:string|null}>;
- market:ContextMetric<{btcDominance:number|null;ethDominance:number|null;marketCapChange24h:number|null;btcChange24h:number|null;ethChange24h:number|null}>;
+ market:ContextMetric<{totalMarketCapUsd?:number|null;volume24hUsd?:number|null;btcDominance:number|null;ethDominance:number|null;marketCapChange24h:number|null;btcChange24h:number|null;ethChange24h:number|null}>;
  altcoinSeason:ContextMetric<{value:number|null;source:string|null}>;
 };
 export const emptyMarketContext:MarketContext={schemaVersion:1,generatedAt:null,fearGreed:{value:null,classification:null,checkedAt:null,observedAt:null},market:{btcDominance:null,ethDominance:null,marketCapChange24h:null,btcChange24h:null,ethChange24h:null,checkedAt:null,observedAt:null},altcoinSeason:{value:null,source:null,checkedAt:null,observedAt:null}};
@@ -16,7 +16,7 @@ export function normalizeMarketContext(input:unknown):MarketContext|null{
  const fear=root.fearGreed&&typeof root.fearGreed==='object'?root.fearGreed as Record<string,unknown>:{};
  const market=root.market&&typeof root.market==='object'?root.market as Record<string,unknown>:{};
  const alt=root.altcoinSeason&&typeof root.altcoinSeason==='object'?root.altcoinSeason as Record<string,unknown>:{};
- return {schemaVersion:1,generatedAt:dateOrNull(root.generatedAt),fearGreed:{value:numberOrNull(fear.value,0,100),classification:textOrNull(fear.classification),checkedAt:dateOrNull(fear.checkedAt),observedAt:dateOrNull(fear.observedAt)},market:{btcDominance:numberOrNull(market.btcDominance,0,100),ethDominance:numberOrNull(market.ethDominance,0,100),marketCapChange24h:numberOrNull(market.marketCapChange24h,-1000,1000),btcChange24h:numberOrNull(market.btcChange24h,-1000,1000),ethChange24h:numberOrNull(market.ethChange24h,-1000,1000),checkedAt:dateOrNull(market.checkedAt),observedAt:dateOrNull(market.observedAt)},altcoinSeason:{value:numberOrNull(alt.value,0,100),source:textOrNull(alt.source),checkedAt:dateOrNull(alt.checkedAt),observedAt:dateOrNull(alt.observedAt)}};
+ return {schemaVersion:1,generatedAt:dateOrNull(root.generatedAt),fearGreed:{value:numberOrNull(fear.value,0,100),classification:textOrNull(fear.classification),checkedAt:dateOrNull(fear.checkedAt),observedAt:dateOrNull(fear.observedAt)},market:{totalMarketCapUsd:numberOrNull(market.totalMarketCapUsd,0),volume24hUsd:numberOrNull(market.volume24hUsd,0),btcDominance:numberOrNull(market.btcDominance,0,100),ethDominance:numberOrNull(market.ethDominance,0,100),marketCapChange24h:numberOrNull(market.marketCapChange24h,-1000,1000),btcChange24h:numberOrNull(market.btcChange24h,-1000,1000),ethChange24h:numberOrNull(market.ethChange24h,-1000,1000),checkedAt:dateOrNull(market.checkedAt),observedAt:dateOrNull(market.observedAt)},altcoinSeason:{value:numberOrNull(alt.value,0,100),source:textOrNull(alt.source),checkedAt:dateOrNull(alt.checkedAt),observedAt:dateOrNull(alt.observedAt)}};
 }
 export function movementToScore(change24h:number):number{return Math.max(0,Math.min(100,50+change24h*5));}
 export function calculateSentiment(context:MarketContext):number|null{

@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build && python scripts/build-pages.py",
     "preview": "vite preview",
-    "test": "node tests/feed.test.mjs && node tests/market.test.mjs && node tests/market-preferences.test.mjs && node tests/market-context.test.mjs && node tests/pages.test.mjs && node tests/chart.test.mjs && node tests/video.test.mjs && node tests/x-feed.test.mjs && node tests/x-card.test.mjs && node tests/crypto-story.test.mjs"
+    "test": "node tests/feed.test.mjs && node tests/market.test.mjs && node tests/market-preferences.test.mjs && node tests/market-context.test.mjs && node tests/pulse.test.mjs && node tests/pulse-ui.test.mjs && node tests/pages.test.mjs && node tests/chart.test.mjs && node tests/video.test.mjs && node tests/x-feed.test.mjs && node tests/x-card.test.mjs && node tests/crypto-story.test.mjs"
   },
   "dependencies": {
     "lucide-react": "1.31.0",

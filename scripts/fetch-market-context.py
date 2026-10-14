@@ -63,7 +63,7 @@ def empty_snapshot() -> dict[str, Any]:
         'generatedAt': None,
         'fearGreed': {'value': None, 'classification': None, 'checkedAt': None, 'observedAt': None},
         'market': {'btcDominance': None, 'ethDominance': None, 'marketCapChange24h': None,
-                   'btcChange24h': None, 'ethChange24h': None, 'checkedAt': None, 'observedAt': None},
+                   'btcChange24h': None, 'ethChange24h': None, 'totalMarketCapUsd': None, 'volume24hUsd': None, 'checkedAt': None, 'observedAt': None},
         'altcoinSeason': {'value': None, 'source': 'CoinMarketCap', 'checkedAt': None, 'observedAt': None},
     }
 
@@ -75,7 +75,7 @@ def normalize_snapshot(raw: Any) -> dict[str, Any]:
     base['generatedAt'] = iso_value(raw.get('generatedAt'))
     for key, fields in {
         'fearGreed': ('value', 'classification', 'checkedAt', 'observedAt'),
-        'market': ('btcDominance', 'ethDominance', 'marketCapChange24h', 'btcChange24h', 'ethChange24h', 'checkedAt', 'observedAt'),
+        'market': ('btcDominance', 'ethDominance', 'marketCapChange24h', 'btcChange24h', 'ethChange24h', 'totalMarketCapUsd', 'volume24hUsd', 'checkedAt', 'observedAt'),
         'altcoinSeason': ('value', 'source', 'checkedAt', 'observedAt'),
     }.items():
         value = raw.get(key)
@@ -90,6 +90,8 @@ def normalize_snapshot(raw: Any) -> dict[str, Any]:
                 base[key][field] = as_number(value.get(field), 0, 100)
             elif field == 'value' and key == 'altcoinSeason':
                 base[key][field] = as_number(value.get(field), 0, 100)
+            elif field in ('totalMarketCapUsd', 'volume24hUsd'):
+                base[key][field] = as_number(value.get(field), 0, 1e18)
             elif field in ('btcDominance', 'ethDominance'):
                 base[key][field] = as_number(value.get(field), 0, 100)
             else:
@@ -124,6 +126,8 @@ def parse_global_market(payload: Any, market_data: Any) -> dict[str, Any]:
     btc = quotes.get('bitcoin') if isinstance(quotes.get('bitcoin'), dict) else by_id.get('bitcoin', {})
     eth = quotes.get('ethereum') if isinstance(quotes.get('ethereum'), dict) else by_id.get('ethereum', {})
     result = {
+        'totalMarketCapUsd': as_number((data.get('total_market_cap') or {}).get('usd'), 0, 1e18),
+        'volume24hUsd': as_number((data.get('total_volume') or {}).get('usd'), 0, 1e18),
         'btcDominance': as_number(percentages.get('btc'), 0, 100),
         'ethDominance': as_number(percentages.get('eth'), 0, 100),
         'marketCapChange24h': as_number(data.get('market_cap_change_percentage_24h_usd'), -1000, 1000),
