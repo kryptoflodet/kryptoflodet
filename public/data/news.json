@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T12:27:25.851858Z",
+  "generatedAt": "2026-10-14T13:10:19.168351Z",
   "items": [
     {
       "id": "e0d8099509764f8cd530",
@@ -1542,11 +1542,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coindesk",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
-      "count": 23
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
+      "count": 24
     },
     {
       "id": "cointelegraph",
@@ -1558,11 +1558,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cointelegraph",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
-      "count": 16
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
+      "count": 17
     },
     {
       "id": "decrypt",
@@ -1574,10 +1574,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "decrypt",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 15
     },
     {
@@ -1590,10 +1590,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoinmag",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 9
     },
     {
@@ -1606,10 +1606,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1622,10 +1622,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "ethereum",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1638,10 +1638,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sui",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 4
     },
     {
@@ -1654,10 +1654,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "sec",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1670,10 +1670,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "solana",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 3
     },
     {
@@ -1686,7 +1686,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "ondo",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
       "error": "Källan kunde inte hämtas (HTTPError). Tidigare publicerade nyheter behålls.",
@@ -1702,7 +1702,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "chainlink",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
       "error": "Källan kunde inte hämtas (ValueError). Tidigare publicerade nyheter behålls.",
@@ -1718,10 +1718,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptonews",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 16
     },
     {
@@ -1734,11 +1734,11 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "theblock",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
-      "count": 18
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
+      "count": 17
     },
     {
       "id": "cryptoslate",
@@ -1750,10 +1750,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "cryptoslate",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Direkt RSS från utgivaren",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 7
     },
     {
@@ -1766,10 +1766,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "saylor-watch",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 22
     },
     {
@@ -1782,10 +1782,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-watch",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 10
     },
     {
@@ -1798,10 +1798,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-watch",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 1
     },
     {
@@ -1814,10 +1814,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-watch",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1830,10 +1830,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-watch",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Mediebevakning via Google Nyheter. Inte ett komplett X-flöde.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1846,10 +1846,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-video",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 11
     },
     {
@@ -1862,10 +1862,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-video",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Videor från den egna YouTube-kanalen. Inte X-inlägg.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 7
     },
     {
@@ -1878,10 +1878,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "coinmarketcap",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Offentligt indexerade Community-artiklar via Google Nyheter. Inläggen är inte automatiskt verifierade av CoinMarketCap.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 2
     },
     {
@@ -1894,7 +1894,7 @@
       "enabled": false,
       "connection": "planned",
       "independenceGroup": "coinglass",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Inte ansluten: nyhets-API kräver separat åtkomst.",
       "error": "Direkt nyhetsflöde kräver CoinGlass API-åtkomst. Datadiagram räknas inte som nyhetsartiklar."
@@ -1909,10 +1909,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "altcoin-daily-video",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Videor från Altcoin Dailys egen YouTube-kanal. Kryptorelaterade rubriker översätts till svenska; videon visas på originalspråket.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 9
     },
     {
@@ -1925,10 +1925,10 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "felix-video",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "sv",
       "coverage": "Direkt från Felix Nordqvists YouTube-kanal. Endast videor med ett uttryckligt kryptoämne i rubriken tas med. Allmän börs och privatekonomi sorteras bort.",
-      "lastSuccessAt": "2026-10-14T12:27:25.851858Z",
+      "lastSuccessAt": "2026-10-14T13:10:19.168351Z",
       "count": 0
     },
     {
@@ -1941,7 +1941,7 @@
       "enabled": true,
       "connection": "planned",
       "independenceGroup": "mmcrypto-video",
-      "checkedAt": "2026-10-14T12:27:25.851858Z",
+      "checkedAt": "2026-10-14T13:10:19.168351Z",
       "language": "en",
       "coverage": "Videor från MMCryptos YouTube-kanal. Videon visas på originalspråket och nyheten sammanfattas på svenska.",
       "error": "Källan kunde inte hämtas (ValueError). Tidigare publicerade nyheter behålls.",
@@ -1957,7 +1957,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "watcher-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 20
     },
@@ -1971,7 +1971,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "rover-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -1985,7 +1985,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "moon-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -1999,7 +1999,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "saylor-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
       "count": 4
     },
@@ -2013,7 +2013,7 @@
       "enabled": true,
       "connection": "connected",
       "independenceGroup": "bitcoin-archive-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. ",
       "count": 30
     },
@@ -2027,7 +2027,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "mmcrypto-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
       "count": 4
     },
@@ -2041,7 +2041,7 @@
       "enabled": true,
       "connection": "limited",
       "independenceGroup": "kid-x",
-      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning. Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
       "count": 3
     }
@@ -2052,19 +2052,19 @@
     "305dceb77658eb70658d"
   ],
   "health": {
-    "checkedAt": "2026-10-14T12:27:25.851858Z",
+    "checkedAt": "2026-10-14T13:10:19.168351Z",
     "sourcesConnected": 22,
     "sourcesTotal": 25,
-    "candidates": 173,
+    "candidates": 174,
     "published": 28,
-    "held": 164,
+    "held": 166,
     "heldReasons": {
-      "awaiting_editorial_review": 23,
-      "insufficient_source": 141
+      "awaiting_editorial_review": 22,
+      "insufficient_source": 144
     },
     "editorAttempts": 0,
     "paidApis": false,
     "editorMode": "reviewed-only",
-    "awaitingReview": 164
+    "awaitingReview": 166
   }
 }
