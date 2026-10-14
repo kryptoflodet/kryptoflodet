@@ -4,6 +4,134 @@
     {
       "media": [
         {
+          "url": "https://pbs.twimg.com/media/HUmVrkhX0AAWk6a.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmVq3NWQAAan31.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110382490481246668",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110382490481246668",
+      "publishedAt": "2026-10-14T14:49:29Z",
+      "text": "BLACKROCK'S CRYPTO FUNDS ARE BOUNCING BACK! 📈\n\nDigital asset holdings climbed 63% to $79.6 billion in Q3.\n\nOf the $30.8 billion increase, $22.9 billion came from market gains and $7.9 billion from investor inflows. https://t.co/29rD8qs6nw",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Blackrock's kryptovaluta återupprättar!\n\nInnehållet av digitala tillgångar ökade 63% till 79,6 miljarder dollar i Q3.\n\nAv den ökning på 30,8 miljarder dollar kom 22,9 miljarder dollar från marknadsvinster och 7,9 miljarder dollar från investerarnas inflöder.",
+        "method": "translation",
+        "sourceHash": "920dc70a19bf01508a367ecee1425ca0d87c043889b4962f780b93dd6a92d382",
+        "engine": "nllb-200-600m-q8-v3"
+      },
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110376878225948672/img/BYXWA89KCIijfdSE.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110377191863439857",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110377191863439857",
+      "publishedAt": "2026-10-14T14:28:26Z",
+      "text": "$ETH bear trap is in play. Dont miss this move! https://t.co/syduBnLSDT",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "ETH-björnfälla är i spel.\n\nMissa inte det här!",
+        "method": "translation",
+        "sourceHash": "698e6f84bab03e8090922074bded6ed5080ed61fe49cf2257235a1033b2cfc06",
+        "engine": "nllb-200-600m-q8-v3"
+      },
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmQQU0XkAEjiAs.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110376519311020512",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110376519311020512",
+      "publishedAt": "2026-10-14T14:25:45Z",
+      "text": "BITCOIN BREAKS BELOW $82,000! \n\nIf you don't buy the DIPS, you don't deserve the bull market RIPS. https://t.co/H2OdFQionm",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmNVW_W0AAM955.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmNbXAXYAAhd_C.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110374275249226164",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110374275249226164",
+      "publishedAt": "2026-10-14T14:16:50Z",
+      "text": "🚨 CRYPTO MARKET IS DUMPING!\n\nBitcoin drops below $82,000.\nEthereum falls below $2,440.\n\nSelling pressure is hitting the market hard! 📉 https://t.co/nRVvF4LR3J",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
+    },
+    {
+      "media": [
+        {
           "url": "https://pbs.twimg.com/media/HUmNIOcWkAAwfGj.jpg",
           "alt": ""
         }
@@ -34,7 +162,7 @@
         "sourceHash": "83a1e9f90411f19758a5bb771dfedcaef9e678cff7459bca44ce1be2d26d7372",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -63,7 +191,7 @@
         "sourceHash": "7020de63bc797a3b27f9c36121c961f44d62f2a55579f21737180368d200ddac",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -91,7 +219,7 @@
         "sourceHash": "6aea501ae0e33b4aa1d4ddb29482a32b52ab30fc00639843cf27a6937e0341dc",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -126,7 +254,7 @@
         "sourceHash": "d0b2f1cc023935b82835023bfa9154cbd99bd7854586619e7f7fd1942b770f1c",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -152,7 +280,7 @@
         "sourceHash": "5a847d30daed3469c15862b8d5ca0b1b2528f750b88c4636c8f8bf00f09bbe43",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -183,7 +311,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -216,7 +344,7 @@
         "sourceHash": "49cd45cb1edbb7930db52096859a93888c00a434d213765d1a720cae57e922cb",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -251,7 +379,7 @@
         "sourceHash": "90c2434330ac0417130508c4d3dd626ce5f4421d93f9b7af107ec1f33078e7c2",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -282,7 +410,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -315,7 +443,7 @@
         "sourceHash": "b84b07e20a8b17b80c3da174f88334b11641af9c2dcd62645768e013788b5956",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -342,7 +470,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -369,7 +497,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -403,7 +531,7 @@
         "sourceHash": "92627009282f9e38b868c69c10929790018c7f42bc46d851b2cd425372224b1d",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -431,7 +559,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -464,7 +592,7 @@
         "sourceHash": "1c11f4868d2d1e507f8d5899adb3bc9ad6ee61f0ef77785020e05b6d2f675e8e",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -502,7 +630,7 @@
         "sourceHash": "5a0548dc7f8ba208eaf1b17c25a568de9b5ed503d090bd9e3745441a7ade92aa",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -529,7 +657,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -562,7 +690,7 @@
         "sourceHash": "8cea5535b1b4f3e6e1f629742e8a442bf66c84d88ec38f0f6eb71a9a67dea76f",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -590,7 +718,7 @@
         "sourceHash": "6b16ef56a6212c429e5e38a8bbbd6b7cc8673419286cacf5d60dd146004ed320",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -623,7 +751,7 @@
         "sourceHash": "6c253e374fe7d40335d6be35152c72b142dae9c64d461d6093e7e65fb9f18e58",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -656,7 +784,7 @@
         "sourceHash": "1cd84455d14ec4bb654d53d4d07530f5df85c01d6ad8258c5699774ad67e3e27",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -684,7 +812,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -715,7 +843,7 @@
         "sourceHash": "b7b631457c246bdbdb26aba980da8a474ba971513a69a248de613a291e4d3808",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -741,7 +869,7 @@
         "sourceHash": "22fed17743a3435e51f4dc096f89af7788f56eb60c5ebd308206d4ea6ff4bbcd",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -768,7 +896,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -797,7 +925,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -827,7 +955,7 @@
         "sourceHash": "aa65164818372d36671f053d7b36e5e24c39824bcf9c3ab70582d09180761b15",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -864,7 +992,7 @@
         "sourceHash": "4b14933136e4c2ae739488563a312f896b9bfbc0db524bfbc4ceeca49298f5c6",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -895,7 +1023,7 @@
         "sourceHash": "1f108b90156d79ad40ee2aa6671a97928a7e70247d55658a73159db9ac7d8dbd",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -921,7 +1049,7 @@
         "sourceHash": "b0602dfc9c93ebeabe26a115d7722e8a4d470e79d25668b043111ba870195df2",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -954,7 +1082,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -982,7 +1110,7 @@
         "sourceHash": "9b4fef5266957ede48666ee688f9be135d64a73a04a4e86f67f1afc83bd81900",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1021,7 +1149,7 @@
         "sourceHash": "f30a5a34477338ee0c65a1636114773b32bf2c60a7753d63d372fc26aa6f53bd",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1054,7 +1182,7 @@
         "sourceHash": "3b3403595101906205256b34b3e2c5f4eb8f459f6e295acf17ae0beb65dabfca",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1074,7 +1202,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1111,7 +1239,7 @@
         "sourceHash": "8e776ab594a765aa7aa535a2bda6495014052d9c9dad7b612c9fecb8688979d3",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1144,7 +1272,7 @@
         "sourceHash": "9aac2897407eda2e7c97069de253b95368649cfe27f1cba3729b5b92f87704ba",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1172,7 +1300,7 @@
         "sourceHash": "98996bfa66400b8b1fa6d0cdf4f53b6f02c4baa22e3c4baae47d5e9b30da0aab",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1207,7 +1335,7 @@
         "sourceHash": "e8cd0033de9ba8b37bbbdeb10745094cc432e502a9a1b96c8c94e0d548e56158",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1240,7 +1368,7 @@
         "sourceHash": "baa0277e66073f7afe5ebe938a466f1755521953ca1b2868e08bca90359fc9b7",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1277,7 +1405,7 @@
         "sourceHash": "c1ae1a2813f3b2748dae773b9863eed5ec5ea9e3bf2342283dd04b878a923a72",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1310,7 +1438,7 @@
         "sourceHash": "9caa931bd3ee293cc101b580805d613dc1909d1474dd78e01f55b6f58a0b9e80",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1343,7 +1471,7 @@
         "sourceHash": "bf1aa241084e0f26c3e086a06e631feb0a48ab34e7f8b46fed9d64cef956b086",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1371,7 +1499,7 @@
         "sourceHash": "cd1585f24415ad3d45f191fa36592fca3ecdf5b99c0ba7fa99750be47b565487",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1411,7 +1539,7 @@
         "sourceHash": "01f637890d27aeb8795273bff0bf646cdb35bd274c57b4af058caf6e3624a6c8",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1444,7 +1572,7 @@
         "sourceHash": "61219bc73b089b0f862eb11c5d0d661c4bf2aa685d3acdffb48ccd3c4d70affb",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1481,7 +1609,7 @@
         "sourceHash": "4b8ace4e04ad8d707d94137302a37059b76b3dc0c102821b71710b195929b2a5",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1512,13 +1640,13 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "archivedAt": "2026-10-14T14:16:06.305181Z",
       "swedish": {
         "text": "Stort BTC-köp!\n\nEn val verkar ha förvärvat 1 162 BTC (96,77 miljoner dollar) via Wintermute.\n\nFem nyskapade plånböcker fick hela beloppet under de senaste 12 timmarna.",
         "method": "translation",
         "sourceHash": "fff27ca13224aec41a4f1b7b3c32a90918b1cc32f952292fe5243cfd4bc7a498",
         "engine": "nllb-200-600m-q8-v3"
-      },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      }
     },
     {
       "media": [
@@ -1545,13 +1673,13 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "archivedAt": "2026-10-14T14:16:06.305181Z",
       "swedish": {
         "text": "idag: Amerikanska inflationsdata kommer att släppas KLOCKAN 08:30 ET. \n\nTidigare data: 3,4% \n\nFörväntade data: 3,6%\n\nAlla ögon på inflationen. \n\nHur kommer Bitcoin att reagera?",
         "method": "translation",
         "sourceHash": "c7f82923f4ec32522b23ed6bbbdfcd07f8a8ada540f3481bf8764a1fdbace4f1",
         "engine": "mymemory-free-v2"
-      },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      }
     },
     {
       "media": [
@@ -1582,13 +1710,13 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "archivedAt": "2026-10-14T14:16:06.305181Z",
       "swedish": {
         "text": "Fidelity har köpt 103,1 miljoner dollar i BTC!",
         "method": "translation",
         "sourceHash": "1f9e62f1832e9900e745b0a5ff46b9d537ba8f236a3ac712fe35e5bf4da24460",
         "engine": "nllb-200-600m-q8-v3"
-      },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      }
     },
     {
       "media": [
@@ -1621,7 +1749,7 @@
         "sourceHash": "f13cf4ec62d993e60b2e175fd7a193320c156fbeb178493130e9fe040acf55a2",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1658,7 +1786,7 @@
         "sourceHash": "65257d071ba8a80caec8400e03a300ae66c6ac5a23bcf0ff4ffd37a16d6bc00c",
         "engine": "mymemory-free-v2"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1693,7 +1821,7 @@
         "sourceHash": "0ff073fb3a79fc9a182f713da8de8a77a621d167ed74fd798c70aee3173c95de",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1721,7 +1849,7 @@
         "sourceHash": "e3f928bc24ca9d39786d57dfe8e25cd91a0f6df3aa107f8d8a7e29298c4c0a36",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1754,7 +1882,7 @@
         "sourceHash": "3efd371a8f03d5b6febcb9e133ab08c21331698e6ea8eb07d86aa4f252b3fe36",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1785,7 +1913,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1818,7 +1946,7 @@
         "sourceHash": "10ddf89c0b0f3cee9a99bc8b4d810258c2ac5372ad9dee8a550ed8058a521631",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1844,7 +1972,7 @@
         "sourceHash": "ff895984c3ff4855f392a1c17100411ea8ac2ceb2d2feced5c377ef8189732f4",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1870,7 +1998,7 @@
         "sourceHash": "6d780e464e9135eb9e00d0a5544deadaf43a7894f12a7c2db174ba4e247f7c6a",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1903,7 +2031,7 @@
         "sourceHash": "f41b2e4d40f69510083fe7c78eefa3bd54a07d750f58f8e879880e616a8947df",
         "engine": "nllb-200-600m-q8-v3"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1936,7 +2064,7 @@
         "sourceHash": "05a9dd8ba12deedb9f132a30182de97010d90de7e3f4219be999ab5ecd553e0d",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -1964,7 +2092,7 @@
         "sourceHash": "0cc72329f1a2c9f031e4dea5d2a37bcbda0b096269c3a6145ed69d7d7f749187",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -1998,7 +2126,7 @@
         "sourceHash": "fcdfec91d4a299880ea7a9438064266ce206b978eeb479f0f69c3cf2208368ba",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -2032,7 +2160,7 @@
         "sourceHash": "28afd1a29e3b19a9da331d616c164b8b17654f93f4a1d2f65b0519d4747a28cf",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2065,7 +2193,7 @@
         "sourceHash": "b19874730f182fa245dd1e6fdcdd3056699c246d42efedebc0e4b3c27176e52c",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2131,7 +2259,7 @@
         "sourceHash": "22ac01e894269d1b70b520a1c4fc06f82c2d04bdbc87d2cc5d9bc9b3be023d1b",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2202,7 +2330,7 @@
         "sourceHash": "6273e9a0d6d9e54bc4c907fa157246888f0fce0d68573895f6539dcf1eec743d",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2240,7 +2368,7 @@
         "sourceHash": "29d52f126cbad3d14a832d94c622cf5e2bb61d6f21a1aff3acc430f604d2abdb",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2278,7 +2406,7 @@
         "sourceHash": "9175d133a631fc3516a8f9f8815cb400220d611ed3401a1f7ac972a07566ff48",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2344,7 +2472,7 @@
         "sourceHash": "6028b9e53688f6f2d2bbf61408b6be39da85e7fc4e5c4cee6083d04645f884b3",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2483,7 +2611,7 @@
         "sourceHash": "a5c03ed904968e9d841c3bd8e1f4a96bc421f458c66668d44c3dc2a8ccb00481",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2520,7 +2648,7 @@
         "sourceHash": "73ef6b69185cfeeeb74b6b0aee3aa065ce9058ef6c0a0401889e7269590ded50",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2592,7 +2720,7 @@
         "sourceHash": "3ff3a8e0de7dd1de64634feb396fbd532e33d9c9b77f0cf8cb4f574eeb9cd73b",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2627,7 +2755,7 @@
         "sourceHash": "fd0099b187c90971837cd74c682c313eac59b0a69964a6e28ebd47df81134a57",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2693,7 +2821,7 @@
         "sourceHash": "40da8c0bc9c3d539f2c77d9d5e1bea759774c36d9892af92b86f466731a688a1",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2726,7 +2854,7 @@
         "sourceHash": "628a5b2fc7def7c155b54b61c2dc2fd639f5a7a9e0945da60ebe03b730396a4c",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2759,7 +2887,7 @@
         "sourceHash": "48784800005769256b40dfdaefa8710c3fc0953821de1986c5817230710a0b82",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2794,7 +2922,7 @@
         "sourceHash": "da539dde031c1a2fae9e02c75c3ccd5d50112b7ffb898d3fb880a103f7763213",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -2820,7 +2948,7 @@
         "sourceHash": "c6ac095157180c3865c2c48f29d15c744b674f55b198875f5a20a1dfdb2fa38c",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -2848,7 +2976,7 @@
         "sourceHash": "c0bae27c7f073286f5d50043283acec3bdc62d0e1f1cff963727af95270b7b82",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2885,7 +3013,7 @@
         "sourceHash": "adfa6e709c381cd9c838daef0878a0c78397dfce1cb71d830f9c4cfed6390093",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -2955,7 +3083,7 @@
         "sourceHash": "61106ec45d0330409d05cf5560c282d60367a9269b319223895f53836402b098",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -3014,7 +3142,7 @@
         "sourceHash": "61914fc098b0123c608776d218b258b867939f8498c16b7d04537c68542d7b21",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3051,7 +3179,7 @@
         "sourceHash": "54f41517b5e893798a4250529e3c0de8f6c198cd7a097f227e3c5cf2f4a3068f",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -3082,7 +3210,7 @@
         "sourceHash": "914a04d1eb201c04866cbb0fcb9f38178b71177d85b80cdb8cd3baf558c86942",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3119,7 +3247,7 @@
         "sourceHash": "ec4c29824e2d441c1c5e94b2f91cdd891afc7f081d7b36f7f25a1746281a66ec",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3193,7 +3321,7 @@
         "sourceHash": "3e6d9f282e8f8c503877c07e87f56b0086a36ded7f5564cbd4c1b42387eacc4d",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3260,7 +3388,7 @@
         "sourceHash": "6c049a50d5838202f20d1b68678992df0ef11dda96b923aef686f03336661ee2",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3297,7 +3425,7 @@
         "sourceHash": "9ff25816015015ed8edf276c52db9bfe143f3f68e14f3b1f322da8cefccb2ee4",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3334,7 +3462,7 @@
         "sourceHash": "7af6cf081c7e20a27aeb67e5166938ea4bec57f303f8b68aecab8e4367fd135f",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3409,7 +3537,7 @@
         "sourceHash": "06ea79a3879eafdcfb282ac862a05cf6c76f1951de0ec9b864a75bd0bf7f2357",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3510,7 +3638,7 @@
         "sourceHash": "21957786f855e133f58136b332d10ec648cfa04174c9d977343137ac337acfb1",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3581,7 +3709,7 @@
         "sourceHash": "d797691b1866ee61473555ca3196ee2140fe4142cd82b30e0bb7446fd1b150d7",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -3640,13 +3768,13 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
+      "archivedAt": "2026-10-14T14:16:06.305181Z",
       "swedish": {
         "text": "Crypto Rover uppger att en brittisk domstol dömt till regeringens fördel i ett ärende om 61 000 beslagtagna BTC, värderade till över 5 miljarder dollar. Kontot skriver att beslutet kan innebära att regeringen behåller innehavet och att en försäljning av bitcoin därmed kan undvikas.",
         "method": "summary",
         "sourceHash": "023e693e2263c825ad2974b830d3ba50379c8823985132b81b3fcdcee47f2de7",
         "engine": "reviewed"
-      },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      }
     },
     {
       "media": [],
@@ -3672,7 +3800,7 @@
         "sourceHash": "e39b6754492837fbf73e512e933a7bb187d62ca9e6ae06161ad5a2dbd13061d3",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -3733,7 +3861,7 @@
         "sourceHash": "042935189f2e8f248f8fbf8fa71f97b01a4e4ace2c81156d33a6f5f399a5f48f",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -4608,7 +4736,7 @@
         "sourceHash": "e83829baa3f47f842a4bf0d6bb19441ae200fc5014dd072372edc1cf088d93eb",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -4674,7 +4802,7 @@
         "sourceHash": "acd980e5ff7a29b16089114d35d19b0e21823be992d2a05745581cbbe7f81a94",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -4742,7 +4870,7 @@
         "sourceHash": "60f6ba8aa3106704ee54f94f4dd5fd0039686558b7efda29a5a3a08d1320a593",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -4775,7 +4903,7 @@
         "sourceHash": "ee4edf0364335ee5d11e1d9f323725264dc9e13bf2d3d15c4fc292cfcea02727",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -4804,7 +4932,7 @@
         "sourceHash": "3c038340877532290c4bcccda76a8ad0ace9d23a6278ba2a8c5c3020feff0909",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -4838,7 +4966,7 @@
         "sourceHash": "bd8a7fc0b8b66e02813d779c1934c68291e00a0a9316f76269d2b871705921cd",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -4871,7 +4999,7 @@
         "sourceHash": "afac684b07faae67e2c0841b39db5bfd82ad32b0ec4d192fbb661cca2f080918",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -5328,7 +5456,7 @@
         "sourceHash": "9ce484603276da0b908ecc6ce81cdcc8fb66726ac5f75d01b071197e6a81dd07",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -5558,7 +5686,7 @@
         "sourceHash": "218bb487b5cec7cbddddcdfa8c5ead09beda3a935e34be83f23dd25dd7344433",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -6035,7 +6163,7 @@
         "sourceHash": "54c4dc82b124620424e3b6eb08aafc7f48a3b0af8831c69331b91f7ff97b6f86",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -6343,7 +6471,7 @@
         "sourceHash": "e08583e117980e74aceae00e30648fd792347ca3bf0e466e84043fa1727c7814",
         "engine": "x-sv-rules-v1"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -6508,7 +6636,7 @@
         "sourceHash": "1a95c462fbae4e210c7413a252ec60ce9ed8c873e2c99a4278b2c4ff6894e1a3",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -6641,7 +6769,7 @@
         "sourceHash": "155bee8faf6c7a84cb91452755b4895568c1a05331cef4a60202f968f6c9b857",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -6827,7 +6955,7 @@
         "sourceHash": "9080cdcd2f1b869752dc37e6d8f750ba14c339c42b520c09c933b6e1cdc8e1ba",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -6929,7 +7057,7 @@
         "sourceHash": "b26032c5ec8184ad0f57f755224e75025ac7461b4c82dc053b9040df8d3bc214",
         "engine": "x-sv-rules-v1"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -6957,7 +7085,7 @@
         "sourceHash": "b952ba517d3fa82bba6223f7e6eaec1ac88b90346c778462a1792680d22d64f7",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -7176,7 +7304,7 @@
         "sourceHash": "8272b3381e7d8c41b80f6c651acefa19f3a86fd6101baaaba7aca4b583cbd047",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -7792,7 +7920,7 @@
         "sourceHash": "c2365b6799289390b27e603393673cecc9d8a7da427fbcf74edaa84e1ad2deda",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -8065,7 +8193,7 @@
         "sourceHash": "c521c54a1b7923797cb53e7a4b8c04214ef039fbd816a2a599f35819c410e880",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -8223,7 +8351,7 @@
         "sourceHash": "69b0dd90b43fb50f7aca8f659b88a00f9f30490de947c1ece0b9add8e9c59b0f",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -8314,7 +8442,7 @@
         "sourceHash": "1fff6e3d0a166d3b2c96b25cfbb4758b927cdee506b8e2979fe03a03edc6eedb",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -8340,7 +8468,7 @@
         "sourceHash": "f651691f12c10bb4aedf493092a6efd38a3a713aa782f865cf1d6ce456bdc110",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [
@@ -8458,7 +8586,7 @@
         "sourceHash": "af7a58477ff0d897315165df31c0035b3a43e998ba202c8c475f96741ac6efca",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -8527,7 +8655,7 @@
         "sourceHash": "bb9914859f644806ea1eade2edc47812faea40b4309f9541febb3eb03a4065a5",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -8583,7 +8711,7 @@
         "sourceHash": "54e54eafde66c08c9873548002e8d6f8321bfac93394767d2bfde6e0da27139c",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],
@@ -8696,7 +8824,7 @@
         "sourceHash": "b056000e3a5e9931ed93a3a0bb220b0ab3f0e588a9ac0801e0a984ec12b8f7eb",
         "engine": "reviewed"
       },
-      "archivedAt": "2026-10-14T14:16:06.305181Z"
+      "archivedAt": "2026-10-14T14:52:52.531765Z"
     },
     {
       "media": [],

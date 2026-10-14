@@ -1,6 +1,130 @@
 {
-  "generatedAt": "2026-10-14T14:14:59.814022Z",
+  "generatedAt": "2026-10-14T14:51:14.042336Z",
   "posts": [
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmVrkhX0AAWk6a.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmVq3NWQAAan31.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110382490481246668",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110382490481246668",
+      "publishedAt": "2026-10-14T14:49:29Z",
+      "text": "BLACKROCK'S CRYPTO FUNDS ARE BOUNCING BACK! 📈\n\nDigital asset holdings climbed 63% to $79.6 billion in Q3.\n\nOf the $30.8 billion increase, $22.9 billion came from market gains and $7.9 billion from investor inflows. https://t.co/29rD8qs6nw",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Blackrock's kryptovaluta återupprättar!\n\nInnehållet av digitala tillgångar ökade 63% till 79,6 miljarder dollar i Q3.\n\nAv den ökning på 30,8 miljarder dollar kom 22,9 miljarder dollar från marknadsvinster och 7,9 miljarder dollar från investerarnas inflöder.",
+        "method": "translation",
+        "sourceHash": "920dc70a19bf01508a367ecee1425ca0d87c043889b4962f780b93dd6a92d382",
+        "engine": "nllb-200-600m-q8-v3"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110376878225948672/img/BYXWA89KCIijfdSE.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110377191863439857",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110377191863439857",
+      "publishedAt": "2026-10-14T14:28:26Z",
+      "text": "$ETH bear trap is in play. Dont miss this move! https://t.co/syduBnLSDT",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "ETH-björnfälla är i spel.\n\nMissa inte det här!",
+        "method": "translation",
+        "sourceHash": "698e6f84bab03e8090922074bded6ed5080ed61fe49cf2257235a1033b2cfc06",
+        "engine": "nllb-200-600m-q8-v3"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmQQU0XkAEjiAs.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110376519311020512",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110376519311020512",
+      "publishedAt": "2026-10-14T14:25:45Z",
+      "text": "BITCOIN BREAKS BELOW $82,000! \n\nIf you don't buy the DIPS, you don't deserve the bull market RIPS. https://t.co/H2OdFQionm",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmNVW_W0AAM955.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmNbXAXYAAhd_C.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110374275249226164",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110374275249226164",
+      "publishedAt": "2026-10-14T14:16:50Z",
+      "text": "🚨 CRYPTO MARKET IS DUMPING!\n\nBitcoin drops below $82,000.\nEthereum falls below $2,440.\n\nSelling pressure is hitting the market hard! 📉 https://t.co/nRVvF4LR3J",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null
+    },
     {
       "media": [
         {
@@ -1439,110 +1563,6 @@
     {
       "media": [
         {
-          "url": "https://pbs.twimg.com/media/HUkVciha0AAhxMa.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://pbs.twimg.com/media/HUkVenqbEAAlvP3.jpg",
-          "alt": ""
-        }
-      ],
-      "id": "2110242949380620389",
-      "handle": "TheMoonShow",
-      "author": "The Moon Show",
-      "sourceId": "moon-x",
-      "url": "https://x.com/TheMoonShow/status/2110242949380620389",
-      "publishedAt": "2026-10-14T05:35:00Z",
-      "text": "Large $BTC purchase! \n\nA Whale appears to have acquired 1,162 BTC ($96.77M) through Wintermute.\n\nFive newly created wallets received the full amount over the past 12 hours. https://t.co/iIyuvlftda",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Stort BTC-köp!\n\nEn val verkar ha förvärvat 1 162 BTC (96,77 miljoner dollar) via Wintermute.\n\nFem nyskapade plånböcker fick hela beloppet under de senaste 12 timmarna.",
-        "method": "translation",
-        "sourceHash": "fff27ca13224aec41a4f1b7b3c32a90918b1cc32f952292fe5243cfd4bc7a498",
-        "engine": "nllb-200-600m-q8-v3"
-      }
-    },
-    {
-      "media": [
-        {
-          "url": "https://pbs.twimg.com/media/HUkP_6EWkAAK66T.jpg",
-          "alt": ""
-        }
-      ],
-      "id": "2110239174687326282",
-      "handle": "TheMoonShow",
-      "author": "The Moon Show",
-      "sourceId": "moon-x",
-      "url": "https://x.com/TheMoonShow/status/2110239174687326282",
-      "publishedAt": "2026-10-14T05:20:00Z",
-      "text": "TODAY: U.S. inflation data will be released at 8:30 A.M. ET. 📢\n\nPrevious data: 3.4% \n\nExpected data: 3.6%\n\nAll eyes on inflation. \n\nHow will Bitcoin react? https://t.co/Lw6j1nPzNr",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "idag: Amerikanska inflationsdata kommer att släppas KLOCKAN 08:30 ET. \n\nTidigare data: 3,4% \n\nFörväntade data: 3,6%\n\nAlla ögon på inflationen. \n\nHur kommer Bitcoin att reagera?",
-        "method": "translation",
-        "sourceHash": "c7f82923f4ec32522b23ed6bbbdfcd07f8a8ada540f3481bf8764a1fdbace4f1",
-        "engine": "mymemory-free-v2"
-      }
-    },
-    {
-      "media": [
-        {
-          "url": "https://pbs.twimg.com/media/HUkHEZOXUAApVWx.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://pbs.twimg.com/media/HUkHE3IXwAERk24.jpg",
-          "alt": ""
-        }
-      ],
-      "id": "2110225690960568538",
-      "handle": "TheMoonShow",
-      "author": "The Moon Show",
-      "sourceId": "moon-x",
-      "url": "https://x.com/TheMoonShow/status/2110225690960568538",
-      "publishedAt": "2026-10-14T04:26:25Z",
-      "text": "Fidelity has bought $103.1M worth of $BTC! 🟠 https://t.co/hNDJ2qQIIG",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Fidelity har köpt 103,1 miljoner dollar i BTC!",
-        "method": "translation",
-        "sourceHash": "1f9e62f1832e9900e745b0a5ff46b9d537ba8f236a3ac712fe35e5bf4da24460",
-        "engine": "nllb-200-600m-q8-v3"
-      }
-    },
-    {
-      "media": [
-        {
           "url": "https://pbs.twimg.com/media/HUkFCTQWAAAc-fT.jpg",
           "alt": ""
         }
@@ -2936,42 +2956,6 @@
       }
     },
     {
-      "media": [
-        {
-          "url": "https://pbs.twimg.com/media/HUgQ7kZWkAAUiKW.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://pbs.twimg.com/media/HUgQ7krXMAAugGa.jpg",
-          "alt": ""
-        }
-      ],
-      "id": "2109955188450562485",
-      "handle": "cryptorover",
-      "author": "Crypto Rover",
-      "sourceId": "rover-x",
-      "url": "https://x.com/cryptorover/status/2109955188450562485",
-      "publishedAt": "2026-10-13T10:31:32Z",
-      "text": "BREAKING: 🇬🇧 UK court rules in favor of the government potentially keeping its 61,000 seized $BTC worth over $5 BILLION.\n\nThis could prevent the Bitcoin from being sold.\n\nHUGE! 🚀 https://t.co/qCopjF03DV",
-      "coins": [
-        "BTC"
-      ],
-      "categories": [
-        "Bitcoin"
-      ],
-      "originalLanguage": "en",
-      "kind": "original-x-post",
-      "verified": false,
-      "discoveredVia": "x-embed",
-      "contextSource": null,
-      "swedish": {
-        "text": "Crypto Rover uppger att en brittisk domstol dömt till regeringens fördel i ett ärende om 61 000 beslagtagna BTC, värderade till över 5 miljarder dollar. Kontot skriver att beslutet kan innebära att regeringen behåller innehavet och att en försäljning av bitcoin därmed kan undvikas.",
-        "method": "summary",
-        "sourceHash": "023e693e2263c825ad2974b830d3ba50379c8823985132b81b3fcdcee47f2de7",
-        "engine": "reviewed"
-      }
-    },
-    {
       "media": [],
       "id": "2109952890924335334",
       "handle": "CryptoKid",
@@ -3424,7 +3408,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "Crypto Kid varnar för att helgens uppgång i bitcoin enligt hans bedömning kan vara en fälla. Kontot meddelade också att analysen skulle diskuteras i en sändning på The Moon Show.",
         "method": "summary",
@@ -3455,7 +3439,7 @@
         "url": "https://bitcoinmagazine.com/news/strategy-smash-buys-21-5m-in-bitcoin",
         "title": "Strategy Smash Buys $21.5M in BTC as It Continues Bitcoin Accumulation"
       },
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "Michael Saylor uppger att Strategy har köpt 250 BTC och återköpt STRC för 192 miljoner dollar. Enligt inlägget hade bolaget den 11 oktober 2026 totalt 848 250 BTC och dollartillgångar på 5,5 miljarder dollar.",
         "method": "summary",
@@ -3510,7 +3494,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "Crypto Kid uppger att Strategy har köpt 250 BTC. Det är kontots återgivning av köpbeskedet; inlägget innehåller inga ytterligare detaljer.",
         "method": "summary",
@@ -3563,7 +3547,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "MMCrypto beskriver bitcoins veckostängning som ett försiktigt positivt besked, men säger att den ännu inte bekräftar en fortsatt uppgång. Kontots kursmål på 102 000 dollar gäller enligt inlägget bara om bitcoin stänger en vecka över 87 200 dollar med stöd av handelsvolymen.",
         "method": "summary",
@@ -3713,7 +3697,7 @@
         "url": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks",
         "title": "Saylor teases Strategy Bitcoin buying"
       },
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "Det finns alltid plats för mer orange.",
         "method": "translation",
@@ -3781,7 +3765,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-14T13:46:50.578366Z",
+      "originalCheckedAt": "2026-10-14T14:51:14.042336Z",
       "swedish": {
         "text": "När Bitcoin faller, träna musklerna!",
         "method": "translation",
@@ -3824,20 +3808,20 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
           "method": "user-id",
           "result": "ok",
-          "eligiblePosts": 7
+          "eligiblePosts": 6
         }
       ],
-      "newestAvailableAt": "2026-10-14T13:52:34+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "newestAvailableAt": "2026-10-14T14:40:08+00:00",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 21,
@@ -3848,10 +3832,10 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -3860,47 +3844,47 @@
           "eligiblePosts": 14
         }
       ],
-      "newestAvailableAt": "2026-10-14T14:05:00+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "newestAvailableAt": "2026-10-14T14:25:45+00:00",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
-      "newestPostAt": "2026-10-14T14:05:00Z"
+      "newestPostAt": "2026-10-14T14:25:45Z"
     },
     {
       "id": "moon-x",
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
           "method": "user-id",
           "result": "ok",
-          "eligiblePosts": 11
+          "eligiblePosts": 10
         }
       ],
-      "newestAvailableAt": "2026-10-14T14:12:07+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "newestAvailableAt": "2026-10-14T14:49:29+00:00",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
-      "newestPostAt": "2026-10-14T14:12:07Z"
+      "newestPostAt": "2026-10-14T14:49:29Z"
     },
     {
       "id": "saylor-x",
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:12:29.153127Z",
-      "lastIndividualSuccessAt": "2026-10-14T14:12:29.153127Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "lastIndividualSuccessAt": "2026-10-14T14:51:14.042336Z",
       "attempts": [
         {
           "method": "user-id",
@@ -3909,22 +3893,41 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-14T14:16:50.578366Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T15:21:14.042336Z"
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109615811954630703",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109253809176232059",
+          "result": "ok"
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
-      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
-      "method": "cached-individual-post",
+      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "method": "individual-post",
       "count": 4,
       "newestPostAt": "2026-10-13T14:54:20Z"
     },
@@ -3933,11 +3936,11 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:14:59.814022Z",
-      "lastIndividualSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "lastIndividualSuccessAt": "2026-10-14T14:51:14.042336Z",
       "attempts": [
         {
           "method": "user-id",
@@ -3976,7 +3979,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-14T13:45:55+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3987,11 +3990,11 @@
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:12:29.153127Z",
-      "lastIndividualSuccessAt": "2026-10-14T14:12:29.153127Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "lastIndividualSuccessAt": "2026-10-14T14:51:14.042336Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4000,22 +4003,41 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-14T14:16:50.578366Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T15:21:14.042336Z"
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109513358278054238",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2108920904352927961",
+          "result": "ok"
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
-      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
-      "method": "cached-individual-post",
+      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "method": "individual-post",
       "count": 4,
       "newestPostAt": "2026-10-12T05:15:52Z"
     },
@@ -4024,11 +4046,11 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-14T14:12:29.153127Z",
-      "lastIndividualSuccessAt": "2026-10-14T14:12:29.153127Z",
+      "lastSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "lastIndividualSuccessAt": "2026-10-14T14:51:14.042336Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4037,22 +4059,41 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-14T14:16:50.578366Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T15:21:14.042336Z"
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109623947969098114",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109614430459961492",
+          "result": "ok"
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-14T14:14:59.814022Z",
+      "lastProfileSuccessAt": "2026-10-14T14:51:14.042336Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
-      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
-      "method": "cached-individual-post",
+      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "method": "individual-post",
       "count": 3,
       "newestPostAt": "2026-10-13T10:22:24Z"
     }
@@ -4187,19 +4228,19 @@
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/saylor": {
-      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/MMCrypto": {
-      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/CryptoKid": {
-      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
@@ -4311,7 +4352,7 @@
       ]
     },
     "x-public-profile:cryptokid": {
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [
         [
           "CryptoKid",
@@ -4339,7 +4380,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:mmcrypto": {
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [
         [
           "MMCrypto",
@@ -4371,7 +4412,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:saylor": {
-      "checkedAt": "2026-10-14T14:14:59.814022Z",
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
       "links": [
         [
           "saylor",
@@ -4831,21 +4872,37 @@
     "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": {
       "checkedAt": "2026-10-14T14:12:29.153127Z",
       "links": []
+    },
+    "https://bitcoinmagazine.com/videos/blue-coin-capital-cio-mstrs-btc-buying-engine-is-about-to-ignite-mike-treidl": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/easya-hits-usd1-1-billion-valuation-targets-2027-public-listing-and-tokenized-shares": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/blackrock-s-crypto-etf-assets-surge-63-but-remain-far-below-2025-peak": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bitcoins-inflation-relief-case-faces-an-east-coast-winter-diesel-stock-gap/": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
     }
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-14T14:15:13.201832+00:00",
+    "checkedAt": "2026-10-14T14:51:23.873276+00:00",
     "original": 0,
-    "reviewed": 60,
-    "automatic": 18,
-    "pending": 12,
+    "reviewed": 59,
+    "automatic": 19,
+    "pending": 14,
     "machine": {
       "engine": "nllb-200-600m-q8-v3",
-      "cached": 32,
-      "local": 0,
+      "cached": 28,
+      "local": 2,
       "freeFallback": 0,
-      "pending": 12
+      "pending": 14
     }
   }
 }
