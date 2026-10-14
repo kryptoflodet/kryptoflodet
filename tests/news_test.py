@@ -2,6 +2,12 @@ import importlib.util, unittest,sys
 sys.path.insert(0,'scripts')
 spec=importlib.util.spec_from_file_location('news','scripts/fetch-news.py'); news=importlib.util.module_from_spec(spec);spec.loader.exec_module(news)
 class FeedTests(unittest.TestCase):
+ def test_youtube_video_link_validation(self):
+  video='abcdefghijk'
+  for url in [f'https://www.youtube.com/watch?v={video}&feature=share',f'https://youtu.be/{video}?si=share',f'https://www.youtube.com/shorts/{video}',f'https://m.youtube.com/live/{video}']:
+   self.assertEqual(news.youtube_video_id(url),video)
+  for url in [f'http://youtube.com/watch?v={video}',f'https://youtube.com.evil.test/watch?v={video}',f'https://youtube.com@evil.test/watch?v={video}',f'https://youtube.com/playlist?list={video}',f'https://youtube.com/watch?v={video[:-1]}']:
+   self.assertIsNone(news.youtube_video_id(url))
  def test_feed_rejects_invalid_links_dates_and_future(self):
   xml='''<rss><channel><item><title>Bitcoin &amp; Ethereum update</title><link>https://example.com/a</link><pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate></item><item><title>Unsafe</title><link>javascript:alert(1)</link><pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate></item><item><title>Future</title><link>https://example.com/future</link><pubDate>Sun, 11 Oct 2030 12:00:00 GMT</pubDate></item><item><title>Old Bitcoin item</title><link>https://example.com/old</link><pubDate>Mon, 1 Sep 2026 12:00:00 GMT</pubDate></item></channel></rss>'''
   items=news.parse_feed(xml,{'id':'test','name':'Test','type':'OFFICIELL'},'2026-10-11T14:00:00Z')

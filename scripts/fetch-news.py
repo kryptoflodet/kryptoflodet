@@ -1,5 +1,6 @@
 """Fetch independent sources, stage candidates, publish only readable Swedish summaries."""
 import concurrent.futures,datetime as dt,email.utils,hashlib,html,json,pathlib,re,urllib.request,xml.etree.ElementTree as ET,os,time,signal
+from urllib.parse import parse_qs,urlsplit
 from crypto_scope import crypto_only
 from reader_content import PlainText,feed_excerpt
 from editorial import canonical_url,deduplicate,enrich,readable,select_important
@@ -21,6 +22,20 @@ def date(text):
   if value.tzinfo is None:return None
   return value.astimezone(dt.timezone.utc).isoformat().replace('+00:00','Z')
  except (ValueError,TypeError,AttributeError):return None
+
+def youtube_video_id(link):
+ try:
+  url=urlsplit(link)
+  if url.scheme!='https' or url.username or url.password or url.port:return None
+  if url.hostname=='youtu.be':video=url.path.lstrip('/')
+  elif url.hostname in {'youtube.com','www.youtube.com','m.youtube.com'}:
+   if url.path=='/watch':video=parse_qs(url.query).get('v',[None])[0]
+   else:
+    match=re.fullmatch(r'/(?:shorts|live|embed)/([A-Za-z0-9_-]{11})/?',url.path)
+    video=match.group(1) if match else None
+  else:return None
+  return video if video and re.fullmatch(r'[A-Za-z0-9_-]{11}',video) else None
+ except (ValueError,AttributeError):return None
 
 def youtube_feed_url(handle,fetch=getattr(urllib.request,'urlopen',None)):
  """Resolve a public YouTube @handle to its stable RSS channel ID."""
@@ -118,8 +133,7 @@ def main():
  video_items=[]
  for item in candidates:
   if item['sourceId'] not in youtube_sources:continue
-  match=re.fullmatch(r'https://(?:(?:www\.)?youtube\.com/(?:watch\?v=|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})',item['originalUrl'])
-  if not match:continue
+  if not youtube_video_id(item['originalUrl']):continue
   video_items.append({k:item[k] for k in ('id','originalUrl','publishedAt','sourceId')}|{'title':item['originalTitle'],'author':item['author']})
  atomic_json(ROOT/'public/data/youtube.json',{'schemaVersion':1,'generatedAt':now,'items':video_items[:200]})
  reviews=read_json(ROOT/'scripts/reviewed.json',{})
