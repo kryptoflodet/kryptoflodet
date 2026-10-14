@@ -220,5 +220,45 @@
     "language": "en",
     "category": null,
     "coverage": "Videor från MMCryptos YouTube-kanal. Videon visas på originalspråket och nyheten sammanfattas på svenska."
+  },
+  {
+    "id": "diary-video",
+    "name": "The Diary of a CEO – kryptovideor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/@TheDiaryOfACEO",
+    "youtubeHandle": "TheDiaryOfACEO",
+    "language": "en",
+    "category": null,
+    "coverage": "Kryptorelaterade intervjuer från The Diary of a CEO. Endast videor med tydlig koppling till krypto tas med."
+  },
+  {
+    "id": "pbd-video",
+    "name": "PBD Podcast – kryptovideor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/@PBDPodcast",
+    "youtubeHandle": "PBDPodcast",
+    "language": "en",
+    "category": null,
+    "coverage": "Kryptorelaterade intervjuer och samtal från PBD Podcast. Endast videor med tydlig koppling till krypto tas med."
+  },
+  {
+    "id": "cryptokid-video",
+    "name": "CryptoKid – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/@CryptoKid",
+    "youtubeHandle": "CryptoKid",
+    "language": "en",
+    "category": null,
+    "coverage": "Kryptorelaterade videor från CryptoKid."
+  },
+  {
+    "id": "cryptocurrently-video",
+    "name": "CryptoCurrently – videor",
+    "type": "INFLUENCER",
+    "url": "https://www.youtube.com/@cryptocurrentlyyt",
+    "youtubeHandle": "cryptocurrentlyyt",
+    "language": "en",
+    "category": null,
+    "coverage": "Kryptorelaterade videor från CryptoCurrently."
   }
 ]

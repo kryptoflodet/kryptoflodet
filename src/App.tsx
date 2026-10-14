@@ -5,6 +5,7 @@ import NewsVideo from './components/NewsVideo';
 import {youtubeVideo} from './lib/video';
 import ShareNews from './components/ShareNews';
 import Blog from './components/Blog';
+import YouTubeHub from './components/YouTubeHub';
 import MarketDialog from './components/MarketDialog';
 import MarketOverview from './components/MarketOverview';
 import {useState,useEffect,useMemo,useRef} from 'react';
@@ -22,7 +23,7 @@ import MarketPulse from './components/MarketPulse';
 import {initialMarketContext,fetchMarketContext,loadCachedMarketContext} from '@/lib/market-context-client';
 import type {MarketContext} from '@/lib/market-context';
 const BASE=import.meta.env.BASE_URL;
-const nav=['Senaste','Bitcoin','Ethereum','Altcoins','Reglering','Blogg'];
+const nav=['Senaste','Bitcoin','Ethereum','Altcoins','Reglering','YouTube','Blogg'];
 const names:Record<string,string>=Object.fromEntries(trackedCoins.map(([,symbol,name])=>[symbol,name]));
 const marks:Record<string,string>={BTC:'₿',ETH:'Ξ',SOL:'≋',SUI:'◈',XRP:'×',HBAR:'ℏ',ONDO:'◎',ADA:'₳',DOGE:'Ð',XLM:'✦',AVAX:'▲',LINK:'⬡',BNB:'◇',HYPE:'H',LTC:'Ł'};
 const statusNames={confirmed:'Bekräftad',unconfirmed:'Ej bekräftad',rumor:'Rykte'};
@@ -122,7 +123,7 @@ export default function Home(){
  <div className="ticker-wrap"><div className="ticker-shell"><div className="ticker-label"><span>MARKNADEN<small className={marketFresh?'up':''}>{marketStatus}</small></span></div><RollingTicker quotes={quotes.filter(q=>!hiddenMarketSymbols.includes(q.symbol))} currency={currency} onCoin={setChartCoin}/><button className="currency" onClick={()=>setCurrency(currency==='USD'?'SEK':'USD')} aria-label={'Byt till '+(currency==='USD'?'SEK':'USD')}>{currency}<ChevronDown size={12}/></button></div><div className="market-status-line" aria-live="polite"><span><span className={'status-dot '+(marketFresh?'is-live':'')}/> {marketStatus} · {marketTime} svensk tid</span><span>24h förändring · uppdateras ungefär varje minut · <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">CoinGecko ↗</a></span>{!marketFresh&&!marketLoading&&<button onClick={refreshMarket}>Försök igen</button>}</div></div>
  <main>
  <MarketPulse context={marketContext}/>
- {category==='Blogg'?<Blog/>:<>
+ {category==='Blogg'?<Blog/>:category==='YouTube'?<YouTubeHub/>:<>
  {missingArticle&&<div className="shared-missing" role="status"><h2>Nyheten finns inte längre i det aktuella flödet.</h2><p>Du kan fortfarande läsa den hos originalkällan.</p>{sharedSource&&<a href={sharedSource} target="_blank" rel="noopener noreferrer">Öppna originalartikeln <ExternalLink size={16}/></a>}<button onClick={closeModal}>Visa senaste nyheterna</button></div>}
  {missingXPost&&<div className="shared-missing" role="status"><h2>X-inlägget finns inte i det aktuella urvalet.</h2><p>Du kan öppna originalposten hos X.</p><a href={`https://x.com/i/status/${linkedXPost}`} target="_blank" rel="noopener noreferrer">Visa originalposten på X →</a><button onClick={reset}>Visa senaste nyheterna</button></div>}
   <div className="intro"><div><div className="section-kicker"><span className="tiny-line"/> MARKNAD · NYHETER · X</div><h1>{coin?<><span className="coin-title"><Coin symbol={coin}/>{coinName}</span><span className="title-muted"> / nyheter</span></>:category==='Senaste'?<>Marknad och nyheter.<br className="mobile-break"/> <span className="title-muted">På svenska.</span></>:`${category}. Utan bruset.`}</h1><p>{subtitle}</p></div><div className="edition"><span>{new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',weekday:'long',day:'numeric',month:'long'}).format(new Date()).toUpperCase()}</span><b>Bitcoin, Ethereum och större kryptovalutor.</b><small>Nyheter · X · marknadsdata</small></div></div>

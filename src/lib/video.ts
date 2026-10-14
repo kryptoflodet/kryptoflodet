@@ -1,5 +1,5 @@
 import type {NewsItem} from './types';
-const videoSources=new Set(['moon-video','altcoin-daily-video','rover-video','felix-video','mmcrypto-video']);
+const videoSources=new Set(['moon-video','altcoin-daily-video','rover-video','felix-video','mmcrypto-video','diary-video','pbd-video','cryptokid-video','cryptocurrently-video']);
 /** Derive embeds from trusted source URLs; also supports previously published items. */
 export function youtubeVideo(item:Pick<NewsItem,'sourceId'|'originalUrl'>):string|null{
  if(!videoSources.has(item.sourceId))return null;

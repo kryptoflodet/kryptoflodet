@@ -52,7 +52,8 @@ def parse_feed(payload,source,now):
   published=date(fields.get('pubDate') or fields.get('published') or fields.get('updated'))
   if not title or not published or not crypto_only(title):continue
   age=(dt.datetime.fromisoformat(now.replace('Z','+00:00'))-dt.datetime.fromisoformat(published.replace('Z','+00:00'))).total_seconds()
-  if age < -600 or age > 7*24*60*60:continue
+  max_age=(30 if source['id'].endswith('-video') else 7)*24*60*60
+  if age < -600 or age > max_age:continue
   # Keep a bounded private working excerpt; do not publish the source prose.
   raw=fields.get('description') or fields.get('summary') or fields.get('encoded') or fields.get('content') or ''
   if source['id'].endswith('-video'):
@@ -103,6 +104,16 @@ def main():
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:results=list(pool.map(fetch,FEEDS+x_sources(ROOT)))
  registry=[s for s,_ in results]
  candidates=prioritize_candidates(deduplicate([n for _,rows in results for n in rows]))
+ # Keep a separate public video feed so creator videos do not have to pass the
+ # editorial-news publication gate or appear as ordinary news articles.
+ youtube_sources={s['id']:s for s in FEEDS if s['id'].endswith('-video')}
+ video_items=[]
+ for item in candidates:
+  if item['sourceId'] not in youtube_sources:continue
+  match=re.fullmatch(r'https://(?:(?:www\.)?youtube\.com/(?:watch\?v=|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})',item['originalUrl'])
+  if not match:continue
+  video_items.append({k:item[k] for k in ('id','originalUrl','publishedAt','sourceId')}|{'title':item['originalTitle'],'author':item['author']})
+ atomic_json(ROOT/'public/data/youtube.json',{'schemaVersion':1,'generatedAt':now,'items':video_items[:200]})
  reviews=read_json(ROOT/'scripts/reviewed.json',{})
  held={};drafts=[];accepted=[enrich(n) for n in previous.values() if readable(n)]
  accepted_by_url={canonical_url(n['originalUrl']):n for n in accepted}
