@@ -1,5 +1,0 @@
-[
- {"id":"fomc-2026-10","title":"Fed: penningpolitiskt möte 27–28 oktober","startAt":"2026-10-26T23:00:00Z","endAt":"2026-10-28T23:00:00Z","dateOnly":true,"source":"Federal Reserve","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","why":"Ränteläget kan påverka likviditet och riskvilja även i krypto. Mötets datum visas; klockslag anges inte utan verifiering.","coins":[],"checkedAt":"2026-10-14"},
- {"id":"cpi-2026-11","title":"USA: inflation (CPI) för oktober","startAt":"2026-11-10T13:30:00Z","endAt":"2026-11-10T13:31:00Z","dateOnly":false,"source":"BLS","url":"https://www.bls.gov/schedule/news_release/cpi.htm","why":"Inflationsutfallet kan ändra förväntningarna på amerikanska räntor och riskvilja.","coins":[],"checkedAt":"2026-10-14"},
- {"id":"fomc-2026-12","title":"Fed: penningpolitiskt möte 8–9 december","startAt":"2026-12-07T23:00:00Z","endAt":"2026-12-09T23:00:00Z","dateOnly":true,"source":"Federal Reserve","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","why":"Mötet omfattar ekonomiska prognoser. Räntor och prognoser kan påverka riskviljan.","coins":[],"checkedAt":"2026-10-14"}
-]

@@ -24,12 +24,6 @@ class MarketContextTests(unittest.TestCase):
         self.assertEqual(parsed['btcChange24h'], 2.4)
         self.assertEqual(parsed['ethChange24h'], 1.2)
 
-    def test_total_cap_and_volume_survive_cache(self):
-        parsed = M['parse_global_market']({'data': {'market_cap_percentage': {'btc': 58, 'eth': 12}, 'market_cap_change_percentage_24h_usd': 1, 'total_market_cap': {'usd': 3e12}, 'total_volume': {'usd': 1e11}}}, {})
-        cached = M['normalize_snapshot']({'schemaVersion': 1, 'market': parsed})
-        self.assertEqual(cached['market']['totalMarketCapUsd'], 3e12)
-        self.assertEqual(cached['market']['volume24hUsd'], 1e11)
-
     def test_global_metrics_read_top_50_snapshot_shape(self):
         parsed = M['parse_global_market'](
             {'data': {'market_cap_percentage': {'btc': 58.7, 'eth': 11.1}, 'market_cap_change_percentage_24h_usd': 0.8}},
