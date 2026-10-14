@@ -3,24 +3,23 @@
 .kp-entry-loader{--mark-size:clamp(148px,26vw,220px);display:none;position:fixed;inset:0;z-index:1000;overflow:hidden;pointer-events:none;--intro-bg:#101214;--intro-mark:#171a1c;--intro-border:#39453d;--intro-pulse:#9bd8b0;--intro-text:#eef0ee}
 :root[data-theme="light"] .kp-entry-loader{--intro-bg:#f1f3f1;--intro-mark:#f7f9f7;--intro-border:#dfe5e0;--intro-pulse:#28764f;--intro-text:#202923}
 :root[data-kp-entry="show"] .kp-entry-loader{display:block}
-.kp-entry-backdrop{position:absolute;inset:0;background:var(--intro-bg);animation:kp-entry-fallback 180ms ease-out 4000ms forwards}
-.kp-entry-logo{position:absolute;left:50%;top:50%;width:var(--mark-size);height:var(--mark-size);margin-left:calc(var(--mark-size) / -2);margin-top:calc(var(--mark-size) / -2);transform-origin:center;will-change:transform;animation:kp-entry-fallback 180ms ease-out 4000ms forwards}
+.kp-entry-backdrop{position:absolute;inset:0;background:var(--intro-bg);animation:kp-entry-fallback 180ms ease-out 3000ms forwards}
+.kp-entry-logo{position:absolute;left:50%;top:50%;width:var(--mark-size);height:var(--mark-size);margin-left:calc(var(--mark-size) / -2);margin-top:calc(var(--mark-size) / -2);transform-origin:center;will-change:transform;animation:kp-entry-fallback 180ms ease-out 3000ms forwards}
 .kp-entry-logo svg{display:block;width:100%;height:100%;overflow:visible}
-.kp-entry-logo rect{fill:var(--intro-mark);stroke:var(--intro-border);stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-frame 2400ms ease-out forwards}
-.kp-entry-pulse{fill:none;stroke:var(--intro-pulse);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-trace 3500ms linear forwards}
-.kp-entry-scan{fill:none;stroke:var(--intro-pulse);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 100;stroke-dashoffset:100;opacity:0;filter:drop-shadow(0 0 1px var(--intro-pulse));animation:kp-entry-scan 3500ms linear forwards}
-.kp-entry-name{position:absolute;left:0;right:0;top:calc(50% + var(--mark-size) / 2 + 24px);text-align:center;color:var(--intro-text);font:700 clamp(15px,3vw,21px)/1.2 system-ui,sans-serif;letter-spacing:.5px;padding:0 20px;opacity:1}
-.kp-entry-word{display:inline-block;opacity:0;animation:kp-entry-word 750ms ease-out var(--word-delay,0ms) forwards}
+.kp-entry-logo rect{fill:var(--intro-mark);stroke:var(--intro-border);stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-frame 1800ms ease-out forwards}
+.kp-entry-pulse{fill:none;stroke:var(--intro-pulse);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100;animation:kp-entry-trace 2500ms linear forwards}
+.kp-entry-scan{fill:none;stroke:var(--intro-pulse);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 100;stroke-dashoffset:100;opacity:0;filter:drop-shadow(0 0 1px var(--intro-pulse));animation:kp-entry-scan 2500ms linear forwards}
+.kp-entry-name{position:absolute;left:0;right:0;top:calc(50% + var(--mark-size) / 2 + 24px);text-align:center;color:var(--intro-text);font:700 clamp(15px,3vw,21px)/1.2 system-ui,sans-serif;letter-spacing:.5px;padding:0 20px;opacity:0;animation:kp-entry-name 2000ms ease-out forwards}
 .kp-entry-loader.is-docking .kp-entry-logo{animation:kp-entry-dock 500ms cubic-bezier(.4,0,.2,1) forwards}
 .kp-entry-loader.is-docking .kp-entry-backdrop{animation:kp-entry-fallback 500ms ease-out forwards}
 .kp-entry-loader.is-docking .kp-entry-name{animation:kp-entry-fallback 160ms ease-out forwards;opacity:1}
 @keyframes kp-entry-frame{to{stroke-dashoffset:0}}
 @keyframes kp-entry-trace{to{stroke-dashoffset:0}}
 @keyframes kp-entry-scan{0%{opacity:0;stroke-dashoffset:100}8%,90%{opacity:1}100%{opacity:0;stroke-dashoffset:0}}
-@keyframes kp-entry-word{to{opacity:1}}
+@keyframes kp-entry-name{to{opacity:1}}
 @keyframes kp-entry-dock{to{transform:translate3d(var(--dock-x,0px),var(--dock-y,0px),0) scale(var(--dock-scale,1))}}
 @keyframes kp-entry-fallback{to{opacity:0;visibility:hidden}}
-@media(prefers-reduced-motion:reduce){:root[data-kp-entry="show"] .kp-entry-loader{display:none}.kp-entry-logo,.kp-entry-logo rect,.kp-entry-pulse,.kp-entry-scan,.kp-entry-name,.kp-entry-word,.kp-entry-backdrop{animation:none!important}}
+@media(prefers-reduced-motion:reduce){:root[data-kp-entry="show"] .kp-entry-loader{display:none}.kp-entry-logo,.kp-entry-logo rect,.kp-entry-pulse,.kp-entry-scan,.kp-entry-name,.kp-entry-backdrop{animation:none!important}}
 </style>
 <script>
 (() => {
@@ -40,7 +39,7 @@
   document.documentElement.dataset.kpEntry = 'show';
 })();
 </script>
-<div class="kp-entry-loader" aria-hidden="true"><div class="kp-entry-backdrop"></div><div class="kp-entry-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" pathLength="100"/><path class="kp-entry-pulse" pathLength="100" d="M6 21h7l4-9 6 17 4-9h7"/><path class="kp-entry-scan" pathLength="100" d="M6 21h7l4-9 6 17 4-9h7"/></svg></div><div class="kp-entry-name"><span class="kp-entry-word" style="--word-delay:0ms">kryptopuls.se -</span> <span class="kp-entry-word" style="--word-delay:750ms">kryptonyheter</span> <span class="kp-entry-word" style="--word-delay:1500ms">på</span> <span class="kp-entry-word" style="--word-delay:2250ms">svenska</span></div></div>
+<div class="kp-entry-loader" aria-hidden="true"><div class="kp-entry-backdrop"></div><div class="kp-entry-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" pathLength="100"/><path class="kp-entry-pulse" pathLength="100" d="M6 21h7l4-9 6 17 4-9h7"/><path class="kp-entry-scan" pathLength="100" d="M6 21h7l4-9 6 17 4-9h7"/></svg></div><div class="kp-entry-name">kryptopuls.se - kryptonyheter på svenska</div></div>
 <script>
 (() => {
   const overlay = document.querySelector('.kp-entry-loader');
@@ -84,7 +83,7 @@
   document.addEventListener('visibilitychange', visibility);
   window.addEventListener('pageshow', restore);
   // Animation events drive the handoff; timer is a bounded fallback when events are unavailable.
-  dockTimer = setTimeout(dock, 3500);
-  exitTimer = setTimeout(finish, 5000);
+  dockTimer = setTimeout(dock, 2500);
+  exitTimer = setTimeout(finish, 4000);
 })();
 </script>
