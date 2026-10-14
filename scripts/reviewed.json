@@ -18,9 +18,9 @@
     "note": "Kontrollerat mot Ethereum Foundations originalartikel den 11 oktober 2026. Bekräftelsen gäller det publicerade testnätsbeskedet."
   },
   "https://www.sui.io/blog/samsung-collaborates-with-sui-to-bring-usdc-to-samsung-wallet-on-82-million-u-s-galaxy-devices": {
-    "title": "Sui meddelar integration av USDC i Samsung Wallet",
-    "summary": "Sui Foundation har meddelat att Samsung Wallet ska stödja USDC på Sui, med inledande utrullning i USA. Beskedet gäller USDC, inte stöd för SUI-tokenen i plånboken.",
-    "why": "Integrationen handlar om användning av USDC på nätverket. Antal användare och faktisk efterfrågan kan inte utläsas av lanseringsbeskedet.",
+    "title": "Sui meddelar att USDC integreras i Samsungs digitala plånbok",
+    "summary": "Sui Foundation har meddelat att Samsungs digitala plånbok ska stödja USDC på Sui, med en inledande utrullning i USA.",
+    "why": "Integrationen gäller användning av USDC på nätverket. Beskedet säger inte att SUI-tokenen kan förvaras i plånboken.",
     "coins": [
       "SUI"
     ],
@@ -80,8 +80,8 @@
     "note": "Rubrik och sammanfattning är språkgranskade. Uppgifterna återges från källan och har inte faktagranskats oberoende."
   },
   "https://cryptoslate.com/global-watchdog-warns-the-300-billion-stablecoin-market-could-face-bank-runs-even-with-full-reserves/": {
-    "title": "Tillsynsorgan varnar för uttagsanstormningar på stablecoin-marknaden trots fulla reserver",
-    "summary": "CryptoSlate rapporterar att ett globalt tillsynsorgan varnar för att stablecoin-marknaden kan drabbas av stora uttag även när reserverna täcker utgivningen.",
+    "title": "Tillsynsorgan varnar för uttagsanstormningar på marknaden för värdestabila kryptovalutor trots fulla reserver",
+    "summary": "CryptoSlate rapporterar att ett globalt tillsynsorgan varnar för att marknaden för värdestabila kryptovalutor kan drabbas av stora uttag även när reserverna täcker utgivningen.",
     "why": "Varningen gäller risken för snabba uttag och marknadspåverkan. Rubriken beskriver inte en pågående bankrusning.",
     "coins": [],
     "status": "unconfirmed",
@@ -113,7 +113,7 @@
   "https://cryptoslate.com/standard-chartered-brings-ripples-rlusd-into-banking-custody-after-765-million-quarterly-surge/": {
     "title": "Standard Chartered börjar förvara Ripples RLUSD efter en kvartalsökning på 765 miljoner dollar",
     "summary": "CryptoSlate rapporterar att Standard Chartered tar in Ripples RLUSD i bankens förvaringstjänster efter en kvartalsökning på 765 miljoner dollar.",
-    "why": "Beskedet rör förvaring av en stablecoin. Rubriken anger inte att RLUSD lanseras av banken eller att tjänsten redan är tillgänglig.",
+    "why": "Beskedet rör förvaring av en värdestabil kryptovaluta. Rubriken anger inte att RLUSD lanseras av banken eller att tjänsten redan är tillgänglig.",
     "coins": [
       "XRP"
     ],
@@ -144,8 +144,8 @@
     "note": "Rubrik och sammanfattning är språkgranskade. Uppgifterna återges från källan och har inte faktagranskats oberoende."
   },
   "https://bitcoinmagazine.com/videos/ark-invests-lorenzo-valente-bitcoins-5-year-forecast-stablecoin-gold-impacts": {
-    "title": "Lorenzo Valente om bitcoins femårsprognos, stablecoins och guld",
-    "summary": "Bitcoin Magazine publicerar en intervju med Ark Invests Lorenzo Valente om en femårsprognos för bitcoin och om hur stablecoins och guld kan påverka den.",
+    "title": "Lorenzo Valente om bitcoins femårsprognos, värdestabila kryptovalutor och guld",
+    "summary": "Bitcoin Magazine publicerar en intervju med Ark Invests Lorenzo Valente om en femårsprognos för bitcoin och om hur värdestabila kryptovalutor och guld kan påverka den.",
     "why": "Det gäller en prognos och de antaganden som diskuteras i videon, inte ett fastställt framtida bitcoinpris.",
     "coins": [
       "BTC"

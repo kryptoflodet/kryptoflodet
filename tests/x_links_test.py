@@ -62,7 +62,7 @@ class PermanentXLinkTests(unittest.TestCase):
   saved=archive_posts([], [original], '2026-10-13T08:00:00Z')
   spec=importlib.util.spec_from_file_location('x_pending_pages','scripts/build-pages.py');pages=importlib.util.module_from_spec(spec);spec.loader.exec_module(pages)
   path,html=pages.x_page(saved[0]);self.assertEqual(path,'/x/'+self.post['id']+'/')
-  self.assertIn('X-inlägg · Original',html);self.assertNotIn('förbereds',html);self.assertIn('Visa original',html);self.assertIn('href="'+self.post['url']+'"',html)
+  self.assertIn('Svensk översättning saknas',html);self.assertNotIn(self.post['text'],html);self.assertIn('href="'+self.post['url']+'"',html)
  def test_withdrawn_language_is_not_revived_from_the_archive(self):
   previous=archive_posts([], [self.post], '2026-10-13T08:00:00Z')
   current={k:v for k,v in self.post.items() if k!='swedish'}
@@ -73,8 +73,8 @@ class PermanentXLinkTests(unittest.TestCase):
   path,html=pages.x_page(self.post)
   self.assertEqual(path,'/x/'+self.post['id']+'/');self.assertIn('rel="canonical" href="https://kryptopuls.se'+path+'"',html)
   self.assertIn('property="og:url" content="https://kryptopuls.se'+path+'"',html);self.assertIn('name="twitter:card"',html)
-  self.assertIn('href="'+self.post['url']+'"',html);self.assertIn('href="https://t.co/example"',html)
-  self.assertNotIn('<script>alert(1)</script>',html);self.assertIn('&lt;script&gt;alert(1)&lt;/script&gt;',html)
+  self.assertIn('href="'+self.post['url']+'"',html);self.assertNotIn(self.post['text'],html)
+  self.assertNotIn('<script>alert(1)</script>',html);self.assertNotIn('href="https://t.co/example"',html)
  def test_every_saved_post_has_a_page_after_build(self):
   dist=pathlib.Path('dist');archive=pathlib.Path('public/data/x-archive.json')
   if not dist.exists() or not archive.exists():self.skipTest('Run archive and build first')

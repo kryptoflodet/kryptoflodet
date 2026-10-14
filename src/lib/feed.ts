@@ -1,5 +1,17 @@
 import type {NewsItem, Source} from './types';
 export type FeedQuery={q?:string;category?:string;coin?:string;noise?:string;sort?:string};
+const swedishCategoryLabels:Record<string,string>={
+ Altcoins:'Alternativa kryptovalutor',
+ DeFi:'Decentraliserad finans',
+ 'On-chain':'Händelser i blockkedjan',
+ Mining:'Utvinning',
+ Stablecoins:'Värdestabila kryptovalutor',
+ 'Säkerhet / Hacks':'Säkerhet / intrång',
+ Börser:'Kryptobörser',
+ ETF:'Börshandlade fonder (ETF)',
+};
+export function categoryLabel(category:string){return swedishCategoryLabels[category]||category;}
+export function sourceTypeLabel(type:Source['type']){return ({OFFICIELL:'Officiell källa',MYNDIGHET:'Myndighet',MEDIA:'Nyhetsmedium',JOURNALIST:'Journalist',ANALYTIKER:'Analytiker',INFLUENCER:'Innehållsskapare'} as const)[type]||'Källa';}
 export function filterNews(items:NewsItem[],query:FeedQuery){
  const q=(query.q||'').trim().toLocaleLowerCase('sv');
  return items.filter(n=> (!q||[n.title,n.summary,n.author,n.category,...n.coins,...n.topics].join(' ').toLocaleLowerCase('sv').includes(q)) && (!query.coin||n.coins.includes(query.coin.toUpperCase())) && (!query.category||query.category==='Senaste'||n.category===query.category||n.categories?.includes(query.category)||(query.category==='Bitcoin'&&n.coins.includes('BTC'))||(query.category==='Ethereum'&&n.coins.includes('ETH'))||(query.category==='Altcoins'&&n.coins.some(c=>!['BTC','ETH'].includes(c)))) && (query.noise!=='important'||n.importance>=3&&n.status!=='rumor') && (query.noise!=='confirmed'||n.status==='confirmed')).sort((a,b)=>query.sort==='importance'?b.importance-a.importance||Date.parse(b.publishedAt)-Date.parse(a.publishedAt):Date.parse(b.publishedAt)-Date.parse(a.publishedAt));

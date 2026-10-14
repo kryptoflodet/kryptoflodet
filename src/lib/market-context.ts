@@ -31,7 +31,7 @@ export function sentimentLabel(value:number|null):string{
  if(value===null)return 'INVÄNTAR DATA';if(value<=24)return 'EXTREM RÄDSLA';if(value<=44)return 'RÄDSLA';if(value<=55)return 'NEUTRAL';if(value<=74)return 'GIRIGHET';return 'EXTREM GIRIGHET';
 }
 export function altcoinSeasonLabel(value:number|null):string{
- if(value===null)return 'VÄNTAR PÅ INDEX';if(value<=25)return 'BITCOIN-SÄSONG';if(value<75)return 'NEUTRAL';return 'ALTCOIN-SÄSONG';
+ if(value===null)return 'VÄNTAR PÅ INDEX';if(value<=25)return 'BITCOIN-SÄSONG';if(value<75)return 'NEUTRAL';return 'ALTERNATIVA KRYPTOVALUTOR';
 }
 export function isMetricStale(checkedAt:string|null,maxAgeMs:number,now=Date.now()):boolean{
  if(!checkedAt)return true;const age=now-Date.parse(checkedAt);return !Number.isFinite(age)||age>maxAgeMs||age< -5*60_000;

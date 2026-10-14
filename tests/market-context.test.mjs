@@ -12,7 +12,7 @@ context.fearGreed.value=80;context.market.btcChange24h=2;context.market.marketCa
 assert.equal(calculateSentiment(context),65);
 assert.equal(movementToScore(10),100);assert.equal(movementToScore(-10),0);assert.equal(movementToScore(0),50);
 assert.equal(sentimentLabel(20),'EXTREM RÄDSLA');assert.equal(sentimentLabel(35),'RÄDSLA');assert.equal(sentimentLabel(50),'NEUTRAL');assert.equal(sentimentLabel(65),'GIRIGHET');assert.equal(sentimentLabel(90),'EXTREM GIRIGHET');
-assert.equal(altcoinSeasonLabel(null),'VÄNTAR PÅ INDEX');assert.equal(altcoinSeasonLabel(25),'BITCOIN-SÄSONG');assert.equal(altcoinSeasonLabel(26),'NEUTRAL');assert.equal(altcoinSeasonLabel(74),'NEUTRAL');assert.equal(altcoinSeasonLabel(75),'ALTCOIN-SÄSONG');
+assert.equal(altcoinSeasonLabel(null),'VÄNTAR PÅ INDEX');assert.equal(altcoinSeasonLabel(25),'BITCOIN-SÄSONG');assert.equal(altcoinSeasonLabel(26),'NEUTRAL');assert.equal(altcoinSeasonLabel(74),'NEUTRAL');assert.equal(altcoinSeasonLabel(75),'ALTERNATIVA KRYPTOVALUTOR');
 assert.equal(calculateSentiment(emptyMarketContext),null);assert.equal(isMetricStale(null,1000),true);
 const normalized=normalizeMarketContext({schemaVersion:1,fearGreed:{value:150},market:{btcDominance:60},altcoinSeason:{value:48}});
 assert.equal(normalized.fearGreed.value,null);assert.equal(normalized.market.btcDominance,60);assert.equal(normalized.altcoinSeason.value,48);

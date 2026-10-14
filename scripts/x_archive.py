@@ -1,6 +1,6 @@
 """Keep permanent, readable X snapshots so shared links outlive the rolling feed."""
 import copy,datetime as dt,json,pathlib,re
-from x_language import source_hash,TRUSTED_SWEDISH_ENGINES
+from x_language import source_hash,TRUSTED_SWEDISH_ENGINES,apply_language
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 
 def archivable_post(post):
@@ -45,7 +45,10 @@ def main():
  target=ROOT/'public/data/x-archive.json'
  previous=json.loads(target.read_text()).get('posts',[]) if target.exists() else []
  live=json.loads((ROOT/'public/data/x.json').read_text())
- data={'schemaVersion':1,'posts':archive_posts(previous,live['posts'],dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00','Z'))}
+ posts=archive_posts(previous,live['posts'],dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00','Z'))
+ reviews=json.loads((ROOT/'scripts/x-summaries.json').read_text())
+ counts,_=apply_language(posts,reviews)
+ data={'schemaVersion':1,'posts':posts,'language':counts}
  text=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
  if not target.exists() or target.read_text()!=text:
   temporary=target.with_suffix('.tmp');temporary.write_text(text);temporary.replace(target)

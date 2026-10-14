@@ -8,7 +8,7 @@ const date=(t:number)=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockho
 export default function MarketDialog({quote,currency,onClose,onNews}:{quote:LiveQuote;currency:string;onClose:()=>void;onNews:()=>void}){
  const dialog=useRef<HTMLDialogElement>(null);const gradient=useId().replaceAll(':','');const [range,setRange]=useState<RangeKey>('24h');const [data,setData]=useState<ChartData|null>(null);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [hover,setHover]=useState<number|null>(null);const [retry,setRetry]=useState(0);
  useEffect(()=>{const previous=document.activeElement as HTMLElement;dialog.current?.showModal();const overflow=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=overflow;previous?.focus();};},[]);
- useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal,quote.id).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError(e instanceof Error?e.message:'Kunde inte hämta diagrammet');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.id,quote.symbol,range,currency,retry]);
+ useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal,quote.id).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError('Kurshistoriken kunde inte hämtas. Försök igen.');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.id,quote.symbol,range,currency,retry]);
  useEffect(()=>{const timer=setInterval(()=>{if(!document.hidden)setRetry(v=>v+1);},60000);return()=>clearInterval(timer);},[]);
  const current=currency==='SEK'?quote.priceSek:quote.price;const movement=currency==='SEK'?quote.changeSek24h:quote.change24h;
  const marketCap=currency==='SEK'?quote.marketCapSek:quote.marketCap;
@@ -35,6 +35,6 @@ export default function MarketDialog({quote,currency,onClose,onNews}:{quote:Live
  </svg><input className="chart-scrubber" type="range" min="0" max={points.length-1} value={hover??points.length-1} onChange={e=>setHover(Number(e.target.value))} aria-label="Utforska historiska kurser"/>
  <div className="chart-stats"><div><span>Lägst i perioden</span><b>{fmt(low,data.unit)}</b></div><div><span>Högst i perioden</span><b>{fmt(high,data.unit)}</b></div><div><span>Första datapunkt</span><b>{new Date(first[0]).toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm'})}</b></div></div>
  <p className="chart-note"><b>{data.source} · {data.unit}.</b> {data.note}</p></>:null}</div>
- <div className="chart-bottom"><button onClick={onNews}>Visa nyheter om {quote.symbol} <ArrowUpRight size={18}/></button><a href={'https://www.coingecko.com/en/coins/'+encodeURIComponent(quote.id)} target="_blank" rel="noopener noreferrer">Kurskälla <ExternalLink size={14}/></a></div>
+ <div className="chart-bottom"><button onClick={onNews}>Visa nyheter om {quote.symbol} <ArrowUpRight size={18}/></button><a href={'https://www.coingecko.com/coins/'+encodeURIComponent(quote.id)} target="_blank" rel="noopener noreferrer">Kurskälla <ExternalLink size={14}/></a></div>
  </div></dialog>;
 }

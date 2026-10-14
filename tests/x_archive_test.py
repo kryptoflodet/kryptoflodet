@@ -7,13 +7,13 @@ class XArchiveTranslationTests(unittest.TestCase):
  def post(self,engine='reviewed'):
   text='The Bitcoin market is moving.'
   return {'id':'2109000000000000000','handle':'example','author':'Example','url':'https://x.com/example/status/2109000000000000000','publishedAt':'2026-10-13T10:00:00Z','text':text,'coins':['BTC'],'categories':['Bitcoin'],'kind':'original-x-post','originalLanguage':'en','swedish':{'text':'Bitcoinmarknaden rör sig.','method':'translation','engine':engine,'sourceHash':source_hash(text)}}
- def test_current_automatic_translations_are_readable(self):
+ def test_only_reviewed_or_exact_rule_translations_are_readable(self):
   self.assertTrue(readable_post(self.post('reviewed')))
   self.assertTrue(readable_post(self.post('x-sv-rules-v1')))
   self.assertFalse(readable_post(self.post('nllb-200-600m-q8-v2')))
   self.assertFalse(readable_post(self.post('mymemory-free-v1')))
-  self.assertTrue(readable_post(self.post('nllb-200-600m-q8-v3')))
-  self.assertTrue(readable_post(self.post('mymemory-free-v2')))
+  self.assertFalse(readable_post(self.post('nllb-200-600m-q8-v3')))
+  self.assertFalse(readable_post(self.post('mymemory-free-v2')))
  def test_old_machine_translation_is_removed_but_original_is_preserved(self):
   item=self.post('nllb-200-600m-q8-v2')
   result=archive_posts([item],[], '2026-10-13T12:00:00Z')

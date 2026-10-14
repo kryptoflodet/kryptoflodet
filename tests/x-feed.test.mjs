@@ -27,7 +27,7 @@ try{
  const unreviewed={...post,swedish:{text:'felaktigmaskintext',method:'translation',engine:'nllb-200-600m-q8-v2',sourceHash:'hash'}};
  assert.equal(swedishText(unreviewed),null,'Unreviewed model output is not presented as Swedish');assert.equal(readableX(unreviewed),false);
  assert.equal(mergeFeed([], [unreviewed],{q:'felaktigmaskintext'},false,[],now).length,0,'Search excludes unreviewed machine text');
- const automatic={...unreviewed,swedish:{...unreviewed.swedish,text:'Solana skulle kunna stiga.',engine:'nllb-200-600m-q8-v3'}};assert.equal(swedishText(automatic),automatic.swedish.text);assert.equal(readableX(automatic),true);
+ const automatic={...unreviewed,swedish:{...unreviewed.swedish,text:'Solana skulle kunna stiga.',engine:'nllb-200-600m-q8-v3'}};assert.equal(swedishText(automatic),null,'Machine translation is never displayed without review');assert.equal(readableX(automatic),false);
  assert.equal(mergeFeed([], [unreviewed],{},false,[],now).length,1,'The original X post remains in the feed');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
@@ -44,5 +44,5 @@ try{
  assert.equal(url,'https://kryptopuls.se/x/'+post.id+'/');assert.equal(requested,url);
  assert.equal(await archivedXPostUrl(post.id,'https://kryptopuls.se/',async()=>({ok:false})),null,'A missing post must not redirect to a 404');
  assert.equal(await archivedXPostUrl('../evil','https://kryptopuls.se/',async()=>{throw new Error('should not fetch');}),null);
- console.log('X feed checks passed: mixed chronology, Swedish/original search, filters, bookmarks, trust, freshness and invalid data.');
+ console.log('X feed checks passed: mixed chronology, Swedish search, filters, bookmarks, trust, freshness and invalid data.');
 }finally{rmSync(dir,{recursive:true,force:true});}

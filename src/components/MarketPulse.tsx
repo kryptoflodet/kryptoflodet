@@ -30,10 +30,10 @@ export default function MarketPulse({context}:{context:MarketContext}){
     <div className="mood-labels">{moodStops.map(label=><span key={label}>{label}</span>)}</div>
    </section>
    <section className="altseason-card" aria-labelledby="altseason-title">
-    <div className="pulse-card-heading"><span id="altseason-title">ALTCOIN-SÄSONG</span></div>
+    <div className="pulse-card-heading"><span id="altseason-title">ALTERNATIVA KRYPTOVALUTOR</span></div>
     <div className="altseason-score"><b>{alt===null?'—':alt}<small>/100</small></b><span>{altLabel}</span></div>
-    <div className="altseason-meter" role="meter" aria-label="Altcoin-säsongsindex" aria-valuemin={0} aria-valuemax={100} aria-valuenow={alt??undefined} aria-valuetext={alt===null?'Index saknas':`${alt} av 100, ${altLabel.toLocaleLowerCase('sv')}`}><div className="altseason-zones"><i/><i/><i/></div>{alt!==null&&<span className="altseason-needle" style={{left:`${Math.max(2,Math.min(98,alt))}%`}}/>}</div>
-    <div className="altseason-labels"><span>BITCOIN-SÄSONG</span><span>NEUTRAL</span><span>ALTCOIN-SÄSONG</span></div>
+    <div className="altseason-meter" role="meter" aria-label="Index för alternativa kryptovalutor" aria-valuemin={0} aria-valuemax={100} aria-valuenow={alt??undefined} aria-valuetext={alt===null?'Index saknas':`${alt} av 100, ${altLabel.toLocaleLowerCase('sv')}`}><div className="altseason-zones"><i/><i/><i/></div>{alt!==null&&<span className="altseason-needle" style={{left:`${Math.max(2,Math.min(98,alt))}%`}}/>}</div>
+    <div className="altseason-labels"><span>BITCOIN-SÄSONG</span><span>NEUTRAL</span><span>ALTERNATIVA KRYPTOVALUTOR</span></div>
    </section>
   </div>
  </section>;

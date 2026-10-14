@@ -31,10 +31,9 @@ class XLanguageTests(unittest.TestCase):
  def test_stale_machine_translation_is_removed_until_reviewed(self):
   p=self.post('An unfamiliar statement about crypto.');p['swedish']={'text':'Krypto: dålig maskinöversättning.','method':'translation','engine':'nllb-200-600m-q8-v2','sourceHash':source_hash(p['text'])}
   counts,queue=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1);self.assertEqual(queue[0]['text'],p['text'])
- def test_current_machine_translation_survives_refresh_but_edits_invalidate_it(self):
+ def test_machine_translation_is_hidden_until_reviewed(self):
   p=self.post('Bitcoin could rise.');p['swedish']={'text':'Bitcoin skulle kunna stiga.','method':'translation','engine':'nllb-200-600m-q8-v3','sourceHash':source_hash(p['text'])}
-  apply_language([p],{});self.assertEqual(p['swedish']['text'],'Bitcoin skulle kunna stiga.')
-  p['text']='Bitcoin could not rise.';apply_language([p],{});self.assertNotIn('swedish',p)
+  counts,queue=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1);self.assertEqual(queue[0]['text'],p['text'])
  def test_production_workflow_translates_before_archive_and_build(self):
   workflow=pathlib.Path('.github/workflows/news-pages.yml').read_text()
   self.assertIn('scripts/x_language.py',workflow);self.assertIn('scripts/x_archive.py',workflow)
