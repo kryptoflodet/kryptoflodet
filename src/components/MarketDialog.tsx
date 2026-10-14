@@ -3,6 +3,7 @@ import {X,Activity,ArrowUpRight,ArrowDownRight,RefreshCw,ExternalLink} from 'luc
 import {chartRanges,fetchChart,type ChartData,type RangeKey} from '../lib/chart';
 import type {LiveQuote} from '../lib/market';
 const fmt=(v:number,unit:string)=>new Intl.NumberFormat('sv-SE',{maximumFractionDigits:v>=10?2:v>=1?4:v>=0.01?6:v>=0.0001?8:10,minimumFractionDigits:v>=1?2:0}).format(v)+' '+unit;
+const fmtMarketCap=(v:number|null,unit:string)=>v===null?'Uppgift saknas':new Intl.NumberFormat('sv-SE',{style:'currency',currency:unit==='SEK'?'SEK':'USD',notation:'compact',maximumFractionDigits:2}).format(v);
 const date=(t:number)=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(t);
 export default function MarketDialog({quote,currency,onClose,onNews}:{quote:LiveQuote;currency:string;onClose:()=>void;onNews:()=>void}){
  const dialog=useRef<HTMLDialogElement>(null);const gradient=useId().replaceAll(':','');const [range,setRange]=useState<RangeKey>('24h');const [data,setData]=useState<ChartData|null>(null);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [hover,setHover]=useState<number|null>(null);const [retry,setRetry]=useState(0);
@@ -10,6 +11,7 @@ export default function MarketDialog({quote,currency,onClose,onNews}:{quote:Live
  useEffect(()=>{const abort=new AbortController();setLoading(true);setError('');setData(null);setHover(null);fetchChart(quote.symbol,range,currency,abort.signal,quote.id).then(d=>{if(!abort.signal.aborted)setData(d);}).catch(e=>{if(!abort.signal.aborted)setError(e instanceof Error?e.message:'Kunde inte hämta diagrammet');}).finally(()=>{if(!abort.signal.aborted)setLoading(false);});return()=>abort.abort();},[quote.id,quote.symbol,range,currency,retry]);
  useEffect(()=>{const timer=setInterval(()=>{if(!document.hidden)setRetry(v=>v+1);},60000);return()=>clearInterval(timer);},[]);
  const current=currency==='SEK'?quote.priceSek:quote.price;const movement=currency==='SEK'?quote.changeSek24h:quote.change24h;
+ const marketCap=currency==='SEK'?quote.marketCapSek:quote.marketCap;
  const points=data?.points||[];const low=points.length?Math.min(...points.map(p=>p[1])):0;const high=points.length?Math.max(...points.map(p=>p[1])):0;const pad=(high-low)*.12||high*.01||1;const floor=low-pad,ceiling=high+pad;
  const first=points[0],last=points.at(-1);const pct=first&&last?(last[1]/first[1]-1)*100:0;const positive=pct>=0;
  const x=(t:number)=>64+(t-(first?.[0]||0))/Math.max(1,(last?.[0]||1)-(first?.[0]||0))*792;
@@ -19,6 +21,7 @@ export default function MarketDialog({quote,currency,onClose,onNews}:{quote:Live
  return <dialog className="market-dialog" ref={dialog} aria-labelledby="market-dialog-title" onCancel={onClose} onClick={e=>{if(e.target===dialog.current)onClose();}}><div className="market-dialog-body"><button className="market-close icon-button" aria-label="Stäng kursdiagram" onClick={onClose}><X size={25}/></button>
  <div className="chart-eyebrow"><Activity size={17}/>MARKNADSDATA<span className={live?'up':''}>{live?'AKTUELL KURS':'FÖRDRÖJD KURS'}</span></div><h2 id="market-dialog-title">{quote.name}<span>{quote.symbol}</span></h2>
  <div className="chart-price-row"><strong>{current===null?'Pris saknas':fmt(current,currency)}</strong><span className={(movement??0)>=0?'up':'down'}>{(movement??0)>=0?<ArrowUpRight size={22}/>:<ArrowDownRight size={22}/>} {movement===null?'—':`${movement>=0?'+':''}${movement.toFixed(2)} %`}<small>senaste 24 timmarna</small></span></div>
+ <div className="market-cap-stat"><span>Marknadsvärde</span><b>{fmtMarketCap(marketCap,currency)}</b><small>CoinGecko · {quote.updatedAt?date(Date.parse(quote.updatedAt)):'Tidsstämpel saknas'}</small></div>
  <p className="chart-current-source">Aktuellt pris: CoinGecko · {quote.updatedAt?date(Date.parse(quote.updatedAt)):'Tidsstämpel saknas'}</p>
  <div className="chart-range-tabs" role="group" aria-label="Diagramperiod">{chartRanges.map(r=><button key={r.key} aria-pressed={range===r.key} className={range===r.key?'active':''} onClick={()=>setRange(r.key)}>{r.label}</button>)}</div>
  <div className="chart-canvas" aria-busy={loading}>{loading?<div className="chart-placeholder"><RefreshCw className="chart-loading" size={28}/><p>Hämtar kurshistorik…</p></div>:error?<div className="chart-placeholder" role="alert"><p>{error}</p><button className="text-button" onClick={()=>setRetry(v=>v+1)}>Försök igen <RefreshCw size={16}/></button></div>:data&&first&&last?<>
