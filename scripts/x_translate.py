@@ -63,7 +63,7 @@ def normalize_translation(source,text):
 
 def valid_translation(source,text):
  if not isinstance(text,str) or not 1<=len(text)<=6000 or len(text)<len(source)*.5 or len(text)>len(source)*3:return False
- if re.search(r'\b(?:bulls?|bears?)\b',source,re.I) and re.search(r'\b(?:björn\w*|tjur\w*)\b',text,re.I):return False
+ if re.search(r'\b(?:bulls?|bears?)\b',source,re.I) and re.search(r'\b(?:björn\w*|tjur\w*|bärs\w*|björs\w*)\b',text,re.I):return False
  if re.search(r'\b(?:tokenized|market cap|marknadskapital|enligt till|lagra sin rikedom)\b',text,re.I):return False
  if '<' in text or 'https://' in text or source.casefold()==text.casefold():return False
  if amounts(source)!=amounts(text,True):return False
