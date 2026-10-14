@@ -32,7 +32,9 @@ def timestamp(value):
   return d.astimezone(UTC)
  except (TypeError,ValueError,AttributeError):return None
 def parse_post(t,account,now,context=None):
- u=t.get('user',{});pid=str(t.get('id_str',''));text=html.unescape(t.get('full_text') or t.get('text') or '')
+ u=t.get('user',{});pid=str(t.get('id_str',''))
+ note=t.get('note_tweet') or {};note=note.get('note_tweet_results',{}).get('result',note)
+ text=html.unescape(note.get('text') or t.get('full_text') or t.get('text') or '')
  date=timestamp(t.get('created_at'));handle=account['handle']
  if not re.fullmatch(r'\d{15,22}',pid) or u.get('id_str')!=account['userId'] or u.get('screen_name','').lower()!=handle.lower():return None
  if t.get('retweeted_status') or t.get('in_reply_to_status_id_str') or t.get('in_reply_to_status_id') or t.get('possibly_sensitive'):return None
@@ -51,7 +53,7 @@ def parse_post(t,account,now,context=None):
  for m in (t.get('extended_entities',{}).get('media') or t.get('entities',{}).get('media') or t.get('photos') or [])[:4]:
   url=m.get('media_url_https') or m.get('url','')
   if urlsplit(url).scheme=='https' and urlsplit(url).hostname=='pbs.twimg.com':media.append({'url':url,'alt':m.get('ext_alt_text') or m.get('alt_text') or ''})
- return {'media':media,'id':pid,'handle':handle,'author':u.get('name') or account['name'].removesuffix(' – X'),'sourceId':account['id'],'url':f'https://x.com/{handle}/status/{pid}','publishedAt':date.isoformat().replace('+00:00','Z'),'text':text,'coins':coins,'categories':categories,'originalLanguage':t.get('lang') or 'und','kind':'original-x-post','verified':False,'discoveredVia':'article-reference' if context else 'x-embed','contextSource':context}
+ return {'sourceTruncated':bool(t.get('truncated') and not note.get('text')),'media':media,'id':pid,'handle':handle,'author':u.get('name') or account['name'].removesuffix(' – X'),'sourceId':account['id'],'url':f'https://x.com/{handle}/status/{pid}','publishedAt':date.isoformat().replace('+00:00','Z'),'text':text,'coins':coins,'categories':categories,'originalLanguage':t.get('lang') or 'und','kind':'original-x-post','verified':False,'discoveredVia':'article-reference' if context else 'x-embed','contextSource':context}
 def parse_timeline(payload,account,now):
  p=NextData();p.feed(payload);d=json.loads(''.join(p.parts));es=d['props']['pageProps']['timeline']['entries']
  if not isinstance(es,list):raise ValueError('Missing timeline entries')

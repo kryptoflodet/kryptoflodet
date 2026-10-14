@@ -14,6 +14,16 @@ class XArchiveTranslationTests(unittest.TestCase):
   self.assertFalse(readable_post(self.post('mymemory-free-v1')))
   self.assertFalse(readable_post(self.post('nllb-200-600m-q8-v3')))
   self.assertFalse(readable_post(self.post('mymemory-free-v2')))
+ def test_matching_checked_translation_survives_an_outage(self):
+  import copy
+  prior=self.post()
+  prior['swedish'].update(engine='qwen3-4b-sv-checked-v1',qualityVersion='x-swedish-v4')
+  incoming=copy.deepcopy(prior);incoming.pop('swedish')
+  rows=archive_posts([prior],[incoming],'2026-10-14T00:00:00Z')
+  self.assertEqual(rows[0]['swedish']['text'],prior['swedish']['text'])
+  incoming['text']='Bitcoin could fall.'
+  rows=archive_posts([prior],[incoming],'2026-10-14T00:00:00Z')
+  self.assertNotIn('swedish',rows[0])
  def test_old_machine_translation_is_removed_but_original_is_preserved(self):
   item=self.post('nllb-200-600m-q8-v2')
   result=archive_posts([item],[], '2026-10-13T12:00:00Z')

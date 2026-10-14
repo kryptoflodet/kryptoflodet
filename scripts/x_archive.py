@@ -1,6 +1,6 @@
 """Keep permanent, readable X snapshots so shared links outlive the rolling feed."""
 import copy,datetime as dt,json,pathlib,re
-from x_language import source_hash,TRUSTED_SWEDISH_ENGINES,apply_language
+from x_language import source_hash,TRUSTED_SWEDISH_ENGINES,CHECKED_ENGINE,CHECK_VERSION,apply_language
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 
 def archivable_post(post):
@@ -22,7 +22,7 @@ def readable_post(post):
  if not archivable_post(post):return False
  if post.get('originalLanguage')=='sv':return True
  swedish=post.get('swedish',{})
- return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('engine') in TRUSTED_SWEDISH_ENGINES and swedish.get('sourceHash')==source_hash(post['text'])
+ return isinstance(swedish,dict) and isinstance(swedish.get('text'),str) and 0<len(swedish['text'])<=6000 and swedish.get('method') in ('summary','translation') and swedish.get('engine') in TRUSTED_SWEDISH_ENGINES and (swedish.get('engine')!=CHECKED_ENGINE or swedish.get('qualityVersion')==CHECK_VERSION) and swedish.get('sourceHash')==source_hash(post['text'])
 
 def archive_posts(previous,posts,now):
  saved={}
@@ -35,7 +35,9 @@ def archive_posts(previous,posts,now):
   if not archivable_post(post):continue
   p=copy.deepcopy(post);prior=saved.get(p['id'])
   # A missing/rejected translation never removes an authenticated original.
-  if not readable_post(p):p.pop('swedish',None)
+  if not readable_post(p):
+   p.pop('swedish',None)
+   if prior and prior['text']==p['text'] and prior['url']==p['url'] and prior.get('swedish',{}).get('engine')==CHECKED_ENGINE and readable_post(prior):p['swedish']=copy.deepcopy(prior['swedish'])
   p.pop('originalCheckedAt',None)
   p['archivedAt']=prior.get('archivedAt',now) if prior and prior['text']==p['text'] else now
   saved[p['id']]=p

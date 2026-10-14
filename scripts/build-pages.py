@@ -74,7 +74,7 @@ def x_page(post):
  title='X · '+post['author'];path='/x/'+post['id']+'/'
  original=post['originalLanguage']=='sv';pending=not readable_post(post)
  text=post['text'] if original else post['swedish']['text'] if not pending else 'Svensk översättning saknas för det här inlägget.'
- label='Svensk översättning saknas' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
+ label='Svensk översättning saknas' if pending else 'Svenskt original' if original else 'Sammanfattat på svenska' if post['swedish']['method']=='summary' else 'Översatt och språkgranskat automatiskt' if post['swedish'].get('engine')=='qwen3-4b-sv-checked-v1' else 'Maskinöversatt till svenska' if post['swedish'].get('engine','').startswith(('nllb-','mymemory-')) else 'Översatt till svenska'
  art='bitcoin' if 'BTC' in post['coins'] else 'ethereum' if 'ETH' in post['coins'] else 'network'
  fallback_art='bitcoin-news' if art=='bitcoin' else art
  media=''
@@ -85,7 +85,8 @@ def x_page(post):
   except (ValueError,AttributeError):continue
   media+=f'<img src="{esc(image["url"])}" alt="{esc(image.get("alt") or "Bild från originalinlägget på X")}" loading="lazy" onerror="this.onerror=null;this.src=\'/images/{fallback_art}-640.webp\';this.alt=\'Illustrationsbild\'" style="display:block;max-width:100%;height:auto;margin:20px 0;border-radius:8px">'
  language=''
- original_html='' if original else '<p class="meta">Originaltexten visas på avsändarens X-sida och återges inte här.</p>'
+ original_html='<p class="meta">Den insamlade originaltexten är avklippt. Öppna originalinlägget på X för hela texten.</p>' if post.get('sourceTruncated') else ''
+ original_html+='' if original else '<p class="meta">Originaltexten visas på avsändarens X-sida och återges inte här.</p>'
  body=f'''<article><span class="kicker">X · @{esc(post['handle'])}</span><h1>{esc(title)}</h1><p class="meta"><time datetime="{esc(post['publishedAt'])}">{date(post['publishedAt'])}</time>, svensk tid</p><p class="meta">{esc(label)}</p><section aria-label="X-inlägget" style="white-space:pre-wrap;overflow-wrap:anywhere"><p>{linked_x_text(text) if original else esc(text)}</p></section>{media}{original_html}<p class="notice">Kontots uppgifter är inte oberoende bekräftade. Detta är Kryptopulss sparade återgivning av inlägget. Originalet på X kan senare ändras eller tas bort.</p><p><a href="{esc(post['url'])}" target="_blank" rel="noopener noreferrer">Visa originalposten på X →</a></p><button class="share" id="share">Kopiera länk</button><p id="share-status" role="status"></p><script>document.getElementById('share').onclick=async()=>{{const s=document.getElementById('share-status');const url=document.querySelector('link[rel=canonical]').href;try{{await navigator.clipboard.writeText(url);s.textContent='Länken är kopierad.'}}catch{{s.textContent=url}}}};</script></article>'''
  return path,page(title,text,path,body,{'@type':'SocialMediaPosting','headline':title,'datePublished':post['publishedAt'],'inLanguage':'sv-SE','citation':post['url'],'author':{'@type':'Person','name':post['author']}})
 

@@ -34,10 +34,16 @@ class XLanguageTests(unittest.TestCase):
  def test_machine_translation_is_hidden_until_reviewed(self):
   p=self.post('Bitcoin could rise.');p['swedish']={'text':'Bitcoin skulle kunna stiga.','method':'translation','engine':'nllb-200-600m-q8-v3','sourceHash':source_hash(p['text'])}
   counts,queue=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1);self.assertEqual(queue[0]['text'],p['text'])
+ def test_checked_translation_survives_language_and_archive_pass(self):
+  p=self.post('Bitcoin could rise.')
+  p['swedish']={'text':'Bitcoin skulle kunna stiga.','method':'translation','engine':'qwen3-4b-sv-checked-v1','qualityVersion':'x-swedish-v4','sourceHash':source_hash(p['text'])}
+  counts,queue=apply_language([p],{});self.assertEqual(counts['automatic'],1);self.assertFalse(queue)
+  p['swedish']['qualityVersion']='old'
+  counts,queue=apply_language([p],{});self.assertNotIn('swedish',p);self.assertEqual(counts['pending'],1)
  def test_production_workflow_translates_before_archive_and_build(self):
   workflow=pathlib.Path('.github/workflows/news-pages.yml').read_text()
   self.assertIn('scripts/x_language.py',workflow);self.assertIn('scripts/x_archive.py',workflow)
-  self.assertIn('scripts/x_translate.py',workflow);self.assertIn('prepare_x_translator.py',workflow);self.assertLess(workflow.index('scripts/x_translate.py'),workflow.index('scripts/x_archive.py'))
+  self.assertIn('scripts/x_translate.py',workflow);self.assertIn('scripts/local_editor.py',workflow);self.assertLess(workflow.index('scripts/x_translate.py'),workflow.index('scripts/x_archive.py'))
  def test_multiple_sentences_never_drop_warning(self):
   text='Bitcoin reclaims $90,000. Ethereum could reach $6,500.'
   self.assertEqual(automatic(text)[0],'Bitcoin är åter på 90 000 dollar. Ethereum skulle kunna nå 6 500 dollar.')

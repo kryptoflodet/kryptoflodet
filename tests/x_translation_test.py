@@ -10,18 +10,20 @@ class TranslationTests(unittest.TestCase):
   import json
   from types import SimpleNamespace
   p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
-  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.'}]))
+  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':True}]))
   with patch('x_translate.subprocess.run',return_value=result) as run:
    counts=translate_posts([p],memo);self.assertEqual(counts['local'],1);self.assertEqual(counts['pending'],0);self.assertEqual(p['swedish']['engine'],ENGINE)
   p.pop('swedish')
   with patch('x_translate.subprocess.run') as run:
    counts=translate_posts([p],memo);self.assertEqual(counts['cached'],1);run.assert_not_called()
- def test_model_failure_uses_free_translation_and_retries_on_next_refresh(self):
+ def test_unchecked_or_failed_model_output_is_not_published_and_retries(self):
   p={'id':'2109000000000000000','handle':'example','url':'https://x.com/example/status/2109000000000000000','text':'Bitcoin could rise.','originalLanguage':'en','publishedAt':'2026-10-13T00:00:00Z'};memo={'items':{}}
-  with patch('x_translate.subprocess.run',side_effect=RuntimeError),patch('x_translate.free_fallback',return_value='Bitcoin skulle kunna stiga.'):
-   counts=translate_posts([p],memo);self.assertEqual(counts['freeFallback'],1);self.assertEqual(p['swedish']['engine'],'mymemory-free-v2')
-  p.pop('swedish');p['text']='Bitcoin could not rise.'
-  with patch('x_translate.subprocess.run',side_effect=RuntimeError),patch('x_translate.free_fallback',return_value=None):
+  from types import SimpleNamespace
+  import json
+  result=SimpleNamespace(stdout=json.dumps([{'id':p['id'],'text':'Bitcoin skulle kunna stiga.','checked':False}]))
+  with patch('x_translate.subprocess.run',return_value=result):
+   counts=translate_posts([p],memo);self.assertEqual(counts['pending'],1);self.assertNotIn('swedish',p)
+  with patch('x_translate.subprocess.run',side_effect=RuntimeError):
    counts=translate_posts([p],memo);self.assertEqual(counts['pending'],1);self.assertNotIn('swedish',p);self.assertNotIn('rejectedUntil',str(memo))
  def test_financial_terms_and_numeric_format_are_normalized(self):
   self.assertEqual(normalize_translation('Bitcoin rises to $82,000.', 'Bitcoin stiger till $82,000.'),'Bitcoin stiger till $82 000.')
@@ -30,6 +32,18 @@ class TranslationTests(unittest.TestCase):
   import datetime as dt
   now=dt.datetime.now(dt.timezone.utc);pid=str((int(now.timestamp()*1000)-1288834974657)<<22)
   self.assertEqual(fx.recent_post_links([['saylor','1234567890123456789'],['saylor',pid]],now),[['saylor',pid]])
+ def test_trading_slang_and_english_remnants_are_rejected(self):
+  self.assertFalse(valid_translation('Why are the bears waiting?','Varför väntar björnarna?'))
+  self.assertFalse(valid_translation('Ethereum leads tokenized ETF market cap.','Ethereum leder tokenized ETF marknadskapital.'))
+  self.assertTrue(valid_translation('Peter Schiff says sell Bitcoin.','Peter Schiff uppmanar till att sälja Bitcoin.'))
+ def test_full_note_tweet_is_used_instead_of_clipped_excerpt(self):
+  import datetime as dt
+  now=dt.datetime.now(dt.timezone.utc)
+  account={'handle':'example','userId':'123','id':'example','name':'Example'}
+  tweet={'id_str':'2109000000000000000','created_at':now.isoformat(),'user':{'id_str':'123','screen_name':'example','name':'Example'},'text':'Bitcoin could rise.','truncated':True,'note_tweet':{'note_tweet_results':{'result':{'text':'Bitcoin could rise, but this is not confirmed.'}}},'lang':'en'}
+  result=fx.parse_post(tweet,account,now)
+  self.assertEqual(result['text'],'Bitcoin could rise, but this is not confirmed.')
+  self.assertFalse(result['sourceTruncated'])
  def test_asset_quantity_cannot_turn_into_money(self):
   source=input_text('The government could keep 61,000 seized $BTC worth over $5 billion.')
   self.assertNotIn('$BTC',source)

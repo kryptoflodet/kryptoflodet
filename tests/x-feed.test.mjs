@@ -29,6 +29,10 @@ try{
  assert.equal(mergeFeed([], [unreviewed],{q:'felaktigmaskintext'},false,[],now).length,0,'Search excludes unreviewed machine text');
  const automatic={...unreviewed,swedish:{...unreviewed.swedish,text:'Solana skulle kunna stiga.',engine:'nllb-200-600m-q8-v3'}};assert.equal(swedishText(automatic),null,'Machine translation is never displayed without review');assert.equal(readableX(automatic),false);
  assert.equal(mergeFeed([], [unreviewed],{},false,[],now).length,1,'The original X post remains in the feed');
+ const checked={...post,swedish:{...post.swedish,engine:'qwen3-4b-sv-checked-v1',qualityVersion:'x-swedish-v4'}};
+ assert.equal(swedishText(checked),'Solana skulle kunna stiga.','Checked natural Swedish is displayed');
+ assert.equal(swedishText({...checked,swedish:{...checked.swedish,qualityVersion:undefined}}),null,'Unchecked output stays hidden');
+
  assert.equal(mergeFeed([], [{...post,publishedAt:'2020-01-01T00:00:00Z'}],{},false,[],now).length,0,'Stale seed not shown as current');
  assert.equal(mergeFeed([], [{...post,publishedAt:'2026-10-13T12:00:00Z'}],{},false,[],now).length,0,'Future posts rejected');
  for(const bad of [null,{}, {...post,url:'javascript:alert(1)'},{...post,url:post.url+'.evil'},{...post,categories:[12]},{...post,swedish:{text:123,method:'translation'}}])assert.equal(validXPost(bad),false);

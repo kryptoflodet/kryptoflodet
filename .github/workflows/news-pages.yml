@@ -48,19 +48,31 @@ jobs:
             x-embed-v1-
       - name: Collect original X posts
         run: python scripts/fetch-x.py
-      - name: Restore source-bound X translations and local model
+      - name: Restore source-bound Swedish translations
         uses: actions/cache@v4
         with:
-          path: .cache/x-translation
-          key: x-swedish-v3-${{ github.run_id }}
-          restore-keys: x-swedish-v3-
+          path: |
+            .cache/x-translation/history.json
+            .cache/x-translation/smoke-v1.json
+          key: x-swedish-v4-${{ github.run_id }}
+          restore-keys: x-swedish-v4-
+      - name: Restore local Swedish editor
+        uses: actions/cache@v4
+        with:
+          path: .cache/editor/model4.gguf
+          key: x-swedish-qwen3-4b-3605803b982c
       - name: Prepare local Swedish translator
-        run: python scripts/prepare_x_translator.py
+        run: |
+          python -m pip install --only-binary=:all: llama-cpp-python==0.3.16 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+          python -m pip install lingua-language-detector==2.1.1
+          python scripts/local_editor.py
+      - name: Verify natural Swedish with real model
+        run: python scripts/x_translation_smoke.py
       - name: Prepare Swedish X cards
         run: python scripts/x_language.py
       - name: Translate every collected X post automatically
         env:
-          X_TRANSLATION_SECONDS: '480'
+          X_TRANSLATION_SECONDS: '600'
         run: python scripts/x_translate.py
       - name: Preserve permanent X links
         run: python scripts/x_archive.py
@@ -96,6 +108,7 @@ jobs:
           path: |
             state/pending.json
             state/x-language-review.json
+            state/x-translation-smoke.json
           retention-days: 3
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
