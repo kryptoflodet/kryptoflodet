@@ -583,4 +583,4439 @@
       "discoveredVia": "x-embed",
       "contextSource": null,
       "swedish": {
-        "text": "Kryptomarknaden faller kraftigt. Bitcoin handlas under 82 000 dollar och Ethereum under 2 440 dollar. Inlägget b
+        "text": "Kryptomarknaden faller kraftigt. Bitcoin handlas under 82 000 dollar och Ethereum under 2 440 dollar. Inlägget beskriver säljtrycket som hårt.",
+        "method": "summary",
+        "sourceHash": "e2f7c6b9d4f2d2c0eb4a9f6d4e3b8f83e626e554af4ad2f2bc4612719bfed31c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmNIOcWkAAwfGj.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110373089347256480",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110373089347256480",
+      "publishedAt": "2026-10-14T14:12:07Z",
+      "text": "JUST IN: A mysterious crypto whale keeps swapping Bitcoin for Ethereum!\n\nAnother $32.59 million in $ETH acquired over the past 24 hours.\n\nTotal swaps have now exceeded $100 million since October 11! https://t.co/wNgYIcS95S",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En okänd stor aktör uppges ha växlat Bitcoin mot Ethereum och köpt ytterligare ETH för 32,59 miljoner dollar under det senaste dygnet. De sammanlagda växlingarna sedan den 11 oktober uppges överstiga 100 miljoner dollar.",
+        "method": "summary",
+        "sourceHash": "83a1e9f90411f19758a5bb771dfedcaef9e678cff7459bca44ce1be2d26d7372",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110371295867355346",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110371295867355346",
+      "publishedAt": "2026-10-14T14:05:00Z",
+      "text": "Bitcoin will pump back up.\n\nAltcoins will make a huge comeback! \n\nBuy the dips.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover tror att Bitcoin kommer att stiga igen och att andra kryptovalutor kan återhämta sig kraftigt. Han uppmanar följarna att köpa vid nedgångar.",
+        "method": "summary",
+        "sourceHash": "7020de63bc797a3b27f9c36121c961f44d62f2a55579f21737180368d200ddac",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110369607290912783",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110369607290912783",
+      "publishedAt": "2026-10-14T13:58:17Z",
+      "text": "You can buy Bitcoin in minutes, but what actually happens when you send it?\n\nDiscover how blockchain, mining, and wallets work together, and what you should know before sending BTC 👇\nhttps://t.co/5RMshebSBx",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon Show länkar till en förklaring av hur blockkedjan, utvinning och digitala plånböcker samverkar och vad man bör tänka på innan man skickar BTC.",
+        "method": "summary",
+        "sourceHash": "6aea501ae0e33b4aa1d4ddb29482a32b52ab30fc00639843cf27a6937e0341dc",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmIqNAacAAQ71E.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmIqNIbgAET1WZ.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110368165985493137",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110368165985493137",
+      "publishedAt": "2026-10-14T13:52:34Z",
+      "text": "JUST IN: 🇹🇷 Interpol arrests HEX & PulseChain crypto founder Richard Heart in Turkey. https://t.co/5Mwt1m8VoA",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Interpol uppges ha gripit Richard Heart, grundare av kryptoprojekten HEX och PulseChain, i Turkiet.",
+        "method": "summary",
+        "sourceHash": "d0b2f1cc023935b82835023bfa9154cbd99bd7854586619e7f7fd1942b770f1c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110367372359913963",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110367372359913963",
+      "publishedAt": "2026-10-14T13:49:24Z",
+      "text": "The entire crypto market could explode soon! 🚀\n\nHODL strong and stay patient.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "The Moon Show tror att hela kryptomarknaden snart kan stiga kraftigt och uppmanar följarna att behålla sina innehav och ha tålamod.",
+        "method": "summary",
+        "sourceHash": "5a847d30daed3469c15862b8d5ca0b1b2528f750b88c4636c8f8bf00f09bbe43",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmGwl5WgAArtQo.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmGxcwWQAAW9hM.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110366492529402005",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110366492529402005",
+      "publishedAt": "2026-10-14T13:45:55Z",
+      "text": "JUST IN: The UK's first Bitcoin-backed preferred shares start trading!\n\nThe \"Smarter Web Company\" raised $13M with a 12% weekly-paid yield.\n\nTrading up 5% on initial volume. https://t.co/lRiFHv2ZgI",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kontot uppger att Storbritanniens första preferensaktier med Bitcoin som säkerhet har börjat handlas. The Smarter Web Company ska ha tagit in 13 miljoner dollar med en avkastning på 12 procent som betalas ut varje vecka. Aktien uppges ha stigit 5 procent vid en inledande handelsvolym.",
+        "method": "summary",
+        "sourceHash": "41eccb8b413d67a5c6fcd0ba866f3a6d9e5cc11b83132730fa35222fe5443571",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmF8_taIAA2tDE.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110365297505124604",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110365297505124604",
+      "publishedAt": "2026-10-14T13:41:10Z",
+      "text": "$BTC is starting to reverse here. Let's see if the bulls can take it back above the range. https://t.co/WuwDt6sEz6",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget bedömer att BTC kan vara på väg att vända och undrar om kursen kan ta sig över det aktuella handelsintervallet.",
+        "method": "summary",
+        "sourceHash": "49cd45cb1edbb7930db52096859a93888c00a434d213765d1a720cae57e922cb",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmCv3VWAAApG-l.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmERPQW4AA_EBc.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110363434365919315",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110363434365919315",
+      "publishedAt": "2026-10-14T13:33:46Z",
+      "text": "JUST IN: Kraken agrees to buy Lithuania’s Saldo Bank for European expansion.\n\n• EU license for deposits, loans and cards.\n\n• Closing expected in 2027. https://t.co/Kn93nDsxhm",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kraken uppges ha kommit överens om att köpa den litauiska banken Saldo Bank för att expandera i Europa. Banken har en EU-licens för insättningar, lån och kort. Affären väntas slutföras 2027.",
+        "method": "summary",
+        "sourceHash": "90c2434330ac0417130508c4d3dd626ce5f4421d93f9b7af107ec1f33078e7c2",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmBLvcWIAETvbu.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUmBMgsX0AAdByd.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110360846123823307",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110360846123823307",
+      "publishedAt": "2026-10-14T13:23:28Z",
+      "text": "JUST IN: $60B Standard Chartered becomes the first major bank to offer Bitcoin trading in the United Arab Emirates. https://t.co/91jpCfy5dv",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kontot uppger att banken Standard Chartered blir den första större banken som erbjuder handel med Bitcoin i Förenade arabemiraten. Inlägget anger även 60 miljarder dollar, men det framgår inte vad beloppet avser.",
+        "method": "summary",
+        "sourceHash": "d3344a39d25f1bd4d0da445bdb3c50d4a1a754060591d3c7537b7e9c86e2f6e0",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUmAX7SWgAEADYI.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110359345120547311",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110359345120547311",
+      "publishedAt": "2026-10-14T13:17:31Z",
+      "text": "JUST IN: Solana $SOL drops below $105! https://t.co/aqRdWXTjAk",
+      "coins": [
+        "SOL"
+      ],
+      "categories": [
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Solana uppges ha fallit under 105 dollar.",
+        "method": "summary",
+        "sourceHash": "b84b07e20a8b17b80c3da174f88334b11641af9c2dcd62645768e013788b5956",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUl_JQTXkAAQOUj.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110358350299087007",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110358350299087007",
+      "publishedAt": "2026-10-14T13:13:33Z",
+      "text": "JUST IN: Strive bought another 2,822 Bitcoin for $235M!\n\nAdded to last week’s 3,311 BTC purchase.\n\nBecomes the 4th largest corporate holder! https://t.co/GRVlqSBlWg",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Strive uppges ha köpt ytterligare 2 822 Bitcoin för 235 miljoner dollar, utöver köpet av 3 311 Bitcoin veckan innan. Kontot hävdar att bolaget därmed blir det fjärde största börsnoterade företaget med Bitcoin i kassan.",
+        "method": "summary",
+        "sourceHash": "7c1acae7cbc766e8aaa60501b29afb8d92d29fc52fe0032442909d267d8eb7bc",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUl87VMa0AAPoqr.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110355266965586085",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110355266965586085",
+      "publishedAt": "2026-10-14T13:01:18Z",
+      "text": "BREAKING: 🚨 Bitcoin drops below $83,000 as hot U.S. CPI data fuels inflation fears.\n\nTraders are now pricing in 3 more Fed rate hikes before end of 2027.\n\nBEARISH FOR CRYPTO! https://t.co/UNPvOEUDvz",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kontot kopplar Bitcoins fall under 83 000 dollar till högre amerikansk inflation. Det uppger att handlare räknar med ytterligare tre räntehöjningar från Federal Reserve före utgången av 2027 och bedömer detta som negativt för kryptomarknaden.",
+        "method": "summary",
+        "sourceHash": "5fdbb8f17364b21c54394db157a0bc26014b1f31e93cd9a823feb70b3627b7bc",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUl6tR3WsAAnblb.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110352972903551241",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110352972903551241",
+      "publishedAt": "2026-10-14T12:52:11Z",
+      "text": "JUST IN: Bitcoin ETFs bought $175M worth of BTC yesterday.\n\nMonth-to-date flows remain negative at $278M so far.\n\nIs institutional appetite coming back? https://t.co/8nffZibINZ",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin-ETF:er uppges ha köpt BTC för 175 miljoner dollar föregående dag. Månadens sammanlagda flöde är ändå negativt med 278 miljoner dollar. Inlägget frågar om institutionernas intresse är på väg tillbaka.",
+        "method": "summary",
+        "sourceHash": "92627009282f9e38b868c69c10929790018c7f42bc46d851b2cd425372224b1d",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUl4NqeWEAATgqN.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110350613485650113",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110350613485650113",
+      "publishedAt": "2026-10-14T12:42:49Z",
+      "text": "JUST IN: U.S. 2-year Treasury yield surges to 4.918%, up from 4.774%!\n\nRising yields signal tighter financial conditions, potentially adding selling pressure to Bitcoin and the broader crypto market. https://t.co/6ljF9rmKSm",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Den amerikanska tvåårsräntan uppges ha stigit till 4,918 procent från 4,774 procent. Inlägget bedömer att högre räntor kan strama åt de finansiella villkoren och öka säljtrycket på Bitcoin och kryptomarknaden i stort.",
+        "method": "summary",
+        "sourceHash": "a3b297ac2305f312f2f8f80cdaaf97a6ec6d164b0a4a27b90365092f4222ca48",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUl2sgNW4AAKX2e.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110348454170152990",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110348454170152990",
+      "publishedAt": "2026-10-14T12:34:14Z",
+      "text": "BITCOIN JUST DUMPED BELOW $83,000! 🔴\n\nU.S. CPI came in hotter than expected.\n\nThe crypto market is reacting! https://t.co/2IN55H0D4L",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin uppges ha fallit under 83 000 dollar efter att den amerikanska inflationen kommit in högre än väntat. Inlägget säger att kryptomarknaden reagerar på beskedet.",
+        "method": "summary",
+        "sourceHash": "1c11f4868d2d1e507f8d5899adb3bc9ad6ee61f0ef77785020e05b6d2f675e8e",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlzKIoWsAEJqSz.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUlzLqYX0AAMZke.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110344567434408261",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110344567434408261",
+      "publishedAt": "2026-10-14T12:18:47Z",
+      "text": "JUST IN: Bitcoin treasury company Strive has purchased another 2,822 $BTC for approximately $235 MILLION!\n\nAverage purchase price: $83,266 per BTC.\n\nTotal holdings now stand at 35,600 BTC! 👀 https://t.co/FMfXlKd0xd",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoinbolaget Strive uppges ha köpt ytterligare 2 822 BTC för omkring 235 miljoner dollar, till ett genomsnittspris på 83 266 dollar per BTC. Bolagets totala innehav anges nu till 35 600 BTC.",
+        "method": "summary",
+        "sourceHash": "5a0548dc7f8ba208eaf1b17c25a568de9b5ed503d090bd9e3745441a7ade92aa",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlwtEXWgAAIRL2.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110342081776652670",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110342081776652670",
+      "publishedAt": "2026-10-14T12:08:55Z",
+      "text": "JUST IN: USDT reserves on exchanges have dropped to a ONE-YEAR LOW!\n\nERC-20 USDT reserves now stand at $47.3B, down from $57.5B in May.\n\nLess stablecoin liquidity could mean weaker buying power for Bitcoin. 👀 https://t.co/Bq41o25rLb",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Reserverna av USDT på kryptobörser uppges ha nått den lägsta nivån på ett år. Inlägget anger 47,3 miljarder dollar i USDT på Ethereum jämfört med 57,5 miljarder i maj och menar att mindre likviditet kan försvaga köpkraften för Bitcoin.",
+        "method": "summary",
+        "sourceHash": "eae9b05e5abe24267711a0524ee63149cdf99a89d15aad7e40c7614dc32e6f06",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUltAtuaEAAH7kp.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110337958406652131",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110337958406652131",
+      "publishedAt": "2026-10-14T11:52:32Z",
+      "text": "BREAKING: This is suspicious!\n\nThis trader just opened a massive $38 million Bitcoin SHORT just before CPI.\n\nDoes he know something we don't? https://t.co/8UNmI6Phks",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kontot beskriver en handlare som öppnade en kort position i Bitcoin värd 38 miljoner dollar strax före inflationsbeskedet och undrar om handlaren kände till något i förväg. Det är spekulation från avsändaren.",
+        "method": "summary",
+        "sourceHash": "8cea5535b1b4f3e6e1f629742e8a442bf66c84d88ec38f0f6eb71a9a67dea76f",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110337386362044690",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110337386362044690",
+      "publishedAt": "2026-10-14T11:50:15Z",
+      "text": "U.S. CPI DATA IS COMING! 🚨\n\nWHAT HAPPENS TO BITCOIN NEXT?",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget uppmärksammar att amerikanska inflationssiffror snart ska publiceras och frågar hur Bitcoin kan påverkas.",
+        "method": "summary",
+        "sourceHash": "6b16ef56a6212c429e5e38a8bbbd6b7cc8673419286cacf5d60dd146004ed320",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlsNZlXUAA6B7Z.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110336891359015386",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110336891359015386",
+      "publishedAt": "2026-10-14T11:48:17Z",
+      "text": "JUST IN: BitMEX faces a £20M lawsuit over alleged unauthorized Bitcoin derivatives trading in the UK! 🚨\n\nLawyers warn potential liabilities could reach hundreds of millions if other UK customers bring similar claims. https://t.co/i4m8DntRyP",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "BitMEX uppges möta en stämning på 20 miljoner pund i Storbritannien efter påstådd handel med Bitcoin-derivat utan tillstånd. Jurister varnar för att skadestånden kan bli betydligt större om fler brittiska kunder väcker liknande krav.",
+        "method": "summary",
+        "sourceHash": "6c253e374fe7d40335d6be35152c72b142dae9c64d461d6093e7e65fb9f18e58",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlqV1hbkAAV32G.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110335191311098352",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110335191311098352",
+      "publishedAt": "2026-10-14T11:41:32Z",
+      "text": "I’m one of the few major crypto traders who opened a trade at the exact Bitcoin bear market bottom.\n\nThat trade is now up $1,200,000.\n\nI share how I did it in my community:\nhttps://t.co/MovIDuHVtj https://t.co/ZBHFf4LRzb",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En kryptohandlare uppger att en position som öppnades nära botten i en tidigare Bitcoin-nedgång nu har ökat med 1,2 miljoner dollar. Han säger sig beskriva tillvägagångssättet för sin grupp.",
+        "method": "summary",
+        "sourceHash": "1cd84455d14ec4bb654d53d4d07530f5df85c01d6ad8258c5699774ad67e3e27",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlinnaWgAAlcYM.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110327099106214359",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110327099106214359",
+      "publishedAt": "2026-10-14T11:09:23Z",
+      "text": "JUST IN: Over 50% of Bitcoin's supply is held in addresses with unknown ownership, according to Galaxy Research!\n\nDespite growing institutional adoption, a significant share of BTC may still be self-custodied by individuals. 👀 https://t.co/hoJW0N0YgF",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Enligt Galaxy Research finns över hälften av alla Bitcoin på adresser vars ägare är okända. Inlägget framhåller att en betydande andel därför kan förvaras av privatpersoner själva, trots ett växande institutionellt ägande.",
+        "method": "summary",
+        "sourceHash": "70ecd980e9c74bb0c02848b96d92f8d94019d0d28203b3e859dc0b64b2be5e4e",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlhL-5XQAADW5Z.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110324773666329076",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110324773666329076",
+      "publishedAt": "2026-10-14T11:00:08Z",
+      "text": "JUST IN: Kraken's parent company, Payward, signs a deal to acquire a European bank!\n\nThe acquisition would expand its banking operations across multiple European markets, pending regulatory approval. https://t.co/TmGyGstmQ8",
+      "coins": [],
+      "categories": [
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Payward, Krakens moderbolag, uppges ha ingått avtal om att köpa en europeisk bank. Affären skulle utöka bolagets bankverksamhet på flera europeiska marknader, men kräver myndighetsgodkännande.",
+        "method": "summary",
+        "sourceHash": "b7b631457c246bdbdb26aba980da8a474ba971513a69a248de613a291e4d3808",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110323367937208563",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110323367937208563",
+      "publishedAt": "2026-10-14T10:54:33Z",
+      "text": "JUST IN: Blockchain associations and other organizations are pushing for an expedited court review of Illinois' digital asset tax law challenge!\n\nThe legal battle over crypto taxation continues.",
+      "coins": [],
+      "categories": [
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Organisationer inom blockkedjeområdet uppges begära en snabbare domstolsprövning av en rättslig invändning mot Illinois lag om skatt på digitala tillgångar.",
+        "method": "summary",
+        "sourceHash": "22fed17743a3435e51f4dc096f89af7788f56eb60c5ebd308206d4ea6ff4bbcd",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlb3qIW0AA_vfI.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110318924159918562",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110318924159918562",
+      "publishedAt": "2026-10-14T10:36:54Z",
+      "text": "🚨 Older Bitcoin is moving again!\n\n$BTC held for 1–3 years and over 3 years has seen increased on-chain activity since late September.\n\nMore movement could follow as Ledger users migrate their wallets! 👀 https://t.co/xcVdzP6GIA",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget uppger att aktiviteten har ökat sedan slutet av september bland Bitcoin som hållits i ett till tre år och i mer än tre år. Avsändaren spekulerar i att fler äldre Bitcoin kan börja röra sig när Ledger-användare flyttar sina plånböcker.",
+        "method": "summary",
+        "sourceHash": "af37e17e152eca7d9e80e19159177f0d2070867431fe7147b5ce901b23fbf04b",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlZli4XwAI3F9j.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110316422891270229",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110316422891270229",
+      "publishedAt": "2026-10-14T10:26:57Z",
+      "text": "BREAKING: 🇦🇪 $1 trillion banking giant Standard Chartered launches direct Bitcoin & Ethereum trading through bank accounts for wealthy clients in the UAE.\n\nBanks ALL-IN on crypto! 🚀 https://t.co/iNcwq0J7o3",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Standard Chartered uppges ha lanserat direkt handel med Bitcoin och Ethereum via bankkonton för förmögna kunder i Förenade arabemiraten. Avsändaren tolkar beskedet som att bankerna satsar stort på kryptovalutor.",
+        "method": "summary",
+        "sourceHash": "cc0f81370b53d8da62dddc1b114043560793c6e50303fe1bc80dd48ed2160310",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110315645237965228",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110315645237965228",
+      "publishedAt": "2026-10-14T10:23:52Z",
+      "text": "JUST IN: 🇦🇪 Standard Chartered launches Bitcoin and Ethereum trading directly through bank accounts for eligible clients in the UAE.",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Standard Chartered uppges ha lanserat handel med Bitcoin och Ethereum direkt via bankkonton för behöriga kunder i Förenade arabemiraten.",
+        "method": "summary",
+        "sourceHash": "aa65164818372d36671f053d7b36e5e24c39824bcf9c3ab70582d09180761b15",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlYbMzXQAA4KI1.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUlYbqiWsAAVhJH.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110315329629077711",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110315329629077711",
+      "publishedAt": "2026-10-14T10:22:37Z",
+      "text": "JUST IN: An Ethereum OG who bought $ETH at just $14 nine years ago has moved 6,369 ETH worth $15.95M to Kraken! https://t.co/YD0TUiR9yM",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En tidig Ethereum-investerare som köpte ETH för 14 dollar för nio år sedan uppges ha flyttat 6 369 ETH, värda 15,95 miljoner dollar, till kryptobörsen Kraken.",
+        "method": "summary",
+        "sourceHash": "4b14933136e4c2ae739488563a312f896b9bfbc0db524bfbc4ceeca49298f5c6",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlGy-4XsAAcilK.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110307373927846270",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110307373927846270",
+      "publishedAt": "2026-10-14T09:51:00Z",
+      "text": "NEW: France is considering tougher crypto tax rules! 🇫🇷\n\nProposals include:\n• 31.4% tax on MiCA stablecoin gains\n• Reporting self-custody wallets above €100K\n• Expanded crypto exit tax\n\nA parliamentary vote is scheduled for October 20.\n\nWill stricter rules push crypto https://t.co/Hv7rA4lU4e",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Frankrike överväger enligt inlägget strängare kryptoskatter: 31,4 procent på vinster från värdestabila kryptovalutor som omfattas av MiCA, rapportering av plånböcker med egen förvaring över 100 000 euro och en utvidgad utflyttningsskatt. En omröstning i parlamentet är planerad till den 20 oktober. Inlägget frågar om reglerna kan få kryptoföretag att flytta.",
+        "method": "summary",
+        "sourceHash": "1f108b90156d79ad40ee2aa6671a97928a7e70247d55658a73159db9ac7d8dbd",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110303636576506041",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110303636576506041",
+      "publishedAt": "2026-10-14T09:36:09Z",
+      "text": "JUST IN: 🇫🇷 France considers imposing 31.4% tax on crypto-to-stablecoin conversions.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Frankrike överväger enligt inlägget en skatt på 31,4 procent vid växling från kryptovaluta till värdestabil kryptovaluta.",
+        "method": "summary",
+        "sourceHash": "b0602dfc9c93ebeabe26a115d7722e8a4d470e79d25668b043111ba870195df2",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlGvdjXYAALd4i.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUlGvYoWgAAoT-9.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110303347680870695",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110303347680870695",
+      "publishedAt": "2026-10-14T09:35:00Z",
+      "text": "ICYMI: Tom Lee remains bullish on crypto!\n\nHis year-end targets:\n\n₿ Bitcoin: Above $100,000\n◆ Ethereum: Around $7,500\n\nCould the next few months deliver a major rally? 🚀 https://t.co/AQn1yTCqoR",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Tom Lee är fortsatt positiv till kryptomarknaden. Hans kursmål vid årets slut uppges vara över 100 000 dollar för Bitcoin och omkring 7 500 dollar för Ethereum. Inlägget frågar om en större uppgång kan komma under de närmaste månaderna.",
+        "method": "summary",
+        "sourceHash": "da009fd3dc570ddf8594b7b3433f680265d10f450f35676fbdf83c267c5ba6ee",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110300921070850479",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110300921070850479",
+      "publishedAt": "2026-10-14T09:25:21Z",
+      "text": "This guy called the exact Bitcoin bear market bottom using one simple indicator.\n\nThe \"Death Cross.\" \n\nHis updates are well worth following if you want to know when to buy and sell Bitcoin.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget hänvisar till en teknisk indikator, dödskorset, som enligt avsändaren pekade ut botten i en tidigare nedgång för Bitcoin. Avsändaren rekommenderar sin analys för den som vill veta när man ska köpa eller sälja.",
+        "method": "summary",
+        "sourceHash": "9b4fef5266957ede48666ee688f9be135d64a73a04a4e86f67f1afc83bd81900",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlGqwUXQAA3C_h.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUlGq1cXMAAj5S0.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110299572618531230",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110299572618531230",
+      "publishedAt": "2026-10-14T09:20:00Z",
+      "text": "LATEST: Standard Chartered launches Bitcoin and Ethereum trading in the UAE!\n\nEligible professional investors can now trade BTC and ETH directly through their existing bank accounts. 🚀 https://t.co/mAAM8AWXza",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Standard Chartered uppges erbjuda behöriga professionella investerare i Förenade arabemiraten handel med BTC och ETH direkt via befintliga bankkonton.",
+        "method": "summary",
+        "sourceHash": "f30a5a34477338ee0c65a1636114773b32bf2c60a7753d63d372fc26aa6f53bd",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUlDzAjWgAA_6lN.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110292614608015763",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110292614608015763",
+      "publishedAt": "2026-10-14T08:52:21Z",
+      "text": "JUST IN: 🚨 A Bitcoin whale opens a massive $34 MILLION short position with 13x leverage ahead of today's CPI report!\n\nDoes this trader know something? 👀 https://t.co/5EKBcE92I2",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En stor aktör uppges ha öppnat en kort position i Bitcoin värd 34 miljoner dollar med 13 gångers hävstång inför dagens amerikanska inflationsbesked. Inlägget spekulerar i om handlaren vet något som andra inte vet.",
+        "method": "summary",
+        "sourceHash": "3b3403595101906205256b34b3e2c5f4eb8f459f6e295acf17ae0beb65dabfca",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110289506285035810",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110289506285035810",
+      "publishedAt": "2026-10-14T08:40:00Z",
+      "text": "LITERALLY TRILLIONS ARE COMING TO CRYPTO. 🚀\n\n• $157T in stocks will be tokenized.\n\n• $160T in bonds will be tokenized.\n\n• $390T in real estate will be tokenized.\n\n• $26T in gold will be tokenized.\n\n• $18T in private markets will be tokenized.\n\n• Trillions in commodities",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget hävdar att stora värden kan komma att representeras som digitala tillgångar: 157 biljoner dollar i aktier, 160 biljoner i obligationer, 390 biljoner i fastigheter, 26 biljoner i guld och 18 biljoner på privata marknader. Även råvaror nämns, utan belopp.",
+        "method": "summary",
+        "sourceHash": "9762b84b9d718c123ccd7aac3c13347f4ce902a1819ac7b9460c57e1d1b4bf80",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUk-brsXQAAlrIS.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUk-br8W4AAyHG-.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110286558393938095",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110286558393938095",
+      "publishedAt": "2026-10-14T08:28:17Z",
+      "text": "🚨 Wall Street sentiment is leaning risk-on ahead of U.S. inflation data!\n\nAccording to a 22V Research client survey, 44% expect September CPI to boost market risk appetite.\n\nAll eyes on Bitcoin and stocks! 👀 https://t.co/htZo71ia9U",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En kundundersökning från 22V Research uppges visa att 44 procent väntar sig att september månads amerikanska inflationssiffra ska öka marknadens riskaptit. Inlägget beskriver stämningen som mer riskbenägen inför beskedet.",
+        "method": "summary",
+        "sourceHash": "8e776ab594a765aa7aa535a2bda6495014052d9c9dad7b612c9fecb8688979d3",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUk7qxiWMAAh-8K.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110283702832140382",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110283702832140382",
+      "publishedAt": "2026-10-14T08:16:56Z",
+      "text": "JUST IN: Ethereum open interest drops $2.53 BILLION across four major exchanges!\n\nThat's a 29.2% decline since September 21.\n\n$ETH traders are rapidly reducing derivatives exposure! 👀 https://t.co/y1Y1uK2NjL",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Öppna positioner i Ethereums derivat uppges ha minskat med 2,53 miljarder dollar på fyra större börser, en nedgång på 29,2 procent sedan den 21 september. Inlägget säger att handlare snabbt minskar sin exponering mot derivat.",
+        "method": "summary",
+        "sourceHash": "9aac2897407eda2e7c97069de253b95368649cfe27f1cba3729b5b92f87704ba",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110283243886948414",
+      "handle": "TheMoonShow",
+      "author": "The Moon Show",
+      "sourceId": "moon-x",
+      "url": "https://x.com/TheMoonShow/status/2110283243886948414",
+      "publishedAt": "2026-10-14T08:15:07Z",
+      "text": "BITCOIN JUST BROKE $84,000! 🚀",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin uppges just ha passerat 84 000 dollar.",
+        "method": "summary",
+        "sourceHash": "98996bfa66400b8b1fa6d0cdf4f53b6f02c4baa22e3c4baae47d5e9b30da0aab",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUk6Gtob0AAqxtt.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUk6GtvbsAACyD7.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110281794721571176",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110281794721571176",
+      "publishedAt": "2026-10-14T08:09:21Z",
+      "text": "CRYPTO MARKET IS BOUNCING! 🚀 https://t.co/KC0ptzGjpD",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget beskriver en uppgång på kryptomarknaden.",
+        "method": "summary",
+        "sourceHash": "e8cd0033de9ba8b37bbbdeb10745094cc432e502a9a1b96c8c94e0d548e56158",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUkGBUGXUAEW-Au.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110278181441937896",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110278181441937896",
+      "publishedAt": "2026-10-14T07:55:00Z",
+      "text": "MASSIVE: 🔥 This on-chain signal confirms the Bitcoin bull market is 100% CONFIRMED. \n\nYou know what comes next, right? https://t.co/ifPd5DruhM",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Avsändaren hävdar att en signal i blockkedjedata bekräftar att Bitcoin befinner sig i en uppgångsmarknad och uttrycker full säkerhet. Det är avsändarens bedömning, inte en garanti.",
+        "method": "summary",
+        "sourceHash": "baa0277e66073f7afe5ebe938a466f1755521953ca1b2868e08bca90359fc9b7",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUkGpv5WIAAtWio.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110263837119386058",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110263837119386058",
+      "publishedAt": "2026-10-14T06:58:00Z",
+      "text": "Bitcoin, $BTC.\n\nIt's coming. https://t.co/VWv6yEtLJr",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget säger kort att Bitcoin är på väg, utan att ange vad som väntas hända.",
+        "method": "summary",
+        "sourceHash": "9caa931bd3ee293cc101b580805d613dc1909d1474dd78e01f55b6f58a0b9e80",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUkmhwga4AALmkv.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110260355406688713",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110260355406688713",
+      "publishedAt": "2026-10-14T06:44:10Z",
+      "text": "#BITCOIN HISTORY WILL REPEAT... *prepare now*\n\nWatch NOW:👇\nhttps://t.co/hiioKb81dl https://t.co/ilIhpUADyM",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Avsändaren hävdar att Bitcoins historia kommer att upprepa sig och uppmanar följarna att förbereda sig. Inlägget länkar till en video.",
+        "method": "summary",
+        "sourceHash": "bf1aa241084e0f26c3e086a06e631feb0a48ab34e7f8b46fed9d64cef956b086",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUkGFTWW4AAWFqi.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110249242728276311",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110249242728276311",
+      "publishedAt": "2026-10-14T06:00:00Z",
+      "text": "BITCOIN FALLING WEDGE BREAKOUT INCOMING!!! https://t.co/Kuuw4BkMyB",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget hävdar att ett tekniskt diagrammönster för Bitcoin kan vara på väg att bryta uppåt. Det är en spekulativ bedömning.",
+        "method": "summary",
+        "sourceHash": "61219bc73b089b0f862eb11c5d0d661c4bf2aa685d3acdffb48ccd3c4d70affb",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUkFCTQWAAAc-fT.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110223449306386521",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110223449306386521",
+      "publishedAt": "2026-10-14T04:17:31Z",
+      "text": "BREAKING: 🤯🚀 Bitcoin surged HARD following the last 4 CPI releases.\n\nNew CPI data drops TODAY. \nExpect major volatility!\n\nCheck my quoted posts for my expectations on how the market will react. https://t.co/1tBexYljzV",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin steg kraftigt efter de fyra senaste amerikanska inflationsbeskeden, enligt inlägget. Nya siffror väntas samma dag och avsändaren varnar för stor kursrörlighet. Han hänvisar till sina andra inlägg för sin bedömning av marknadsreaktionen.",
+        "method": "summary",
+        "sourceHash": "f13cf4ec62d993e60b2e175fd7a193320c156fbeb178493130e9fe040acf55a2",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUje7c5WYAAzpIQ.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUje9DRXQAA1Ghx.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110181646381297989",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110181646381297989",
+      "publishedAt": "2026-10-14T01:31:24Z",
+      "text": "You have $380,000 set aside for your child. Which path are you choosing?\n\nA) Ivy League degree at Columbia + $0 left\nB) Texas A&M degree + 3.2 BTC \nC) Public state college degree + 4 BTC \nD) Skip school entirely + hand over 4.5 BTC\n\nDrop your choice below 👇 https://t.co/PEwhV4mhQl",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget frågar hur följare skulle använda 380 000 dollar som sparats till ett barn: till en examen vid Columbia, en utbildning vid Texas A&M, en offentlig högskola eller till Bitcoin i stället för högskolestudier.",
+        "method": "summary",
+        "sourceHash": "65257d071ba8a80caec8400e03a300ae66c6ac5a23bcf0ff4ffd37a16d6bc00c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUjCfSQWwAAaFYX.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUjCfSNXEAAltFL.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110150272467284132",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110150272467284132",
+      "publishedAt": "2026-10-13T23:26:44Z",
+      "text": "🇺🇸 Senator Elizabeth Warren has repeatedly stated that cryptocurrency is used for money laundering and to avoid sanctions.\n\nToday, the US government fined Bank of America $1.2 billion for violating money laundering regulations and sanctions laws. https://t.co/hkf68YwqQQ",
+      "coins": [],
+      "categories": [
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Senator Elizabeth Warren har upprepade gånger hävdat att kryptovalutor används för penningtvätt och för att kringgå sanktioner. Inlägget hävdar också att USA:s regering bötfällt Bank of America med 1,2 miljarder dollar för brott mot regler om penningtvätt och sanktioner.",
+        "method": "summary",
+        "sourceHash": "0ff073fb3a79fc9a182f713da8de8a77a621d167ed74fd798c70aee3173c95de",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110145478214176807",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110145478214176807",
+      "publishedAt": "2026-10-13T23:07:41Z",
+      "text": "Reminder for anyone panicking right now: Bitcoin bottomed at $15,500 last bear market.\n\nNow it's comfortably sitting above $80,000.\n\nZoom out—Bitcoin is doing just fine!",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget påminner om att Bitcoin nådde 15 500 dollar under den förra nedgångsmarknaden och jämför med en nivå över 80 000 dollar nu. Avsändaren uppmanar läsaren att se utvecklingen i ett längre perspektiv.",
+        "method": "summary",
+        "sourceHash": "e3f928bc24ca9d39786d57dfe8e25cd91a0f6df3aa107f8d8a7e29298c4c0a36",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUi0JXeWQAAYiv0.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110134995511660870",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110134995511660870",
+      "publishedAt": "2026-10-13T22:26:01Z",
+      "text": "MYTH: \"Bitcoin is for criminals.\" \n\nREALITY: Traditional banks handle over 95% of global money laundering. https://t.co/0fFGUx91Sn",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Inlägget bemöter påståendet att Bitcoin främst används av kriminella med uppgiften att traditionella banker hanterar över 95 procent av den globala penningtvätten. Siffran återges som avsändarens påstående.",
+        "method": "summary",
+        "sourceHash": "3efd371a8f03d5b6febcb9e133ab08c21331698e6ea8eb07d86aa4f252b3fe36",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUioJG_WUAAc44b.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUioJvEXwAAJqB5.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110121492688351254",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110121492688351254",
+      "publishedAt": "2026-10-13T21:32:22Z",
+      "text": "JUST IN: $2.8B Strive plans IPO of new 15% perpetual preferred stock to buy more Bitcoin.\n\nWill fund an 18-month dividend reserve to cover dividends.\n\nSaylor's Strategy getting some real competition! https://t.co/EFgnGhLfEL",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Strive uppges planera en börsintroduktion av nya preferensaktier med 15 procents utdelning för att finansiera fler Bitcoin-köp. En reserv motsvarande 18 månaders utdelningar ska också byggas upp. Inlägget beskriver detta som ökad konkurrens för Michael Saylors Strategy.",
+        "method": "summary",
+        "sourceHash": "fe7a532b3591563587447507c978fc45e30b094e91b86d1e8f015ef3aa6a3d4a",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110119214983811072/img/f_Jpa5DMKLmLtfLr.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110120054008246684",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110120054008246684",
+      "publishedAt": "2026-10-13T21:26:39Z",
+      "text": "JUST IN: Billionaire Paul Tudor Jones flags the worst U.S. stock market flows since 2002.\n\nWill stock market weakness unleash a $250K Bitcoin mega-rally? https://t.co/zAxvhLjWhz",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Miljardären Paul Tudor Jones uppges ha pekat ut de svagaste flödena på den amerikanska aktiemarknaden sedan 2002. Inlägget frågar om svagare aktiemarknad kan bidra till en stor uppgång för Bitcoin och nämner 250 000 dollar som ett möjligt scenario.",
+        "method": "summary",
+        "sourceHash": "10ddf89c0b0f3cee9a99bc8b4d810258c2ac5372ad9dee8a550ed8058a521631",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110108575066685569",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110108575066685569",
+      "publishedAt": "2026-10-13T20:41:02Z",
+      "text": "BREAKING: 🇺🇸 Citadel Securities and BNY just settled their first blockchain-based transaction involving tokenized US Treasuries.\n\nMASSIVE! 🚀",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Citadel Securities och BNY uppges ha genomfört sin första blockkedjebaserade transaktion med amerikanska statsobligationer som digitala tillgångar.",
+        "method": "summary",
+        "sourceHash": "ff895984c3ff4855f392a1c17100411ea8ac2ceb2d2feced5c377ef8189732f4",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110107720766357929",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110107720766357929",
+      "publishedAt": "2026-10-13T20:37:39Z",
+      "text": "JUST IN: 🇺🇸 Citadel Securities and BNY complete first blockchain-based tokenized US Treasury transaction.",
+      "coins": [],
+      "categories": [
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Citadel Securities och BNY uppges ha genomfört sin första transaktion med digitala amerikanska statsobligationer via blockkedjan.",
+        "method": "summary",
+        "sourceHash": "6d780e464e9135eb9e00d0a5544deadaf43a7894f12a7c2db174ba4e247f7c6a",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUiYpcLWAAAHxpk.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110105473546674622",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110105473546674622",
+      "publishedAt": "2026-10-13T20:28:43Z",
+      "text": "BREAKING: BlackRock cuts U.S. stocks to 'neutral' from 'overweight' over AI volatility concerns.\n\nExpect a chunk of this capital to rotate into Bitcoin—it's only a matter of time! https://t.co/UFeZXtENjN",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "BlackRock uppges ha sänkt sin bedömning av amerikanska aktier från övervikt till neutral på grund av oro för svängningar kopplade till AI. Avsändaren spekulerar i att en del kapital kan flyttas till Bitcoin.",
+        "method": "summary",
+        "sourceHash": "f41b2e4d40f69510083fe7c78eefa3bd54a07d750f58f8e879880e616a8947df",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110100579158462465/img/ifjHEj6JmSPJSzE9.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110100808989581412",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110100808989581412",
+      "publishedAt": "2026-10-13T20:10:11Z",
+      "text": "JUST IN: Bloomberg’s Eric Balchunas says Bitcoin wins if socialists tax unrealized stock gains, or if governments keep printing money.\n\nEric @EricBalchunas definitely knows his stuff! https://t.co/4mjOu8Pds3",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bloombergs Eric Balchunas säger att Bitcoin gynnas om socialister beskattar orealiserade aktievinster eller om regeringar fortsätter att trycka pengar. Eric Balchunas vet verkligen vad han talar om!",
+        "method": "translation",
+        "sourceHash": "05a9dd8ba12deedb9f132a30182de97010d90de7e3f4219be999ab5ecd553e0d",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110092405949218919",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110092405949218919",
+      "publishedAt": "2026-10-13T19:36:47Z",
+      "text": "JUST IN: Michael Saylor say Bitcoin is at the \"beginning of a bull market.\"",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Michael Saylor säger att Bitcoin befinner sig i början av en uppgångsmarknad.",
+        "method": "translation",
+        "sourceHash": "0cc72329f1a2c9f031e4dea5d2a37bcbda0b096269c3a6145ed69d7d7f749187",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110080052188610560/img/EbvwELCjZotMGBzG.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110080732013990020",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110080732013990020",
+      "publishedAt": "2026-10-13T18:50:24Z",
+      "text": "JUST IN: Michael Saylor sees 3 huge drivers for Bitcoin's next leg up:\n\n• Favorable regulatory environment\n• Accelerated banking adoption\n• Expanding digital asset industry\n\nThis man definitely puts his money where his mouth is. https://t.co/vGFZUASYyx",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Michael Saylor ser tre stora drivkrafter för nästa uppgång i Bitcoin: gynnsamma regler, snabbare införande i banksektorn och en växande bransch för digitala tillgångar. Han backar verkligen upp sina ord med egna investeringar.",
+        "method": "translation",
+        "sourceHash": "fcdfec91d4a299880ea7a9438064266ce206b978eeb479f0f69c3cf2208368ba",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110080629844971870",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110080629844971870",
+      "publishedAt": "2026-10-13T18:50:00Z",
+      "text": "My targets for the next 6-8 months:\n\n$BTC: $100K - $150K\n$ETH: $3K - $6K\n$SOL: $250 - $500\n$XRP: $3 - $5\n$DOGE: $0.50 - $1\n\nScreenshot them, it's coming.",
+      "coins": [
+        "BTC",
+        "ETH",
+        "SOL",
+        "XRP",
+        "DOGE"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum",
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Mina kursmål för de kommande 6–8 månaderna:\nBTC: 100 000–150 000 dollar\nETH: 3 000–6 000 dollar\nSOL: 250–500 dollar\nXRP: 3–5 dollar\nDOGE: 0,50–1 dollar\nTa en skärmbild av dem. Det kommer.",
+        "method": "translation",
+        "sourceHash": "28afd1a29e3b19a9da331d616c164b8b17654f93f4a1d2f65b0519d4747a28cf",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhUwJFacAAcBOb.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110069305513525712",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110069305513525712",
+      "publishedAt": "2026-10-13T18:05:00Z",
+      "text": "This is Bitcoin's $NVDA moment...\n\nRaise your targets.\n\n$1,000,000 is coming MUCH sooner than most people realize! https://t.co/BfKjUrChZ5",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover jämför bitcoins nuvarande läge med Nvidias tidigare utveckling och uppmanar följarna att höja sina kursmål. Kontot hävdar att bitcoin kan nå 1 miljon dollar tidigare än många tror.",
+        "method": "summary",
+        "sourceHash": "b19874730f182fa245dd1e6fdcdd3056699c246d42efedebc0e4b3c27176e52c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhzdiZXsAAxGTG.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110064283677585906",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110064283677585906",
+      "publishedAt": "2026-10-13T17:45:02Z",
+      "text": "ULTRA-BULLISH BITCOIN SETUP INCOMING! 👀\n\n• Fed rate hikes\n• Global money supply expansion\n• U.S. strikes enemy in the Middle East\n\nThis all happened in Q1 and Q2 2017.\n\nBTC jumped 1,500% by year-end.\n\nDon't fade this signal!!! https://t.co/dKE72lOj4S",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive pekar på ett historiskt scenario med räntehöjningar från Fed, växande global penningmängd och amerikanska attacker i Mellanöstern. Kontot skriver att allt detta inträffade under första halvåret 2017, före en uppgång på 1 500 procent för bitcoin vid årets slut. Inlägget framställer historiken som en positiv signal, inte som en garanti för att mönstret upprepas.",
+        "method": "summary",
+        "sourceHash": "22ac01e894269d1b70b520a1c4fc06f82c2d04bdbc87d2cc5d9bc9b3be023d1b",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhl0lUaAAIHPRa.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110063013730599162",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110063013730599162",
+      "publishedAt": "2026-10-13T17:40:00Z",
+      "text": "Bitcoin’s next move: UP or DOWN? 👀\n\nGot a prediction? Put it to the test with 1win’s crypto UP & DOWN markets.\n\nChoose your direction 👉 https://t.co/YGD2bqvdse https://t.co/ryR85X9r2E",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppmanar följarna att spekulera i om bitcoin går upp eller ned via 1wins kryptomarknader. Inlägget länkar till tjänsten.",
+        "method": "summary",
+        "sourceHash": "6273e9a0d6d9e54bc4c907fa157246888f0fce0d68573895f6539dcf1eec743d",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhtoMZW4AAkWQ6.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhtrG8WcAA64NU.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110057577296138551",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110057577296138551",
+      "publishedAt": "2026-10-13T17:18:24Z",
+      "text": "BREAKING: $120B Wealth Enhancement buys more Bitcoin ETFs, raising position from $22M to $33M. https://t.co/L0Tef8BRJ8",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive rapporterar att Wealth Enhancement har ökat sin position i bitcoin-ETF:er från 22 till 33 miljoner dollar. Inlägget beskriver bolaget som en kapitalförvaltare på 120 miljarder dollar.",
+        "method": "summary",
+        "sourceHash": "29d52f126cbad3d14a832d94c622cf5e2bb61d6f21a1aff3acc430f604d2abdb",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhQn9fbkAAr-EI.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhQn-GaQAAjsK2.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110056722328908098",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110056722328908098",
+      "publishedAt": "2026-10-13T17:15:00Z",
+      "text": "🇺🇸 US Treasury is set to conduct a $4,000,000,000 debt buyback within 48 hours. \n\nBULLISH FOR $BTC 🚀 https://t.co/R2IREXLCHZ",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att USA:s finansdepartement ska återköpa statsskuld för 4 miljarder dollar inom 48 timmar. Kontot beskriver beskedet som positivt för bitcoin.",
+        "method": "summary",
+        "sourceHash": "9175d133a631fc3516a8f9f8815cb400220d611ed3401a1f7ac972a07566ff48",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2110052989016670208/img/0bmw7OW88TpgYsQT.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110053932500464014",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110053932500464014",
+      "publishedAt": "2026-10-13T17:03:55Z",
+      "text": "JUST IN: Michel Saylor sees end to AI headwind draining capital from markets.\n\nSays Bitcoin will gain from monetary expansion and BTC reserve stock offers. https://t.co/5KNqbijPnM",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive skriver att Michael Saylor ser en AI-relaterad motvind, som dränerat kapital från marknaderna, avta. Inlägget pekar också ut penningmängdsexpansion och aktieerbjudanden från bolag med bitcoinreserver som möjliga drivkrafter för BTC.",
+        "method": "summary",
+        "sourceHash": "6028b9e53688f6f2d2bbf61408b6be39da85e7fc4e5c4cee6083d04645f884b3",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhdfntW4AE7eRM.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110039508469059796",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110039508469059796",
+      "publishedAt": "2026-10-13T16:06:36Z",
+      "text": "JUST IN: Hyperliquid whale bought $50M in Bitcoin futures, selling $84M in tech stocks and altcoins.\n\nCurrent profit/loss: +$2.8M https://t.co/sLtKxhkjYO",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive uppger att en stor aktör på Hyperliquid köpt Bitcoin-terminer för 50 miljoner dollar och sålt teknikaktier och andra kryptovalutor för 84 miljoner dollar. Inlägget anger ett aktuellt resultat på plus 2,8 miljoner dollar.",
+        "method": "summary",
+        "sourceHash": "a5c03ed904968e9d841c3bd8e1f4a96bc421f458c66668d44c3dc2a8ccb00481",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhZvFRa8AArzRI.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhZvFMbgAAn-Sm.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110035099437899893",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110035099437899893",
+      "publishedAt": "2026-10-13T15:49:04Z",
+      "text": "🤯 BREAKING: 27% chance Bitcoin will cross its ATH by June 2027. https://t.co/Q8HytiliFg",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover hänvisar till en sannolikhet på 27 procent för att Bitcoin ska överträffa sin tidigare rekordkurs senast i juni 2027.",
+        "method": "summary",
+        "sourceHash": "73ef6b69185cfeeeb74b6b0aee3aa065ce9058ef6c0a0401889e7269590ded50",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhVBmhXgAARoIq.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhVFWTXMAEb6-O.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110029994252546418",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110029994252546418",
+      "publishedAt": "2026-10-13T15:28:47Z",
+      "text": "JUST IN: Germany’s Bitcoin tax-free rule under threat.\n\n44,400 petitioned against 25% tax.\n\nCabinet decides Wednesday. https://t.co/uixFZNqmwp",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive skriver att Tysklands skattefrihet för bitcoin kan vara hotad. Enligt inlägget har 44 400 personer skrivit under en namninsamling mot en skatt på 25 procent; regeringen väntas ta ställning på onsdag.",
+        "method": "summary",
+        "sourceHash": "3ff3a8e0de7dd1de64634feb396fbd532e33d9c9b77f0cf8cb4f574eeb9cd73b",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhAmIsaMAEY8SJ.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110027782520447262",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110027782520447262",
+      "publishedAt": "2026-10-13T15:20:00Z",
+      "text": "$ETH vs $BTC longs are EXPLODING! \n\nSmart money is betting on altseason. https://t.co/dybfBjg5dD",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover uppger att långa positioner i ETH/BTC ökar kraftigt och tolkar det som att större aktörer satsar på en kommande säsong då andra kryptovalutor går bättre än Bitcoin.",
+        "method": "summary",
+        "sourceHash": "fd0099b187c90971837cd74c682c313eac59b0a69964a6e28ebd47df81134a57",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110021321975308351",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2110021321975308351",
+      "publishedAt": "2026-10-13T14:54:20Z",
+      "text": "The future of Bitcoin is the future of finance.\n\nThis morning at the World Bank, I joined Chris Brummer, Founder & CEO of The Fintech Foundation, for a 25-minute fireside chat at DC Fintech Week. @fintechthinksdc\n\n00:52 - Strategy as a reserve institution built on Digital https://t.co/si86CPSP2D",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Institutionellt"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T16:31:31.568741Z",
+      "swedish": {
+        "text": "Michael Saylor skriver att han deltog i ett 25 minuter långt samtal med Chris Brummer, grundare och vd för The Fintech Foundation, under DC Fintech Week. Samtalet hölls på Världsbanken. Inlägget länkar till inspelningen.",
+        "method": "summary",
+        "sourceHash": "40da8c0bc9c3d539f2c77d9d5e1bea759774c36d9892af92b86f466731a688a1",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgv39cWAAAgsPI.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110020231854997839",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110020231854997839",
+      "publishedAt": "2026-10-13T14:50:00Z",
+      "text": "Bitcoin long/short account ratio has dropped below 1.\n\nMore people are going short on Bitcoin.\n\nThis could trigger a massive short squeeze. https://t.co/8db3T9glHO",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover skriver att förhållandet mellan långa och korta bitcoinpositioner har fallit under 1. Kontot tolkar det som att fler satsar på nedgång och att en uppgång kan förstärkas om korta positioner tvingas stängas.",
+        "method": "summary",
+        "sourceHash": "628a5b2fc7def7c155b54b61c2dc2fd639f5a7a9e0945da60ebe03b730396a4c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhL2qdWwAAons1.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110020221104701773",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110020221104701773",
+      "publishedAt": "2026-10-13T14:49:57Z",
+      "text": "JUST IN: Bitcoin perpetual futures funding rate flips positive.\n\nStill far from bullish, but up from Sunday’s pessimistic low. https://t.co/xSScWhiCYb",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive uppger att finansieringsräntan för bitcointerminer utan slutdag har blivit positiv. Kontot påpekar att läget fortfarande inte är tydligt positivt, men att räntan stigit från söndagens botten.",
+        "method": "summary",
+        "sourceHash": "48784800005769256b40dfdaefa8710c3fc0953821de1986c5817230710a0b82",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf8_XEAAZSxH.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhHf85WMAAb_6S.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110016205658710194",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110016205658710194",
+      "publishedAt": "2026-10-13T14:34:00Z",
+      "text": "HUGE: 🇺🇸 $2.3 trillion Wells Fargo CEO says the bank is already preparing to work with stablecoins in the US.\n\nBanks are coming for crypto! 🚀 https://t.co/479lh8f8Pv",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Wells Fargos vd uppges säga att banken redan förbereder sig på att arbeta med värdestabila kryptovalutor i USA. Avsändaren tolkar det som ett tecken på att banker närmar sig kryptomarknaden.",
+        "method": "summary",
+        "sourceHash": "da539dde031c1a2fae9e02c75c3ccd5d50112b7ffb898d3fb880a103f7763213",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110012906574365018",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2110012906574365018",
+      "publishedAt": "2026-10-13T14:20:53Z",
+      "text": "JUST IN: 🇺🇸 Wells Fargo CEO says the bank is preparing for potential crypto stablecoin opportunities in the US.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Wells Fargos vd uppges säga att banken förbereder sig för möjliga affärsområden kring värdestabila kryptovalutor och andra kryptovalutor i USA.",
+        "method": "summary",
+        "sourceHash": "c6ac095157180c3865c2c48f29d15c744b674f55b198875f5a20a1dfdb2fa38c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110011675634282909",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110011675634282909",
+      "publishedAt": "2026-10-13T14:16:00Z",
+      "text": "Once the CLARITY Act passes, $200,000 is easily within reach for Bitcoin.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover hävdar att Bitcoin kan nå 200 000 dollar om CLARITY Act antas.",
+        "method": "summary",
+        "sourceHash": "c0bae27c7f073286f5d50043283acec3bdc62d0e1f1cff963727af95270b7b82",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUhDq7jW0AAr6b_.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUhDq6LW4AA0Okp.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110011013311738171",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110011013311738171",
+      "publishedAt": "2026-10-13T14:13:22Z",
+      "text": "BREAKING: 🇺🇸 Interactive Brokers, with over 5.5 MILLION client accounts, officially launches $ETH staking services.\n\nThis is MASSIVE! https://t.co/mMeo5l3GfZ",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Interactive Brokers uppges ha lanserat en tjänst där kunder kan låsa sina ETH för att bidra till nätverkets drift och få ersättning. Bolaget har över 5,5 miljoner kundkonton, enligt inlägget.",
+        "method": "summary",
+        "sourceHash": "adfa6e709c381cd9c838daef0878a0c78397dfce1cb71d830f9c4cfed6390093",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg-UJGXYAEThAK.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg-UvdXkAAFOze.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110005027947655448",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110005027947655448",
+      "publishedAt": "2026-10-13T13:49:35Z",
+      "text": "JUST IN: Blockchain․com files for U.S. CFTC licenses to offer Bitcoin & crypto derivatives. https://t.co/h5qgURre26",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive rapporterar att Blockchain.com har ansökt om tillstånd från den amerikanska råvaruterminsmyndigheten CFTC för att erbjuda bitcoin- och kryptoderivat.",
+        "method": "summary",
+        "sourceHash": "61106ec45d0330409d05cf5560c282d60367a9269b319223895f53836402b098",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2109975385085812736/img/yoNrHbSfXh-HEOFn.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2110001358115864905",
+      "handle": "cryptorover",
+      "author": "Crypto Rover",
+      "sourceId": "rover-x",
+      "url": "https://x.com/cryptorover/status/2110001358115864905",
+      "publishedAt": "2026-10-13T13:35:00Z",
+      "text": "Once Bitcoin reclaims this \"Legendary\" support line.\n\n$160,000 FOLLOWS SOON 🚀 https://t.co/t2fMcMN1so",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Crypto Rover säger att 160 000 dollar kan stå på tur om bitcoin återtar den stödnivå som kontot kallar legendarisk.",
+        "method": "summary",
+        "sourceHash": "61914fc098b0123c608776d218b258b867939f8498c16b7d04537c68542d7b21",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg6U24WsAAMuYr.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg67uNXcAAKPC2.png",
+          "alt": ""
+        }
+      ],
+      "id": "2110001239668728248",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2110001239668728248",
+      "publishedAt": "2026-10-13T13:34:32Z",
+      "text": "JUST IN: Binance scraps Bitcoin and crypto mining pool services. https://t.co/ApGqvxqT34",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive rapporterar att Binance avvecklar sina tjänster för gruvpooler inom bitcoin och andra kryptovalutor.",
+        "method": "summary",
+        "sourceHash": "54f41517b5e893798a4250529e3c0de8f6c198cd7a097f227e3c5cf2f4a3068f",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2110000863473447384",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2110000863473447384",
+      "publishedAt": "2026-10-13T13:33:02Z",
+      "text": "Strive is turning demand for digital equity ($ASST) and digital credit ($SATA) into demand for Bitcoin. Its hypergrowth shows how the capital markets are accelerating Bitcoin adoption.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "article-reference",
+      "contextSource": {
+        "url": "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "Strive reports $208M in warrant exercises as Bitcoin holdings jump 11%"
+      },
+      "originalCheckedAt": "2026-10-14T16:31:31.568741Z",
+      "swedish": {
+        "text": "Michael Saylor skriver att Strive omvandlar efterfrågan på digitala aktier ($ASST) och digital kredit ($SATA) till efterfrågan på bitcoin. Han säger att bolagets snabba tillväxt påskyndar bitcoins användning på kapitalmarknaderna.",
+        "method": "summary",
+        "sourceHash": "914a04d1eb201c04866cbb0fcb9f38178b71177d85b80cdb8cd3baf558c86942",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg4wbIXIAENRS9.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg4y-FWwAAIM9F.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109999013743173909",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109999013743173909",
+      "publishedAt": "2026-10-13T13:25:41Z",
+      "text": "JUST IN: 🇬🇧 U.K. wants to keep 61,000 Bitcoin from Chinese fraudster jailed in Britain, worth $5B.\n\nFraud victims plan to appeal. https://t.co/gxdPeMOFFD",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive rapporterar att brittiska staten vill behålla 61 000 bitcoin värda 5 miljarder dollar, beslagtagna från en kinesisk bedragare som sitter fängslad i Storbritannien. Enligt inlägget planerar bedrägerioffren att överklaga.",
+        "method": "summary",
+        "sourceHash": "ec4c29824e2d441c1c5e94b2f91cdd891afc7f081d7b36f7f25a1746281a66ec",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUg1BruW4AAPw-B.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUg1Cb6XsAAVj1t.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109995214362571243",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109995214362571243",
+      "publishedAt": "2026-10-13T13:10:35Z",
+      "text": "JUST IN: Jack Dorsey's Square will soon pay credit card holders 3% back in Bitcoin. https://t.co/b5xdKq7emY",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive rapporterar att Square snart ska ge kreditkortskunder 3 procent tillbaka i bitcoin.",
+        "method": "summary",
+        "sourceHash": "3e6d9f282e8f8c503877c07e87f56b0086a36ded7f5564cbd4c1b42387eacc4d",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgvFCjXkAAKWRs.png",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgvFxVW8AA7mqf.png",
+          "alt": ""
+        }
+      ],
+      "id": "2109988572279267443",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109988572279267443",
+      "publishedAt": "2026-10-13T12:44:11Z",
+      "text": "JUST IN: Strive bought 3,311 Bitcoin past week, worth $275M.\n\n• Total holdings at 32,773 BTC worth $2.7B\n\n$ASST https://t.co/9tKIQ8xt29",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Strive köpte 3 311 bitcoin för 275 miljoner dollar under den senaste veckan. Det totala innehavet är nu 32 773 BTC, värt 2,7 miljarder dollar. ASST.",
+        "method": "translation",
+        "sourceHash": "9ff25816015015ed8edf276c52db9bfe143f3f68e14f3b1f322da8cefccb2ee4",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUgs9WobsAAkDop.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUgs9WsagAAws5u.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109985864524980706",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109985864524980706",
+      "publishedAt": "2026-10-13T12:33:26Z",
+      "text": "JUST IN: 🇺🇸 Vivek Ramaswamy's 'Strive' buys 3,311 Bitcoin worth $275 million. https://t.co/O8v5cLM1eX",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "WatcherGuru rapporterar att Strive, Vivek Ramaswamys bolag, har köpt 3 311 bitcoin för 275 miljoner dollar.",
+        "method": "translation",
+        "sourceHash": "7af6cf081c7e20a27aeb67e5166938ea4bec57f303f8b68aecab8e4367fd135f",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109952890924335334",
+      "handle": "CryptoKid",
+      "author": "Crypto Kid",
+      "sourceId": "kid-x",
+      "url": "https://x.com/CryptoKid/status/2109952890924335334",
+      "publishedAt": "2026-10-13T10:22:24Z",
+      "text": "It’s extremely unfortunate that @YouTube has terminated yet again another crypto account!\n\nThis was the worst experience in my life, but I was lucky that they understood their mistake and reinstated my channel within 24 hours.\n\nStay strong my friend, good luck with your new",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T16:31:31.568741Z",
+      "swedish": {
+        "text": "Det är oerhört tråkigt att YouTube ännu en gång har stängt av ett kryptokonto. Det var den värsta upplevelsen i mitt liv, men jag hade tur: de förstod sitt misstag och återställde min kanal inom 24 timmar. Håll ut, min vän.",
+        "method": "summary",
+        "sourceHash": "e39b6754492837fbf73e512e933a7bb187d62ca9e6ae06161ad5a2dbd13061d3",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109950685127319735",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109950685127319735",
+      "publishedAt": "2026-10-13T10:13:38Z",
+      "text": "JUST IN: 🇬🇧🇨🇳 UK court blocks Chinese fraud victims from reclaiming $5 billion in seized Bitcoin, \"likely\" allowing UK government to keep it.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "En brittisk domstol hindrar kinesiska bedrägerioffer från att få tillbaka beslagtagna bitcoin värda 5 miljarder dollar. Det innebär enligt inlägget sannolikt att den brittiska regeringen får behålla dem.",
+        "method": "translation",
+        "sourceHash": "042935189f2e8f248f8fbf8fa71f97b01a4e4ace2c81156d33a6f5f399a5f48f",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUeo_6oX0AET3bG.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109841383477399876",
+      "handle": "BitcoinArchive",
+      "author": "Bitcoin Archive",
+      "sourceId": "bitcoin-archive-x",
+      "url": "https://x.com/BitcoinArchive/status/2109841383477399876",
+      "publishedAt": "2026-10-13T02:59:19Z",
+      "text": "Congrats to those who bought the Bitcoin dip.\n\nBTC is now back to $82,800. https://t.co/RwQeHI9q94",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin Archive uppger att bitcoin åter handlas vid 82 800 dollar och gratulerar dem som köpte under den tidigare nedgången. Inlägget är kontots kommentar till prisrörelsen.",
+        "method": "summary",
+        "sourceHash": "e83829baa3f47f842a4bf0d6bb19441ae200fc5014dd072372edc1cf088d93eb",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUd1LV3XgAAvnUr.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109783792206434815",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109783792206434815",
+      "publishedAt": "2026-10-12T23:10:28Z",
+      "text": "JUST IN: Bitcoin falls under $82,000\n\n$120,000,000 worth of crypto longs liquidated in the past 15 minutes. https://t.co/tTVllJjcwT",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Watcher.Guru uppger att bitcoin har fallit under 82 000 dollar. Enligt inlägget hade långa kryptopositioner till ett värde av 120 miljoner dollar likviderats under de 15 minuterna före publiceringen.",
+        "method": "summary",
+        "sourceHash": "ee4edf0364335ee5d11e1d9f323725264dc9e13bf2d3d15c4fc292cfcea02727",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109691213573988694",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109691213573988694",
+      "publishedAt": "2026-10-12T17:02:36Z",
+      "text": "JUST IN: Nasdaq CEO says tokenization could unlock tens of billions of dollars across the global financial system.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Nasdaqs vd säger att tokenisering skulle kunna frigöra tiotals miljarder dollar i det globala finanssystemet.",
+        "method": "translation",
+        "sourceHash": "9ce484603276da0b908ecc6ce81cdcc8fb66726ac5f75d01b071197e6a81dd07",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUcOVZjWgAA8s0L.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUcOVZcXwAAc46_.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUcOVZVXkAIWIlO.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUcOVZqXEAAiFLo.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109670714370322744",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109670714370322744",
+      "publishedAt": "2026-10-12T15:41:08Z",
+      "text": "JUST IN: 🇷🇺 Russia's Moscow Exchange to launch Bitcoin, Ethereum, and USDT trading on December 1st. https://t.co/a2xz0e8Z9W",
+      "coins": [
+        "BTC",
+        "ETH"
+      ],
+      "categories": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Moskvabörsen i Ryssland ska börja erbjuda handel i Bitcoin, Ethereum och USDT den 1 december.",
+        "method": "translation",
+        "sourceHash": "218bb487b5cec7cbddddcdfa8c5ead09beda3a935e34be83f23dd25dd7344433",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109647519483301914",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109647519483301914",
+      "publishedAt": "2026-10-12T14:08:58Z",
+      "text": "JUST IN: Morgan Stanley says the tokenized assets market will become a $3 trillion to $10 trillion market by 2030.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Morgan Stanley säger att marknaden för tokeniserade tillgångar kommer att vara värd 3–10 biljoner dollar år 2030.",
+        "method": "translation",
+        "sourceHash": "54c4dc82b124620424e3b6eb08aafc7f48a3b0af8831c69331b91f7ff97b6f86",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUbrYHZaIAAgPYF.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUbrYHHbYAA6rV7.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109632286417358858",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109632286417358858",
+      "publishedAt": "2026-10-12T13:08:26Z",
+      "text": "JUST IN: Tom Lee's 'BitMine' buys 12,532 $ETH worth $31 million. https://t.co/66liuLGNh0",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Tom Lees BitMine köper 12 532 ETH för 31 miljoner dollar.",
+        "method": "translation",
+        "sourceHash": "e08583e117980e74aceae00e30648fd792347ca3bf0e466e84043fa1727c7814",
+        "engine": "x-sv-rules-v1"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109625613862719965",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109625613862719965",
+      "publishedAt": "2026-10-12T12:41:55Z",
+      "text": "JUST IN: 🇬🇧 Standard Chartered officially launches custody services for Ripple's $RLUSD stablecoin on the $XRP Ledger.",
+      "coins": [
+        "XRP"
+      ],
+      "categories": [
+        "Altcoins"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Standard Chartered uppges ha lanserat förvaringstjänster för Ripples värdestabila kryptovaluta RLUSD på XRP Ledger.",
+        "method": "translation",
+        "sourceHash": "1a95c462fbae4e210c7413a252ec60ce9ed8c873e2c99a4278b2c4ff6894e1a3",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109623947969098114",
+      "handle": "CryptoKid",
+      "author": "Crypto Kid",
+      "sourceId": "kid-x",
+      "url": "https://x.com/CryptoKid/status/2109623947969098114",
+      "publishedAt": "2026-10-12T12:35:18Z",
+      "text": "Too many indications that the weekend Bitcoin pump is likely a trap.\n\nGoing live in one hour on @TheMoonShow to discuss why.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "Crypto Kid varnar för att helgens uppgång i bitcoin enligt hans bedömning kan vara en fälla. Kontot meddelade också att analysen skulle diskuteras i en sändning på The Moon Show.",
+        "method": "summary",
+        "sourceHash": "155bee8faf6c7a84cb91452755b4895568c1a05331cef4a60202f968f6c9b857",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109615811954630703",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2109615811954630703",
+      "publishedAt": "2026-10-12T12:02:58Z",
+      "text": "Strategy has acquired 250 $BTC and repurchased $192M of $STRC. As of 10/11/26, we hold 848,250 BTC and $5.5B of USD Assets. $MSTR https://t.co/hhxR6N95mq",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "article-reference",
+      "contextSource": {
+        "url": "https://bitcoinmagazine.com/news/strategy-smash-buys-21-5m-in-bitcoin",
+        "title": "Strategy Smash Buys $21.5M in BTC as It Continues Bitcoin Accumulation"
+      },
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "Michael Saylor uppger att Strategy har köpt 250 BTC och återköpt STRC för 192 miljoner dollar. Enligt inlägget hade bolaget den 11 oktober 2026 totalt 848 250 BTC och dollartillgångar på 5,5 miljarder dollar.",
+        "method": "summary",
+        "sourceHash": "9080cdcd2f1b869752dc37e6d8f750ba14c339c42b520c09c933b6e1cdc8e1ba",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109614634441580638",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109614634441580638",
+      "publishedAt": "2026-10-12T11:58:18Z",
+      "text": "JUST IN: Michael Saylor's 'Strategy' buys 250 Bitcoin worth $21 million.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Michael Saylors Strategy köper 250 Bitcoin för 21 miljoner dollar.",
+        "method": "translation",
+        "sourceHash": "b26032c5ec8184ad0f57f755224e75025ac7461b4c82dc053b9040df8d3bc214",
+        "engine": "x-sv-rules-v1"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109614430459961492",
+      "handle": "CryptoKid",
+      "author": "Crypto Kid",
+      "sourceId": "kid-x",
+      "url": "https://x.com/CryptoKid/status/2109614430459961492",
+      "publishedAt": "2026-10-12T11:57:29Z",
+      "text": "🚨 STRATEGY HAVE PURCHASED 250 $BTC!",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "Crypto Kid uppger att Strategy har köpt 250 BTC. Det är kontots återgivning av köpbeskedet; inlägget innehåller inga ytterligare detaljer.",
+        "method": "summary",
+        "sourceHash": "b952ba517d3fa82bba6223f7e6eaec1ac88b90346c778462a1792680d22d64f7",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109597002107638025",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109597002107638025",
+      "publishedAt": "2026-10-12T10:48:14Z",
+      "text": "JUST IN: 🇦🇪 Crypto exchange Kraken to launch in the UAE after securing full regulatory approval.",
+      "coins": [],
+      "categories": [
+        "Reglering"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Kryptobörsen Kraken ska lanseras i Förenade arabemiraten efter att ha fått fullt godkännande från tillsynsmyndigheten.",
+        "method": "translation",
+        "sourceHash": "8272b3381e7d8c41b80f6c651acefa19f3a86fd6101baaaba7aca4b583cbd047",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109513358278054238",
+      "handle": "MMCrypto",
+      "author": "MMCrypto",
+      "sourceId": "mmcrypto-x",
+      "url": "https://x.com/MMCrypto/status/2109513358278054238",
+      "publishedAt": "2026-10-12T05:15:52Z",
+      "text": "Bitcoin Weekly Closed above!\n\nKinda good news but not yet bullish confirmation. \n\n$102’000 Target only, if we close one weekly with volume support above $87’200.",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "MMCrypto beskriver bitcoins veckostängning som ett försiktigt positivt besked, men säger att den ännu inte bekräftar en fortsatt uppgång. Kontots kursmål på 102 000 dollar gäller enligt inlägget bara om bitcoin stänger en vecka över 87 200 dollar med stöd av handelsvolymen.",
+        "method": "summary",
+        "sourceHash": "c2365b6799289390b27e603393673cecc9d8a7da427fbcf74edaa84e1ad2deda",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUXfaVtWYAAKawA.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109337648603271595",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109337648603271595",
+      "publishedAt": "2026-10-11T17:37:39Z",
+      "text": "JUST IN: Bitcoin reclaims $84,000 https://t.co/rqvVzwBNwP",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin är åter på 84 000 dollar.",
+        "method": "translation",
+        "sourceHash": "c521c54a1b7923797cb53e7a4b8c04214ef039fbd816a2a599f35819c410e880",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109308870560719087",
+      "handle": "MMCrypto",
+      "author": "MMCrypto",
+      "sourceId": "mmcrypto-x",
+      "url": "https://x.com/MMCrypto/status/2109308870560719087",
+      "publishedAt": "2026-10-11T15:43:18Z",
+      "text": "Bitcoin: Weekly close in 8 hours! 👇 https://t.co/KBSOenjrBc",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T16:31:31.568741Z",
+      "swedish": {
+        "text": "Bitcoin: veckans handelsperiod stänger om åtta timmar!",
+        "method": "translation",
+        "sourceHash": "69b0dd90b43fb50f7aca8f659b88a00f9f30490de947c1ece0b9add8e9c59b0f",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUWxHHLWQAEmqr9.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUWxHHLWoAEBdH2.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2109286743589691526",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109286743589691526",
+      "publishedAt": "2026-10-11T14:15:22Z",
+      "text": "JUST IN: Tom Lee predicts Ethereum $ETH will surpass $5,000 by the end of this year. https://t.co/oWnkgaZ61E",
+      "coins": [
+        "ETH"
+      ],
+      "categories": [
+        "Ethereum"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Tom Lee förutspår att ethereum, ETH, kommer att passera 5 000 dollar före årets slut.",
+        "method": "translation",
+        "sourceHash": "1fff6e3d0a166d3b2c96b25cfbb4758b927cdee506b8e2979fe03a03edc6eedb",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109279807540543938",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2109279807540543938",
+      "publishedAt": "2026-10-11T13:47:49Z",
+      "text": "JUST IN: IMF says tokenized stocks are \"less liquid and more volatile\" than the traditional stocks.",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "IMF säger att tokeniserade aktier är mindre likvida och har större kurssvängningar än traditionella aktier.",
+        "method": "translation",
+        "sourceHash": "f651691f12c10bb4aedf493092a6efd38a3a713aa782f865cf1d6ce456bdc110",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2109253809176232059",
+      "handle": "saylor",
+      "author": "Michael Saylor",
+      "sourceId": "saylor-x",
+      "url": "https://x.com/saylor/status/2109253809176232059",
+      "publishedAt": "2026-10-11T12:04:30Z",
+      "text": "There’s always room for more orange. https://t.co/hndZf0Acp7",
+      "coins": [],
+      "categories": [
+        "Marknaden"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "article-reference",
+      "contextSource": {
+        "url": "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks",
+        "title": "Saylor teases Strategy Bitcoin buying"
+      },
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "Det finns alltid plats för mer orange.",
+        "method": "translation",
+        "sourceHash": "af7a58477ff0d897315165df31c0035b3a43e998ba202c8c475f96741ac6efca",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [
+        {
+          "url": "https://pbs.twimg.com/media/HUR1jQ7X0AAvM6Q.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUR1jSgXQAAjuyu.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HUR1jQ_XsAA4AWp.jpg",
+          "alt": ""
+        }
+      ],
+      "id": "2108939782495912281",
+      "handle": "WatcherGuru",
+      "author": "Watcher.Guru",
+      "sourceId": "watcher-x",
+      "url": "https://x.com/WatcherGuru/status/2108939782495912281",
+      "publishedAt": "2026-10-10T15:16:41Z",
+      "text": "FUN FACT: Bitcoin $BTC has a larger market cap than Bank of America and Bank of China combined. https://t.co/KIIkA5dw3n",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "swedish": {
+        "text": "Bitcoin, BTC, har ett större börsvärde än Bank of America och Bank of China tillsammans.",
+        "method": "translation",
+        "sourceHash": "bb9914859f644806ea1eade2edc47812faea40b4309f9541febb3eb03a4065a5",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2108920904352927961",
+      "handle": "MMCrypto",
+      "author": "MMCrypto",
+      "sourceId": "mmcrypto-x",
+      "url": "https://x.com/MMCrypto/status/2108920904352927961",
+      "publishedAt": "2026-10-10T14:01:40Z",
+      "text": "WHEN BITCOIN DUMPS, PUMP YOUR MUSCLE!! 👇",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T17:08:56.657798Z",
+      "swedish": {
+        "text": "När Bitcoin faller, träna musklerna!",
+        "method": "translation",
+        "sourceHash": "54e54eafde66c08c9873548002e8d6f8321bfac93394767d2bfde6e0da27139c",
+        "engine": "reviewed"
+      }
+    },
+    {
+      "media": [],
+      "id": "2108598752877625702",
+      "handle": "MMCrypto",
+      "author": "MMCrypto",
+      "sourceId": "mmcrypto-x",
+      "url": "https://x.com/MMCrypto/status/2108598752877625702",
+      "publishedAt": "2026-10-09T16:41:33Z",
+      "text": "Bitcoin: enough is enough..\n\n👉 https://t.co/BBuQqzqRz1 https://t.co/ztE89cK08p",
+      "coins": [
+        "BTC"
+      ],
+      "categories": [
+        "Bitcoin"
+      ],
+      "originalLanguage": "en",
+      "kind": "original-x-post",
+      "verified": false,
+      "discoveredVia": "x-embed",
+      "contextSource": null,
+      "originalCheckedAt": "2026-10-14T16:31:31.568741Z",
+      "swedish": {
+        "text": "Bitcoin: nu får det vara nog.",
+        "method": "translation",
+        "sourceHash": "b056000e3a5e9931ed93a3a0bb220b0ab3f0e588a9ac0801e0a984ec12b8f7eb",
+        "engine": "reviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "watcher-x",
+      "name": "Watcher.Guru – X",
+      "handle": "WatcherGuru",
+      "url": "https://x.com/WatcherGuru",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "connected",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "ok",
+          "eligiblePosts": 6
+        }
+      ],
+      "newestAvailableAt": "2026-10-14T17:09:04+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "profileConnection": "connected",
+      "method": "user-id",
+      "count": 22,
+      "newestPostAt": "2026-10-14T17:09:04Z"
+    },
+    {
+      "id": "rover-x",
+      "name": "Crypto Rover – X",
+      "handle": "cryptorover",
+      "url": "https://x.com/cryptorover",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "connected",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "ok",
+          "eligiblePosts": 15
+        }
+      ],
+      "newestAvailableAt": "2026-10-14T17:05:00+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "profileConnection": "connected",
+      "method": "user-id",
+      "count": 30,
+      "newestPostAt": "2026-10-14T17:05:00Z"
+    },
+    {
+      "id": "moon-x",
+      "name": "The Moon Show – X",
+      "handle": "TheMoonShow",
+      "url": "https://x.com/TheMoonShow",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "connected",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "ok",
+          "eligiblePosts": 11
+        }
+      ],
+      "newestAvailableAt": "2026-10-14T17:12:41+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "profileConnection": "connected",
+      "method": "user-id",
+      "count": 30,
+      "newestPostAt": "2026-10-14T16:26:55Z"
+    },
+    {
+      "id": "saylor-x",
+      "name": "Michael Saylor – X",
+      "handle": "saylor",
+      "url": "https://x.com/saylor",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "limited",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "lastIndividualSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "empty",
+          "eligiblePosts": 0
+        },
+        {
+          "method": "screen-name",
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T17:58:14.644823Z"
+        },
+        {
+          "method": "x-public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        }
+      ],
+      "newestAvailableAt": "2026-04-04T14:37:46+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
+      "profileConnection": "limited",
+      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
+      "method": "cached-individual-post",
+      "count": 4,
+      "newestPostAt": "2026-10-13T14:54:20Z"
+    },
+    {
+      "id": "bitcoin-archive-x",
+      "name": "Bitcoin Archive – X",
+      "handle": "BitcoinArchive",
+      "url": "https://x.com/BitcoinArchive",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "connected",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "lastIndividualSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "ok",
+          "eligiblePosts": 16
+        },
+        {
+          "method": "individual-post",
+          "id": "2109682024814407851",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109679802235904388",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109663071648055352",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109658873334558895",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109655027392340307",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109650572815253737",
+          "result": "ok"
+        }
+      ],
+      "newestAvailableAt": "2026-10-14T16:53:15+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "profileConnection": "connected",
+      "method": "user-id",
+      "count": 30,
+      "newestPostAt": "2026-10-14T16:53:15Z"
+    },
+    {
+      "id": "mmcrypto-x",
+      "name": "MMCrypto – X",
+      "handle": "MMCrypto",
+      "url": "https://x.com/MMCrypto",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "limited",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "lastIndividualSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "empty",
+          "eligiblePosts": 0
+        },
+        {
+          "method": "screen-name",
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T17:58:14.644823Z"
+        },
+        {
+          "method": "x-public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        }
+      ],
+      "newestAvailableAt": "2025-08-24T03:57:06+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
+      "profileConnection": "limited",
+      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
+      "method": "cached-individual-post",
+      "count": 4,
+      "newestPostAt": "2026-10-12T05:15:52Z"
+    },
+    {
+      "id": "kid-x",
+      "name": "Crypto Kid – X",
+      "handle": "CryptoKid",
+      "url": "https://x.com/CryptoKid",
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "connection": "limited",
+      "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
+      "lastSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "lastIndividualSuccessAt": "2026-10-14T17:08:56.657798Z",
+      "attempts": [
+        {
+          "method": "user-id",
+          "result": "empty",
+          "eligiblePosts": 0
+        },
+        {
+          "method": "screen-name",
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-14T17:58:14.644823Z"
+        },
+        {
+          "method": "x-public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        }
+      ],
+      "newestAvailableAt": "2025-11-04T21:36:38+00:00",
+      "lastProfileSuccessAt": "2026-10-14T17:28:14.644823Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
+      "profileConnection": "limited",
+      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
+      "method": "cached-individual-post",
+      "count": 3,
+      "newestPostAt": "2026-10-13T10:22:24Z"
+    }
+  ],
+  "discovery": {
+    "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-12T11:24:13.956804Z",
+      "links": [
+        [
+          "saylor",
+          "2109253809176232059"
+        ]
+      ]
+    },
+    "https://bitcoinmagazine.com/news/strategy-smash-buys-21-5m-in-bitcoin": {
+      "checkedAt": "2026-10-13T09:22:06.463208Z",
+      "links": [
+        [
+          "saylor",
+          "2109615811954630703"
+        ]
+      ]
+    },
+    "https://decrypt.co/380677/strategy-scoops-up-21-5m-in-bitcoin-buys-back-192m-in-strc": {
+      "checkedAt": "2026-10-13T09:22:06.463208Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T09:22:06.463208Z",
+      "links": []
+    },
+    "https://decrypt.co/380802/nft-marketplace-blur-to-shut-down-website-stop-new-blend-loans-next-month": {
+      "checkedAt": "2026-10-13T09:22:06.463208Z",
+      "links": [
+        [
+          "blur_io",
+          "2109735871377289375"
+        ],
+        [
+          "blur_io",
+          "2109735810857861203"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin": {
+      "checkedAt": "2026-10-13T09:28:50.841059Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T09:28:50.841059Z",
+      "links": []
+    },
+    "https://cryptoslate.com/imf-finds-over-half-of-tokenized-us-stock-trading-happens-after-wall-street-closes/": {
+      "checkedAt": "2026-10-13T09:28:50.841059Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T09:48:04.133089Z",
+      "links": [
+        [
+          "Ledger",
+          "2110129361382994076"
+        ],
+        [
+          "Ledger",
+          "2109984923343782374"
+        ],
+        [
+          "0xJohannes_",
+          "2109634513957527974"
+        ]
+      ]
+    },
+    "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T09:51:38.594831Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": {
+      "checkedAt": "2026-10-13T09:51:38.594831Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/blur-is-shutting-down-its-website-so-why-are-nft-collectors-cheering?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T09:51:38.594831Z",
+      "links": [
+        [
+          "blur_io",
+          "2109735810857861203"
+        ]
+      ]
+    },
+    "https://cryptoslate.com/south-korea-clears-way-for-courts-to-seize-and-sell-bitcoin-for-unpaid-debts-under-new-november-rules/": {
+      "checkedAt": "2026-10-13T10:07:00.448212Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": {
+      "checkedAt": "2026-10-13T10:07:00.448212Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/binance-shut-down-crypto-mining-pool-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T10:07:00.448212Z",
+      "links": []
+    },
+    "https://www.coindesk.com/tech/2026/10/13/once-largest-ethereum-nft-marketplace-blur-is-shutting-down-after-volumes-collapse-99": {
+      "checkedAt": "2026-10-13T10:29:10.708900Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures": {
+      "checkedAt": "2026-10-13T10:29:10.708900Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff": {
+      "checkedAt": "2026-10-13T10:44:03.459114Z",
+      "links": []
+    },
+    "https://decrypt.co/380808/leave-crypto-backlash-over-french-proposal-to-report-wallets-over-112k": {
+      "checkedAt": "2026-10-13T10:44:03.459114Z",
+      "links": [
+        [
+          "mert",
+          "2109647925961957757"
+        ],
+        [
+          "randhindi",
+          "2109593766218838213"
+        ]
+      ]
+    },
+    "https://www6.twstalker.com/BitcoinArchive": {
+      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www6.twstalker.com/saylor": {
+      "checkedAt": "2026-10-14T17:08:56.657798Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www6.twstalker.com/MMCrypto": {
+      "checkedAt": "2026-10-14T17:08:56.657798Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www6.twstalker.com/CryptoKid": {
+      "checkedAt": "2026-10-14T17:08:56.657798Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://decrypt.co/380818/uk-moves-closer-to-keeping-5b-bitcoin-haul-after-high-court-ruling": {
+      "checkedAt": "2026-10-13T10:52:46.258761Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide": {
+      "checkedAt": "2026-10-13T10:52:46.258761Z",
+      "links": []
+    },
+    "https://cryptoslate.com/strategys-bitcoin-buying-hits-lowest-level-since-december-as-strc-buybacks-reach-record-192-million/": {
+      "checkedAt": "2026-10-13T11:10:51.789344Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns": {
+      "checkedAt": "2026-10-13T11:10:51.789344Z",
+      "links": [
+        [
+          "PeckShieldAlert",
+          "2109933198096711890"
+        ],
+        [
+          "blur_io",
+          "2109735810857861203"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto": {
+      "checkedAt": "2026-10-13T11:10:51.789344Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/culture/moonflower-colorado-bitcoin-merchants": {
+      "checkedAt": "2026-10-13T11:10:51.789344Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/south-korea-moves-to-block-27-crypto-websites-including-kucoin-mexc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T11:17:19.657541Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/ens-dao-ensv2-upgrade-eth-domain-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T11:22:42.348165Z",
+      "links": []
+    },
+    "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks": {
+      "checkedAt": "2026-10-13T11:32:58.643419Z",
+      "links": []
+    },
+    "https://decrypt.co/380828/morning-minute-bitcoin-gets-spooked-as-uptober-lets-down": {
+      "checkedAt": "2026-10-13T11:54:46.705593Z",
+      "links": [
+        [
+          "sapijiju",
+          "2109737887776526556"
+        ],
+        [
+          "blur_io",
+          "2109735810857861203"
+        ],
+        [
+          "WuBlockchain",
+          "2109638381500289226"
+        ]
+      ]
+    },
+    "https://www6.twstalker.com/WatcherGuru": {
+      "checkedAt": "2026-10-14T11:55:34.109802Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin": {
+      "checkedAt": "2026-10-13T12:12:37.589107Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares": {
+      "checkedAt": "2026-10-13T12:12:37.589107Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T12:44:15.250297Z",
+      "links": []
+    },
+    "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T13:41:08.489839Z",
+      "links": [
+        [
+          "alexbosworth",
+          "2106404456833376690"
+        ],
+        [
+          "Truthcoin",
+          "2106776378230046967"
+        ]
+      ]
+    },
+    "https://bitcoinmagazine.com/videos/matt-dines-why-a-rising-dollar-is-bullish-for-bitcoin": {
+      "checkedAt": "2026-10-13T13:41:08.489839Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bitcoins-quantum-safe-protection-gets-82-cheaper-as-researchers-race-to-secure-6-million-exposed-btc/": {
+      "checkedAt": "2026-10-13T14:29:37.629230Z",
+      "links": [
+        [
+          "StarkWareLtd",
+          "2109651036465934723"
+        ]
+      ]
+    },
+    "x-public-profile:cryptokid": {
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "links": [
+        [
+          "CryptoKid",
+          "2109695613298520101"
+        ],
+        [
+          "CryptoKid",
+          "1586262852289105922"
+        ],
+        [
+          "CryptoKid",
+          "2109952890924335334"
+        ],
+        [
+          "CryptoKid",
+          "2109655760561209561"
+        ],
+        [
+          "CryptoKid",
+          "2109623947969098114"
+        ]
+      ],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "x-public-profile:mmcrypto": {
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "links": [
+        [
+          "MMCrypto",
+          "2109308870560719087"
+        ],
+        [
+          "MMCrypto",
+          "2109313855092638207"
+        ],
+        [
+          "MMCrypto",
+          "2108379018450141293"
+        ],
+        [
+          "MMCrypto",
+          "2108598752877625702"
+        ],
+        [
+          "MMCrypto",
+          "2109513358278054238"
+        ],
+        [
+          "MMCrypto",
+          "2108920904352927961"
+        ]
+      ],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "x-public-profile:saylor": {
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "links": [
+        [
+          "saylor",
+          "2110021321975308351"
+        ],
+        [
+          "saylor",
+          "2040438683380146574"
+        ],
+        [
+          "saylor",
+          "2110000863473447384"
+        ],
+        [
+          "saylor",
+          "2109735051772477626"
+        ],
+        [
+          "saylor",
+          "2109615811954630703"
+        ]
+      ],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T15:37:37.263107Z",
+      "links": []
+    },
+    "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion": {
+      "checkedAt": "2026-10-13T15:37:37.263107Z",
+      "links": [
+        [
+          "rrealist",
+          "2109813738559693002"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants": {
+      "checkedAt": "2026-10-13T16:03:47.079977Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/strive-buys-more-bitcoin-to-hit-30000-btc": {
+      "checkedAt": "2026-10-13T16:03:47.079977Z",
+      "links": [
+        [
+          "BitcoinMagazine",
+          "2109981516360974565"
+        ]
+      ]
+    },
+    "https://cryptoslate.com/a-5-billion-bitcoin-fortune-is-at-stake-but-uk-court-says-being-defrauded-isnt-enough-to-claim-it/": {
+      "checkedAt": "2026-10-13T16:03:47.079977Z",
+      "links": []
+    },
+    "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets": {
+      "checkedAt": "2026-10-13T16:19:48.748990Z",
+      "links": [
+        [
+          "Trezor",
+          "2109543766520459447"
+        ],
+        [
+          "Trezor",
+          "2110000774314873020"
+        ]
+      ]
+    },
+    "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T16:19:48.748990Z",
+      "links": [
+        [
+          "saylor",
+          "2110000863473447384"
+        ],
+        [
+          "ColeMacro",
+          "2109978048175251562"
+        ]
+      ]
+    },
+    "https://decrypt.co/380842/bitcoin-shakes-off-spooky-season-jitters": {
+      "checkedAt": "2026-10-13T16:54:21.382687Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/amount-of-bitcoin-exchanges-is-shrinking": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
+    },
+    "https://cryptoslate.com/australia-moves-to-close-crypto-derivatives-loophole-after-retail-traders-lose-a458-million/": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/sec-leadership-facilitate-crypto-rulemaking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T17:08:10.316186Z",
+      "links": []
+    },
+    "x-public-profile:watcherguru": {
+      "checkedAt": "2026-10-14T12:00:49.547426Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://cryptoslate.com/ethereum-name-service-plans-major-eth-overhaul-with-one-irreversible-catch-for-domain-holders/": {
+      "checkedAt": "2026-10-13T18:29:24.386013Z",
+      "links": []
+    },
+    "https://decrypt.co/380858/strive-buys-280-million-bitcoin-largest-purchase-months": {
+      "checkedAt": "2026-10-13T18:29:24.386013Z",
+      "links": []
+    },
+    "x-public-profile:themoonshow": {
+      "checkedAt": "2026-10-14T04:00:50.642008Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www6.twstalker.com/TheMoonShow": {
+      "checkedAt": "2026-10-14T04:00:50.642008Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://cryptoslate.com/bitcoin-defies-800-million-crypto-wipeout-as-south-koreas-ai-stock-market-crashes/": {
+      "checkedAt": "2026-10-13T19:33:31.304075Z",
+      "links": [
+        [
+          "GlobalMktObserv",
+          "2109914851610968385"
+        ],
+        [
+          "ParadisLabs",
+          "2109904270170480739"
+        ],
+        [
+          "BitunixOfficial",
+          "2109932247491236344"
+        ],
+        [
+          "JA_Maartun",
+          "2109856673678729696"
+        ]
+      ]
+    },
+    "x-public-profile:cryptorover": {
+      "checkedAt": "2026-10-14T02:57:15.821013Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "x-public-profile:bitcoinarchive": {
+      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "links": [],
+      "method": "x-public-profile",
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://www6.twstalker.com/cryptorover": {
+      "checkedAt": "2026-10-14T02:57:15.821013Z",
+      "links": [],
+      "httpStatus": 403,
+      "error": "HTTPError"
+    },
+    "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-solana-bnb-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-13T20:02:57.658877Z",
+      "links": [
+        [
+          "KobeissiLetter",
+          "2110002877284388975"
+        ]
+      ]
+    },
+    "https://decrypt.co/380867/bitcoin-whale-every-crash-2020-moves-377m": {
+      "checkedAt": "2026-10-13T20:02:57.658877Z",
+      "links": []
+    },
+    "https://decrypt.co/380870/binance-shutting-down-bitcoin-mining-pool": {
+      "checkedAt": "2026-10-13T20:26:39.664637Z",
+      "links": []
+    },
+    "https://cryptoslate.com/ledgers-crypto-wallet-implant-scare-triggers-trezor-reseller-crackdown-as-security-fears-spread/": {
+      "checkedAt": "2026-10-13T20:43:21.095087Z",
+      "links": [
+        [
+          "Ledger",
+          "2109984923343782374"
+        ],
+        [
+          "Dantoshi",
+          "2110000117856248141"
+        ],
+        [
+          "MagicalTux",
+          "2109916873689280900"
+        ],
+        [
+          "Ledger",
+          "2109896739985453358"
+        ],
+        [
+          "Darkfost_Coc",
+          "2110004602233860338"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing": {
+      "checkedAt": "2026-10-13T22:02:40.603935Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/kraken-parent-payward-wins-full-dubai-license-plans-uae-launch": {
+      "checkedAt": "2026-10-13T22:59:29.401237Z",
+      "links": [
+        [
+          "BitcoinMagazine",
+          "2110006855120363907"
+        ]
+      ]
+    },
+    "https://bitcoinmagazine.com/news/quantum-defense-for-bitcoins-lightning": {
+      "checkedAt": "2026-10-13T22:59:29.401237Z",
+      "links": [
+        [
+          "BitcoinMagazine",
+          "2102473806602449117"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": {
+      "checkedAt": "2026-10-13T23:25:13.939525Z",
+      "links": []
+    },
+    "https://cryptoslate.com/us-deposit-rates-choke-usdc-adoption-and-a-bis-model-reveals-why/": {
+      "checkedAt": "2026-10-13T23:25:13.939525Z",
+      "links": []
+    },
+    "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action": {
+      "checkedAt": "2026-10-14T01:26:33.890951Z",
+      "links": [
+        [
+          "WuBlockchain",
+          "2105564810557476951"
+        ]
+      ]
+    },
+    "https://cointelegraph.com/markets/bitwises-hougan-says-q3-charts-point-to-crypto-spring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T02:57:15.821013Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027": {
+      "checkedAt": "2026-10-14T04:00:50.642008Z",
+      "links": []
+    },
+    "https://cryptoslate.com/south-korea-locks-out-crypto-users-as-27-exchange-sites-go-dark/": {
+      "checkedAt": "2026-10-14T04:34:00.855979Z",
+      "links": []
+    },
+    "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality": {
+      "checkedAt": "2026-10-14T04:34:00.855979Z",
+      "links": []
+    },
+    "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million": {
+      "checkedAt": "2026-10-14T05:36:39.407694Z",
+      "links": [
+        [
+          "ja_akinyele",
+          "2108670853831671918"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now": {
+      "checkedAt": "2026-10-14T06:06:46.814527Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/starknet-introduces-wallet-privacy-feature-for-defi-activity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T06:06:46.814527Z",
+      "links": [
+        [
+          "StarkWareLtd",
+          "2110007213331026343"
+        ]
+      ]
+    },
+    "https://cryptoslate.com/binance-updates-anthropic-mark-per-second-to-stop-liquidation/": {
+      "checkedAt": "2026-10-14T07:27:17.708869Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients": {
+      "checkedAt": "2026-10-14T08:39:34.856209Z",
+      "links": []
+    },
+    "https://cryptoslate.com/interactive-brokers-moves-into-ethereums-110-billion-staking-market-as-institutional-demand-accelerates/": {
+      "checkedAt": "2026-10-14T09:13:25.261014Z",
+      "links": []
+    },
+    "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore": {
+      "checkedAt": "2026-10-14T09:13:25.261014Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/live-updates-bitcoin-tumbles-from-near-usd84-000-ahead-of-u-s-inflation-data": {
+      "checkedAt": "2026-10-14T09:48:04.133089Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bank-of-america-backed-strict-crypto-aml-rules-before-admitting-5-billion-reporting-failure/": {
+      "checkedAt": "2026-10-14T10:16:55.441839Z",
+      "links": [
+        [
+          "mcagney",
+          "2110118893390074199"
+        ],
+        [
+          "USComptroller",
+          "2110103128121168194"
+        ]
+      ]
+    },
+    "https://cointelegraph.com/news/standard-chartered-bitcoin-ether-trading-professional-investors-uae?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T10:16:55.441839Z",
+      "links": []
+    },
+    "https://decrypt.co/380904/bitmex-sued-in-uk-for-return-of-27m-in-bitcoin-over-unlicensed-derivatives": {
+      "checkedAt": "2026-10-14T10:16:55.441839Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/bitcoin-holds-above-usd83-000-ahead-of-u-s-inflation-data-as-altcoins-lag": {
+      "checkedAt": "2026-10-14T10:53:57.402437Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/s-and-p-500-options-are-the-hottest-bet-on-this-hyperliquid-exchange": {
+      "checkedAt": "2026-10-14T10:53:57.402437Z",
+      "links": []
+    },
+    "https://cointelegraph.com/markets/cryptoquant-charts-bitcoin-uptober-thesis-valid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T10:53:57.402437Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/bitcoin-less-volatile-larger-gold-bitcoin-standard-author?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T10:53:57.402437Z",
+      "links": [
+        [
+          "saifedean",
+          "2110011066834899030"
+        ],
+        [
+          "lawrencehwhite1",
+          "2109405085751275617"
+        ]
+      ]
+    },
+    "https://decrypt.co/380912/kraken-owner-payward-to-buy-lithuanias-saldo-bank-in-eu-push": {
+      "checkedAt": "2026-10-14T10:53:57.402437Z",
+      "links": []
+    },
+    "https://www.coindesk.com/daybook-us/2026/10/14/here-s-how-analysts-see-u-s-inflation-influencing-bitcoin": {
+      "checkedAt": "2026-10-14T11:21:07.023613Z",
+      "links": []
+    },
+    "https://cryptoslate.com/strives-bitcoin-buying-diverges-from-strategys-preferred-buyback-focus/": {
+      "checkedAt": "2026-10-14T11:21:07.023613Z",
+      "links": [
+        [
+          "ColeMacro",
+          "2109978048175251562"
+        ]
+      ]
+    },
+    "https://cryptoslate.com/bitcoins-projected-5-7-difficulty-rise-puts-miners-40-revenue-under-pressure/": {
+      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/hardware-wallet-supply-chain-risk-ledger-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T12:27:27.686914Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/kraken-parent-payward-to-become-first-crypto-firm-to-buy-a-eu-bank-as-it-expands-into-deposits-lending": {
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/canada-crypto-remittances-asia-surge-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": {
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/krakens-parent-buy-lithuanian-saldo-bank-tradfi-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T13:10:21.170667Z",
+      "links": []
+    },
+    "https://decrypt.co/380928/notorious-crypto-celeb-meme-coin-promoter-plots-second-wave-on-new-launchpad": {
+      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "links": [
+        [
+          "FF_V12",
+          "2110161121042895088"
+        ],
+        [
+          "MrketInsider",
+          "2110192247560114270"
+        ],
+        [
+          "StarPlatinum_",
+          "2110160112400617697"
+        ],
+        [
+          "ftosol",
+          "2110164784012505586"
+        ],
+        [
+          "MrketInsider",
+          "2110151980924694735"
+        ]
+      ]
+    },
+    "https://cryptoslate.com/bitcoin-whales-accumulate-ahead-of-crucial-us-inflation-report-as-744-million-exits-etfs/": {
+      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "links": [
+        [
+          "ki_young_ju",
+          "2110089353330590107"
+        ]
+      ]
+    },
+    "https://cointelegraph.com/magazine/bunker-mode-wont-protect-your-crypto-critics-say?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T13:46:50.578366Z",
+      "links": [
+        [
+          "LindellYehuda",
+          "2107999859219587309"
+        ],
+        [
+          "tayvano_",
+          "2108039114083991859"
+        ],
+        [
+          "matthew_d_green",
+          "2107992246360649879"
+        ],
+        [
+          "drakefjustin",
+          "2107837081313505768"
+        ],
+        [
+          "jacobvcreech",
+          "2108042644819427521"
+        ]
+      ]
+    },
+    "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": {
+      "checkedAt": "2026-10-14T14:12:29.153127Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/videos/blue-coin-capital-cio-mstrs-btc-buying-engine-is-about-to-ignite-mike-treidl": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/easya-hits-usd1-1-billion-valuation-targets-2027-public-listing-and-tokenized-shares": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://www.coindesk.com/markets/2026/10/14/blackrock-s-crypto-etf-assets-surge-63-but-remain-far-below-2025-peak": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bitcoins-inflation-relief-case-faces-an-east-coast-winter-diesel-stock-gap/": {
+      "checkedAt": "2026-10-14T14:51:14.042336Z",
+      "links": []
+    },
+    "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": {
+      "checkedAt": "2026-10-14T15:19:38.061481Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bitcoin-plunges-to-81300-support-as-fed-hike-odds-hit-55-amid-100-million-crypto-wipeout/": {
+      "checkedAt": "2026-10-14T15:19:38.061481Z",
+      "links": []
+    },
+    "https://decrypt.co/380950/bitcoin-falls-hot-inflation-fed-hike-odds": {
+      "checkedAt": "2026-10-14T15:19:38.061481Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/markets/bitcoin-price-slips-on-cpi-inflation-data": {
+      "checkedAt": "2026-10-14T15:19:38.061481Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/videos/capitalism-is-broken-and-bitcoin-is-the-great-equalizer-natalie-brunell": {
+      "checkedAt": "2026-10-14T15:23:01.906971Z",
+      "links": []
+    },
+    "https://www.coindesk.com/business/2026/10/14/ai-agents-make-138-million-crypto-payments-as-u-s-dominates-spending-on-ai-models": {
+      "checkedAt": "2026-10-14T15:46:16.398757Z",
+      "links": []
+    },
+    "https://cryptoslate.com/bitcoin-fog-appeal-upheld-wallet-tracing-without-requiring-its-source-code/": {
+      "checkedAt": "2026-10-14T15:46:16.398757Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/kraken-parent-company-to-buy-saldo-bank": {
+      "checkedAt": "2026-10-14T16:31:31.568741Z",
+      "links": []
+    },
+    "https://bitcoinmagazine.com/news/standard-chartered-debuts-bitcoin-trading-2": {
+      "checkedAt": "2026-10-14T16:31:31.568741Z",
+      "links": [
+        [
+          "BitcoinMagazine",
+          "2110335326669439105"
+        ]
+      ]
+    },
+    "https://decrypt.co/380963/coinbase-bitcoin-quantum-migration-start-now": {
+      "checkedAt": "2026-10-14T16:31:31.568741Z",
+      "links": []
+    },
+    "https://cryptoslate.com/strives-new-500-million-bitcoin-financing-plan-comes-with-a-257-million-annual-dividend-problem/": {
+      "checkedAt": "2026-10-14T16:43:40.612531Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/standard-chartered-stablecoin-forecast-2030-market-growth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T16:43:40.612531Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-14T17:28:14.644823Z",
+      "links": []
+    }
+  },
+  "language": {
+    "version": "x-sv-rules-v1",
+    "checkedAt": "2026-10-14T17:32:56.997199+00:00",
+    "original": 0,
+    "reviewed": 121,
+    "automatic": 2,
+    "pending": 0
+  }
+}
