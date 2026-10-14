@@ -20,6 +20,7 @@ const channels=[
 const featured:VideoItem[]=[
  {id:'1aGpJQ8BMLI',title:'Michael Saylor om Bitcoin, AI och långsiktigt tänkande',originalUrl:'https://www.youtube.com/watch?v=1aGpJQ8BMLI',publishedAt:'2026-08-06T00:00:00Z',sourceId:'diary-video',author:'The Diary of a CEO'},
  {id:'49FhysfWX1M',title:'Michael Saylor: Bitcoinens förkämpe · PBD Podcast, avsnitt 128',originalUrl:'https://www.youtube.com/watch?v=49FhysfWX1M',publishedAt:'2022-03-01T00:00:00Z',sourceId:'pbd-video',author:'PBD Podcast'},
+ {id:'T34AYoCUA4w',title:'Michael Saylor: Kan Bitcoin nå 13 miljoner dollar? MicroStrategys satsning på Bitcoin för 4 miljarder dollar · PBD Podcast, avsnitt 508',originalUrl:'https://www.youtube.com/watch?v=T34AYoCUA4w',publishedAt:'2024-11-18T00:00:00Z',sourceId:'pbd-video',author:'PBD Podcast'},
 ];
 function validFeed(value:unknown):value is VideoFeed{
  if(!value||typeof value!=='object')return false;
