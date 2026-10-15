@@ -695,6 +695,101 @@
           "url": "https://www.gov.uk/government/news/new-uk-sanctions-hit-the-money-oil-and-supply-chains-fuelling-russias-war"
         }
       ]
+    },
+    {
+      "id": "2026-10-15",
+      "title": "Inflationen skakade kryptomarknaden – bitcoin föll mot 80 000 dollar",
+      "dek": "Högre inflation än väntat i USA sammanföll med ett snabbt fall i bitcoin och större nedgångar för flera altcoins. Samtidigt vände flödena i amerikanska bitcoinfonder och miljontals dollar i belånade positioner tvångsstängdes.",
+      "publishedAt": "2026-10-15T20:00:00+02:00",
+      "period": "12–15 oktober 2026 · Mittveckan",
+      "readingMinutes": 4,
+      "takeaways": [
+        "USA:s konsumentpriser steg 3,7 procent på ett år i september, en ökning från 3,4 procent i augusti.",
+        "Bitcoin föll nära 80 000 dollar under torsdagen, samtidigt som flera altcoins tappade mer. Tidssambandet med inflationsbeskedet visar inte ensamt vad som orsakade rörelsen.",
+        "Amerikanska spotbaserade bitcoinfonder gick från ett rapporterat inflöde på 175,7 miljoner dollar till ett utflöde på 150,5 miljoner dollar mellan tisdag och onsdag."
+      ],
+      "sections": [
+        {
+          "heading": "Inflationen i USA tog ett steg upp",
+          "paragraphs": [
+            "USA:s konsumentprisindex steg 0,6 procent i september jämfört med augusti. På ett år blev ökningen 3,7 procent, mot 3,4 procent i augusti. Även kärnindexet, där mat och energi räknas bort, ökade snabbare på årsbasis: 2,6 procent jämfört med 2,4 procent månaden före. Bensinen stod för mer än hälften av månadens samlade uppgång, enligt USA:s statistikmyndighet.",
+            "För kryptomarknaden spelar inflationssiffror roll eftersom de kan påverka förväntningarna på räntor. Om investerare tror att räntorna förblir höga kan de bli mindre villiga att ta risk. Det är en möjlig förklaring till marknadsreaktionen, men siffrorna bevisar inte att inflationen ensam drev kryptopriserna."
+          ],
+          "sourceIds": [
+            "bls-cpi",
+            "coindesk-btc"
+          ]
+        },
+        {
+          "heading": "Bitcoin föll nära 80 000 dollar",
+          "paragraphs": [
+            "Under torsdagen rapporterade CoinDesk att bitcoin hade varit nere strax över 80 000 dollar innan kursen återhämtade en del av fallet. Ethereum och flera andra större kryptotillgångar hade då fallit mer än bitcoin. Samtidigt backade asiatiska aktier kraftigt; Sydkoreas Kospi föll omkring 8 procent och handeln pausades tillfälligt.",
+            "Att både aktier och krypto föll samtidigt talar för att marknadsoron var bredare än en enskild kryptonyhet. Det går ändå inte att slå fast ett säkert orsakssamband utifrån att rörelserna inträffade samtidigt. Kryptomarknaden påverkas också av positionering, likviditet och händelser som är specifika för enskilda tillgångar."
+          ],
+          "sourceIds": [
+            "coindesk-market",
+            "coindesk-btc"
+          ]
+        },
+        {
+          "heading": "Bitcoinfondernas flöden vände snabbt",
+          "paragraphs": [
+            "Enligt CoinDesk, som hänvisar till SoSoValue, noterade amerikanska spotbaserade bitcoinfonder ett nettoutflöde på 150,5 miljoner dollar den 14 oktober. Dagen före hade de haft ett rapporterat nettoinflöde på 175,7 miljoner dollar. En sådan omsvängning visar hur snabbt kapitalflöden kan förändras från dag till dag.",
+            "Fondflöden är en pusselbit, inte en fullständig förklaring till priset. De visar inte i sig varför en investerare köper eller säljer, och en enskild dags utflöde behöver inte innebära en långvarig trend."
+          ],
+          "sourceIds": [
+            "coindesk-btc"
+          ]
+        },
+        {
+          "heading": "Belånade affärer tvingades stänga",
+          "paragraphs": [
+            "Prisfallen sammanföll också med omfattande tvångsstängningar på terminsmarknaden. CoinDesk rapporterade att bitcoin- och ethereumpositioner till ett värde av omkring 483 miljoner dollar hade stängts under ett dygn. Av detta gällde cirka 286 miljoner dollar ethereumpositioner och 197 miljoner bitcoinpositioner.",
+            "En tvångsstängning sker när en handlare har lånat pengar för en affär och säkerheten inte längre räcker efter en prisrörelse. Börsen stänger då positionen automatiskt. Det redovisade värdet är storleken på affärerna som stängts, inte nödvändigtvis handlarens personliga förlust. Sådana stängningar kan öka säljtrycket, men säger inte ensamma hur marknaden kommer att utvecklas efteråt."
+          ],
+          "sourceIds": [
+            "coindesk-liquidations"
+          ]
+        },
+        {
+          "heading": "Dagens producentpriser gav en ny signal",
+          "paragraphs": [
+            "På torsdagen kom även USA:s producentprisindex för september. Det steg 1,3 procent under månaden och 6,3 procent jämfört med samma månad i fjol. Enligt statistikmyndigheten var månadsökningen den största sedan mars 2022. Högre producentpriser kan visa att kostnadstrycket i leverantörsledet är starkt, men det är ett annat mått än konsumentprisindex och ska inte blandas ihop med det.",
+            "Marknaden får därför väga ihop flera datapunkter: vad priserna gör, hur räntemarknaden reagerar och om kapitalflödena till kryptofonder stabiliseras. Det är dessa kommande besked och rörelser som kan ge mer information; veckans siffror räcker inte för att förutsäga nästa kurssteg."
+          ],
+          "sourceIds": [
+            "bls-ppi",
+            "coindesk-market"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "bls-cpi",
+          "name": "USA:s statistikmyndighet – konsumentpriser, september 2026",
+          "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+        },
+        {
+          "id": "bls-ppi",
+          "name": "USA:s statistikmyndighet – producentpriser, september 2026",
+          "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
+        },
+        {
+          "id": "coindesk-btc",
+          "name": "CoinDesk – bitcoin under 81 000 dollar och osäkerhet om räntan",
+          "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs"
+        },
+        {
+          "id": "coindesk-liquidations",
+          "name": "CoinDesk – tvångsstängda bitcoin- och ethereumpositioner",
+          "url": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide"
+        },
+        {
+          "id": "coindesk-market",
+          "name": "CoinDesk – kryptomarknaden och nedgången på asiatiska börser",
+          "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower"
+        }
+      ]
     }
   ]
 }
