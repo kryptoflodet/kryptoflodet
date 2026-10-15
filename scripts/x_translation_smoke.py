@@ -21,7 +21,7 @@ EXPECTED=[
  [r'(?:kan|skulle)',r'inflation',r'inte'],
  [r'(?:storägare|investerare)',r'Kraken',r'inte',r'försäljning'],
  [r'Bitfinex',r'(?:position|satsar|invester)',r'(?:uppgång|stiger|ökar)'],
- [r'Wellington-Altus',r'(?:gynnas|dra nytta)',r'blockkedj'],
+ [r'Wellington-Altus',r'40',r'miljard',r'(?:gynnas|dra nytta)',r'blockkedj'],
 ]
 def main():
  version=ENGINE+':'+CHECK_VERSION+':'+MODEL_HASH+':'+hashlib.sha256((ROOT/'scripts/x_proofread.py').read_bytes()+(ROOT/'scripts/x_translate.py').read_bytes()+json.dumps([FIXTURES,EXPECTED]).encode()).hexdigest()
