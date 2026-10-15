@@ -713,7 +713,8 @@
           "heading": "Inflationen i USA tog ett steg upp",
           "paragraphs": [
             "USA:s konsumentprisindex steg 0,6 procent i september jämfört med augusti. På ett år blev ökningen 3,7 procent, mot 3,4 procent i augusti. Även kärnindexet, där mat och energi räknas bort, ökade snabbare på årsbasis: 2,6 procent jämfört med 2,4 procent månaden före. Bensinen stod för mer än hälften av månadens samlade uppgång, enligt USA:s statistikmyndighet.",
-            "För kryptomarknaden spelar inflationssiffror roll eftersom de kan påverka förväntningarna på räntor. Om investerare tror att räntorna förblir höga kan de bli mindre villiga att ta risk. Det är en möjlig förklaring till marknadsreaktionen, men siffrorna bevisar inte att inflationen ensam drev kryptopriserna."
+            "För kryptomarknaden spelar inflationssiffror roll eftersom de kan påverka förväntningarna på räntor. Om investerare tror att räntorna förblir höga kan de bli mindre villiga att ta risk. Det är en möjlig förklaring till marknadsreaktionen, men siffrorna bevisar inte att inflationen ensam drev kryptopriserna.",
+            "Efter inflationsbeskedet steg marknadens prissättning av sannolikheten för en amerikansk räntehöjning i oktober till nära 47 procent, från ungefär 22 procent före beskedet. Senare föll uppskattningen tillbaka till omkring 26 procent. Det visar hur snabbt förväntningarna kan röra sig när nya siffror kommer, inte att en räntehöjning är beslutad."
           ],
           "sourceIds": [
             "bls-cpi",
@@ -735,7 +736,8 @@
           "heading": "Bitcoinfondernas flöden vände snabbt",
           "paragraphs": [
             "Enligt CoinDesk, som hänvisar till SoSoValue, noterade amerikanska spotbaserade bitcoinfonder ett nettoutflöde på 150,5 miljoner dollar den 14 oktober. Dagen före hade de haft ett rapporterat nettoinflöde på 175,7 miljoner dollar. En sådan omsvängning visar hur snabbt kapitalflöden kan förändras från dag till dag.",
-            "Fondflöden är en pusselbit, inte en fullständig förklaring till priset. De visar inte i sig varför en investerare köper eller säljer, och en enskild dags utflöde behöver inte innebära en långvarig trend."
+            "Fondflöden är en pusselbit, inte en fullständig förklaring till priset. De visar inte i sig varför en investerare köper eller säljer, och en enskild dags utflöde behöver inte innebära en långvarig trend.",
+            "Med nettoflöde menas här insättningar minus uttag under handelsdagen. Måttet kan ge en fingervisning om efterfrågan på fondandelar, men fondflöden är inte samma sak som all handel i bitcoin. De berättar inte heller om investerare har köpt bitcoin direkt eller via andra produkter."
           ],
           "sourceIds": [
             "coindesk-btc"
@@ -745,7 +747,8 @@
           "heading": "Belånade affärer tvingades stänga",
           "paragraphs": [
             "Prisfallen sammanföll också med omfattande tvångsstängningar på terminsmarknaden. CoinDesk rapporterade att bitcoin- och ethereumpositioner till ett värde av omkring 483 miljoner dollar hade stängts under ett dygn. Av detta gällde cirka 286 miljoner dollar ethereumpositioner och 197 miljoner bitcoinpositioner.",
-            "En tvångsstängning sker när en handlare har lånat pengar för en affär och säkerheten inte längre räcker efter en prisrörelse. Börsen stänger då positionen automatiskt. Det redovisade värdet är storleken på affärerna som stängts, inte nödvändigtvis handlarens personliga förlust. Sådana stängningar kan öka säljtrycket, men säger inte ensamma hur marknaden kommer att utvecklas efteråt."
+            "En tvångsstängning sker när en handlare har lånat pengar för en affär och säkerheten inte längre räcker efter en prisrörelse. Börsen stänger då positionen automatiskt. Det redovisade värdet är storleken på affärerna som stängts, inte nödvändigtvis handlarens personliga förlust. Sådana stängningar kan öka säljtrycket, men säger inte ensamma hur marknaden kommer att utvecklas efteråt.",
+            "När många positioner stängs på kort tid kan det bidra till att göra handeln ryckigare. Men likvidationsdata beskriver vad som redan har hänt på terminsmarknaden; de kan inte ensamma säga om säljarna är färdiga eller om priserna ska fortsätta ned."
           ],
           "sourceIds": [
             "coindesk-liquidations"
@@ -760,6 +763,20 @@
           "sourceIds": [
             "bls-ppi",
             "coindesk-market"
+          ]
+        },
+        {
+          "heading": "Vad är viktigast att följa nu?",
+          "paragraphs": [
+            "Den tydligaste bilden är att flera osäkerheter sammanföll: högre konsument- och producentpriser i USA, snabbt ändrade ränteförväntningar och en bred nedgång i riskkänsliga tillgångar. Samtidigt vände bitcoinfondernas flöden och många belånade affärer stängdes. Ingen enskild datapunkt räcker för att slå fast vad nästa marknadsrörelse blir.",
+            "Framåt blir det relevant att följa om inflationsoron består, om fondflödena åter blir positiva och om kryptotillgångar fortsätter att falla mer än aktiemarknaden. Det är observationer att följa, inte säkra prognoser eller personliga råd om köp och försäljning."
+          ],
+          "sourceIds": [
+            "bls-cpi",
+            "bls-ppi",
+            "coindesk-btc",
+            "coindesk-market",
+            "coindesk-liquidations"
           ]
         }
       ],
