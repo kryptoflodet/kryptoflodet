@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T05:30:55.936060Z",
+  "generatedAt": "2026-10-15T05:38:07.864422Z",
   "posts": [
     {
       "sourceTruncated": false,
@@ -4035,10 +4035,10 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastSuccessAt": "2026-10-15T05:38:07.864422Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4048,7 +4048,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-15T05:19:48+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 23,
@@ -4059,10 +4059,10 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastSuccessAt": "2026-10-15T05:38:07.864422Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4072,7 +4072,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-15T05:00:01+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4083,10 +4083,10 @@
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastSuccessAt": "2026-10-15T05:38:07.864422Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4096,7 +4096,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-15T05:21:39+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4107,7 +4107,7 @@
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-15T05:20:25.990859Z",
@@ -4132,7 +4132,7 @@
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4144,11 +4144,11 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-15T05:30:55.936060Z",
-      "lastIndividualSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastSuccessAt": "2026-10-15T05:38:07.864422Z",
+      "lastIndividualSuccessAt": "2026-10-15T05:38:07.864422Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4193,7 +4193,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-15T00:17:57+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4204,7 +4204,7 @@
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-15T05:20:25.990859Z",
@@ -4229,7 +4229,7 @@
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4241,7 +4241,7 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-15T05:20:25.990859Z",
@@ -4266,7 +4266,7 @@
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-15T05:30:55.936060Z",
+      "lastProfileSuccessAt": "2026-10-15T05:38:07.864422Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4528,7 +4528,7 @@
       ]
     },
     "x-public-profile:cryptokid": {
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "links": [
         [
           "CryptoKid",
@@ -4556,7 +4556,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:mmcrypto": {
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "links": [
         [
           "MMCrypto",
@@ -4588,7 +4588,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:saylor": {
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "links": [
         [
           "saylor",
@@ -4744,7 +4744,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:bitcoinarchive": {
-      "checkedAt": "2026-10-15T05:30:55.936060Z",
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
       "links": [],
       "method": "x-public-profile",
       "httpStatus": 403,
@@ -5187,11 +5187,23 @@
           "2110021831445156266"
         ]
       ]
+    },
+    "https://bitcoinmagazine.com/news/russia-central-bank-gives-sberbank-license": {
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
+      "links": []
+    },
+    "https://cryptoslate.com/surging-dollar-forces-bitcoin-sell-off-as-rate-hike-odds-double/": {
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
+      "links": []
+    },
+    "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": {
+      "checkedAt": "2026-10-15T05:38:07.864422Z",
+      "links": []
     }
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-15T05:32:26.131006+00:00",
+    "checkedAt": "2026-10-15T05:39:38.003560+00:00",
     "original": 0,
     "reviewed": 101,
     "automatic": 2,
