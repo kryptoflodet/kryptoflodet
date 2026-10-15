@@ -44,7 +44,7 @@ def main():
         data['posts'] = [post for post in posts if post not in held]
         temporary = path.with_suffix('.tmp')
         temporary.write_text(
-            json.dumps(data, ensure_ascii=False, indent=2) + '\\n',
+            json.dumps(data, ensure_ascii=False, indent=2) + '\n',
             encoding='utf-8',
         )
         temporary.replace(path)
@@ -67,7 +67,7 @@ def main():
         queue['items'] = list(existing.values())
         queue['counts'] = {**queue.get('counts', {}), 'pending': len(queue['items'])}
         REVIEW_QUEUE.write_text(
-            json.dumps(queue, ensure_ascii=False, indent=2) + '\\n',
+            json.dumps(queue, ensure_ascii=False, indent=2) + '\n',
             encoding='utf-8',
         )
 
