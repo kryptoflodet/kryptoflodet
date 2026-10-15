@@ -87,7 +87,8 @@ def valid_translation(source,text):
   (r'\d(?:[.,]\d+)?[kmb]?\+',r'\b(?:över|mer än)\b|\+')]
  if any(re.search(a,source,re.I) and not re.search(b,text,re.I) for a,b in checks):return False
  for name in ['Bitcoin','Ethereum','Coinbase','Binance','Strategy','Metaplanet','Nasdaq','SGD','MSTR','STRC','ORANJEBTC','BNB Chain','Token Terminal','Kraken','BlackRock','Fidelity','Payward','BitMine','Peter Schiff','Michael Saylor']:
-  if re.search(r'\b'+name+r'\b',source,re.I) and not re.search(r'\b'+name+r'\b',text,re.I):return False
+  pattern=r'\b'+name+(r'(?:s)?' if name=='Bitcoin' else '')+r'\b'
+  if re.search(r'\b'+name+r'\b',source,re.I) and not re.search(pattern,text,re.I):return False
  if re.search(r'\b(?:plong\w*|cry-opt\w*|millon|purchas\w*|backed|inflows?|outflows?|bullish|bearish|will|could|however|according to|year-over-year|år[- ]över[- ]år)\b',text,re.I):return False
  return True
 
