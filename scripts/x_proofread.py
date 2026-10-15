@@ -7,7 +7,7 @@ from x_translate import input_text,valid_translation,normalize_translation,ENGIN
 from swedish_quality import is_swedish_quality
 # This is the upstream TranslateGemma text template, without the BOS token that
 # llama.cpp inserts. Keep source text separate from translation instructions.
-SYSTEM='You are a professional English (en) to Swedish (sv) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Swedish grammar, vocabulary, and cultural sensitivities.\nProduce only the Swedish translation, without any additional explanations or commentary. Please translate the following English text into Swedish:\n\n\n'
+SYSTEM='You are a professional English (en) to Swedish (sv) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Swedish grammar, vocabulary, and cultural sensitivities. Preserve every sentence, numeric amount, currency, proper name, question, condition, negation and first-person perspective. Do not summarize or add information.\nProduce only the Swedish translation, without any additional explanations or commentary. Please translate the following English text into Swedish:\n\n\n'
 EDIT='';REVIEW='deterministic-source-checks'
 def clean_source(text):return input_text(text)
 def language_ok(text,detector,swedish):
@@ -16,6 +16,13 @@ def language_ok(text,detector,swedish):
 
 def translation_source(text):
  source=clean_source(text)
+ # Preserve a leading dollar figure that qualifies a company without implying
+ # whether it refers to valuation, revenue or assets.
+ leading=re.match(r'^\$(?P<value>\d+(?:[,.]\d+)*)(?P<scale>[KMBT])?\s+(?P<name>[A-Z][A-Za-z0-9.-]*(?:\s+[A-Z][A-Za-z0-9.-]*)*)(?=\s+(?:says|buys|plans|announces|launches|adds|raises|holds)\b)',source)
+ if leading:
+  scale={'K':'thousand','M':'million','B':'billion','T':'trillion'}.get(leading['scale'] or '','')
+  value=' '.join(word for word in [leading['value'],scale,'dollars'] if word)
+  source=leading['name']+' ('+value+')'+source[leading.end():]
  terms={r'\bbears\b':'traders who expect prices to fall',r'\bbulls\b':'traders who expect prices to rise',
  r'\bwhales\b':'large investors',r'\bwhale\b':'large investor',
  r'\bopening longs\b':'opening positions that profit when prices rise',
