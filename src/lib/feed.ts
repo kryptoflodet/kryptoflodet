@@ -1,7 +1,6 @@
 import type {NewsItem, Source} from './types';
 export type FeedQuery={q?:string;category?:string;coin?:string;noise?:string;sort?:string};
 const swedishCategoryLabels:Record<string,string>={
- Altcoins:'Alternativa kryptovalutor',
  DeFi:'Decentraliserad finans',
  'On-chain':'Händelser i blockkedjan',
  Mining:'Utvinning',
