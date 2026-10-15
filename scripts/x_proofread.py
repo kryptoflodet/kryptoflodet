@@ -33,6 +33,15 @@ def translation_source(text):
  for pattern,replacement in terms.items():source=re.sub(pattern,replacement,source,flags=re.I)
  return source
 
+# Exact, manually checked translations for short posts that the language
+# detector cannot reliably classify or that the model repeatedly mishandles.
+DIRECT_TRANSLATIONS={
+ 'bitcoin falls under $81,000 and eth falls under $2,400.':'Bitcoin faller under 81 000 dollar och ETH under 2 400 dollar.',
+ 'reminder:':'Påminnelse:',
+ 'bitcoin to $100k by year-end?':'Når Bitcoin 100 000 dollar före årets slut?',
+ 'us treasury to buy back up to $6,000,000,000 in long-term debt tomorrow.':'USA:s finansdepartement ska i morgon återköpa långfristiga statsobligationer för upp till 6 000 000 000 dollar.',
+}
+
 def parts(source):
  """Preserve paragraphs and translate each bounded part, including long posts."""
  chunks=[]
@@ -54,7 +63,10 @@ class Translator:
   self.detector=LanguageDetectorBuilder.from_languages(Language.SWEDISH,Language.ENGLISH,Language.BOKMAL,Language.DANISH,Language.GERMAN).build()
   self.model=Llama(model_path=str(MODEL),n_ctx=2048,n_threads=2,n_batch=256,verbose=False)
  def translate(self,original,deadline):
-  source=input_text(original);translated=[]
+  source=input_text(original)
+  direct=DIRECT_TRANSLATIONS.get(source.casefold())
+  if direct and valid_translation(source,direct):return direct
+  translated=[]
   for part in parts(source):
    if time.monotonic()>deadline:return None
    prepared=translation_source(part)
