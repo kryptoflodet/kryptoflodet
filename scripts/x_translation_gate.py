@@ -10,7 +10,7 @@ REVIEW_QUEUE = ROOT / 'state' / 'x-language-review.json'
 
 def untranslated(posts):
     return [
-        post for post in posts
+        post['id'] for post in posts
         if not readable_post(post)
         or (
             post.get('originalLanguage') != 'sv'
@@ -27,7 +27,8 @@ def main():
         path = PUBLIC_DATA / name
         data = json.loads(path.read_text(encoding='utf-8'))
         posts = data.get('posts', [])
-        held = untranslated(posts)
+        held_ids = set(untranslated(posts))
+        held = [post for post in posts if post.get('id') in held_ids]
 
         for post in held:
             post_id = post.get('id')
@@ -41,7 +42,7 @@ def main():
                 'reason': 'needs_swedish_translation',
             }
 
-        data['posts'] = [post for post in posts if post not in held]
+        data['posts'] = [post for post in posts if post.get('id') not in held_ids]
         temporary = path.with_suffix('.tmp')
         temporary.write_text(
             json.dumps(data, ensure_ascii=False, indent=2) + '\n',
