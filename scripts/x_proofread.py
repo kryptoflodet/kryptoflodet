@@ -28,6 +28,7 @@ def translation_source(text):
  r'\bopening longs\b':'opening positions that profit when prices rise',
  r'\bgoing long\b':'investing in positions that profit when prices rise',
  r'\bsmart money\b':'experienced investors',
+ r'\bCoinbase Premium\b':'price premium on Coinbase',
  r'\btokenized ETF market cap\b':'market value of tokenized exchange-traded funds',
  r'\bEveryone wants in\b':'Everyone wants to participate'}
  for pattern,replacement in terms.items():source=re.sub(pattern,replacement,source,flags=re.I)
