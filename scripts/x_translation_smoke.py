@@ -11,6 +11,10 @@ FIXTURES=[
  'Bitcoin could rise if US inflation falls, but this is not confirmed.',
  'A whale moved 1,250 ETH worth $3.4 million to Kraken. The transfer does not prove a sale.',
  'Bitfinex whales are opening longs on BTC and ETH during this market correction. Smart money is going long!',
+ 'Bitcoin falls under $81,000 and ETH falls under $2,400.',
+ 'Reminder:',
+ 'Bitcoin to $100k by year-end?',
+ 'US Treasury to buy back up to $6,000,000,000 in long-term debt tomorrow.',
  '$40B Wellington-Altus says Bitcoin will vastly benefit as the global economy moves on-chain.',
 ]
 EXPECTED=[
@@ -21,6 +25,10 @@ EXPECTED=[
  [r'(?:kan|skulle)',r'inflation',r'inte'],
  [r'(?:storägare|investerare)',r'Kraken',r'inte',r'försäljning'],
  [r'Bitfinex',r'(?:position|satsar|invester)',r'(?:uppgång|stiger|ökar)'],
+ [r'Bitcoin faller',r'81 000',r'ETH',r'2 400'],
+ [r'Påminnelse'],
+ [r'Bitcoin',r'100 000',r'årets slut'],
+ [r'finansdepartement',r'6 000 000 000',r'statsobligationer'],
  [r'Wellington-Altus',r'40',r'miljard',r'(?:gynnas|dra nytta)',r'blockkedj'],
 ]
 def main():
