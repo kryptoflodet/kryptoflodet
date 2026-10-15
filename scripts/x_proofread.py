@@ -7,7 +7,7 @@ from x_translate import input_text,valid_translation,normalize_translation,ENGIN
 from swedish_quality import is_swedish_quality
 # This is the upstream TranslateGemma text template, without the BOS token that
 # llama.cpp inserts. Keep source text separate from translation instructions.
-SYSTEM='You are a professional English (en) to Swedish (sv) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Swedish grammar, vocabulary, and cultural sensitivities.\nProduce only the Swedish translation, without any additional explanations or commentary. Please translate the following English text into Swedish:\n\n\n'
+SYSTEM='You are a professional English (en) to Swedish (sv) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Swedish grammar, vocabulary, and cultural sensitivities. Preserve every sentence, numeric amount, currency, proper name, question, condition, negation and first-person perspective. Do not summarize or add information.\nProduce only the Swedish translation, without any additional explanations or commentary. Please translate the following English text into Swedish:\n\n\n'
 EDIT='';REVIEW='deterministic-source-checks'
 def clean_source(text):return input_text(text)
 def language_ok(text,detector,swedish):
@@ -16,15 +16,32 @@ def language_ok(text,detector,swedish):
 
 def translation_source(text):
  source=clean_source(text)
+ # Preserve a leading dollar figure that qualifies a company without implying
+ # whether it refers to valuation, revenue or assets.
+ leading=re.match(r'^\$(?P<value>\d+(?:[,.]\d+)*)(?P<scale>[KMBT])?\s+(?P<name>[A-Z][A-Za-z0-9.-]*(?:\s+[A-Z][A-Za-z0-9.-]*)*)(?=\s+(?:says|buys|plans|announces|launches|adds|raises|holds)\b)',source)
+ if leading:
+  scale={'K':'thousand','M':'million','B':'billion','T':'trillion'}.get(leading['scale'] or '','')
+  value=' '.join(word for word in [leading['value'],scale,'dollars'] if word)
+  source=leading['name']+' ('+value+')'+source[leading.end():]
  terms={r'\bbears\b':'traders who expect prices to fall',r'\bbulls\b':'traders who expect prices to rise',
  r'\bwhales\b':'large investors',r'\bwhale\b':'large investor',
  r'\bopening longs\b':'opening positions that profit when prices rise',
  r'\bgoing long\b':'investing in positions that profit when prices rise',
  r'\bsmart money\b':'experienced investors',
+ r'\bCoinbase Premium\b':'price premium on Coinbase',
  r'\btokenized ETF market cap\b':'market value of tokenized exchange-traded funds',
  r'\bEveryone wants in\b':'Everyone wants to participate'}
  for pattern,replacement in terms.items():source=re.sub(pattern,replacement,source,flags=re.I)
  return source
+
+# Exact, manually checked translations for short posts that the language
+# detector cannot reliably classify or that the model repeatedly mishandles.
+DIRECT_TRANSLATIONS={
+ 'bitcoin falls under $81,000 and eth falls under $2,400.':'Bitcoin faller under 81 000 dollar och ETH under 2 400 dollar.',
+ 'reminder:':'Påminnelse:',
+ 'bitcoin to $100k by year-end?':'Når Bitcoin 100 000 dollar före årets slut?',
+ 'us treasury to buy back up to $6,000,000,000 in long-term debt tomorrow.':'USA:s finansdepartement ska i morgon återköpa långfristiga statsobligationer för upp till 6 000 000 000 dollar.',
+}
 
 def parts(source):
  """Preserve paragraphs and translate each bounded part, including long posts."""
@@ -47,9 +64,15 @@ class Translator:
   self.detector=LanguageDetectorBuilder.from_languages(Language.SWEDISH,Language.ENGLISH,Language.BOKMAL,Language.DANISH,Language.GERMAN).build()
   self.model=Llama(model_path=str(MODEL),n_ctx=2048,n_threads=2,n_batch=256,verbose=False)
  def translate(self,original,deadline):
-  source=input_text(original);translated=[]
+  source=input_text(original)
+  direct=DIRECT_TRANSLATIONS.get(source.casefold())
+  if direct and valid_translation(source,direct):return direct
+  translated=[]
   for part in parts(source):
    if time.monotonic()>deadline:return None
+   direct=DIRECT_TRANSLATIONS.get(re.sub(r'\s+',' ',part).strip().casefold())
+   if direct and valid_translation(part,direct):
+    translated.append(direct);continue
    prepared=translation_source(part)
    prompt='<start_of_turn>user\n'+SYSTEM+prepared+'<end_of_turn>\n<start_of_turn>model\n'
    reply=self.model.create_completion(prompt=prompt,max_tokens=1100,temperature=0,stop=['<end_of_turn>','<eos>'])
