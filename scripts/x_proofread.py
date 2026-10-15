@@ -69,6 +69,9 @@ class Translator:
   translated=[]
   for part in parts(source):
    if time.monotonic()>deadline:return None
+   direct=DIRECT_TRANSLATIONS.get(re.sub(r'\s+',' ',part).strip().casefold())
+   if direct and valid_translation(part,direct):
+    translated.append(direct);continue
    prepared=translation_source(part)
    prompt='<start_of_turn>user\n'+SYSTEM+prepared+'<end_of_turn>\n<start_of_turn>model\n'
    reply=self.model.create_completion(prompt=prompt,max_tokens=1100,temperature=0,stop=['<end_of_turn>','<eos>'])
