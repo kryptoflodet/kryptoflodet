@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T14:25:49.103863Z",
+  "generatedAt": "2026-10-17T14:52:14.722009Z",
   "posts": [
     {
       "sourceTruncated": false,
@@ -2054,7 +2054,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Stress relaterad till kryptovalutor kan sänka testosteronnivåerna.\n\nJag förstår er!",
         "method": "translation",
@@ -3106,7 +3106,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Digital Credit, som drivs av Bitcoin. Vår mest seniora föredragningsaktie, \"$strf\" (\"Strife\"), förklarad på tre minuter.",
         "method": "translation",
@@ -3353,7 +3353,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Bitcoins framtid är finansvärldens framtid.\n\nI morse på Världsbanken deltog jag i ett 25 minuter långt samtal under DC Fintech Week med Chris Brummer, grundare och vd för The Fintech Foundation. @fintechthinksdc\n\n00:52 – Strategy som en reservinstitution byggd på digital …",
         "method": "translation",
@@ -3473,7 +3473,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Det är oerhört tråkigt att @YouTube ännu en gång har stängt av ett kryptokonto!\n\nDet var den värsta upplevelsen i mitt liv, men jag hade tur: de förstod sitt misstag och återställde min kanal inom 24 timmar.\n\nHåll ut, min vän, och lycka till med ditt nya …",
         "method": "translation",
@@ -3720,7 +3720,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Det finns alltför många tecken på att helgens Bitcoinuppgång sannolikt är en fälla.\n\nJag sänder direkt på @TheMoonShow om en timme för att diskutera varför.",
         "method": "translation",
@@ -3808,7 +3808,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Strategy har köpt 250 BTC!",
         "method": "translation",
@@ -3837,7 +3837,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Bitcoin stängde veckan över nivån!\n\nGanska goda nyheter, men ännu ingen bekräftelse på en uppgång.\n\nKursmålet på 102 000 dollar gäller bara om vi får en veckostängning över 87 200 dollar med stöd av handelsvolymen.",
         "method": "translation",
@@ -3866,7 +3866,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "Bitcoin: veckans handelsperiod stänger om åtta timmar!",
         "method": "translation",
@@ -3925,7 +3925,7 @@
       "verified": false,
       "discoveredVia": "x-embed",
       "contextSource": null,
-      "originalCheckedAt": "2026-10-17T13:34:30.225197Z",
+      "originalCheckedAt": "2026-10-17T14:52:14.722009Z",
       "swedish": {
         "text": "När Bitcoin faller, träna musklerna!",
         "method": "translation",
@@ -3998,10 +3998,10 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4011,7 +4011,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-17T13:46:42+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 26,
@@ -4022,10 +4022,10 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4035,7 +4035,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-17T14:00:00+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4046,10 +4046,10 @@
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -4062,10 +4062,16 @@
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2026-10-17T10:30:00+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4076,11 +4082,11 @@
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:00:02.053865Z",
-      "lastIndividualSuccessAt": "2026-10-17T14:00:02.053865Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "lastIndividualSuccessAt": "2026-10-17T14:52:14.722009Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4089,22 +4095,41 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-17T14:30:02.053865Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-17T15:22:14.722009Z"
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
+          "method": "individual-post",
+          "id": "2110460760531021924",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2110021321975308351",
+          "result": "ok"
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
-      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
-      "method": "cached-individual-post",
+      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "method": "individual-post",
       "count": 5,
       "newestPostAt": "2026-10-14T20:00:30Z"
     },
@@ -4113,11 +4138,11 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:25:49.103863Z",
-      "lastIndividualSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "lastIndividualSuccessAt": "2026-10-17T14:52:14.722009Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4156,7 +4181,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-17T13:46:23+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -4167,11 +4192,11 @@
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:00:02.053865Z",
-      "lastIndividualSuccessAt": "2026-10-17T14:00:02.053865Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "lastIndividualSuccessAt": "2026-10-17T14:52:14.722009Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4180,22 +4205,51 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-17T14:30:02.053865Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-17T15:22:14.722009Z"
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
+        },
+        {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
+          "method": "individual-post",
+          "id": "2111040249153589486",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109513358278054238",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109308870560719087",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2108920904352927961",
+          "result": "ok"
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
-      "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
-      "method": "cached-individual-post",
+      "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
+      "method": "individual-post",
       "count": 6,
       "newestPostAt": "2026-10-16T10:23:11Z"
     },
@@ -4204,11 +4258,11 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T14:25:49.103863Z",
-      "lastIndividualSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "lastIndividualSuccessAt": "2026-10-17T14:52:14.722009Z",
       "attempts": [
         {
           "method": "user-id",
@@ -4217,9 +4271,10 @@
         },
         {
           "method": "screen-name",
-          "result": "cooldown",
-          "retryAfterAt": "2026-10-17T14:30:02.053865Z",
-          "httpStatus": 429
+          "result": "error",
+          "error": "HTTPError",
+          "httpStatus": 429,
+          "retryAfterAt": "2026-10-17T15:22:14.722009Z"
         },
         {
           "method": "x-public-profile-reference",
@@ -4228,13 +4283,31 @@
           "error": "HTTPError"
         },
         {
+          "method": "public-profile-reference",
+          "result": "error",
+          "httpStatus": 403,
+          "error": "HTTPError"
+        },
+        {
           "method": "individual-post",
-          "id": "2111419057438339470",
+          "id": "2109952890924335334",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109623947969098114",
+          "result": "ok"
+        },
+        {
+          "method": "individual-post",
+          "id": "2109614430459961492",
           "result": "ok"
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-17T14:25:49.103863Z",
+      "lastProfileSuccessAt": "2026-10-17T14:52:14.722009Z",
+      "errorType": "HTTPError",
+      "httpStatus": 429,
       "profileConnection": "limited",
       "message": "Enskilda aktuella originalposter har verifierats hos X. Profilflödet är begränsat; alla nya inlägg kan inte garanteras.",
       "method": "individual-post",
@@ -4376,19 +4449,19 @@
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/saylor": {
-      "checkedAt": "2026-10-17T14:00:02.053865Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/MMCrypto": {
-      "checkedAt": "2026-10-17T14:00:02.053865Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/CryptoKid": {
-      "checkedAt": "2026-10-17T14:00:02.053865Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
@@ -4500,7 +4573,7 @@
       ]
     },
     "x-public-profile:cryptokid": {
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [
         [
           "CryptoKid",
@@ -4528,7 +4601,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:mmcrypto": {
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [
         [
           "MMCrypto",
@@ -4560,7 +4633,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:saylor": {
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [
         [
           "saylor",
@@ -4694,7 +4767,7 @@
       "links": []
     },
     "x-public-profile:themoonshow": {
-      "checkedAt": "2026-10-17T14:25:49.103863Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [
         [
           "TheMoonShow",
@@ -4722,7 +4795,7 @@
       "error": "HTTPError"
     },
     "https://www6.twstalker.com/TheMoonShow": {
-      "checkedAt": "2026-10-17T14:00:02.053865Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": [],
       "httpStatus": 403,
       "error": "HTTPError"
@@ -5622,7 +5695,7 @@
       "links": []
     },
     "https://bitcoinmagazine.com/videos/morgan-stanleys-amy-oldenburg-the-digital-gold-investment-case-for-bitcoin": {
-      "checkedAt": "2026-10-16T13:58:47.501619Z",
+      "checkedAt": "2026-10-17T14:52:14.722009Z",
       "links": []
     },
     "https://cryptoslate.com/zcashs-mining-boom-can-grow-without-creating-a-new-token-bid/": {
@@ -5782,10 +5855,10 @@
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-17T14:26:46.821044+00:00",
+    "checkedAt": "2026-10-17T14:53:28.078005+00:00",
     "original": 0,
     "reviewed": 27,
-    "automatic": 58,
+    "automatic": 57,
     "pending": 10,
     "machine": {
       "engine": "translategemma-12b-sv-v1",
