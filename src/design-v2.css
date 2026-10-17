@@ -1,4 +1,6 @@
-/* The version selector is the only addition to V1. All redesigned surfaces are scoped to V2. */
+/* Shared header details. All redesigned surfaces below are scoped to V2. */
+.brand{position:relative}
+.brand::after{content:'BETA';position:absolute;top:-4px;left:-6px;z-index:2;display:grid;place-items:center;width:39px;height:15px;border:1px solid var(--bg,#101214);border-radius:3px;background:#f18e55;color:#1a1714;font:800 7.5px/1 system-ui,sans-serif;letter-spacing:.08em;transform:rotate(-24deg);box-shadow:0 1px 4px #0003;pointer-events:none}
 .design-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:32px;padding:0 8px;border:1px solid var(--line,#39453d);border-radius:7px;background:transparent;color:var(--text,#edf0ed);font:700 11px/1 system-ui,sans-serif;letter-spacing:.02em;flex:none;cursor:pointer}
 .design-toggle:hover{border-color:var(--accent,#94dfbb);color:var(--accent,#94dfbb)}
 .design-toggle svg{color:var(--muted,#959c9f)}
