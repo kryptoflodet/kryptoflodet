@@ -1,6 +1,6 @@
 /* Shared header geometry and typography; orange V1 surfaces remain scoped. */
 .brand-copy strong{position:relative;align-self:flex-start}
-.brand-copy strong::after{content:'BETA';position:absolute;top:-13px;left:50%;z-index:2;display:grid;place-items:center;box-sizing:border-box;width:34px;height:12px;border:1px solid var(--bg,var(--page-bg,#101214));border-radius:3px;background:var(--accent,var(--page-accent,#94dfbb));color:var(--bg,var(--page-bg,#101214));font:800 7px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;transform:translateX(-50%) rotate(-14deg);box-shadow:0 1px 4px #0003;pointer-events:none}
+.brand-copy strong::after{content:'BETA';position:absolute;top:-9px;left:50%;z-index:2;display:grid;place-items:center;box-sizing:border-box;width:34px;height:12px;border:1px solid var(--bg,var(--page-bg,#101214));border-radius:3px;background:var(--accent,var(--page-accent,#94dfbb));color:var(--bg,var(--page-bg,#101214));font:800 7px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;transform:translateX(-50%) rotate(-14deg);box-shadow:0 1px 4px #0003;pointer-events:none}
 .design-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:32px;padding:0 8px;border:1px solid var(--line,#39453d);border-radius:7px;background:transparent;color:var(--text,#edf0ed);font:700 11px/1 system-ui,sans-serif;letter-spacing:.02em;flex:none;cursor:pointer}
 .design-toggle:hover{border-color:var(--accent,#94dfbb);color:var(--accent,#94dfbb)}
 .design-toggle svg{color:var(--muted,#959c9f)}
@@ -440,6 +440,18 @@
 }
 @media(prefers-reduced-motion:reduce){
  :root[data-design="v1"] *,:root[data-design="v1"] *:before,:root[data-design="v1"] *:after{scroll-behavior:auto!important;transition:none!important}
+}
+/* Center V2 navigation in the top row when there is room beside the logo. */
+@media(min-width:761px){
+ :root[data-design="v2"] .header-inner nav{justify-content:center}
+}
+@media(min-width:1140px){
+ :root[data-design="v2"] .header-inner{position:relative;grid-template-rows:78px}
+ :root[data-design="v2"] .header-inner nav{position:absolute;left:50%;top:0;transform:translateX(-50%);grid-row:1;grid-column:1/-1;width:max-content;height:78px;gap:3px;border-top:0}
+ :root[data-design="v2"] .header-inner nav button,:root[data-design="v2"] .header-inner nav button:first-child{padding:0 12px}
+ :root[data-design="v2"] .header-inner nav button.active:after{left:12px;right:12px}
+ :root[data-design="v2"] .static-page>header{position:relative}
+ :root[data-design="v2"] .static-page nav{position:absolute;left:50%;top:30px;transform:translateX(-50%);width:max-content;height:41px;align-items:center;justify-content:center}
 }
 /* The larger shared type scale needs room inside the compact green controls. */
 :root[data-design="v2"] .feed-tools,:root[data-design="v2"] .noise-filter{flex-wrap:wrap}
