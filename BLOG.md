@@ -2,9 +2,9 @@
 
 Blog lives at `/?category=Blog`, beside Reglering. Posts are rendered directly on the site and archived in `public/data/blog.json`. Deep link: `/?category=Blog&post=YYYY-MM-DD`.
 
-An authorized ChatGPT automation starts Wednesday and Sunday at 20:00 Europe/Stockholm (DST-aware). The automation researches, writes, commits, and verifies publication. Writing and GitHub Pages deployment add latency; this is not a guaranteed exact-time delivery. Automation does not require a paid model API in this repository. Do not replace it with a template that merely repeats feed headlines.
+A scheduled ChatGPT automation starts every Sunday at 20:00 Europe/Stockholm (DST-aware). It researches, writes, commits, and verifies the weekly article. Writing and GitHub Pages deployment add latency, so the article may appear shortly after 20:00. The automation does not require a paid model API in this repository. Do not replace it with a template that merely repeats feed headlines.
 
-Wednesday covers Monday through Wednesday publication (Mittveckan); Sunday covers Monday through Sunday publication (Veckan). Verify publication and event dates; prefer primary sources. Explain jargon and distinguish reported facts, interpretation, and uncertainty. Only directly crypto-related events. Write original, polished Swedish prose, normally 600–1000 words with 4–6 key events, but prioritize evidence over length. Avoid long quotations, copied articles, invented facts, hype and personal investment advice.
+The Sunday edition covers Monday through Sunday up to publication time (Veckan). Verify publication and event dates; prefer primary sources. Explain jargon and distinguish reported facts, interpretation, and uncertainty. Only directly crypto-related events. Write original, polished Swedish prose, normally 600–1000 words with 4–6 key events, but prioritize evidence over length. Avoid long quotations, copied articles, invented facts, hype and personal investment advice.
 
 ## Data format
 
@@ -17,7 +17,7 @@ Each post:
 - `title`: clear editorial headline
 - `dek`: informative two-sentence introduction
 - `publishedAt`: actual ISO timestamp, including offset
-- `period`: e.g. `5–11 oktober 2026` or `12–14 oktober 2026 · Mittveckan`
+- `period`: e.g. `12–18 oktober 2026`
 - `readingMinutes`: positive integer based on approximately 200 words/minute
 - `takeaways`: array of 3 concise Swedish key points
 - `sections`: array of `{ "heading": "...", "paragraphs": ["..."], "sourceIds": ["s1"] }`
