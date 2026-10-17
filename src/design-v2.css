@@ -1,6 +1,6 @@
 /* Shared header details. All redesigned surfaces below are scoped to V2. */
-.brand{position:relative}
-.brand::after{content:'BETA';position:absolute;top:-4px;left:-6px;z-index:2;display:grid;place-items:center;width:39px;height:15px;border:1px solid var(--bg,#101214);border-radius:3px;background:#f18e55;color:#1a1714;font:800 7.5px/1 system-ui,sans-serif;letter-spacing:.08em;transform:rotate(-24deg);box-shadow:0 1px 4px #0003;pointer-events:none}
+.brand-copy strong{position:relative;align-self:flex-start}
+.brand-copy strong::after{content:'BETA';position:absolute;top:-13px;right:-1px;z-index:2;display:grid;place-items:center;width:34px;height:12px;border:1px solid var(--bg,var(--page-bg,#101214));border-radius:3px;background:var(--accent,var(--page-accent,#94dfbb));color:var(--bg,var(--page-bg,#101214));font:800 7px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;transform:rotate(-14deg);box-shadow:0 1px 4px #0003;pointer-events:none}
 .design-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:32px;padding:0 8px;border:1px solid var(--line,#39453d);border-radius:7px;background:transparent;color:var(--text,#edf0ed);font:700 11px/1 system-ui,sans-serif;letter-spacing:.02em;flex:none;cursor:pointer}
 .design-toggle:hover{border-color:var(--accent,#94dfbb);color:var(--accent,#94dfbb)}
 .design-toggle svg{color:var(--muted,#959c9f)}
@@ -443,7 +443,8 @@
 @media(max-width:500px){
  :root[data-design="v2"] .brand-copy small{display:none}
  :root[data-design="v2"] .header-inner{grid-template-rows:62px 43px}
- :root[data-design="v2"] .brand-copy strong{font-size:20px}
+ :root[data-design="v2"] .brand{gap:8px}
+ :root[data-design="v2"] .brand-copy strong{font-size:18px}
  :root[data-design="v2"] .header-actions{gap:3px}
  :root[data-design="v2"] .design-toggle{height:34px;min-width:40px}
  :root[data-design="v2"] .market-status-line>span:nth-child(2){display:none}
@@ -461,9 +462,11 @@
  :root[data-design="v2"] .header-inner{padding-left:15px;padding-right:15px}
  :root[data-design="v2"] #root>main{width:calc(100% - 30px)}
  :root[data-design="v2"] .intro h1{font-size:35px}
- :root[data-design="v2"] .brand-copy strong{font-size:18px}
+ :root[data-design="v2"] .brand{gap:6px}
+ :root[data-design="v2"] .brand-copy strong{font-size:16px}
  :root[data-design="v2"] .brand-icon{width:31px;height:31px}
  :root[data-design="v2"] .header-actions .icon-button{width:31px}
+ :root[data-design="v2"] .header-actions .mobile-menu{min-width:31px}
  :root[data-design="v2"] .design-toggle{min-width:36px}
  :root[data-design="v2"] .market-pulse .sentiment-card,:root[data-design="v2"] .market-pulse .altseason-card{padding:13px 9px}
  :root[data-design="v2"] .market-pulse .mood-labels,:root[data-design="v2"] .market-pulse .mood-labels span,:root[data-design="v2"] .market-pulse .altseason-labels{font-size:5px}
