@@ -37,10 +37,16 @@
           : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
         document.documentElement.dataset.theme = theme;
         let design = 'v1';
-        try { design = localStorage.getItem('kryptopuls-design') === 'v2' ? 'v2' : 'v1'; } catch {}
+        try {
+          // Preserve the selected appearance when the version names change.
+          const layout = localStorage.getItem('kryptopuls-layout');
+          const previous = localStorage.getItem('kryptopuls-design');
+          design = layout === 'classic' ? 'v2' : layout === 'orange' ? 'v1' : previous === 'v1' ? 'v2' : 'v1';
+          localStorage.setItem('kryptopuls-layout', design === 'v1' ? 'orange' : 'classic');
+        } catch {}
         document.documentElement.dataset.design = design;
         document.documentElement.style.colorScheme = theme;
-        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', design === 'v2' ? (theme === 'light' ? '#f6f4ef' : '#121315') : (theme === 'light' ? '#f1f3f1' : '#101214'));
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', design === 'v1' ? (theme === 'light' ? '#f6f4ef' : '#121315') : (theme === 'light' ? '#f1f3f1' : '#101214'));
       })();
     </script>
     <script type="application/ld+json">
