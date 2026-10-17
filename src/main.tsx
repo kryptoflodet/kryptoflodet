@@ -2,6 +2,7 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App';
 import './styles.css';
+import './design-v2.css';
 class ErrorBoundary extends React.Component<React.PropsWithChildren,{failed:boolean}>{
  state={failed:false};
  static getDerivedStateFromError(){return {failed:true};}
