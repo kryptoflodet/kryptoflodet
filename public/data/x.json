@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T07:46:45.364598Z",
+  "generatedAt": "2026-10-17T08:08:26.730739Z",
   "posts": [
     {
       "sourceTruncated": false,
@@ -3803,10 +3803,10 @@
       "name": "Watcher.Guru – X",
       "handle": "WatcherGuru",
       "url": "https://x.com/WatcherGuru",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastSuccessAt": "2026-10-17T08:08:26.730739Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -3816,7 +3816,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-17T07:24:09+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 25,
@@ -3827,34 +3827,34 @@
       "name": "Crypto Rover – X",
       "handle": "cryptorover",
       "url": "https://x.com/cryptorover",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastSuccessAt": "2026-10-17T08:08:26.730739Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
           "method": "user-id",
           "result": "ok",
-          "eligiblePosts": 16
+          "eligiblePosts": 14
         }
       ],
-      "newestAvailableAt": "2026-10-17T06:52:00+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "newestAvailableAt": "2026-10-17T07:59:38+00:00",
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "connected",
       "method": "user-id",
-      "count": 30,
-      "newestPostAt": "2026-10-17T06:52:00Z"
+      "count": 28,
+      "newestPostAt": "2026-10-17T07:59:38Z"
     },
     {
       "id": "moon-x",
       "name": "The Moon Show – X",
       "handle": "TheMoonShow",
       "url": "https://x.com/TheMoonShow",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastSuccessAt": "2026-10-17T08:08:26.730739Z",
       "lastIndividualSuccessAt": "2026-10-13T20:02:57.658877Z",
       "attempts": [
         {
@@ -3863,8 +3863,8 @@
           "eligiblePosts": 10
         }
       ],
-      "newestAvailableAt": "2026-10-17T07:03:49+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "newestAvailableAt": "2026-10-17T07:47:16+00:00",
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3875,7 +3875,7 @@
       "name": "Michael Saylor – X",
       "handle": "saylor",
       "url": "https://x.com/saylor",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-17T07:15:37.374058Z",
@@ -3888,28 +3888,19 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-17T08:16:45.364598Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-17T08:16:45.364598Z",
+          "httpStatus": 429
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
-        },
-        {
-          "method": "public-profile-reference",
-          "result": "error",
-          "httpStatus": 403,
-          "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2026-04-04T14:37:46+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -3921,11 +3912,11 @@
       "name": "Bitcoin Archive – X",
       "handle": "BitcoinArchive",
       "url": "https://x.com/BitcoinArchive",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "connected",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
-      "lastSuccessAt": "2026-10-17T07:46:45.364598Z",
-      "lastIndividualSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastSuccessAt": "2026-10-17T08:08:26.730739Z",
+      "lastIndividualSuccessAt": "2026-10-17T08:08:26.730739Z",
       "attempts": [
         {
           "method": "user-id",
@@ -3934,12 +3925,6 @@
         },
         {
           "method": "x-public-profile-reference",
-          "result": "error",
-          "httpStatus": 403,
-          "error": "HTTPError"
-        },
-        {
-          "method": "public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
@@ -3976,7 +3961,7 @@
         }
       ],
       "newestAvailableAt": "2026-10-16T23:36:35+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "connected",
       "method": "user-id",
       "count": 30,
@@ -3987,7 +3972,7 @@
       "name": "MMCrypto – X",
       "handle": "MMCrypto",
       "url": "https://x.com/MMCrypto",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-17T07:15:37.374058Z",
@@ -4000,28 +3985,19 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-17T08:16:45.364598Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-17T08:16:45.364598Z",
+          "httpStatus": 429
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
-        },
-        {
-          "method": "public-profile-reference",
-          "result": "error",
-          "httpStatus": 403,
-          "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2025-08-24T03:57:06+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4033,7 +4009,7 @@
       "name": "Crypto Kid – X",
       "handle": "CryptoKid",
       "url": "https://x.com/CryptoKid",
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "connection": "limited",
       "coverage": "Begränsat offentligt urval från X; inte fullständig bevakning.",
       "lastSuccessAt": "2026-10-17T07:15:37.374058Z",
@@ -4046,28 +4022,19 @@
         },
         {
           "method": "screen-name",
-          "result": "error",
-          "error": "HTTPError",
-          "httpStatus": 429,
-          "retryAfterAt": "2026-10-17T08:16:45.364598Z"
+          "result": "cooldown",
+          "retryAfterAt": "2026-10-17T08:16:45.364598Z",
+          "httpStatus": 429
         },
         {
           "method": "x-public-profile-reference",
           "result": "error",
           "httpStatus": 403,
           "error": "HTTPError"
-        },
-        {
-          "method": "public-profile-reference",
-          "result": "error",
-          "httpStatus": 403,
-          "error": "HTTPError"
         }
       ],
       "newestAvailableAt": "2025-11-04T21:36:38+00:00",
-      "lastProfileSuccessAt": "2026-10-17T07:46:45.364598Z",
-      "errorType": "HTTPError",
-      "httpStatus": 429,
+      "lastProfileSuccessAt": "2026-10-17T08:08:26.730739Z",
       "profileConnection": "limited",
       "message": "Sparade originalposter från den enskilda X-endpointen visas. Profilflödet är begränsat.",
       "method": "cached-individual-post",
@@ -4333,7 +4300,7 @@
       ]
     },
     "x-public-profile:cryptokid": {
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "links": [
         [
           "CryptoKid",
@@ -4361,7 +4328,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:mmcrypto": {
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "links": [
         [
           "MMCrypto",
@@ -4393,7 +4360,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:saylor": {
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "links": [
         [
           "saylor",
@@ -4612,7 +4579,7 @@
       "error": "HTTPError"
     },
     "x-public-profile:bitcoinarchive": {
-      "checkedAt": "2026-10-17T07:46:45.364598Z",
+      "checkedAt": "2026-10-17T08:08:26.730739Z",
       "links": [
         [
           "BitcoinArchive",
@@ -5597,17 +5564,17 @@
   },
   "language": {
     "version": "x-sv-rules-v1",
-    "checkedAt": "2026-10-17T07:48:07.912401+00:00",
+    "checkedAt": "2026-10-17T08:10:00.963041+00:00",
     "original": 0,
     "reviewed": 27,
     "automatic": 53,
-    "pending": 14,
+    "pending": 12,
     "machine": {
       "engine": "translategemma-12b-sv-v1",
       "cached": 0,
       "local": 0,
       "freeFallback": 0,
-      "pending": 14
+      "pending": 12
     }
   }
 }
